@@ -1,0 +1,141 @@
+ ########################################################
+
+ Linpack Single Precision Unrolled Benchmark n @ 100
+ Optimisation vfpv4 32 Bit, Wed Nov 11 16:17:31 2015
+
+ Speed     562.57 MFLOPS
+
+ Variable norm. resid Non-standard result was              1.6 instead of              1.7
+ Variable resid       Non-standard result was   3.80277634e-05 instead of   7.41628980e-14
+ Variable machep      Non-standard result was   1.19209290e-07 instead of   2.22044605e-16
+ Variable x[0]-1      Non-standard result was  -1.38282776e-05 instead of  -1.49880108e-14
+ Variable x[n-1]-1    Non-standard result was  -7.51018524e-06 instead of  -1.89848137e-14
+
+ Compiler #define or values in linpack.c might need to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 1992.29
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 1992.29
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (root@xu-b1) (gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ) #1 SMP PREEMPT Wed Mar 4 17:49:03 BRT 2015
+ 
+
+Additional information - 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation vfpv4 32 Bit, Wed Nov 11 16:20:47 2015
+
+ Speed     231.09 MFLOPS
+
+ Variable norm. resid Non-standard result was              1.8 instead of              1.7
+ Variable resid       Non-standard result was   7.77156117e-14 instead of   7.41628980e-14
+
+ Compiler #define or values in linpack.c might need to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 1992.29
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 1992.29
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (root@xu-b1) (gcc version 4.7.3 (Ubuntu/Linaro 4.7.3-12ubuntu1) ) #1 SMP PREEMPT Wed Mar 4 17:49:03 BRT 2015
+ 
+
+Additional information - 
+
