@@ -1,0 +1,106 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 ffast optimized, Fri Jan 24 20:15:56 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1282.650               0.085
+N2 floating point      -1.12274742126464844      1283.596               0.597
+N3 if then else         1.00000000000000000                   0.000     0.000
+N4 fixed point         12.00000000000000000               72699.328     0.025
+N5 sin,cos etc.         0.49911010265350342                 136.248     3.483
+N6 floating point       0.99999982118606567       844.581               3.643
+N7 assignments          3.00000000000000000                2718.443     0.388
+N8 exp,sqrt etc.        0.75110864639282227                 122.349     1.734
+
+MWIPS                                            5729.520               9.955
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 3521.220
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 6784.70
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
+From File /proc/version
+Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64  optimized, Fri Jan 24 20:16:14 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1235.274               0.083
+N2 floating point      -1.12274742126464844      1063.658               0.678
+N3 if then else         1.00000000000000000               10660.731     0.052
+N4 fixed point         12.00000000000000000                5940.887     0.285
+N5 sin,cos etc.         0.49911010265350342                 151.773     2.942
+N6 floating point       0.99999982118606567       907.444               3.190
+N7 assignments          3.00000000000000000                2167.626     0.458
+N8 exp,sqrt etc.        0.75110864639282227                  87.842     2.273
+
+MWIPS                                            5387.997               9.961
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 3500.402
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 6784.70
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
+From File /proc/version
+Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
