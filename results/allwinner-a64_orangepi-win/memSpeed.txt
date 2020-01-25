@@ -1,0 +1,138 @@
+ #####################################################
+
+     Memory Reading Speed Test arv6 optimized by Roy Longbottom
+
+               Start of test Sat Jan 30 00:21:16 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1529   1747   2156   2290   2157   2614   2606   2283   2029
+      16    1529   1748   2156   2295   2160   2621   2615   2290   2035
+      32    1486   1673   2046   2191   2041   2453   2619   2269   2014
+      64    1431   1595   1923   2067   1913   2292   2428   2178   1946
+     128    1453   1615   1959   2119   1938   2338   2508   2115   1862
+     256    1397   1551   1892   2060   1868   2249   2526   2145   1902
+     512    1001   1062   1110   1162   1139   1206   1696   1558   1313
+    1024     906    951    972    999    995   1009   1147   1131   1129
+    2048     893    946   1001   1021   1016   1048   1228   1216   1185
+    4096     902    947    988   1003   1005   1041   1216   1145   1194
+    8192     896    946    980   1001    997   1035   1231   1205   1202
+
+                End of test Sat Jan 30 00:21:32 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test armv7 optimized by Roy Longbottom
+
+               Start of test Sat Jan 30 00:21:32 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1528   1311   2814   2290   1912   2812   2607   2279   2032
+      16    1532   1311   2820   2296   1931   2815   2618   2285   2036
+      32    1413   1216   2336   2004   1701   2341   2356   1968   1776
+      64    1452   1227   2322   1987   1707   2390   2468   2008   1753
+     128    1470   1233   2323   1979   1707   2388   2524   2059   1760
+     256    1437   1229   2306   1971   1713   2388   2548   2099   1779
+     512     929    882   1096   1060   1020   1145   1591   1571   1526
+    1024     964    906   1153   1113   1072   1199   1705   1674   1621
+    2048     880    852   1008    992    964   1055   1394   1381   1432
+    4096     870    849   1016    984    956   1054   1328   1344   1379
+    8192     872    852   1021    987    959   1056   1319   1302   1316
+
+                End of test Sat Jan 30 00:21:48 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test armv7 optimized (neon) by Roy Longbottom
+
+               Start of test Sat Jan 30 00:21:48 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1530   1312   3328   1943   1591   2773   2171   2528   2529
+      16    1276   1095   2777   1914   1598   2837   2618   3050   3052
+      32    1478   1266   3044   2165   1827   3047   2622   3052   3057
+      64    1437   1237   2892   2064   1745   2886   2388   2686   2688
+     128    1446   1246   3004   2059   1752   3003   2511   2882   2875
+     256    1433   1241   2971   2035   1739   2965   2548   2950   2950
+     512    1172   1058   1779   1493   1354   1782   2337   2591   2597
+    1024     964    916   1249   1132   1078   1247   1693   1745   1752
+    2048     879    854   1058    997    967   1061   1356   1364   1362
+    4096     869    848   1046    985    955   1047   1351   1383   1338
+    8192     866    847   1047    980    953   1049   1338   1342   1305
+
+                End of test Sat Jan 30 00:22:04 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+

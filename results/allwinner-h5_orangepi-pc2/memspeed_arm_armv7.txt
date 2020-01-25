@@ -1,0 +1,67 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+
+
+   Memory Reading Speed Test armv7 optimized Sun Jan 26 01:21:24 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1527   1309   2799   2280   1928   2808   2602   2277   2025
+      16    1517   1311   2818   2291   1929   2810   2616   2288   2035
+      32    1411   1214   2337   2004   1701   2341   2325   1963   1750
+      64    1408   1223   2317   1987   1703   2386   2464   1998   1751
+     128    1404   1224   2322   1979   1706   2394   2521   2056   1766
+     256    1372   1190   2205   1925   1648   2224   2441   2022   1763
+     512     895    857   1052   1012    994   1094   1534   1479   1412
+    1024     928    879   1097   1053   1027   1140   1591   1564   1525
+    2048     855    830    973    954    932   1020   1302   1313   1330
+    4096     851    830    988    962    940   1016   1278   1278   1302
+    8192     851    835    992    968    940   1027   1276   1283   1292
+
+                End of test Sun Jan 26 01:21:40 2020
+

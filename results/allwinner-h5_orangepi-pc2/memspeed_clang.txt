@@ -1,0 +1,67 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+
+
+   Memory Reading Speed Test clang optimized (ffast) Sun Jan 26 02:24:49 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    3708   3471   4169   4030   2874   2771   5123   4811   4816
+      16    3759   3495   4189   4073   2878   2772   5186   4861   4860
+      32    3759   3495   4190   4075   2877   2769   5215   4882   4886
+      64    3189   3037   3456   3393   2580   2488   4727   4610   4620
+     128    3250   3089   3491   3438   2619   2526   4604   4466   4465
+     256    3270   3100   3519   3460   2630   2537   4614   4421   4410
+     512    2475   2384   2608   2568   2128   2070   4466   4213   4230
+    1024    1246   1223   1254   1253   1189   1190   1982   1834   1966
+    2048    1041   1037   1042    989   1005   1003   1441   1457   1447
+    4096    1045   1043   1047   1041   1017   1016   1270   1269   1249
+    8192    1037   1035   1039   1029   1007   1005   1249   1276   1290
+
+                End of test Sun Jan 26 02:25:06 2020
+

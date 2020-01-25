@@ -1,0 +1,75 @@
+
+##########################################
+Single Precision C Whetstone Benchmark armv7  optimized, Sun Jan 26 01:20:10 2020
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.28 Seconds         25   Passes (x 100)
+       1.40 Seconds        125   Passes (x 100)
+       7.03 Seconds        625   Passes (x 100)
+
+Use 889  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       322.912              0.053
+N2 floating point     -1.12274742126464844       348.371              0.343
+N3 if then else        1.00000000000000000                1725.356    0.053
+N4 fixed point        12.00000000000000000                1437.698    0.195
+N5 sin,cos etc.        0.49911010265350342                  17.586    4.206
+N6 floating point      0.99999982118606567       287.599              1.667
+N7 assignments         3.00000000000000000                1150.376    0.143
+N8 exp,sqrt etc.       0.75110864639282227                   9.901    3.340
+
+MWIPS                                            888.997             10.000
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

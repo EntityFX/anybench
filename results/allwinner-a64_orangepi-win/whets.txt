@@ -1,0 +1,164 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  arv6 optimized, Sat Jan 30 00:19:48 2010
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       323.027               0.042
+N2 floating point      -1.12274742126464844       348.572               0.270
+N3 if then else         1.00000000000000000                1726.473     0.042
+N4 fixed point         12.00000000000000000                1438.921     0.153
+N5 sin,cos etc.         0.49911010265350342                  11.724     4.960
+N6 floating point       0.99999982118606567       287.594               1.311
+N7 assignments          3.00000000000000000                1150.939     0.112
+N8 exp,sqrt etc.        0.75110864639282227                   8.367     3.108
+
+MWIPS                                             699.168               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7  optimized, Sat Jan 30 00:20:10 2010
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.905               0.042
+N2 floating point      -1.12274742126464844       348.610               0.269
+N3 if then else         1.00000000000000000                1726.508     0.042
+N4 fixed point         12.00000000000000000                1438.946     0.153
+N5 sin,cos etc.         0.49911010265350342                  11.695     4.966
+N6 floating point       0.99999982118606567       287.758               1.308
+N7 assignments          3.00000000000000000                1150.410     0.112
+N8 exp,sqrt etc.        0.75110864639282227                   8.372     3.101
+
+MWIPS                                             698.489               9.993
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7 optimized (neon), Sat Jan 30 00:20:32 2010
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       323.037               0.042
+N2 floating point      -1.12274742126464844       348.522               0.270
+N3 if then else         1.00000000000000000                1726.566     0.042
+N4 fixed point         12.00000000000000000                1439.007     0.153
+N5 sin,cos etc.         0.49911010265350342                  11.741     4.960
+N6 floating point       0.99999982118606567       287.742               1.312
+N7 assignments          3.00000000000000000                1151.128     0.112
+N8 exp,sqrt etc.        0.75110864639282227                   8.401     3.100
+
+MWIPS                                             700.597               9.991
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv8  optimized (neon), Sat Jan 30 00:20:54 2010
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.569               0.042
+N2 floating point      -1.12274742126464844       348.576               0.270
+N3 if then else         1.00000000000000000                1722.524     0.042
+N4 fixed point         12.00000000000000000                1439.007     0.153
+N5 sin,cos etc.         0.49911010265350342                  11.720     4.962
+N6 floating point       0.99999982118606567       287.781               1.310
+N7 assignments          3.00000000000000000                1151.137     0.112
+N8 exp,sqrt etc.        0.75110864639282227                   8.373     3.106
+
+MWIPS                                             699.260               9.996
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+

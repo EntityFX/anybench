@@ -1,0 +1,256 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  arv6 optimized, Sun Jan 26 01:19:50 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.927               0.053
+N2 floating point      -1.12274742126464844       348.375               0.343
+N3 if then else         1.00000000000000000                1725.630     0.053
+N4 fixed point         12.00000000000000000                1438.037     0.195
+N5 sin,cos etc.         0.49911010265350342                  17.637     4.198
+N6 floating point       0.99999982118606567       287.595               1.669
+N7 assignments          3.00000000000000000                1150.258     0.143
+N8 exp,sqrt etc.        0.75110864639282227                   9.904     3.343
+
+MWIPS                                             890.175               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7  optimized, Sun Jan 26 01:20:10 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.912               0.053
+N2 floating point      -1.12274742126464844       348.371               0.343
+N3 if then else         1.00000000000000000                1725.356     0.053
+N4 fixed point         12.00000000000000000                1437.698     0.195
+N5 sin,cos etc.         0.49911010265350342                  17.586     4.206
+N6 floating point       0.99999982118606567       287.599               1.667
+N7 assignments          3.00000000000000000                1150.376     0.143
+N8 exp,sqrt etc.        0.75110864639282227                   9.901     3.340
+
+MWIPS                                             888.997              10.000
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7 optimized (neon), Sun Jan 26 01:20:29 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.916               0.053
+N2 floating point      -1.12274742126464844       348.355               0.343
+N3 if then else         1.00000000000000000                1725.125     0.053
+N4 fixed point         12.00000000000000000                1438.077     0.195
+N5 sin,cos etc.         0.49911010265350342                  17.641     4.193
+N6 floating point       0.99999982118606567       287.591               1.667
+N7 assignments          3.00000000000000000                1150.241     0.143
+N8 exp,sqrt etc.        0.75110864639282227                   9.877     3.348
+
+MWIPS                                             889.424               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv8  optimized (neon), Sun Jan 26 01:20:49 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       322.904               0.053
+N2 floating point      -1.12274742126464844       348.351               0.343
+N3 if then else         1.00000000000000000                1725.238     0.053
+N4 fixed point         12.00000000000000000                1438.031     0.195
+N5 sin,cos etc.         0.49911010265350342                  17.636     4.199
+N6 floating point       0.99999982118606567       287.596               1.669
+N7 assignments          3.00000000000000000                1150.247     0.143
+N8 exp,sqrt etc.        0.75110864639282227                   9.905     3.342
+
+MWIPS                                             890.181               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+

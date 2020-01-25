@@ -1,0 +1,207 @@
+ #####################################################
+
+     Memory Reading Speed Test arv6 optimized by Roy Longbottom
+
+               Start of test Sun Jan 26 01:21:09 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1525   1738   2146   2285   2153   2609   2597   2278   2024
+      16    1520   1745   2156   2291   2151   2616   2606   2285   2033
+      32    1429   1586   1913   2054   1913   2279   2595   2225   1932
+      64    1413   1566   1885   2019   1875   2236   2437   1966   1765
+     128    1431   1594   1927   2070   1912   2290   2448   2062   1824
+     256    1383   1537   1859   2010   1826   2231   2496   2113   1867
+     512    1006   1071   1120   1176   1163   1236   1965   1652   1365
+    1024     885    939    963    978    976    996   1102   1097   1100
+    2048     882    936    976    991    994   1016   1191   1176   1174
+    4096     882    929    961    979    978   1009   1165   1132   1164
+    8192     880    928    954    976    972   1005   1170   1128   1161
+
+                End of test Sun Jan 26 01:21:24 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test armv7 optimized by Roy Longbottom
+
+               Start of test Sun Jan 26 01:21:24 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1527   1309   2799   2280   1928   2808   2602   2277   2025
+      16    1517   1311   2818   2291   1929   2810   2616   2288   2035
+      32    1411   1214   2337   2004   1701   2341   2325   1963   1750
+      64    1408   1223   2317   1987   1703   2386   2464   1998   1751
+     128    1404   1224   2322   1979   1706   2394   2521   2056   1766
+     256    1372   1190   2205   1925   1648   2224   2441   2022   1763
+     512     895    857   1052   1012    994   1094   1534   1479   1412
+    1024     928    879   1097   1053   1027   1140   1591   1564   1525
+    2048     855    830    973    954    932   1020   1302   1313   1330
+    4096     851    830    988    962    940   1016   1278   1278   1302
+    8192     851    835    992    968    940   1027   1276   1283   1292
+
+                End of test Sun Jan 26 01:21:40 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test armv7 optimized (neon) by Roy Longbottom
+
+               Start of test Sun Jan 26 01:21:40 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1529   1312   3325   2290   1932   3326   2604   3033   3034
+      16    1530   1313   3335   2294   1932   3334   2615   3050   3050
+      32    1476   1265   3043   2163   1824   3044   2618   3044   3043
+      64    1428   1231   2854   2046   1734   2856   2369   2661   2662
+     128    1444   1246   2973   2064   1748   2974   2511   2885   2886
+     256    1450   1248   3021   2080   1758   3022   2550   2949   2947
+     512    1342   1172   2489   1859   1607   2497   2557   2972   2967
+    1024     967    915   1237   1128   1086   1238   1799   1892   1887
+    2048     871    844   1035    976    954   1035   1350   1369   1376
+    4096     857    836   1020    968    945   1020   1271   1253   1262
+    8192     855    837   1023    966    946   1021   1266   1282   1294
+
+                End of test Sun Jan 26 01:21:56 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+ 
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+ 
+

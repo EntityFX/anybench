@@ -1,0 +1,102 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation armv8  optimized (neon)
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.01251    0.00013    0.01263      54.35     0.0368     0.2256
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.32 seconds
+      2000 times   0.63 seconds
+      4000 times   1.27 seconds
+Overhead for 1 matgen      0.00032 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.04 seconds
+       100 times   0.43 seconds
+       200 times   0.87 seconds
+       400 times   1.73 seconds
+Passes used        231
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00401    0.00013    0.00413     166.08     0.0120     0.0738
+    0.00401    0.00013    0.00413     166.09     0.0120     0.0738
+    0.00401    0.00013    0.00413     166.08     0.0120     0.0738
+    0.00401    0.00013    0.00413     166.08     0.0120     0.0738
+    0.00401    0.00013    0.00413     166.08     0.0120     0.0738
+Average                               166.08
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00032 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00399    0.00013    0.00412     166.73     0.0120     0.0735
+    0.00399    0.00013    0.00412     166.73     0.0120     0.0735
+    0.00399    0.00013    0.00412     166.73     0.0120     0.0735
+    0.00399    0.00013    0.00412     166.73     0.0120     0.0735
+    0.00399    0.00013    0.00412     166.74     0.0120     0.0735
+Average                               166.73
+
+##########################################
+
+From File /proc/cpuinfo
+processor       : 0
+BogoMIPS        : 48.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+processor       : 1
+BogoMIPS        : 48.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+processor       : 2
+BogoMIPS        : 48.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+processor       : 3
+BogoMIPS        : 48.00
+Features        : fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+
+
+From File /proc/version
+Linux version 4.14.44-sunxi64 (root@nightly) (gcc version 7.2.1 20171011 (Linaro GCC 7.2-2017.11)) #170 SMP Sun May 27 14:31:17 UTC 2018
+
+
+Unrolled Double  Precision      166.08 Mflops
+
+
+Type additional information to include in linpack.txt - Press Enter
