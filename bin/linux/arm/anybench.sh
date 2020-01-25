@@ -1,6 +1,6 @@
 #! /bin/sh
 echo "Benchmarking dhrystone_arm_armv6"
-./dhrystone_arm_armv6 n  > dhrystone_arm_armv6-8c_ffast.txt  
+./dhrystone_arm_armv6 n  > dhrystone_arm_armv6.txt  
 echo "Benchmarking dhrystone_arm_armv7"    
 ./dhrystone_arm_armv7 n > dhrystone_arm_armv7.txt 
 echo "Benchmarking dhrystone_arm_armv7_neon"    
