@@ -1,0 +1,75 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    clang optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.01 seconds 
+     1000000 runs   0.06 seconds 
+     2000000 runs   0.11 seconds 
+     4000000 runs   0.22 seconds 
+     8000000 runs   0.43 seconds 
+    16000000 runs   0.87 seconds 
+    32000000 runs   1.73 seconds 
+    64000000 runs   3.45 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    64000010
+Ptr_Glob->              Ptr_Comp:       *    13272208
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    13272208 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 18
+model		: 1
+model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
+stepping	: 0
+microcode	: 0x3000027
+cpu MHz		: 1196.544
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
+bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
+bogomips	: 5200.02
+TLB size	: 1536 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: ts ttp tm stc 100mhzsteps hwpstate
+
+procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+
+
+From File /proc/version
+Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+
+
+Nanoseconds one Dhrystone run:        53.91
+Dhrystones per Second:             18548503
+VAX  MIPS rating =                 10556.92
+
+Type additional information to include in Dhry.txt - Press Enter

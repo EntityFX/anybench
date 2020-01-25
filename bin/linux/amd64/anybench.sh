@@ -1,6 +1,6 @@
 #! /bin/sh
 echo "Benchmarking dhrystone_amd64_fast"
-./dhrystone_amd64_fast n  > dhrystone_amd64_fast-8c_ffast.txt  
+./dhrystone_amd64_fast n  > dhrystone_amd64_fast_ffast.txt  
 echo "Benchmarking dhrystone_amd64"    
 ./dhrystone_amd64 n > dhrystone_amd64.txt 
 
