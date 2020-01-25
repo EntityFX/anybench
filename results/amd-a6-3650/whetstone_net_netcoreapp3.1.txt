@@ -1,0 +1,30 @@
+Double Precision C/C++ Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0,01 Seconds          1   Passes (x 100)
+       0,03 Seconds          5   Passes (x 100)
+       0,16 Seconds         25   Passes (x 100)
+       0,69 Seconds        125   Passes (x 100)
+       3,39 Seconds        625   Passes (x 100)
+
+Use 18418  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1,12475013732910156      670,962               0,527
+N2 floating point     -1,12274742126464844      562,311               4,402
+N3 if then else        1,00000000000000000                 739,702    2,577
+N4 fixed point        12,00000000000000000                1109,747    5,228
+N5 sin,cos etc.        0,49911010265350342                  71,768   21,352
+N6 floating point      0,99999982118606567      205,095              48,439
+N7 assignments         3,00000000000000000                 575,040    5,919
+N8 exp,sqrt etc.       0,75110864639282227                  54,581   12,553
+MWIPS                                           1823,615            100,997
