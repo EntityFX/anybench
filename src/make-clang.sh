@@ -24,3 +24,11 @@ echo "Make Lloops"
 
 clang lloops.c cpuidc.c -lm -lrt -o ../bin/linux/clang/lloops_clang -O3    -D options="\"clang optimized (ffast)\""
 
+
+echo "Make WhetstoneMP"
+
+clang mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/clang/whetstone_mp_clang -O3    -D options="\"clang optimized (ffast)\""
+
+echo "Make MPMFlops"
+
+clang mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/clang/mpmflops_mp_clang -O3    -D options="\"clang optimized (ffast)\""

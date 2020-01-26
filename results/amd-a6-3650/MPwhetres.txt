@@ -1,0 +1,220 @@
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones amd64 ffast optimized
+
+             Using 4 threads - Mon Jan 27 02:11:52 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   3378    823    823    623     74     75   2157   3698   1711
+      2   3058    743    647    579     66     70   1974   3140   1512
+      3   3088    652    632    564     73     64   1805   3577   1555
+      4   3086    653    575    613     65     72   2095   2771   1763
+
+ Total   12610   2871   2676   2379    278    280   8031  13187   6541
+
+ MWIPS   11682 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13214290142059326      MFLOPS 2   -1.13333344459533691
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:12:05 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones amd64 ffast optimized
+
+             Using 4 threads - Mon Jan 27 02:12:10 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   2834    541    546    605     74     51   2250   3849    551
+      2   2863    538    728    601     77     48   2029   3484    559
+      3   2792    503    774    567     73     52   1579   3271    556
+      4   2828    583    636    593     71     55   1982   2604    558
+
+ Total   11318   2165   2684   2367    294    206   7840  13208   2224
+
+ MWIPS   10646 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:12:23 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones clang optimized (ffast)
+
+             Using 4 threads - Mon Jan 27 02:13:09 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   3414    741    626    648     74     54  78674   3640  27350
+      2   3452    677    667    610     77     56 150287   3619  29076
+      3   3300    610    780    601     70     53  75204   3340  25603
+      4   3141    672    596    584     69     49  92469   3837  30084
+
+ Total   13307   2700   2669   2443    290    211 396634  14436 112113
+
+ MWIPS   12531 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:13:21 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones amd64 ffast optimized
+
+             Using 4 threads - Mon Jan 27 02:13:35 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   3414    854    762    638     80     72   2088   3808   1285
+      2   3100    740    564    566     74     66   2165   3525   1269
+      3   3172    732    697    545     73     75   2269   3185   1305
+      4   3075    667    651    554     73     65   2064   3507   1269
+
+ Total   12762   2993   2674   2303    299    278   8586  14024   5128
+
+ MWIPS   12113 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13214290142059326      MFLOPS 2   -1.13333344459533691
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:13:48 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones amd64 ffast optimized
+
+             Using 4 threads - Mon Jan 27 02:14:20 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   2897    558    707    639     74     54   2127   3614    465
+      2   2727    607    668    561     78     47   2144   3177    429
+      3   2672    628    563    556     72     51   1952   3651    442
+      4   2829    594    751    615     79     45   2281   3804    449
+
+ Total   11125   2386   2689   2372    303    197   8504  14246   1785
+
+ MWIPS   10391 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:14:34 2020
+

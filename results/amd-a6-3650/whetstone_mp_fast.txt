@@ -1,0 +1,61 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64
+
+##############################################
+
+ Multithreading Single Precision Whetstones amd64 ffast optimized
+
+             Using 4 threads - Mon Jan 27 02:13:35 2020
+
+ Calibrate
+    0.00692 Seconds          1   Passes (x 100)
+    0.02778 Seconds          5   Passes (x 100)
+    0.10684 Seconds         25   Passes (x 100)
+    0.50720 Seconds        125   Passes (x 100)
+
+ Use 2464  passes (x 100)
+
+ MFLOPS 1     854    740    732    667
+ MFLOPS 2     762    697    651    564
+ IFMOPS      3808   3525   3507   3185
+ FIXPMOPS    2269   2165   2088   2064
+ COSMOPS       80     74     73     73
+ MFLOPS 3     638    566    554    545
+ EQUMOPS     1305   1285   1269   1269
+ EXPMOPS       75     72     66     65
+ millisec    7216   7950   7767   8012
+ MWIPS       3414   3100   3172   3075
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   12762   2993   2674   2303    299    278   8586  14024   5128
+
+ MWIPS   12113 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13214290142059326      MFLOPS 2   -1.13333344459533691
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 02:13:48 2020
+
+               Results also in log file MPwhetres.txt
+
