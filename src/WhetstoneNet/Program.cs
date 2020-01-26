@@ -28,7 +28,7 @@ namespace WhetstoneNet
             string[] general = new string[8];
             int getinput = 1;
 
-            Console.WriteLine("{0} Precision C/C++ Whetstone Benchmark\n", "Double");
+            Console.WriteLine("{0} Precision C# Whetstone Benchmark\n", "Double");
 
             if (args.Length > 1)
             {
