@@ -49,3 +49,22 @@ echo "Benchmarking busspeed_e2k_elbrus-v4"
 echo "Benchmarking busspeed_e2k_elbrus-v3"
 ./busspeed_e2k_elbrus-v3 n > busspeed_e2k_elbrus-v3.txt
 
+
+echo "Benchmarking whetstone_mp_e2k_elbrus-v4" 
+./whetstone_mp_e2k_elbrus-8c_ffast > whetstone_mp_e2k_elbrus-8c_ffast.txt
+echo "Benchmarking whetstone_mp_e2k_elbrus-v3"
+./whetstone_mp_e2k_elbrus-8c > whetstone_mp_e2k_elbrus-8c.txt
+echo "Benchmarking whetstone_mp_e2k_elbrus-v4" 
+./whetstone_mp_e2k_elbrus-v4 > whetstone_mp_e2k_elbrus-v4.txt
+echo "Benchmarking whetstone_mp_e2k_elbrus-v3"
+./whetstone_mp_e2k_elbrus-v3 > whetstone_mp_e2k_elbrus-v3.txt
+
+
+echo "Benchmarking mpmflops_mp_e2k_elbrus-v4" 
+./mpmflops_mp_e2k_elbrus-8c_ffast > mpmflops_mp_e2k_elbrus-8c_ffast.txt
+echo "Benchmarking mpmflops_mp_e2k_elbrus-v3"
+./mpmflops_mp_e2k_elbrus-8c > mpmflops_mp_e2k_elbrus-8c.txt
+echo "Benchmarking mpmflops_mp_e2k_elbrus-v4" 
+./mpmflops_mp_e2k_elbrus-v4 > mpmflops_mp_e2k_elbrus-v4.txt
+echo "Benchmarking mpmflops_mp_e2k_elbrus-v3"
+./mpmflops_mp_e2k_elbrus-v3 > mpmflops_mp_e2k_elbrus-v3.txt
