@@ -37,14 +37,14 @@ chmod +x ../bin/linux/amd64/lloops_amd64
 
 echo "Make WhetstoneMP"
 
-cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_fast -Ofast    -D options="\"amd64 ffast optimized\""
+cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64_fast -Ofast    -D options="\"amd64 ffast optimized\""
 chmod +x ../bin/linux/amd64/whetstone_mp_fast
-cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp -O2    -D options="\"amd64 ffast optimized\""
+cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64 -O2    -D options="\"amd64 ffast optimized\""
 chmod +x ../bin/linux/amd64/whetstone_mp
 
 echo "Make MPMFlops"
 
-cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp_fast -Ofast    -D options="\"amd64 ffast optimized\""
+cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp_amd64_fast -Ofast    -D options="\"amd64 ffast optimized\""
 chmod +x ../bin/linux/amd64/mpmflops_mp_fast
-cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp -O2    -D options="\"amd64  optimized\""
+cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp_amd64 -O2    -D options="\"amd64  optimized\""
 chmod +x ../bin/linux/amd64/mpmflops_mp

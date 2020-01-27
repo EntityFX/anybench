@@ -22,4 +22,14 @@ echo "Benchmarking memspeed_amd64"
 echo "Benchmarking lloops_amd64_fast"  
 ./lloops_amd64_fast n > lloops_amd64_fast.txt  
 echo "Benchmarking lloops_amd64"   
-./lloops_amd64  n      > lloops_amd64.txt        
+./lloops_amd64  n      > lloops_amd64.txt   
+
+echo "Benchmarking whetstone_mp_amd64_fast"    
+./whetstone_mp_amd64_fast n  > whetstone_mp_amd64_fast.txt
+echo "Benchmarking whetstone_mp_amd64"    
+./whetstone_mp_amd64 n > whetstone_mp_amd64.txt
+
+echo "Benchmarking mpmflops_mp_amd64_fast"  
+./mpmflops_mp_amd64_fast n > mpmflops_mp_amd64_fast.txt  
+echo "Benchmarking mpmflops_mp_amd64"   
+./mpmflops_mp_amd64  n      > mpmflops_mp_amd64.txt   
