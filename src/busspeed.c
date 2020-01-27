@@ -123,8 +123,8 @@ int main(int argc, char *argv[])
 
     char moredata[1024];
     printf("\n Type additional information to include in busSpeed.txt - Press Enter\n");
-    if (fgets (moredata, sizeof(moredata), stdin) != NULL)
-             fprintf (outfile, "Additional information - %s\n", moredata);
+    /*if (fgets (moredata, sizeof(moredata), stdin) != NULL)
+             fprintf (outfile, "Additional information - %s\n", moredata);*/
 
     fflush(outfile);
     fclose(outfile);

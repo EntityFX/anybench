@@ -55,10 +55,10 @@ echo "Benchmarking lloops_e2k_elbrus-v3"
 echo "Benchmarking lloops_e2k_elbrus-v5"    
 ./lloops_e2k_elbrus-v5 n  > lloops_e2k_elbrus-v5.txt 
 
-echo "Benchmarking busspeed_e2k_elbrus-v4" 
-./busspeed_e2k_elbrus-v4 n > busspeed_e2k_elbrus-v4.txt
-echo "Benchmarking busspeed_e2k_elbrus-v3"
-./busspeed_e2k_elbrus-v3 n > busspeed_e2k_elbrus-v3.txt
+#echo "Benchmarking busspeed_e2k_elbrus-v4" 
+#./busspeed_e2k_elbrus-v4 n > busspeed_e2k_elbrus-v4.txt
+#echo "Benchmarking busspeed_e2k_elbrus-v3"
+#./busspeed_e2k_elbrus-v3 n > busspeed_e2k_elbrus-v3.txt
 
 
 echo "Benchmarking whetstone_mp_e2k_elbrus-v4" 
