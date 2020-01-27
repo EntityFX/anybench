@@ -1,0 +1,88 @@
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size  0.97 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-opc2, 4.14.44-sunxi64 
+  #170 SMP Sun May 27 14:31:17 UTC 2018, aarch64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones armv8  optimized 
+
+             Using 4 threads - Mon Jan 27 13:22:20 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    949    323    323    275     20     12    783   1149    493
+      2    949    323    323    276     20     12    784   1150    493
+      3    950    323    323    276     20     12    784   1149    493
+      4    950    322    323    276     20     12    783   1150    493
+
+ Total    3798   1290   1291   1103     79     49   3135   4598   1972
+
+ MWIPS    3795 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 13:22:30 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size  0.97 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-opc2, 4.14.44-sunxi64 
+  #170 SMP Sun May 27 14:31:17 UTC 2018, aarch64 
+
+ 4 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones armv8  optimized 
+
+             Using 4 threads - Mon Jan 27 13:26:19 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    950    323    323    276     20     12    784   1150    493
+      2    950    323    323    276     20     12    784   1148    493
+      3    950    323    323    276     20     12    784   1150    493
+      4    950    323    323    276     20     12    784   1150    493
+
+ Total    3799   1291   1291   1104     79     49   3136   4599   1972
+
+ MWIPS    3798 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Mon Jan 27 13:26:30 2020
+

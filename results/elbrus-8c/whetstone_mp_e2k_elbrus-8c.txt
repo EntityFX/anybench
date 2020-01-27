@@ -17,32 +17,32 @@
 
  Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
 
-             Using 8 threads - Mon Jan 27 02:46:59 2020
+             Using 8 threads - Mon Jan 27 13:25:33 2020
 
  Calibrate
-    0.04399 Seconds          1   Passes (x 100)
+    0.14752 Seconds          1   Passes (x 100)
     0.14538 Seconds          5   Passes (x 100)
-    0.38225 Seconds         25   Passes (x 100)
+    0.39768 Seconds         25   Passes (x 100)
 
- Use 654  passes (x 100)
+ Use 628  passes (x 100)
 
- MFLOPS 1     324    323    316    316    316    315    305    298
- MFLOPS 2     322    314    314    314    314    314    313    312
- IFMOPS      1297   1293   1264   1264   1264   1264   1264   1264
- FIXPMOPS     743    728    727    727    727    727    727    727
+ MFLOPS 1     320    320    320    320    320    320    320    320
+ MFLOPS 2     316    316    316    316    316    316    316    316
+ IFMOPS      1255   1255   1255   1255   1255   1255   1254   1104
+ FIXPMOPS     738    738    738    738    738    738    732    711
  COSMOPS       44     44     44     44     44     44     44     43
- MFLOPS 3     324    322    322    322    322    322    316    314
- EQUMOPS      298    298    298    298    298    298    295    294
+ MFLOPS 3     324    324    321    321    321    321    321    318
+ EQUMOPS      298    298    298    298    298    298    297    291
  EXPMOPS       27     27     27     27     27     27     27     26
- millisec    4300   4302   4302   4330   4309   4304   4325   4355
- MWIPS       1521   1520   1520   1510   1518   1520   1512   1502
+ millisec    4125   4122   4134   4131   4172   4132   4132   4162
+ MWIPS       1523   1523   1519   1520   1505   1520   1520   1509
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
- Total   12123   2513   2515   2564    353    212   5835  10172   2379
+ Total   12140   2561   2526   2572    352    212   5872   9888   2378
 
- MWIPS   11871 Based on time for last thread to finish
+ MWIPS   11957 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -54,7 +54,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 02:47:08 2020
+               End of test Mon Jan 27 13:25:42 2020
 
                Results also in log file MPwhetres.txt
 

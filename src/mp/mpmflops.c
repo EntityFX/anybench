@@ -386,7 +386,7 @@ taskset 0x00000001 ./MPmflops64
 
     fclose (outfile);
     printf("\n Press Enter\n");
-    g  = getchar();
+    //g  = getchar();
     return 0;
  }
 

@@ -17,44 +17,44 @@
 
  Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
 
-             Using 8 threads - Mon Jan 27 02:47:08 2020
+             Using 8 threads - Mon Jan 27 13:25:42 2020
 
  Calibrate
-    0.08451 Seconds          1   Passes (x 100)
-    0.13535 Seconds          5   Passes (x 100)
-    0.40762 Seconds         25   Passes (x 100)
+    0.07749 Seconds          1   Passes (x 100)
+    0.16536 Seconds          5   Passes (x 100)
+    0.36764 Seconds         25   Passes (x 100)
 
- Use 613  passes (x 100)
+ Use 680  passes (x 100)
 
- MFLOPS 1     320    320    320    320    320    320    275    269
- MFLOPS 2     324    316    316    316    316    316    293    293
- IFMOPS      1292   1269   1269   1269   1269   1269   1269   1220
- FIXPMOPS     734    734    734    734    733    733    733    733
- COSMOPS       44     44     44     44     44     44     44     43
- MFLOPS 3     323    323    323    323    323    323    320    313
- EQUMOPS      298    298    298    298    298    298    297    294
- EXPMOPS       27     27     27     27     26     26     26     26
- millisec    4022   4028   4022   4055   4052   4047   4043   4141
- MWIPS       1524   1522   1524   1512   1513   1515   1516   1480
+ MFLOPS 1     323    320    320    320    320    320    320    316
+ MFLOPS 2     323    323    312    312    312    312    311    292
+ IFMOPS      1261   1260   1260   1260   1260   1260   1260   1257
+ FIXPMOPS     730    730    729    729    729    729    721    661
+ COSMOPS       44     44     44     44     44     44     44     44
+ MFLOPS 3     323    323    323    323    323    323    323    314
+ EQUMOPS      298    298    298    298    298    298    297    292
+ EXPMOPS       26     26     26     26     26     26     26     26
+ millisec    4496   4498   4478   4494   4473   4484   4525   4474
+ MWIPS       1512   1512   1518   1513   1520   1516   1503   1520
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
- Total   12106   2463   2490   2571    352    211   5868  10125   2379
+ Total   12115   2561   2498   2572    354    211   5758  10079   2378
 
- MWIPS   11796 Based on time for last thread to finish
+ MWIPS   11829 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 02:47:17 2020
+               End of test Mon Jan 27 13:25:51 2020
 
                Results also in log file MPwhetres.txt
 

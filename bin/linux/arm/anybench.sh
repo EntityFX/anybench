@@ -37,3 +37,14 @@ echo "Benchmarking lloops_arm_armv7"
 ./lloops_arm_armv7  n      > lloops_arm_armv7_neon.txt        
 echo "Benchmarking lloops_arm_armv7_neon"   
 ./lloops_arm_armv7_neon  n      > lloops_arm_armv7_neon.txt  
+
+
+echo "Benchmarking whetstone_mp_arm_armv7"    
+./whetstone_mp_arm_armv7 n > whetstone_mp_arm_armv7.txt
+echo "Benchmarking whetstone_mp_arm_armv7_neon"    
+./whetstone_mp_arm_armv8 n > whetstone_mp_arm_armv8.txt
+
+echo "Benchmarking mpmflops_mp_arm_armv7"    
+./mpmflops_mp_arm_armv7 n > mpmflops_mp_arm_armv7.txt
+echo "Benchmarking mpmflops_mp_arm_armv8"    
+./mpmflops_mp_arm_armv8 n > mpmflops_mp_arm_armv8.txt
