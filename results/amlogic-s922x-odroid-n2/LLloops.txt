@@ -1,0 +1,76 @@
+ #####################################################
+
+ Livermore Loops Benchmark clang optimized (ffast) via C/C++ Thu Jan 16 21:10:17 2020
+
+ MFLOPS for 24 loops
+  641.5  816.9  797.4  779.0  211.6  667.0 1472.4 1644.3  752.7  437.6  449.4  299.2
+  325.2  399.9  933.0  730.9  847.4 1122.1  317.5  648.1  737.2  293.3  812.6  325.1
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+  1644.4   680.1   595.3   519.2   211.6
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 4
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 5
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architeLinux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+ 
+
+From File /proc/version
+Linux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+ 
+

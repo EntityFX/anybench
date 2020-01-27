@@ -1,0 +1,83 @@
+ #####################################################
+
+     Memory Reading Speed Test clang optimized (ffast) by Roy Longbottom
+
+               Start of test Thu Jan 16 21:10:01 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   11375   8352   9633  13050  10353   9741  10779   7555   8316
+      16   12219   8452   9778  13162   9876   9771  10832   8261   7097
+      32   11753   8472   9779  13260   9907   9816  10474   8243   6669
+      64    9267   7961   8468   9324   9047   9012   9573   8090   6884
+     128    8518   8215   8465   8527   8478   8700   9467   7521   6948
+     256    8456   8200   8413   8460   8459   8644   9481   7236   7091
+     512    8462   8214   8416   8465   8463   8644   9502   7260   7045
+    1024    7122   6939   7130   7164   7118   7279   6928   6152   6178
+    2048    4011   3744   3487   3904   3863   3902   4199   4091   4076
+    4096    4059   3814   3566   3961   3956   3910   3792   3710   3695
+    8192    4028   3888   3824   3997   3966   3948   3673   3582   3578
+
+                End of test Thu Jan 16 21:10:17 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 4
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 5
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architeLinux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+ 
+
+From File /proc/version
+Linux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+ 
+

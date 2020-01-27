@@ -1,0 +1,46 @@
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 6, Configured CPUs 6 
+  get_phys_pages() and size - RAM Size  1.82 GB, Page Size 4096 Bytes 
+  uname() - Linux, odroid, 4.9.210-66 
+  #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020, aarch64 
+
+ 6 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones armv8  optimized 
+
+             Using 6 threads - Thu Jan 16 21:22:03 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1976    541    502    419     51     31   1462   1971    504
+      2   2047    542    534    420     51     31   1486   2511    804
+      3   1978    524    533    422     51     31   1273   1978    506
+      4   2043    551    549    451     52     31   1578   2554    504
+      5   1679    537    536    422     39     23   1567   2557    501
+      6   1735    528    528    451     39     23   1339   2608    806
+
+ Total   11458   3222   3183   2585    283    169   8706  14179   3625
+
+ MWIPS    9931 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 5 threads were same as above
+
+               End of test Thu Jan 16 21:22:14 2020
+

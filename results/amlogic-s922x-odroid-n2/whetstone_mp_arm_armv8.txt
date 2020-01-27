@@ -1,0 +1,60 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 6, Configured CPUs 6
+  get_phys_pages() and size - RAM Size  1.82 GB, Page Size 4096 Bytes
+  uname() - Linux, odroid, 4.9.210-66
+  #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020, aarch64
+
+##############################################
+
+ Multithreading Single Precision Whetstones armv8  optimized 
+
+             Using 6 threads - Thu Jan 16 21:22:03 2020
+
+ Calibrate
+    0.00966 Seconds          1   Passes (x 100)
+    0.04502 Seconds          5   Passes (x 100)
+    0.21615 Seconds         25   Passes (x 100)
+
+ Use 1156  passes (x 100)
+
+ MFLOPS 1     551    542    541    537    528    524
+ MFLOPS 2     549    536    534    533    528    502
+ IFMOPS      2608   2557   2554   2511   1978   1971
+ FIXPMOPS    1578   1567   1486   1462   1339   1273
+ COSMOPS       52     51     51     51     39     39
+ MFLOPS 3     451    451    422    422    420    419
+ EQUMOPS      806    804    506    504    504    501
+ EXPMOPS       31     31     31     31     23     23
+ millisec    5851   5648   5843   5659   6884   6663
+ MWIPS       1976   2047   1978   2043   1679   1735
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   11458   3222   3183   2585    283    169   8706  14179   3625
+
+ MWIPS    9931 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 5 threads were same as above
+
+               End of test Thu Jan 16 21:22:14 2020
+
+               Results also in log file MPwhetres.txt
+

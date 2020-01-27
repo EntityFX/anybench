@@ -1,0 +1,47 @@
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 6, Configured CPUs 6 
+  get_phys_pages() and size - RAM Size  1.82 GB, Page Size 4096 Bytes 
+  uname() - Linux, odroid, 4.9.210-66 
+  #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020, aarch64 
+
+ 6 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 6 Threads, Thu Jan 16 21:22:14 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    15000   0.311578     9859    See later   No
+ Data in & out    1024000     2     1500   2.259641     1360    See later   No
+ Data in & out   10240000     2      150   2.313401     1328    See later   No
+
+ Data in & out     102400     8    15000   0.519419    23657    See later   No
+ Data in & out    1024000     8     1500   2.276414     5398    See later   No
+ Data in & out   10240000     8      150   2.310721     5318    See later   No
+
+ Data in & out     102400    32    15000   2.296039    21407    See later   No
+ Data in & out    1024000    32     1500   2.684286    18311    See later   No
+ Data in & out   10240000    32      150   2.715327    18102    See later   No
+
+ First Unexpected Results
+ Data in & out     102400     2    15000 word    102396 was   0.999999 not   0.683620
+ Data in & out     102400     2    15000 word    102397 was   0.999999 not   0.683620
+ Data in & out     102400     2    15000 word    102398 was   0.999999 not   0.683620
+ Data in & out     102400     2    15000 word    102399 was   0.999999 not   0.683620
+ Data in & out    1024000     2     1500 word   1023996 was   0.999999 not   0.956670
+ Data in & out    1024000     2     1500 word   1023997 was   0.999999 not   0.956670
+ Data in & out    1024000     2     1500 word   1023998 was   0.999999 not   0.956670
+ Data in & out    1024000     2     1500 word   1023999 was   0.999999 not   0.956670
+ Data in & out   10240000     2      150 word  10239996 was   0.999999 not   0.995518
+ Data in & out   10240000     2      150 word  10239997 was   0.999999 not   0.995518
+
+               End of test Thu Jan 16 21:22:32 2020
+
