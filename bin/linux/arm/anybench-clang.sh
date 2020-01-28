@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 echo "Benchmarking dhrystone_armv7_clang"    
 ./dhrystone_armv7_clang n > dhrystone_armv7_clang.txt 

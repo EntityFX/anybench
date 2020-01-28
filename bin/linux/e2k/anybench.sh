@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 echo "Benchmarking dhrystone_e2k_elbrus-8c_ffast"
 ./dhrystone_e2k_elbrus-8c_ffast n  > dhrystone_e2k_elbrus-8c_ffast.txt  
 echo "Benchmarking dhrystone_e2k_elbrus-8c"    

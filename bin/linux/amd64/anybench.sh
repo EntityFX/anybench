@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 echo "Benchmarking dhrystone_amd64_fast"
 ./dhrystone_amd64_fast n  > dhrystone_amd64_fast_ffast.txt  
 echo "Benchmarking dhrystone_amd64"    

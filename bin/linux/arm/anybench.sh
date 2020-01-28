@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 echo "Benchmarking dhrystone_arm_armv6"
 ./dhrystone_arm_armv6 n  > dhrystone_arm_armv6.txt  
 echo "Benchmarking dhrystone_arm_armv7"    

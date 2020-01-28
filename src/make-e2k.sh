@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 echo "Make Dhrystone v 2.1"
 

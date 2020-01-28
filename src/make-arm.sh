@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 echo "Make Dhrystone v 2.1"
 cc  dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm_armv6 -march=armv6 -O3 -D options="\"armv6 optimized\"" 
