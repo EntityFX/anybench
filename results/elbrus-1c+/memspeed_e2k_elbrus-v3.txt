@@ -1,0 +1,44 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 985
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1969.87
+
+
+
+From File /proc/version
+Linux version 4.9.0-0-23105-e1cp (root@antares-4) (lcc:1.23.21:Dec--9-2019:e2k-v2-linux.cross:x86_64-linux) #1 Thu Jan 23 00:25:33 MSK 2020
+
+
+   Memory Reading Speed Test e2k elbrus-v3 optimized (ffast) Wed Jan 29 03:31:49 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2049  12551   6691   2404   5180   6886   1321   4413   4209
+      16    2042  13327   7238   2327   5712   7494   1286   4725   4968
+      32    2189  15321   7238   2472   5228   7453   1276   3653   5081
+      64    1988  13890   7551   2366   5607   7455   1343   3172   4224
+     128    1634  15044   7259   1718   5508   7514   1182   4988   5614
+     256    1398  15834   7303   1945   5524   7298   1396   5041   5003
+     512    1623  15950   7902   1717   5957   7406   1125   4966   5096
+    1024    1101  12662   6084   1287   4198   5894    987   3741   3958
+    2048     509   6026   2265    490   1757   2246    377   1374   1608
+    4096     309   2839   1110    297    872   1019    181    626    594
+    8192     274   2579   1005    269    770    960    177    505    538
+
+                End of test Wed Jan 29 03:32:08 2020
+

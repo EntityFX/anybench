@@ -1,0 +1,83 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1601.06
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+processor	: 2
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+processor	: 3
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+
+
+From File /proc/version
+Linux version 4.9.0-3.8-e2s (root@fitting2) (lcc:1.23.18:Apr-13-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Wed Jun 26 13:42:47 UTC 2019
+
+
+   Memory Reading Speed Test e2k elbrus-v3 optimized (ffast) Wed Jan 29 04:08:09 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    3401   4818  11469   4119   9454  12315   2080   7698   7690
+      16    4155   4978  12079   4177  10030  13064   2090   8333   8351
+      32    4178   5043  12412   4197  10238  13665   1914   8703   8711
+      64    4160   4992  12592   4159  10301  13958   2098   8218   8908
+     128    2531   5093  12674   2540  10456  14136   2098   8978   8981
+     256    2528   5079  12718   2538  10496  14132   1249   9071   9031
+     512    2101   3680  10626   2119   8226  11052   1100   6974   6907
+    1024    1467   2062   7549   1444   4952   6627    890   4950   4956
+    2048     753    949   4126    770   2495   3386    503   2239   2240
+    4096     571    746   3296    634   2026   2699    358   1460   1452
+    8192     628    750   3358    633   1988   2753    349   1461   1459
+
+                End of test Wed Jan 29 04:08:26 2020
+

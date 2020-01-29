@@ -1,0 +1,51 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v4 optimized (ffast), Wed Jan 29 03:32:41 2020
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.45 Seconds         25   Passes (x 100)
+       2.26 Seconds        125   Passes (x 100)
+
+Use 552  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 985
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1969.87
+
+
+
+From File /proc/version
+Linux version 4.9.0-0-23105-e1cp (root@antares-4) (lcc:1.23.21:Dec--9-2019:e2k-v2-linux.cross:x86_64-linux) #1 Thu Jan 23 00:25:33 MSK 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       113.929              0.093
+N2 floating point     -1.12274742126464844       114.218              0.650
+N3 if then else        1.00000000000000000                 507.639    0.113
+N4 fixed point        12.00000000000000000                 213.781    0.813
+N5 sin,cos etc.        0.49911010265350342                  17.239    2.664
+N6 floating point      0.99999982118606567       122.002              2.441
+N7 assignments         3.00000000000000000                  85.521    1.193
+N8 exp,sqrt etc.       0.75110864639282227                  10.534    1.949
+
+MWIPS                                            556.719              9.915
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

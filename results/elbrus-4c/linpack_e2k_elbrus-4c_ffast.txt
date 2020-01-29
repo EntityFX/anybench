@@ -1,0 +1,70 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation e2k elbrus-v3 optimized (ffast)
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1601.06
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+processor	: 2
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+processor	: 3
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 1
+cpu MHz		: 799.994305
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1600.01
+
+
+
+From File /proc/version
+Linux version 4.9.0-3.8-e2s (root@fitting2) (lcc:1.23.18:Apr-13-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Wed Jun 26 13:42:47 UTC 2019
+
+
