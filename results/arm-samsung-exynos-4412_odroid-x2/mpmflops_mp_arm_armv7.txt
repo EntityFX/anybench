@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  1.98 GB, Page Size 4096 Bytes
+  uname() - Linux, odroid, 3.8.13.30
+  #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016, armv7l
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Sun Feb 14 16:55:11 2016
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   2.294490      893    0.764063   Yes
+ Data in & out    1024000     2     1000   3.423547      598    0.970753   Yes
+ Data in & out   10240000     2      100   3.303025      620    0.997008   Yes
+
+ Data in & out     102400     8    10000   3.943736     2077    0.850923   Yes
+ Data in & out    1024000     8     1000   4.121854     1987    0.982342   Yes
+ Data in & out   10240000     8      100   4.065711     2015    0.998200   Yes
+
+ Data in & out     102400    32    10000  10.002853     3276    0.660143   Yes
+ Data in & out    1024000    32     1000  10.144689     3230    0.953631   Yes
+ Data in & out   10240000    32      100  10.162804     3224    0.995203   Yes
+
+               End of test Sun Feb 14 16:56:03 2016
+
+ Press Enter
