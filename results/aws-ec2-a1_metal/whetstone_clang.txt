@@ -1,0 +1,87 @@
+##########################################
+Single Precision C Whetstone Benchmark clang optimized (ffast), Wed Jan 29 15:23:08 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.09 Seconds         25   Passes (x 100)
+       0.44 Seconds        125   Passes (x 100)
+       2.20 Seconds        625   Passes (x 100)
+
+Use 2840  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 2
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 3
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 4
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 5
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc3Linux version 4.14.154-128.181.amzn2.aarch64 (mockbuild@ip-10-0-1-9) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC)) #1 SMP Sat Nov 16 21:45:54 UTC 2019
+
+
+From File /proc/version
+Linux version 4.14.154-128.181.amzn2.aarch64 (mockbuild@ip-10-0-1-9) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC)) #1 SMP Sat Nov 16 21:45:54 UTC 2019
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       750.115              0.073
+N2 floating point     -1.12274742126464844       698.474              0.546
+N3 if then else        1.00000000000000000                2758.724    0.107
+N4 fixed point        12.00000000000000000                3832.379    0.233
+N5 sin,cos etc.        0.49911010265350342                  69.368    3.406
+N6 floating point      0.99999982118606567       584.714              2.620
+N7 assignments         3.00000000000000000                1532.946    0.342
+N8 exp,sqrt etc.       0.75110864639282227                  40.156    2.631
+
+MWIPS                                           2851.797              9.959
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter

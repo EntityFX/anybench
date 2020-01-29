@@ -1,0 +1,78 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 2
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 3
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 4
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 5
+BogoMIPS	: 166.66
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc3Linux version 4.14.154-128.181.amzn2.aarch64 (mockbuild@ip-10-0-1-9) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC)) #1 SMP Sat Nov 16 21:45:54 UTC 2019
+
+
+From File /proc/version
+Linux version 4.14.154-128.181.amzn2.aarch64 (mockbuild@ip-10-0-1-9) (gcc version 7.3.1 20180712 (Red Hat 7.3.1-6) (GCC)) #1 SMP Sat Nov 16 21:45:54 UTC 2019
+
+
+   Memory Reading Speed Test clang optimized (ffast) Wed Jan 29 15:24:36 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   16907   9701  10751  19111  10375  10297  14372  14107  14107
+      16   17107   9753  10830  19371  10433  10428  14553  14567  14568
+      32   15328   9178   9939  16565   9174   9163  14587  14574  14592
+      64   16180   9455  10425  17035   9714   9744  12517  12445  12373
+     128   16691   9630  10679  17204  10053  10087  11900  11975  11976
+     256   16697   9648  10689  17159  10000  10129  11671  11779  11780
+     512   16736   9661  10711  17123  10017  10142  11737  11852  11852
+    1024   16531   9649  10692  17148  10034  10129  11748  11836  11836
+    2048   10802   8016   8597  11011   8239   8248   9751   9908  10048
+    4096    8228   7663   7884   8237   7766   7781   6227   6310   6297
+    8192    7977   7481   7648   7995   7547   7555   4328   4372   4375
+
+                End of test Wed Jan 29 15:24:52 2020
