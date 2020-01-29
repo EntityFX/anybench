@@ -1,0 +1,105 @@
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
+  uname() - Linux, RU1202197828, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 8 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Wed Jan 29 15:19:04 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.094576    43309    0.620974   Yes
+ Data in & out    1024000     2     2000   0.116429    35180    0.942935   Yes
+ Data in & out   10240000     2      200   0.919594     4454    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.195924    83624    0.750017   Yes
+ Data in & out    1024000     8     2000   0.193812    84536    0.965350   Yes
+ Data in & out   10240000     8      200   0.928644    17643    0.996409   Yes
+
+ Data in & out     102400    32    20000   0.799843    81936    0.497976   Yes
+ Data in & out    1024000    32     2000   0.793354    82606    0.910527   Yes
+ Data in & out   10240000    32      200   0.956184    68539    0.990462   Yes
+
+               End of test Wed Jan 29 15:19:09 2020
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Thu Jan 30 01:43:37 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   0.462098     4432    0.764063   Yes
+ Data in & out    1024000     2     1000   0.619849     3304    0.970753   Yes
+ Data in & out   10240000     2      100   1.041117     1967    0.997008   Yes
+
+ Data in & out     102400     8    10000   0.696700    11758    0.850923   Yes
+ Data in & out    1024000     8     1000   0.741448    11049    0.982342   Yes
+ Data in & out   10240000     8      100   1.148604     7132    0.998200   Yes
+
+ Data in & out     102400    32    10000   3.051450    10739    0.660143   Yes
+ Data in & out    1024000    32     1000   2.822634    11609    0.953631   Yes
+ Data in & out   10240000    32      100   2.837097    11550    0.995203   Yes
+
+               End of test Thu Jan 30 01:43:50 2020
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 4, Configured CPUs 4 
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes 
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic 
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+
+ 4 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Thu Jan 30 01:44:51 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   0.127423    16072    0.764063   Yes
+ Data in & out    1024000     2     1000   0.420125     4875    0.970753   Yes
+ Data in & out   10240000     2      100   0.940689     2177    0.997008   Yes
+
+ Data in & out     102400     8    10000   0.261906    31278    0.850923   Yes
+ Data in & out    1024000     8     1000   0.433605    18893    0.982342   Yes
+ Data in & out   10240000     8      100   0.946632     8654    0.998200   Yes
+
+ Data in & out     102400    32    10000   0.838224    39092    0.660143   Yes
+ Data in & out    1024000    32     1000   0.901924    36331    0.953631   Yes
+ Data in & out   10240000    32      100   1.163195    28171    0.995203   Yes
+
+               End of test Thu Jan 30 01:44:57 2020
+
