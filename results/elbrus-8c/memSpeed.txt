@@ -1,26 +1,26 @@
  #####################################################
 
-     Memory Reading Speed Test vfpv4 32 Bit Version 1 by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
 
-               Start of test Thu Jan 23 19:25:01 2020
+               Start of test Thu Jan 30 16:24:38 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    5353  33402  19197   6300  34579  34398   3402  17661  17665
-      16    5452  37031  19956   6346  37814  37634   3433  19096  19092
-      32    5495  39155  20357   6369  39547  39499   3448  19890  19900
-      64    5515  40301  20563   6378  40552  40494   3455  20327  20327
-     128    5350  40906  20665   6376  41032  41017   3458  20550  20548
-     256    5348  41236  20723   6372  41290  41257   3454  20660  20662
-     512    3368  31174  20715   3706  31176  31170   2787  17802  17801
-    1024    2744  24384  20742   2965  24393  24368   2172  14477  14468
-    2048    2732  23879  20760   2945  23864  23815   2151  14164  14162
-    4096    2567  24224  20766   2955  24229  24221   2216  14266  14266
-    8192    2520  24048  20649   2949  24072  24090   2221  13955  13959
+       8   34053  31010  17817  34973  31572  31861  17787  16384  16385
+      16   37431  35512  19174  37978  35882  36063  19166  18319  18313
+      32   39382  38279  19948  39683  38507  38616  19934  19472  19469
+      64   40431  39858  20344  40581  39972  40027  20348  20101  20101
+     128   40983  40683  20563  41064  40744  40777  20560  20422  20432
+     256   37564  37454  20550  37657  37449  37699  20040  19947  19939
+     512   28907  29057  20240  29057  28928  29532  17617  17517  17519
+    1024   24414  24377  19374  24754  24444  25438  14787  14741  14743
+    2048   24000  23947  19247  24323  24035  25089  14474  14436  14438
+    4096   24080  24283  19396  24362  24369  25250  14645  14607  14615
+    8192   23821  24004  17868  23986  24009  24503  14378  14300  14311
 
-                End of test Thu Jan 23 19:25:16 2020
+                End of test Thu Jan 30 16:24:55 2020
 
 SYSTEM INFORMATION
 
@@ -83,384 +83,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
-
- #####################################################
-
-     Memory Reading Speed Test vfpv4 32 Bit Version 1 by Roy Longbottom
-
-               Start of test Thu Jan 23 19:25:49 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    5355  33402  19199   6300  34691  34397   3404  17667  17665
-      16    5452  37032  19956   6346  37788  37631   3432  19089  19086
-      32    5496  39161  20355   6368  39560  39498   3448  19899  19900
-      64    5513  40305  20559   6380  40549  40468   3454  20317  20327
-     128    5350  40917  20670   6377  41040  41018   3458  20549  20548
-     256    4748  38456  20710   5523  38362  38438   3276  20225  20248
-     512    3127  28752  20714   3383  28772  28711   2454  17167  17168
-    1024    2764  24538  20749   2972  24540  24519   2208  14584  14582
-    2048    2720  23999  20752   2941  23999  23967   2151  14172  14180
-    4096    2565  24301  20766   2954  24312  24319   2218  14272  14271
-    8192    2500  24085  20639   2948  24090  24083   2223  13978  13976
-
-                End of test Thu Jan 23 19:26:05 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - 
-
- #####################################################
-
-     Memory Reading Speed Test vfpv4 32 Bit Version 1 by Roy Longbottom
-
-               Start of test Fri Jan 24 19:07:00 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    6715  33402  19200   6750  34715  34398   3392  17665  17666
-      16    6792  37017  19958   6802  37768  37638   3409  19094  19095
-      32    6836  39159  20358   6827  39567  39499   3418  19899  19889
-      64    6827  40322  20565   6819  40530  40485   3421  20326  20328
-     128    4128  40924  20670   4130  41015  40995   3418  20550  20549
-     256    3363  35629  20720   3422  35724  35609   1815  19817  19821
-     512    2684  28313  20729   2687  28298  28312   1563  16857  16857
-    1024    2401  24032  20743   2385  24039  24006   1321  14222  14223
-    2048    2400  23946  20760   2386  23954  23929   1314  14162  14162
-    4096    2421  24281  20768   2378  24279  24303   1345  14256  14263
-    8192    2417  24094  20637   2372  24068  24093   1348  14019  14019
-
-                End of test Fri Jan 24 19:07:16 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - 
-
- #####################################################
-
-     Memory Reading Speed Test vfpv4 32 Bit Version 1 by Roy Longbottom
-
-               Start of test Fri Jan 24 19:10:03 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    6715  33403  19199   6750  34617  34398   3392  17661  17665
-      16    6791  37034  19958   6801  37752  37633   3409  19091  19093
-      32    6833  39148  20352   6826  39551  39492   3417  19883  19899
-      64    6836  40321  20565   6825  40525  40496   3422  20329  20328
-     128    4129  40924  20666   4125  40994  41003   3415  20544  20348
-     256    3738  38449  20671   3769  38406  38402   1960  20281  20278
-     512    2746  29308  20675   2756  29277  29245   1585  17321  17319
-    1024    2384  24046  20741   2386  24063  24033   1324  14249  14241
-    2048    2395  24030  20759   2373  24020  24017   1318  14213  14212
-    4096    2402  24257  20765   2376  24264  24309   1177  14263  14260
-    8192    2412  23969  20630   2374  23970  24005   1343  13941  13938
-
-                End of test Fri Jan 24 19:10:19 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - [A
-
- #####################################################
-
-     Memory Reading Speed Test vfpv4 32 Bit Version 1 by Roy Longbottom
-
-               Start of test Fri Jan 24 19:10:50 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    6711  33388  19197   6750  34578  34397   3392  17665  17664
-      16    6792  37034  19957   6799  37720  37624   3409  19094  19096
-      32    6836  39160  20354   6826  39609  39494   3418  19898  19900
-      64    6835  40320  20565   6826  40539  40495   3422  20325  20328
-     128    4130  40924  20667   4130  41041  40989   3418  20550  20548
-     256    4128  41229  20717   4130  41283  41258   2074  20661  20660
-     512    2732  30031  20717   2737  30070  30014   1666  17649  17645
-    1024    2401  24252  20726   2391  24242  24233   1340  14361  14370
-    2048    2398  23970  20759   2389  23973  23945   1318  14156  14163
-    4096    2420  24274  20765   2378  24257  24306   1347  14266  14252
-    8192    2415  24027  20636   2374  24023  24046   1343  13996  13997
-
-                End of test Fri Jan 24 19:11:06 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - 
 
  #####################################################
 
      Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
 
-               Start of test Fri Jan 24 19:12:49 2020
+               Start of test Thu Jan 30 16:24:55 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    6713  33698  18710   6747  34680  34364   3427  17652  17658
-      16    6785  37250  19685   6799  37706  37622   3444  19086  19091
-      32    6835  39251  20207   6823  39569  39485   3448  19899  19900
-      64    6828  40360  20495   6815  40566  40496   3435  20327  20326
-     128    4128  40951  20631   4134  41035  41016   3417  20550  20548
-     256    3735  38342  20693   3770  38413  38427   1958  20231  20235
-     512    2627  27802  19955   2633  27824  27809   1525  16314  16308
-    1024    2409  24242  19209   2392  24239  24214   1339  14365  14362
-    2048    2397  24053  19108   2386  24044  24033   1323  14196  14195
-    4096    2419  24317  19178   2377  24311  24338   1348  14285  14283
-    8192    2417  24067  17974   2372  24073  24096   1349  14028  14029
+       8    5352  33505  18648   6300  15333  19897   3403  12699  12698
+      16    5452  37085  19653   6347  16125  21987   3433  13682  13684
+      32    5496  39200  20195   6366  16466  21967   3448  14220  14237
+      64    5511  40275  20471   6372  17030  22321   3454  14530  14524
+     128    5346  40932  20627   6365  17104  22713   3456  14682  14678
+     256    4028  34239  17086   4463  12536  16758   3231  11952  11946
+     512    3184  28840  14413   3399   9522  13054   2500   8199   8201
+    1024    2825  24251  12752   2957   8124  11202   2127   6620   6608
+    2048    2743  23803  12583   2924   8138  11144   2125   6570   6588
+    4096    2563  24174  12382   2937   8122  11196   2202   6640   6663
+    8192    2524  24107  12393   2945   8256  11021   2224   6727   6687
 
-                End of test Fri Jan 24 19:13:05 2020
+                End of test Thu Jan 30 16:25:12 2020
 
 SYSTEM INFORMATION
 
@@ -523,32 +169,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
 
  #####################################################
 
-     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 19:43:41 2020
+               Start of test Thu Jan 30 16:25:12 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    6714  33628  18713   6750  34458  34394   3427  17664  17663
-      16    6790  37231  19686   6800  37753  37619   3445  19094  19086
-      32    6836  39248  20218   6827  39570  39478   3453  19899  19901
-      64    6826  40374  20492   6814  40537  40499   3440  20328  20328
-     128    4128  40962  20632   4132  41010  41016   3417  20546  20548
-     256    3149  33870  20664   3193  33833  33878   1780  19398  19407
-     512    2713  28649  20261   2694  28664  28663   1652  16874  16861
-    1024    2409  24353  19212   2401  24358  24336   1335  14440  14442
-    2048    2408  24017  19092   2385  24021  23998   1323  14171  14166
-    4096    2425  24288  19147   2377  24300  24324   1349  14266  14262
-    8192    2365  23844  17828   2313  23892  23923   1343  13981  13976
+       8    5351  33488  18644   6299  15494  20291   3403  12697  12697
+      16    5449  37086  19645   6346  16123  21617   3433  13686  13675
+      32    5495  39183  20195   6368  16649  22028   3447  14238  14236
+      64    5510  40334  20481   6371  16699  22195   3453  14528  14529
+     128    5340  40920  20621   6365  16713  22552   3454  14671  14680
+     256    4558  37521  18657   5211  14184  18967   3206  12534  12535
+     512    3206  28943  14462   3481   9598  13241   2665   8764   8764
+    1024    2785  24121  12681   2945   8025  11248   2203   6777   6777
+    2048    2740  23975  12603   2941   7985  11177   2176   6651   6651
+    4096    2580  24247  12461   2953   7973  11423   2236   6764   6766
+    8192    2545  24084  12399   2928   8058  11202   2233   6646   6683
 
-                End of test Fri Jan 24 19:43:57 2020
+                End of test Thu Jan 30 16:25:28 2020
 
 SYSTEM INFORMATION
 
@@ -611,32 +255,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
 
  #####################################################
 
-     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 19:43:57 2020
+               Start of test Thu Jan 30 16:25:28 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    5354  33399  19196   6296  34570  34380   3403  17663  17663
-      16    5450  36904  19949   6345  37735  37611   3432  19094  19089
-      32    5494  39156  20354   6367  39560  39440   3443  19887  19898
-      64    5513  40299  20546   6379  40552  40490   3453  20324  20322
-     128    5347  40916  20659   6373  41031  40993   3457  20218  20491
-     256    4180  35433  20655   4742  35488  35649   3123  19556  16797
-     512    3162  28320  20660   3360  28303  28162   2516  17013  17092
-    1024    2744  24564  20733   2991  24574  24560   2232  14548  14546
-    2048    2733  23962  20746   2941  23970  23946   2151  14163  14159
-    4096    2571  24276  20755   2953  24275  24298   2224  14260  14262
-    8192    2512  24092  20628   2947  24103  24106   2232  14020  14021
+       8    5349  33701  18638   6296  15509  19986   3400  12690  12690
+      16    5450  37219  19643   6342  16383  21626   3431  13677  13679
+      32    5490  39252  20197   6367  16553  22223   3445  14237  14240
+      64    5511  40362  20482   6375  17061  22489   3455  14532  14533
+     128    5348  40928  20626   6368  16855  22881   3457  14672  14682
+     256    3961  33723  16830   4376  12160  15887   2874  10388  10390
+     512    3083  29072  14368   3374   9449  13130   2608   8497   8501
+    1024    2760  24233  12723   2962   8012  11323   2232   6836   6832
+    2048    2697  23974  12618   2945   8151  11022   2161   6665   6665
+    4096    2559  24307  12461   2956   8069  11298   2222   6705   6790
+    8192    2567  23971  12500   2942   8096  10958   2202   6516   6511
 
-                End of test Fri Jan 24 19:44:13 2020
+                End of test Thu Jan 30 16:25:45 2020
 
 SYSTEM INFORMATION
 
@@ -699,32 +341,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
 
  #####################################################
 
-     Memory Reading Speed Test e2k elbrus-v3 optimized (ffast) by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 19:44:24 2020
+               Start of test Thu Jan 30 16:25:45 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    5353  33390  19197   6299  34669  34393   3402  17662  17663
-      16    5450  37024  19949   6344  37727  37627   3431  19091  19090
-      32    5495  39147  20355   6366  39543  39499   3448  19898  19899
-      64    5515  40319  20563   6378  40553  40476   3455  20327  20303
-     128    5350  40924  20668   6377  40995  41018   3458  20550  20548
-     256    4770  38426  20721   5524  38427  38425   3281  20265  20270
-     512    3518  31614  20713   3857  31628  31648   2972  18277  18234
-    1024    2801  24864  20741   2987  24867  24848   2223  14833  14835
-    2048    2737  23964  20736   2943  23960  23932   2182  14195  14194
-    4096    2575  24232  20766   2955  24254  24283   2238  14260  14260
-    8192    2521  24096  20652   2948  24098  24114   2240  13988  13987
+       8    5348  33499  18645   6299  15318  20227   3401  12692  12691
+      16    5449  37096  19649   6344  16265  21947   3432  13679  13685
+      32    5495  39162  20191   6369  16683  21794   3445  14228  14235
+      64    5510  40336  20480   6373  16566  22303   3455  14528  14530
+     128    5347  40900  20620   6365  16992  22358   3457  14678  14681
+     256    5348  41228  20679   6362  17142  22553   3455  14755  14756
+     512    3215  28978  14495   3466   9492  13216   2628   8684   8683
+    1024    2798  24190  12720   2956   8045  11307   2193   6752   6752
+    2048    2752  23984  12593   2935   7971  11273   2164   6636   6646
+    4096    2581  24258  12450   2949   7924  11821   2233   6774   6770
+    8192    2544  24042  12482   2947   8078  11417   2233   6710   6702
 
-                End of test Fri Jan 24 19:44:39 2020
+                End of test Thu Jan 30 16:26:02 2020
 
 SYSTEM INFORMATION
 
@@ -787,32 +427,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
 
  #####################################################
 
-     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 19:53:20 2020
+               Start of test Thu Jan 30 16:26:02 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    6716  33756  18708   6749  34584  34383   3427  17667  17665
-      16    6791  37244  19691   6801  37770  37635   3445  19094  19088
-      32    6835  39249  20218   6827  39552  39495   3454  19898  19900
-      64    6828  40338  20491   6816  40534  40497   3440  20329  20325
-     128    4128  40953  20632   4128  41040  41019   3416  20548  20548
-     256    4019  39942  20688   4008  40038  40074   2061  20519  20519
-     512    2613  27874  20073   2614  27864  27846   1564  16604  16597
-    1024    2404  24159  19174   2394  24158  24131   1324  14292  14298
-    2048    2403  23966  19105   2386  23964  23938   1317  14171  14172
-    4096    2422  24260  19145   2377  24276  24301   1346  14266  14268
-    8192    2419  24078  17960   2373  24071  24076   1352  14020  14019
+       8   34009  30989  17809  34964  31567  31855  17782  16377  16359
+      16   37414  35501  19175  37966  35871  36036  19162  18319  18314
+      32   39381  38286  19928  39682  38502  38607  19936  19465  19469
+      64   40417  39845  20349  40587  39968  40020  20335  20101  20101
+     128   40968  40685  20562  41068  40726  40771  20560  20432  20431
+     256   34922  35817  20552  35048  35856  36183  19327  19203  19217
+     512   27622  27971  20157  27882  27934  28644  16789  16684  16683
+    1024   24406  24356  19386  24878  24585  25572  14874  14826  14832
+    2048   23824  23833  19279  24308  24099  25122  14490  14442  14443
+    4096   23963  24163  19401  24386  24366  25253  14660  14601  14607
+    8192   23820  24027  17897  23984  24016  24535  14369  14300  14302
 
-                End of test Fri Jan 24 19:53:36 2020
+                End of test Thu Jan 30 16:26:18 2020
 
 SYSTEM INFORMATION
 
@@ -875,32 +513,30 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
 
  #####################################################
 
-     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 20:00:56 2020
+               Start of test Thu Jan 30 16:26:18 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    6710  33717  18700   6750  34509  34395   3428  17667  17665
-      16    6791  37160  19689   6801  37806  37634   3445  19096  19093
-      32    6835  39228  20219   6827  39565  39494   3454  19899  19900
-      64    6827  40349  20492   6815  40515  40478   3433  20329  20316
-     128    4128  40952  20630   4129  41036  41010   3417  20547  20548
-     256    3752  38638  20702   3796  38621  38612   1938  20410  20402
-     512    2707  29195  20264   2749  29193  29152   1558  17431  17431
-    1024    2400  24422  19234   2393  24431  24412   1340  14436  14436
-    2048    2391  24123  19198   2380  24122  24114   1320  14220  14218
-    4096    2415  24329  19201   2375  24345  24363   1348  14290  14290
-    8192    2418  24130  17924   2368  24114  24141   1352  14045  14045
+       8   34030  30991  17817  34977  31571  31863  17785  16378  16379
+      16   37424  35514  19182  37982  35867  36070  19165  18320  18302
+      32   39386  38276  19942  39687  38507  38618  19939  19468  19460
+      64   40436  39855  20342  40595  39973  40019  20347  20103  20101
+     128   40982  40682  20560  41049  40743  40773  20560  20433  20431
+     256   35680  35549  20581  35759  35479  35803  19911  19809  19812
+     512   28569  28511  20176  28762  28508  29148  17170  17088  17090
+    1024   24556  24619  19425  24872  24692  25636  14895  14838  14845
+    2048   23965  23994  19273  24306  24073  25100  14472  14427  14428
+    4096   24054  24289  19410  24337  24382  25238  14641  14576  14577
+    8192   23851  24050  18341  23913  24043  24499  14344  14270  14261
 
-                End of test Fri Jan 24 20:01:12 2020
+                End of test Thu Jan 30 16:26:35 2020
 
 SYSTEM INFORMATION
 
@@ -963,182 +599,4 @@ L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:
 From File /proc/version
 Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
  
-
-Additional information - 
-
- #####################################################
-
-     Memory Reading Speed Test e2k elbrus-v4 optimized (ffast) by Roy Longbottom
-
-               Start of test Fri Jan 24 20:02:19 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    5353  33393  19191   6298  34570  34372   3403  17659  17661
-      16    5450  37013  19946   6342  37860  37622   3431  19086  19084
-      32    5494  39129  20353   6368  39559  39493   3447  19889  19891
-      64    5511  40302  20552   6377  40515  40465   3454  20313  20317
-     128    5349  40917  20652   6373  41032  41012   3458  20546  20544
-     256    4725  37762  20718   5434  37818  37813   3261  19909  19922
-     512    3232  29273  20739   3487  29261  29263   2674  17296  17307
-    1024    2834  24139  20745   2966  24136  24100   2184  14338  14343
-    2048    2728  23994  20760   2938  23998  23978   2175  14216  14208
-    4096    2573  24252  20766   2953  24257  24290   2237  14263  14265
-    8192    2522  24057  20628   2950  24078  24091   2247  14007  14008
-
-                End of test Fri Jan 24 20:02:34 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - 
-
- #####################################################
-
-     Memory Reading Speed Test e2k elbrus-v3 optimized (ffast) by Roy Longbottom
-
-               Start of test Fri Jan 24 20:02:39 2020
-
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8    5353  33391  19188   6297  34508  34393   3403  17663  17656
-      16    5451  37000  19954   6343  37813  37625   3430  19093  19094
-      32    5495  39133  20354   6312  39541  39492   3448  19898  19898
-      64    5508  40319  20562   6374  40543  40498   3453  20304  20329
-     128    5350  40918  20666   6378  41036  41013   3458  20549  20537
-     256    4242  36145  20659   4831  36048  35999   3140  19805  19805
-     512    3155  28995  20712   3417  29009  29000   2665  17105  17105
-    1024    2793  24344  20745   2960  24356  24347   2199  14412  14411
-    2048    2702  24020  20757   2937  23987  23992   2158  14183  14191
-    4096    2560  24315  20768   2942  24295  24324   2220  14278  14279
-    8192    2535  24064  20648   2946  24069  24051   2210  13949  13960
-
-                End of test Fri Jan 24 20:02:55 2020
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-Additional information - 
 

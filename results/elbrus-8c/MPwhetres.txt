@@ -16,23 +16,71 @@
 
      Multithreading Single Precision Whetstones e2k elbrus-v4 optimized (ffast)
 
-             Using 8 threads - Mon Jan 27 13:25:23 2020
+             Using 8 threads - Thu Jan 30 16:33:02 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1541    392    396    324     44     27    810   1267    278
-      2   1564    392    396    324     44     28    795   1296    298
-      3   1561    392    397    321     44     28    795   1266    299
-      4   1552    392    381    317     44     28    795   1267    298
-      5   1554    386    381    324     44     28    758   1179    298
-      6   1553    380    381    324     43     28    766   1289    298
-      7   1535    369    381    324     44     27    738   1267    273
-      8   1547    397    365    315     44     28    805   1267    298
+      1   1525    300    298    323     44     27    787   1286    298
+      2   1532    293    298    324     44     28    810   1285    298
+      3   1523    301    288    324     44     27    787   1285    296
+      4   1530    301    298    324     44     28    787   1285    298
+      5   1530    301    298    324     44     28    787   1286    297
+      6   1528    269    298    324     44     28    787   1286    298
+      7   1528    293    304    324     44     27    787   1285    298
+      8   1523    304    298    324     44     27    757   1285    298
 
- Total   12408   3097   3077   2574    350    220   6261  10098   2341
+ Total   12218   2362   2377   2589    349    220   6291  10283   2381
 
- MWIPS   12060 Based on time for last thread to finish
+ MWIPS   12118 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Thu Jan 30 16:33:11 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
+
+             Using 8 threads - Thu Jan 30 16:33:11 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1524    257    316    324     44     27    734   1268    299
+      2   1528    320    316    324     44     27    748   1219    298
+      3   1527    318    316    324     44     27    734   1267    298
+      4   1507    320    316    324     44     26    734   1219    298
+      5   1522    320    316    324     44     26    734   1219    298
+      6   1519    275    316    324     44     26    734   1174    298
+      7   1512    311    293    324     44     26    707   1267    298
+      8   1505    227    322    321     44     26    707   1288    297
+
+ Total   12144   2349   2512   2588    354    211   5829   9921   2383
+
+ MWIPS   11863 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -44,7 +92,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 13:25:33 2020
+               End of test Thu Jan 30 16:33:20 2020
 
 
 #####################################################################
@@ -64,35 +112,35 @@
 
      Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
 
-             Using 8 threads - Mon Jan 27 13:25:33 2020
+             Using 8 threads - Thu Jan 30 16:33:20 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1523    320    316    324     44     27    738   1255    297
-      2   1523    320    316    324     44     26    738   1255    298
-      3   1519    320    316    321     44     27    732   1255    298
-      4   1520    320    316    321     44     27    738   1255    298
-      5   1505    320    316    321     43     27    738   1104    298
-      6   1520    320    316    321     44     27    738   1255    298
-      7   1520    320    316    321     44     27    738   1254    298
-      8   1509    320    316    318     44     27    711   1255    291
+      1   1526    320    322    322     44     27    735   1273    298
+      2   1526    320    322    322     44     27    736   1265    298
+      3   1523    320    322    322     44     27    735   1274    298
+      4   1523    320    322    322     44     27    735   1274    298
+      5   1523    320    322    322     44     27    735   1274    298
+      6   1521    320    322    322     44     27    735   1224    298
+      7   1522    315    322    322     44     27    735   1274    298
+      8   1522    319    322    322     44     27    735   1274    298
 
- Total   12140   2561   2526   2572    352    212   5872   9888   2378
+ Total   12185   2556   2577   2576    353    213   5883  10132   2384
 
- MWIPS   11957 Based on time for last thread to finish
+ MWIPS   12154 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 13:25:42 2020
+               End of test Thu Jan 30 16:33:29 2020
 
 
 #####################################################################
@@ -110,25 +158,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
+     Multithreading Single Precision Whetstones e2k elbrus-v3  optimized
 
-             Using 8 threads - Mon Jan 27 13:25:42 2020
+             Using 8 threads - Thu Jan 30 16:33:29 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1512    320    323    323     44     26    729   1260    292
-      2   1512    320    323    314     44     26    729   1260    297
-      3   1518    320    311    323     44     26    721   1261    298
-      4   1513    316    312    323     44     26    729   1260    298
-      5   1520    320    312    323     44     26    729   1260    298
-      6   1516    320    312    323     44     26    730   1260    298
-      7   1503    323    292    323     44     26    661   1257    298
-      8   1520    320    312    323     44     26    730   1260    298
+      1   1525    320    315    324     44     27    726   1253    298
+      2   1519    320    304    323     44     27    726   1252    300
+      3   1514    320    315    317     44     27    726   1252    297
+      4   1523    320    315    324     44     27    726   1253    298
+      5   1519    320    304    324     44     27    726   1253    298
+      6   1518    304    304    324     44     27    726   1253    298
+      7   1494    323    304    310     44     26    722   1253    300
+      8   1519    320    315    324     44     26    726   1252    297
 
- Total   12115   2561   2498   2572    354    211   5758  10079   2378
+ Total   12132   2547   2476   2570    354    212   5803  10021   2385
 
- MWIPS   11829 Based on time for last thread to finish
+ MWIPS   11937 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -140,7 +188,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 13:25:51 2020
+               End of test Thu Jan 30 16:33:38 2020
 
 
 #####################################################################
@@ -158,25 +206,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4  optimized
+     Multithreading Single Precision Whetstones e2k elbrus-v3  optimized (ffast)
 
-             Using 8 threads - Mon Jan 27 13:25:51 2020
+             Using 8 threads - Thu Jan 30 16:33:38 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1391    320    321    323     44     19    729   1288    292
-      2   1519    320    321    323     44     26    729   1288    298
-      3   1522    316    321    323     44     26    729   1288    298
-      4   1518    320    321    323     44     26    729   1288    298
-      5   1512    320    321    323     44     26    728   1287    298
-      6   1518    320    321    323     44     26    729   1287    298
-      7   1496    320    321    317     43     26    729   1288    298
-      8   1378    320    321    324     44     18    728   1132    297
+      1   1646    394    386    286     44     28    748   1297   1947
+      2   1652    393    398    288     44     28    748   1274   1928
+      3   1640    393    398    288     44     28    724   1273   1924
+      4   1646    393    398    288     44     28    741   1243   1927
+      5   1646    393    398    286     44     28    746   1243   1927
+      6   1645    378    387    288     44     28    741   1243   1927
+      7   1638    393    387    287     44     28    741   1292   1928
+      8   1626    396    376    288     44     28    678   1214   1928
 
- Total   11855   2557   2567   2581    352    193   5831  10147   2378
+ Total   13140   3136   3127   2299    351    227   5866  10080  15436
 
- MWIPS   10943 Based on time for last thread to finish
+ MWIPS   12980 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -188,5 +236,5 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Mon Jan 27 13:26:01 2020
+               End of test Thu Jan 30 16:33:47 2020
 
