@@ -1,0 +1,82 @@
+ #####################################################
+
+ Livermore Loops Benchmark e2k elbrus-v5 optimized via C/C++ Thu Jan 30 22:57:35 2020
+
+ MFLOPS for 24 loops
+ 6372.9  686.9  729.3  678.8  369.8  529.6  11179 8216.6 4103.4 2051.4  365.2 2367.4
+  907.3 2146.1  519.5  295.8  541.5 4649.8  355.0  452.1 3749.5  263.0  653.2  164.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+ 11179.0  1617.3   798.7   485.6   117.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 1
+cpu MHz		: 1499.899635
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 3000.87
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 1
+cpu MHz		: 1499.899635
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2999.82
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 1
+cpu MHz		: 1499.899635
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2999.82
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 1
+cpu MHz		: 1499.899635
+L1 cache size	: 64 KB
+L1 cLinux version 4.9.0-3.8-e8c2 (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v5-linux.cross:i386-linux) #1 SMP Wed Jun 26 05:14:59 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-3.8-e8c2 (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v5-linux.cross:i386-linux) #1 SMP Wed Jun 26 05:14:59 UTC 2019
+ 
+
+Additional information - 
+
