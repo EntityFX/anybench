@@ -1,0 +1,41 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+
+    BusSpeed arm armv6 optimized Thu Feb  4 20:01:34 2010
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   2754   2940   3156   2835   2813   2791
+      32   1650   1721   2047   2772   2801   2786
+      64    513    507    946   1845   2557   2882
+     128    534    518   1014   1775   2546   2905
+     256    507    499    984   1719   2505   2900
+     512    299    321    649   1232   2041   2619
+    1024    119    123    236    482    933   1735
+    4096    107    111    207    435    850   1674
+   16384    106    110    212    434    856   1673
+   65536    106    110    209    435    850   1682
+
+ Type additional information to include in busSpeed.txt - Press Enter

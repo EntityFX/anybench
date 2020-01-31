@@ -1,0 +1,44 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+
+
+   Memory Reading Speed Test arm armv7-a optimized Thu Feb  4 19:51:39 2010
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1625   2286   3329   2472   2295   3329   2532   3034   3034
+      16    1633   2197   3193   2424   2200   3195   2490   2912   2916
+      32    1468   1942   2649   2149   1940   2764   2441   2716   2740
+      64    1563   2009   2902   2310   2020   2895   2429   2789   2796
+     128    1573   1998   2928   2343   2031   2947   2484   2891   2892
+     256    1554   1987   2864   2297   2001   2833   2533   2926   2930
+     512    1106   1151   1236   1279   1145   1227   1771   1702   1682
+    1024    1103   1163   1268   1294   1155   1265   1742   1637   1657
+    2048     976    987   1036   1068    983   1037   1586   1448   1430
+    4096     980    988   1037   1028    950    996   1471   1335   1298
+    8192     978    999   1035   1069    989   1042   1459   1284   1294
+
+                End of test Thu Feb  4 19:51:56 2010
+

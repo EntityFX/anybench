@@ -1,0 +1,78 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation arm armv8-a optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00415    0.00013    0.00427     160.65     0.0124     0.0763
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.32 seconds
+      2000 times   0.73 seconds
+      4000 times   1.64 seconds
+Overhead for 1 matgen      0.00041 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.04 seconds
+       100 times   0.42 seconds
+       200 times   0.85 seconds
+       400 times   1.70 seconds
+Passes used        235 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00384    0.00012    0.00396     173.30     0.0115     0.0708
+    0.00384    0.00012    0.00396     173.38     0.0115     0.0707
+    0.00384    0.00012    0.00396     173.35     0.0115     0.0707
+    0.00384    0.00012    0.00396     173.38     0.0115     0.0707
+    0.00384    0.00012    0.00396     173.31     0.0115     0.0708
+Average                               173.34
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00032 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00391    0.00012    0.00404     170.17     0.0118     0.0721
+    0.00391    0.00012    0.00403     170.21     0.0118     0.0720
+    0.00391    0.00012    0.00404     170.16     0.0118     0.0721
+    0.00391    0.00012    0.00403     170.22     0.0117     0.0720
+    0.00391    0.00012    0.00403     170.18     0.0118     0.0721
+Average                               170.19
+
+##########################################
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+
+
+Unrolled Double  Precision      170.19 Mflops 
+
+

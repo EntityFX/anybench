@@ -1,26 +1,1698 @@
  #####################################################
 
-     Memory Reading Speed Test arv6 optimized by Roy Longbottom
+     Memory Reading Speed Test arm armv6 optimized by Roy Longbottom
 
-               Start of test Sat Jan 30 00:21:16 2010
+               Start of test Tue Feb 16 22:15:37 2016
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    1529   1747   2156   2290   2157   2614   2606   2283   2029
-      16    1529   1748   2156   2295   2160   2621   2615   2290   2035
-      32    1486   1673   2046   2191   2041   2453   2619   2269   2014
-      64    1431   1595   1923   2067   1913   2292   2428   2178   1946
-     128    1453   1615   1959   2119   1938   2338   2508   2115   1862
-     256    1397   1551   1892   2060   1868   2249   2526   2145   1902
-     512    1001   1062   1110   1162   1139   1206   1696   1558   1313
-    1024     906    951    972    999    995   1009   1147   1131   1129
-    2048     893    946   1001   1021   1016   1048   1228   1216   1185
-    4096     902    947    988   1003   1005   1041   1216   1145   1194
-    8192     896    946    980   1001    997   1035   1231   1205   1202
+       8    2940   2362   3794   4341   2853   4276   5386   3004   3179
+      16    2939   2362   3800   4343   2859   4284   5412   3013   3190
+      32    2375   1799   2299   2975   1969   2345   3776   2033   3056
+      64    2237   1648   2000   2675   1817   2027   2543   1792   3119
+     128    2103   1602   1902   2495   1806   1898   1611   1440   1555
+     256    2088   1597   1892   2476   1809   1889   1448   1242   1377
+     512    2086   1595   1888   2465   1802   1884   1428   1245   1357
+    1024    1918   1506   1768   2210   1676   1750   1321   1172   1264
+    2048    1599   1386   1522   1624   1476   1525   1029    790   1017
+    4096    1380   1330   1359   1355   1356   1347    846    644    887
+    8192    1334   1329   1325   1304   1329   1322    872    620    915
 
-                End of test Sat Jan 30 00:21:32 2010
+                End of test Tue Feb 16 22:15:55 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv6 optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:15:55 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2719   2361   4152   4520   2855   4160   5380   2848   3180
+      16    2718   2363   4156   4527   2857   4173   5410   2855   3189
+      32    2717   2361   4143   4525   2856   4169   5421   2858   3194
+      64    2127   1645   2073   2640   1813   1981   2474   2255   2391
+     128    2040   1605   1961   2505   1802   1864   1689   1356   1362
+     256    2038   1601   1944   2489   1804   1841   1535   1239   1232
+     512    1967   1562   1885   2333   1744   1795   1413   1163   1154
+    1024    1791   1469   1725   1976   1617   1659   1213   1055   1045
+    2048    1583   1386   1549   1610   1479   1511   1034    964    956
+    4096    1388   1330   1378   1367   1359   1357    874    902    903
+    8192    1341   1328   1332   1328   1335   1323    880    927    918
+
+                End of test Tue Feb 16 22:16:12 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7 optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:16:12 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2939   2361   3796   4343   2855   4274   5388   3004   3180
+      16    2940   2363   3804   4345   2860   4287   5413   3013   3189
+      32    2478   1800   2264   3025   1976   2320   5412   2436   3191
+      64    2236   1647   2001   2671   1815   2026   2538   1793   3122
+     128    2122   1607   1917   2523   1803   1920   1695   1489   1651
+     256    2102   1601   1904   2501   1804   1901   1548   1429   1466
+     512    2069   1584   1879   2453   1785   1877   1478   1379   1404
+    1024    1826   1473   1703   2007   1613   1693   1225   1045   1174
+    2048    1626   1316   1554   1661   1507   1556   1046    813   1045
+    4096    1469   1348   1432   1441   1406   1428    981    669    995
+    8192    1468   1355   1447   1432   1409   1439   1008    658   1025
+
+                End of test Tue Feb 16 22:16:30 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7 optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:16:30 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2718   2363   4157   4520   2855   4160   5385   2847   3181
+      16    2719   2364   4174   4524   2858   4173   5413   2856   3189
+      32    2627   2052   2983   3764   2366   2922   5423   2858   3192
+      64    2185   1673   2117   2715   1838   2015   2720   2806   3106
+     128    2038   1602   1956   2496   1801   1851   1674   1418   1431
+     256    2034   1600   1941   2475   1803   1836   1541   1257   1254
+     512    1922   1539   1838   2249   1707   1758   1385   1157   1151
+    1024    1780   1462   1723   1967   1610   1656   1214   1058   1042
+    2048    1611   1394   1569   1635   1501   1527   1051    974    961
+    4096    1429   1339   1405   1399   1378   1393    941    925    917
+    8192    1355   1330   1342   1336   1346   1335    873    922    914
+
+                End of test Tue Feb 16 22:16:48 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:16:48 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2938   2361   3796   4342   2857   4275   5386   3006   3181
+      16    2940   2363   3783   4345   2860   4287   5411   3012   3191
+      32    2493   1839   2386   3122   2047   2460   5412   2463   3192
+      64    2218   1627   1970   2639   1790   1991   2519   1800   3124
+     128    2132   1608   1920   2532   1807   1918   1670   1500   1640
+     256    2033   1602   1905   2502   1803   1900   1518   1438   1460
+     512    1991   1545   1823   2324   1721   1817   1405   1283   1351
+    1024    1785   1463   1675   1938   1597   1670   1188    975   1120
+    2048    1614   1394   1549   1642   1487   1536   1056    492    655
+    4096    1096   1328   1367   1373   1361   1362    859    650    898
+    8192    1399   1330   1375   1377   1362   1362    897    642    926
+
+                End of test Tue Feb 16 22:17:05 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:17:05 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2314   2361   3785   3881   2855   4284   5389   3002   3180
+      16    2314   2362   3774   3879   2858   4287   5410   3011   3189
+      32    1892   1838   2386   2901   2045   2457   5415   3009   3191
+      64    1696   1636   1992   2469   1808   2009   2252   1971   2075
+     128    1648   1612   1927   2366   1808   1925   1615   1427   1498
+     256    1634   1605   1910   2338   1806   1908   1501   1341   1411
+     512    1511   1533   1798   2155   1705   1798   1382   1259   1316
+    1024    1408   1451   1651   1854   1580   1651   1175   1101   1133
+    2048    1345   1384   1526   1606   1470   1513   1025    999   1017
+    4096    1316   1333   1402   1425   1386   1389    974    974    984
+    8192    1314   1333   1439   1436   1407   1423   1002   1002   1017
+
+                End of test Tue Feb 16 22:17:23 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:17:23 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2415   2469   3941   4023   3014   4330   5387   3179   3004
+      16    2416   2470   3839   4027   3018   4307   5409   3188   3013
+      32    2186   1833   2297   2975   1978   2482   5416   3191   3012
+      64    2071   1684   2018   2648   1793   2158   2645   3124   2963
+     128    1963   1644   1949   2430   1770   2060   1658   1493   1573
+     256    1958   1645   1945   2421   1772   2054   1519   1310   1395
+     512    1940   1629   1918   2377   1742   2030   1457   1243   1286
+    1024    1775   1526   1760   2059   1616   1836   1254   1100   1159
+    2048    1603   1432   1578   1666   1497   1610   1070    992   1021
+    4096    1460   1371   1431   1437   1393   1435    895    965    970
+    8192    1385   1375   1451   1436   1411   1440   1035    984   1011
+
+                End of test Tue Feb 16 22:17:41 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:17:41 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2314   2468   4154   3748   3013   4462   5388   3179   3182
+      16    2314   2469   4152   3747   3018   4361   5410   3188   3189
+      32    2079   2045   2891   3123   2300   3031   5423   3192   3186
+      64    1744   1679   2080   2440   1787   2067   1961   1661   1558
+     128    1686   1642   1964   2309   1761   1898   1529   1366   1194
+     256    1670   1643   1938   2289   1766   1859   1463   1321   1141
+     512    1549   1582   1847   2110   1688   1769   1366   1247   1089
+    1024    1471   1508   1744   1911   1600   1669   1207   1128   1011
+    2048    1378   1438   1595   1637   1490   1559   1069   1025    951
+    4096    1330   1366   1421   1423   1288   1418    922    940    910
+    8192    1304   1345   1350   1355   1349   1371    871    924    906
+
+                End of test Tue Feb 16 22:17:58 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:17:58 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2720   2362   4136   4521   2856   4160   5382   2848   3180
+      16    2719   2364   4166   4527   2859   4172   5409   2856   3190
+      32    2339   1826   2436   3130   2012   2368   5419   2855   3193
+      64    2114   1630   2054   2642   1795   1963   2510   2802   3121
+     128    2046   1605   1960   2513   1803   1858   1669   1430   1437
+     256    2041   1601   1943   2485   1805   1838   1521   1264   1257
+     512    1964   1561   1878   2339   1744   1793   1417   1182   1173
+    1024    1792   1472   1730   1984   1611   1664   1233   1056   1042
+    2048    1587   1393   1555   1619   1484   1521   1044    977    966
+    4096    1444   1336   1418   1414   1388   1395    968    934    929
+    8192    1464   1355   1456   1424   1411   1427   1022    973    949
+
+                End of test Tue Feb 16 22:18:16 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:18:16 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2314   2362   4922   3881   2856   3624   5380   3867   3868
+      16    2314   2363   4932   3884   2860   3623   5406   3874   3875
+      32    2312   2360   4927   3881   2856   3623   5417   3875   3878
+      64    1764   1740   2630   2610   1976   2401   2164   2168   2173
+     128    1683   1668   2434   2448   1897   2275   1616   1478   1477
+     256    1652   1631   2343   2382   1850   2209   1498   1377   1375
+     512    1599   1593   2254   2292   1795   1973   1461   1345   1347
+    1024    1422   1467   1895   1923   1605   1828   1193   1075   1080
+    2048    1363   1391   1611   1615   1492   1561    992    901    905
+    4096    1319   1344   1421   1438   1389   1429    981    823    819
+    8192    1313   1347   1423   1437   1395   1431   1003    839    839
+
+                End of test Tue Feb 16 22:18:33 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:18:33 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2416   3093   4927   4023   3014   3624   4487   3867   3868
+      16    2416   3100   4931   4026   3018   3626   4508   3874   3873
+      32    2311   2737   3307   3591   2312   2853   4523   3875   3870
+      64    2016   2023   2384   2660   1807   2274   4377   2179   2186
+     128    1947   1818   2276   2534   1765   2174   3964   1481   1479
+     256    1949   1772   2266   2538   1771   2162   3905   1384   1382
+     512    1907   1717   2182   2439   1717   2082   3273   1309   1308
+    1024    1757   1633   1931   2053   1603   1869   1779   1113   1117
+    2048    1591   1516   1614   1626   1488   1613   1164    922    931
+    4096    1415   1409   1415   1379   1388   1422    982    678    676
+    8192    1419   1433   1420   1374   1399   1433    975    841    840
+
+                End of test Tue Feb 16 22:18:50 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:18:50 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2314   2469   4176   3749   3012   4929   5386   3606   3606
+      16    2315   2470   4181   3751   3017   4936   5411   3616   3614
+      32    2313   2468   4176   3744   3016   4932   5421   3617   3618
+      64    1729   1679   2280   2445   1786   2368   2210   1997   2030
+     128    1662   1650   2187   2298   1773   2280   1638   1527   1528
+     256    1658   1649   2178   2285   1773   2268   1500   1355   1355
+     512    1635   1639   2050   2268   1767   2250   1459   1312   1311
+    1024    1463   1514   1878   1899   1596   1923   1237   1090   1090
+    2048    1383   1434   1627   1643   1485   1642   1042    914    920
+    4096    1325   1351   1391   1408   1373   1392    894    746    750
+    8192    1307   1336   1328   1339   1343   1334    858    692    687
+
+                End of test Tue Feb 16 22:19:08 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:19:08 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2939   2362   3793   4339   2854   4272   5388   3005   3179
+      16    2938   2363   3803   4347   2858   4282   5413   3013   3189
+      32    2735   2035   2766   3559   2321   2919   5425   3014   3192
+      64    2271   1669   2025   2716   1834   2061   2664   1798   2549
+     128    2148   1616   1931   2540   1806   1938   1704   1491   1572
+     256    2116   1606   1910   2513   1805   1912   1537   1427   1439
+     512    2029   1565   1845   2368   1746   1846   1426   1265   1344
+    1024    1803   1461   1687   1956   1602   1673   1204   1012   1161
+    2048    1626   1403   1555   1651   1502   1545   1053    807   1040
+    4096    1449   1342   1416   1425   1388   1413    968    664    980
+    8192    1446   1345   1435   1422   1402   1417   1006    657   1017
+
+                End of test Tue Feb 16 22:19:26 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:19:26 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2315   2362   3793   3882   2852   4273   5389   3003   3180
+      16    2313   2362   3769   3879   2857   4280   5411   3012   3188
+      32    1677   1614   1955   2442   1775   1973   2458   2918   3056
+      64    1749   1724   2152   2579   1957   2190   2092   1919   2026
+     128    1623   1598   1902   2328   1799   1897   1611   1511   1585
+     256    1623   1597   1896   2324   1801   1891   1487   1358   1426
+     512    1559   1563   1847   2232   1750   1840   1408   1287   1351
+    1024    1458   1492   1739   2022   1653   1729   1259   1170   1214
+    2048    1355   1392   1540   1627   1490   1533   1031    999   1018
+    4096    1320   1344   1420   1438   1391   1412    973    978    991
+    8192    1311   1346   1435   1438   1399   1429   1004    996   1020
+
+                End of test Tue Feb 16 22:19:43 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:19:43 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2266   2714   3497   4026   3014   4385   5385   3178   3180
+      16    2266   2717   3503   4027   3017   4517   5414   3190   3191
+      32    2003   2146   2671   3398   2294   3012   5426   3192   3193
+      64    1675   1739   2017   2661   1770   2052   2722   2133   3124
+     128    1621   1702   1921   2433   1726   1854   1673   1472   1433
+     256    1615   1698   1924   2420   1726   1835   1541   1375   1256
+     512    1592   1629   1892   2363   1711   1809   1444   1294   1181
+    1024    1449   1553   1699   1956   1580   1657   1216   1135   1048
+    2048    1368   1464   1560   1651   1423   1518   1045   1016    966
+    4096    1314   1382   1423   1427   1385   1429    968    974    938
+    8192    1311   1384   1441   1352   1399   1438    991    997    952
+
+                End of test Tue Feb 16 22:20:01 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:20:01 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2266   2715   4166   3746   3190   4153   5391   3004   3005
+      16    2265   2717   4174   3749   3195   4166   5410   3012   3014
+      32    2035   2098   2889   3187   2335   2850   5422   3016   3016
+      64    1747   1668   2200   2415   1762   2062   2509   2960   2969
+     128    1711   1652   2164   2266   1722   1997   1668   1406   1542
+     256    1707   1649   2157   2243   1715   1986   1520   1231   1357
+     512    1647   1620   2069   2139   1683   1916   1409   1145   1265
+    1024    1481   1522   1804   1847   1574   1719   1182   1017   1094
+    2048    1402   1451   1608   1628   1501   1573   1049    964   1007
+    4096    1342   1376   1419   1436   1408   1420    956    923    953
+    8192    1309   1348   1347   1357   1365   1344    866    930    927
+
+                End of test Tue Feb 16 22:20:19 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:20:19 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2719   2362   4150   4522   2856   4160   5382   2848   3181
+      16    2720   2363   4159   4526   2860   4171   5410   2850   3190
+      32    2529   2001   2899   3626   2278   2832   5416   2855   3195
+      64    2153   1647   2070   2665   1815   1973   2874   2800   3107
+     128    2083   1621   1980   2538   1816   1873   1741   1422   1431
+     256    2055   1608   1951   2411   1797   1848   1544   1261   1255
+     512    1994   1574   1903   2394   1759   1804   1455   1198   1185
+    1024    1770   1460   1714   1927   1600   1649   1192   1045   1034
+    2048    1600   1396   1563   1634   1490   1516   1047    969    956
+    4096    1442   1338   1418   1412   1379   1401    969    944    931
+    8192    1444   1349   1430   1412   1394   1411    999    965    936
+
+                End of test Tue Feb 16 22:20:36 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:20:36 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2315   2361   4922   3880   2856   3624   5382   3866   3868
+      16    2313   2364   4935   3884   2859   3623   5410   3876   3876
+      32    2057   1982   3314   3152   2234   2887   5417   3874   3875
+      64    1727   1698   2461   2546   1889   2295   2207   2180   2174
+     128    1664   1646   2349   2412   1851   2220   1616   1479   1478
+     256    1643   1619   2307   2365   1825   2184   1501   1382   1384
+     512    1544   1562   2177   2226   1745   2076   1440   1326   1323
+    1024    1420   1461   1864   1888   1601   1817   1187   1074   1077
+    2048    1356   1399   1618   1649   1502   1609   1056    933    932
+    4096    1321   1341   1400   1433   1398   1423    964    810    811
+    8192    1302   1333   1339   1355   1351   1352    871    704    712
+
+                End of test Tue Feb 16 22:20:54 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:20:54 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2266   2713   4176   4722   3013   4930   5388   3606   3605
+      16    2267   2715   4176   4727   3017   4936   5407   3612   3614
+      32    1998   2113   3055   3722   2255   3318   5422   3617   3612
+      64    1670   1726   2262   2670   1753   2357   2550   2691   2689
+     128    1623   1691   2185   2428   1724   2275   1678   1503   1506
+     256    1618   1699   2176   2407   1726   2269   1533   1361   1364
+     512    1593   1683   2147   2361   1714   2231   1457   1301   1294
+    1024    1453   1562   1882   2007   1592   1942   1239   1103   1102
+    2048    1366   1455   1596   1636   1466   1617   1044    925    924
+    4096    1309   1372   1412   1424   1369   1408    967    808    810
+    8192    1311   1394   1425   1430   1398   1421   1013    842    839
+
+                End of test Tue Feb 16 22:21:11 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:21:11 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2266   2714   3198   3746   3190   3625   5391   3605   3606
+      16    2266   2717   3197   3750   3194   3625   5413   3614   3614
+      32    1883   1824   2400   2794   1978   2471   5414   3607   3610
+      64    1742   1687   2176   2450   1788   2229   2754   2674   2683
+     128    1712   1658   2103   2296   1733   2173   1708   1507   1508
+     256    1705   1653   2085   2256   1720   2162   1539   1366   1365
+     512    1612   1607   1965   2104   1675   2035   1384   1226   1231
+    1024    1487   1535   1786   1882   1593   1824   1205   1070   1065
+    2048    1377   1458   1608   1648   1501   1623   1053    921    927
+    4096    1318   1381   1427   1438   1417   1428    986    821    824
+    8192    1278   1385   1436   1446   1411   1430    995    840    836
+
+                End of test Tue Feb 16 22:21:29 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8.1-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:21:29 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2937   2361   3775   4339   2856   4275   5388   3004   3180
+      16    2939   2362   3803   4345   2857   4287   5412   3013   3190
+      32    2596   1951   2631   3351   2188   2730   5422   3000   3192
+      64    2234   1646   1998   2672   1814   2022   2477   1784   2525
+     128    2114   1605   1916   2513   1802   1914   1696   1446   1569
+     256    2097   1601   1903   2492   1805   1897   1538   1401   1438
+     512    1993   1549   1823   2310   1723   1820   1418   1275   1349
+    1024    1846   1484   1715   2054   1636   1699   1259   1065   1204
+    2048    1584   1384   1524   1610   1468   1521   1014    783   1018
+    4096    1424   1329   1405   1412   1381   1394    970    662    977
+    8192    1447   1345   1433   1416   1398   1412   1003    655   1024
+
+                End of test Tue Feb 16 22:21:47 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8.1-a optimized by Roy Longbottom
+
+               Start of test Tue Feb 16 22:21:47 2016
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2718   2362   4162   4522   2856   4161   5382   2847   3180
+      16    2719   2363   4171   4525   2859   4173   5409   2856   3190
+      32    2461   2016   2899   3550   2281   2859   5412   2854   3194
+      64    2143   1663   2106   2692   1839   2007   2269   1824   1882
+     128    2034   1604   1966   2502   1802   1865   1606   1293   1294
+     256    2033   1600   1944   2490   1802   1841   1499   1214   1207
+     512    1915   1533   1839   2244   1703   1759   1361   1136   1123
+    1024    1786   1430   1697   1964   1608   1655   1210   1056   1037
+    2048    1611   1402   1575   1629   1500   1530    989    974    954
+    4096    1416   1338   1406   1403   1385   1387    920    908    921
+    8192    1352   1294   1345   1333   1341   1333    856    919    914
+
+                End of test Tue Feb 16 22:22:04 2016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv6 optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:48:55 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1468   2715   2368   2060   2293   2808   2030   1829
+      16    1466   1348   2448   2174   1977   2105   2586   1868   1682
+      32    1423   1304   2202   2263   2049   2183   2825   1944   1772
+      64    1515   1378   2219   2180   1953   2100   2652   1829   1684
+     128    1539   1386   2256   2231   1984   2144   2690   1865   1703
+     256    1549   1394   2272   2252   1984   2158   2720   1897   1712
+     512    1500   1360   2152   2145   1895   2060   2736   1871   1692
+    1024     942    913   1067   1066   1022   1061   1711    697    709
+    2048     908    878   1011   1033    958   1008   1484    655    665
+    4096     887    864   1023    999    966    994   1418    643    656
+    8192     887    858   1026    997    962   1000   1412    640    652
+
+                End of test Thu Feb  4 19:49:12 2010
 
 SYSTEM INFORMATION
 
@@ -46,27 +1718,27 @@ Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (
 
  #####################################################
 
-     Memory Reading Speed Test armv7 optimized by Roy Longbottom
+     Memory Reading Speed Test arm armv6 optimized by Roy Longbottom
 
-               Start of test Sat Jan 30 00:21:32 2010
+               Start of test Thu Feb  4 19:49:12 2010
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    1528   1311   2814   2290   1912   2812   2607   2279   2032
-      16    1532   1311   2820   2296   1931   2815   2618   2285   2036
-      32    1413   1216   2336   2004   1701   2341   2356   1968   1776
-      64    1452   1227   2322   1987   1707   2390   2468   2008   1753
-     128    1470   1233   2323   1979   1707   2388   2524   2059   1760
-     256    1437   1229   2306   1971   1713   2388   2548   2099   1779
-     512     929    882   1096   1060   1020   1145   1591   1571   1526
-    1024     964    906   1153   1113   1072   1199   1705   1674   1621
-    2048     880    852   1008    992    964   1055   1394   1381   1432
-    4096     870    849   1016    984    956   1054   1328   1344   1379
-    8192     872    852   1021    987    959   1056   1319   1302   1316
+       8    1597   1469   2768   2364   1560   1624   1987   1437   1286
+      16    1131   1041   1888   1679   1481   1626   2805   2037   1835
+      32    1530   1393   2430   2198   1973   2121   2819   1896   1832
+      64    1478   1345   2309   2099   1887   2017   2560   1797   1680
+     128    1483   1341   2300   2107   1883   2025   2657   1887   1729
+     256    1479   1335   2308   2124   1878   2016   2691   1852   1704
+     512     972    935   1151   1100   1075   1095   1712   1454   1393
+    1024     989    950   1141   1118   1084   1104   1897   1637   1520
+    2048     883    852   1010    983    949    982   1435   1306   1327
+    4096     877    848   1017    987    950    990   1358   1317   1332
+    8192     879    851   1025    982    955    990   1364   1315   1312
 
-                End of test Sat Jan 30 00:21:48 2010
+                End of test Thu Feb  4 19:49:28 2010
 
 SYSTEM INFORMATION
 
@@ -92,27 +1764,901 @@ Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (
 
  #####################################################
 
-     Memory Reading Speed Test armv7 optimized (neon) by Roy Longbottom
+     Memory Reading Speed Test arm armv7 optimized by Roy Longbottom
 
-               Start of test Sat Jan 30 00:21:48 2010
+               Start of test Thu Feb  4 19:49:28 2010
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8    1530   1312   3328   1943   1591   2773   2171   2528   2529
-      16    1276   1095   2777   1914   1598   2837   2618   3050   3052
-      32    1478   1266   3044   2165   1827   3047   2622   3052   3057
-      64    1437   1237   2892   2064   1745   2886   2388   2686   2688
-     128    1446   1246   3004   2059   1752   3003   2511   2882   2875
-     256    1433   1241   2971   2035   1739   2965   2548   2950   2950
-     512    1172   1058   1779   1493   1354   1782   2337   2591   2597
-    1024     964    916   1249   1132   1078   1247   1693   1745   1752
-    2048     879    854   1058    997    967   1061   1356   1364   1362
-    4096     869    848   1046    985    955   1047   1351   1383   1338
-    8192     866    847   1047    980    953   1049   1338   1342   1305
+       8    1597   1467   2559   2270   1969   2197   2692   1945   1753
+      16    1532   1409   2425   2267   2050   2294   2821   2038   1832
+      32    1470   1330   2109   2070   1849   1982   2487   1719   1596
+      64    1480   1335   2130   2076   1872   2008   2640   1732   1608
+     128    1483   1337   2143   2110   1871   2025   2683   1741   1603
+     256    1469   1327   2112   2034   1859   1989   2702   1721   1595
+     512     949    914   1074   1068   1034   1058   1644    680    695
+    1024     900    871   1006   1004    970    984   1657    658    678
+    2048     878    850    973    971    944    958   1544    664    690
+    4096     867    849    985    978    945    972   1424    650    672
+    8192     875    850   1003    987    950    982   1400    645    660
 
-                End of test Sat Jan 30 00:22:04 2010
+                End of test Thu Feb  4 19:49:44 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7 optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:49:44 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1469   2674   2368   2127   2293   2806   2029   1816
+      16    1598   1469   2636   2356   2154   2290   2819   2037   1834
+      32    1470   1330   2265   2069   1848   1980   2551   1764   1665
+      64    1476   1336   2274   2058   1873   2005   2640   1810   1663
+     128    1477   1335   2302   2112   1885   2025   2682   1821   1670
+     256    1469   1327   2262   2074   1866   1983   2699   1865   1702
+     512    1053   1004   1294   1226   1164   1214   1843   1589   1503
+    1024     947    910   1093   1063   1026   1055   1833   1616   1516
+    2048     898    867   1020    988    965    976   1490   1429   1374
+    4096     885    865   1020    993    963    984   1327   1299   1283
+    8192     886    862   1025    996    963    991   1367   1294   1308
+
+                End of test Thu Feb  4 19:50:01 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:50:01 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1469   2666   2368   2121   2293   2808   2030   1829
+      16    1596   1467   2582   2369   2161   2297   2821   2034   1833
+      32    1470   1329   2109   2067   1849   1983   2561   1719   1595
+      64    1476   1334   2132   2066   1867   2009   2641   1730   1611
+     128    1483   1330   2135   2104   1877   2020   2683   1736   1599
+     256    1469   1328   2107   2073   1864   1986   2699   1723   1595
+     512    1043    992   1217   1206   1164   1194   1804    780    783
+    1024     970    931   1103   1095   1046   1078   1885    736    751
+    2048     892    862    990    986    958    975   1475    695    723
+    4096     875    853    998    985    955    982   1412    670    683
+    8192     877    853   1012    990    956    989   1396    650    666
+
+                End of test Thu Feb  4 19:50:17 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:50:17 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1562   1468   2656   2368   2158   2293   2086   1295   1294
+      16    1104   1041   1768   1678   1524   1624   1995   1298   1812
+      32    1441   1329   2107   2069   1842   1983   2542   1612   1597
+      64    1447   1328   2115   2068   1864   2006   2641   1616   1597
+     128    1457   1331   2118   2090   1870   2019   2682   1620   1594
+     256    1439   1326   2099   2046   1851   1988   2687   1616   1599
+     512     926    914   1078   1065   1039   1059   1656   1466    695
+    1024     942    929   1107   1098   1064   1080   1659   1482    742
+    2048     864    852    969    965    941    961   1468   1417    692
+    4096     866    843    986    978    945    971   1380   1401    677
+    8192     865    850   1001    981    952    982   1367   1364    663
+
+                End of test Thu Feb  4 19:50:34 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:50:34 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1596   1669   2698   2269   2199   2344   2499   1752   1595
+      16    1530   1601   2702   2270   2157   2438   2619   1832   1668
+      32    1469   1484   2196   2062   1984   2094   2340   1640   1495
+      64    1476   1482   2171   2057   2018   2115   2467   1652   1493
+     128    1473   1457   2175   2054   2030   2124   2528   1674   1500
+     256    1465   1473   2187   2009   1975   2087   2544   1711   1475
+     512     949    972   1106   1082   1094   1098   1622   1444    699
+    1024     963    981   1139   1108   1120   1126   1664   1447    746
+    2048     873    884    981    972    983    969   1440   1365    689
+    4096     875    883    998    974    979    989   1326   1314    674
+    8192     880    885   1000    976    980    988   1374   1303    660
+
+                End of test Thu Feb  4 19:50:50 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:50:50 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1632   1525   2159   2445   2293   2817   2806   2022   1829
+      16    1633   1530   2155   2447   2285   2801   2821   2036   1832
+      32    1503   1380   1922   2133   1939   2340   2539   1701   1660
+      64    1507   1388   1915   2124   1960   2404   2641   1693   1671
+     128    1503   1387   1927   2096   1945   2400   2671   1698   1672
+     256    1502   1379   1909   2111   1928   2371   2698   1705   1701
+     512     961    932   1046   1103   1055   1144   1636    688   1462
+    1024     992    958   1087   1122   1103   1146   1664    738   1447
+    2048     892    868    952    989    957   1046   1479    703   1331
+    4096     884    867    961    987    958   1035   1374    685   1249
+    8192     871    868    956    967    959   1034   1359    664   1287
+
+                End of test Thu Feb  4 19:51:07 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:51:07 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1598   1469   2754   2368   2088   2293   2807   2030   1805
+      16    1596   1470   2623   2365   2156   2297   2820   2034   1812
+      32    1470   1330   2264   2065   1848   1980   2527   1756   1662
+      64    1478   1336   2275   2072   1867   2008   2640   1791   1662
+     128    1481   1337   2304   2104   1878   2025   2684   1819   1661
+     256    1471   1327   2272   2079   1851   1994   2699   1855   1709
+     512     999    955   1189   1140   1101   1122   2449   1640   1605
+    1024     910    875   1042   1012    980    995   1723   1506   1458
+    2048     878    850    995    969    940    954   1492   1411   1385
+    4096     866    838    980    977    942    944   1382   1332   1316
+    8192     877    852   1014    979    954    986   1368   1358   1314
+
+                End of test Thu Feb  4 19:51:23 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:51:23 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1563   1469   3328   2366   2141   3315   2807   3034   3034
+      16    1563   1467   3338   2368   2157   3317   2818   3041   3046
+      32    1435   1330   2761   2068   1850   2757   2542   2716   2713
+      64    1464   1334   2897   2069   1877   2912   2641   2776   2784
+     128    1446   1338   2926   2110   1884   2942   2683   2838   2872
+     256    1433   1317   2848   2052   1855   2851   2697   2892   2777
+     512     925    919   1159   1073   1046   1151   1660   1606   1609
+    1024     934    916   1170   1081   1047   1166   1650   1575   1543
+    2048     863    854   1001    971    945   1022   1421   1404   1413
+    4096     869    852   1035    974    944   1025   1406   1292   1349
+    8192     876    850   1036    986    953   1038   1344   1318   1322
+
+                End of test Thu Feb  4 19:51:39 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:51:39 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1625   2286   3329   2472   2295   3329   2532   3034   3034
+      16    1633   2197   3193   2424   2200   3195   2490   2912   2916
+      32    1468   1942   2649   2149   1940   2764   2441   2716   2740
+      64    1563   2009   2902   2310   2020   2895   2429   2789   2796
+     128    1573   1998   2928   2343   2031   2947   2484   2891   2892
+     256    1554   1987   2864   2297   2001   2833   2533   2926   2930
+     512    1106   1151   1236   1279   1145   1227   1771   1702   1682
+    1024    1103   1163   1268   1294   1155   1265   1742   1637   1657
+    2048     976    987   1036   1068    983   1037   1586   1448   1430
+    4096     980    988   1037   1028    950    996   1471   1335   1298
+    8192     978    999   1035   1069    989   1042   1459   1284   1294
+
+                End of test Thu Feb  4 19:51:56 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv7-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:51:56 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1632   1531   3329   2445   1753   2577   1988   1845   1846
+      16    1155   1084   2363   1731   1622   2591   2127   2618   2606
+      32    1506   1385   2775   2132   1931   2978   2529   2341   2345
+      64    1516   1381   2777   2145   1959   3031   2636   2322   2295
+     128    1542   1382   2763   2097   1947   3055   2686   2377   2374
+     256    1508   1370   2754   2132   1937   2992   2697   2442   2429
+     512     963    930   1134   1092   1052   1150   1655   1599   1597
+    1024     913    888   1048   1031    986   1070   1663   1588   1591
+    2048     898    875   1027   1000    964   1037   1478   1453   1451
+    4096     889    869   1033    986    963   1044   1368   1356   1353
+    8192     884    873   1036    997    969   1051   1329   1308   1369
+
+                End of test Thu Feb  4 19:52:12 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:52:12 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1468   2633   2347   2140   2293   2808   2029   1829
+      16    1596   1468   2600   2367   2158   2294   2818   2030   1833
+      32    1469   1329   2110   2067   1847   1983   2493   1716   1595
+      64    1474   1333   2116   2069   1863   2005   2642   1727   1605
+     128    1473   1333   2117   2102   1872   2020   2683   1745   1599
+     256    1468   1324   2086   2061   1848   1989   2703   1726   1593
+     512    1023    979   1181   1179   1139   1169   1795    756    763
+    1024     925    893   1040   1037   1003   1021   1700    685    708
+    2048     882    856    978    975    948    964   1577    661    687
+    4096     869    851    986    979    944    970   1436    657    677
+    8192     874    846   1000    981    950    982   1397    647    663
+
+                End of test Thu Feb  4 19:52:28 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:52:28 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1563   1469   2580   2368   2158   2292   2806   1828   1806
+      16    1565   1469   2592   2370   2162   2296   2821   1835   1831
+      32    1441   1323   2110   2069   1847   1982   2555   1602   1587
+      64    1461   1335   2116   2070   1856   2004   2642   1623   1597
+     128    1452   1332   2116   2080   1867   2021   2684   1619   1592
+     256    1438   1324   2080   2065   1857   1991   2700   1615   1588
+     512     931    912   1084   1076   1043   1064   1627   1475    696
+    1024     906    893   1038   1032   1004   1018   1606   1462    697
+    2048     865    856    979    976    949    962   1465   1388    687
+    4096     871    853    989    982    949    973   1401   1342    682
+    8192     874    852   1005    987    953    980   1392   1354    666
+
+                End of test Thu Feb  4 19:52:45 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:52:45 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1531   1597   2816   2294   2444   2818   2808   2030   1829
+      16    1529   1596   2804   2293   2444   2811   2813   2038   1833
+      32    1413   1447   2318   2013   2025   2342   2508   1707   1657
+      64    1414   1461   2353   2008   2075   2406   2642   1717   1667
+     128    1409   1477   2342   2019   2081   2418   2682   1726   1676
+     256    1407   1454   2327   1993   2044   2370   2698   1692   1698
+     512     911    952   1102   1069   1053   1150   1624    688   1455
+    1024     911    966   1119   1090   1090   1174   1655    767   1481
+    2048     858    884   1000    976    977   1051   1523    719   1362
+    4096     880    896   1031    987    991   1052   1376    698   1269
+    8192     878    897   1036    988    989   1056   1346    682   1280
+
+                End of test Thu Feb  4 19:53:01 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:53:01 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1498   1646   2609   2293   2290   1932   2605   1080   1173
+      16    1063   1169   1849   1625   1611   1370   1852   1083   1216
+      32    1388   1503   2329   2011   1985   1717   2341   1381   1493
+      64    1386   1511   2391   2007   2030   1732   2465   1404   1491
+     128    1385   1520   2410   2053   2024   1725   2529   1408   1496
+     256    1381   1508   2335   2009   1992   1721   2541   1379   1466
+     512     981   1046   1214   1166   1160   1110   1730   1301    752
+    1024     891    926   1049   1037   1026    985   1626   1307    701
+    2048     863    889    988    976    973    938   1482   1274    697
+    4096     860    896    992    973    964    941   1387   1288    680
+    8192     860    905    992    975    980    949   1365   1274    665
+
+                End of test Thu Feb  4 19:53:18 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:53:18 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1469   2685   2366   1684   1815   2221   1606   1448
+      16    1264   1161   2086   1873   1708   1808   2567   2038   1821
+      32    1470   1329   2263   2069   1850   1983   2516   1780   1665
+      64    1479   1335   2289   2064   1881   2006   2642   1798   1657
+     128    1479   1333   2296   2096   1868   2020   2685   1819   1672
+     256    1470   1325   2262   2062   1840   1990   2701   1854   1705
+     512    1059   1009   1307   1234   1189   1229   1836   1597   1498
+    1024     906    880   1043   1015    981    995   1624   1466   1408
+    2048     886    858   1009    982    948    970   1525   1356   1321
+    4096     872    852   1012    982    951    974   1410   1267   1302
+    8192     874    849   1020    987    955    986   1376   1337   1321
+
+                End of test Thu Feb  4 19:53:34 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:53:34 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1563   1469   3328   2038   1669   2635   2222   2401   2401
+      16    1236   1158   2623   1875   1709   2622   2818   3035   3027
+      32    1441   1330   2761   2067   1841   2764   2539   2727   2724
+      64    1453   1330   2898   2066   1875   2898   2641   2756   2657
+     128    1452   1337   2935   2128   1880   2936   2683   2870   2826
+     256    1437   1321   2849   2072   1862   2821   2699   2842   2837
+     512     982    954   1229   1140   1095   1231   2424   2421   2432
+    1024     920    902   1114   1050   1014   1123   1700   1676   1676
+    2048     883    868   1051    995    961   1044   1493   1385   1385
+    4096     877    855   1044    984    957   1045   1375   1321   1337
+    8192     871    854   1050    990    954   1050   1361   1296   1289
+
+                End of test Thu Feb  4 19:53:50 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:53:50 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1531   1597   3330   2368   2160   4064   2808   2517   2607
+      16    1529   1598   3334   2369   2158   4067   2821   2572   2611
+      32    1412   1446   2775   2069   1952   3242   2588   2279   2336
+      64    1412   1460   2819   2058   2004   3280   2644   2276   2334
+     128    1408   1474   2821   2049   2014   3302   2685   2373   2376
+     256    1405   1439   2790   2049   1972   3242   2701   2378   2442
+     512     910    955   1143   1057   1060   1175   1653   1559   1597
+    1024     904    941   1117   1039   1040   1147   1689   1581   1612
+    2048     860    887   1031    975    973   1057   1475   1434   1450
+    4096     866    889   1036    982    968   1057   1363   1373   1373
+    8192     866    894   1042    985    971   1060   1352   1331   1366
+
+                End of test Thu Feb  4 19:54:07 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:54:07 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1494   1562   3046   2293   2289   3328   2596   2607   2285
+      16    1498   1590   3052   2288   2288   3334   2617   2616   2291
+      32    1383   1448   2548   2011   1984   2762   2357   2306   2111
+      64    1394   1444   2647   2015   2023   2887   2467   2289   2086
+     128    1403   1456   2662   2052   2027   2920   2518   2370   2042
+     256    1397   1446   2660   2066   2017   2915   2554   2441   1997
+     512     918    944   1142   1069   1064   1156   1631   1597   1501
+    1024     891    913   1072   1014   1012   1081   1676   1631   1560
+    2048     865    878   1024    983    973   1034   1455   1423   1403
+    4096     862    886   1029    973    973   1032   1371   1357   1353
+    8192     860    894   1031    978    978   1044   1370   1362   1348
+
+                End of test Thu Feb  4 19:54:23 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8.1-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:54:23 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1469   2700   2365   2098   2293   2809   2030   1829
+      16    1598   1471   2502   2367   2159   2294   2818   2036   1834
+      32    1469   1329   2109   2065   1849   1982   2540   1713   1594
+      64    1480   1335   2127   2065   1860   2009   2640   1728   1605
+     128    1484   1339   2136   2115   1878   2020   2685   1742   1604
+     256    1467   1325   2101   2066   1857   1990   2700   1724   1595
+     512     956    919   1081   1078   1043   1069   1665    685    701
+    1024     935    896   1048   1044   1010   1028   1736    706    732
+    2048     896    866    993    995    966    982   1474    675    699
+    4096     872    857    999    986    954    985   1365    670    686
+    8192     881    853   1011    989    953    989   1345    652    666
+
+                End of test Thu Feb  4 19:54:39 2010
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+ 
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test arm armv8.1-a optimized by Roy Longbottom
+
+               Start of test Thu Feb  4 19:54:39 2010
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1597   1468   2627   2368   2114   2293   2323   1437   1289
+      16    1130   1040   1872   1677   1523   1623   1992   1442   1504
+      32    1471   1330   2266   2070   1847   1983   2602   1782   1671
+      64    1482   1335   2290   2061   1874   2009   2643   1818   1671
+     128    1482   1333   2299   2108   1878   2020   2673   1820   1663
+     256    1468   1324   2265   2070   1864   1985   2697   1858   1697
+     512    1008    968   1217   1162   1124   1145   1812   1583   1462
+    1024     959    921   1127   1088   1048   1075   1802   1545   1485
+    2048     896    868   1023    995    966    982   1488   1410   1400
+    4096     875    856   1015    987    951    981   1369   1361   1355
+    8192     878    853   1020    984    956    985   1340   1351   1348
+
+                End of test Thu Feb  4 19:54:56 2010
 
 SYSTEM INFORMATION
 

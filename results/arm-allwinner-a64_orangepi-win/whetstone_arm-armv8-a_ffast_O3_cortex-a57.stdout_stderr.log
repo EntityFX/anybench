@@ -1,0 +1,52 @@
+
+##########################################
+Single Precision C Whetstone Benchmark arm armv8-a optimized, Thu Feb  4 19:47:59 2010
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.36 Seconds         25   Passes (x 100)
+       1.85 Seconds        125   Passes (x 100)
+       8.99 Seconds        625   Passes (x 100)
+
+Use 695  passes (x 100)
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+Features	: fp asimd aes pmull sha1 sha2 crc32 wp half thumb fastmult vfp edsp neon vfpv3 tlsi vfpv4 idiva idivt 
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: sun50iw1p1
+
+
+From File /proc/version
+Linux version 3.10.102+ (curry@curry) (gcc version 4.9.3 20150113 (prerelease) (Linaro GCC 4.9-2015.01-3) ) #2 SMP PREEMPT Fri Mar 31 11:35:51 CST 2017
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       323.151              0.041
+N2 floating point     -1.12274742126464844       348.635              0.268
+N3 if then else        1.00000000000000000                1726.554    0.042
+N4 fixed point        12.00000000000000000                1437.325    0.152
+N5 sin,cos etc.        0.49911010265350342                  11.764    4.916
+N6 floating point      0.99999982118606567       287.562              1.304
+N7 assignments         3.00000000000000000                1151.154    0.112
+N8 exp,sqrt etc.       0.75110864639282227                   8.398    3.078
+
+MWIPS                                            701.143              9.912
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
