@@ -1,0 +1,82 @@
+
+##########################################
+Single Precision C Whetstone Benchmark arm armv6 optimized, Tue Feb 16 22:09:25 2016
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.04 Seconds          5   Passes (x 100)
+       0.19 Seconds         25   Passes (x 100)
+       0.97 Seconds        125   Passes (x 100)
+       4.85 Seconds        625   Passes (x 100)
+
+Use 1289  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       388.705              0.064
+N2 floating point     -1.12274742126464844       361.182              0.480
+N3 if then else        1.00000000000000000                2549.949    0.052
+N4 fixed point        12.00000000000000000                1700.579    0.239
+N5 sin,cos etc.        0.49911010265350342                  26.549    4.040
+N6 floating point      0.99999982118606567       364.417              1.908
+N7 assignments         3.00000000000000000                1700.344    0.140
+N8 exp,sqrt etc.       0.75110864639282227                  15.806    3.034
+
+MWIPS                                           1294.744              9.956
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

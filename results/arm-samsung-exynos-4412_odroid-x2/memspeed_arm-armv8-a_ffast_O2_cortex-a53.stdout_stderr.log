@@ -1,0 +1,74 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+
+
+   Memory Reading Speed Test arm armv8-a optimized Tue Feb 16 22:19:43 2016
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2266   2714   3497   4026   3014   4385   5385   3178   3180
+      16    2266   2717   3503   4027   3017   4517   5414   3190   3191
+      32    2003   2146   2671   3398   2294   3012   5426   3192   3193
+      64    1675   1739   2017   2661   1770   2052   2722   2133   3124
+     128    1621   1702   1921   2433   1726   1854   1673   1472   1433
+     256    1615   1698   1924   2420   1726   1835   1541   1375   1256
+     512    1592   1629   1892   2363   1711   1809   1444   1294   1181
+    1024    1449   1553   1699   1956   1580   1657   1216   1135   1048
+    2048    1368   1464   1560   1651   1423   1518   1045   1016    966
+    4096    1314   1382   1423   1427   1385   1429    968    974    938
+    8192    1311   1384   1441   1352   1399   1438    991    997    952
+
+                End of test Tue Feb 16 22:20:01 2016
+

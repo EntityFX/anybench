@@ -1,0 +1,74 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 2
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 3
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 3394.86
+Features	: swp half thumb fastmult vfp edsp thumbee neon vfpv3 tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: ODROIDX2
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.8.13.30 (mdrjr@powah) (gcc version 4.7.2 (crosstool-NG 1.17.0) ) #2 SMP PREEMPT Tue Sep 20 18:59:12 BRT 2016
+
+
+   Memory Reading Speed Test arm armv6 optimized Tue Feb 16 22:15:55 2016
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2719   2361   4152   4520   2855   4160   5380   2848   3180
+      16    2718   2363   4156   4527   2857   4173   5410   2855   3189
+      32    2717   2361   4143   4525   2856   4169   5421   2858   3194
+      64    2127   1645   2073   2640   1813   1981   2474   2255   2391
+     128    2040   1605   1961   2505   1802   1864   1689   1356   1362
+     256    2038   1601   1944   2489   1804   1841   1535   1239   1232
+     512    1967   1562   1885   2333   1744   1795   1413   1163   1154
+    1024    1791   1469   1725   1976   1617   1659   1213   1055   1045
+    2048    1583   1386   1549   1610   1479   1511   1034    964    956
+    4096    1388   1330   1378   1367   1359   1357    874    902    903
+    8192    1341   1328   1332   1328   1335   1323    880    927    918
+
+                End of test Tue Feb 16 22:16:12 2016
+

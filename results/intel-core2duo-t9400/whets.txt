@@ -1,135 +1,21 @@
 
 ##############################################
 
-Whetstone Single Precision C Benchmark  amd64 ffast optimized, Sat Jan 25 15:54:15 2020
+Whetstone Single Precision C Benchmark  amd64 _ optimized, Fri Jan 31 12:14:25 2020
 
 
 Loop content                   Result              MFLOPS      MOPS   Seconds
 
-N1 floating point      -1.12475013732910156       865.500               0.082
-N2 floating point      -1.12274742126464844       853.733               0.585
-N3 if then else         1.00000000000000000                   0.000     0.000
-N4 fixed point         12.00000000000000000               35115.730     0.033
-N5 sin,cos etc.         0.49911010265350342                  76.304     4.052
-N6 floating point       0.99999982118606567       648.965               3.089
-N7 assignments          3.00000000000000000                2003.278     0.343
-N8 exp,sqrt etc.        0.75110864639282227                  76.367     1.810
+N1 floating point      -1.12475013732910156       962.626               0.058
+N2 floating point      -1.12274742126464844       957.655               0.408
+N3 if then else         1.00000000000000000               210326528.000     0.000
+N4 fixed point         12.00000000000000000               46701.102     0.020
+N5 sin,cos etc.         0.49911010265350342                  56.582     4.275
+N6 floating point       0.99999982118606567       587.240               2.670
+N7 assignments          3.00000000000000000                3465.138     0.155
+N8 exp,sqrt etc.        0.75110864639282227                  44.581     2.426
 
-MWIPS                                            3718.161               9.994
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: AuthenticAMD
-cpu family	: 18
-model		: 1
-model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
-stepping	: 0
-microcode	: 0x3000027
-cpu MHz		: 2600.009
-cache size	: 1024 KB
-physical id	: 0
-siblings	: 4
-core id		: 0
-cpu cores	: 4
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 6
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
-bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
-bogomips	: 5200.02
-TLB size	: 1536 4K pages
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 40 bits physical, 48 bits virtual
-power management: ts ttp tm stc 100mhzsteps hwpstate
-
-procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-
-##############################################
-
-Whetstone Single Precision C Benchmark  amd64  optimized, Sat Jan 25 15:54:37 2020
-
-
-Loop content                   Result              MFLOPS      MOPS   Seconds
-
-N1 floating point      -1.12475013732910156       798.472               0.080
-N2 floating point      -1.12274742126464844       629.286               0.714
-N3 if then else         1.00000000000000000                2226.054     0.155
-N4 fixed point         12.00000000000000000                3245.616     0.324
-N5 sin,cos etc.         0.49911010265350342                  81.319     3.418
-N6 floating point       0.99999982118606567       649.128               2.776
-N7 assignments          3.00000000000000000                1757.512     0.351
-N8 exp,sqrt etc.        0.75110864639282227                  58.009     2.143
-
-MWIPS                                            3353.798               9.962
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: AuthenticAMD
-cpu family	: 18
-model		: 1
-model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
-stepping	: 0
-microcode	: 0x3000027
-cpu MHz		: 1312.798
-cache size	: 1024 KB
-physical id	: 0
-siblings	: 4
-core id		: 0
-cpu cores	: 4
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 6
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
-bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
-bogomips	: 5200.02
-TLB size	: 1536 4K pages
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 40 bits physical, 48 bits virtual
-power management: ts ttp tm stc 100mhzsteps hwpstate
-
-procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-
-##############################################
-
-Whetstone Single Precision C Benchmark  amd64 ffast optimized, Sun Jan 26 10:57:08 2020
-
-
-Loop content                   Result              MFLOPS      MOPS   Seconds
-
-N1 floating point      -1.12475013732910156       963.766               0.058
-N2 floating point      -1.12274742126464844       957.290               0.408
-N3 if then else         1.00000000000000000               210471232.000     0.000
-N4 fixed point         12.00000000000000000               46749.148     0.020
-N5 sin,cos etc.         0.49911010265350342                  56.665     4.271
-N6 floating point       0.99999982118606567       588.675               2.666
-N7 assignments          3.00000000000000000                3534.548     0.152
-N8 exp,sqrt etc.        0.75110864639282227                  44.705     2.421
-
-MWIPS                                            2910.328               9.995
+MWIPS                                            2903.792              10.011
 
 SYSTEM INFORMATION
 
@@ -141,7 +27,7 @@ model		: 23
 model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
 stepping	: 6
 microcode	: 0x60f
-cpu MHz		: 1170.566
+cpu MHz		: 1232.518
 cache size	: 6144 KB
 physical id	: 0
 siblings	: 2

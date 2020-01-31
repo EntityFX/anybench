@@ -14,25 +14,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v3 optimized
+     Multithreading Single Precision Whetstones e2k v3 optimized
 
-             Using 8 threads - Fri Jan 31 16:18:56 2020
+             Using 8 threads - Fri Jan 31 20:27:46 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1663    360    321    322     44     27    729   1275   1860
-      2   1666    360    321    324     44     27    711   1281   1927
-      3   1667    360    321    324     44     27    729   1281   1927
-      4   1657    360    312    324     43     27    729   1281   1923
-      5   1660    360    321    324     44     27    729   1281   1927
-      6   1662    353    321    322     44     27    729   1279   1884
-      7   1663    363    321    322     44     27    729   1247   1927
-      8   1645    363    296    315     44     27    729   1281   1927
+      1   1671    360    319    322     45     27    747   1281   1939
+      2   1675    360    319    324     45     27    747   1281   1939
+      3   1672    360    319    324     44     27    747   1281   1935
+      4   1671    360    319    324     44     27    747   1280   1939
+      5   1671    360    319    324     44     27    744   1281   1939
+      6   1668    360    318    324     44     27    729   1280   1939
+      7   1668    360    319    324     44     27    729   1281   1939
+      8   1668    360    319    323     44     27    729   1281   1939
 
- Total   13282   2878   2533   2578    353    216   5817  10205  15302
+ Total   13364   2882   2554   2589    355    218   5917  10245  15508
 
- MWIPS   12990 Based on time for last thread to finish
+ MWIPS   13314 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -44,7 +44,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:19:04 2020
+               End of test Fri Jan 31 20:27:53 2020
 
 
 #####################################################################
@@ -62,169 +62,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v3 optimized
+     Multithreading Single Precision Whetstones e2k v3 optimized
 
-             Using 8 threads - Fri Jan 31 16:19:04 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1497    320    321    321     41     27    744   1273    299
-      2   1527    320    321    324     44     27    744   1273    292
-      3   1510    320    321    320     43     26    744   1267    298
-      4   1516    320    321    324     44     26    717   1122    298
-      5   1522    316    321    321     44     27    717   1273    298
-      6   1522    320    321    321     44     27    716   1273    298
-      7   1522    320    321    321     44     27    744   1273    296
-      8   1511    320    321    321     44     26    716   1273    298
-
- Total   12127   2556   2566   2573    350    212   5841  10027   2378
-
- MWIPS   11835 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:19:12 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v3 optimized
-
-             Using 8 threads - Fri Jan 31 16:19:12 2020
+             Using 8 threads - Fri Jan 31 20:27:53 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1524    320    304    322     44     27    807   1241    299
-      2   1524    320    317    322     44     27    807   1241    299
-      3   1517    240    317    322     44     27    777   1289    299
-      4   1524    320    317    322     44     27    807   1293    296
-      5   1520    320    314    322     43     27    807   1289    299
-      6   1506    320    317    322     44     27    668   1289    299
-      7   1509    312    295    318     44     27    775   1242    299
-      8   1497    240    322    310     43     27    776   1241    293
+      1   1523    320    316    324     44     27    726   1260    298
+      2   1523    320    316    324     44     27    726   1260    299
+      3   1523    320    316    324     44     27    726   1260    299
+      4   1521    320    314    324     44     27    726   1260    299
+      5   1519    320    316    321     44     27    726   1260    299
+      6   1519    320    316    321     44     27    726   1260    299
+      7   1514    320    316    317     44     26    726   1259    299
+      8   1519    320    316    321     44     27    726   1260    299
 
- Total   12121   2393   2502   2560    348    213   6226  10125   2382
+ Total   12160   2561   2524   2577    354    212   5808  10078   2388
 
- MWIPS   11784 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:19:22 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
-
-             Using 8 threads - Fri Jan 31 16:19:22 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1660    360    321    323     44     27    739   1267   1925
-      2   1672    360    321    323     45     27    740   1267   1945
-      3   1651    360    321    323     43     27    686   1266   1944
-      4   1669    360    321    323     44     27    740   1267   1945
-      5   1666    360    321    323     44     27    740   1267   1880
-      6   1669    360    321    323     44     27    740   1262   1924
-      7   1667    352    321    322     44     27    740   1267   1924
-      8   1656    360    321    314     44     27    740   1267   1924
-
- Total   13312   2875   2567   2577    354    217   5865  10129  15411
-
- MWIPS   13024 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:19:30 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
-
-             Using 8 threads - Fri Jan 31 16:19:30 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1710    393    398    324     44     28    735   1171   1885
-      2   1713    394    398    323     45     28    735   1274   1937
-      3   1713    393    398    324     45     28    735   1274   1938
-      4   1710    394    398    324     44     28    735   1274   1937
-      5   1713    392    398    323     44     28    735   1273   1938
-      6   1700    394    398    324     44     28    735   1274   1841
-      7   1697    390    386    324     43     28    735   1274   1938
-      8   1694    386    386    317     44     28    735   1274   1938
-
- Total   13650   3135   3159   2581    354    227   5880  10087  15352
-
- MWIPS   13396 Based on time for last thread to finish
+ MWIPS   12095 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -236,7 +92,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:19:38 2020
+               End of test Fri Jan 31 20:28:02 2020
 
 
 #####################################################################
@@ -254,25 +110,169 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
+     Multithreading Single Precision Whetstones e2k v3 optimized
 
-             Using 8 threads - Fri Jan 31 16:19:38 2020
+             Using 8 threads - Fri Jan 31 20:28:02 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1700    394    377    317     44     28    738   1288   1943
-      2   1712    386    388    324     44     28    738   1288   1942
-      3   1712    386    388    324     44     28    738   1288   1942
-      4   1694    394    388    324     43     28    738   1289   1942
-      5   1712    386    388    324     44     28    738   1288   1942
-      6   1715    394    398    324     44     28    738   1288   1942
-      7   1712    372    388    324     44     28    738   1288   1943
-      8   1699    398    392    324     44     27    738   1288   1939
+      1   1532    320    324    324     44     26    810   1296    300
+      2   1529    320    324    324     44     26    810   1295    298
+      3   1523    320    323    322     44     26    787   1252    298
+      4   1518    320    311    322     44     26    787   1252    298
+      5   1513    320    311    322     44     26    757   1116    298
+      6   1518    292    323    322     43     26    787   1206    299
+      7   1519    320    311    322     44     26    787   1252    297
+      8   1517    323    311    319     44     26    787   1288    298
 
- Total   13655   3109   3106   2586    354    227   5906  10306  15536
+ Total   12169   2534   2536   2578    349    212   6310   9957   2387
 
- MWIPS   13328 Based on time for last thread to finish
+ MWIPS   12022 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:28:11 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:28:11 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1672    360    319    323     45     27    736   1285   1947
+      2   1668    359    319    323     44     27    737   1291   1938
+      3   1665    360    319    321     44     27    736   1291   1938
+      4   1665    360    319    321     44     27    737   1291   1938
+      5   1657    360    311    323     44     27    737   1226   1938
+      6   1659    360    319    321     44     27    719   1291   1944
+      7   1666    353    319    322     44     27    746   1291   1934
+      8   1664    363    323    319     44     27    736   1292   1938
+
+ Total   13317   2875   2549   2572    354    217   5883  10258  15516
+
+ MWIPS   13167 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:28:19 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:28:19 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1711    393    389    323     45     28    742   1273   1924
+      2   1708    394    389    323     44     28    739   1273   1928
+      3   1709    392    389    323     44     28    742   1273   1928
+      4   1709    393    389    323     44     28    743   1273   1928
+      5   1709    393    389    323     44     28    743   1273   1928
+      6   1708    393    389    323     44     28    743   1273   1928
+      7   1709    393    389    323     44     28    743   1273   1928
+      8   1697    394    368    319     44     28    742   1273   1928
+
+ Total   13661   3146   3092   2580    355    228   5937  10186  15421
+
+ MWIPS   13556 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:28:27 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:28:27 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1713    394    399    324     44     29    720   1291   1936
+      2   1707    394    388    322     44     28    733   1291   1936
+      3   1702    386    388    324     44     28    736   1290   1936
+      4   1708    394    388    322     44     28    736   1291   1936
+      5   1706    394    388    324     44     28    720   1261   1810
+      6   1700    394    388    322     44     28    736   1291   1916
+      7   1698    386    388    324     44     28    736   1291   1767
+      8   1703    396    388    322     44     28    720   1291   1768
+
+ Total   13636   3138   3115   2586    355    226   5840  10297  15004
+
+ MWIPS   13519 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -284,7 +284,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:19:47 2020
+               End of test Fri Jan 31 20:28:36 2020
 
 
 #####################################################################
@@ -302,25 +302,265 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
+     Multithreading Single Precision Whetstones e2k v4 optimized
 
-             Using 8 threads - Fri Jan 31 16:19:47 2020
+             Using 8 threads - Fri Jan 31 20:28:36 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1517    324    316    322     44     27    737   1274    298
-      2   1501    318    316    322     44     27    737   1273    271
-      3   1503    320    316    312     44     27    737   1273    294
-      4   1512    320    316    322     44     26    737   1273    297
-      5   1516    315    316    321     44     27    737   1273    298
-      6   1509    320    316    319     44     27    736   1273    283
-      7   1505    311    316    316     44     26    706   1273    298
-      8   1509    320    316    316     44     27    737   1274    297
+      1   1528    320    321    324     44     27    742   1292    298
+      2   1521    265    321    324     44     26    742   1292    298
+      3   1520    320    321    324     44     26    716   1292    298
+      4   1516    320    321    324     44     26    742   1244    298
+      5   1524    320    321    324     44     26    742   1292    298
+      6   1518    235    321    324     44     26    742   1243    298
+      7   1523    320    321    323     44     26    742   1244    298
+      8   1511    202    308    324     44     26    742   1244    298
 
- Total   12072   2548   2527   2550    350    212   5863  10186   2337
+ Total   12162   2302   2556   2590    353    211   5909  10142   2386
 
- MWIPS   11849 Based on time for last thread to finish
+ MWIPS   11991 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:28:45 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:28:45 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1645    393    398    287     44     28    732   1267   1945
+      2   1645    393    399    287     44     28    732   1267   1945
+      3   1641    393    387    286     44     28    732   1267   1944
+      4   1642    393    387    287     44     28    732   1267   1944
+      5   1642    393    387    287     44     28    732   1267   1923
+      6   1642    385    385    287     44     28    732   1267   1943
+      7   1642    393    387    287     44     28    732   1266   1920
+      8   1641    398    387    287     44     28    732   1267   1924
+
+ Total   13140   3143   3116   2296    350    228   5856  10133  15488
+
+ MWIPS   13110 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:28:53 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:28:53 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1639    393    399    286     44     28    730   1266   1937
+      2   1639    393    399    286     44     28    714   1265   1937
+      3   1626    370    364    286     43     29    714   1235   1937
+      4   1631    393    376    286     44     29    714   1234   1937
+      5   1636    393    387    287     44     28    731   1234   1936
+      6   1636    393    387    287     44     28    714   1266   1937
+      7   1635    393    387    284     44     28    731   1265   1936
+      8   1635    398    387    284     44     28    730   1292   1931
+
+ Total   13078   3128   3086   2287    349    227   5776  10057  15488
+
+ MWIPS   12942 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:29:01 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:29:01 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1525    312    314    324     44     27    803   1292    298
+      2   1521    320    314    321     44     27    803   1244    298
+      3   1528    320    314    324     44     27    803   1292    299
+      4   1517    320    314    317     44     27    803   1291    298
+      5   1527    320    314    324     43     27    803   1292    298
+      6   1524    312    312    324     44     27    803   1244    298
+      7   1508    320    314    318     43     27    803   1243    298
+      8   1514    323    314    318     44     26    803   1244    298
+
+ Total   12165   2548   2513   2571    347    213   6426  10141   2386
+
+ MWIPS   12019 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:29:10 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:29:10 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1531    301    301    324     44     28    804   1281    296
+      2   1531    301    302    324     43     28    805   1281    298
+      3   1529    301    301    321     44     28    805   1281    298
+      4   1529    301    301    321     44     28    804   1293    298
+      5   1521    301    302    315     44     28    804   1281    298
+      6   1528    294    301    321     44     28    804   1234    298
+      7   1525    301    302    321     44     27    805   1282    298
+      8   1528    304    299    321     44     28    806   1282    298
+
+ Total   12222   2402   2409   2571    348    220   6436  10216   2386
+
+ MWIPS   12108 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:29:19 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v4 optimized
+
+             Using 8 threads - Fri Jan 31 20:29:19 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1425    301    293    319     44     21    798   1260    298
+      2   1533    301    303    322     44     28    798   1260    296
+      3   1534    301    303    322     44     28    798   1260    298
+      4   1534    301    303    322     44     28    798   1260    298
+      5   1530    301    303    322     44     27    798   1260    298
+      6   1526    301    303    322     43     27    798   1260    297
+      7   1527    301    304    322     43     27    798   1260    298
+      8   1441    303    303    324     43     21    798   1260    298
+
+ Total   12051   2408   2417   2575    349    207   6383  10081   2383
+
+ MWIPS   11359 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -332,7 +572,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:19:56 2020
+               End of test Fri Jan 31 20:29:29 2020
 
 
 #####################################################################
@@ -350,25 +590,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
+     Multithreading Single Precision Whetstones e2k v5 optimized
 
-             Using 8 threads - Fri Jan 31 16:19:56 2020
+             Using 8 threads - Fri Jan 31 20:29:29 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1536    393    399    288     41     25    568   1297   1947
-      2   1646    393    399    288     44     28    730   1294   1940
-      3   1640    382    393    285     44     28    730   1293   1941
-      4   1640    393    393    286     44     28    731   1294   1920
-      5   1645    393    393    288     44     28    727   1293   1941
-      6   1636    366    393    287     43     28    731   1261   1937
-      7   1640    393    381    287     44     29    730   1261   1940
-      8   1513    393    393    282     40     26    518   1261   1880
+      1   1671    361    322    323     44     27    734   1293   1932
+      2   1658    361    322    314     44     27    734   1293   1932
+      3   1636    361    322    302     44     27    734   1293   1932
+      4   1671    360    322    323     44     27    734   1293   1932
+      5   1634    361    322    299     44     27    734   1263   1932
+      6   1671    361    322    323     44     27    733   1293   1925
+      7   1664    361    321    319     44     27    733   1293   1932
+      8   1669    363    322    323     44     27    734   1262   1931
 
- Total   12897   3107   3143   2291    344    221   5466  10254  15446
+ Total   13273   2887   2574   2527    355    217   5868  10284  15448
 
- MWIPS   11987 Based on time for last thread to finish
+ MWIPS   13030 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -380,7 +620,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:20:05 2020
+               End of test Fri Jan 31 20:29:37 2020
 
 
 #####################################################################
@@ -398,217 +638,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
+     Multithreading Single Precision Whetstones e2k v5 optimized
 
-             Using 8 threads - Fri Jan 31 16:20:05 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1635    393    391    287     43     28    748   1290   1882
-      2   1642    393    391    287     44     28    729   1290   1923
-      3   1643    393    391    287     44     28    730   1290   1945
-      4   1640    393    391    287     44     28    730   1182   1941
-      5   1633    393    391    287     44     28    729   1283   1923
-      6   1634    393    391    287     44     28    680   1290   1923
-      7   1627    393    391    282     43     28    729   1290   1923
-      8   1636    398    391    287     44     28    695   1290   1923
-
- Total   13089   3149   3126   2292    349    226   5771  10204  15382
-
- MWIPS   12839 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:20:12 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
-
-             Using 8 threads - Fri Jan 31 16:20:12 2020
+             Using 8 threads - Fri Jan 31 20:29:37 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1497    320    282    324     43     26    810   1295    298
-      2   1534    320    324    324     44     27    810   1292    300
-      3   1521    320    316    321     44     27    772   1245    296
-      4   1522    312    316    321     44     26    802   1290    297
-      5   1517    312    316    321     43     26    802   1190    300
-      6   1522    312    316    324     44     26    802   1237    293
-      7   1503    312    316    321     43     26    719   1246    295
-      8   1521    323    316    324     44     26    805   1245    296
+      1   1699    393    395    321     44     28    733   1282   1934
+      2   1708    393    396    323     44     28    733   1281   1934
+      3   1703    393    383    323     44     28    733   1281   1934
+      4   1705    393    383    323     44     28    733   1282   1934
+      5   1708    391    395    323     44     28    734   1294   1933
+      6   1708    393    396    323     44     28    733   1282   1931
+      7   1706    393    383    324     44     28    733   1282   1934
+      8   1704    397    383    323     44     28    730   1282   1943
 
- Total   12138   2534   2499   2581    348    211   6322  10040   2375
+ Total   13640   3145   3114   2582    355    226   5864  10265  15479
 
- MWIPS   11822 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:20:22 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
-
-             Using 8 threads - Fri Jan 31 16:20:22 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1520    301    262    324     44     28    810   1292    300
-      2   1534    301    302    324     44     28    775   1291    299
-      3   1531    301    302    321     44     28    805   1291    299
-      4   1530    301    302    324     44     27    805   1291    298
-      5   1527    301    302    321     43     28    806   1243    296
-      6   1530    301    302    324     44     28    805   1288    290
-      7   1494    301    302    315     42     27    806   1243    296
-      8   1525    304    302    321     44     27    775   1242    298
-
- Total   12190   2409   2378   2575    347    220   6387  10181   2377
-
- MWIPS   11787 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:20:31 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v4 optimized
-
-             Using 8 threads - Fri Jan 31 16:20:31 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1527    260    303    321     43     28    795   1270    299
-      2   1531    300    296    324     44     28    795   1270    298
-      3   1527    300    296    321     43     28    795   1270    298
-      4   1514    300    286    318     43     27    795   1268    296
-      5   1508    300    264    318     43     28    789   1221    297
-      6   1510    300    296    321     42     28    795   1270    290
-      7   1514    258    286    321     43     28    795   1270    295
-      8   1520    219    286    321     44     28    795   1270    299
-
- Total   12150   2238   2314   2566    346    221   6354  10110   2373
-
- MWIPS   11868 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:20:40 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
-
-             Using 8 threads - Fri Jan 31 16:20:40 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1662    360    320    323     44     27    741   1262   1944
-      2   1651    360    320    323     44     27    677   1262   1920
-      3   1665    360    319    323     44     27    742   1262   1920
-      4   1664    360    319    320     44     27    738   1262   1944
-      5   1665    360    319    323     44     27    742   1262   1920
-      6   1665    360    319    323     44     27    742   1263   1920
-      7   1668    360    320    323     44     27    742   1263   1920
-      8   1655    360    318    316     44     27    741   1263   1943
-
- Total   13296   2877   2554   2573    354    216   5864  10099  15431
-
- MWIPS   13041 Based on time for last thread to finish
+ MWIPS   13564 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -620,7 +668,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:20:47 2020
+               End of test Fri Jan 31 20:29:45 2020
 
 
 #####################################################################
@@ -638,121 +686,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
+     Multithreading Single Precision Whetstones e2k v5 optimized
 
-             Using 8 threads - Fri Jan 31 16:20:47 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1702    370    392    318     44     29    738   1288   1885
-      2   1710    394    399    322     44     28    738   1288   1919
-      3   1706    394    381    323     44     28    735   1288   1942
-      4   1709    394    392    323     44     28    731   1288   1941
-      5   1708    394    392    323     44     28    738   1288   1939
-      6   1707    385    392    322     44     28    738   1288   1942
-      7   1710    394    392    323     44     28    738   1288   1943
-      8   1693    398    397    323     43     28    738   1292   1942
-
- Total   13645   3120   3137   2579    353    227   5894  10309  15453
-
- MWIPS   13416 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:20:56 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
-
-             Using 8 threads - Fri Jan 31 16:20:56 2020
+             Using 8 threads - Fri Jan 31 20:29:45 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1521    323    323    324     44     27    724   1201    291
-      2   1524    314    311    324     44     27    744   1273    298
-      3   1513    315    300    320     44     27    724   1274    298
-      4   1517    307    321    321     44     27    724   1273    298
-      5   1508    314    323    320     44     27    646   1220    298
-      6   1508    323    311    312     44     27    724   1271    298
-      7   1510    323    311    321     44     27    698   1274    297
-      8   1514    311    300    321     44     27    743   1288    298
+      1   1524    320    314    323     44     27    745   1283    298
+      2   1522    320    314    323     44     27    745   1275    300
+      3   1522    320    303    323     44     27    745   1283    298
+      4   1522    320    314    323     44     26    745   1283    298
+      5   1521    320    314    323     44     26    743   1283    298
+      6   1521    320    314    323     44     26    719   1283    298
+      7   1518    312    314    323     44     26    719   1283    298
+      8   1517    323    322    324     44     26    694   1289    296
 
- Total   12114   2530   2499   2564    352    213   5728  10075   2378
+ Total   12166   2556   2510   2588    353    212   5856  10263   2385
 
- MWIPS   11847 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:21:05 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
-
-             Using 8 threads - Fri Jan 31 16:21:05 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1644    393    390    287     44     28    748   1266   1878
-      2   1636    393    390    288     44     28    730   1266   1920
-      3   1640    392    389    288     44     28    730   1078   1940
-      4   1644    393    388    288     44     28    730   1266   1937
-      5   1632    393    389    286     44     28    675   1266   1920
-      6   1636    393    390    288     43     28    729   1261   1941
-      7   1636    393    390    288     44     28    712   1266   1941
-      8   1626    393    390    283     43     28    726   1260   1943
-
- Total   13095   3144   3115   2294    350    227   5779   9929  15421
-
- MWIPS   12850 Based on time for last thread to finish
+ MWIPS   12041 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -764,7 +716,7 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:21:13 2020
+               End of test Fri Jan 31 20:29:54 2020
 
 
 #####################################################################
@@ -782,73 +734,25 @@
  8 CPUs Available
 #####################################################################
 
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
+     Multithreading Single Precision Whetstones e2k v5 optimized
 
-             Using 8 threads - Fri Jan 31 16:21:13 2020
-
-         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
- Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
-
-      1   1527    320    324    323     44     27    778   1268    298
-      2   1499    320    319    310     43     27    747   1112    298
-      3   1524    320    317    323     44     27    778   1268    298
-      4   1525    320    319    322     44     27    778   1268    298
-      5   1525    309    322    323     44     27    778   1291    296
-      6   1521    320    319    323     44     26    778   1268    298
-      7   1518    320    307    323     43     27    777   1268    298
-      8   1518    323    319    323     43     27    778   1267    291
-
- Total   12156   2551   2547   2568    349    213   6193  10011   2375
-
- MWIPS   11904 Based on time for last thread to finish
-
-
- Results Of Calculations Thread 1
-
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
- IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
- EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
-
-      Numeric results of the other 7 threads were same as above
-
-               End of test Fri Jan 31 16:21:22 2020
-
-
-#####################################################################
-
-  Assembler CPUID and RDTSC       
-  CPU  , Features Code 00000000, Model Code 00000000 
-    
-  Measured - Minimum 0 MHz, Maximum 0 MHz 
-  Linux Functions 
-  get_nprocs() - CPUs 8, Configured CPUs 8 
-  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
-  uname() - Linux, yukari, 4.9.0-2.7-e8c 
-  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
-
- 8 CPUs Available
-#####################################################################
-
-     Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
-
-             Using 8 threads - Fri Jan 31 16:21:22 2020
+             Using 8 threads - Fri Jan 31 20:29:54 2020
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1514    305    273    320     44     28    776   1255    298
-      2   1524    300    283    324     44     28    777   1255    298
-      3   1509    271    294    314     44     27    777   1254    298
-      4   1509    300    294    321     44     27    777   1255    298
-      5   1516    300    294    321     44     27    777   1245    293
-      6   1518    300    294    321     44     27    777   1255    296
-      7   1519    300    294    321     44     27    777   1255    298
-      8   1503    271    294    320     42     27    777   1254    298
+      1   1645    394    398    286     44     28    744   1275   1914
+      2   1647    378    398    288     44     28    744   1244   1930
+      3   1646    393    398    288     44     28    727   1275   1934
+      4   1642    394    398    288     44     28    744   1274   1934
+      5   1638    394    387    288     44     28    744   1275   1914
+      6   1637    394    387    286     44     28    727   1275   1894
+      7   1642    394    387    286     44     28    744   1239   1933
+      8   1643    393    387    288     44     28    744   1274   1934
 
- Total   12111   2347   2319   2562    347    218   6213  10028   2376
+ Total   13140   3133   3140   2297    351    226   5919  10129  15389
 
- MWIPS   11811 Based on time for last thread to finish
+ MWIPS   13043 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -860,5 +764,101 @@
 
       Numeric results of the other 7 threads were same as above
 
-               End of test Fri Jan 31 16:21:30 2020
+               End of test Fri Jan 31 20:30:02 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v5 optimized
+
+             Using 8 threads - Fri Jan 31 20:30:02 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1521    320    314    322     44     27    785   1282    298
+      2   1522    320    314    322     44     27    785   1283    298
+      3   1522    320    315    322     44     26    784   1282    299
+      4   1521    320    312    322     44     26    785   1283    298
+      5   1514    320    315    322     43     26    785   1283    299
+      6   1512    320    286    322     44     27    785   1283    299
+      7   1521    312    314    322     44     26    785   1283    299
+      8   1521    323    314    322     44     26    785   1282    299
+
+ Total   12153   2555   2485   2577    349    212   6277  10261   2388
+
+ MWIPS   12019 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:30:11 2020
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum 0 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 31.42 GB, Page Size 4096 Bytes 
+  uname() - Linux, yukari, 4.9.0-2.7-e8c 
+  #1 SMP Sun Feb 10 18:05:08 UTC 2019, e2k 
+
+ 8 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k v5 optimized
+
+             Using 8 threads - Fri Jan 31 20:30:11 2020
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   1533    301    302    324     44     28    787   1294    297
+      2   1532    301    302    324     44     28    787   1294    298
+      3   1532    301    300    324     44     28    786   1245    298
+      4   1532    301    302    324     44     28    786   1245    299
+      5   1524    300    302    324     44     27    786   1245    296
+      6   1525    301    302    318     44     28    786   1245    299
+      7   1532    301    302    324     44     28    786   1245    298
+      8   1533    304    302    324     44     28    786   1245    298
+
+ Total   12243   2408   2417   2584    350    221   6291  10059   2382
+
+ MWIPS   12124 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Fri Jan 31 20:30:20 2020
 

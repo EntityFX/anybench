@@ -103,12 +103,12 @@ configure () {
     echo -e "mkdir \"${RESULTS_PATH}${_arch}\"" >> ${RUN_SCRIPT_NAME}
 
     configure_run "Run Dhrystone v 2.1" "dhrystone" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run Whetstone v 2.1" "whetstone" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run Memspeed v 2.1" "memspeed" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run Linpack v 2.1" "linpack" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run Lloops v 2.1" "lloops" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run WhetstoneMP v 2.1" "whetstone_mp" $_arch $RUN_SCRIPT_NAME
-    configure_run "Run MPMFlops v 2.1" "mpmflops" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run Whetstone" "whetstone" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run Memspeed" "memspeed" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run Linpack" "linpack" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run Lloops" "lloops" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run WhetstoneMP" "whetstone_mp" $_arch $RUN_SCRIPT_NAME
+    configure_run "Run MPMFlops" "mpmflops" $_arch $RUN_SCRIPT_NAME
     configure_run "Run busspeedIL" "busspeedIL" $_arch $RUN_SCRIPT_NAME
 
     chmod +x $RUN_SCRIPT_NAME

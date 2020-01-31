@@ -1,112 +1,9 @@
  ########################################################
 
  Linpack Double Precision Unrolled Benchmark n @ 100
- Optimisation amd64 ffast optimized, Sat Jan 25 15:55:16 2020
+ Optimisation amd64 _ optimized, Fri Jan 31 12:15:53 2020
 
- Speed    1640.77 MFLOPS
-
- Variable norm. resid Non-standard result was              1.8 instead of              1.7
- Variable resid       Non-standard result was   8.10462808e-14 instead of   7.41628980e-14
-
- Compiler #define or values in linpack.c might need to be changed
-
- ########################################################
-
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: AuthenticAMD
-cpu family	: 18
-model		: 1
-model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
-stepping	: 0
-microcode	: 0x3000027
-cpu MHz		: 2094.211
-cache size	: 1024 KB
-physical id	: 0
-siblings	: 4
-core id		: 0
-cpu cores	: 4
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 6
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
-bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
-bogomips	: 5200.02
-TLB size	: 1536 4K pages
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 40 bits physical, 48 bits virtual
-power management: ts ttp tm stc 100mhzsteps hwpstate
-
-procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
- ########################################################
-
- Linpack Double Precision Unrolled Benchmark n @ 100
- Optimisation amd64  optimized, Sat Jan 25 15:55:17 2020
-
- Speed    1757.88 MFLOPS
-
- Numeric results were as expected
-
- ########################################################
-
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: AuthenticAMD
-cpu family	: 18
-model		: 1
-model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
-stepping	: 0
-microcode	: 0x3000027
-cpu MHz		: 1264.607
-cache size	: 1024 KB
-physical id	: 0
-siblings	: 4
-core id		: 0
-cpu cores	: 4
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 6
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
-bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
-bogomips	: 5200.02
-TLB size	: 1536 4K pages
-clflush size	: 64
-cache_alignment	: 64
-address sizes	: 40 bits physical, 48 bits virtual
-power management: ts ttp tm stc 100mhzsteps hwpstate
-
-procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
-From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
- 
-
- ########################################################
-
- Linpack Double Precision Unrolled Benchmark n @ 100
- Optimisation amd64  optimized, Sun Jan 26 10:57:38 2020
-
- Speed    1240.39 MFLOPS
+ Speed    1817.26 MFLOPS
 
  Numeric results were as expected
 
@@ -123,7 +20,7 @@ model		: 23
 model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
 stepping	: 6
 microcode	: 0x60f
-cpu MHz		: 2657.732
+cpu MHz		: 1529.868
 cache size	: 6144 KB
 physical id	: 0
 siblings	: 2
@@ -160,9 +57,65 @@ Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubu
  ########################################################
 
  Linpack Double Precision Unrolled Benchmark n @ 100
- Optimisation amd64 ffast optimized, Sun Jan 26 10:57:39 2020
+ Optimisation amd64 _ optimized, Fri Jan 31 12:16:11 2020
 
- Speed     814.73 MFLOPS
+ Speed    1191.89 MFLOPS
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1368.690
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation amd64 _ optimized, Fri Jan 31 12:16:28 2020
+
+ Speed    1222.92 MFLOPS
 
  Variable norm. resid Non-standard result was              1.8 instead of              1.7
  Variable resid       Non-standard result was   8.10462808e-14 instead of   7.41628980e-14
@@ -182,7 +135,119 @@ model		: 23
 model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
 stepping	: 6
 microcode	: 0x60f
-cpu MHz		: 2527.043
+cpu MHz		: 1439.919
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation amd64_clang _ optimized, Fri Jan 31 12:20:28 2020
+
+ Speed    1790.73 MFLOPS
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1166.611
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation amd64_clang _ optimized, Fri Jan 31 12:20:47 2020
+
+ Speed    1794.12 MFLOPS
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1470.762
 cache size	: 6144 KB
 physical id	: 0
 siblings	: 2

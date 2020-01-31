@@ -1,10 +1,10 @@
  #####################################################
 
- Dhrystone Benchmark 2.1 amd64 ffase optimized, Sun Jan 26 10:57:02 2020
+ Dhrystone Benchmark 2.1 amd64 _ optimized, Fri Jan 31 12:14:12 2020
 
- Nanoseconds one Dhrystone run:        43.08
- Dhrystones per Second:             23213664
- VAX MIPS rating =                  13212.10
+ Nanoseconds one Dhrystone run:        46.35
+ Dhrystones per Second:             21573147
+ VAX MIPS rating =                  12278.40
 
  Numeric results were correct
 
@@ -20,7 +20,7 @@ model		: 23
 model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
 stepping	: 6
 microcode	: 0x60f
-cpu MHz		: 1391.975
+cpu MHz		: 1494.620
 cache size	: 6144 KB
 physical id	: 0
 siblings	: 2
@@ -56,11 +56,11 @@ Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubu
 
  #####################################################
 
- Dhrystone Benchmark 2.1 amd64 optimized, Sun Jan 26 10:57:08 2020
+ Dhrystone Benchmark 2.1 amd64 _ optimized, Fri Jan 31 12:14:18 2020
 
- Nanoseconds one Dhrystone run:        44.46
- Dhrystones per Second:             22493611
- VAX MIPS rating =                  12802.28
+ Nanoseconds one Dhrystone run:        42.76
+ Dhrystones per Second:             23383759
+ VAX MIPS rating =                  13308.91
 
  Numeric results were correct
 
@@ -76,7 +76,175 @@ model		: 23
 model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
 stepping	: 6
 microcode	: 0x60f
-cpu MHz		: 1698.363
+cpu MHz		: 1613.697
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 amd64 _ optimized, Fri Jan 31 12:14:25 2020
+
+ Nanoseconds one Dhrystone run:        44.14
+ Dhrystones per Second:             22652633
+ VAX MIPS rating =                  12892.79
+
+ Numeric results were correct
+
+ #####################################################
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1264.375
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 amd64_clang _ optimized, Fri Jan 31 12:19:24 2020
+
+ Nanoseconds one Dhrystone run:        51.19
+ Dhrystones per Second:             19533176
+ VAX MIPS rating =                  11117.35
+
+ Numeric results were correct
+
+ #####################################################
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1235.256
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts nopl cpuid aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 lahf_lm pti tpr_shadow vnmi flexpriority dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
+bogomips	: 5054.08
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHzLinux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.15.0-50-generic (buildd@lcy01-amd64-013) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #54-Ubuntu SMP Mon May 6 18:46:08 UTC 2019
+ 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 amd64_clang _ optimized, Fri Jan 31 12:19:31 2020
+
+ Nanoseconds one Dhrystone run:        51.55
+ Dhrystones per Second:             19399773
+ VAX MIPS rating =                  11041.42
+
+ Numeric results were correct
+
+ #####################################################
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: Intel(R) Core(TM)2 Duo CPU     T9400  @ 2.53GHz
+stepping	: 6
+microcode	: 0x60f
+cpu MHz		: 1637.019
 cache size	: 6144 KB
 physical id	: 0
 siblings	: 2
