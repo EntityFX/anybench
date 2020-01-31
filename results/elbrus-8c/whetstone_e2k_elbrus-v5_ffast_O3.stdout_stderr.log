@@ -1,0 +1,92 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Fri Jan 31 15:44:50 2020
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.17 Seconds         25   Passes (x 100)
+       0.84 Seconds        125   Passes (x 100)
+       4.19 Seconds        625   Passes (x 100)
+
+Use 1493  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       284.615              0.101
+N2 floating point     -1.12274742126464844       284.605              0.705
+N3 if then else        1.00000000000000000                1298.706    0.119
+N4 fixed point        12.00000000000000000                 512.537    0.918
+N5 sin,cos etc.        0.49911010265350342                  45.094    2.755
+N6 floating point      0.99999982118606567       324.646              2.481
+N7 assignments         3.00000000000000000                 299.674    0.921
+N8 exp,sqrt etc.       0.75110864639282227                  27.777    1.999
+
+MWIPS                                           1493.343              9.998
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

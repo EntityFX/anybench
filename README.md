@@ -1,36 +1,78 @@
-## Dhrystone v 2.1
+# Anybench benchmarks set
 
-cc  dhry_1.c dhry_2.c cpuidc.c -o dhrystone_e2k_elbrus-8c_ffast -O4 -march=elbrus-v4 -mtune=elbrus-8c -ffast -D options="\"e2k elbrus-v4 optimized\"" 
-cc  dhry_1.c dhry_2.c cpuidc.c -o dhrystone_e2k_elbrus-8c -O4 -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized\""
-cc  dhry_1.c dhry_2.c cpuidc.c -o dhrystone_e2k_elbrus-v4 -O4 -march=elbrus-v4 -D options="\"e2k elbrus-v4 optimized\""
-cc  dhry_1.c dhry_2.c cpuidc.c -o dhrystone_e2k_elbrus-v3 -O4 -march=elbrus-v3 -D options="\"e2k elbrus-v3 optimized\""
+**`Benchmarks:`**
 
-## Whetstone
+* Dhrystone v 2.1
+* Whetstone
+* Whetstone MP
+* Memspeed
+* Linpack
+* Lloops
+* Busspeed
+* MP MFlops
 
-cc whets.c cpuidc.c -lm -lrt -o whetstone_e2k_elbrus-8c_ffast -ffast -O4 -march=elbrus-v4 -mtune=elbrus-8c -D opt="\"e2k elbrus-v4 optimized (ffast)\""
-cc whets.c cpuidc.c -lm -lrt -o whetstone_e2k_elbrus-8c -O3 -march=elbrus-v4 -mtune=elbrus-8c -D opt="\"e2k elbrus-v4 optimized\""
-cc whets.c cpuidc.c -lm -lrt -o whetstone_e2k_elbrus-v4 -O3 -march=elbrus-v4 -D opt="\"e2k elbrus-v4 optimized\""
-cc whets.c cpuidc.c -lm -lrt -o whetstone_e2k_elbrus-v3 -O3 -march=elbrus-v3 -D opt="\"e2k elbrus-v3 optimized\""
+Already contains precompiled binaries in `bin/` directory.
+So you can just 
 
+```sh
+cd src/
+./run-<your_arch>.sh
+```
 
-## Memspeed
+## Configure
 
-cc memspeed.c cpuidc.c -lm -lrt -o memspeed_e2k_elbrus-8c_ffast -O4 -ffast -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc memspeed.c cpuidc.c -lm -lrt -o memspeed_e2k_elbrus-8c -O3 -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc memspeed.c cpuidc.c -lm -lrt -o memspeed_e2k_elbrus-v3 -O3 -march=elbrus-v3 -D options="\"e2k elbrus-v3 optimized (ffast)\""
-cc memspeed.c cpuidc.c -lm -lrt -o memspeed_e2k_elbrus-v4 -O3 -march=elbrus-v4 -D options="\"e2k elbrus-v4 optimized (ffast)\""
+You can generate build and run scripts:
 
+```sh
+cd src/
+./configure.sh
+```
 
-## Linpack
+## Compile
 
-cc linpack.c cpuidc.c -lm -lrt -o linpack_e2k_elbrus-8c_ffast -O4 -ffast -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc linpack.c cpuidc.c -lm -lrt -o linpack_e2k_elbrus-8c -O3 -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc linpack.c cpuidc.c -lm -lrt -o linpack_e2k_elbrus-v3 -O3 -march=elbrus-v3 -D options="\"e2k elbrus-v3 optimized (ffast)\""
-cc linpack.c cpuidc.c -lm -lrt -o linpack_e2k_elbrus-v4 -O3 -march=elbrus-v4 -D options="\"e2k elbrus-v4 optimized (ffast)\""
+For **arm** architecture
 
-## Lloops
+```sh
+cd src/
+./make-arm.sh
+```
 
-cc lloops.c cpuidc.c -lm -lrt -o lloops_e2k_elbrus-8c_ffast -O4 -ffast -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc lloops.c cpuidc.c -lm -lrt -o lloops_e2k_elbrus-8c -O3 -march=elbrus-v4 -mtune=elbrus-8c -D options="\"e2k elbrus-v4 optimized (ffast)\""
-cc lloops.c cpuidc.c -lm -lrt -o lloops_e2k_elbrus-v3 -O3 -march=elbrus-v3 -D options="\"e2k elbrus-v3 optimized (ffast)\""
-cc lloops.c cpuidc.c -lm -lrt -o lloops_e2k_elbrus-v4 -O3 -march=elbrus-v4 -D options="\"e2k elbrus-v4 optimized (ffast)\""
+For **amd64** architecture
+
+```sh
+cd src/
+./make-amd64.sh
+```
+
+For **e2k** architecture
+
+```sh
+cd src/
+./make-e2k.sh
+```
+
+## Run
+
+```sh
+cd src/
+./run-arm.sh
+```
+
+For **amd64** architecture
+
+```sh
+cd src/
+./run-amd64.sh
+```
+
+For **e2k** architecture
+
+```sh
+cd src/
+./run-e2k.sh
+```
+
+## Results
+
+You can see results in `results/<your-os>/<your-arch>` direcotry.
+Additional results in `src\` direcotry.

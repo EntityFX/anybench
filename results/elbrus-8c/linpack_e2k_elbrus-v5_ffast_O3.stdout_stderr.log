@@ -1,0 +1,118 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation e2k elbrus-v5 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00063    0.00003    0.00066    1035.26     0.0019     0.0118
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.09 seconds
+     10000 times   0.91 seconds
+     20000 times   1.81 seconds
+Overhead for 1 matgen      0.00009 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.07 seconds
+      1000 times   0.71 seconds
+      2000 times   1.43 seconds
+Passes used       1396 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00062    0.00002    0.00064    1067.93     0.0019     0.0115
+    0.00062    0.00002    0.00064    1067.70     0.0019     0.0115
+    0.00062    0.00002    0.00064    1069.52     0.0019     0.0115
+    0.00062    0.00002    0.00064    1069.78     0.0019     0.0115
+    0.00062    0.00002    0.00064    1069.57     0.0019     0.0115
+Average                              1068.90
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00009 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00061    0.00002    0.00064    1080.02     0.0019     0.0114
+    0.00062    0.00002    0.00064    1078.45     0.0019     0.0114
+    0.00061    0.00002    0.00064    1079.94     0.0019     0.0114
+    0.00061    0.00002    0.00064    1080.04     0.0019     0.0114
+    0.00061    0.00002    0.00064    1080.04     0.0019     0.0114
+Average                              1079.70
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+Unrolled Double  Precision     1068.90 Mflops 
+
+

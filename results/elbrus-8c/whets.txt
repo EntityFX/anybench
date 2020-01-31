@@ -1,21 +1,21 @@
 
 ##############################################
 
-Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized (ffast), Thu Jan 30 16:21:47 2020
+Whetstone Single Precision C Benchmark  e2k elbrus-v3 optimized, Fri Jan 31 15:40:46 2020
 
 
 Loop content                   Result              MFLOPS      MOPS   Seconds
 
-N1 floating point      -1.12475013732910156       305.443               0.095
-N2 floating point      -1.12274742126464844       310.783               0.656
-N3 if then else         1.00000000000000000                1297.675     0.121
-N4 fixed point         12.00000000000000000                 572.718     0.834
-N5 sin,cos etc.         0.49911010265350342                  45.077     2.800
-N6 floating point       0.99999982118606567       324.553               2.521
-N7 assignments          3.00000000000000000                 299.626     0.936
-N8 exp,sqrt etc.        0.75110864639282227                  27.772     2.032
+N1 floating point      -1.12475013732910156       391.913               0.081
+N2 floating point      -1.12274742126464844       333.269               0.667
+N3 if then else         1.00000000000000000                1298.218     0.132
+N4 fixed point         12.00000000000000000                 572.626     0.909
+N5 sin,cos etc.         0.49911010265350342                  44.879     3.064
+N6 floating point       0.99999982118606567       324.611               2.747
+N7 assignments          3.00000000000000000                1947.633     0.157
+N8 exp,sqrt etc.        0.75110864639282227                  27.333     2.250
 
-MWIPS                                            1517.676               9.996
+MWIPS                                            1651.943              10.006
 
 SYSTEM INFORMATION
 
@@ -82,21 +82,21 @@ Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-lin
 
 ##############################################
 
-Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Thu Jan 30 16:22:04 2020
+Whetstone Single Precision C Benchmark  e2k elbrus-v3 optimized, Fri Jan 31 15:41:02 2020
 
 
 Loop content                   Result              MFLOPS      MOPS   Seconds
 
-N1 floating point      -1.12475013732910156       292.650               0.098
-N2 floating point      -1.12274742126464844       253.410               0.790
-N3 if then else         1.00000000000000000                1298.534     0.119
-N4 fixed point         12.00000000000000000                 572.952     0.819
-N5 sin,cos etc.         0.49911010265350342                  45.095     2.749
-N6 floating point       0.99999982118606567       324.666               2.475
-N7 assignments          3.00000000000000000                 299.688     0.919
-N8 exp,sqrt etc.        0.75110864639282227                  27.342     2.027
+N1 floating point      -1.12475013732910156       292.586               0.098
+N2 floating point      -1.12274742126464844       253.355               0.790
+N3 if then else         1.00000000000000000                1297.698     0.119
+N4 fixed point         12.00000000000000000                 572.821     0.819
+N5 sin,cos etc.         0.49911010265350342                  45.085     2.750
+N6 floating point       0.99999982118606567       324.582               2.476
+N7 assignments          3.00000000000000000                 299.632     0.919
+N8 exp,sqrt etc.        0.75110864639282227                  27.334     2.028
 
-MWIPS                                            1490.528               9.996
+MWIPS                                            1490.158               9.999
 
 SYSTEM INFORMATION
 
@@ -163,102 +163,345 @@ Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-lin
 
 ##############################################
 
-Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Thu Jan 30 16:22:20 2020
+Whetstone Single Precision C Benchmark  e2k elbrus-v3 optimized, Fri Jan 31 15:41:19 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       305.529               0.095
+N2 floating point      -1.12274742126464844       310.925               0.654
+N3 if then else         1.00000000000000000                1298.591     0.121
+N4 fixed point         12.00000000000000000                 572.945     0.832
+N5 sin,cos etc.         0.49911010265350342                  45.097     2.791
+N6 floating point       0.99999982118606567       324.655               2.514
+N7 assignments          3.00000000000000000                 299.707     0.933
+N8 exp,sqrt etc.        0.75110864639282227                  27.339     2.059
+
+MWIPS                                            1513.259               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:41:35 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       392.029               0.081
+N2 floating point      -1.12274742126464844       333.362               0.666
+N3 if then else         1.00000000000000000                1298.476     0.132
+N4 fixed point         12.00000000000000000                 572.903     0.909
+N5 sin,cos etc.         0.49911010265350342                  45.028     3.054
+N6 floating point       0.99999982118606567       324.671               2.746
+N7 assignments          3.00000000000000000                1947.823     0.157
+N8 exp,sqrt etc.        0.75110864639282227                  27.338     2.249
+
+MWIPS                                            1653.868               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:41:51 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       399.506               0.080
+N2 floating point      -1.12274742126464844       332.432               0.674
+N3 if then else         1.00000000000000000                1298.518     0.133
+N4 fixed point         12.00000000000000000                 572.854     0.917
+N5 sin,cos etc.         0.49911010265350342                  45.028     3.082
+N6 floating point       0.99999982118606567       324.632               2.772
+N7 assignments          3.00000000000000000                1946.239     0.158
+N8 exp,sqrt etc.        0.75110864639282227                  28.539     2.174
+
+MWIPS                                            1669.535               9.991
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:42:07 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       399.546               0.080
+N2 floating point      -1.12274742126464844       332.423               0.675
+N3 if then else         1.00000000000000000                1298.276     0.133
+N4 fixed point         12.00000000000000000                 572.180     0.919
+N5 sin,cos etc.         0.49911010265350342                  45.034     3.083
+N6 floating point       0.99999982118606567       324.669               2.773
+N7 assignments          3.00000000000000000                1947.732     0.158
+N8 exp,sqrt etc.        0.75110864639282227                  28.543     2.175
+
+MWIPS                                            1669.541               9.997
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:42:22 2020
 
 
 Loop content                   Result              MFLOPS      MOPS   Seconds
 
 N1 floating point      -1.12475013732910156       292.629               0.098
-N2 floating point      -1.12274742126464844       253.414               0.790
-N3 if then else         1.00000000000000000                1298.386     0.119
-N4 fixed point         12.00000000000000000                 565.547     0.830
-N5 sin,cos etc.         0.49911010265350342                  45.070     2.751
-N6 floating point       0.99999982118606567       324.178               2.479
-N7 assignments          3.00000000000000000                 299.529     0.919
-N8 exp,sqrt etc.        0.75110864639282227                  27.098     2.045
+N2 floating point      -1.12274742126464844       253.316               0.791
+N3 if then else         1.00000000000000000                1298.633     0.119
+N4 fixed point         12.00000000000000000                 572.893     0.819
+N5 sin,cos etc.         0.49911010265350342                  45.075     2.750
+N6 floating point       0.99999982118606567       324.613               2.476
+N7 assignments          3.00000000000000000                 299.680     0.919
+N8 exp,sqrt etc.        0.75110864639282227                  27.340     2.027
 
-MWIPS                                            1485.362              10.031
-
-SYSTEM INFORMATION
-
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2600.96
-
-processor	: 1
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 2
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache size	: 64 KB
-L1 cache line length	: 32 bytes
-L2 cache size	: 512 KB
-L2 cache line length	: 64 bytes
-L3 cache size	: 16384 KB
-L3 cache line length	: 64 bytes
-bogomips	: 2599.84
-
-processor	: 3
-vendor_id	: E8C-SWTX
-cpu family	: 4
-model		: 7
-model name	: E8C
-revision	: 2
-cpu MHz		: 1299.910785
-L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-From File /proc/version
-Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
- 
-
-
-##############################################
-
-Whetstone Single Precision C Benchmark  e2k elbrus-v3 optimized, Thu Jan 30 16:22:37 2020
-
-
-Loop content                   Result              MFLOPS      MOPS   Seconds
-
-N1 floating point      -1.12475013732910156       292.642               0.096
-N2 floating point      -1.12274742126464844       253.396               0.775
-N3 if then else         1.00000000000000000                1298.567     0.117
-N4 fixed point         12.00000000000000000                 463.746     0.993
-N5 sin,cos etc.         0.49911010265350342                  45.076     2.698
-N6 floating point       0.99999982118606567       324.657               2.429
-N7 assignments          3.00000000000000000                 299.687     0.902
-N8 exp,sqrt etc.        0.75110864639282227                  27.341     1.989
-
-MWIPS                                            1462.121               9.999
+MWIPS                                            1490.206               9.999
 
 SYSTEM INFORMATION
 
@@ -325,21 +568,831 @@ Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-lin
 
 ##############################################
 
-Whetstone Single Precision C Benchmark  e2k elbrus-v3 optimized (ffast), Thu Jan 30 16:22:54 2020
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:42:39 2020
 
 
 Loop content                   Result              MFLOPS      MOPS   Seconds
 
-N1 floating point      -1.12475013732910156       284.607               0.097
-N2 floating point      -1.12274742126464844       284.644               0.679
-N3 if then else         1.00000000000000000                1297.871     0.115
-N4 fixed point         12.00000000000000000                 360.670     1.255
-N5 sin,cos etc.         0.49911010265350342                  45.093     2.651
-N6 floating point       0.99999982118606567       324.495               2.389
-N7 assignments          3.00000000000000000                 299.658     0.886
-N8 exp,sqrt etc.        0.75110864639282227                  27.722     1.928
+N1 floating point      -1.12475013732910156       281.663               0.102
+N2 floating point      -1.12274742126464844       284.632               0.705
+N3 if then else         1.00000000000000000                1298.541     0.119
+N4 fixed point         12.00000000000000000                 512.490     0.917
+N5 sin,cos etc.         0.49911010265350342                  45.093     2.753
+N6 floating point       0.99999982118606567       324.655               2.479
+N7 assignments          3.00000000000000000                 299.558     0.920
+N8 exp,sqrt etc.        0.75110864639282227                  27.773     1.998
 
-MWIPS                                            1437.045              10.000
+MWIPS                                            1493.079               9.993
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:42:56 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       284.632               0.101
+N2 floating point      -1.12274742126464844       273.192               0.734
+N3 if then else         1.00000000000000000                1297.188     0.119
+N4 fixed point         12.00000000000000000                 512.476     0.918
+N5 sin,cos etc.         0.49911010265350342                  44.454     2.794
+N6 floating point       0.99999982118606567       324.539               2.481
+N7 assignments          3.00000000000000000                 299.687     0.921
+N8 exp,sqrt etc.        0.75110864639282227                  27.779     1.999
+
+MWIPS                                            1482.955              10.068
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:43:12 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       305.480               0.095
+N2 floating point      -1.12274742126464844       310.843               0.652
+N3 if then else         1.00000000000000000                1298.609     0.120
+N4 fixed point         12.00000000000000000                 572.879     0.830
+N5 sin,cos etc.         0.49911010265350342                  45.083     2.785
+N6 floating point       0.99999982118606567       324.651               2.507
+N7 assignments          3.00000000000000000                 299.694     0.930
+N8 exp,sqrt etc.        0.75110864639282227                  27.341     2.053
+
+MWIPS                                            1513.102               9.973
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:43:29 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       302.986               0.096
+N2 floating point      -1.12274742126464844       300.883               0.676
+N3 if then else         1.00000000000000000                1298.256     0.121
+N4 fixed point         12.00000000000000000                 572.865     0.832
+N5 sin,cos etc.         0.49911010265350342                  45.096     2.793
+N6 floating point       0.99999982118606567       324.669               2.515
+N7 assignments          3.00000000000000000                 299.637     0.934
+N8 exp,sqrt etc.        0.75110864639282227                  27.775     2.028
+
+MWIPS                                            1514.680               9.996
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v4 optimized, Fri Jan 31 15:43:45 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       305.548               0.095
+N2 floating point      -1.12274742126464844       310.877               0.656
+N3 if then else         1.00000000000000000                1298.482     0.121
+N4 fixed point         12.00000000000000000                 572.112     0.836
+N5 sin,cos etc.         0.49911010265350342                  45.092     2.801
+N6 floating point       0.99999982118606567       324.676               2.522
+N7 assignments          3.00000000000000000                 299.710     0.936
+N8 exp,sqrt etc.        0.75110864639282227                  27.778     2.033
+
+MWIPS                                            1517.974              10.000
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:44:02 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       391.991               0.081
+N2 floating point      -1.12274742126464844       333.299               0.667
+N3 if then else         1.00000000000000000                1298.500     0.132
+N4 fixed point         12.00000000000000000                 572.904     0.909
+N5 sin,cos etc.         0.49911010265350342                  45.029     3.054
+N6 floating point       0.99999982118606567       324.629               2.747
+N7 assignments          3.00000000000000000                1946.260     0.157
+N8 exp,sqrt etc.        0.75110864639282227                  27.338     2.249
+
+MWIPS                                            1653.787               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:44:18 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       399.490               0.080
+N2 floating point      -1.12274742126464844       332.478               0.675
+N3 if then else         1.00000000000000000                1298.553     0.133
+N4 fixed point         12.00000000000000000                 572.876     0.918
+N5 sin,cos etc.         0.49911010265350342                  45.033     3.084
+N6 floating point       0.99999982118606567       324.668               2.773
+N7 assignments          3.00000000000000000                1947.348     0.158
+N8 exp,sqrt etc.        0.75110864639282227                  28.539     2.176
+
+MWIPS                                            1669.682               9.996
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:44:33 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       292.573               0.098
+N2 floating point      -1.12274742126464844       253.419               0.790
+N3 if then else         1.00000000000000000                1298.493     0.119
+N4 fixed point         12.00000000000000000                 572.810     0.819
+N5 sin,cos etc.         0.49911010265350342                  45.092     2.749
+N6 floating point       0.99999982118606567       324.630               2.476
+N7 assignments          3.00000000000000000                 299.628     0.919
+N8 exp,sqrt etc.        0.75110864639282227                  27.338     2.028
+
+MWIPS                                            1490.356               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:44:50 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       284.615               0.101
+N2 floating point      -1.12274742126464844       284.605               0.705
+N3 if then else         1.00000000000000000                1298.706     0.119
+N4 fixed point         12.00000000000000000                 512.537     0.918
+N5 sin,cos etc.         0.49911010265350342                  45.094     2.755
+N6 floating point       0.99999982118606567       324.646               2.481
+N7 assignments          3.00000000000000000                 299.674     0.921
+N8 exp,sqrt etc.        0.75110864639282227                  27.777     1.999
+
+MWIPS                                            1493.343               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:45:07 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       305.551               0.095
+N2 floating point      -1.12274742126464844       310.312               0.655
+N3 if then else         1.00000000000000000                1298.576     0.121
+N4 fixed point         12.00000000000000000                 572.922     0.832
+N5 sin,cos etc.         0.49911010265350342                  45.089     2.792
+N6 floating point       0.99999982118606567       324.655               2.514
+N7 assignments          3.00000000000000000                 299.689     0.933
+N8 exp,sqrt etc.        0.75110864639282227                  27.337     2.059
+
+MWIPS                                            1512.954              10.000
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  e2k elbrus-v5 optimized, Fri Jan 31 15:45:23 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       305.529               0.095
+N2 floating point      -1.12274742126464844       310.873               0.656
+N3 if then else         1.00000000000000000                1298.582     0.121
+N4 fixed point         12.00000000000000000                 572.833     0.835
+N5 sin,cos etc.         0.49911010265350342                  45.081     2.802
+N6 floating point       0.99999982118606567       324.660               2.522
+N7 assignments          3.00000000000000000                 299.580     0.936
+N8 exp,sqrt etc.        0.75110864639282227                  27.779     2.033
+
+MWIPS                                            1517.965              10.000
 
 SYSTEM INFORMATION
 

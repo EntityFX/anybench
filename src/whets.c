@@ -191,8 +191,8 @@
     #define Precision "Single"
  #endif
 
-#ifndef opt
-#define opt "Optimized"
+#ifndef options
+#define options "Optimized"
 #endif
 
  void whetstones(long xtra, long x100, int calibrate);  
@@ -221,7 +221,7 @@ int main(int argc, char *argv[])
     long x100 = 100;
     int duration = 10;
     FILE *outfile;
-    char compiler[80], options[256], general[10][80] = {" "};
+    char compiler[80], opt[256], general[10][80] = {" "};
     char endit[80];
     int i;
     int nopause = 1;
@@ -244,7 +244,7 @@ int main(int argc, char *argv[])
     local_time();
     printf("\n");
     printf("##########################################\n"); 
-    printf("%s Precision C Whetstone Benchmark %s, %s\n", Precision, opt, timeday);
+    printf("%s Precision C Whetstone Benchmark %s, %s\n", Precision, options, timeday);
 
     outfile = fopen("whets.txt","a+");
     if (outfile == NULL)
@@ -327,7 +327,7 @@ int main(int argc, char *argv[])
  /************************************************************************/
  fprintf (outfile, "\n"); 
  fprintf (outfile, "##############################################\n\n");
- fprintf (outfile, "Whetstone %s Precision C Benchmark  %s, %s\n",Precision, opt, timeday);
+ fprintf (outfile, "Whetstone %s Precision C Benchmark  %s, %s\n",Precision, options, timeday);
  fprintf (outfile, "\n");
 
  fprintf (outfile,"Loop content                   Result"

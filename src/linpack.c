@@ -246,10 +246,10 @@ main (int argc, char *argv[])
                (double)residn, (double)resid, (double)epsn, 
                (double)x1, (double)x2);
 
-        fprintf(stderr,"Times are reported for matrices of order        %5d\n",n);
-        fprintf(stderr,"1 pass times for array with leading dimension of%5d\n\n",lda);
-        fprintf(stderr,"      dgefa      dgesl      total     Mflops       unit");
-        fprintf(stderr,"      ratio\n");
+        fprintf(stdout,"Times are reported for matrices of order        %5d\n",n);
+        fprintf(stdout,"1 pass times for array with leading dimension of%5d\n\n",lda);
+        fprintf(stdout,"      dgefa      dgesl      total     Mflops       unit");
+        fprintf(stdout,"      ratio\n");
 
         atime[2][0] = total;
         if (total > 0.0)
@@ -270,7 +270,7 @@ main (int argc, char *argv[])
  *       Calculate overhead of executing matgen procedure              *
  ************************************************************************/
        
-        fprintf (stderr,"\nCalculating matgen overhead\n");
+        fprintf (stdout,"\nCalculating matgen overhead\n");
         pass = -20;
         loop = NTIMES;
         do
@@ -283,7 +283,7 @@ main (int argc, char *argv[])
             }
             end_time();
             overhead1 = secs;
-            fprintf (stderr,"%10d times %6.2f seconds\n", loop, overhead1);
+            fprintf (stdout,"%10d times %6.2f seconds\n", loop, overhead1);
             if (overhead1 > runSecs)
             {
                 pass = 0;
@@ -304,13 +304,13 @@ main (int argc, char *argv[])
         
         overhead1 = overhead1 / (double)loop;
 
-        fprintf (stderr,"Overhead for 1 matgen %12.5f seconds\n\n", overhead1);
+        fprintf (stdout,"Overhead for 1 matgen %12.5f seconds\n\n", overhead1);
 
 /************************************************************************
  *           Calculate matgen/dgefa passes for runSecs seconds                *
  ************************************************************************/
        
-        fprintf (stderr,"Calculating matgen/dgefa passes for %d seconds\n", (int)runSecs);
+        fprintf (stdout,"Calculating matgen/dgefa passes for %d seconds\n", (int)runSecs);
         pass = -20;
         ntimes = NTIMES;
         do
@@ -324,7 +324,7 @@ main (int argc, char *argv[])
             }
             end_time();
             time2 = secs;
-            fprintf (stderr,"%10d times %6.2f seconds\n", ntimes, time2);
+            fprintf (stdout,"%10d times %6.2f seconds\n", ntimes, time2);
             if (time2 > runSecs)
             {
                 pass = 0;
@@ -346,10 +346,10 @@ main (int argc, char *argv[])
         ntimes =  (int)(runSecs * (double)ntimes / time2);
         if (ntimes == 0) ntimes = 1;
 
-        fprintf (stderr,"Passes used %10d \n\n", ntimes);
-        fprintf(stderr,"Times for array with leading dimension of%4d\n\n",lda);
-        fprintf(stderr,"      dgefa      dgesl      total     Mflops       unit");
-        fprintf(stderr,"      ratio\n");        
+        fprintf (stdout,"Passes used %10d \n\n", ntimes);
+        fprintf(stdout,"Times for array with leading dimension of%4d\n\n",lda);
+        fprintf(stdout,"      dgefa      dgesl      total     Mflops       unit");
+        fprintf(stdout,"      ratio\n");        
 
 /************************************************************************
  *                              Execute 5 passes                        *
@@ -387,10 +387,10 @@ main (int argc, char *argv[])
             print_time(j);
         }
         atime[3][6] = atime[3][6] / 5.0;
-        fprintf (stderr,"Average                          %11.2f\n",
+        fprintf (stdout,"Average                          %11.2f\n",
                                                (double)atime[3][6]);        
         
-        fprintf (stderr,"\nCalculating matgen2 overhead\n");
+        fprintf (stdout,"\nCalculating matgen2 overhead\n");
 
 /************************************************************************
  *             Calculate overhead of executing matgen procedure         *
@@ -405,10 +405,10 @@ main (int argc, char *argv[])
         overhead2 = secs;
         overhead2 = overhead2 / (double)loop;
         
-        fprintf (stderr,"Overhead for 1 matgen %12.5f seconds\n\n", overhead2);
-        fprintf(stderr,"Times for array with leading dimension of%4d\n\n",ldaa);
-        fprintf(stderr,"      dgefa      dgesl      total     Mflops       unit");
-        fprintf(stderr,"      ratio\n");
+        fprintf (stdout,"Overhead for 1 matgen %12.5f seconds\n\n", overhead2);
+        fprintf(stdout,"Times for array with leading dimension of%4d\n\n",ldaa);
+        fprintf(stdout,"      dgefa      dgesl      total     Mflops       unit");
+        fprintf(stdout,"      ratio\n");
 
 /************************************************************************
  *                              Execute 5 passes                        *
@@ -445,7 +445,7 @@ main (int argc, char *argv[])
             print_time(j);
         }
         atime[3][12] = atime[3][12] / 5.0; 
-        fprintf (stderr,"Average                          %11.2f\n\n",
+        fprintf (stdout,"Average                          %11.2f\n\n",
                                               (double)atime[3][12]);  
         printf("##########################################\n"); 
         printf ("\nFrom File /proc/cpuinfo\n");
@@ -460,10 +460,10 @@ main (int argc, char *argv[])
         mflops = atime[3][6];
         if (atime[3][12] < mflops) mflops = atime[3][12];
        
-        fprintf(stderr,"\n");
-        fprintf(stderr, "%s ", ROLLING);
-        fprintf(stderr, "%s ", PREC);
-        fprintf(stderr," Precision %11.2f Mflops \n\n",mflops);
+        fprintf(stdout,"\n");
+        fprintf(stdout, "%s ", ROLLING);
+        fprintf(stdout, "%s ", PREC);
+        fprintf(stdout," Precision %11.2f Mflops \n\n",mflops);
 
         local_time();
 
@@ -553,7 +553,7 @@ main (int argc, char *argv[])
 void print_time (int row)
 
 {
-fprintf(stderr,"%11.5f%11.5f%11.5f%11.2f%11.4f%11.4f\n",   (double)atime[0][row],
+fprintf(stdout,"%11.5f%11.5f%11.5f%11.2f%11.4f%11.4f\n",   (double)atime[0][row],
        (double)atime[1][row], (double)atime[2][row], (double)atime[3][row], 
        (double)atime[4][row], (double)atime[5][row]);
        return;

@@ -28,8 +28,9 @@ void inc4words();
 void inc2words();
 void inc1word();
 
-//  #define version  "32 Bit V1.1"
-  #define version  "vfpv4 32b V1"
+#ifndef options
+#define options "Optimized"
+#endif
 
  
  int          array[16779000]; // 64 MB + 1000
@@ -94,13 +95,13 @@ int main(int argc, char *argv[])
 
     local_time();
 
-    printf("    BusSpeed %s %s ", version, timeday);
+    printf("    BusSpeed %s %s ", options, timeday);
     printf("      Copyright (C) 2013, Roy Longbottom\n\n");
     printf("    Reading Speed 4 Byte Words in MBytes/Second\n");
     printf("  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
     printf("  KBytes  Words  Words  Words  Words  Words    All\n\n");
 
-    fprintf(outfile, "   BusSpeed %s %s ", version, timeday);
+    fprintf(outfile, "   BusSpeed %s %s ", options, timeday);
     fprintf(outfile, "\n    Reading Speed 4 Byte Words in MBytes/Second\n");
     fprintf(outfile, "  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
     fprintf(outfile, "  KBytes  Words  Words  Words  Words  Words    All\n\n");
