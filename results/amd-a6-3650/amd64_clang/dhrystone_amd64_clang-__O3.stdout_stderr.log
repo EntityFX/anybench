@@ -2,26 +2,28 @@
 
 Dhrystone Benchmark, Version 2.1 (Language: C or C++)
 
-Optimisation    amd64 ffase optimized
+Optimisation    amd64_clang _ optimized
 Register option not selected
 
        10000 runs   0.00 seconds 
       100000 runs   0.01 seconds 
      1000000 runs   0.05 seconds 
-    10000000 runs   0.50 seconds 
-    20000000 runs   0.99 seconds 
-    40000000 runs   1.99 seconds 
-    80000000 runs   3.97 seconds 
+     2000000 runs   0.11 seconds 
+     4000000 runs   0.22 seconds 
+     8000000 runs   0.43 seconds 
+    16000000 runs   0.86 seconds 
+    32000000 runs   1.73 seconds 
+    64000000 runs   3.50 seconds 
 
 Final values (* implementation-dependent):
 
 Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
 Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
-Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    80000010
-Ptr_Glob->              Ptr_Comp:       *    1321321616
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    64000010
+Ptr_Glob->              Ptr_Comp:       *    34215056
   Discr:       O.K.  0  Enum_Comp:     O.K.  2
   Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->         Ptr_Comp:       *    1321321616 same as above
+Next_Ptr_Glob->         Ptr_Comp:       *    34215056 same as above
   Discr:       O.K.  0  Enum_Comp:     O.K.  1
   Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
 Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
@@ -38,7 +40,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1040.592
+cpu MHz		: 2263.253
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -66,7 +68,7 @@ From File /proc/version
 Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
 
 
-Nanoseconds one Dhrystone run:        49.68
-Dhrystones per Second:             20127863
-VAX  MIPS rating =                 11455.81
+Nanoseconds one Dhrystone run:        54.65
+Dhrystones per Second:             18297676
+VAX  MIPS rating =                 10414.16
 

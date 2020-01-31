@@ -1,16 +1,16 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark amd64 ffast optimized, Sat Jan 25 15:54:15 2020
+Single Precision C Whetstone Benchmark amd64 _ optimized, Fri Jan 31 22:20:15 2020
 
 Calibrate
-       0.00 Seconds          1   Passes (x 100)
-       0.01 Seconds          5   Passes (x 100)
+       0.01 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
        0.07 Seconds         25   Passes (x 100)
-       0.34 Seconds        125   Passes (x 100)
-       1.68 Seconds        625   Passes (x 100)
-       8.41 Seconds       3125   Passes (x 100)
+       0.37 Seconds        125   Passes (x 100)
+       1.85 Seconds        625   Passes (x 100)
+       9.27 Seconds       3125   Passes (x 100)
 
-Use 3716  passes (x 100)
+Use 3370  passes (x 100)
 
 From File /proc/cpuinfo
 processor	: 0
@@ -20,7 +20,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 2600.009
+cpu MHz		: 988.135
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -41,7 +41,7 @@ cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 
-procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+proceLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
 
 
 From File /proc/version
@@ -52,16 +52,16 @@ Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       865.500              0.082
-N2 floating point     -1.12274742126464844       853.733              0.585
+N1 floating point     -1.12475013732910156       796.800              0.081
+N2 floating point     -1.12274742126464844       796.787              0.568
 N3 if then else        1.00000000000000000                   0.000    0.000
-N4 fixed point        12.00000000000000000               35115.730    0.033
-N5 sin,cos etc.        0.49911010265350342                  76.304    4.052
-N6 floating point      0.99999982118606567       648.965              3.089
-N7 assignments         3.00000000000000000                2003.278    0.343
-N8 exp,sqrt etc.       0.75110864639282227                  76.367    1.810
+N4 fixed point        12.00000000000000000                3237.253    0.328
+N5 sin,cos etc.        0.49911010265350342                  75.871    3.696
+N6 floating point      0.99999982118606567       647.422              2.808
+N7 assignments         3.00000000000000000                1998.144    0.312
+N8 exp,sqrt etc.       0.75110864639282227                  57.219    2.191
 
-MWIPS                                           3718.161              9.994
+MWIPS                                           3375.599              9.983
 
 
 A new results file, whets.txt,  will have been created in the same

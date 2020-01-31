@@ -1,26 +1,23 @@
  #####################################################
 
-     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
+   BusSpeed amd64 _ optimized Fri Jan 31 22:23:43 2020
+ 
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
 
-               Start of test Fri Jan 31 22:21:00 2020
+      16   9130  13532  14857  12583  13037  13151
+      32  10008  14898  14468  12783  13144  13207
+      64   5140   7210  12601  12521  13087  13185
+     128   1274   1276   2539   5129   8760  12625
+     256   1233   1189   2425   4808   8466  12433
+     512   1280   1271   2569   5146   8536  12415
+    1024    601    608   1190   2335   4181   6909
+    4096    340    345    674   1206   2085   4096
+   16384    332    336    653   1318   2377   4101
+   65536    333    336    656   1298   2366   4112
 
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8   20241  10256   9329  20320   9864  10766  20080  10211  10220
-      16   20496  10320   9354  20561   9917  10804  20396  10297  10302
-      32   20633  10351   9369  20656   9944  10818  20581  10339  10338
-      64   20693  10366   9372  20715   9908  10821  20667  10359  10361
-     128   14784   8506   8446  14639   8325   8866   9733   6666   6680
-     256   14728   8507   8518  14439   8345   8841   9642   6623   6613
-     512   14740   8511   8521  14429   8348   8850   9659   6630   6624
-    1024    7121   5805   5988   7228   5482   4884   3260   2764   3093
-    2048    4054   3743   3875   4085   3758   3986   2184   2000   2023
-    4096    4135   3737   3897   4116   3752   3997   2184   2025   2019
-    8192    3999   3664   3803   4017   3451   3806   2120   1984   1975
-
-                End of test Fri Jan 31 22:21:17 2020
+        End of test Fri Jan 31 22:23:53 2020
 
 SYSTEM INFORMATION
 
@@ -32,7 +29,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1037.599
+cpu MHz		: 1482.410
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -62,27 +59,24 @@ Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191
 
  #####################################################
 
-     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
+   BusSpeed amd64 _ optimized Fri Jan 31 22:23:53 2020
+ 
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
 
-               Start of test Fri Jan 31 22:21:17 2020
+      16   9166  13563  14889  12607  13055  13173
+      32  10031  14935  14505  12820  13179  13231
+      64   5113   7196  12634  12556  13117  13211
+     128   1276   1277   2542   5152   8775  12653
+     256   1275   1279   2571   5162   8552  12446
+     512   1286   1287   2571   5150   8557  12476
+    1024    523    539    987   2050   3738   6258
+    4096    332    339    674   1364   2386   4196
+   16384    331    335    657   1301   2353   4123
+   65536    332    335    657   1307   2400   4111
 
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8   23131  40329  40301  26901  40446  40765  19970  13557  13464
-      16   23427  40927  40947  27292  40984  41141  20359  13700  13655
-      32   23582  41227  41241  27483  41262  41346  20563  13771  13750
-      64   23654  41351  41382  27587  41398  41432  20659  13796  13794
-     128   18224  36708  34038  19643  37828  38121   9543   9174   9166
-     256   19715  37663  34018  19825  38373  38293   9501   9127   9129
-     512   19751  37713  34062  19863  38440  38338   9511   9130   9122
-    1024    7914  14992  14993   6797  13173  12232   3883   4055   4053
-    2048    4180   8246   8272   4274   8221   8260   2149   2172   2172
-    4096    4204   8128   8145   4294   8169   8122   2144   2155   2155
-    8192    4120   7849   7934   4165   7825   7949   2058   2086   2107
-
-                End of test Fri Jan 31 22:21:32 2020
+        End of test Fri Jan 31 22:24:03 2020
 
 SYSTEM INFORMATION
 
@@ -94,7 +88,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1538.844
+cpu MHz		: 1540.839
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -124,27 +118,24 @@ Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191
 
  #####################################################
 
-     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
+   BusSpeed amd64 _ optimized Fri Jan 31 22:24:03 2020
+ 
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
 
-               Start of test Fri Jan 31 22:21:32 2020
+      16   9167  13564  14931  12613  13057  13172
+      32  10031  14934  14505  12818  13179  13232
+      64   5141   7223  12630  12551  13127  13218
+     128   1276   1274   2548   5139   8778  12645
+     256   1276   1277   2567   5150   8551  12458
+     512   1285   1286   2571   5142   8555  12461
+    1024    597    607   1183   2325   4163   6755
+    4096    337    337    680   1346   2487   4290
+   16384    335    341    660   1305   2399   4126
+   65536    338    339    659   1314   2418   4132
 
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8   23130  40327  40365  26855  40425  40723  19969  13482  13557
-      16   23428  40906  40947  27274  40988  41122  20356  13654  13698
-      32   23577  41229  41240  27482  41258  41315  20563  13750  13771
-      64   23657  41373  41371  27579  41387  41430  20658  13794  13805
-     128   18358  36400  33997  19617  37824  38521   9551   9170   9148
-     256   19774  37622  33994  19836  38409  38574   9512   9113   9105
-     512   19809  37711  34051  19873  38446  38547   9549   9132   9124
-    1024    8993  16877  16563   8489  13267  14040   3947   4319   4599
-    2048    4289   8268   8330   4326   8321   8378   2139   2192   2205
-    4096    4233   8286   8239   4335   8242   8290   2168   2155   2178
-    8192    4172   7987   8059   4250   7899   8073   2097   2124   2131
-
-                End of test Fri Jan 31 22:21:48 2020
+        End of test Fri Jan 31 22:24:13 2020
 
 SYSTEM INFORMATION
 
@@ -156,7 +147,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1467.686
+cpu MHz		: 1288.968
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -186,27 +177,24 @@ Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191
 
  #####################################################
 
-     Memory Reading Speed Test amd64_clang _ optimized by Roy Longbottom
+   BusSpeed amd64_clang _ optimized Fri Jan 31 22:33:27 2020
+ 
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
 
-               Start of test Fri Jan 31 22:29:10 2020
+      16   8402   8994   9807  10185  10313  43769
+      32   9427  10012   9938  10313  10348  44528
+      64   5024   5456   8991  10085  10276  43385
+     128   1263   1277   2552   5132   8661  20515
+     256   1274   1277   2561   5148   8558  20580
+     512   1282   1284   2569   5163   8567  20582
+    1024    598    607   1159   2318   4031   8909
+    4096    334    339    669   1362   2475   5121
+   16384    333    339    658   1325   2408   4951
+   65536    335    341    661   1339   2396   4822
 
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8   18946   9730  20194  33186  34652  25212  20071  13494  10162
-      16   19217   9780  20453  35985  36030  26842  20389  13656   8239
-      32   19349   9837  20587  36389  36403  27407  20508  13715   9880
-      64   19363   9863  20650  33932  36615  26187  20623  13769   9788
-     128   17151   9705  19449  18376  18522  18090   9497   9145   9124
-     256   17073   9683  19049  19460  19476  19586   9430   9074   9086
-     512   17092   9541  19058  19488  19453  19822   9443   9107   9098
-    1024    7866   6300   7859   8331   8335   7743   4216   3251   3270
-    2048    3042   3029   4062   4162   4215   4047   2128   2131   2126
-    4096    4025   3666   4059   4185   4183   4101   2118   2126   2140
-    8192    3974   3618   3967   4139   4177   4043   2101   2077   2092
-
-                End of test Fri Jan 31 22:29:27 2020
+        End of test Fri Jan 31 22:33:37 2020
 
 SYSTEM INFORMATION
 
@@ -218,7 +206,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1263.866
+cpu MHz		: 2599.810
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -248,27 +236,24 @@ Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191
 
  #####################################################
 
-     Memory Reading Speed Test amd64_clang _ optimized by Roy Longbottom
+   BusSpeed amd64_clang _ optimized Fri Jan 31 22:33:37 2020
+ 
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
 
-               Start of test Fri Jan 31 22:29:27 2020
+      16   8466   9135  10012  10245  10314  43817
+      32   9423  10012   9937  10314  10349  44537
+      64   5015   5454   8943  10090  10272  43339
+     128   1266   1276   2546   5135   8675  20477
+     256   1269   1278   2565   5147   8558  20553
+     512   1281   1286   2571   5150   8564  20582
+    1024    584    590   1136   2314   4053   8869
+    4096    341    341    666   1360   2490   5144
+   16384    324    341    661   1316   2391   4872
+   65536    339    340    658   1299   2378   4843
 
-  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
-  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
-    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
-
-       8   19035   9768  20404  35203  34753  27023  20164  13539  13538
-      16   19278   9885  20592  36085  36119  27349  20460  13691  13692
-      32   19404   9892  20681  33437  36511  27515  20610  13767  13767
-      64   19472   9882  20721  33962  36711  27590  20680  13806  13805
-     128   17245   9771  18146  18598  18758  19722   9642   9181   9155
-     256   17108   9767  19247  19486  19514  19819   9454   9091   9123
-     512   17119   9571  19253  19537  19520  19868   9470   9100   9111
-    1024    7951   6294   7903   8361   8359   7028   3257   3581   3537
-    2048    3387   3743   4100   4229   4212   4152   2149   2155   2156
-    4096    4088   3720   4171   4255   4258   4145   2176   2173   2179
-    8192    4030   3653   4028   4222   4209   4100   2095   2097   2114
-
-                End of test Fri Jan 31 22:29:42 2020
+        End of test Fri Jan 31 22:33:47 2020
 
 SYSTEM INFORMATION
 
@@ -280,7 +265,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 987.811
+cpu MHz		: 1999.889
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -301,7 +286,7 @@ cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
 power management: ts ttp tm stc 100mhzsteps hwpstate
 
-proceLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
  
 
 From File /proc/version

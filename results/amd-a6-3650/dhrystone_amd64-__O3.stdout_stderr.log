@@ -1,16 +1,34 @@
-
 ##########################################
-Single Precision C Whetstone Benchmark clang optimized (ffast), Sat Jan 25 15:41:15 2020
 
-Calibrate
-       0.01 Seconds          1   Passes (x 100)
-       0.02 Seconds          5   Passes (x 100)
-       0.08 Seconds         25   Passes (x 100)
-       0.37 Seconds        125   Passes (x 100)
-       1.88 Seconds        625   Passes (x 100)
-       9.38 Seconds       3125   Passes (x 100)
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
 
-Use 3333  passes (x 100)
+Optimisation    amd64 _ optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.01 seconds 
+     1000000 runs   0.05 seconds 
+    10000000 runs   0.50 seconds 
+    20000000 runs   0.99 seconds 
+    40000000 runs   1.99 seconds 
+    80000000 runs   3.98 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    80000010
+Ptr_Glob->              Ptr_Comp:       *    1308484752
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1308484752 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
 
 From File /proc/cpuinfo
 processor	: 0
@@ -20,7 +38,7 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1597.400
+cpu MHz		: 2277.684
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
@@ -48,22 +66,7 @@ From File /proc/version
 Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
 
 
-          Single Precision C/C++ Whetstone Benchmark
-
-Loop content                  Result              MFLOPS      MOPS   Seconds
-
-N1 floating point     -1.12475013732910156       799.071              0.080
-N2 floating point     -1.12274742126464844       630.362              0.711
-N3 if then else        1.00000000000000000                3115.894    0.111
-N4 fixed point        12.00000000000000000                3245.998    0.323
-N5 sin,cos etc.        0.49911010265350342                  76.794    3.611
-N6 floating point      0.99999982118606567       649.255              2.769
-N7 assignments         3.00000000000000000                2444.019    0.252
-N8 exp,sqrt etc.       0.75110864639282227                  57.286    2.164
-
-MWIPS                                           3325.898             10.021
-
-
-A new results file, whets.txt,  will have been created in the same
-directory as the .EXE files, if one did not already exist.
+Nanoseconds one Dhrystone run:        49.70
+Dhrystones per Second:             20120468
+VAX  MIPS rating =                 11451.60
 

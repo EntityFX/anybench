@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size 15.39 GB, Page Size 4096 Bytes
+  uname() - Linux, entityfx-GA-A75M-UD2H, 5.3.0-26-generic
+  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Fri Jan 31 22:23:37 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   0.144674    14156    0.764063   Yes
+ Data in & out    1024000     2     1000   0.517304     3959    0.970753   Yes
+ Data in & out   10240000     2      100   0.943630     2170    0.997008   Yes
+
+ Data in & out     102400     8    10000   0.189470    43236    0.850936   Yes
+ Data in & out    1024000     8     1000   0.512969    15970    0.982338   Yes
+ Data in & out   10240000     8      100   0.977098     8384    0.998200   Yes
+
+ Data in & out     102400    32    10000   0.642839    50974    0.660084   Yes
+ Data in & out    1024000    32     1000   0.799996    40960    0.953643   Yes
+ Data in & out   10240000    32      100   1.340241    24449    0.995212   Yes
+
+               End of test Fri Jan 31 22:23:43 2020
+
+ Press Enter

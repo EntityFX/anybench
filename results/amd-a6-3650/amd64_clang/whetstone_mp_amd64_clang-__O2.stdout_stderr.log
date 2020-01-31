@@ -15,35 +15,35 @@
 
 ##############################################
 
- Multithreading Single Precision Whetstones clang optimized (ffast)
+ Multithreading Single Precision Whetstones amd64_clang _ optimized
 
-             Using 4 threads - Mon Jan 27 02:13:09 2020
+             Using 4 threads - Fri Jan 31 22:32:51 2020
 
  Calibrate
-    0.00695 Seconds          1   Passes (x 100)
-    0.02477 Seconds          5   Passes (x 100)
-    0.08969 Seconds         25   Passes (x 100)
-    0.41282 Seconds        125   Passes (x 100)
+    0.00736 Seconds          1   Passes (x 100)
+    0.01965 Seconds          5   Passes (x 100)
+    0.07912 Seconds         25   Passes (x 100)
+    0.38680 Seconds        125   Passes (x 100)
 
- Use 3027  passes (x 100)
+ Use 3231  passes (x 100)
 
- MFLOPS 1     741    677    672    610
- MFLOPS 2     780    667    626    596
- IFMOPS      3837   3640   3619   3340
- FIXPMOPS  150287  92469  78674  75204
- COSMOPS       77     74     70     69
- MFLOPS 3     648    610    601    584
- EQUMOPS    30084  29076  27350  25603
- EXPMOPS       56     54     53     49
- millisec    8867   8770   9172   9636
- MWIPS       3414   3452   3300   3141
+ MFLOPS 1     743    736    656    649
+ MFLOPS 2     683    608    589    571
+ IFMOPS     20697  18359  18227  17704
+ FIXPMOPS  152518 152148 123895  81328
+ COSMOPS       76     72     72     71
+ MFLOPS 3     629    615    615    592
+ EQUMOPS    30326  28289  27243  25170
+ EXPMOPS       57     53     53     51
+ millisec    9395   9567   9692   9933
+ MWIPS       3439   3377   3334   3253
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
- Total   13307   2700   2669   2443    290    211 396634  14436 112113
+ Total   13403   2785   2451   2451    292    213 509889  74987 111028
 
- MWIPS   12531 Based on time for last thread to finish
+ MWIPS   12920 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -55,7 +55,7 @@
 
       Numeric results of the other 3 threads were same as above
 
-               End of test Mon Jan 27 02:13:21 2020
+               End of test Fri Jan 31 22:33:03 2020
 
                Results also in log file MPwhetres.txt
 

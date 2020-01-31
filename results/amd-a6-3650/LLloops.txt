@@ -1,14 +1,26 @@
  #####################################################
 
- Livermore Loops Benchmark clang optimized (ffast) via C/C++ Sat Jan 25 15:48:51 2020
+ Livermore Loops Benchmark amd64 _ optimized via C/C++ Fri Jan 31 22:22:39 2020
+
+ #####################################################
+
+ Livermore Loops Benchmark amd64 _ optimized via C/C++ Fri Jan 31 22:22:40 2020
+
+ #####################################################
+
+ Livermore Loops Benchmark amd64 _ optimized via C/C++ Fri Jan 31 22:22:40 2020
+
+ #####################################################
+
+ Livermore Loops Benchmark amd64_clang _ optimized via C/C++ Fri Jan 31 22:30:20 2020
 
  MFLOPS for 24 loops
- 2230.0 1593.5 1290.3 1268.2  647.7  981.2 3003.4 3431.5 2985.8 1282.4  645.7 1849.9
-  244.8  633.1 1034.0  928.9 1277.2 1855.0  570.3 1226.0 1771.9  688.1 1176.8 1009.8
+ 2795.1 1489.9 1289.5 1265.5  647.3  977.1 3005.0 3428.9 2991.3 1279.9  645.3 1847.8
+  244.5  633.4 1026.3 1246.2 1276.1 1848.4  571.0 1225.7 1738.9  688.6 1170.9 1008.9
 
  Overall Ratings
  Maximum Average Geomean Harmean Minimum
-  3440.3  1365.2  1157.4   957.3   241.0
+  3428.9  1377.2  1162.8   956.7   240.9
 
  Numeric results were as expected
 
@@ -25,7 +37,62 @@ model		: 1
 model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
 stepping	: 0
 microcode	: 0x3000027
-cpu MHz		: 1603.255
+cpu MHz		: 1284.510
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm 3dnowext 3dnow constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni monitor cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter
+bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2
+bogomips	: 5200.02
+TLB size	: 1536 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: ts ttp tm stc 100mhzsteps hwpstate
+
+procLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
+From File /proc/version
+Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark amd64_clang _ optimized via C/C++ Fri Jan 31 22:31:36 2020
+
+ MFLOPS for 24 loops
+ 2223.0 1577.4 1287.2 1263.7  645.8  978.4 2996.2 3423.8 2982.1 1274.1  643.5 1843.0
+  244.0  631.6 1031.2  921.2 1268.6 1850.0  570.4 1222.4 1766.0  681.4 1173.4 1007.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+  3428.3  1354.0  1146.2   947.6   240.1
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 18
+model		: 1
+model name	: AMD A6-3650 APU with Radeon(tm) HD Graphics
+stepping	: 0
+microcode	: 0x3000027
+cpu MHz		: 1396.751
 cache size	: 1024 KB
 physical id	: 0
 siblings	: 4
