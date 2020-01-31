@@ -1,26 +1,26 @@
  #####################################################
 
-     Memory Reading Speed Test amd64 ffast optimized by Roy Longbottom
+     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 20:16:33 2020
+               Start of test Fri Jan 31 19:23:40 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8   53613  73244  72365  69476  71252  56378  35679  24993  26454
-      16   54188  73499  72407  71655  75334  73589  36573  26348  27191
-      32   56114  60614  73568  74186  74823  73635  28493  26584  27313
-      64   43197  68959  69392  45187  72425  69165  26925  25652  26415
-     128   42737  69704  70483  44192  71672  71869  26976  25453  26104
-     256   39194  62808  63331  41760  65731  65582  23136  23206  23639
-     512   29732  53366  47565  30667  54605  54053  16673  16541  15287
-    1024   29005  51718  50524  29980  51864  51885  16271  16518  16704
-    2048   28546  51181  50660  29182  51655  50023  16033  16552  16229
-    4096   28351  47233  46182  28076  44662  51356  16322  16291  16172
-    8192   18474  32794  32667  15580  32432  35012   9507   8317   8917
+       8   32814  16930  16367  36106  18937  18847  27293  13659  11877
+      16   32487  16971  16817  38266  18719  19023  28334  14408  12207
+      32   34144  16857  16723  38364  19256  19146  28556  13963  12233
+      64   28418  17013  16752  30000  18610  18876  21788  12258  11994
+     128   27568  16827  16612  30137  18839  18687  21006  12047  11860
+     256   27061  16843  16530  27515  17851  18595  19496  11576  11080
+     512   22251  16166  16076  23878  16976  17306  14956  10354  10312
+    1024   22533  16133  16230  23653  17301  17500  14644  10214  10241
+    2048   22844  16545  16461  21720  17078  17357  14631  10316  10084
+    4096   22200  16152  15877  23284  16725  16904  14350  10024  10236
+    8192   17085  13008  13435  17272  14156  14186   9064   8134   8123
 
-                End of test Fri Jan 24 20:16:47 2020
+                End of test Fri Jan 31 19:23:58 2020
 
 SYSTEM INFORMATION
 
@@ -32,7 +32,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
 stepping	: 7
 microcode	: 0x2f
-cpu MHz		: 3572.293
+cpu MHz		: 2781.047
 cache size	: 8192 KB
 physical id	: 0
 siblings	: 8
@@ -46,39 +46,39 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
-bogomips	: 6784.70
+bogomips	: 6784.41
 clflush size	: 64
 cache_alignment	: 64
-address sizes	: 36 bits physical, 48 biLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
  
 
 From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
  
 
  #####################################################
 
-     Memory Reading Speed Test amd64 ffast optimized by Roy Longbottom
+     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
 
-               Start of test Fri Jan 24 20:16:47 2020
+               Start of test Fri Jan 31 19:23:58 2020
 
   Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8   31887  15515  15820  36256  18064  17586  27329  12478  11663
-      16   30899  16481  16028  37718  19133  19391  28274  13462  11923
-      32   34983  17776  17202  39479  19423  18866  28375  14419  12447
-      64   29357  17609  16979  29727  18533  18939  22280  12484  12336
-     128   29151  16792  16429  29925  19501  19347  22006  12423  11832
-     256   27024  15556  14404  29637  19080  19125  19691  11428  11247
-     512   23384  16727  16832  25003  15141  14005  14667  10154  10337
-    1024   21882  16964  15873  22830  16549  17253  14477  10345  10387
-    2048   22383  16239  16232  23916  17435  17762  15066   9994  10042
-    4096   22248  16475  16378  23554  16895  16661  13303   9875   9818
-    8192   17482  14038  13359  16387  13436  13832   7664   7519   8298
+       8   55353  72453  75771  70684  72302  72423  34789  25529  25004
+      16   54616  75504  75593  75368  75569  76646  38105  28707  27221
+      32   57225  74391  74361  74655  74871  75832  36467  28192  28158
+      64   45044  68595  73346  47493  72260  68151  27889  27361  26342
+     128   43088  69851  70577  43652  73195  72409  26912  26126  26347
+     256   38303  62918  63661  43015  69112  67614  24463  23882  23896
+     512   29469  52152  52183  31291  55030  55175  16913  17198  16968
+    1024   27606  46779  49813  29876  53109  53633  16478  16331  16352
+    2048   28689  51437  50520  30255  51202  53953  15744  16225  16650
+    4096   26951  48725  50251  29625  51641  52487  16137  16200  16182
+    8192   18267  34948  35509  18647  36412  36396   9440   8735   9496
 
-                End of test Fri Jan 24 20:17:05 2020
+                End of test Fri Jan 31 19:24:13 2020
 
 SYSTEM INFORMATION
 
@@ -90,7 +90,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
 stepping	: 7
 microcode	: 0x2f
-cpu MHz		: 3612.432
+cpu MHz		: 2237.919
 cache size	: 8192 KB
 physical id	: 0
 siblings	: 8
@@ -104,13 +104,71 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
-bogomips	: 6784.70
+bogomips	: 6784.41
 clflush size	: 64
 cache_alignment	: 64
-address sizes	: 36 bits physical, 48 biLinux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
  
 
 From File /proc/version
-Linux version 5.3.0-26-generic (buildd@lgw01-amd64-013) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019
+Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test amd64 _ optimized by Roy Longbottom
+
+               Start of test Fri Jan 31 19:24:13 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   55863  75533  75245  70840  77094  74599  37608  25946  27804
+      16   53508  75172  73974  73923  77133  75959  38771  27702  28246
+      32   56448  75205  76927  74963  77408  77231  38365  28098  28513
+      64   44964  71382  72718  47010  74645  74363  27829  27348  27401
+     128   43579  70981  70417  44953  73630  74110  26341  26334  25962
+     256   39658  65499  66926  43226  62941  66412  24987  21163  24746
+     512   30293  54257  53899  31732  56889  55891  16276  17401  16267
+    1024   29942  53102  50538  30384  55316  55130  16586  16910  16414
+    2048   29477  50707  52121  29359  53650  55222  16412  16245  15035
+    4096   28402  50277  51371  29241  53560  53367  16214  16398  16245
+    8192   18048  34939  37031  19169  37651  34730   8918   9302   9391
+
+                End of test Fri Jan 31 19:24:28 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2228.211
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 6784.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
+ 
+
+From File /proc/version
+Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
  
 

@@ -8,30 +8,30 @@
   Linux Functions 
   get_nprocs() - CPUs 8, Configured CPUs 8 
   get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
-  uname() - Linux, RU1202197828, 5.3.0-26-generic 
-  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+  uname() - Linux, RU1202197828, 5.3.0-29-generic 
+  #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020, x86_64 
 
  8 CPUs Available
 ##############################################
 
-  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Mon Jan 27 12:21:52 2020
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Jan 31 19:26:04 2020
 
   Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
                     Words  Word   Passes                         Results  Same
 
- Data in & out     102400     2    20000   0.091043    44990    0.620974   Yes
- Data in & out    1024000     2     2000   0.122726    33375    0.942935   Yes
- Data in & out   10240000     2      200   0.948979     4316    0.994032   Yes
+ Data in & out     102400     2    20000   0.306424    13367    0.620974   Yes
+ Data in & out    1024000     2     2000   0.326269    12554    0.942935   Yes
+ Data in & out   10240000     2      200   0.959801     4268    0.994032   Yes
 
- Data in & out     102400     8    20000   0.209398    78243    0.750017   Yes
- Data in & out    1024000     8     2000   0.200211    81834    0.965350   Yes
- Data in & out   10240000     8      200   0.947110    17299    0.996409   Yes
+ Data in & out     102400     8    20000   0.778888    21035    0.749971   Yes
+ Data in & out    1024000     8     2000   0.769058    21304    0.965360   Yes
+ Data in & out   10240000     8      200   0.960915    17050    0.996409   Yes
 
- Data in & out     102400    32    20000   0.811551    80754    0.497976   Yes
- Data in & out    1024000    32     2000   0.822861    79644    0.910527   Yes
- Data in & out   10240000    32      200   0.965685    67865    0.990462   Yes
+ Data in & out     102400    32    20000   3.182836    20590    0.498060   Yes
+ Data in & out    1024000    32     2000   3.238991    20233    0.910573   Yes
+ Data in & out   10240000    32      200   3.262791    20086    0.990447   Yes
 
-               End of test Mon Jan 27 12:21:58 2020
+               End of test Fri Jan 31 19:26:18 2020
 
 
 ##############################################
@@ -43,28 +43,63 @@
   Linux Functions 
   get_nprocs() - CPUs 8, Configured CPUs 8 
   get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
-  uname() - Linux, RU1202197828, 5.3.0-26-generic 
-  #28-Ubuntu SMP Wed Dec 18 05:37:46 UTC 2019, x86_64 
+  uname() - Linux, RU1202197828, 5.3.0-29-generic 
+  #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020, x86_64 
 
  8 CPUs Available
 ##############################################
 
-  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Mon Jan 27 12:24:45 2020
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Jan 31 19:26:18 2020
 
   Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
                     Words  Word   Passes                         Results  Same
 
- Data in & out     102400     2    20000   0.308219    13289    0.620974   Yes
- Data in & out    1024000     2     2000   0.347236    11796    0.942935   Yes
- Data in & out   10240000     2      200   0.940642     4354    0.994032   Yes
+ Data in & out     102400     2    20000   0.091670    44682    0.620974   Yes
+ Data in & out    1024000     2     2000   0.107546    38086    0.942935   Yes
+ Data in & out   10240000     2      200   0.935349     4379    0.994032   Yes
 
- Data in & out     102400     8    20000   0.780012    21005    0.749971   Yes
- Data in & out    1024000     8     2000   0.811772    20183    0.965360   Yes
- Data in & out   10240000     8      200   0.949556    17254    0.996409   Yes
+ Data in & out     102400     8    20000   0.189583    86421    0.749971   Yes
+ Data in & out    1024000     8     2000   0.193159    84821    0.965360   Yes
+ Data in & out   10240000     8      200   0.971271    16869    0.996409   Yes
 
- Data in & out     102400    32    20000   3.222167    20339    0.498060   Yes
- Data in & out    1024000    32     2000   3.279318    19985    0.910573   Yes
- Data in & out   10240000    32      200   3.350432    19560    0.990447   Yes
+ Data in & out     102400    32    20000   0.801703    81746    0.498060   Yes
+ Data in & out    1024000    32     2000   0.813470    80564    0.910573   Yes
+ Data in & out   10240000    32      200   0.972185    67411    0.990447   Yes
 
-               End of test Mon Jan 27 12:24:59 2020
+               End of test Fri Jan 31 19:26:23 2020
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
+  uname() - Linux, RU1202197828, 5.3.0-29-generic 
+  #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020, x86_64 
+
+ 8 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Jan 31 19:26:23 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.086530    47336    0.620974   Yes
+ Data in & out    1024000     2     2000   0.106529    38449    0.942935   Yes
+ Data in & out   10240000     2      200   0.943842     4340    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.191962    85350    0.750017   Yes
+ Data in & out    1024000     8     2000   0.193400    84716    0.965350   Yes
+ Data in & out   10240000     8      200   0.964636    16985    0.996409   Yes
+
+ Data in & out     102400    32    20000   0.797065    82222    0.497976   Yes
+ Data in & out    1024000    32     2000   0.804571    81455    0.910527   Yes
+ Data in & out   10240000    32      200   0.958495    68374    0.990462   Yes
+
+               End of test Fri Jan 31 19:26:28 2020
 

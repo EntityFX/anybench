@@ -1,0 +1,56 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2228.211
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 6784.41
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 biLinux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
+
+
+From File /proc/version
+Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020
+
+
+   Memory Reading Speed Test amd64 _ optimized Fri Jan 31 19:24:13 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   55863  75533  75245  70840  77094  74599  37608  25946  27804
+      16   53508  75172  73974  73923  77133  75959  38771  27702  28246
+      32   56448  75205  76927  74963  77408  77231  38365  28098  28513
+      64   44964  71382  72718  47010  74645  74363  27829  27348  27401
+     128   43579  70981  70417  44953  73630  74110  26341  26334  25962
+     256   39658  65499  66926  43226  62941  66412  24987  21163  24746
+     512   30293  54257  53899  31732  56889  55891  16276  17401  16267
+    1024   29942  53102  50538  30384  55316  55130  16586  16910  16414
+    2048   29477  50707  52121  29359  53650  55222  16412  16245  15035
+    4096   28402  50277  51371  29241  53560  53367  16214  16398  16245
+    8192   18048  34939  37031  19169  37651  34730   8918   9302   9391
+
+                End of test Fri Jan 31 19:24:28 2020
+

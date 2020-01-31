@@ -1,0 +1,70 @@
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
+  uname() - Linux, RU1202197828, 5.3.0-29-generic 
+  #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020, x86_64 
+
+ 8 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Jan 31 19:40:23 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.093449    43831    0.620974   Yes
+ Data in & out    1024000     2     2000   0.120393    34022    0.942935   Yes
+ Data in & out   10240000     2      200   0.978887     4184    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.202173    81040    0.749971   Yes
+ Data in & out    1024000     8     2000   0.200171    81850    0.965360   Yes
+ Data in & out   10240000     8      200   0.962928    17015    0.996409   Yes
+
+ Data in & out     102400    32    20000   0.809527    80956    0.498060   Yes
+ Data in & out    1024000    32     2000   0.803070    81607    0.910573   Yes
+ Data in & out   10240000    32      200   0.972847    67365    0.990447   Yes
+
+               End of test Fri Jan 31 19:40:28 2020
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 8, Configured CPUs 8 
+  get_phys_pages() and size - RAM Size 15.60 GB, Page Size 4096 Bytes 
+  uname() - Linux, RU1202197828, 5.3.0-29-generic 
+  #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020, x86_64 
+
+ 8 CPUs Available
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Jan 31 19:40:28 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.071083    57623    0.620974   Yes
+ Data in & out    1024000     2     2000   0.121173    33803    0.942935   Yes
+ Data in & out   10240000     2      200   0.964155     4248    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.201288    81396    0.749971   Yes
+ Data in & out    1024000     8     2000   0.214212    76485    0.965360   Yes
+ Data in & out   10240000     8      200   0.973298    16833    0.996409   Yes
+
+ Data in & out     102400    32    20000   0.812870    80623    0.498060   Yes
+ Data in & out    1024000    32     2000   0.801905    81725    0.910573   Yes
+ Data in & out   10240000    32      200   0.958665    68362    0.990447   Yes
+
+               End of test Fri Jan 31 19:40:34 2020
+

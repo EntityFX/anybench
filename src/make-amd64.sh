@@ -1,50 +1,77 @@
 #!/bin/bash
+mkdir "../bin/linux/"
+mkdir "../bin/linux/amd64"
 
-echo "Make Dhrystone v 2.1"
+echo -e "Compile Dhrystone v 2.1\n"
 
-cc  dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/amd64/dhrystone_amd64_fast -Ofast   -D options="\"amd64 ffase optimized\"" 
-chmod +x ../bin/linux/amd64/dhrystone_amd64_fast
-cc  dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/amd64/dhrystone_amd64 -O2 -D options="\"amd64 optimized\""
-chmod +x ../bin/linux/amd64/dhrystone_amd64
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/amd64/dhrystone_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/dhrystone_amd64-__O2
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/amd64/dhrystone_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/dhrystone_amd64-__O3
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/amd64/dhrystone_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/dhrystone_amd64-__Ofast
 
-echo "Make Whetstone"
+echo -e "Compile Whetstone\n"
 
-cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/whetstone_amd64_fast  -Ofast  -D opt="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/whetstone_amd64_fast
-cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/whetstone_amd64 -O2  -D opt="\"amd64  optimized\""
-chmod +x ../bin/linux/amd64/whetstone_amd64
-echo "Make Memspeed"
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/whetstone_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_amd64-__O2
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/whetstone_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_amd64-__O3
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/whetstone_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_amd64-__Ofast
 
-cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/memspeed_amd64_fast -Ofast   -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/memspeed_amd64_fast
-cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/memspeed_amd64 -O2  -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/memspeed_amd64
+echo -e "Compile Memspeed\n"
 
-echo "Make Linpack"
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/memspeed_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/memspeed_amd64-__O2
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/memspeed_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/memspeed_amd64-__O3
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/memspeed_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/memspeed_amd64-__Ofast
 
-cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/linpack_amd64_fast -Ofast   -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/linpack_amd64_fast
-cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/linpack_amd64 -O2  -D options="\"amd64  optimized\""
-chmod +x ../bin/linux/amd64/linpack_amd64
+echo -e "Compile Linpack\n"
 
-echo "Make Lloops"
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/linpack_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/linpack_amd64-__O2
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/linpack_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/linpack_amd64-__O3
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/linpack_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/linpack_amd64-__Ofast
 
-cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/lloops_amd64_fast -Ofast   -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/lloops_amd64_fast
-cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/lloops_amd64 -O2  -D options="\"amd64  optimized\""
-chmod +x ../bin/linux/amd64/lloops_amd64
+echo -e "Compile Lloops\n"
+
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/lloops_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/lloops_amd64-__O2
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/lloops_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/lloops_amd64-__O3
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/lloops_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/lloops_amd64-__Ofast
+
+echo -e "Compile WhetstoneMP\n"
+
+cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_mp_amd64-__O2
+cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_mp_amd64-__O3
+cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/whetstone_mp_amd64-__Ofast
+
+echo -e "Compile MPMFlops\n"
+
+cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/mpmflops_amd64-__O2
+cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/mpmflops_amd64-__O3
+cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/mpmflops_amd64-__Ofast
+
+echo -e "Compile busspeedIL\n"
+
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/busspeedIL_amd64-__O2 -O2 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/busspeedIL_amd64-__O2
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/busspeedIL_amd64-__O3 -O3 -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/busspeedIL_amd64-__O3
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/amd64/busspeedIL_amd64-__Ofast -Ofast -D options="\"amd64 _ optimized\""
+chmod +x ../bin/linux/amd64/busspeedIL_amd64-__Ofast
 
 
-echo "Make WhetstoneMP"
-
-cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64_fast -Ofast    -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/whetstone_mp_fast
-cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/whetstone_mp_amd64 -O2    -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/whetstone_mp
-
-echo "Make MPMFlops"
-
-cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp_amd64_fast -Ofast    -D options="\"amd64 ffast optimized\""
-chmod +x ../bin/linux/amd64/mpmflops_mp_fast
-cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/amd64/mpmflops_mp_amd64 -O2    -D options="\"amd64  optimized\""
-chmod +x ../bin/linux/amd64/mpmflops_mp
