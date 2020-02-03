@@ -20,3 +20,25 @@
   Java Vendor         Oracle Corporation, Version  1.8.0_152
   CPU null
 
+  *************************************************************
+
+     Whetstone Benchmark Java Version, Feb 3 2020, 12:15:43
+
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+
+  N1 floating point  -1.124750137   1192.55             0.0161
+  N2 floating point  -1.131330490   1064.98             0.1262
+  N3 if then else     1.000000000             903.14    0.1146
+  N4 fixed point     12.000000000            2671.76    0.1179
+  N5 sin,cos etc.     0.499110132             108.70    0.7654
+  N6 floating point   0.999999821    601.20             0.8972
+  N7 assignments      3.000000000             854.76    0.2162
+  N8 exp,sqrt etc.    0.935364604              83.45    0.4458
+
+  MWIPS                             3704.53             2.6994
+
+  Operating System    Linux, Arch. amd64, Version 5.3.0-29-generic
+  Java Vendor         Ubuntu, Version  11.0.6
+  CPU null
+
