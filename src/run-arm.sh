@@ -27,7 +27,7 @@ echo -e "Run Dhrystone v 2.1\n"
 ../bin/linux/arm/dhrystone_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/dhrystone_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/dhrystone_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/dhrystone_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run Whetstone v 2.1\n"
+echo -e "Run Whetstone\n"
 
 ../bin/linux/arm/whetstone_arm-armv6_O2 n 2>&1 > ../results/arm/whetstone_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_arm-armv6_O3 n 2>&1 > ../results/arm/whetstone_arm-armv6_O3.stdout_stderr.log
@@ -52,7 +52,7 @@ echo -e "Run Whetstone v 2.1\n"
 ../bin/linux/arm/whetstone_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/whetstone_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/whetstone_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run Memspeed v 2.1\n"
+echo -e "Run Memspeed\n"
 
 ../bin/linux/arm/memspeed_arm-armv6_O2 n 2>&1 > ../results/arm/memspeed_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/memspeed_arm-armv6_O3 n 2>&1 > ../results/arm/memspeed_arm-armv6_O3.stdout_stderr.log
@@ -77,7 +77,7 @@ echo -e "Run Memspeed v 2.1\n"
 ../bin/linux/arm/memspeed_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/memspeed_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/memspeed_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/memspeed_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run Linpack v 2.1\n"
+echo -e "Run Linpack\n"
 
 ../bin/linux/arm/linpack_arm-armv6_O2 n 2>&1 > ../results/arm/linpack_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/linpack_arm-armv6_O3 n 2>&1 > ../results/arm/linpack_arm-armv6_O3.stdout_stderr.log
@@ -102,7 +102,7 @@ echo -e "Run Linpack v 2.1\n"
 ../bin/linux/arm/linpack_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/linpack_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/linpack_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/linpack_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run Lloops v 2.1\n"
+echo -e "Run Lloops\n"
 
 ../bin/linux/arm/lloops_arm-armv6_O2 n 2>&1 > ../results/arm/lloops_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/lloops_arm-armv6_O3 n 2>&1 > ../results/arm/lloops_arm-armv6_O3.stdout_stderr.log
@@ -127,7 +127,7 @@ echo -e "Run Lloops v 2.1\n"
 ../bin/linux/arm/lloops_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/lloops_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/lloops_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/lloops_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run WhetstoneMP v 2.1\n"
+echo -e "Run WhetstoneMP\n"
 
 ../bin/linux/arm/whetstone_mp_arm-armv6_O2 n 2>&1 > ../results/arm/whetstone_mp_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_mp_arm-armv6_O3 n 2>&1 > ../results/arm/whetstone_mp_arm-armv6_O3.stdout_stderr.log
@@ -152,7 +152,7 @@ echo -e "Run WhetstoneMP v 2.1\n"
 ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.1-a_O3.stdout_stderr.log
 
-echo -e "Run MPMFlops v 2.1\n"
+echo -e "Run MPMFlops\n"
 
 ../bin/linux/arm/mpmflops_arm-armv6_O2 n 2>&1 > ../results/arm/mpmflops_arm-armv6_O2.stdout_stderr.log
 ../bin/linux/arm/mpmflops_arm-armv6_O3 n 2>&1 > ../results/arm/mpmflops_arm-armv6_O3.stdout_stderr.log

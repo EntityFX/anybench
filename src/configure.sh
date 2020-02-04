@@ -5,6 +5,7 @@ BIN_PATH="../bin/linux/"
 RESULTS_PATH="../results/"
 OPTIMIZED_TEXT_SUFFIX='ffast'
 TUNE_PARAM='-mtune'
+ARCH_PARAM='-march'
 
 configure_compile_section () {
     local tune_option=""
@@ -18,7 +19,7 @@ configure_compile_section () {
     do
         for opt in "${OPTS[@]}"
         do
-            echo $"$COMPILER $3 -o $BUILD_PATH$2$BINARY_PREFIX${arch}_${opt} -$opt -D options=\"\\\"${arch_name} $arch optimized\\\"\"" >> ${_script_name}
+            echo $"$COMPILER $3 -o $BUILD_PATH$2$BINARY_PREFIX${arch}_${opt} -$opt ${ARCH_PARAM}=${arch} -D options=\"\\\"${arch_name} $arch optimized\\\"\"" >> ${_script_name}
             echo "chmod +x $BUILD_PATH$2$BINARY_PREFIX${arch}_${opt}" >> ${_script_name}
             if [ ${OPTIMIZATION_FLAGS[$arch]+_} ]; then
                 echo $"$COMPILER $3 -o $BUILD_PATH$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt} -$opt ${OPTIMIZATION_FLAGS[$arch]} -D options=\"\\\"${arch_name} $arch optimized\\\"\"" >> ${_script_name} 
@@ -115,10 +116,10 @@ configure () {
 }
 
 
-M_ARCHS=('v3' 'v4' 'v5' )
+M_ARCHS=('elbrus-v3' 'elbrus-v4' 'elbrus-v5' )
 OPTS=('O2' 'O3' 'O4')
-declare -A TUNES=([v4_0]=elbrus-8c [v4_1]=elbrus-1c+ [v5_0]=elbrus-8c2)
-declare -A OPTIMIZATION_FLAGS=(['v4']='-ffast -fwhole' ['v5']='-ffast -fwhole')
+declare -A TUNES=([elbrus-v4_0]=elbrus-8c [elbrus-v4_1]=elbrus-1c+ [elbrus-v5_0]=elbrus-8c2)
+declare -A OPTIMIZATION_FLAGS=(['elbrus-v4']='-ffast -fwhole' ['elbrus-v5']='-ffast -fwhole')
 COMPILER='cc'
 configure "e2k"
 
