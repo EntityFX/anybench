@@ -1,0 +1,97 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    e2k elbrus-v4 optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.01 seconds 
+     1000000 runs   0.10 seconds 
+     2000000 runs   0.19 seconds 
+     4000000 runs   0.39 seconds 
+     8000000 runs   0.78 seconds 
+    16000000 runs   1.55 seconds 
+    32000000 runs   3.12 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    32000010
+Ptr_Glob->              Ptr_Comp:       *    123456
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    123456 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.96
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 2
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2599.84
+
+processor	: 3
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.910785
+L1 cache sLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+Nanoseconds one Dhrystone run:        97.44
+Dhrystones per Second:             10262395
+VAX  MIPS rating =                  5840.86
+
