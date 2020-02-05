@@ -1,0 +1,88 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+
+
+   Memory Reading Speed Test e2k elbrus-v4 optimized Wed Feb  5 18:32:12 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19633  17874  10266  20162  18201  18367  10251   9445   9443
+      16   21578  20450  11051  21888  20688  20785  11049  10559  10555
+      32   22705  22070  11499  22845  22192  22258  11494  11223  11224
+      64   23307  22970  11730  23402  23039  23076  11727  11585  11588
+     128   23628  23452  11851  23667  23489  23503  11848  11779  11778
+     256   23778  23698  11914  23810  23712  23724  11857  11873  11875
+     512   23856  23822  11942  23861  23814  23827  11942  11923  11926
+    1024   22391  22169  11797  22420  22335  22469  11482  11429  11422
+    2048   13614  13666   9986  13654  13550  13645   7486   7484   7483
+    4096    7425   7393   6873   7211   7135   7164   3956   3983   3984
+    8192    8052   8041   7327   7883   7822   7856   4289   4310   4310
+
+                End of test Wed Feb  5 18:32:29 2020
+

@@ -1,0 +1,60 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 16, Configured CPUs 16
+  get_phys_pages() and size - RAM Size 92.12 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 4.9.0-4.3-e2s
+  #1 SMP Thu Sep 12 11:29:58 GMT 2019, e2k
+
+##############################################
+
+ Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
+
+             Using 16 threads - Wed Feb  5 18:49:20 2020
+
+ Calibrate
+    0.02884 Seconds          1   Passes (x 100)
+    0.11746 Seconds          5   Passes (x 100)
+    0.56317 Seconds         25   Passes (x 100)
+
+ Use 443  passes (x 100)
+
+ MFLOPS 1     175    175    175    174    174    174    174    174    173    173    173    173    165    164    161    161
+ MFLOPS 2     176    175    175    175    174    174    174    173    173    173    173    172    172    171    171    171
+ IFMOPS       745    744    744    741    740    739    737    736    735    735    732    731    729    727    726    723
+ FIXPMOPS     486    485    484    483    482    482    480    479    478    478    477    476    474    473    473    471
+ COSMOPS       26     26     26     26     26     26     26     26     26     26     26     26     26     26     26     26
+ MFLOPS 3     187    186    186    186    186    186    186    186    186    186    186    186    185    185    184    184
+ EQUMOPS      172    172    172    172    172    172    172    172    172    172    172    172    172    172    172    172
+ EXPMOPS       16     16     16     16     16     16     16     16     16     16     16     16     16     16     16     16
+ millisec    4941   4945   4953   4950   4952   4958   4966   4962   4965   4969   4969   4978   5002   4990   4988   4987
+ MWIPS        897    896    894    895    895    894    892    893    892    892    891    890    886    888    888    888
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   14270   2737   2772   2972    414    256   7661  11763   2750
+
+ MWIPS   14160 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 15 threads were same as above
+
+               End of test Wed Feb  5 18:49:31 2020
+
+               Results also in log file MPwhetres.txt
+

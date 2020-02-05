@@ -1,0 +1,810 @@
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:31:02 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     884    597   1979   1192    994   1980    990   1479   1479
+      16     885    598   1988   1194    996   1988    992   1488   1488
+      32     884    598   1991   1196    997   1991    994   1492   1492
+      64     884    598   1988   1191    996   1989    995   1494   1494
+     128     771    543   1495    957    853   1495    992   1493   1493
+     256     771    544   1496    957    854   1495    748   1196   1196
+     512     722    526   1352    887    807   1353    702   1077   1077
+    1024     718    523   1333    888    801   1343    701   1075   1074
+    2048     508    425    807    609    574    805    472    599    604
+    4096     426    360    617    496    465    614    331    371    371
+    8192     421    360    611    491    462    607    324    365    365
+
+                End of test Wed Feb  5 18:31:19 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:31:19 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    3086  19443  10750   3631   8991  11712   1962   7319   7320
+      16    3142  21459  11330   3658   9425  12294   1976   7868   7876
+      32    3156  22604  11623   3666   9539  12762   1987   8208   8210
+      64    3177  23280  11809   3675   9649  12867   1991   8375   8375
+     128    3081  23606  11885   3671   9662  12921   1991   8464   8465
+     256    3071  23771  11932   3672   9783  12948   1993   8508   8509
+     512    3083  23860  11945   3666   9659  13101   1992   8527   8526
+    1024    2757  22796  10937   3216   8609  11109   1840   7688   7691
+    2048    1033  12952   4190   1083   3135   4091    795   2822   2823
+    4096     641   6966   2724    701   2105   2691    411   1287   1287
+    8192     673   7500   2828    723   2138   2746    428   1376   1377
+
+                End of test Wed Feb  5 18:31:36 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:31:36 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    3853  19445  10752   3892   8835  11584   1976   7318   7321
+      16    3897  21463  11332   3921   9424  12326   1961   7875   7866
+      32    3908  22615  11627   3926   9624  12747   1970   8208   8210
+      64    3901  23275  11808   3903   9791  12992   1980   8353   8378
+     128    2371  23609  11890   2381   9761  12902   1966   8464   8465
+     256    2359  23771  11925   2378   9750  12898   1190   8503   8504
+     512    1971  21923   9701   1976   7553  10168   1077   7117   7117
+    1024    2135  22908  10650   2139   8487  11386   1124   7656   7663
+    2048     938  13751   4279    936   3188   4186    590   2883   2881
+    4096     608   6595   2661    609   2062   2637    316   1236   1236
+    8192     626   7304   2795    627   2114   2719    336   1349   1350
+
+                End of test Wed Feb  5 18:31:53 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:31:53 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19316  10382  10489  19658  10543  10469   9968   5516   5513
+      16   21309  11096  11176  21588  11208  11169  10873   5733   5735
+      32   22564  11487  11542  22662  11546  11555  11369   5853   5852
+      64   23225  11726  11732  23252  11752  11756  11665   5902   5921
+     128   23543  11841  11855  23568  11864  11863  11805   5947   5928
+     256   23718  11899  11901  23743  11896  11901  11898   5964   5964
+     512   23775  11922  11917  23815  11920  11909  11904   5966   5966
+    1024   22996  11834  11836  23233  11845  11804  11807   5921   5922
+    2048   13746   9939   9709  13770   9572  10039   7676   5129   5122
+    4096    7654   6918   6761   7493   6707   6951   4080   3770   3763
+    8192    8045   7189   6681   7885   6928   7199   4297   3929   3916
+
+                End of test Wed Feb  5 18:32:12 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:32:12 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19633  17874  10266  20162  18201  18367  10251   9445   9443
+      16   21578  20450  11051  21888  20688  20785  11049  10559  10555
+      32   22705  22070  11499  22845  22192  22258  11494  11223  11224
+      64   23307  22970  11730  23402  23039  23076  11727  11585  11588
+     128   23628  23452  11851  23667  23489  23503  11848  11779  11778
+     256   23778  23698  11914  23810  23712  23724  11857  11873  11875
+     512   23856  23822  11942  23861  23814  23827  11942  11923  11926
+    1024   22391  22169  11797  22420  22335  22469  11482  11429  11422
+    2048   13614  13666   9986  13654  13550  13645   7486   7484   7483
+    4096    7425   7393   6873   7211   7135   7164   3956   3983   3984
+    8192    8052   8041   7327   7883   7822   7856   4289   4310   4310
+
+                End of test Wed Feb  5 18:32:29 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:32:29 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19630  17878  10273  20116  18149  18334  10228   9434   9423
+      16   21516  20374  11039  21860  20653  20764  11010  10544  10524
+      32   22680  22029  11466  22802  22168  22217  11475  11203  11185
+      64   23271  22944  11710  23324  22969  23014  11726  11566  11568
+     128   23549  23399  11838  23614  23452  23448  11827  11748  11760
+     256   23710  23635  11857  23743  23663  23660  11826  11864  11828
+     512   23733  23727  11907  23821  23645  23757  11898  11901  11900
+    1024   20263  20196  11461  20253  20278  20271  10864  10813  10828
+    2048   14388  14373  10277  14302  14209  14456   7986   7989   7988
+    4096    7281   7271   6751   7087   7019   7033   3838   3862   3862
+    8192    7769   7758   7116   7644   7595   7605   4129   4146   4151
+
+                End of test Wed Feb  5 18:32:47 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:32:47 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19307  10378  10507  19702  10559  10504   9979   5523   5523
+      16   21360  11118  11174  21575  11195  11163  10852   5736   5739
+      32   22538  11514  11546  22666  11573  11546  11378   5852   5849
+      64   23227  11723  11747  23260  11756  11747  11654   5913   5913
+     128   23547  11838  11799  23591  11848  11856  11810   5946   5950
+     256   23735  11905  11905  23766  11913  11892  11889   5958   5953
+     512   23817  11906  11940  23811  11939  11928  11902   5973   5966
+    1024   23849  11935  11908  23873  11925  11928  11932   5952   5973
+    2048   13699   9872   9695  13654   9487   9914   7621   5068   5009
+    4096    7647   6875   6724   7462   6666   6960   4080   3750   3750
+    8192    7868   7067   6856   7740   6817   7021   4219   3858   3861
+
+                End of test Wed Feb  5 18:33:06 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:33:06 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19636  17883  10274  20167  18203  18377  10258   9449   9448
+      16   21586  20457  11063  21902  20688  20795  11045  10564  10564
+      32   22706  22082  11499  22855  22203  22267  11497  11225  11223
+      64   23314  22983  11736  23405  23049  23081  11731  11592  11591
+     128   23570  23454  11858  23679  23491  23510  11855  11754  11757
+     256   23745  23658  11882  23752  23689  23670  11902  11856  11846
+     512   22426  22188  11855  22421  22371  22413  11506  11479  11489
+    1024   22540  22405  11838  22579  22504  22566  11565  11553  11548
+    2048   14174  14110  10244  14070  13967  14095   7802   7843   7847
+    4096    7268   7263   6743   7062   7015   7024   3822   3849   3852
+    8192    7773   7762   7131   7637   7588   7607   4135   4155   4145
+
+                End of test Wed Feb  5 18:33:23 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Wed Feb  5 18:33:23 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   19634  17878  10271  20170  18206  18375  10255   9431   9417
+      16   21519  20404  11023  21843  20662  20745  11032  10543  10535
+      32   22652  22042  11484  22803  22129  22209  11472  11197  11202
+      64   23268  22922  11707  23375  22999  23038  11687  11569  11565
+     128   23600  23389  11838  23595  23446  23481  11829  11756  11758
+     256   23751  23663  11904  23737  23669  23654  11887  11861  11843
+     512   17844  22714  10487  17821  23032  23027  11490  11461  11483
+    1024   21208  21110  11706  21195  21144  21207  11071  11052  11047
+    2048   13960  13982  10195  13959  13912  13974   7683   7653   7630
+    4096    7675   7611   7142   7456   7414   7423   4084   4107   4104
+    8192    7962   7975   7327   7838   7809   7822   4243   4268   4263
+
+                End of test Wed Feb  5 18:33:40 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1501.08
+
+processor	: 1
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 2
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 3
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: E2S
+revision	: 2
+cpu MHz		: 750.5175
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1500.03
+
+processor	: 4
+vendor_id	: EL2S4
+cpu family	: 4
+model		: 3
+model name	: ELinux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.3-e2s (root@fitting1) (lcc:1.23.19:Jun-19-2019:e2k-v3-linux.cross:x86_64-linux) #1 SMP Thu Sep 12 11:29:58 GMT 2019
+ 
+
