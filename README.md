@@ -76,3 +76,34 @@ cd src/
 
 You can see results in `results/<your-os>/<your-arch>` direcotry.
 Additional results in `src\` direcotry.
+
+
+## Other benchmarks
+
+### Whetstone Java
+
+```sh
+cd src/java
+java whetstc
+```
+
+### Whetstone JavaScript (nodejs or web browser)
+
+```sh
+cd src/js
+node whetstone.js
+```
+
+### Whetstone C# (mono, net framework, dotnet core)
+
+```sh
+cd bin/dotnet/mono/
+mono WhetstoneNetFramework.exe
+```
+
+### Coremark for E2k (Elbrus)
+
+```sh
+cd bin/linux/e2k/
+./coremark_elbrus-<your_cpu>
+```
