@@ -123,7 +123,7 @@ declare -A OPTIMIZATION_FLAGS=(['elbrus-v4']='-ffast -fwhole' ['elbrus-v5']='-ff
 COMPILER='cc'
 configure "e2k"
 
-M_ARCHS=('_')
+M_ARCHS=('x86-64')
 OPTS=('O2' 'O3' 'Ofast')
 declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
