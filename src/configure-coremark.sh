@@ -130,7 +130,7 @@ COMPILER='cc'
 configure "arm"
 
 
-M_ARCHS=('_')
+M_ARCHS=('x86-64')
 OPTS=('O2' 'O3')
 declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
