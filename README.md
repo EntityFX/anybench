@@ -10,6 +10,7 @@
 * Lloops
 * Busspeed
 * MP MFlops
+* Coremark
 
 Already contains precompiled binaries in `bin/` directory.
 So you can just 
@@ -17,6 +18,7 @@ So you can just
 ```sh
 cd src/
 ./run-<your_arch>.sh
+./run-coremark-<your_arch>.sh
 ```
 
 ## Configure
@@ -26,6 +28,13 @@ You can generate build and run scripts:
 ```sh
 cd src/
 ./configure.sh
+```
+
+### Configure Coremark
+
+```sh
+cd src/
+./configure-coremark.sh
 ```
 
 ## Compile
@@ -51,6 +60,13 @@ cd src/
 ./make-e2k.sh
 ```
 
+### Compile Coremark
+
+```sh
+cd src/
+./make-coremark-e2k.sh
+```
+
 ## Run
 
 ```sh
@@ -70,6 +86,12 @@ For **e2k** architecture
 ```sh
 cd src/
 ./run-e2k.sh
+```
+### Run Coremark
+
+```sh
+cd src/
+./run-coremark-e2k.sh
 ```
 
 ## Results
