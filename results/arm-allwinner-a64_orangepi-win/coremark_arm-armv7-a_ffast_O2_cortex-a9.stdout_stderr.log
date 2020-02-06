@@ -1,0 +1,19 @@
+ERROR! Please define ee_ptr_int to a type that holds a pointer!
+2K performance run parameters for coremark.
+ERROR: ee_ptr_int is not a datatype that holds an int pointer!
+ERROR: Please modify the datatypes in core_portme.h!
+CoreMark Size    : 666
+Total ticks      : 12800
+Total time (secs): 12.800000
+Iterations/Sec   : 3125.000000
+Iterations       : 40000
+Compiler version : GCC4.9.2
+Compiler flags   : -g -DPERFORMANCE_RUN=1  -lrt
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x25b5
+Errors detected
