@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: ./configure.sh
+      run: ./src/configure.sh
     - name: make
-      run: ./make-amd64.sh
+      run: ./src/make-amd64.sh
