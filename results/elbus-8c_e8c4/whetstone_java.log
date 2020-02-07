@@ -1,0 +1,20 @@
+
+     Whetstone Benchmark Java Version, фев 7 2020, 18:53:02
+
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+
+  N1 floating point  -1,124750137    270,19             0,0711
+  N2 floating point  -1,131330490    308,97             0,4350
+  N3 if then else     1,000000000             124,10    0,8340
+  N4 fixed point     12,000000000             566,55    0,5560
+  N5 sin,cos etc.     0,499110132              46,53    1,7880
+  N6 floating point   0,999999821    216,80             2,4880
+  N7 assignments      3,000000000              78,31    2,3600
+  N8 exp,sqrt etc.    0,825148463              28,05    1,3260
+
+  MWIPS                             1014,40             9,8581
+
+  Operating System    Linux, Arch. e2k, Version 4.9.0-2.7-e8c
+  Java Vendor         Oracle Corporation, Version  1.8.0_152
+  CPU null

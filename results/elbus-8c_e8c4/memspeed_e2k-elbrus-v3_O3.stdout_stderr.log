@@ -1,0 +1,85 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+   Memory Reading Speed Test e2k elbrus-v3 optimized Fri Feb  7 17:33:01 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    5301  29075  18593   5831  15367  20141   3368  12658  12663
+      16    4870  35558  19595   6027  16265  21128   3258  13635  13569
+      32    4854  37679  19986   5659  16633  22461   3281  14120  14177
+      64    4899  35914  20423   6061  16748  22301   3448  14491  14493
+     128    4283  37571  18864   4878  14199  19491   3443  11832  11822
+     256    3821  34251  17026   4264  11952  16362   2947  10670  10656
+     512    3071  28309  14133   3309   9219  12688   2507   8208   8210
+    1024    2788  24454  12771   2974   8296  11269   2175   6757   6758
+    2048    2718  22341  12524   2770   7879  11218   2160   6607   6627
+    4096    2553  20642  12400   2890   7683  11814   2217   6762   6758
+    8192    2576  23746  12398   2917   8032  11237   2197   6619   6586
+
+                End of test Fri Feb  7 17:33:18 2020
+

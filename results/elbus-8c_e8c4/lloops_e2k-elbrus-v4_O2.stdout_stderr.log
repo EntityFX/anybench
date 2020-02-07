@@ -1,0 +1,116 @@
+L.L.N.L. 'C' KERNELS: MFLOPS   P.C.  VERSION 4.0
+
+Optimisation  e2k elbrus-v4 optimized
+
+Calculating outer loop overhead
+      1000 times   0.00 seconds
+     10000 times   0.00 seconds
+    100000 times   0.00 seconds
+   1000000 times   0.01 seconds
+  10000000 times   0.15 seconds
+  20000000 times   0.28 seconds
+Overhead for each loop   1.3938e-08 seconds
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+
+Calibrating part 1 of 3
+
+Loop count          4  0.00 seconds
+Loop count         16  0.00 seconds
+Loop count         64  0.00 seconds
+
+Loops  200 x  1 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1   7 x 357  5  2.501499e+09  1.07 2342.44 1001  5.114652693224671e+04 16
+ 2  67 x  58  4  3.015536e+08  1.02  296.50  101  1.539721811668385e+03 15
+ 3   9 x 177  2  6.378372e+08  1.00  638.72 1001  1.000742883066363e+01 15
+ 4  14 x 180  2  6.048000e+08  1.01  597.90 1001  5.999250595473891e-01 16
+ 5  10 x  36  2  1.440000e+08  1.01  142.45 1001  4.548871642387267e+03 16
+ 6   3 x 194  2  4.618752e+08  1.00  462.46   64  4.375116344729986e+03 16
+ 7   4 x 434 16  5.527424e+09  1.14 4834.23  995  6.104251075174761e+04 16
+ 8  10 x 296 36  4.219776e+09  1.08 3908.92  100  1.501268005625795e+05 15
+ 9  36 x 235 17  2.905164e+09  1.15 2533.12  101  1.189443609974981e+05 16
+10  34 x 272  9  1.681286e+09  0.99 1705.94  101  7.310369784325296e+04 16
+11  11 x  41  1  9.020000e+07  0.98   92.10 1001  3.342910972650109e+07 16
+12  12 x 212  1  5.088000e+08  1.00  506.86 1000  2.907141294167248e-05 16
+13  36 x 363  7  1.170893e+09  1.02 1149.57   64  1.202533961842805e+11 15
+14   2 x 445 11  1.959958e+09  1.02 1930.85 1001  3.165553044000335e+09 15
+15   1 x 132 33  4.356000e+08  0.99  440.92  101  3.943816690352044e+04 15
+16  25 x 101 10  2.676500e+08  1.01  265.14   75  5.650760000000000e+05 16
+17  35 x  80  9  5.090400e+08  1.00  509.13  101  1.114641772902486e+03 16
+18   2 x 348 44  3.031776e+09  1.03 2946.10  100  1.015727037502299e+05 15
+19  39 x  66  6  3.119688e+08  1.01  308.86  101  5.421816960147207e+02 16
+20   1 x  66 26  3.432000e+08  1.01  340.07 1000  3.040644339351239e+07 16
+21   1 x  43  2  1.085750e+09  1.02 1068.49  101  1.597308280710199e+08 15
+22  11 x  52 17  1.964248e+08  1.01  195.25  101  2.938604376566697e+02 16
+23   8 x  47 11  4.094640e+08  1.01  406.76  100  3.549900501563623e+04 16
+24   5 x 144  1  1.440000e+08  1.01  143.01 1001  5.000000000000000e+02 16
+
+                     Maximum   Rate 4834.23 
+                     Average   Rate 1156.91 
+                     Geometric Mean  650.57 
+                     Harmonic  Mean  387.64 
+                     Mini

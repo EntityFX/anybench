@@ -1,0 +1,1305 @@
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:32:44 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1526   1032   3423   2058   1716   3417   1710   2558   2556
+      16    1528   1032   3426   2064   1722   3438   1718   2573   2570
+      32    1531   1033   3442   2067   1723   3429   1719   2581   2580
+      64    1528   1033   3424   2061   1722   3438   1722   2577   2574
+     128    1333    940   2585   1654   1477   2579   1717   2582   2582
+     256    1333    940   2581   1649   1472   2583   1292   2064   2065
+     512    1149    878   2026   1396   1271   1976   1091   1540   1540
+    1024    1099    834   1849   1321   1177   1775    958   1251   1252
+    2048    1099    831   1853   1317   1160   1773    952   1239   1239
+    4096    1103    836   1888   1309   1200   1804    965   1263   1262
+    8192    1102    835   1877   1307   1195   1794    962   1255   1253
+
+                End of test Fri Feb  7 17:33:01 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:33:01 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    5301  29075  18593   5831  15367  20141   3368  12658  12663
+      16    4870  35558  19595   6027  16265  21128   3258  13635  13569
+      32    4854  37679  19986   5659  16633  22461   3281  14120  14177
+      64    4899  35914  20423   6061  16748  22301   3448  14491  14493
+     128    4283  37571  18864   4878  14199  19491   3443  11832  11822
+     256    3821  34251  17026   4264  11952  16362   2947  10670  10656
+     512    3071  28309  14133   3309   9219  12688   2507   8208   8210
+    1024    2788  24454  12771   2974   8296  11269   2175   6757   6758
+    2048    2718  22341  12524   2770   7879  11218   2160   6607   6627
+    4096    2553  20642  12400   2890   7683  11814   2217   6762   6758
+    8192    2576  23746  12398   2917   8032  11237   2197   6619   6586
+
+                End of test Fri Feb  7 17:33:18 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v3 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:33:18 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    6637  33516  18576   6728  15296  20021   3414  12647  12649
+      16    6736  37065  19533   6773  16163  21463   3398  13624  13613
+      32    6764  39097  20111   6801  16705  22102   3418  14183  14179
+      64    6751  40231  20411   6693  16702  22344   3412  14484  14478
+     128    3622  37096  18624   3660  14121  18774   3389  12481  12465
+     256    2927  31734  15745   2962  10805  14734   1715   9909   9871
+     512    2572  27648  13803   2588   9011  12497   1525   8187   8190
+    1024    2394  24544  12649   2391   8098  11389   1362   6905   6917
+    2048    2376  23905  12513   2368   7971  11243   1313   6626   6627
+    4096    2388  24185  12388   2366   7859  11731   1342   6746   6740
+    8192    1878  21541   8622   1848   6001   8109   1104   5085   5085
+
+                End of test Fri Feb  7 17:33:36 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:33:36 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1519   1032   3406   2060   1714   3396   1703   2543   2558
+      16    1530   1031   3408   2065   1722   3419   1712   2556   2571
+      32    1530   1034   3426   2067   1720   3439   1719   2566   2566
+      64    1526   1026   3418   2061   1721   3438   1721   2562   2583
+     128    1332    934   2583   1654   1473   2569   1711   2580   2581
+     256    1220    904   2197   1487   1367   2193   1176   1734   1734
+     512    1128    855   1936   1359   1230   1882   1029   1397   1397
+    1024    1099    838   1867   1326   1208   1797    972   1272   1278
+    2048    1099    831   1857   1314   1194   1777    952   1240   1239
+    4096    1105    837   1887   1309   1222   1803    967   1265   1265
+    8192    1034    799   1679   1208   1137   1617    906   1161   1164
+
+                End of test Fri Feb  7 17:33:53 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:33:53 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33278  17750  18159  33971  18235  18159  17212   9547   9503
+      16   36862  19209  19233  36566  19399  19348  18785   9937   9884
+      32   39047  19820  19997  39026  19335  19415  19710  10138  10131
+      64   38532  20194  20319  40333  19497  20329  20165  10237  10228
+     128   35002  20178  19667  34647  19575  20302  19325  10197  10111
+     256   28362  19273  18549  25467  18280  19932  18289  10184  10184
+     512   27282  18699  17534  27279  16484  17756  15690   9733   9729
+    1024   25546  18098  16916  25829  16661  17870  15499   9572   9614
+    2048   23645  17333  16156  24255  15961  17044  12715   9319   9384
+    4096   23618  16934  16236  24335  14899  16983  13770   9093   9146
+    8192   23024  16221  15379  23257  15156  16434  13822   8148   8788
+
+                End of test Fri Feb  7 17:34:11 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:34:11 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33276  17928  18156  34050  18190  18152  17208   9540   9547
+      16   36945  19184  19276  37245  19394  19331  18816   9930   9930
+      32   38956  19913  19996  39268  20016  19969  19687  10133  10135
+      64   40181  20267  20296  40204  20340  20328  20185  10239  10220
+     128   40748  20477  20501  40807  20511  20464  20429  10290  10286
+     256   35390  20159  19779  35517  19669  20273  19451  10179  10150
+     512   29342  19385  18427  29550  18147  19521  17768   9910   9910
+    1024   24500  17531  16400  24837  16181  17450  14779   9406   9424
+    2048   23853  17286  15985  24217  15956  17075  14422   9350   9333
+    4096   23845  17312  16256  24251  16000  17260  14597   9092   9094
+    8192   23659  16810  15901  23776  15601  16497  14219   8910   8958
+
+                End of test Fri Feb  7 17:34:28 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:34:28 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    5309  29339  18603   5913  15493  20154   3302  12568  12666
+      16    4968  34956  19607   5655  16341  21796   3059  13636  13654
+      32    4911  35500  20144   5793  16714  22269   3283  14195  14201
+      64    5469  39971  20311   6323  17063  22466   3447  14478  14490
+     128    5337  40822  20577   6335  16890  22618   3430  14648  14658
+     256    3716  33536  16572   3819  11621  15686   2955  10560  10596
+     512    3168  28507  14324   3415   9328  12900   2598   8519   8566
+    1024    2752  24000  12632   2929   8223  11195   2156   6670   6685
+    2048    2742  23899  12616   2932   8073  11149   2108   6634   6625
+    4096    2566  24061  12452   2948   8146  11221   2221   6758   6760
+    8192    2575  23869  12556   2935   8135  11211   2187   6587   6663
+
+                End of test Fri Feb  7 17:34:45 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:34:45 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33767  30914  17766  34910  31374  31799  17754  16360  16353
+      16   36954  35426  18936  37550  35764  35992  19032  18274  18264
+      32   39292  38227  19766  39389  38448  38478  19892  19438  19431
+      64   40354  39570  20184  40263  39888  39956  20199  20064  20073
+     128   40855  40383  20526  40788  40452  40691  20496  20391  20364
+     256   38099  37872  20516  38087  37842  38082  20180  20122  20108
+     512   28764  28416  20165  29023  28952  25484  17255  17116  17134
+    1024   24323  24393  19240  24552  24509  25435  14726  14768  14763
+    2048   23837  23798  18387  24264  24070  25058  14371  14311  14422
+    4096   23843  23576  19353  20908  23786  25212  14556  14471  14528
+    8192   23814  23944  17740  22194  23905  22052  14172  14150  14147
+
+                End of test Fri Feb  7 17:35:02 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:35:02 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33885  30923  16940  33523  30840  31762  17756  16354  16266
+      16   35588  35384  19144  37919  35753  35996  19133  18265  18286
+      32   39106  37995  19779  39615  36335  37020  19816  17428  19303
+      64   35952  37418  20280  35338  37481  37840  19879  20047  19796
+     128   40855  40567  20499  40957  40640  40571  20474  20161  20344
+     256   33015  34646  20578  32072  35094  35902  17827  17810  19435
+     512   27484  26708  20046  27606  27989  28630  16819  16727  16760
+    1024   24374  21788  19433  24823  24688  25454  14919  14860  14863
+    2048   23681  23807  19196  24297  24040  25048  14425  14408  14418
+    4096   22794  24152  19308  23710  24210  25153  14629  14408  12927
+    8192   23121  20694  18129  23929  22064  24377  14118  14168  13099
+
+                End of test Fri Feb  7 17:35:18 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:35:18 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    6641  29257  18527   5993  15076  18063   3375  12464  12566
+      16    5950  35265  19088   6742  15937  21200   3289  13281  13470
+      32    6520  36902  19014   6434  16413  19952   3424  12944  14172
+      64    6241  38032  18780   6729  16015  22109   3393  14466  14477
+     128    4098  36452  20160   4086  16719  22303   3398  14634  14624
+     256    3259  34667  17118   3328  12335  16720   1810  11157  11133
+     512    2191  26638  13714   2550   8848  12274   1513   7961   7947
+    1024    2417  24959  12964   2429   8176  11417   1401   7192   7197
+    2048    2382  23623  12536   2376   8136  11110   1290   6545   6544
+    4096    2386  23672  12439   2350   7986  11824   1343   6745   6734
+    8192    2040  22724   9997   2031   6841   9141   1208   5836   5861
+
+                End of test Fri Feb  7 17:35:35 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:35:35 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   31944  29091  17488  32508  31331  31795  15945  16270  16355
+      16   31298  34953  18843  33497  34028  35988  19118  17055  18062
+      32   32947  33483  19707  33732  38228  34543  19799  19401  17245
+      64   36843  35535  20062  34549  37693  38685  20312  20076  20073
+     128   40928  40611  20517  40929  40402  40709  20425  20208  20206
+     256   39478  39686  20517  39915  39601  35537  19801  20239  18864
+     512   25924  27706  19672  25680  29908  30547  17702  17714  16284
+    1024   23806  22141  19052  24792  24533  25369  14019  13981  14783
+    2048   20169  21459  19239  24017  23915  21391  14378  14405  12712
+    4096   23868  24151  19361  24317  23323  23430  13602  14535  14545
+    8192   23557  21354  17567  22683  23542  24471  12210  14121  14033
+
+                End of test Fri Feb  7 17:35:52 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v4 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:35:52 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33858  30924  17733  34834  31414  31720  17731  16350  16331
+      16   37315  35415  19048  37849  35728  35761  19113  18261  18228
+      32   39156  38140  19877  39551  38357  38524  19809  19409  19383
+      64   32297  34148  20022  32248  34144  34466  18923  18582  18559
+     128   35449  37010  20311  35556  37022  37075  19462  19283  19320
+     256   31061  31573  20259  31311  31322  32148  18210  18216  18227
+     512   27364  27300  19925  27664  27451  28082  16640  16568  16563
+    1024   25313  25258  19546  25645  25273  26200  15380  15330  15321
+    2048   23908  23739  19153  24203  23966  25009  14409  14359  14367
+    4096   23890  24070  19308  24325  24219  25001  14569  14498  14505
+    8192   22945  23046  17372  23142  23101  23507  13691  13645  13631
+
+                End of test Fri Feb  7 17:36:08 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:36:08 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33335  17895  18164  33976  18247  18152  17253   9542   9546
+      16   36832  19206  19362  37340  19405  19344  18745   9935   9931
+      32   39025  19917  19966  39211  20026  20015  19701  10136  10124
+      64   40110  20301  20326  40292  20352  20337  20143  10247  10248
+     128   40804  20470  20500  40810  20540  20523  20422  10276  10271
+     256   37590  20499  20238  37569  20146  20559  20077  10274  10293
+     512   28311  19008  18029  28657  17870  19054  17102   9817   9813
+    1024   24588  17616  16484  24888  16240  17513  14854   9433   9436
+    2048   23929  17220  16136  24249  15828  17119  14444   9326   9348
+    4096   23908  17396  16252  24312  16038  17304  14603   9144   9062
+    8192   23729  16525  15849  23892  15613  16468  14221   8970   8962
+
+                End of test Fri Feb  7 17:36:26 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:36:26 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33815  30797  17755  34860  31463  31767  17719  16324  16333
+      16   37296  35401  19116  37851  35674  35955  19102  18258  18240
+      32   39238  38127  19866  39544  38381  38475  19858  19410  19353
+      64   40294  39741  20286  40458  39818  39777  20245  20029  20032
+     128   40881  40421  20472  40865  35744  40436  18252  20279  20290
+     256   37663  38820  20524  37860  38915  38954  19712  19638  19661
+     512   27890  27855  19928  28146  27907  28666  16798  16737  16722
+    1024   24139  23859  19281  24551  24254  25252  14660  14608  14637
+    2048   23854  23854  19176  24217  23747  25056  14420  14380  14386
+    4096   23945  24188  19343  24277  24325  25184  14571  14508  14544
+    8192   23693  23857  17818  23701  23815  24286  14213  14147  14149
+
+                End of test Fri Feb  7 17:36:42 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test e2k elbrus-v5 optimized by Roy Longbottom
+
+               Start of test Fri Feb  7 17:36:42 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   33917  30899  17771  34846  31468  31694  17727  16324  16330
+      16   37316  35377  19080  37767  35758  35996  19102  18273  18252
+      32   39138  38073  19831  39439  38189  38481  19840  19381  19391
+      64   40101  39409  20261  40441  39713  39847  20267  20020  19984
+     128   31904  31760  20425  31884  31560  32124  18458  18255  18225
+     256   33164  33085  20578  33172  32910  33197  18959  18833  18850
+     512   27682  27882  20066  27912  27681  28475  16999  16898  16881
+    1024   24312  24410  19270  24615  24495  25363  14712  14640  14676
+    2048   23865  23887  19158  24195  23999  24999  14428  14378  14340
+    4096   23557  24181  19320  24309  24300  25084  14591  14519  14364
+    8192   22967  23315  17618  23274  23172  23703  13749  13798  13715
+
+                End of test Fri Feb  7 17:36:58 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2601.10
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2600.01
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.993840
+L1 cache size	: 64 KB
+L1 cacheLinux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:05:08 UTC 2019
+ 
+
