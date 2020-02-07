@@ -20,6 +20,7 @@ So you can just
 cd src/
 ./run-<your_arch>.sh
 ./run-coremark-<your_arch>.sh
+./run-scimark2-<your_arch>.sh
 ```
 
 ## Configure
