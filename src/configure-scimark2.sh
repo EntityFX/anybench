@@ -49,16 +49,16 @@ configure_run () {
     do
         for opt in "${OPTS[@]}"
         do
-            echo $"$BUILD_PATH$2$BINARY_PREFIX${arch}_${opt} n 2>&1 > ${RESULTS_PATH}${arch_name}/$2$BINARY_PREFIX${arch}_${opt}.stdout_stderr.log" >> ${_script_name}
+            echo $"$BUILD_PATH$2$BINARY_PREFIX${arch}_${opt} 2>&1 > ${RESULTS_PATH}${arch_name}/$2$BINARY_PREFIX${arch}_${opt}.stdout_stderr.log" >> ${_script_name}
             if [ ${OPTIMIZATION_FLAGS[${arch}]+_} ]; then
-                echo $"$BUILD_PATH$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt} n 2>&1 > ${RESULTS_PATH}${arch_name}/$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}.stdout_stderr.log" >> ${_script_name}  
+                echo $"$BUILD_PATH$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt} 2>&1 > ${RESULTS_PATH}${arch_name}/$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}.stdout_stderr.log" >> ${_script_name}  
             fi
 
             for flag_index in 0 1 2
             do
                 if [ ${TUNES[${arch}_${flag_index}]+_} ]; then
                     tune_option=${TUNES[${arch}_${flag_index}]}
-                    echo $"$BUILD_PATH$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}_${tune_option} n 2>&1 > ${RESULTS_PATH}${arch_name}/$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}_${tune_option}.stdout_stderr.log" >> ${_script_name}  
+                    echo $"$BUILD_PATH$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}_${tune_option} 2>&1 > ${RESULTS_PATH}${arch_name}/$2${BINARY_PREFIX}${arch}_${OPTIMIZED_TEXT_SUFFIX}_${opt}_${tune_option}.stdout_stderr.log" >> ${_script_name}  
                 fi
             done
         done
