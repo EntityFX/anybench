@@ -11,6 +11,7 @@
 * Busspeed
 * MP MFlops
 * Coremark
+* Scimark 2
 
 Already contains precompiled binaries in `bin/` directory.
 So you can just 
@@ -19,6 +20,7 @@ So you can just
 cd src/
 ./run-<your_arch>.sh
 ./run-coremark-<your_arch>.sh
+./run-scimark2-<your_arch>.sh
 ```
 
 ## Configure
@@ -31,6 +33,13 @@ cd src/
 ```
 
 ### Configure Coremark
+
+```sh
+cd src/
+./configure-coremark.sh
+```
+
+### Configure Scimark 2
 
 ```sh
 cd src/
@@ -62,12 +71,52 @@ cd src/
 
 ### Compile Coremark
 
+For **arm** architecture
+
+```sh
+cd src/
+./make-coremark-arm.sh
+```
+
+For **amd64** architecture
+
+```sh
+cd src/
+./make-coremark-amd64.sh
+```
+For **e2k** architecture
+
 ```sh
 cd src/
 ./make-coremark-e2k.sh
 ```
 
+### Compile Scimark 2
+
+For **arm** architecture
+
+```sh
+cd src/
+./make-scimark2-arm.sh
+```
+
+For **amd64** architecture
+
+```sh
+cd src/
+./make-scimark2-amd64.sh
+```
+
+For **e2k** architecture
+
+```sh
+cd src/
+./make-scimark2-e2k.sh
+```
+
 ## Run
+
+For **arm** architecture
 
 ```sh
 cd src/
@@ -87,11 +136,51 @@ For **e2k** architecture
 cd src/
 ./run-e2k.sh
 ```
+
 ### Run Coremark
+
+For **arm** architecture
+
+```sh
+cd src/
+./run-coremark-arm.sh
+```
+
+For **amd64** architecture
+
+```sh
+cd src/
+./run-coremark-amd64.sh
+```
+
+For **e2k** architecture
 
 ```sh
 cd src/
 ./run-coremark-e2k.sh
+```
+
+### Run Scimark2
+
+For **arm** architecture
+
+```sh
+cd src/
+./run-scimark2-arm.sh
+```
+
+For **amd64** architecture
+
+```sh
+cd src/
+./run-scimark2-amd64.sh
+```
+
+For **e2k** architecture
+
+```sh
+cd src/
+./run-scimark2-e2k.sh
 ```
 
 ## Results
