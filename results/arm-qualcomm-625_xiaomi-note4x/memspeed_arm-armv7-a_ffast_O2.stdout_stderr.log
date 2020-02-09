@@ -1,0 +1,80 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 4
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 5
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1Linux version 3.18.31-perf-g040a88f (builder@mi-server) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Nov 7 00:28:25 WIB 2019
+
+
+From File /proc/version
+Linux version 3.18.31-perf-g040a88f (builder@mi-server) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Nov 7 00:28:25 WIB 2019
+
+
+   Memory Reading Speed Test arm armv7-a optimized Sun Feb  9 00:28:02 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    6399   6216   7278   7248   5029   5131   9542   9540   9473
+      16    6542   6259   7327   7323   5032   5120   9750   9774   9779
+      32    6036   5774   6647   6674   4641   4750   9827   9831   9833
+      64    5538   5354   6023   5946   4431   4510   8788   8750   8839
+     128    5586   5414   5997   5974   4546   4600   8125   8018   7316
+     256    5393   5402   6006   5724   4524   4618   7304   2536   7889
+     512    5701   5410   6059   6001   4578   4636   8024   8011   7988
+    1024      65    108   3597   4121   3167   3286   7568   7548   7484
+    2048    1826   2039   2101   2071   2026   2025   4210   4336   4529
+    4096    1762   1753   1800   1697   1780   1784     50   2333   2204
+    8192    1867   1919   1850   1992    166     15     37     17   2157
+
+                End of test Sun Feb  9 00:29:11 2020
+

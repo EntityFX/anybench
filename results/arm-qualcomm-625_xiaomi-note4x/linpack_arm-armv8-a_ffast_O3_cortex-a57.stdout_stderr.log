@@ -1,0 +1,117 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation arm armv8-a optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00224    0.00005    0.00230     298.83     0.0067     0.0410
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.12 seconds
+      2000 times   0.24 seconds
+      4000 times   0.48 seconds
+      8000 times   0.95 seconds
+     16000 times   1.91 seconds
+Overhead for 1 matgen      0.00012 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.02 seconds
+       100 times   0.22 seconds
+       200 times   0.44 seconds
+       400 times   0.87 seconds
+       800 times   1.75 seconds
+Passes used        458 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00207    0.00004    0.00210     326.33     0.0061     0.0376
+    0.00207    0.00004    0.00210     326.27     0.0061     0.0376
+    0.00206    0.00004    0.00210     326.54     0.0061     0.0376
+    0.00207    0.00004    0.00211     325.54     0.0061     0.0377
+    0.00206    0.00004    0.00210     326.86     0.0061     0.0375
+Average                               326.31
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00012 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00207    0.00004    0.00211     325.97     0.0061     0.0376
+    0.00207    0.00004    0.00211     325.85     0.0061     0.0376
+    0.00206    0.00004    0.00210     326.99     0.0061     0.0375
+    0.00206    0.00004    0.00210     326.82     0.0061     0.0375
+    0.00207    0.00004    0.00211     325.89     0.0061     0.0376
+Average                               326.30
+
+##########################################
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 4 (aarch64)
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 4
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 5
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1Linux version 3.18.31-perf-g040a88f (builder@mi-server) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Nov 7 00:28:25 WIB 2019
+
+
+From File /proc/version
+Linux version 3.18.31-perf-g040a88f (builder@mi-server) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Nov 7 00:28:25 WIB 2019
+
+
+Unrolled Double  Precision      326.30 Mflops 
+
+
