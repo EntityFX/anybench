@@ -1,0 +1,85 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1199.932405
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2400.95
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1199.932405
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2399.88
+
+processor	: 2
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1199.932405
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 512 KB
+L2 cache line length	: 64 bytes
+L3 cache size	: 16384 KB
+L3 cache line length	: 64 bytes
+bogomips	: 2399.89
+
+processor	: 3
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1199.932405
+L1 cache size	: 64 KB
+L1 cLinux version 4.9.0-2.7-e8c2 (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v5-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:04:26 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-2.7-e8c2 (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v5-linux.cross:i386-linux) #1 SMP Sun Feb 10 18:04:26 UTC 2019
+
+
+   Memory Reading Speed Test e2k elbrus-v5 optimized Mon Feb 10 22:45:59 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1092    955   3154   1094   1587   3153   1586   2369   2369
+      16    1094    957   3175   1095   1593   3175   1592   2383   2383
+      32    1094    958   3185   1095   1595   3185   1595   2390   2390
+      64    1092    958   3190   1092   1597   3191   1595   2394   2394
+     128     982    957   3187    935   1594   3186   1591   2391   2391
+     256     956    855   2278    913   1330   2277   1139   1497   1497
+     512     880    809   1967    847   1223   1967    985   1251   1251
+    1024     841    765   1715    817   1123   1715    857   1058   1058
+    2048     841    764   1713    815   1123   1713    858   1058   1058
+    4096     841    769   1737    810   1133   1737    874   1076   1076
+    8192     838    770   1744    808   1136   1744    876   1078   1079
+
+                End of test Mon Feb 10 22:46:15 2020
+
