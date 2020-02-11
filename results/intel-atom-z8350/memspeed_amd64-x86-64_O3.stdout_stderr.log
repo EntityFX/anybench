@@ -1,0 +1,56 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 76
+model name	: Intel(R) Atom(TM) x5-Z8350  CPU @ 1.44GHz
+stepping	: 4
+microcode	: 0x411
+cpu MHz		: 480.019
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes rdrand lahf_lm 3dnowprefetch epb pti ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid tsc_adjust smep erms dtherm ida arat md_clear
+bugs		: cpu_meltdown spectre_v1 spectre_v2 mds msbds_only
+bogomips	: 2880.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtualLinux version 5.3.0-18-generic (buildd@lcy01-amd64-027) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1)) #19-Ubuntu SMP Tue Oct 8 20:14:06 UTC 2019
+
+
+From File /proc/version
+Linux version 5.3.0-18-generic (buildd@lcy01-amd64-027) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1)) #19-Ubuntu SMP Tue Oct 8 20:14:06 UTC 2019
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Tue Feb 11 21:05:02 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   14077  17312  24120  17151  17300  25739  14734   9954   9969
+      16   14386  17417  24273  17331  17442  25645  14729   9961  10076
+      32   10642  14924  17688  11150  15207  22282   9445   8657   8590
+      64    9434  14808  15498   9850  14314  17273   6944   5849   5848
+     128    9386  14644  15528   9756  14400  17267   6927   5731   5733
+     256    9362  14765  15185   9693  14363  17254   6912   5717   5718
+     512    9363  14640  15368   9770  14392  16645   6886   5517   5698
+    1024    6167   9349  10968   6287  10611  11920   3550   3409   3443
+    2048    2868   5006   5637   2887   5646   5718   1441   1448   1447
+    4096    2700   5309   5150   2697   5319   5308   1361   1363   1356
+    8192    2706   5195   5203   2512   5274   5222   1363   1346   1364
+
+                End of test Tue Feb 11 21:05:19 2020
+

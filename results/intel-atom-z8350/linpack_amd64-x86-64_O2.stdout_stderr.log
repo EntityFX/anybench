@@ -1,0 +1,92 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00152    0.00012    0.00164     418.86     0.0048     0.0293
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.10 seconds
+     10000 times   0.95 seconds
+     20000 times   1.91 seconds
+Overhead for 1 matgen      0.00010 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.10 seconds
+       200 times   0.21 seconds
+       400 times   0.40 seconds
+       800 times   0.81 seconds
+      1600 times   1.62 seconds
+Passes used        987 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00091    0.00003    0.00095     725.81     0.0028     0.0169
+    0.00092    0.00003    0.00095     722.54     0.0028     0.0170
+    0.00091    0.00003    0.00095     726.18     0.0028     0.0169
+    0.00092    0.00003    0.00095     723.85     0.0028     0.0169
+    0.00092    0.00003    0.00095     724.83     0.0028     0.0169
+Average                               724.64
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00010 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00093    0.00003    0.00096     714.63     0.0028     0.0172
+    0.00092    0.00003    0.00096     718.07     0.0028     0.0171
+    0.00093    0.00003    0.00096     715.22     0.0028     0.0171
+    0.00092    0.00003    0.00096     718.39     0.0028     0.0171
+    0.00093    0.00003    0.00096     716.64     0.0028     0.0171
+Average                               716.59
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 76
+model name	: Intel(R) Atom(TM) x5-Z8350  CPU @ 1.44GHz
+stepping	: 4
+microcode	: 0x411
+cpu MHz		: 1920.000
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes rdrand lahf_lm 3dnowprefetch epb pti ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid tsc_adjust smep erms dtherm ida arat md_clear
+bugs		: cpu_meltdown spectre_v1 spectre_v2 mds msbds_only
+bogomips	: 2880.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtuaLinux version 5.3.0-18-generic (buildd@lcy01-amd64-027) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1)) #19-Ubuntu SMP Tue Oct 8 20:14:06 UTC 2019
+
+
+From File /proc/version
+Linux version 5.3.0-18-generic (buildd@lcy01-amd64-027) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1)) #19-Ubuntu SMP Tue Oct 8 20:14:06 UTC 2019
+
+
+Unrolled Double  Precision      716.59 Mflops 
+
+

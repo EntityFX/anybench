@@ -1,0 +1,61 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  3.77 GB, Page Size 4096 Bytes
+  uname() - Linux, xubuntu, 5.3.0-18-generic
+  #19-Ubuntu SMP Tue Oct 8 20:14:06 UTC 2019, x86_64
+
+##############################################
+
+ Multithreading Single Precision Whetstones amd64 x86-64 optimized
+
+             Using 4 threads - Tue Feb 11 21:06:55 2020
+
+ Calibrate
+    0.02059 Seconds          1   Passes (x 100)
+    0.04646 Seconds          5   Passes (x 100)
+    0.18961 Seconds         25   Passes (x 100)
+    0.88431 Seconds        125   Passes (x 100)
+
+ Use 1413  passes (x 100)
+
+ MFLOPS 1     620    613    612    601
+ MFLOPS 2     620    611    603    576
+ IFMOPS      2506   2505   2470   2462
+ FIXPMOPS    1384   1381   1375   1371
+ COSMOPS       29     29     28     28
+ MFLOPS 3     418    415    410    410
+ EQUMOPS     1417   1401   1365   1353
+ EXPMOPS       36     36     36     35
+ millisec    8435   8435   8349   8332
+ MWIPS       1675   1675   1692   1696
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total    6739   2446   2409   1653    114    142   5511   9943   5536
+
+ MWIPS    6636 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12253940105438232      MFLOPS 2   -1.13133072853088379
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Tue Feb 11 21:07:07 2020
+
+               Results also in log file MPwhetres.txt
+
