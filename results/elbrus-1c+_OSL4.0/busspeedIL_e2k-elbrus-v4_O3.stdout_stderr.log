@@ -1,0 +1,40 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 984.618205
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+bogomips	: 1969.75
+
+
+
+From File /proc/version
+Linux version 4.19.72-0-rt25-troosh-e1c+ (troosh@fitting3) (lcc:1.24.09:Feb-11-2020:e2k-v2-linux.cross:x86_64-linux) #120 Wed Feb 19 14:18:04 MSK 2020
+
+    BusSpeed vfpv4 32b V1 Thu Feb 20 20:55:26 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   5655   5267   6801   7640   8257  12766
+      32   7515   6257   6865   8234   8605  13009
+      64   6345   4136   4432   7927   8670  12896
+     128   5246   3152   3152   5493   5841   8084
+     256   4864   3047   3269   5419   5710   8098
+     512   4612   3076   3294   5344   5683   8093
+    1024   3749   2539   2998   4837   5036   7391
+    4096    445    323    680    841    774   1523
+   16384    454    324    699    839    772   1521
+   65536    457    325    700    840    769   1523
+
+ Type additional information to include in busSpeed.txt - Press Enter

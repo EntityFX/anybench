@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 1, Configured CPUs 1
+  get_phys_pages() and size - RAM Size 15.54 GB, Page Size 4096 Bytes
+  uname() - Linux, fantaziya, 4.19.72-0-rt25-troosh-e1c+
+  #120 Wed Feb 19 14:18:04 MSK 2020, e2k
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 1 Threads, Thu Feb 20 20:52:38 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2     2500   0.522135      981    0.929538   Yes
+ Data in & out    1024000     2      250   3.342961      153    0.992550   Yes
+ Data in & out   10240000     2       25   3.366073      152    0.999250   Yes
+
+ Data in & out     102400     8     2500   0.782552     2617    0.957117   Yes
+ Data in & out    1024000     8      250   3.519815      582    0.995517   Yes
+ Data in & out   10240000     8       25   3.539688      579    0.999549   Yes
+
+ Data in & out     102400    32     2500   1.435016     5709    0.890211   Yes
+ Data in & out    1024000    32      250   4.159608     1969    0.988082   Yes
+ Data in & out   10240000    32       25   4.182609     1959    0.998796   Yes
+
+               End of test Thu Feb 20 20:53:03 2020
+
+ Press Enter

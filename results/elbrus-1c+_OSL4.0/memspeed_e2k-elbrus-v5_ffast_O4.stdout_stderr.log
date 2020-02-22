@@ -1,0 +1,43 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 984.618205
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+bogomips	: 1969.75
+
+
+
+From File /proc/version
+Linux version 4.19.72-0-rt25-troosh-e1c+ (troosh@fitting3) (lcc:1.24.09:Feb-11-2020:e2k-v2-linux.cross:x86_64-linux) #120 Wed Feb 19 14:18:04 MSK 2020
+
+
+   Memory Reading Speed Test e2k elbrus-v5 optimized Thu Feb 20 20:25:02 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   25663  23170  13475  26108  23711  23959  13459  12240  12242
+      16   28151  26679  14515  28524  27052  27162  14485  13746  13761
+      32   29729  28864  15090  29907  29079  29149  15086  14673  14678
+      64   30558  30095  15363  30648  30214  30243  15394  15170  15179
+     128   30994  30749  15552  31040  30791  30795  15552  15441  15438
+     256   31108  31086  15633  31234  31124  31131  15632  15579  15580
+     512   31250  31262  15675  31231  31276  31272  15668  15650  15644
+    1024   29533  29558  15513  29659  29556  29595  15142  15105  15097
+    2048   12387  12374  10238  12372  12366  12404   6741   6731   6717
+    4096    5936   5903   5957   5947   5914   5949   3114   3114   3110
+    8192    6050   6026   6024   6067   6024   6038   3173   3166   3166
+
+                End of test Thu Feb 20 20:25:19 2020
+

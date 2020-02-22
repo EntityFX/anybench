@@ -1,0 +1,44 @@
+# java whetstc
+
+     Whetstone Benchmark Java Version, фев 20 2020, 22:29:29
+
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+
+  N1 floating point  -1,124750137    188,24             0,1020
+  N2 floating point  -1,131330490     64,80             2,0740
+  N3 if then else     1,000000000              93,50    1,1070
+  N4 fixed point     12,000000000             439,70    0,7164
+  N5 sin,cos etc.     0,499110132              33,93    2,4520
+  N6 floating point   0,999999821     38,61            13,9700
+  N7 assignments      3,000000000              60,12    3,0740
+  N8 exp,sqrt etc.    0,825148463              21,35    1,7420
+
+  MWIPS                              396,24            25,2374
+
+  Operating System    Linux, Arch. e2k, Version 4.19.72-0-rt25-troosh-e1c+
+  Java Vendor         Oracle Corporation, Version  1.8.0_152
+  CPU null
+ 
+# java whetstc
+
+     Whetstone Benchmark Java Version, фев 20 2020, 22:29:49
+
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+
+  N1 floating point  -1,124750137    188,24             0,1020
+  N2 floating point  -1,131330490     64,18             2,0940
+  N3 if then else     1,000000000              93,58    1,1060
+  N4 fixed point     12,000000000             439,70    0,7164
+  N5 sin,cos etc.     0,499110132              33,02    2,5200
+  N6 floating point   0,999999821     37,91            14,2300
+  N7 assignments      3,000000000              60,16    3,0720
+  N8 exp,sqrt etc.    0,825148463              21,35    1,7420
+
+  MWIPS                              390,89            25,5824
+
+  Operating System    Linux, Arch. e2k, Version 4.19.72-0-rt25-troosh-e1c+
+  Java Vendor         Oracle Corporation, Version  1.8.0_152
+  CPU null
+ 
