@@ -1,0 +1,61 @@
+# mono WhetstoneNetFramework.exe
+Double Precision C/C++ Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0,05 Seconds          1   Passes (x 100)
+       0,13 Seconds          5   Passes (x 100)
+       0,64 Seconds         25   Passes (x 100)
+       3,22 Seconds        125   Passes (x 100)
+
+Use 3882  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1,12475000000000000       93,035               0,801
+N2 floating point     -1,12274800000000000       87,504               5,962
+N3 if then else        1,00000000000000000                 294,826    1,363
+N4 fixed point        12,00000000000000000                 110,009   11,116
+N5 sin,cos etc.        0,49904660000000000                  22,090   14,621
+N6 floating point      0,99999990000000000       45,675              45,844
+N7 assignments         3,00000000000000000                  71,911    9,976
+N8 exp,sqrt etc.       0,75110860000000000                  13,989   10,323
+MWIPS                                            388,174            100,007
+
+# mono WhetstoneNetFramework.exe
+Double Precision C/C++ Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0,05 Seconds          1   Passes (x 100)
+       0,13 Seconds          5   Passes (x 100)
+       0,64 Seconds         25   Passes (x 100)
+       3,22 Seconds        125   Passes (x 100)
+
+Use 3883  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1,12475000000000000       93,043               0,801
+N2 floating point     -1,12274800000000000       87,521               5,963
+N3 if then else        1,00000000000000000                 294,827    1,363
+N4 fixed point        12,00000000000000000                 110,008   11,119
+N5 sin,cos etc.        0,49904660000000000                  22,091   14,624
+N6 floating point      0,99999990000000000       45,712              45,820
+N7 assignments         3,00000000000000000                  71,912    9,979
+N8 exp,sqrt etc.       0,75110860000000000                  13,990   10,325
+MWIPS                                            388,324             99,994
