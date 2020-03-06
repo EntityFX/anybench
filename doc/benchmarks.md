@@ -121,10 +121,10 @@ Whetstone Single Precision, x86-64 и e2k процессоры
 ![Whetstone Single Precision](charts/whetstone_some_cpu.svg "Whetstone Single Precision")
 
 Whetstone Single Precision, однопоточные результаты, x86-64 и e2k процессоры
-![Whetstone Single Precision](charts/whetstone_some_cpu_singlecore.svg "Whetstone Single Precision Single Core")
+![Whetstone Single Precision](charts/whetstone_some_cpu_singlecore.svg "Whetstone Single Precision Single Thread")
 
 Whetstone Single Precision, многопоточные результаты, x86-64 и e2k процессоры
-![MP Whetstone Precision Multi Core](charts/whetstone_some_cpu_multicore.svg "MP Whetstone Precision Multi Core")
+![MP Whetstone Precision Multi Core](charts/whetstone_some_cpu_multicore.svg "MP Whetstone Precision Multi Thread")
 
 ### Memspeed
 
@@ -142,3 +142,14 @@ Memspeed, Присвоение, все процессоры
 
 LINPACK 100x100 Double Precision, все процессоры
 ![Linpack  100x100 Double Precision](charts/linpack_100_dp_all_cpu.svg "Linpack  100x100 Double Precision")
+
+### Coremark
+
+Coremark, все процессоры
+![Coremark](charts/coremark_all_cpu.svg "Coremark")
+
+Coremark, однопоточные результаты, все процессоры
+![Coremark Single Thread](charts/coremark_all_cpu_singlecore.svg "Coremark Single Thread")
+
+Coremark, многопоточные результаты, все процессоры
+![Coremark Multi Thread](charts/coremark_all_cpu_multicore.svg "Coremark Multi Thread")
