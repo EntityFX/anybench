@@ -107,6 +107,32 @@
 
 ### Dhrystone
 
+| Platform         | Dhrystones (VAX MIPS rating) |
+| ---------------- | ---------------------------- |
+| Core i7-2600     | 22076.97                     |
+| Core 2 Duo T9400 | 13308                        |
+| AMD A6-3650      | 11455.81                     |
+| Atom Z8350       | 4677.3                       |
+| Raspberry PI     | 847                          |
+| AWS Graviton     | 11377.63                     |
+| Odroid N2        | 8230                         |
+| Odroid X2        | 4495.03                      |
+| Orange Pi PC2    | 2949.12                      |
+| Raspberry PI 3   | 2469                         |
+| Orange Pi Win    | 2370                         |
+| E8C-SWTX         | 5865.19                      |
+| E8C-E8C4         | 5844.82                      |
+| E8C2             | 5357.4528                    |
+| E8C2-LOW         | 3554.46                      |
+| E2S-EL2S4        | 3329.51                      |
+| E2S-PC401        | 3548.8                       |
+| MBE1C-PC         | 4302.53                      |
+| Pentium 4        | 4012                         |
+| Pentium III      | 1595                         |
+| Baikal T1 BFK    | 3650                         |
+
+
+
 Dhrystone Benchmark, все процессоры
 ![Dhrystone Benchmark, Version 2.1](charts/dhrystone_all_cpu.svg "Dhrystone Benchmark, Version 2.1")
 
@@ -114,6 +140,31 @@ Dhrystone Benchmark, x86-64 и e2k процессоры
 ![Dhrystone Benchmark, Version 2.1](charts/dhrystone_x86_e2k_cpu.svg "Dhrystone Benchmark, Version 2.1")
 
 ### Whetsone
+
+| Platform         | MWIPS   | MWIPS (multicore) |
+| ---------------- | ------- | ----------------- |
+| Core i7-2600     | 5729.52 | 31319.00          |
+| Core 2 Duo T9400 | 2910.33 | 5195.00           |
+| AMD A6-3650      | 3718.16 | 12113.00          |
+| Atom Z8350       | 2085.24 | 6636.00           |
+| Raspberry PI     | 270.50  | 270.50            |
+| AWS Graviton     | 2851.80 | 44741.00          |
+| Odroid N2        | 2136.98 | 9931.00           |
+| Odroid X2        | 1305.16 | 4291.00           |
+| Orange Pi PC2    | 980.26  | 3798.00           |
+| Raspberry PI 3   | 997.20  | 2779.80           |
+| Orange Pi Win    | 700.60  | 1854.00           |
+| E8C-SWTX         | 1517.62 | 12980.00          |
+| E8C-E8C4         | 1647.51 | 53563.00          |
+| E8C2             | 1703.75 | 14571.94          |
+| E8C2-LOW         | 1545.92 | 12420.00          |
+| E2S-EL2S4        | 970.80  | 15790.00          |
+| E2S-PC401        | 938.12  | 2455.00           |
+| MBE1C-PC         | 1277.55 | 1312.00           |
+| Pentium 4        | 1119.00 | 1119.00           |
+| Pentium III      | 816.00  | 816.00            |
+| Baikal T1 BFK    | 613.50  | 1227.00           |
+
 
 Whetstone Single Precision, все процессоры
 ![Whetstone Single Precision](charts/whetstone_all_cpu.svg "Whetstone Single Precision")
@@ -129,10 +180,57 @@ Whetstone Single Precision, многопоточные результаты, x86
 
 ### LINPACK
 
+| Platform         | Mflops    | 
+|------------------|-----------| 
+| Core i7-2600     | 4302.89   | 
+| Core 2 Duo T9400 | 1816.02   | 
+| AMD A6-3650      | 1750.03   | 
+| Atom Z8350       | 1021.44   | 
+| Raspberry PI     | 42        | 
+| AWS Graviton     | 1548.65   | 
+| Odroid N2        | 845.09    | 
+| Odroid X2        | 268.73    | 
+| Orange Pi PC2    | 163.44    | 
+| Raspberry PI 3   | 180       | 
+| Orange Pi Win    | 174.04    | 
+| E8C-SWTX         | 1075.27   | 
+| E8C-E8C4         | 1089.02   | 
+| E8C2             | 1257.2375 | 
+| E8C2-LOW         | 1005.79   | 
+| E2S-EL2S4        | 632.51    | 
+| E2S-PC401        | 674.67    | 
+| MBE1C-PC         | 814.76    | 
+| Pentium 4        | 840.27    | 
+| Pentium III      | 316.67    | 
+
+
 LINPACK 100x100 Double Precision, все процессоры
 ![Linpack  100x100 Double Precision](charts/linpack_100_dp_all_cpu.svg "Linpack  100x100 Double Precision")
 
 ### Coremark
+
+| Platform         | Coremark (single thread) | Coremark (multi thread) | 
+|------------------|--------------------------|-------------------------| 
+| Core i7-2600     | 22692.889561             | 119670.905011           | 
+| Core 2 Duo T9400 | 12481.278083             | 23950.661637            | 
+| AMD A6-3650      | 11810.558639             | 41666.666667            | 
+| Atom Z8350       | 6893.094373              | 23814.678502            | 
+| Raspberry PI     | 1303.78                  | 1303.78                 | 
+| Odroid X2        | 6109.074753              | 24162.548051            | 
+| Orange Pi PC2    | 3869.719445              | 14901.279026            | 
+| Raspberry PI 3   | 3841                     | 15363.93                | 
+| Orange Pi Win    | 3840.983292              | 15370.821058            | 
+| E8C-SWTX         | 3711                     | 28846.153846            | 
+| E8C-E8C4         | 3813.640119              | 117885.430096           | 
+| E8C2             | 4266.7                   | 33165.69                | 
+| E8C2-LOW         | 3413.357606              | 26396.83238             | 
+| E2S-EL2S4        | 2216.475803              | 34457.87231474          | 
+| E2S-PC401        | 2364.24                  | 36755.06                | 
+| MBE1C-PC         | 2901.49427               | 2848.318157             | 
+| Pentium 4        | 5941.45                  | 5941.45                 | 
+| Pentium III      | 2246.570438799           | 2246.570438799          | 
+| Baikal T1        | 6182                     | 12364                   | 
+
 
 Coremark, все процессоры
 ![Coremark](charts/coremark_all_cpu.svg "Coremark")
@@ -144,6 +242,40 @@ Coremark, многопоточные результаты, все процесс
 ![Coremark Multi Thread](charts/coremark_all_cpu_multicore.svg "Coremark Multi Thread")
 
 ### Memspeed
+
+```c
+(x[i] = x[i] + a * y[i])
+```
+
+```c
+(x[i] = x[i] + y[i])
+```
+
+```c
+(x[i] = y[i])
+```
+
+
+| Platform         | 16 KB `(x[i] = x[i] + a * y[i])` | 512 KB `(x[i] = x[i] + a * y[i])` | 8192 KB `(x[i] = x[i] + a * y[i])` | 16 KB `(x[i] = x[i] + y[i])` | 512 KB `(x[i] = x[i] + y[i])` | 8192 KB `(x[i] = x[i] + y[i])` | 16 KB `(x[i] = y[i])` | 512 KB `(x[i] = y[i])` | 8192 KB `(x[i] = y[i])` |
+| ---------------- | -------------------------------- | --------------------------------- | ---------------------------------- | ---------------------------- | ----------------------------- | ------------------------------ | --------------------- | ---------------------- | ----------------------- |
+| Core i7-2600     | 73499                            | 53366                             | 32794                              | 75334                        | 54605                         | 32432                          | 26348                 | 16541                  | 8317                    |
+| Core 2 Duo T9400 | 9737                             | 14189                             | 8249                               | 18113                        | 9344                          | 8153                           | 3232                  | 5196                   | 2131                    |
+| AMD A6-3650      | 40930                            | 37749                             | 8578                               | 40988                        | 36529                         | 8523                           | 13655                 | 9154                   | 2154                    |
+| Raspberry PI     | 602                              | 127                               | 127                                | 731                          | 127                           | 127                            | 426                   | 111                    | 111                     |
+| AWS Graviton     | 21353                            | 17418                             | 7336                               | 7344                         | 18328                         | 21796                          | 12118                 | 12120                  | 4422                    |
+| Odroid N2        | 8452                             | 8214                              | 3888                               | 9876                         | 8463                          | 3966                           | 8261                  | 7260                   | 3582                    |
+| Odroid X2        | 2403                             | 1464                              | 1261                               | 2543                         | 1472                          | 1271                           | 3856                  | 1324                   | 627                     |
+| Orange Pi PC2    | 3490                             | 1224                              | 1039                               | 2872                         | 1179                          | 1009                           | 4902                  | 2284                   | 1261                    |
+| Raspberry PI 3   | 1814                             | 1598                              | 1019                               | 2240                         | 1906                          | 954                            | 3136                  | 2783                   | 871                     |
+| Orange Pi Win    | 2672                             | 1752                              | 1019                               | 2771                         | 1787                          | 1028                           | 3483                  | 3146                   | 1374                    |
+| E8C-SWTX         | 37160                            | 29195                             | 24130                              | 37806                        | 29193                         | 24114                          | 19096                 | 17431                  | 14045                   |
+| E8C-E8C4         | 35377                            | 27882                             | 23315                              | 35758                        | 27681                         | 23172                          | 18273                 | 16898                  | 13798                   |
+| E8C2             | 41032                            | 41708                             | 33881                              | 19815                        | 12399                         | 9617                           | 6124                  | 4376                   | 3318                    |
+| E8C2-LOW         | 29062                            | 34168                             | 28890                              | 30016                        | 34232                         | 28920                          | 16709                 | 18654                  | 17513                   |
+| E2S-EL2S4        | 20404                            | 22714                             | 7975                               | 20662                        | 23032                         | 7809                           | 10535                 | 11483                  | 4263                    |
+| E2S-PC401        | 20721                            | 22106                             | 8491                               | 10053                        | 6591                          | 2092                           | 8415                  | 6145                   | 1468                    |
+| MBE1C-PC         | 28070                            | 31305                             | 5856                               | 10999                        | 11421                         | 9663                           | 5073                  | 10442                  | 1163                    |
+
 
 Memspeed, Умножение-сложение с присвоением, все процессоры
 ![Memspeed Multiply Add Assign](charts/memspeed_mul_add_assign.svg "Memspeed Multiply Add Assign")
@@ -157,17 +289,17 @@ Memspeed, Присвоение, все процессоры
 ### MP MFLOPS
 
 2 операции
-```csharp
+```c
 x[i] = (x[i]+a)*b;
 ```
 
 8 операций
-```csharp
+```c
 x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f;
 ```
 
 32 операции
-```csharp
+```c
 x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f-(x[i]+g)*h+(x[i]+j)*k-(x[i]+l)*m+(x[i]+o)*p-(x[i]+q)*r+(x[i]+s)*t-(x[i]+u)*v+(x[i]+w)*y;
 ```
 
