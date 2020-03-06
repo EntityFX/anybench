@@ -3,10 +3,10 @@
 * Dhrystone
 * Whetstone 
 * LINPACK
-* MP MFLOPS
+* Coremark
 * Memspeed
 * LLoops
-* Coremark
+* MP MFLOPS
 * Scimark 2
 
 ### Dhrystone
@@ -34,13 +34,14 @@
 > Используется реализация Linpack 100x100 с числами типа float. Реализация бенчмарка хорошо используется для оценки производительности
 > различных суперкомпьютеров.
 
-### MP MFLOPS
+### Coremark
 
 ### Memspeed
 
 ### LLoops
 
-### Coremark
+### MP MFLOPS
+
 
 ### Scimark 2
 
@@ -126,18 +127,6 @@ Whetstone Single Precision, однопоточные результаты, x86-6
 Whetstone Single Precision, многопоточные результаты, x86-64 и e2k процессоры
 ![MP Whetstone Precision Multi Core](charts/whetstone_some_cpu_multicore.svg "MP Whetstone Precision Multi Thread")
 
-### Memspeed
-
-Memspeed, Умножение-сложение с присвоением, все процессоры
-![Memspeed Multiply Add Assign](charts/memspeed_mul_add_assign.svg "Memspeed Multiply Add Assign")
-
-Memspeed, Сложение с присвоением, все процессоры
-![Memspeed Add Assign](charts/memspeed_add_assign.svg "Memspeed Add Assign")
-
-Memspeed, Присвоение, все процессоры
-![Memspeed Assign](charts/memspeed_assign.svg "Memspeed  Assign")
-
-
 ### LINPACK
 
 LINPACK 100x100 Double Precision, все процессоры
@@ -153,3 +142,41 @@ Coremark, однопоточные результаты, все процессо
 
 Coremark, многопоточные результаты, все процессоры
 ![Coremark Multi Thread](charts/coremark_all_cpu_multicore.svg "Coremark Multi Thread")
+
+### Memspeed
+
+Memspeed, Умножение-сложение с присвоением, все процессоры
+![Memspeed Multiply Add Assign](charts/memspeed_mul_add_assign.svg "Memspeed Multiply Add Assign")
+
+Memspeed, Сложение с присвоением, все процессоры
+![Memspeed Add Assign](charts/memspeed_add_assign.svg "Memspeed Add Assign")
+
+Memspeed, Присвоение, все процессоры
+![Memspeed Assign](charts/memspeed_assign.svg "Memspeed  Assign")
+
+### MP MFLOPS
+
+2 операции
+```csharp
+x[i] = (x[i]+a)*b;
+```
+
+8 операций
+```csharp
+x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f;
+```
+
+32 операции
+```csharp
+x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f-(x[i]+g)*h+(x[i]+j)*k-(x[i]+l)*m+(x[i]+o)*p-(x[i]+q)*r+(x[i]+s)*t-(x[i]+u)*v+(x[i]+w)*y;
+```
+
+MP MFLOPS, 2 операции, все процессоры
+![MP MFLOPS 2 ops/w](charts/mpmlops_all_cpu_2ops.svg "MP MFLOPS 2 ops/w")
+
+MP MFLOPS, 8 операций, все процессоры
+![MP MFLOPS 8 ops/w](charts/mpmlops_all_cpu_8ops.svg "MP MFLOPS 8 ops/w")
+
+MP MFLOPS, 32 операции, все процессоры
+![MP MFLOPS 32 ops/w](charts/mpmlops_all_cpu_32ops.svg "MP MFLOPS 32 ops/w")
+
