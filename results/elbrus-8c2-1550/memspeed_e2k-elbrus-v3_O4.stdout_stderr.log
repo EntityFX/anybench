@@ -1,0 +1,59 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1549.911430
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 3100.58
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1549.911430
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 3099.84
+
+processor	: 2
+vendorLinux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+From File /proc/version
+Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+   Memory Reading Speed Test e2k elbrus-v3 optimized Sat Mar 21 13:36:23 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    7974  39773  22538   8024  17782  22790   4086  14518  14524
+      16    8174  44114  23593   8073  18127  23741   4063  15389  15387
+      32    8212  46468  24144   8113  18705  24245   4116  15943  15937
+      64    8166  48021  24445   8052  18866  24466   4091  16196  16196
+     128    3573  46032  20951   3072  14711  20086   4065  11990  11988
+     256    3767  45999  20843   3181  14874  19930   2146  12810  12809
+     512    2893  37030  16208   2665  10642  14587   1669   8751   8748
+    1024    2799  35080  15695   2605  10365  14223   1594   8216   8215
+    2048    2767  33558  15567   2585   9964  14209   1519   7750   7751
+    4096    2751  34453  15355   2548  10258  13601   1552   7960   7950
+    8192    1804  25376   8473   1716   6105   7985   1164   5495   5416
+
+                End of test Sat Mar 21 13:36:40 2020
+

@@ -1,0 +1,56 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1549.911430
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 3100.58
+
+processor	: 1
+vendor_id	: E8C
+cpu family	: 4
+model		: 9
+model name	: E8C2
+revision	: 2
+cpu MHz		: 1549.911430
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 3099.84
+
+processor	: 2
+vendorLinux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+From File /proc/version
+Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+    BusSpeed e2k elbrus-v4 optimized Sat Mar 21 14:15:16 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   8454   7545  10708  12029  13002  20109
+      32  10259   9546   9610  12690  13551  20487
+      64   6112   6744   7231  12394  13647  20044
+     128   4759   4700   4784   9006   9811  12711
+     256   2064   2201   2866   6034   6299   8387
+     512   1916   1950   2683   5406   5692   7627
+    1024   1718   1751   2489   4981   5227   7048
+    4096   1612   1639   2375   4724   4948   6711
+   16384    668    712   1157   2092   2241   3321
+   65536    376    460    665   1043   1085   1993
+
+ Type additional information to include in busSpeed.txt - Press Enter

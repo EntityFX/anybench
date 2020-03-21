@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 8, Configured CPUs 8
+  get_phys_pages() and size - RAM Size 30.94 GB, Page Size 4096 Bytes
+  uname() - Linux, sumireko, 4.19.0-0.3-e8c2
+  #1 SMP Sat Jan 18 09:49:15 GMT 2020, e2k
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Sat Mar 21 14:12:35 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.175596    23326    0.620974   Yes
+ Data in & out    1024000     2     2000   0.586736     6981    0.942935   Yes
+ Data in & out   10240000     2      200   2.617898     1565    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.352070    46536    0.749971   Yes
+ Data in & out    1024000     8     2000   0.714867    22919    0.965360   Yes
+ Data in & out   10240000     8      200   2.735864     5989    0.996409   Yes
+
+ Data in & out     102400    32    20000   0.860565    76155    0.498060   Yes
+ Data in & out    1024000    32     2000   1.228595    53342    0.910573   Yes
+ Data in & out   10240000    32      200   3.269255    20046    0.990447   Yes
+
+               End of test Sat Mar 21 14:12:48 2020
+
+ Press Enter
