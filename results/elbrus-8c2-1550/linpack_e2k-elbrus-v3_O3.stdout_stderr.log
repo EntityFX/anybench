@@ -11,32 +11,32 @@ Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00056    0.00003    0.00059    1157.13     0.0017     0.0106
+    0.00054    0.00003    0.00057    1212.16     0.0016     0.0101
 
 Calculating matgen overhead
         10 times   0.00 seconds
        100 times   0.01 seconds
-      1000 times   0.10 seconds
-     10000 times   0.97 seconds
-     20000 times   1.93 seconds
-Overhead for 1 matgen      0.00010 seconds
+      1000 times   0.09 seconds
+     10000 times   0.95 seconds
+     20000 times   1.89 seconds
+Overhead for 1 matgen      0.00009 seconds
 
 Calculating matgen/dgefa passes for 1 seconds
         10 times   0.01 seconds
        100 times   0.06 seconds
-      1000 times   0.64 seconds
-      2000 times   1.29 seconds
-Passes used       1552 
+      1000 times   0.62 seconds
+      2000 times   1.25 seconds
+Passes used       1599 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00055    0.00003    0.00058    1192.45     0.0017     0.0103
-    0.00055    0.00003    0.00058    1192.45     0.0017     0.0103
-    0.00055    0.00003    0.00058    1192.54     0.0017     0.0103
-    0.00055    0.00003    0.00058    1192.75     0.0017     0.0103
-    0.00055    0.00003    0.00058    1192.66     0.0017     0.0103
-Average                              1192.57
+    0.00053    0.00003    0.00056    1232.87     0.0016     0.0099
+    0.00053    0.00003    0.00056    1232.94     0.0016     0.0099
+    0.00053    0.00003    0.00056    1232.79     0.0016     0.0099
+    0.00053    0.00003    0.00056    1232.76     0.0016     0.0099
+    0.00053    0.00003    0.00056    1232.01     0.0016     0.0100
+Average                              1232.67
 
 Calculating matgen2 overhead
 Overhead for 1 matgen      0.00009 seconds
@@ -44,12 +44,12 @@ Overhead for 1 matgen      0.00009 seconds
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00052    0.00003    0.00055    1251.73     0.0016     0.0098
-    0.00052    0.00003    0.00055    1251.80     0.0016     0.0098
-    0.00052    0.00003    0.00055    1251.73     0.0016     0.0098
-    0.00052    0.00003    0.00055    1251.91     0.0016     0.0098
-    0.00052    0.00003    0.00055    1251.76     0.0016     0.0098
-Average                              1251.79
+    0.00052    0.00003    0.00054    1265.78     0.0016     0.0097
+    0.00052    0.00003    0.00054    1265.79     0.0016     0.0097
+    0.00052    0.00003    0.00054    1265.73     0.0016     0.0097
+    0.00052    0.00003    0.00054    1265.79     0.0016     0.0097
+    0.00052    0.00003    0.00054    1265.70     0.0016     0.0097
+Average                              1265.76
 
 ##########################################
 
@@ -88,6 +88,6 @@ From File /proc/version
 Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
 
 
-Unrolled Double  Precision     1192.57 Mflops 
+Unrolled Double  Precision     1232.67 Mflops 
 
 

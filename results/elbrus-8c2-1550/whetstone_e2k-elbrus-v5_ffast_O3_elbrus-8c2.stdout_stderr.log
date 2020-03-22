@@ -1,6 +1,6 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Sat Mar 21 13:34:49 2020
+Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Sun Mar 22 02:28:23 2020
 
 Calibrate
        0.01 Seconds          1   Passes (x 100)
@@ -50,16 +50,16 @@ Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-li
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       474.805              0.071
-N2 floating point     -1.12274742126464844       471.350              0.501
-N3 if then else        1.00000000000000000                1547.419    0.118
-N4 fixed point        12.00000000000000000                 420.828    1.315
-N5 sin,cos etc.        0.49911010265350342                  60.432    2.419
-N6 floating point      0.99999982118606567       384.946              2.462
-N7 assignments         3.00000000000000000                 272.653    1.191
-N8 exp,sqrt etc.       0.75110864639282227                  33.577    1.947
+N1 floating point     -1.12475013732910156       476.136              0.071
+N2 floating point     -1.12274742126464844       471.331              0.501
+N3 if then else        1.00000000000000000                1547.466    0.118
+N4 fixed point        12.00000000000000000                 422.042    1.311
+N5 sin,cos etc.        0.49911010265350342                  60.523    2.415
+N6 floating point      0.99999982118606567       386.882              2.450
+N7 assignments         3.00000000000000000                 273.089    1.189
+N8 exp,sqrt etc.       0.75110864639282227                  33.642    1.943
 
-MWIPS                                           1752.956             10.023
+MWIPS                                           1757.432              9.998
 
 
 A new results file, whets.txt,  will have been created in the same

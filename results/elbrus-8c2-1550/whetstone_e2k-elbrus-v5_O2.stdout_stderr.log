@@ -1,6 +1,6 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Sat Mar 21 13:33:33 2020
+Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Sun Mar 22 02:27:08 2020
 
 Calibrate
        0.00 Seconds          1   Passes (x 100)
@@ -9,7 +9,7 @@ Calibrate
        0.62 Seconds        125   Passes (x 100)
        3.09 Seconds        625   Passes (x 100)
 
-Use 2024  passes (x 100)
+Use 2025  passes (x 100)
 
 From File /proc/cpuinfo
 processor	: 0
@@ -50,16 +50,16 @@ Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-li
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       476.071              0.082
-N2 floating point     -1.12274742126464844       476.073              0.571
-N3 if then else        1.00000000000000000                1547.255    0.135
-N4 fixed point        12.00000000000000000                 552.619    1.154
-N5 sin,cos etc.        0.49911010265350342                  60.243    2.795
-N6 floating point      0.99999982118606567       386.837              2.822
-N7 assignments         3.00000000000000000                2320.602    0.161
-N8 exp,sqrt etc.       0.75110864639282227                  33.103    2.274
+N1 floating point     -1.12475013732910156       476.125              0.082
+N2 floating point     -1.12274742126464844       476.136              0.572
+N3 if then else        1.00000000000000000                1547.469    0.135
+N4 fixed point        12.00000000000000000                 552.679    1.154
+N5 sin,cos etc.        0.49911010265350342                  60.250    2.796
+N6 floating point      0.99999982118606567       386.119              2.829
+N7 assignments         3.00000000000000000                2320.942    0.161
+N8 exp,sqrt etc.       0.75110864639282227                  32.901    2.290
 
-MWIPS                                           2024.954              9.995
+MWIPS                                           2021.173             10.019
 
 
 A new results file, whets.txt,  will have been created in the same

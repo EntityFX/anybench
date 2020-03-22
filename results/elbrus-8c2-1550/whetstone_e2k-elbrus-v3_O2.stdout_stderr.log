@@ -1,15 +1,15 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark e2k elbrus-v3 optimized, Sat Mar 21 13:31:16 2020
+Single Precision C Whetstone Benchmark e2k elbrus-v3 optimized, Sun Mar 22 02:24:49 2020
 
 Calibrate
-       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          1   Passes (x 100)
        0.02 Seconds          5   Passes (x 100)
-       0.12 Seconds         25   Passes (x 100)
+       0.13 Seconds         25   Passes (x 100)
        0.62 Seconds        125   Passes (x 100)
        3.09 Seconds        625   Passes (x 100)
 
-Use 2024  passes (x 100)
+Use 2025  passes (x 100)
 
 From File /proc/cpuinfo
 processor	: 0
@@ -50,16 +50,16 @@ Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-li
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       476.155              0.082
-N2 floating point     -1.12274742126464844       476.160              0.571
-N3 if then else        1.00000000000000000                1547.500    0.135
-N4 fixed point        12.00000000000000000                 552.638    1.154
-N5 sin,cos etc.        0.49911010265350342                  60.256    2.795
-N6 floating point      0.99999982118606567       386.877              2.822
-N7 assignments         3.00000000000000000                2320.327    0.161
-N8 exp,sqrt etc.       0.75110864639282227                  33.105    2.274
+N1 floating point     -1.12475013732910156       476.102              0.082
+N2 floating point     -1.12274742126464844       476.162              0.572
+N3 if then else        1.00000000000000000                1547.338    0.135
+N4 fixed point        12.00000000000000000                 552.719    1.154
+N5 sin,cos etc.        0.49911010265350342                  60.252    2.796
+N6 floating point      0.99999982118606567       386.889              2.823
+N7 assignments         3.00000000000000000                2321.305    0.161
+N8 exp,sqrt etc.       0.75110864639282227                  33.104    2.276
 
-MWIPS                                           2025.183              9.994
+MWIPS                                           2025.186              9.999
 
 
 A new results file, whets.txt,  will have been created in the same

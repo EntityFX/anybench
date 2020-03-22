@@ -11,11 +11,11 @@ Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00224    0.00002    0.00226     303.81     0.0066     0.0404
+    0.00227    0.00003    0.00229     299.23     0.0067     0.0410
 
 Calculating matgen overhead
         10 times   0.00 seconds
-       100 times   0.02 seconds
+       100 times   0.01 seconds
       1000 times   0.09 seconds
      10000 times   0.88 seconds
      20000 times   1.77 seconds
@@ -25,19 +25,19 @@ Calculating matgen/dgefa passes for 1 seconds
         10 times   0.02 seconds
        100 times   0.23 seconds
        200 times   0.46 seconds
-       400 times   0.93 seconds
+       400 times   0.92 seconds
        800 times   1.85 seconds
-Passes used        431 
+Passes used        433 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00223    0.00002    0.00225     305.26     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.25     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.27     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.26     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.21     0.0066     0.0402
-Average                               305.25
+    0.00222    0.00002    0.00224     306.42     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.69     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.64     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.68     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.71     0.0065     0.0400
+Average                               306.63
 
 Calculating matgen2 overhead
 Overhead for 1 matgen      0.00009 seconds
@@ -45,12 +45,12 @@ Overhead for 1 matgen      0.00009 seconds
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00223    0.00002    0.00225     305.34     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.17     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.23     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.22     0.0066     0.0402
-    0.00223    0.00002    0.00225     305.24     0.0066     0.0402
-Average                               305.24
+    0.00222    0.00002    0.00224     306.51     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.51     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.52     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.49     0.0065     0.0400
+    0.00222    0.00002    0.00224     306.44     0.0065     0.0400
+Average                               306.49
 
 ##########################################
 
@@ -89,6 +89,6 @@ From File /proc/version
 Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
 
 
-Unrolled Double  Precision      305.24 Mflops 
+Unrolled Double  Precision      306.49 Mflops 
 
 

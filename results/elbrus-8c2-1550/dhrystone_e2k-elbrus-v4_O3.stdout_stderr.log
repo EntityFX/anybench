@@ -6,11 +6,11 @@ Optimisation    e2k elbrus-v4 optimized
 Register option not selected
 
        10000 runs   0.00 seconds 
-      100000 runs   0.03 seconds 
-     1000000 runs   0.23 seconds 
-     2000000 runs   0.44 seconds 
-     4000000 runs   0.89 seconds 
-     8000000 runs   1.78 seconds 
+      100000 runs   0.02 seconds 
+     1000000 runs   0.24 seconds 
+     2000000 runs   0.48 seconds 
+     4000000 runs   1.01 seconds 
+     8000000 runs   1.81 seconds 
     16000000 runs   3.56 seconds 
 
 Final values (* implementation-dependent):
@@ -18,10 +18,10 @@ Final values (* implementation-dependent):
 Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
 Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
 Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    16000010
-Ptr_Glob->              Ptr_Comp:       *    17187984
+Ptr_Glob->              Ptr_Comp:       *    10085520
   Discr:       O.K.  0  Enum_Comp:     O.K.  2
   Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->         Ptr_Comp:       *    17187984 same as above
+Next_Ptr_Glob->         Ptr_Comp:       *    10085520 same as above
   Discr:       O.K.  0  Enum_Comp:     O.K.  1
   Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
 Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
@@ -65,7 +65,7 @@ From File /proc/version
 Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
 
 
-Nanoseconds one Dhrystone run:       222.28
-Dhrystones per Second:              4498847
-VAX  MIPS rating =                  2560.53
+Nanoseconds one Dhrystone run:       222.29
+Dhrystones per Second:              4498634
+VAX  MIPS rating =                  2560.41
 
