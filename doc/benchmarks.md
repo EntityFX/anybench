@@ -94,7 +94,8 @@
 | Orange Pi Win    | Allwinner A64 (aarch64)                         | 4                    | 1,344.00      | arm         |
 | E8C-SWTX         | Elbrus 8C (E8C-SWTX)                            | 8                    | 1,300.00      | e2k         |
 | E8C-E8C4         | Elbrus 8C (4 CPU)                               | 32                   | 1,300.00      | e2k         |
-| E8C2             | Elbrus 8C2 (E8C2)                               | 8                    | 1,500.00      | e2k         |
+| E8C2-1500        | Elbrus 8C2 (E8C2)                               | 8                    | 1,550.00      | e2k         |
+| E8C2-1200        | Elbrus 8C2 (E8C2)                               | 8                    | 1,200.00      | e2k         |
 | E2S-EL2S4        | Elbrus 4C [EL2S4] (4 CPU)                       | 16                   | 750.00        | e2k         |
 | E2S-PC401        | Elbrus 4C [E2S] (pc401)                         | 4                    | 800.00        | e2k         |
 | MBE1C-PC         | Elbrus 1C+ (MBE1C-PC)                           | 1                    | 985.00        | e2k         |
