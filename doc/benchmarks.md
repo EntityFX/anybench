@@ -101,7 +101,7 @@
 | E8C-E8C4         | Elbrus 8C (4 CPU)                               | 32 (8 x 4 cpu)       | 1,300.00      | e2k         |
 | E8C2-1550        | Elbrus 8C2 (E8C2)                               | 8                    | 1,550.00      | e2k         |
 | E8C2-1200        | Elbrus 8C2 (E8C2)                               | 8                    | 1,200.00      | e2k         |
-| E2S-EL2S4        | Elbrus 4C (EL2S4) (4 CPU)                       | 4                    | 750.00        | e2k         |
+| E2S-EL2S4        | Elbrus 4C (EL2S4) (4 CPU)                       | 16 (4 x 4 cpu)       | 750.00        | e2k         |
 | E2S-PC401        | Elbrus 4C (E2S) (pc401)                         | 4                    | 800.00        | e2k         |
 | MBE1C-PC         | Elbrus 1C+ (MBE1C-PC)                           | 1                    | 985.00        | e2k         |
 | Pentium 4        | Intel(R) Pentium(TM) 4 CPU                      | 1                    | 3,066.00      | i386        |
