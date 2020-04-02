@@ -1,0 +1,24 @@
+Platform;Composite Score;FFT;SOR;MonteCarlo;Sparse matmult;LU;CPU;Cores;Frequency (MHz);Per MHz;Relative;Relative (MHz) ;Architecture
+Core i7-2600;1 800,00;1 517,97;1 636,33;515,34;1 981,74;3 348,64;Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz;8;3400;0,53;1,00;1,00;amd64
+Core 2 Duo T9400;1 051,93;720,56;1 201,02;307,36;1 119,72;1 911,00;Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz;2;2530;0,42;0,58;0,79;amd64
+AMD A6-3650;1 028,44;775,83;989,81;344,97;1 272,17;1 759,44;AMD A6-3650 APU with Radeon(tm) HD Graphics;4;2600;0,40;0,57;0,75;amd64
+Atom Z8350;509,44;267,60;719,12;178,04;497,19;885,27;Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz;4;1440;1,25;1,00;2,36;amd64
+Raspberry PI;;;;;;;Broadcom BCM2835;1;700;0,00;0,00;0,00;amd64
+AWS Graviton;;;;;;;Alpine AL73400;16;2300;0,00;0,00;0,00;arm
+Odroid N2;;;;;;;Amlogic S922X;6;1800;0,00;0,00;0,00;arm
+Odroid X2;;;;;;;Samsung Exynos 4412 (armv7l);4;1700;0,00;0,00;0,00;arm
+Orange Pi PC2;191,59;147,36;283,10;64,07;185,46;277,94;Allwinner H5 (aarch64);4;1152;0,17;0,11;0,31;arm
+Raspberry PI 3;;;;;;;Broadcom BCM2837B0 (armv8);4;1200;0,00;0,00;0,00;arm
+Orange Pi Win;169,22;150,49;276,78;76,72;166,98;175,11;Allwinner A64 (aarch64);4;1344;0,13;0,09;0,24;arm
+E8C-SWTX;511,43;235,71;481,74;132,23;186,18;1521,26;Elbrus 8C (E8C-SWTX);8;1300;0,39;0,28;0,74;e2k
+E8C-E8C4;;;;;;;Elbrus 8C (4 CPU);32;1300;0,00;0,00;0,00;e2k
+E8C2;;;;;;;Elbrus 8C2 (E8C2);8;1500;0,00;0,00;0,00;e2k
+E8C2-1550;472,24;266,7;501,81;84,95;304,82;1202,94;Elbrus 8C2 (E8C2 1550 MHz);8;1550;0,30;0,26;0,58;e2k
+E16C-APPROX;;;;;;;;16;2000;0,00;0,00;0,00;e2k
+E8C2-1200;469,46;212,71;446,05;118,25;166,34;1 403,94;Elbrus 8C2 (Broken 8MB Cache 1.2 GHz);8;1200;0,39;0,26;0,74;e2k
+E2S-EL2S4;;;;;;;Elbrus 4C [EL2S4] (4 CPU);16;750;0,00;0,00;0,00;e2k
+E2S-PC401;;;;;;;Elbrus 4C [E2S] (pc401);4;800;0,00;0,00;0,00;e2k
+MBE1C-PC;379,23;174,82;364,42;97,02;132,92;1126,98;Elbrus 1C+ (MBE1C-PC);1;985;0,39;0,21;0,73;e2k
+Pentium 4 ;;;;;;;Intel(R) Pentium(TM) 4 CPU;1;3066;0,00;0,00;0,00;i386
+Pentium III ;;;;;;;Intel(R) Pentium(TM) III CPU;1;1000;0,00;0,00;0,00;i386
+Baikal T1 BFK;;;;;;;Baikal-T1 (MIPS P5600 V3.0);2;1200;0,00;0,00;0,00;mips

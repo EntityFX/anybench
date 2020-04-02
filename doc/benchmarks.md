@@ -3,6 +3,8 @@
 
 ## Предисловие
 
+Попытка сравнить производительность процессоров на разных архитектурах x86-64, e2k и arm.
+
 ## Список бенчмарков
 
 * Dhrystone
@@ -41,6 +43,9 @@
 
 ### Coremark
 
+> Набор бенчмарков написанных на языке C. . Создан в 2009 году Shay Gal-On из компании EEMBC 
+> Содержит реализации таких алгоритмов: обработка связных списков (поиск и сортировка), обработка матриц (несколько матричных операций), машина состояний (определение, что входной символьный поток содержит действительные числа в десятичной записи), подсчет суммы CRC.
+
 ### Memspeed
 
 ### LLoops
@@ -50,33 +55,35 @@
 
 ### Scimark 2
 
+> SciMark 2 is a composite C variant benchmark measuring the performance of numerical codes occurring in scientific and engineering applications. It consists of five computational kernels: FFT, Gauss-Seidel relaxation, Sparse matrix-multiply, Monte Carlo integration, and dense LU factorization.
+
 ## Участники
 
 Машины на процессорах x86 (i386) х86-64 (amd64):
 
-* Core i7-2600
-* AMD A6-3650
-* Atom Z8350
-* Core 2 Duo T9400
+* [Core i7-2600](https://ark.intel.com/content/www/us/en/ark/products/52213/intel-core-i7-2600-processor-8m-cache-up-to-3-80-ghz.html)
+* [AMD A6-3650](http://www.cpu-world.com/CPUs/K10/AMD-A-Series%20A6-3650%20AD3650WNZ43GX%20(AD3650WNGXBOX).html)
+* [Atom Z8350](https://ark.intel.com/content/www/us/en/ark/products/93361/intel-atom-x5-z8350-processor-2m-cache-up-to-1-92-ghz.html)
+* [Core 2 Duo T9400](https://ark.intel.com/content/www/us/en/ark/products/35562/intel-core-2-duo-processor-t9400-6m-cache-2-53-ghz-1066-mhz-fsb.html)
 
 Машины на процессорах armv6 (armel), armv7 (armhf), armv8 (aarch64):
 
-* Odroid N2 (Amlogic S922X)
+* [Odroid N2 (Amlogic S922X)](https://wiki.odroid.com/odroid-n2/hardware)
 * Odroid X2 (Samsung Exynos 4412)
-* Orange Pi PC2 (Allwinner H5)
-* Orange Pi Win (Allwinner A64)
-* Raspberry PI 3 (Broadcom BCM2837B0)
-* Raspberry PI (Broadcom BCM2835)
-* AWS Graviton (Alpine AL73400)
+* [Orange Pi PC2 (Allwinner H5)](http://www.orangepi.org/orangepipc2/)
+* [Orange Pi Win (Allwinner A64)](http://www.orangepi.org/OrangePiWinPlus/0)
+* [Raspberry PI 3 (Broadcom BCM2837B0)](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+* [Raspberry PI (Broadcom BCM2835)](https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/)
+* [AWS Graviton (Alpine AL73400)](https://en.wikichip.org/wiki/annapurna_labs/alpine/al73400)
 
 Машины на процессорах e2k (Elbrus 2000) (v3, v4, v5):
 
-* E8C-SWTX (Elbrus 8C)
-* E8C-E8C4 (Elbrus 8C x4 cpu)
-* E8C2 (Elbrus 8C2) (1200 MHz, 1550 MHz)
-* E2S-EL2S4 (Elbrus 4C x4 cpu)
-* E2S-PC401 (Elbrus 4C)
-* MBE1C-PC (Elbrus 1C+)
+* [E8C-SWTX (Elbrus 8C)](http://www.mcst.ru/elbrus-8c)
+* [E8C-E8C4 (Elbrus 8C x4 cpu)](http://www.ineum.ru/elbrus_804_1u0)
+* [E8C2 (Elbrus 8C2) (1200 MHz, 1550 MHz)](http://www.mcst.ru/elbrus-8cb)
+* [E2S-EL2S4 (Elbrus 4C x4 cpu)](м)s
+* [E2S-PC401 (Elbrus 4C)](http://www.ineum.ru/vk-elbrus-401pc)
+* [MBE1C-PC (Elbrus 1C+)](http://www.ineum.ru/elbrus_101-pc)
 
 Машины на процессорах  mips :
 
@@ -342,3 +349,22 @@ MP MFLOPS, 8 операций, все процессоры
 MP MFLOPS, 32 операции, все процессоры
 ![MP MFLOPS 32 ops/w](charts/mpmlops_all_cpu_32ops.svg "MP MFLOPS 32 ops/w")
 
+
+### Scimark 2
+
+
+|Platform        |Composite Score|FFT     |SOR    |MonteCarlo|Sparse matmult|LU     |
+|----------------|---------------|--------|-------|----------|--------------|-------|
+|Core i7-2600    |1 800,00       |1 517,97|1636,33|515,34    |1981,74       |3348,64|
+|Core 2 Duo T9400|1 051,93       |720,56  |1201,02|307,36    |1119,72       |1911,00|
+|AMD A6-3650     |1 028,44       |775,83  |989,81 |344,97    |1272,17       |1759,44|
+|Atom Z8350      |509,44         |267,60  |719,12 |178,04    |497,19        |885,27 |
+|Orange Pi PC2   |191,59         |147,36  |283,10 |64,07     |185,46        |277,94 |
+|Orange Pi Win   |169,22         |150,49  |276,78 |76,72     |166,98        |175,11 |
+|E8C-SWTX        |511,43         |235,71  |481,74 |132,23    |186,18        |1521,26|
+|E8C2-1550       |472,24         |266,7   |501,81 |84,95     |304,82        |1202,94|
+|E8C2-1200       |469,46         |212,71  |446,05 |118,25    |166,34        |1403,94|
+|MBE1C-PC        |379,23         |174,82  |364,42 |97,02     |132,92        |1126,98|
+
+Scimark 2, однопоточные результаты, x86-64 и e2k процессоры
+![Scimark 2](charts/scimark2.svg "Scimark 2")
