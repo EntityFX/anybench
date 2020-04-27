@@ -1,28 +1,34 @@
-Stacks : PS (procedure arguments), PCS (return chain), US (user data - local variables)
+Stacks : 
 
-REG :
-    Local: %r0 .. %r63 (%dr0 .. %dr63) [%db0 .. %db63]
-    Global: %g0 .. %g31
-    Call: %ctpr1 ... %ctpr3
-    Stack: 
-        US: %usd (.lo .hi), %usbr, %sbr, %upsr
-        PS: %pshtp, %pcsp (.lo .hi), %psr
-        PCS: %pcshtp, %cr0 (.lo .hi), %cr1 (.lo .hi)
-    Interrupt: 
-    MMU:
+* PS (procedure arguments) 
+* PCS (return chain)
+* US (user data - local variables)
 
-Command:
+Registers :
+* Local: %r0 .. %r63 (%dr0 .. %dr63) [%db0 .. %db63]
+* Global: %g0 .. %g31
+* Call: %ctpr1 ... %ctpr3
+* Stack: 
+    * US: %usd (.lo .hi), %usbr, %sbr, %upsr
+    * PS: %pshtp, %pcsp (.lo .hi), %psr
+    * PCS: %pcshtp, %cr0 (.lo .hi), %cr1 (.lo .hi)
+* Interrupt: 
+* MMU:
+* Command: HS, ALS0, ALS1, ALS2, ALS3, ALS4, ALS5, CS0, CS1, SS, ALES0, ALES1, ALES3, ALES4, AAS0, AAS1, AAS2, AAS3, AAS4, AAS5, LTS3, LTS2, LTS1, LTS0, PLS2, PLS1, PLS0, CDS2, CDS1, CDS0.
 
-HS, ALS0, ALS1, ALS2, ALS3, ALS4,
-ALS5, CS0, CS1, SS, ALES0, ALES1, ALES3, ALES4, AAS0, AAS1, AAS2,
-AAS3, AAS4, AAS5, LTS3, LTS2, LTS1, LTS0, PLS2, PLS1, PLS0, CDS2,
-CDS1, CDS0.
+Command bundle (VLIW):
 
+```asm
 {
+    <Subcommand>
     ...
     <Subcommand>,<ALC_NUMBER>,sm  <SOURCE>, <SOURCE>, <DESTINATION> ? %PREDICATE
     ...
+    <Subcommand>
 }
+```
+
+Command mnemonics:
 
 aaurw
 aaurwd
