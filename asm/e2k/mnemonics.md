@@ -33,146 +33,143 @@ Command mnemonics:
 
 Set register window:
 
-setwd (wsz, nfx, dbl)
-setbn (rbs, rsz, rcur) - rolling window
-setbp (psz)
+* setwd (wsz, nfx, dbl)
+* setbn (rbs, rsz, rcur) - rolling window
+* setbp (psz)
 
 Procedure call (context switch prepare):
 
-ct
-disp
-sdisp
-ldisp
-bap
-call
-ipd
+* ct
+* disp
+* sdisp
+* ldisp
+* bap
+* call
+* ipd
+* return
 
-getfd
-getsp
+* wait
 
-
-
-aaurw
-aaurwd
-aaurwq
-aaurr
-aaurrd
-aaurrq       
-aaurw        
-aaurwd       
-aaurwq       
-
-abn
-abp
-addd
-adds,0..5,''|sm   REG|VAL, REG|VAL, REG ? %predicate
-
-subd
-subs
-
-alc
-als
+* getfd
+* getsp
 
 
-andd
-andp
-ands
-andnd
-andns
+
+* aaurw
+* aaurwd
+* aaurwq
+* aaurr
+* aaurrd
+* aaurrq       
+* aaurw        
+* aaurwd       
+* aaurwq       
+
+* abn
+* abp
+* addd
+* adds,0..5,''|sm   REG|VAL, REG|VAL, REG ? %predicate
+
+* subd
+* subs
+
+* alc
+* als
+
+
+* andd
+* andp
+* ands
+* andnd
+* andns
 
 Compare: 
 
-cmpbdb
-cmpbsb
-cmpbedb
-cmpbesb
-cmpedb
-cmpesb
-cmplsb
-cmpldb
-cmplesb
-cmpledb
-cmpandesb
-cmpandedb
-cmpandpsb
-cmpandpdb
+* cmpbdb
+* cmpbsb
+* cmpbedb
+* cmpbesb
+* cmpedb
+* cmpesb
+* cmplsb
+* cmpldb
+* cmplesb
+* cmpledb
+* cmpandesb
+* cmpandedb
+* cmpandpsb
+* cmpandpdb
 
 
-eap
-elbrus_optimizing_compiler_v
-faddd
-fadds
-fapb
-fcmpeqsb
-fcmpltdb
-fcmpneqsb
-fdivd
-fdivs
-fdtofs
-fdtoistr
+* eap
+* elbrus_optimizing_compiler_v
+* faddd
+* fadds
+* fapb
+* fcmpeqsb
+* fcmpltdb
+* fcmpneqsb
+* fdivd
+* fdivs
+* fdtofs
+* fdtoistr
 
-fstofd
-fsubs
-ibranch
-incr
-insfd
-istofd
-istofs
+* fstofd
+* fsubs
+* ibranch
+* incr
+* insfd
+* istofd
+* istofs
 
-landp
-
-
-ldb - load byte
-ldh - load half-word
-ldw - load word
-ldd - load double-word  (`ldd,0..5,''|sm	REG|VAL, REG|VAL, REG|VAL,_lts0lo 0xb8, REG`)
-rwd
-rws
-rrd
-rrs
-st
-stb - store byte
-sth - store half-word
-stw - store word
-std - store double-word 
-
-strd
+* landp
 
 
-loop_mode
-merges
+* ldb - load byte
+* ldh - load half-word
+* ldw - load word
+* ldd - load double-word  (`ldd,0..5,''|sm	REG|VAL, REG|VAL, REG|VAL,_lts0lo 0xb8, REG`)
+* rwd
+* rws
+* rrd
+* rrs
+* st
+* stb - store byte
+* sth - store half-word
+* stw - store word
+* std - store double-word 
+
+* strd
 
 
-movad
-movfi
-movtd
-movts
-
-nop
-
-pass
-pfadds
-
-popcntd
-
-muld
-muls
-
-fmul_adds
-fmul_rsubs
-fmul_subs
-fmuld
-fmuls
-
-pfmul_adds
-pfmul_rsubs
-pfmul_subs
-pfmuls
-pfsubs
-
-return
+* loop_mode
+* merges
 
 
+* movad
+* movfi
+* movtd
+* movts
+
+* nop
+
+* pass
+* pfadds
+
+* popcntd
+
+* muld
+* muls
+* fmul_adds
+* fmul_rsubs
+* fmul_subs
+* fmuld
+* fmuls
+* pfmul_adds
+* pfmul_rsubs
+* pfmul_subs
+* pfmuls
+* pfsubs
 
 sars
 sard
@@ -199,5 +196,3 @@ xors
 
 ord
 ors
-
-wait
