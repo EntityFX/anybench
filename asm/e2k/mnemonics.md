@@ -30,6 +30,28 @@ Command bundle (VLIW):
 
 Command mnemonics:
 
+
+Set register window:
+
+setwd (wsz, nfx, dbl)
+setbn (rbs, rsz, rcur) - rolling window
+setbp (psz)
+
+Procedure call (context switch prepare):
+
+ct
+disp
+sdisp
+ldisp
+bap
+call
+ipd
+
+getfd
+getsp
+
+
+
 aaurw
 aaurwd
 aaurwq
@@ -58,22 +80,22 @@ ands
 andnd
 andns
 
-bap
-call
+Compare: 
 
-cmpandedb
 cmpbdb
+cmpbsb
 cmpbedb
+cmpbesb
 cmpedb
 cmpesb
-cmpbsb
+cmplsb
 cmpldb
 cmplesb
-cmplsb
-
-ct
-disp
-sdisp
+cmpledb
+cmpandesb
+cmpandedb
+cmpandpsb
+cmpandpdb
 
 
 eap
@@ -91,22 +113,32 @@ fdtoistr
 
 fstofd
 fsubs
-getfd
-getsp
 ibranch
 incr
 insfd
 istofd
 istofs
 
-ipd
-
 landp
-ldb
-ldd,0..5,''|sm	REG|VAL, REG|VAL, REG|VAL,_lts0lo 0xb8, REG
 
-ldisp
-ldw
+
+ldb - load byte
+ldh - load half-word
+ldw - load word
+ldd - load double-word  (`ldd,0..5,''|sm	REG|VAL, REG|VAL, REG|VAL,_lts0lo 0xb8, REG`)
+rwd
+rws
+rrd
+rrs
+st
+stb - store byte
+sth - store half-word
+stw - store word
+std - store double-word 
+
+strd
+
+
 loop_mode
 merges
 
@@ -140,20 +172,13 @@ pfsubs
 
 return
 
-rwd
-rws
-rrd
-rrs
+
 
 sars
 sard
 scld
 scls
 sdivs
-
-setbn
-setbp
-setwd
 
 shl_addd
 shld
@@ -164,12 +189,6 @@ shrs
 smulx
 staad
 staaw
-
-st
-std
-sth
-strd
-stw
 
 subd
 subs
