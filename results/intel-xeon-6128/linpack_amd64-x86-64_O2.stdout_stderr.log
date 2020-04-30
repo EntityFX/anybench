@@ -1,0 +1,88 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00052    0.00002    0.00054    1266.53     0.0016     0.0097
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.04 seconds
+     10000 times   0.30 seconds
+     20000 times   0.61 seconds
+     40000 times   1.22 seconds
+Overhead for 1 matgen      0.00003 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.20 seconds
+      2000 times   0.40 seconds
+      4000 times   0.79 seconds
+      8000 times   1.58 seconds
+Passes used       5056 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00017    0.00001    0.00018    3917.11     0.0005     0.0031
+    0.00017    0.00001    0.00017    3985.54     0.0005     0.0031
+    0.00017    0.00001    0.00017    3984.67     0.0005     0.0031
+    0.00017    0.00001    0.00017    3986.08     0.0005     0.0031
+    0.00017    0.00001    0.00017    3986.19     0.0005     0.0031
+Average                              3971.92
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00003 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00017    0.00001    0.00017    3985.96     0.0005     0.0031
+    0.00017    0.00001    0.00017    3987.33     0.0005     0.0031
+    0.00017    0.00001    0.00017    3986.31     0.0005     0.0031
+    0.00017    0.00001    0.00017    3986.84     0.0005     0.0031
+    0.00017    0.00001    0.00017    3986.50     0.0005     0.0031
+Average                              3986.59
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz
+stepping	: 4
+microcode	: 0x2000064
+cpu MHz		: 1201.541
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 6
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflLinux version 4.15.18 (root@s001-n185) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #1 SMP Fri Oct 18 11:54:23 PDT 2019
+
+
+From File /proc/version
+Linux version 4.15.18 (root@s001-n185) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #1 SMP Fri Oct 18 11:54:23 PDT 2019
+
+
+Unrolled Double  Precision     3971.92 Mflops 
+
+
