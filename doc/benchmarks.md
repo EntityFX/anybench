@@ -179,83 +179,106 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 
 Таблица с результатами Dhrystone в 1 поток:
 
-| Стенд            | Dhrystones (VAX MIPS rating) | Частота (MHz) | Dhrystone / 1 MHz | Относительно Core i7-2600 | Относительно Core i7-2600 / 1 MHz |
-| ---------------- | ---------------------------- | ------------- | ----------------- | ------------------------- | --------------------------------- |
-| Core i7-2600     | **22076,97**                 | 3400          | 6,49              | 1,00                      | 1,00                              |
-| Core 2 Duo T9400 | **13308,91**                 | 2530          | 5,26              | 0,60                      | 0,81                              |
-| AMD A6-3650      | **11455,81**                 | 2600          | 4,41              | 0,52                      | 0,68                              |
-| Atom Z8350       | **4677,30**                  | 1440          | 3,25              | 0,21                      | 0,50                              |
-| Raspberry PI     | **847,00**                   | 700           | 1,21              | 0,04                      | 0,19                              |
-| AWS Graviton     | **11377,63**                 | 2300          | 4,95              | 0,52                      | 0,76                              |
-| Odroid N2        | **8230,00**                  | 1800          | 4,57              | 0,37                      | 0,70                              |
-| Odroid X2        | **4495,03**                  | 1700          | 2,64              | 0,20                      | 0,41                              |
-| Orange Pi PC2    | **2949,12**                  | 1152          | 2,56              | 0,13                      | 0,39                              |
-| Raspberry PI 3   | **2469,00**                  | 1200          | 2,06              | 0,11                      | 0,32                              |
-| Orange Pi Win    | **2370,00**                  | 1344          | 1,76              | 0,11                      | 0,27                              |
-| E8C-SWTX         | **5865,19**                  | 1300          | 4,51              | 0,27                      | 0,69                              |
-| E8C-E8C4         | **5844,82**                  | 1300          | 4,50              | 0,26                      | 0,69                              |
-| E8C2-1550        | **5357,45**                  | 1550          | 3,57              | 0,24                      | 0,55                              |  |  |
-| E8C2-1200        | **3554,46**                  | 1200          | 2,96              | 0,16                      | 0,46                              |
-| E2S-EL2S4        | **3329,51**                  | 750           | 4,44              | 0,15                      | 0,68                              |
-| E2S-PC401        | **3548,80**                  | 800           | 4,44              | 0,16                      | 0,68                              |
-| MBE1C-PC         | **4302,53**                  | 985           | 4,37              | 0,19                      | 0,67                              |
-| Pentium 4        | **4012,00**                  | 3066          | 1,31              | 0,18                      | 0,20                              |
-| Pentium III      | **1595,00**                  | 1000          | 1,60              | 0,07                      | 0,25                              |
-| Baikal T1 BFK    | **3650,00**                  | 1200          | 3,04              | 0,17                      | 0,47                              |
+|Platform        |CPU                                             |Cores|Frequency (MHz)|Architecture|Dhrystones (VAX)|Dhrystones/MHz|Relative to Core i7-2600|
+|----------------|------------------------------------------------|-----|---------------|------------|----------------|--------------|------------------------|
+|Raspberry PI    |Broadcom BCM2835                                |1    |700            |arm         |847,00          |1,21          |0,04                    |
+|Pentium M725    |Pentium M725                                    |1    |1600           |i386        |1 085,68        |0,68          |0,05                    |
+|Pentium III     |Intel(R) Pentium(TM) III CPU                    |1    |1000           |i386        |1 595,00        |1,60          |0,07                    |
+|Orange Pi Win   |Allwinner A64 (aarch64)                         |4    |1344           |aarch64     |2 370,00        |1,76          |0,11                    |
+|Raspberry PI 3  |Broadcom BCM2837B0 (armv8)                      |4    |1200           |aarch64     |2 469,00        |2,06          |0,11                    |
+|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |2 471,97        |1,65          |0,11                    |
+|Orange Pi PC2   |Allwinner H5 (aarch64)                          |4    |1152           |aarch64     |2 949,12        |2,56          |0,13                    |
+|E2S-EL2S4       |Elbrus 4C [EL2S4] (4 CPU)                       |16   |750            |e2k         |3 329,51        |4,44          |0,15                    |
+|E2S-PC401       |Elbrus 4C [E2S] (pc401)                         |4    |800            |e2k         |3 548,80        |4,44          |0,16                    |
+|E8C2-1200       |Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)           |8    |1200           |e2k         |3 554,46        |2,96          |0,16                    |
+|Baikal T1 BFK   |Baikal-T1 (MIPS P5600 V3.0)                     |2    |1200           |mips        |3 650,00        |3,04          |0,17                    |
+|Pentium 4       |Intel(R) Pentium(TM) 4 CPU                      |1    |3066           |i386        |4 012,00        |1,31          |0,18                    |
+|MBE1C-PC        |Elbrus 1C+ (MBE1C-PC)                           |1    |985            |e2k         |4 302,53        |4,37          |0,19                    |
+|Odroid X2       |Samsung Exynos 4412 (armv7l)                    |4    |1700           |arm         |4 495,03        |2,64          |0,20                    |
+|Atom Z8350      |Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz        |4    |1440           |amd64       |4 677,30        |3,25          |0,21                    |
+|E8C2-1550       |Elbrus 8C2 (E8C2 1550 MHz)                      |8    |1550           |e2k         |5 357,45        |3,46          |0,24                    |
+|E8C-E8C4        |Elbrus 8C (4 CPU)                               |32   |1300           |e2k         |5 844,82        |4,50          |0,26                    |
+|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |5 865,19        |4,51          |0,27                    |
+|Odroid N2       |Amlogic S922X                                   |6    |1800           |aarch64     |8 230,00        |4,57          |0,37                    |
+|E16C-APPROX*    |Elbrus 16                                       |16   |2000           |e2k         |9 023,37        |4,51          |0,41                    |
+|Core i3-m330    |Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz |4    |2133           |amd64       |10 919,40       |5,12          |0,49                    |
+|AWS Graviton    |Alpine AL73400                                  |16   |2300           |aarch64     |11 377,63       |4,95          |0,52                    |
+|AMD A6-3650     |AMD A6-3650 APU with Radeon(tm) HD Graphics     |4    |2600           |amd64       |11 455,81       |4,41          |0,52                    |
+|Core 2 Duo T9400|Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz|2    |2530           |amd64       |13 308,91       |5,26          |0,60                    |
+|Core i7-2600    |Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz         |8    |3400           |amd64       |22 076,97       |6,49          |1,00                    |
+|Core i7-4700MQ  |Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz       |8    |2400           |amd64       |22987,48        |9,58          |1,04                    |
+|Xeon 6128       |Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)|24   |3400           |amd64       |25 195,31       |7,41          |1,14                    |
+                        |
 
 Dhrystone, все процессоры:
-![Dhrystone Benchmark, Version 2.1](charts/dhrystone_all_cpu.svg "Dhrystone Benchmark, Version 2.1")
+![Dhrystone Benchmark, Version 2.1](charts/dhrystones.svg "Dhrystone Benchmark, Version 2.1")
 
-Dhrystone, x86-64 и e2k процессоры:
-![Dhrystone Benchmark, Version 2.1](charts/dhrystone_x86_e2k_cpu.svg "Dhrystone Benchmark, Version 2.1")
+Dhrystone, на 1 МГц:
+![Dhrystone Benchmark, Version 2.1, Per 1 MHz](charts/dhrystones_per_mhz.svg "Dhrystone Benchmark, Version 2.1, Per 1 MHz")
 
-Здесь видно, что в тесте Dhrystone процессоры x86 заметно быстрее arm и Эльбрус процессоров. Производительность 1 ядра Эльбрус 8С (E8C) сравнима с ядром Cortex A72 на 1 МГц, Эльбрус 8С чуть быстрее Atom Z8350 на 1 МГц. Производительность Baikal T1 сравнима с ядром Arm Cortex A9. Странно себя показал Эльбрус 8СВ, который с большой частотой оказался медленнее Эльбрус 8С. В МЦСТ мне ответили, что этот экземпляр тестовый и компилятор немного не доработан под данную версию, возможно с другим экземпляром тесты окажутся гораздо лучше.
+Dhrystone, относительно Core i7-2600:
+![Dhrystone Benchmark, Version 2.1, Relative](charts/dhrystones_relative.svg "Dhrystone Benchmark, Version 2.1, Relative")
+
+Здесь видно, что в тесте Dhrystone процессоры x86 заметно быстрее arm и Эльбрус процессоров. Производительность 1 ядра Эльбрус 8С (E8C) сравнима с ядром Cortex A72, если сравнивать относительно Dhrystones на 1 МГц, Эльбрус 8С чуть быстрее Atom Z8350 относительно Dhrystones на 1 МГц. Производительность Baikal T1 сравнима с ядром Arm Cortex A9. Странно себя показал Эльбрус 8СВ, который с большой частотой оказался медленнее Эльбрус 8С. В МЦСТ мне ответили, что этот экземпляр тестовый и компилятор немного не доработан под данную версию, возможно с другим экземпляром тесты окажутся гораздо лучше.
 
 
 ### Whetstone
 
-| Стенд            | MWIPS       | MWIPS (multicore) | Ядра (потоки) | Частота (MHz) | MWIPS / 1 MHz / Ядро | MWIPS / 1 MHz | Относительно Core  i7-2600 на 1 поток | Относительно  Core i7-2600 | Относительно  Core i7-2600 на 1 поток / 1 MHz | Относительно  Core i7-2600 / 1 MHz |
-| ---------------- | ----------- | ----------------- | ------------- | ------------- | -------------------- | ------------- | ------------------------------------- | -------------------------- | --------------------------------------------- | ---------------------------------- |
-| Core i7-2600     | **5729.52** | 31319.00          | 8             | 3400          | 1.69                 | 9.21          | 1.00                                  | 1.00                       | 1.00                                          | 1.00                               |
-| Core 2 Duo T9400 | **2910.33** | 5195.00           | 2             | 2530          | 1.15                 | 2.05          | 0.51                                  | 0.17                       | 0.68                                          | 0.22                               |
-| AMD A6-3650      | **3718.16** | 12113.00          | 4             | 2600          | 1.43                 | 4.66          | 0.65                                  | 0.39                       | 0.85                                          | 0.51                               |
-| Atom Z8350       | **2085.24** | 6636.00           | 4             | 1440          | 1.45                 | 4.61          | 0.36                                  | 0.21                       | 0.86                                          | 0.50                               |
-| Raspberry PI     | **270.50**  | 270.50            | 1             | 700           | 0.39                 | 0.39          | 0.05                                  | 0.01                       | 0.23                                          | 0.04                               |
-| AWS Graviton     | **2851.80** | 44741.00          | 16            | 2300          | 1.24                 | 19.45         | 0.50                                  | 1.43                       | 0.73                                          | 2.11                               |
-| Odroid N2        | **2136.98** | 9931.00           | 6             | 1800          | 1.19                 | 5.52          | 0.37                                  | 0.32                       | 0.70                                          | 0.60                               |
-| Odroid X2        | **1305.16** | 4291.00           | 4             | 1700          | 0.77                 | 2.52          | 0.23                                  | 0.14                       | 0.45                                          | 0.27                               |
-| Orange Pi PC2    | **980.26**  | 3798.00           | 4             | 1152          | 0.85                 | 3.30          | 0.17                                  | 0.12                       | 0.50                                          | 0.36                               |
-| Raspberry PI 3   | **997.20**  | 2779.80           | 4             | 1200          | 0.83                 | 2.32          | 0.17                                  | 0.09                       | 0.49                                          | 0.25                               |
-| Orange Pi Win    | **700.60**  | 1854.00           | 4             | 1344          | 0.52                 | 1.38          | 0.12                                  | 0.06                       | 0.31                                          | 0.15                               |
-| E8C-SWTX         | **1517.62** | 12980.00          | 8             | 1300          | 1.17                 | 9.98          | 0.26                                  | 0.41                       | 0.69                                          | 1.08                               |
-| E8C-E8C4         | **1647.51** | 53563.00          | 32            | 1300          | 1.27                 | 41.20         | 0.29                                  | 1.71                       | 0.75                                          | 4.47                               |
-| E8C2-1550        | **1703.75** | 14571.94          | 8             | 1550          | 1.14                 | 9.71          | 0.30                                  | 0.47                       | 0.67                                          | 1.05                               |
-| E8C2-1200        | **1545.92** | 12420.00          | 8             | 1200          | 1.29                 | 10.35         | 0.27                                  | 0.40                       | 0.76                                          | 1.12                               |
-| E2S-EL2S4        | **970.80**  | 15790.00          | 16            | 750           | 1.29                 | 21.05         | 0.17                                  | 0.50                       | 0.77                                          | 2.29                               |
-| E2S-PC401        | **938.12**  | 2455.00           | 4             | 800           | 1.17                 | 3.07          | 0.16                                  | 0.08                       | 0.69                                          | 0.33                               |
-| MBE1C-PC         | **1277.55** | 1312.00           | 1             | 985           | 1.30                 | 1.33          | 0.22                                  | 0.04                       | 0.77                                          | 0.14                               |
-| Pentium 4        | **1119.00** | 1119.00           | 1             | 3066          | 0.36                 | 0.36          | 0.20                                  | 0.04                       | 0.22                                          | 0.04                               |
-| Pentium III      | **816.00**  | 816.00            | 1             | 1000          | 0.82                 | 0.82          | 0.14                                  | 0.03                       | 0.48                                          | 0.09                               |
-| Baikal T1 BFK    | **613.50**  | 1227.00           | 2             | 1200          | 0.51                 | 1.02          | 0.11                                  | 0.04                       | 0.30                                          | 0.11                               |
+|Platform        |CPU                                             |Cores|Frequency (MHz)|Architecture|MWIPS    |MWIPS MP|MWIPS/MHz/Core|MWIPS MP/MHz|Relative to Core i7-2600|Relative to Core i7-2600 (mp)|
+|----------------|------------------------------------------------|-----|---------------|------------|---------|--------|--------------|------------|------------------------|-----------------------------|
+|Xeon 6128       |Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)|24   |3400           |amd64       |5 850,41 |123854  |1,72          |36,43       |1,02                    |3,95                         |
+|Core i7-4700MQ  |Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz       |8    |2400           |amd64       |5326,899 |35234   |2,22          |14,68       |0,93                    |1,13                         |
+|Core i7-2600    |Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz         |8    |3400           |amd64       |5 729,52 |31319   |1,69          |9,21        |1,00                    |1,00                         |
+|Core 2 Duo T9400|Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz|2    |2530           |amd64       |2 910,33 |5195    |1,15          |2,05        |0,51                    |0,17                         |
+|Core i3-m330    |Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz |4    |2133           |amd64       |2 824,97 |8837    |1,32          |4,14        |0,49                    |0,28                         |
+|Atom Z8350      |Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz        |4    |1440           |amd64       |2 085,24 |6636    |1,45          |4,61        |0,36                    |0,21                         |
+|AMD A6-3650     |AMD A6-3650 APU with Radeon(tm) HD Graphics     |4    |2600           |amd64       |3 718,16 |12113   |1,43          |4,66        |0,65                    |0,39                         |
+|Pentium M725    |Pentium M725                                    |1    |1600           |i386        |506,94   |506,94  |0,32          |0,32        |0,09                    |0,02                         |
+|Pentium 4       |Intel(R) Pentium(TM) 4 CPU                      |1    |3066           |i386        |1 119,00 |1119    |0,36          |0,36        |0,20                    |0,04                         |
+|Pentium III     |Intel(R) Pentium(TM) III CPU                    |1    |1000           |i386        |816,00   |816     |0,82          |0,82        |0,14                    |0,03                         |
+|AWS Graviton    |Alpine AL73400                                  |16   |2300           |aarch64     |2 851,80 |44741   |1,24          |19,45       |0,50                    |1,43                         |
+|Odroid N2       |Amlogic S922X                                   |6    |1800           |aarch64     |2 136,98 |9931    |1,19          |5,52        |0,37                    |0,32                         |
+|Odroid X2       |Samsung Exynos 4412 (armv7l)                    |4    |1700           |arm         |1 305,16 |4291    |0,77          |2,52        |0,23                    |0,14                         |
+|Orange Pi PC2   |Allwinner H5 (aarch64)                          |4    |1152           |aarch64     |980,26   |3798    |0,85          |3,30        |0,17                    |0,12                         |
+|Orange Pi Win   |Allwinner A64 (aarch64)                         |4    |1344           |aarch64     |700,60   |1854    |0,52          |1,38        |0,12                    |0,06                         |
+|Raspberry PI 3  |Broadcom BCM2837B0 (armv8)                      |4    |1200           |aarch64     |997,20   |2779,8  |0,83          |2,32        |0,17                    |0,09                         |
+|Raspberry PI    |Broadcom BCM2835                                |1    |700            |arm         |270,50   |270,5   |0,39          |0,39        |0,05                    |0,01                         |
+|E16C-APPROX*    |Elbrus 16                                       |16   |2000           |e2k         |2 198,39 |37605,0064516129|1,10          |18,80       |0,38                    |1,20                         |
+|E8C2-1550       |Elbrus 8C2 (E8C2 1550 MHz)                      |8    |1550           |e2k         |1 703,75 |14571,94|1,10          |9,40        |0,30                    |0,47                         |
+|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |1 703,75 |14571,94|1,14          |9,71        |0,30                    |0,47                         |
+|E8C2-1200       |Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)           |8    |1200           |e2k         |1 545,92 |12420   |1,29          |10,35       |0,27                    |0,40                         |
+|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |1 517,62 |12980   |1,17          |9,98        |0,26                    |0,41                         |
+|E8C-E8C4        |Elbrus 8C (4 CPU)                               |32   |1300           |e2k         |1 647,51 |53563   |1,27          |41,20       |0,29                    |1,71                         |
+|E2S-EL2S4       |Elbrus 4C [EL2S4] (4 CPU)                       |16   |750            |e2k         |970,80   |15790   |1,29          |21,05       |0,17                    |0,50                         |
+|E2S-PC401       |Elbrus 4C [E2S] (pc401)                         |4    |800            |e2k         |938,12   |2455    |1,17          |3,07        |0,16                    |0,08                         |
+|MBE1C-PC        |Elbrus 1C+ (MBE1C-PC)                           |1    |985            |e2k         |1 277,55 |1312    |1,30          |1,33        |0,22                    |0,04                         |
+|Baikal T1 BFK   |Baikal-T1 (MIPS P5600 V3.0)                     |2    |1200           |mips        |613,50   |1227    |0,51          |1,02        |0,11                    |0,04                         |
 
 
 Whetstone Single Precision, все процессоры
-![Whetstone Single Precision](charts/whetstone_all_cpu.svg "Whetstone Single Precision")
+![Whetstone Single Precision](charts/whetstones.svg "Whetstone Single Precision")
 
-Whetstone Single Precision, x86-64 и e2k процессоры
-![Whetstone Single Precision](charts/whetstone_some_cpu.svg "Whetstone Single Precision")
+Whetstone Single Precision, на 1 МГц
+![Whetstone Single Precision](charts/whetstones_per_mhz.svg "Whetstone Single Precision, Per 1 MHz")
 
-Whetstone Single Precision, однопоточные результаты, x86-64 и e2k процессоры
-![Whetstone Single Precision](charts/whetstone_some_cpu_singlecore.svg "Whetstone Single Precision Single Thread")
+Whetstone Single Precision, относительно Core i7-2600
+![Whetstone Single Precision](charts/whetstones_relative.svg "Whetstone Single Precision Single Thread Relative")
 
-Whetstone Single Precision, многопоточные результаты, x86-64 и e2k процессоры
-![MP Whetstone Precision Multi Core](charts/whetstone_some_cpu_multicore.svg "MP Whetstone Precision Multi Thread")
+Whetstone Single Precision, многопоточные результаты
+![MP Whetstone Precision Multi Core](charts/whetstones_mp.svg "MP Whetstone Precision Multi Thread")
+
+Whetstone Single Precision, многопоточные результаты, на 1 МГц
+![MP Whetstone Precision Multi Core, Per 1 MHz](charts/whetstones_per_mhz.svg "MP Whetstone Precision Multi Thread, Per 1 MHz")
+
+Whetstone Single Precision, многопоточные результаты, относительно Core i7-2600
+![MP Whetstone Precision Multi Core Relative](charts/whetstones_relative.svg "MP Whetstone Precision Multi Thread Relative")
+
 
 Мы видим, что процессоры ARM v7 на архитектуре ядра Cortex A9 сопоставимы с процессорами Pentium III, если сравнивать частоту на 1 Мгц.
 Далее, процессоры ARM v8 на архитектуре ядра Cortex A72 сравнимы с процессорами Core 2 Duo T9400 на 1 ядро и 1 МГц, но немного не дотягивают
 до Atom Z8350. А ещё очень хорошо видно, что архитектура процессора Pentium 4 (NetBurst) была очень слабой и чтобы им быть более
 менее производительными, нужно было иметь высокую частоту (Pentium III был более производительным на 1 МГц).
-Все процессоры Эльбрус сопоставимы с Core 2 Duo T9400 на 1 ядро и 1 МГц и ARM v7 Cortex A72, что уже лучше.
+Все процессоры Эльбрус сопоставимы с Core 2 Duo T9400 на 1 ядро и относительно 1 МГц и ARM v7 Cortex A72, что уже лучше.
 
 ### LINPACK 100x100 DP (однопоточный)
 
@@ -264,33 +287,46 @@ Whetstone Single Precision, многопоточные результаты, x86
 
 И тут сразу переходим к результатам тестирования:
 
-| Стенд            | MFLOPS   | CPU                                              | Per MHz |
-| ---------------- | -------- | ------------------------------------------------ | ------- |
-| Core i7-4700MQ   | 4 915,84 | Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz        | 2,05    |
-| Core i7-2600     | 4 302,89 | Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz          | 1,27    |
-| Core 2 Duo T9400 | 1 816,02 | Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz | 0,72    |
-| AMD A6-3650      | 1 750,03 | AMD A6-3650 APU with Radeon(tm) HD Graphics      | 0,67    |
-| Atom Z8350       | 1 021,44 | Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz         | 0,71    |
-| Raspberry PI     | 42,00    | Broadcom BCM2835                                 | 0,06    |
-| AWS Graviton     | 1 548,65 | Alpine AL73400                                   | 0,67    |
-| Odroid N2        | 845,09   | Amlogic S922X                                    | 0,47    |
-| Odroid X2        | 268,73   | Samsung Exynos 4412 (armv7l)                     | 0,16    |
-| Orange Pi PC2    | 163,44   | Allwinner H5 (aarch64)                           | 0,14    |
-| Raspberry PI 3   | 180,00   | Broadcom BCM2837B0 (armv8)                       | 0,15    |
-| Orange Pi Win    | 174,04   | Allwinner A64 (aarch64)                          | 0,13    |
-| E8C-SWTX         | 1 075,27 | Elbrus 8C (E8C-SWTX)                             | 0,83    |
-| E8C-E8C4         | 1 089,02 | Elbrus 8C (4 CPU)                                | 0,84    |
-| E8C2-1550        | 1 269,79 | Elbrus 8C2 (E8C2 1550 MHz)                       | 0,82    |
-| E8C2-LOW         | 1 005,79 | Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)            | 0,84    |
-| E2S-EL2S4        | 632,51   | Elbrus 4C [EL2S4] (4 CPU)                        | 0,84    |
-| E2S-PC401        | 674,68   | Elbrus 4C [E2S] (pc401)                          | 0,84    |
-| MBE1C-PC         | 814,76   | Elbrus 1C+ (MBE1C-PC)                            | 0,83    |
-| Pentium 4        | 840,27   | Intel(R) Pentium(TM) 4 CPU                       | 0,27    |
-| Pentium III      | 316,67   | Intel(R) Pentium(TM) III CPU                     | 0,32    |
+| Platform         | FIELD2   | CPU                                              | Cores | Frequency (MHz) | Per MHz | Relative | Relative (MHz) | Architecture |
+| ---------------- | -------- | ------------------------------------------------ | ----- | --------------- | ------- | -------- | -------------- | ------------ |
+| Xeon 6128        | 6 105,95 | Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU) | 24    | 3400            | 1,80    | 1,24     | 0,88           | amd64        |
+| Core i7-4700MQ   | 4 915,84 | Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz        | 8     | 2400            | 2,05    | 1,00     | 1,00           | amd64        |
+| Core i7-2600     | 4 302,89 | Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz          | 8     | 3400            | 1,27    | 0,88     | 0,62           | amd64        |
+| Core 2 Duo T9400 | 1 816,02 | Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz | 2     | 2530            | 0,72    | 0,37     | 0,35           | amd64        |
+| Core i3-m330     | 2 155,62 | Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz  | 4     | 2133            | 1,01    | 0,44     | 0,49           | amd64        |
+| Atom Z8350       | 1 021,44 | Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz         | 4     | 1440            | 0,71    | 0,21     | 0,35           | amd64        |
+| AMD A6-3650      | 1 750,03 | AMD A6-3650 APU with Radeon(tm) HD Graphics      | 4     | 2600            | 0,67    | 0,36     | 0,33           | amd64        |
+| Pentium M725     | 338,82   | Pentium M725                                     | 1     | 1600            | 0,21    | 0,07     | 0,10           | i386         |
+| Pentium 4        | 840,27   | Intel(R) Pentium(TM) 4 CPU                       | 1     | 3066            | 0,27    | 0,17     | 0,13           | i386         |
+| Pentium III      | 316,67   | Intel(R) Pentium(TM) III CPU                     | 1     | 1000            | 0,32    | 0,06     | 0,15           | i386         |
+| AWS Graviton     | 1 548,65 | Alpine AL73400                                   | 16    | 2300            | 0,67    | 0,32     | 0,33           | aarch64      |
+| Odroid N2        | 845,09   | Amlogic S922X                                    | 6     | 1800            | 0,47    | 0,17     | 0,23           | aarch64      |
+| Odroid X2        | 268,73   | Samsung Exynos 4412 (armv7l)                     | 4     | 1700            | 0,16    | 0,05     | 0,08           | arm          |
+| Orange Pi PC2    | 163,44   | Allwinner H5 (aarch64)                           | 4     | 1152            | 0,14    | 0,03     | 0,07           | aarch64      |
+| Orange Pi Win    | 174,04   | Allwinner A64 (aarch64)                          | 4     | 1344            | 0,13    | 0,04     | 0,06           | aarch64      |
+| Raspberry PI 3   | 180,00   | Broadcom BCM2837B0 (armv8)                       | 4     | 1200            | 0,15    | 0,04     | 0,07           | aarch64      |
+| Raspberry PI     | 42,00    | Broadcom BCM2835                                 | 1     | 700             | 0,06    | 0,01     | 0,03           | arm          |
+| E16C-APPROX      | 1 675,42 | Elbrus 16                                        | 16    | 2000            | 0,84    | 0,34     | 0,41           | e2k          |
+| E8C2-1550        | 1 269,79 | Elbrus 8C2 (E8C2 1550 MHz)                       | 8     | 1550            | 0,82    | 0,26     | 0,40           | e2k          |
+| E8C2             | 1 257,24 | Elbrus 8C2 (E8C2)                                | 8     | 1500            | 0,84    | 0,26     | 0,41           | e2k          |
+| E8C2-1200        | 1 005,79 | Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)            | 8     | 1200            | 0,84    | 0,20     | 0,41           | e2k          |
+| E8C-SWTX         | 1 075,27 | Elbrus 8C (E8C-SWTX)                             | 8     | 1300            | 0,83    | 0,22     | 0,40           | e2k          |
+| E8C-E8C4         | 1 089,02 | Elbrus 8C (4 CPU)                                | 32    | 1300            | 0,84    | 0,22     | 0,41           | e2k          |
+| E2S-EL2S4        | 632,51   | Elbrus 4C [EL2S4] (4 CPU)                        | 16    | 750             | 0,84    | 0,13     | 0,41           | e2k          |
+| E2S-PC401        | 674,68   | Elbrus 4C [E2S] (pc401)                          | 4     | 800             | 0,84    | 0,14     | 0,41           | e2k          |
+| MBE1C-PC         | 814,76   | Elbrus 1C+ (MBE1C-PC)                            | 1     | 985             | 0,83    | 0,17     | 0,40           | e2k          |
+| Baikal T1 BFK    |          | Baikal-T1 (MIPS P5600 V3.0)                      | 2     | 1200            | 0,00    | 0,00     | 0,00           | mips         |
+
 
 
 LINPACK 100x100 Double Precision, все процессоры
-![Linpack  100x100 Double Precision](charts/linpack_100_dp_all_cpu.svg "Linpack  100x100 Double Precision")
+![Linpack 100x100 Double Precision](charts/linpack.svg "Linpack 100x100 Double Precision")
+
+LINPACK 100x100 Double Precision, на 1 МГц
+![Linpack 100x100 Double Precision, Per 1 MHz](charts/linpack_per_mhz.svg "Linpack 100x100 Double Precision, Per 1 MHz")
+
+LINPACK 100x100 Double Precision, относительно Core i7-2600
+![Linpack 100x100 Double Precision, Relative to Core i7-2600](charts/linpack_relative.svg "Linpack 100x100 Double Precision, Relative to Core i7-2600")
 
 Cнова сравним  Mflops'ы на 1 МГц на 1 ядро.
 
@@ -350,25 +386,35 @@ Coremark, многопоточные результаты, все процесс
 ```
 
 
-| Platform         | 16 KB (МБ/с) `(x[i] = x[i] + a * y[i])` | 512 KB (МБ/с) `(x[i] = x[i] + a * y[i])` | 8192 KB (МБ/с) `(x[i] = x[i] + a * y[i])` | 16 KB (МБ/с) `(x[i] = x[i] + y[i])` | 512 KB  (МБ/с)`(x[i] = x[i] + y[i])` | 8192 KB (МБ/с) `(x[i] = x[i] + y[i])` | 16 KB (МБ/с) `(x[i] = y[i])` | 512 KB  (МБ/с)`(x[i] = y[i])` | 8192 KB  (МБ/с)`(x[i] = y[i])` |
-| ---------------- | --------------------------------------- | ---------------------------------------- | ----------------------------------------- | ----------------------------------- | ------------------------------------ | ------------------------------------- | ---------------------------- | ----------------------------- | ------------------------------ |
-| Core i7-2600     | 73499                                   | 53366                                    | 32794                                     | 75334                               | 54605                                | 32432                                 | 26348                        | 16541                         | 8317                           |
-| Core 2 Duo T9400 | 9737                                    | 14189                                    | 8249                                      | 18113                               | 9344                                 | 8153                                  | 3232                         | 5196                          | 2131                           |
-| AMD A6-3650      | 40930                                   | 37749                                    | 8578                                      | 40988                               | 36529                                | 8523                                  | 13655                        | 9154                          | 2154                           |
-| Raspberry PI     | 602                                     | 127                                      | 127                                       | 731                                 | 127                                  | 127                                   | 426                          | 111                           | 111                            |
-| AWS Graviton     | 21353                                   | 17418                                    | 7336                                      | 7344                                | 18328                                | 21796                                 | 12118                        | 12120                         | 4422                           |
-| Odroid N2        | 8452                                    | 8214                                     | 3888                                      | 9876                                | 8463                                 | 3966                                  | 8261                         | 7260                          | 3582                           |
-| Odroid X2        | 2403                                    | 1464                                     | 1261                                      | 2543                                | 1472                                 | 1271                                  | 3856                         | 1324                          | 627                            |
-| Orange Pi PC2    | 3490                                    | 1224                                     | 1039                                      | 2872                                | 1179                                 | 1009                                  | 4902                         | 2284                          | 1261                           |
-| Raspberry PI 3   | 1814                                    | 1598                                     | 1019                                      | 2240                                | 1906                                 | 954                                   | 3136                         | 2783                          | 871                            |
-| Orange Pi Win    | 2672                                    | 1752                                     | 1019                                      | 2771                                | 1787                                 | 1028                                  | 3483                         | 3146                          | 1374                           |
-| E8C-SWTX         | 37160                                   | 29195                                    | 24130                                     | 37806                               | 29193                                | 24114                                 | 19096                        | 17431                         | 14045                          |
-| E8C-E8C4         | 35377                                   | 27882                                    | 23315                                     | 35758                               | 27681                                | 23172                                 | 18273                        | 16898                         | 13798                          |
-| E8C2-1550        | 41032                                   | 41708                                    | 33881                                     | 19815                               | 12399                                | 9617                                  | 6124                         | 4376                          | 3318                           |
-| E8C2-1200        | 29062                                   | 34168                                    | 28890                                     | 30016                               | 34232                                | 28920                                 | 16709                        | 18654                         | 17513                          |
-| E2S-EL2S4        | 20404                                   | 22714                                    | 7975                                      | 20662                               | 23032                                | 7809                                  | 10535                        | 11483                         | 4263                           |
-| E2S-PC401        | 20721                                   | 22106                                    | 8491                                      | 10053                               | 6591                                 | 2092                                  | 8415                         | 6145                          | 1468                           |
-| MBE1C-PC         | 28070                                   | 31305                                    | 5856                                      | 10999                               | 11421                                | 9663                                  | 5073                         | 10442                         | 1163                           |
+| Platform         | CPU                                              | Cores | Frequency (MHz) | 16 KB x[m]=x[m]+s*y[m] Sngl | 512 KB x[m]=x[m]+s*y[m] Sngl | 8192 KB x[m]=x[m]+s*y[m] Sngl | 16 KB x[m]=x[m]+s*y[m] Sngl | 512 KB x[m]=x[m]+s*y[m] Sngl | 8192 KB x[m]=x[m]+s*y[m] Sngl | 16 KB x[m]=x[m]+s*y[m] Sngl | 512 KB x[m]=x[m]+s*y[m] Sngl | 8192 KB x[m]=x[m]+s*y[m] Sngl |
+| ---------------- | ------------------------------------------------ | ----- | --------------- | --------------------------- | ---------------------------- | ----------------------------- | --------------------------- | ---------------------------- | ----------------------------- | --------------------------- | ---------------------------- | ----------------------------- |
+| Pentium 4        | Intel(R) Pentium(TM) 4 CPU                       | 1     | 3066            | i386                        | 0                            | 0                             | 0                           | 0                            | 0                             | 0                           | 0                            | 0                             |
+| Pentium III      | Intel(R) Pentium(TM) III CPU                     | 1     | 1000            | i386                        | 0                            | 0                             | 0                           | 0                            | 0                             | 0                           | 0                            | 0                             |
+| E16C-APPROX      | Elbrus 16                                        | 16    | 2000            | e2k                         | 0                            | 0                             | 0                           | 0                            | 0                             | 0                           | 0                            | 0                             |
+| Baikal T1 BFK    | Baikal-T1 (MIPS P5600 V3.0)                      | 2     | 1200            | mips                        | 0                            | 0                             | 0                           | 0                            | 0                             | 0                           | 0                            | 0                             |
+| Raspberry PI     | Broadcom BCM2835                                 | 1     | 700             | arm                         | 127                          | 127                           | 731                         | 127                          | 127                           | 426                         | 111                          | 111                           |
+| Pentium M725     | Pentium M725                                     | 1     | 1600            | i386                        | 1530                         | 844                           | 2348                        | 1670                         | 850                           | 1866                        | 1145                         | 420                           |
+| Orange Pi Win    | Allwinner A64 (aarch64)                          | 4     | 1344            | aarch64                     | 1752                         | 1019                          | 2771                        | 1787                         | 1028                          | 3483                        | 3146                         | 1374                          |
+| Raspberry PI 3   | Broadcom BCM2837B0 (armv8)                       | 4     | 1200            | aarch64                     | 1598                         | 1019                          | 2240                        | 1906                         | 954                           | 3136                        | 2783                         | 871                           |
+| Orange Pi PC2    | Allwinner H5 (aarch64)                           | 4     | 1152            | aarch64                     | 1224                         | 1039                          | 2872                        | 1179                         | 1009                          | 4902                        | 2284                         | 1261                          |
+| Odroid X2        | Samsung Exynos 4412 (armv7l)                     | 4     | 1700            | arm                         | 1464                         | 1261                          | 2543                        | 1472                         | 1271                          | 3856                        | 1324                         | 627                           |
+| Odroid N2        | Amlogic S922X                                    | 6     | 1800            | aarch64                     | 8214                         | 3888                          | 9876                        | 8463                         | 3966                          | 8261                        | 7260                         | 3582                          |
+| Core i3-m330     | Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz  | 4     | 2133            | amd64                       | 12837                        | 4636                          | 22396                       | 13193                        | 4996                          | 10774                       | 8340                         | 2387                          |
+| Atom Z8350       | Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz         | 4     | 1440            | amd64                       | 14596                        | 5208                          | 17415                       | 14356                        | 5219                          | 10075                       | 5598                         | 1365                          |
+| MBE1C-PC         | Elbrus 1C+ (MBE1C-PC)                            | 1     | 985             | e2k                         | 31305                        | 5856                          | 10999                       | 11421                        | 9663                          | 5073                        | 10442                        | 1163                          |
+| AWS Graviton     | Alpine AL73400                                   | 16    | 2300            | aarch64                     | 17418                        | 7336                          | 7344                        | 18328                        | 21796                         | 12118                       | 12120                        | 4422                          |
+| E2S-EL2S4        | Elbrus 4C [EL2S4] (4 CPU)                        | 16    | 750             | e2k                         | 22714                        | 7975                          | 20662                       | 23032                        | 7809                          | 10535                       | 11483                        | 4263                          |
+| Core 2 Duo T9400 | Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz | 2     | 2530            | amd64                       | 14189                        | 8249                          | 18113                       | 9344                         | 8153                          | 3232                        | 5196                         | 2131                          |
+| E2S-PC401        | Elbrus 4C [E2S] (pc401)                          | 4     | 800             | e2k                         | 22106                        | 8491                          | 10053                       | 6591                         | 2092                          | 8415                        | 6145                         | 1468                          |
+| AMD A6-3650      | AMD A6-3650 APU with Radeon(tm) HD Graphics      | 4     | 2600            | amd64                       | 37749                        | 8578                          | 40988                       | 36529                        | 8523                          | 13655                       | 9154                         | 2154                          |
+| Core i7-4700MQ   | Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz        | 8     | 2400            | amd64                       | 29816                        | 17618                         | 59299                       | 30982                        | 18371                         | 40254                       | 16127                        | 9605                          |
+| E8C-E8C4         | Elbrus 8C (4 CPU)                                | 32    | 1300            | e2k                         | 27882                        | 23315                         | 35758                       | 27681                        | 23172                         | 18273                       | 16898                        | 13798                         |
+| E8C-SWTX         | Elbrus 8C (E8C-SWTX)                             | 8     | 1300            | e2k                         | 29195                        | 24130                         | 37806                       | 29193                        | 24114                         | 19096                       | 17431                        | 14045                         |
+| Xeon 6128        | Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU) | 24    | 3400            | amd64                       | 51351                        | 26334                         | 57982                       | 52292                        | 26638                         | 45452                       | 37370                        | 13360                         |
+| E8C2-1200        | Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)            | 8     | 1200            | e2k                         | 34168                        | 28890                         | 30016                       | 34232                        | 28920                         | 16709                       | 18654                        | 17513                         |
+| Core i7-2600     | Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz          | 8     | 3400            | amd64                       | 53366                        | 32794                         | 75334                       | 54605                        | 32432                         | 26348                       | 16541                        | 8317                          |
+| E8C2             | Elbrus 8C2 (E8C2)                                | 8     | 1500            | e2k                         | 41708                        | 33881                         | 19815                       | 12399                        | 9617                          | 6124                        | 4376                         | 3318                          |
+| E8C2-1550        | Elbrus 8C2 (E8C2 1550 MHz)                       | 8     | 1550            | e2k                         | 41990                        | 36299                         | 39990                       | 42034                        | 36355                         | 21901                       | 23589                        | 21518                         |
 
 
 Memspeed, Умножение-сложение с присвоением, все процессоры
@@ -442,20 +488,24 @@ MP MFLOPS, 32 операции, все процессоры
 ### Scimark 2 (однопоточный)
 
 
-| Platform         | Composite Score | FFT      | SOR     | MonteCarlo | Sparse matmult | LU      |
-| ---------------- | --------------- | -------- | ------- | ---------- | -------------- | ------- |
-| Core i7-2600     | 1 800,00        | 1 517,97 | 1636,33 | 515,34     | 1981,74        | 3348,64 |
-| Core 2 Duo T9400 | 1 051,93        | 720,56   | 1201,02 | 307,36     | 1119,72        | 1911,00 |
-| AMD A6-3650      | 1 028,44        | 775,83   | 989,81  | 344,97     | 1272,17        | 1759,44 |
-| Atom Z8350       | 509,44          | 267,60   | 719,12  | 178,04     | 497,19         | 885,27  |
-| Orange Pi PC2    | 191,59          | 147,36   | 283,10  | 64,07      | 185,46         | 277,94  |
-| Orange Pi Win    | 169,22          | 150,49   | 276,78  | 76,72      | 166,98         | 175,11  |
-| E8C-SWTX         | 511,43          | 235,71   | 481,74  | 132,23     | 186,18         | 1521,26 |
-| E8C2-1550        | 472,24          | 266,7    | 501,81  | 84,95      | 304,82         | 1202,94 |
-| E8C2-1200        | 469,46          | 212,71   | 446,05  | 118,25     | 166,34         | 1403,94 |
-| MBE1C-PC         | 379,23          | 174,82   | 364,42  | 97,02      | 132,92         | 1126,98 |
+| Platform         | Composite Score | FFT      | SOR      | MonteCarlo | Sparse matmult | LU       | CPU                                              | Cores | Frequency (MHz) | Per MHz | Relative | Relative (MHz) | Architecture |
+| ---------------- | --------------- | -------- | -------- | ---------- | -------------- | -------- | ------------------------------------------------ | ----- | --------------- | ------- | -------- | -------------- | ------------ |
+| Xeon 6128        | 2 427,42        | 2 011,19 | 1 564,17 | 753,09     | 2 878,47       | 4 930,18 | Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU) | 24    | 3400            | 0,71    | 1,17     | 0,83           | amd64        |
+| Core i7-4700MQ   | 2 071,26        | 1 693,12 | 1 599,69 | 568,17     | 2 148,40       | 4 346,91 | Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz        | 8     | 2400            | 0,86    | 1,00     | 1,00           | amd64        |
+| Core i7-2600     | 1 800,00        | 1 517,97 | 1 636,33 | 515,34     | 1 981,74       | 3 348,64 | Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz          | 8     | 3400            | 0,53    | 0,87     | 0,61           | amd64        |
+| Core 2 Duo T9400 | 1 051,93        | 720,56   | 1 201,02 | 307,36     | 1 119,72       | 1 911,00 | Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz | 2     | 2530            | 0,42    | 0,51     | 0,48           | amd64        |
+| Core i3-m330     | 1 002,61        | 759,27   | 967,15   | 290,85     | 933,71         | 2 062,08 | Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz  | 4     | 2133            | 0,47    | 0,48     | 0,54           | amd64        |
+| Atom Z8350       | 509,44          | 267,60   | 719,12   | 178,04     | 497,19         | 885,27   | Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz         | 4     | 1440            | 1,25    | 0,87     | 1,45           | amd64        |
+| AMD A6-3650      | 1 028,44        | 775,83   | 989,81   | 344,97     | 1 272,17       | 1 759,44 | AMD A6-3650 APU with Radeon(tm) HD Graphics      | 4     | 2600            | 0,40    | 0,50     | 0,46           | amd64        |
+| Orange Pi PC2    | 191,59          | 147,36   | 283,10   | 64,07      | 185,46         | 277,94   | Allwinner H5 (aarch64)                           | 4     | 1152            | 0,17    | 0,09     | 0,19           | aarch64      |
+| Orange Pi Win    | 169,22          | 150,49   | 276,78   | 76,72      | 166,98         | 175,11   | Allwinner A64 (aarch64)                          | 4     | 1344            | 0,13    | 0,08     | 0,15           | aarch64      |
+| E8C2-1550        | 472,24          | 266,7    | 501,81   | 84,95      | 304,82         | 1202,94  | Elbrus 8C2 (E8C2 1550 MHz)                       | 8     | 1550            | 0,30    | 0,23     | 0,35           | e2k          |
+| E8C2-1200        | 469,46          | 212,71   | 446,05   | 118,25     | 166,34         | 1 403,94 | Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)            | 8     | 1200            | 0,39    | 0,23     | 0,45           | e2k          |
+| E8C-SWTX         | 511,43          | 235,71   | 481,74   | 132,23     | 186,18         | 1521,26  | Elbrus 8C (E8C-SWTX)                             | 8     | 1300            | 0,39    | 0,25     | 0,46           | e2k          |
+| MBE1C-PC         | 379,23          | 174,82   | 364,42   | 97,02      | 132,92         | 1126,98  | Elbrus 1C+ (MBE1C-PC)                            | 1     | 985             | 0,39    | 0,18     | 0,45           | e2k          |
 
-Scimark 2, однопоточные результаты, x86-64 и e2k процессоры
+
+Scimark 2, однопоточные результаты, все процессоры
 ![Scimark 2](charts/scimark2.svg "Scimark 2")
 
 ## Выводы
