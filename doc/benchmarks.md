@@ -418,13 +418,13 @@ Coremark, многопоточные результаты, все процесс
 
 
 Memspeed, Умножение-сложение с присвоением, все процессоры
-![Memspeed Multiply Add Assign](charts/memspeed_mul_add_assign.svg "Memspeed Multiply Add Assign")
+![Memspeed Multiply Add Assign](charts/memspeed_mul_add_ass.svg "Memspeed Multiply Add Assign")
 
 Memspeed, Сложение с присвоением, все процессоры
-![Memspeed Add Assign](charts/memspeed_add_assign.svg "Memspeed Add Assign")
+![Memspeed Add Assign](charts/memspeed_add_ass.svg "Memspeed Add Assign")
 
 Memspeed, Присвоение, все процессоры
-![Memspeed Assign](charts/memspeed_assign.svg "Memspeed  Assign")
+![Memspeed Assign](charts/memspeed_ass.svg"Memspeed  Assign")
 
 Как мы знаем, на скорость работы с памятью играют частотат работы с памятью, размеры кеша и латентность.
 
@@ -472,14 +472,8 @@ x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f-(x[i]+g)*h+(x[i]+j)*k-(x[i]+l)*m+(x[i]+o
 | Pentium 4        | 355.81                    | 360.64                     | 328.44                      | 1,344.35                  | 1,315.37                   | 1,230.04                    | 1,867.60                   | 1,872.43                    | 1,875.65                     |
 
 
-MP MFLOPS, 2 операции, все процессоры
-![MP MFLOPS 2 ops/w](charts/mpmlops_all_cpu_2ops.svg "MP MFLOPS 2 ops/w")
-
-MP MFLOPS, 8 операций, все процессоры
-![MP MFLOPS 8 ops/w](charts/mpmlops_all_cpu_8ops.svg "MP MFLOPS 8 ops/w")
-
-MP MFLOPS, 32 операции, все процессоры
-![MP MFLOPS 32 ops/w](charts/mpmlops_all_cpu_32ops.svg "MP MFLOPS 32 ops/w")
+MP MFLOPS, все процессоры
+![MP MFLOPS](charts/mpmflops.svg "MP MFLOPS")
 
 Вот здесь процессоры Эльбрус показывают свою превосходство над всеми другими архитектурами: способность выполнять большое число операций за так (архитектура VLIW).
 Процессор 8СВ набирает 378 ГФлопс (Теоретически 576) на 32х операциях. Core i7-2600 - 82.6 ГФлопс.
