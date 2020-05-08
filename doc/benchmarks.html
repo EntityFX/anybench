@@ -367,17 +367,25 @@ code {
   </script>
 <h2 id="%D0%BF%D1%80%D0%B5%D0%B4%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5">Предисловие</h2>
 <p>Попытка сравнить производительность процессоров на разнородных архитектурах x86-64, e2k (Эльбрус), mips и arm.
-Все тесты написаны на языке C и компилируются под конкретную архитеткуру с использованием конкретного компилятора для данной архитеткуры и тесты производятся на различных дистрибутивах операционных систем на ядре Linux. На результаты может влиять как тип так и версия компилятора, а также режим оптимизаций. Хотя даже таким способом можно примерно сравнить производительность процессоров на разных архитектурах.</p>
-<h2 id="%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D1%82%D0%BA%D1%83%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BE%D0%B2">Описание архитеткур сравниваемых процессоров</h2>
-<h3 id="x86-ia32x86md64em64tintelamd">x86 (ia32/x86/md64/EM64T/Intel/AMD)</h3>
-<p><a href="https://ru.wikipedia.org/wiki/CISC">CISC</a></p>
+Все тесты написаны на языке C (взяты из исходных кодов, которые я не модифицировал и не оптимизировал) и компилируются под конкретную архитектуру с использованием конкретного компилятора для данной архитектуры и тесты производятся на различных дистрибутивах операционных систем на ядре Linux. На результаты может влиять как тип так и версия компилятора, а также режим оптимизаций. Хотя даже таким способом можно примерно сравнить производительность процессоров на разных архитектурах.</p>
+<p>P.S.: Знаю, что большинство тестов для очень старых компьютеров, но они работают везде. Что даже очень неплохо.</p>
+<h2 id="%D1%82%D0%B8%D0%BF%D1%8B-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BE%D0%B2">Типы архитектур сравниваемых процессоров</h2>
+<h3 id="cisc">CISC</h3>
+<p>CISC (Complex instruction set computing) - архитектура, в которой небольшой набор регистров, команды различной длинны, операции кодируются одной командой.</p>
+<h3 id="risc">RISC</h3>
+<p>RISC (Reduced instruction set computing) - процессорная архитектура, в которой инструкции упрощены и имеют фиксированную длину (например, 32 бита), что позволяет повысить производительность. Имеет большое число регистров.</p>
+<h3 id="vliw">VLIW</h3>
+<p>VLIW (very long instruction word) - архитектура процессоров с очень большой инструкцией. Одна инструкция содержит в себе много простых инструкций, которые могут исполняться разными блоками процессора. Всё это сильно упрощает архитектуру, но усложняет компилятор. Неэффективный код может порождать не полностью заполненные инструкции, что сильно снижает производительность программы.</p>
+<h2 id="%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80-%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D1%85-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D1%80%D0%BE%D0%B2">Описание архитектур сравниваемых процессоров</h2>
+<h3 id="x86-64-ia32x86i386amd64em64tintelamd">x86-64 (ia32/x86/i386/amd64/EM64T/Intel/AMD)</h3>
+<p>x86 - <a href="https://ru.wikipedia.org/wiki/CISC">CISC</a> архитектура, созданная компанией Intel, о которой знают все. Современный вариант архитектуры пошёл со времён 32-битного процессора Intel 386. Крупные игроки: Intel, AMD и VIA (а ещё тут появился какой-то Zhaoxin).</p>
 <h3 id="arm">ARM</h3>
-<p><a href="https://ru.wikipedia.org/wiki/RISC">RISC</a></p>
+<p>ARM - <a href="https://ru.wikipedia.org/wiki/RISC">RISC</a> архитектура разрабатываемая компанией <a href="https://ru.wikipedia.org/wiki/ARM_(%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F)">ARM Limited</a> с середины 80х годов. Текущие версии 32-битных ARM ядер: armv6 (ARM1136J(F)-S), armv7 (Cortex A9, Cortex A15), armv8 (CortexA53, CortexA57, Cortex A72 и выше). Процессоры данной архитектуры широко используются в мобильных телефонах, планшетах, встраиваемых устройствах, одноплатных компьютерах. Процессоры энергоэффективные и достаточно производительные.</p>
 <h3 id="mips">MIPS</h3>
-<p><a href="https://ru.wikipedia.org/wiki/RISC">RISC</a></p>
+<p>MIPS - <a href="https://ru.wikipedia.org/wiki/RISC">RISC</a> система команд и микропроцессорных архитектур, разработанных компанией MIPS Computer Systems. Процессоры данной архитектуры как и ARM используются в мобильных телефонах, планшетах, встраиваемых устройствах и т.д. Но почему-то больших объёмов устройств по сравнению с ARM она не достигла. Но процессоры на архитеткуре MIPS часто можно встретить в роутерах, ну и в медиа проигрывателях, а ещё она использовалась в процессоре приставки Play Station 1. Текущие реализации: 32-битная MIPS32 и 64-битная MIPS64.</p>
 <h3 id="e2k-elbrus-2000%D1%8D%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81">E2K (Elbrus 2000/Эльбрус)</h3>
 <p><a href="https://ru.wikipedia.org/wiki/VLIW">VLIW</a></p>
-<h2 id="%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2">Список бенчмарков</h2>
+<h2 id="%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2">Список тестов</h2>
 <ul>
 <li><a href="https://ru.wikipedia.org/wiki/Dhrystone">Dhrystone</a></li>
 <li><a href="https://ru.wikipedia.org/wiki/Whetstone">Whetstone</a></li>
@@ -390,37 +398,37 @@ code {
 </ul>
 <h3 id="dhrystone">Dhrystone</h3>
 <blockquote>
-<p>Dhrystone - синтетический бенчмарк, который был написан Reinhold P. Weicker в 1984 году.
-Данный бенчмарк не использует операции с плавающей запятой, а версия 2.1 написана так, чтобы исключить возможность сильных оптимизаций при компиляции.
+<p>Dhrystone - синтетический тест, который был написан Reinhold P. Weicker в 1984 году.
+Данный тест не использует операции с плавающей запятой, а версия 2.1 написана так, чтобы исключить возможность сильных оптимизаций при компиляции.
 Бенчмарк выдаёт результаты в VAX Dhrystones в секунду, где 1 VAX DMIPS = Dhrystones в секунду делить на 1757.</p>
 </blockquote>
 <h3 id="whetstone">Whetstone</h3>
 <blockquote>
-<p>Whetstone - синтетический бенчмарк, который был написан Harold Curnow в 1972 году на языке Fortran.
-Позже был переписан на языке C Roy Longbottom. Данныей бенчмарк выдаёт результаты в MWIPS,
-также промежуточные результаты в MOPS (Миллионов операций в секунду) и MFLOPS (Миллионы вещественных операций с плавующей запятой в секунду).
-Данный бенчмарк производит различне подсчёты: производительность целочисленных и операций с плавующей запятой,
-производительность операций с массивами, с условным оператором, производительность тригонометрических функций и функций возвдения в степень, логарифмов и извлечения корня.</p>
+<p>Whetstone - синтетический тест, который был написан Harold Curnow в 1972 году на языке Fortran.
+Позже был переписан на языке C Roy Longbottom. Данный тест выдаёт результаты в MWIPS,
+также промежуточные результаты в MOPS (Миллионов операций в секунду) и MFLOPS (Миллионы вещественных операций с плавающей запятой в секунду).
+Данный тест производит различне подсчёты: производительность целочисленных и операций с плавающей запятой,
+производительность операций с массивами, с условным оператором, производительность тригонометрических функций и функций возведения в степень, логарифмов и извлечения корня.</p>
 </blockquote>
-<p>Также мной был написан бенчмарк Whetstone на языках JS (Для тестирования браузера и NodeJS) и C# (Для тестирования Mono, .Net Framework и Dotnet Core), а также я нашёл реализацию на Java.</p>
+<p>Также мной был написан тест Whetstone на языках JS (Для тестирования браузера и NodeJS) и C# (Для тестирования Mono, .Net Framework и Dotnet Core), а также я нашёл реализацию на Java.</p>
 <blockquote>
 <p>Whetstone MP - многопоточный вариант Whetstone.</p>
 </blockquote>
 <h3 id="linpack">LINPACK</h3>
 <blockquote>
-<p>LINPACK - бенчмарк, который был написан Jack Dongarra на языке Fortran в 70х годах, позже переписан на язык C.
-Данный бенчмарк считает ситемы линейных уравнений, делает различные операции над двумерными (матрицами) и одномерными (векторами).
-Используется реализация Linpack 100x100 с числами типа float. Реализация бенчмарка хорошо используется для оценки производительности
+<p>LINPACK - тест, который был написан Jack Dongarra на языке Fortran в 70х годах, позже переписан на язык C.
+Тест считает системы линейных уравнений, делает различные операции над двумерными (матрицами) и одномерными (векторами).
+Используется реализация Linpack 100x100 с числами типа float. Реализация теста хорошо используется для оценки производительности
 различных суперкомпьютеров.</p>
 </blockquote>
 <h3 id="coremark">Coremark</h3>
 <blockquote>
-<p>Набор бенчмарков написанных на языке C. Создан в 2009 году Shay Gal-On из компании EEMBC
+<p>Набор тестов написанных на языке C. Создан в 2009 году Shay Gal-On из компании EEMBC
 Содержит реализации таких алгоритмов: обработка связных списков (поиск и сортировка), обработка матриц (несколько матричных операций), машина состояний (определение, что входной символьный поток содержит действительные числа в десятичной записи), подсчет суммы CRC.</p>
 </blockquote>
 <h3 id="memspeed">Memspeed</h3>
 <blockquote>
-<p>Memspeed - выполняет 3 различные операции, над 64 битными числами с плавающей запятой двойной точности, 32 битными с плавающей запятой одинарной точности and 32 битными целыми над 2мя массивами:</p>
+<p>Memspeed - выполняет 3 различные операции, над 64-битными числами с плавающей запятой двойной точности, 32-битными с плавающей запятой одинарной точности and 32-битными целыми над 2мя массивами:</p>
 <ul>
 <li>Сумма с регистром   r = r + x [m] * y[m] (Integer + y [m])</li>
 <li>Сумма в память      x[m] = x[m] + y[m]</li>
@@ -429,23 +437,28 @@ code {
 </blockquote>
 <h3 id="livermore-loops">Livermore Loops</h3>
 <blockquote>
-<p>Бенчмарк для суперкомпьютеров, появился в 1970, изначально содержал 14 тестов на языке Fortran. Далее тестов было увеличено до 24 в 1980'е. Производительность измеряется в Миллионах Операций Чисел с Плавающей Точкой в Секунду или  MFLOPS.
-Бенчмарк проверяет точно вычислений в конце. Основная цель - избежать простых операций над чилами, 24 теста выполняются 3 раза в цикле Do-loop и вычисляют производительность на короткими, средними и большими последовательностями чисел.</p>
+<p>тест для суперкомпьютеров, появился в 1970, изначально содержал 14 тестов на языке Fortran. Далее тестов было увеличено до 24 в 1980'е. Производительность измеряется в Миллионах Операций Чисел с Плавающей Точкой в Секунду или  MFLOPS.
+тест проверяет точно вычислений в конце. Основная цель - избежать простых операций над числами, 24 теста выполняются 3 раза в цикле Do-loop и вычисляют производительность на короткими, средними и большими последовательностями чисел.</p>
 </blockquote>
 <h3 id="mp-mflops">MP MFLOPS</h3>
+<blockquote>
+<p>MP MFLOPS - многопоточный тест, который считает большое число операций над большими массивами.
+Выполняет операцию вида <code>x[i] = (x[i] + a) * b - (x[i] + c) * d + (x[i] + e) * f</code> с 2, 8 или 32 на 1 инструкцию. Размер массива 0.1, 1 или 10 миллионов 4 байтовых слов с плавающей точкой с одинарной точностью.
+Грузит ваш процессор по полной.</p>
+</blockquote>
 <h3 id="scimark-2">Scimark 2</h3>
 <blockquote>
-<p>SciMark 2 - набор бенчмарков на языке C измеряющий производительность кода встречающегося в научных и профессиональных приложениях. Содержит в себе 5 вычислительных тестов: FFT (быстрое преобразование Фурье), Gauss-Seidel relaxation (Метод Гаусса — Зейделя для решения СЛАУ), Sparse matrix-multiply (Умножение разреженных матриц), Monte Carlo integration (Интегрирование методом Монте-Карло), и LU factorization (LU-разложение).</p>
+<p>SciMark 2 - набор тестов на языке C измеряющий производительность кода встречающегося в научных и профессиональных приложениях. Содержит в себе 5 вычислительных тестов: FFT (быстрое преобразование Фурье), Gauss-Seidel relaxation (Метод Гаусса — Зейделя для решения СЛАУ), Sparse matrix-multiply (Умножение разреженных матриц), Monte Carlo integration (Интегрирование методом Монте-Карло), и LU factorization (LU-разложение).</p>
 </blockquote>
 <h2 id="%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B8">Участники</h2>
-<p>Машины на процессорах x86 (i386) х86-64 (amd64):</p>
+<p>Стенды на процессорах x86 (i386) х86-64 (amd64):</p>
 <ul>
 <li><a href="https://ark.intel.com/content/www/us/en/ark/products/52213/intel-core-i7-2600-processor-8m-cache-up-to-3-80-ghz.html">Core i7-2600</a></li>
 <li><a href="http://www.cpu-world.com/CPUs/K10/AMD-A-Series%20A6-3650%20AD3650WNZ43GX%20(AD3650WNGXBOX).html">AMD A6-3650</a></li>
 <li><a href="https://ark.intel.com/content/www/us/en/ark/products/93361/intel-atom-x5-z8350-processor-2m-cache-up-to-1-92-ghz.html">Atom Z8350</a></li>
 <li><a href="https://ark.intel.com/content/www/us/en/ark/products/35562/intel-core-2-duo-processor-t9400-6m-cache-2-53-ghz-1066-mhz-fsb.html">Core 2 Duo T9400</a></li>
 </ul>
-<p>Машины на процессорах armv6 (armel), armv7 (armhf), armv8 (aarch64):</p>
+<p>Стенды на процессорах armv6 (armel), armv7 (armhf), armv8 (aarch64):</p>
 <ul>
 <li><a href="https://wiki.odroid.com/odroid-n2/hardware">Odroid N2 (Amlogic S922X)</a></li>
 <li>Odroid X2 (Samsung Exynos 4412)</li>
@@ -455,7 +468,7 @@ code {
 <li><a href="https://www.raspberrypi.org/products/raspberry-pi-1-model-b-plus/">Raspberry PI (Broadcom BCM2835)</a></li>
 <li><a href="https://en.wikichip.org/wiki/annapurna_labs/alpine/al73400">AWS Graviton (Alpine AL73400)</a></li>
 </ul>
-<p>Машины на процессорах e2k (Elbrus 2000) (v3, v4, v5):</p>
+<p>Стенды на процессорах e2k (Elbrus 2000) (v3, v4, v5):</p>
 <ul>
 <li><a href="http://www.mcst.ru/elbrus-8c">E8C-SWTX (Elbrus 8C)</a></li>
 <li><a href="http://www.ineum.ru/elbrus_804_1u0">E8C-E8C4 (Elbrus 8C x4 cpu)</a></li>
@@ -464,15 +477,15 @@ code {
 <li><a href="http://www.ineum.ru/vk-elbrus-401pc">E2S-PC401 (Elbrus 4C)</a></li>
 <li><a href="http://www.ineum.ru/elbrus_101-pc">MBE1C-PC (Elbrus 1C+)</a></li>
 </ul>
-<p>Машины на процессорах  mips :</p>
+<p>Стенды на процессорах MIPS :</p>
 <ul>
 <li><a href="http://www.baikalelectronics.ru/products/35/">Baikal T1 BFK</a></li>
 </ul>
-<h3 id="%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-%D1%81%D0%BE-%D0%B2%D1%81%D0%B5%D0%BC%D0%B8-%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8">Таблица со всеми участниками</h3>
+<h3 id="%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0-%D1%81-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%BC%D0%B8-%D1%81%D1%82%D0%B5%D0%BD%D0%B4%D0%B0%D0%BC%D0%B8">Таблица с тестовыми стендами</h3>
 <table>
 <thead>
 <tr>
-<th>Платформа</th>
+<th>Стенд</th>
 <th>Модель процессора</th>
 <th>Всего ядер (потоков)</th>
 <th>Частота (МГц)</th>
@@ -630,428 +643,1564 @@ code {
 </tbody>
 </table>
 <h2 id="%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BE%D0%B2">Настройки компиляторов</h2>
-<h2 id="%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%B1%D0%B5%D0%BD%D1%87%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%D0%B2">Результаты бенчмарков</h2>
-<h3 id="dhrystone">Dhrystone</h3>
+<p>Для всех тестов пробовались разные комбинации флагов, для того чтобы определить наилучшее значение тестов.</p>
 <table>
 <thead>
 <tr>
-<th>Platform</th>
-<th>Dhrystones (VAX MIPS rating)</th>
+<th>Компилятор</th>
+<th>Флаги</th>
+<th>Архитектура</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Core i7-2600</td>
-<td>22076.97</td>
+<td>gcc</td>
+<td>-O2, -O3, -Ofast; -march</td>
+<td>X86-64</td>
 </tr>
 <tr>
-<td>Core 2 Duo T9400</td>
-<td>13308</td>
+<td>gcc</td>
+<td>-O2, -O3, -Ofast, -mfpu=neon; -march</td>
+<td>ARM</td>
 </tr>
 <tr>
-<td>AMD A6-3650</td>
-<td>11455.81</td>
-</tr>
-<tr>
-<td>Atom Z8350</td>
-<td>4677.3</td>
-</tr>
-<tr>
-<td>Raspberry PI</td>
-<td>847</td>
-</tr>
-<tr>
-<td>AWS Graviton</td>
-<td>11377.63</td>
-</tr>
-<tr>
-<td>Odroid N2</td>
-<td>8230</td>
-</tr>
-<tr>
-<td>Odroid X2</td>
-<td>4495.03</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>2949.12</td>
-</tr>
-<tr>
-<td>Raspberry PI 3</td>
-<td>2469</td>
-</tr>
-<tr>
-<td>Orange Pi Win</td>
-<td>2370</td>
-</tr>
-<tr>
-<td>E8C-SWTX</td>
-<td>5865.19</td>
-</tr>
-<tr>
-<td>E8C-E8C4</td>
-<td>5844.82</td>
-</tr>
-<tr>
-<td>E8C2-1550</td>
-<td>5357.4528</td>
-</tr>
-<tr>
-<td>E8C2-1200</td>
-<td>3554.46</td>
-</tr>
-<tr>
-<td>E2S-EL2S4</td>
-<td>3329.51</td>
-</tr>
-<tr>
-<td>E2S-PC401</td>
-<td>3548.8</td>
-</tr>
-<tr>
-<td>MBE1C-PC</td>
-<td>4302.53</td>
-</tr>
-<tr>
-<td>Pentium 4</td>
-<td>4012</td>
-</tr>
-<tr>
-<td>Pentium III</td>
-<td>1595</td>
-</tr>
-<tr>
-<td>Baikal T1 BFK</td>
-<td>3650</td>
+<td>lcc</td>
+<td>-O2, -O3, -O4, -ffast -fwhole; -march</td>
+<td>E2K</td>
 </tr>
 </tbody>
 </table>
-<p>Dhrystone Benchmark, все процессоры
-<img src="charts/dhrystone_all_cpu.svg" alt="Dhrystone Benchmark, Version 2.1" title="Dhrystone Benchmark, Version 2.1"></p>
-<p>Dhrystone Benchmark, x86-64 и e2k процессоры
-<img src="charts/dhrystone_x86_e2k_cpu.svg" alt="Dhrystone Benchmark, Version 2.1" title="Dhrystone Benchmark, Version 2.1"></p>
-<h3 id="whetsone">Whetsone</h3>
+<h2 id="%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2">Результаты тестов</h2>
+<h3 id="dhrystone">Dhrystone</h3>
+<p>Таблица с результатами Dhrystone в 1 поток:</p>
 <table>
 <thead>
 <tr>
 <th>Platform</th>
-<th>MWIPS</th>
-<th>MWIPS (multicore)</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Architecture</th>
+<th>Dhrystones (VAX)</th>
+<th>Dhrystones/MHz</th>
+<th>Relative to Core i7-2600</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Core i7-2600</td>
-<td>5729.52</td>
-<td>31319.00</td>
-</tr>
-<tr>
-<td>Core 2 Duo T9400</td>
-<td>2910.33</td>
-<td>5195.00</td>
-</tr>
-<tr>
-<td>AMD A6-3650</td>
-<td>3718.16</td>
-<td>12113.00</td>
-</tr>
-<tr>
-<td>Atom Z8350</td>
-<td>2085.24</td>
-<td>6636.00</td>
-</tr>
-<tr>
 <td>Raspberry PI</td>
-<td>270.50</td>
-<td>270.50</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>arm</td>
+<td>847,00</td>
+<td>1,21</td>
+<td>0,04</td>
 </tr>
 <tr>
-<td>AWS Graviton</td>
-<td>2851.80</td>
-<td>44741.00</td>
-</tr>
-<tr>
-<td>Odroid N2</td>
-<td>2136.98</td>
-<td>9931.00</td>
-</tr>
-<tr>
-<td>Odroid X2</td>
-<td>1305.16</td>
-<td>4291.00</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>980.26</td>
-<td>3798.00</td>
-</tr>
-<tr>
-<td>Raspberry PI 3</td>
-<td>997.20</td>
-<td>2779.80</td>
-</tr>
-<tr>
-<td>Orange Pi Win</td>
-<td>700.60</td>
-<td>1854.00</td>
-</tr>
-<tr>
-<td>E8C-SWTX</td>
-<td>1517.62</td>
-<td>12980.00</td>
-</tr>
-<tr>
-<td>E8C-E8C4</td>
-<td>1647.51</td>
-<td>53563.00</td>
-</tr>
-<tr>
-<td>E8C2-1550</td>
-<td>1703.75</td>
-<td>14571.94</td>
-</tr>
-<tr>
-<td>E8C2-1200</td>
-<td>1545.92</td>
-<td>12420.00</td>
-</tr>
-<tr>
-<td>E2S-EL2S4</td>
-<td>970.80</td>
-<td>15790.00</td>
-</tr>
-<tr>
-<td>E2S-PC401</td>
-<td>938.12</td>
-<td>2455.00</td>
-</tr>
-<tr>
-<td>MBE1C-PC</td>
-<td>1277.55</td>
-<td>1312.00</td>
-</tr>
-<tr>
-<td>Pentium 4</td>
-<td>1119.00</td>
-<td>1119.00</td>
+<td>Pentium M725</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>i386</td>
+<td>1 085,68</td>
+<td>0,68</td>
+<td>0,05</td>
 </tr>
 <tr>
 <td>Pentium III</td>
-<td>816.00</td>
-<td>816.00</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>i386</td>
+<td>1 595,00</td>
+<td>1,60</td>
+<td>0,07</td>
+</tr>
+<tr>
+<td>Orange Pi Win</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>aarch64</td>
+<td>2 370,00</td>
+<td>1,76</td>
+<td>0,11</td>
+</tr>
+<tr>
+<td>Raspberry PI 3</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>aarch64</td>
+<td>2 469,00</td>
+<td>2,06</td>
+<td>0,11</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>e2k</td>
+<td>2 471,97</td>
+<td>1,65</td>
+<td>0,11</td>
+</tr>
+<tr>
+<td>Orange Pi PC2</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>aarch64</td>
+<td>2 949,12</td>
+<td>2,56</td>
+<td>0,13</td>
+</tr>
+<tr>
+<td>E2S-EL2S4</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>e2k</td>
+<td>3 329,51</td>
+<td>4,44</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td>E2S-PC401</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>e2k</td>
+<td>3 548,80</td>
+<td>4,44</td>
+<td>0,16</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>e2k</td>
+<td>3 554,46</td>
+<td>2,96</td>
+<td>0,16</td>
 </tr>
 <tr>
 <td>Baikal T1 BFK</td>
-<td>613.50</td>
-<td>1227.00</td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>mips</td>
+<td>3 650,00</td>
+<td>3,04</td>
+<td>0,17</td>
+</tr>
+<tr>
+<td>Pentium 4</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>i386</td>
+<td>4 012,00</td>
+<td>1,31</td>
+<td>0,18</td>
+</tr>
+<tr>
+<td>MBE1C-PC</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>4 302,53</td>
+<td>4,37</td>
+<td>0,19</td>
+</tr>
+<tr>
+<td>Odroid X2</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>4 495,03</td>
+<td>2,64</td>
+<td>0,20</td>
+</tr>
+<tr>
+<td>Atom Z8350</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>amd64</td>
+<td>4 677,30</td>
+<td>3,25</td>
+<td>0,21</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>e2k</td>
+<td>5 357,45</td>
+<td>3,46</td>
+<td>0,24</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>5 844,82</td>
+<td>4,50</td>
+<td>0,26</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>5 865,19</td>
+<td>4,51</td>
+<td>0,27</td>
+</tr>
+<tr>
+<td>Odroid N2</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>aarch64</td>
+<td>8 230,00</td>
+<td>4,57</td>
+<td>0,37</td>
+</tr>
+<tr>
+<td>E16C-APPROX*</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>e2k</td>
+<td>9 023,37</td>
+<td>4,51</td>
+<td>0,41</td>
+</tr>
+<tr>
+<td>Core i3-m330</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>amd64</td>
+<td>10 919,40</td>
+<td>5,12</td>
+<td>0,49</td>
+</tr>
+<tr>
+<td>AWS Graviton</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>aarch64</td>
+<td>11 377,63</td>
+<td>4,95</td>
+<td>0,52</td>
+</tr>
+<tr>
+<td>AMD A6-3650</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>11 455,81</td>
+<td>4,41</td>
+<td>0,52</td>
+</tr>
+<tr>
+<td>Core 2 Duo T9400</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>13 308,91</td>
+<td>5,26</td>
+<td>0,60</td>
+</tr>
+<tr>
+<td>Core i7-2600</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>22 076,97</td>
+<td>6,49</td>
+<td>1,00</td>
+</tr>
+<tr>
+<td>Core i7-4700MQ</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>amd64</td>
+<td>22987,48</td>
+<td>9,58</td>
+<td>1,04</td>
+</tr>
+<tr>
+<td>Xeon 6128</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>amd64</td>
+<td>25 195,31</td>
+<td>7,41</td>
+<td>1,14</td>
+</tr>
+</tbody>
+</table>
+<pre><code>                    |
+</code></pre>
+<p>Dhrystone, все процессоры:
+<img src="charts/dhrystones.svg" alt="Dhrystone Benchmark, Version 2.1" title="Dhrystone Benchmark, Version 2.1"></p>
+<p>Dhrystone, на 1 МГц:
+<img src="charts/dhrystones_per_mhz.svg" alt="Dhrystone Benchmark, Version 2.1, Per 1 MHz" title="Dhrystone Benchmark, Version 2.1, Per 1 MHz"></p>
+<p>Dhrystone, относительно Core i7-2600:
+<img src="charts/dhrystones_relative.svg" alt="Dhrystone Benchmark, Version 2.1, Relative" title="Dhrystone Benchmark, Version 2.1, Relative"></p>
+<p>Здесь видно, что в тесте Dhrystone процессоры x86 заметно быстрее arm и Эльбрус процессоров. Производительность 1 ядра Эльбрус 8С (E8C) сравнима с ядром Cortex A72, если сравнивать относительно Dhrystones на 1 МГц, Эльбрус 8С чуть быстрее Atom Z8350 относительно Dhrystones на 1 МГц. Производительность Baikal T1 сравнима с ядром Arm Cortex A9. Странно себя показал Эльбрус 8СВ, который с большой частотой оказался медленнее Эльбрус 8С. В МЦСТ мне ответили, что этот экземпляр тестовый и компилятор немного не доработан под данную версию, возможно с другим экземпляром тесты окажутся гораздо лучше.</p>
+<h3 id="whetstone">Whetstone</h3>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Architecture</th>
+<th>MWIPS</th>
+<th>MWIPS MP</th>
+<th>MWIPS/MHz/Core</th>
+<th>MWIPS MP/MHz</th>
+<th>Relative to Core i7-2600</th>
+<th>Relative to Core i7-2600 (mp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xeon 6128</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>amd64</td>
+<td>5 850,41</td>
+<td>123854</td>
+<td>1,72</td>
+<td>36,43</td>
+<td>1,02</td>
+<td>3,95</td>
+</tr>
+<tr>
+<td>Core i7-4700MQ</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>amd64</td>
+<td>5326,899</td>
+<td>35234</td>
+<td>2,22</td>
+<td>14,68</td>
+<td>0,93</td>
+<td>1,13</td>
+</tr>
+<tr>
+<td>Core i7-2600</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>5 729,52</td>
+<td>31319</td>
+<td>1,69</td>
+<td>9,21</td>
+<td>1,00</td>
+<td>1,00</td>
+</tr>
+<tr>
+<td>Core 2 Duo T9400</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>2 910,33</td>
+<td>5195</td>
+<td>1,15</td>
+<td>2,05</td>
+<td>0,51</td>
+<td>0,17</td>
+</tr>
+<tr>
+<td>Core i3-m330</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>amd64</td>
+<td>2 824,97</td>
+<td>8837</td>
+<td>1,32</td>
+<td>4,14</td>
+<td>0,49</td>
+<td>0,28</td>
+</tr>
+<tr>
+<td>Atom Z8350</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>amd64</td>
+<td>2 085,24</td>
+<td>6636</td>
+<td>1,45</td>
+<td>4,61</td>
+<td>0,36</td>
+<td>0,21</td>
+</tr>
+<tr>
+<td>AMD A6-3650</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>3 718,16</td>
+<td>12113</td>
+<td>1,43</td>
+<td>4,66</td>
+<td>0,65</td>
+<td>0,39</td>
+</tr>
+<tr>
+<td>Pentium M725</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>i386</td>
+<td>506,94</td>
+<td>506,94</td>
+<td>0,32</td>
+<td>0,32</td>
+<td>0,09</td>
+<td>0,02</td>
+</tr>
+<tr>
+<td>Pentium 4</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>i386</td>
+<td>1 119,00</td>
+<td>1119</td>
+<td>0,36</td>
+<td>0,36</td>
+<td>0,20</td>
+<td>0,04</td>
+</tr>
+<tr>
+<td>Pentium III</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>i386</td>
+<td>816,00</td>
+<td>816</td>
+<td>0,82</td>
+<td>0,82</td>
+<td>0,14</td>
+<td>0,03</td>
+</tr>
+<tr>
+<td>AWS Graviton</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>aarch64</td>
+<td>2 851,80</td>
+<td>44741</td>
+<td>1,24</td>
+<td>19,45</td>
+<td>0,50</td>
+<td>1,43</td>
+</tr>
+<tr>
+<td>Odroid N2</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>aarch64</td>
+<td>2 136,98</td>
+<td>9931</td>
+<td>1,19</td>
+<td>5,52</td>
+<td>0,37</td>
+<td>0,32</td>
+</tr>
+<tr>
+<td>Odroid X2</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>1 305,16</td>
+<td>4291</td>
+<td>0,77</td>
+<td>2,52</td>
+<td>0,23</td>
+<td>0,14</td>
+</tr>
+<tr>
+<td>Orange Pi PC2</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>aarch64</td>
+<td>980,26</td>
+<td>3798</td>
+<td>0,85</td>
+<td>3,30</td>
+<td>0,17</td>
+<td>0,12</td>
+</tr>
+<tr>
+<td>Orange Pi Win</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>aarch64</td>
+<td>700,60</td>
+<td>1854</td>
+<td>0,52</td>
+<td>1,38</td>
+<td>0,12</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td>Raspberry PI 3</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>aarch64</td>
+<td>997,20</td>
+<td>2779,8</td>
+<td>0,83</td>
+<td>2,32</td>
+<td>0,17</td>
+<td>0,09</td>
+</tr>
+<tr>
+<td>Raspberry PI</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>arm</td>
+<td>270,50</td>
+<td>270,5</td>
+<td>0,39</td>
+<td>0,39</td>
+<td>0,05</td>
+<td>0,01</td>
+</tr>
+<tr>
+<td>E16C-APPROX*</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>e2k</td>
+<td>2 198,39</td>
+<td>37605,0064516129</td>
+<td>1,10</td>
+<td>18,80</td>
+<td>0,38</td>
+<td>1,20</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>e2k</td>
+<td>1 703,75</td>
+<td>14571,94</td>
+<td>1,10</td>
+<td>9,40</td>
+<td>0,30</td>
+<td>0,47</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>e2k</td>
+<td>1 703,75</td>
+<td>14571,94</td>
+<td>1,14</td>
+<td>9,71</td>
+<td>0,30</td>
+<td>0,47</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>e2k</td>
+<td>1 545,92</td>
+<td>12420</td>
+<td>1,29</td>
+<td>10,35</td>
+<td>0,27</td>
+<td>0,40</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>1 517,62</td>
+<td>12980</td>
+<td>1,17</td>
+<td>9,98</td>
+<td>0,26</td>
+<td>0,41</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>1 647,51</td>
+<td>53563</td>
+<td>1,27</td>
+<td>41,20</td>
+<td>0,29</td>
+<td>1,71</td>
+</tr>
+<tr>
+<td>E2S-EL2S4</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>e2k</td>
+<td>970,80</td>
+<td>15790</td>
+<td>1,29</td>
+<td>21,05</td>
+<td>0,17</td>
+<td>0,50</td>
+</tr>
+<tr>
+<td>E2S-PC401</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>e2k</td>
+<td>938,12</td>
+<td>2455</td>
+<td>1,17</td>
+<td>3,07</td>
+<td>0,16</td>
+<td>0,08</td>
+</tr>
+<tr>
+<td>MBE1C-PC</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>1 277,55</td>
+<td>1312</td>
+<td>1,30</td>
+<td>1,33</td>
+<td>0,22</td>
+<td>0,04</td>
+</tr>
+<tr>
+<td>Baikal T1 BFK</td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>mips</td>
+<td>613,50</td>
+<td>1227</td>
+<td>0,51</td>
+<td>1,02</td>
+<td>0,11</td>
+<td>0,04</td>
 </tr>
 </tbody>
 </table>
 <p>Whetstone Single Precision, все процессоры
-<img src="charts/whetstone_all_cpu.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision"></p>
-<p>Whetstone Single Precision, x86-64 и e2k процессоры
-<img src="charts/whetstone_some_cpu.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision"></p>
-<p>Whetstone Single Precision, однопоточные результаты, x86-64 и e2k процессоры
-<img src="charts/whetstone_some_cpu_singlecore.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision Single Thread"></p>
-<p>Whetstone Single Precision, многопоточные результаты, x86-64 и e2k процессоры
-<img src="charts/whetstone_some_cpu_multicore.svg" alt="MP Whetstone Precision Multi Core" title="MP Whetstone Precision Multi Thread"></p>
-<h3 id="linpack">LINPACK</h3>
+<img src="charts/whetstones.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision"></p>
+<p>Whetstone Single Precision, на 1 МГц
+<img src="charts/whetstones_per_mhz.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision, Per 1 MHz"></p>
+<p>Whetstone Single Precision, относительно Core i7-2600
+<img src="charts/whetstones_relative.svg" alt="Whetstone Single Precision" title="Whetstone Single Precision Single Thread Relative"></p>
+<p>Whetstone Single Precision, многопоточные результаты
+<img src="charts/whetstones_mp.svg" alt="MP Whetstone Precision Multi Core" title="MP Whetstone Precision Multi Thread"></p>
+<p>Whetstone Single Precision, многопоточные результаты, на 1 МГц
+<img src="charts/whetstones_per_mhz.svg" alt="MP Whetstone Precision Multi Core, Per 1 MHz" title="MP Whetstone Precision Multi Thread, Per 1 MHz"></p>
+<p>Whetstone Single Precision, многопоточные результаты, относительно Core i7-2600
+<img src="charts/whetstones_relative.svg" alt="MP Whetstone Precision Multi Core Relative" title="MP Whetstone Precision Multi Thread Relative"></p>
+<p>Мы видим, что процессоры ARM v7 на архитектуре ядра Cortex A9 сопоставимы с процессорами Pentium III, если сравнивать частоту на 1 Мгц.
+Далее, процессоры ARM v8 на архитектуре ядра Cortex A72 сравнимы с процессорами Core 2 Duo T9400 на 1 ядро и 1 МГц, но немного не дотягивают
+до Atom Z8350. А ещё очень хорошо видно, что архитектура процессора Pentium 4 (NetBurst) была очень слабой и чтобы им быть более
+менее производительными, нужно было иметь высокую частоту (Pentium III был более производительным на 1 МГц).
+Все процессоры Эльбрус сопоставимы с Core 2 Duo T9400 на 1 ядро и относительно 1 МГц и ARM v7 Cortex A72, что уже лучше.</p>
+<h4 id="whetstone-%D1%80%D0%B0%D0%B7%D0%BD%D1%8B%D0%B5-%D1%80%D0%B0%D0%BD%D1%82%D0%B0%D0%B9%D0%BC%D1%8B-%D0%B8-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B8-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Whetstone: разные рантаймы и языки программирования</h4>
 <table>
 <thead>
 <tr>
 <th>Platform</th>
-<th>Mflops</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Architecture</th>
+<th>MWIPS</th>
+<th>MWIPS MP</th>
+<th>MWIPS mono</th>
+<th>MWIPS netcore</th>
+<th>MWIPS java</th>
+<th>MWIPS js</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Core i7-2600</td>
-<td>4302.89</td>
-</tr>
-<tr>
-<td>Core 2 Duo T9400</td>
-<td>1816.02</td>
-</tr>
-<tr>
-<td>AMD A6-3650</td>
-<td>1750.03</td>
-</tr>
-<tr>
-<td>Atom Z8350</td>
-<td>1021.44</td>
-</tr>
-<tr>
-<td>Raspberry PI</td>
-<td>42</td>
-</tr>
-<tr>
-<td>AWS Graviton</td>
-<td>1548.65</td>
-</tr>
-<tr>
-<td>Odroid N2</td>
-<td>845.09</td>
-</tr>
-<tr>
-<td>Odroid X2</td>
-<td>268.73</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>163.44</td>
-</tr>
-<tr>
-<td>Raspberry PI 3</td>
-<td>180</td>
+<td>MBE1C-PC</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>1 277,55</td>
+<td>1312</td>
+<td>388,32</td>
+<td></td>
+<td>390,89</td>
+<td></td>
 </tr>
 <tr>
 <td>Orange Pi Win</td>
-<td>174.04</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>aarch64</td>
+<td>700,60</td>
+<td>1854</td>
+<td></td>
+<td>359,00</td>
+<td></td>
+<td>102,18</td>
+</tr>
+<tr>
+<td>Raspberry PI 3</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>aarch64</td>
+<td>997,20</td>
+<td>2779,8</td>
+<td></td>
+<td></td>
+<td>183,43</td>
+<td></td>
+</tr>
+<tr>
+<td>Orange Pi PC2</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>aarch64</td>
+<td>980,26</td>
+<td>3798</td>
+<td>349,36</td>
+<td>400,24</td>
+<td></td>
+<td>172,81</td>
+</tr>
+<tr>
+<td>Odroid X2</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>1 305,16</td>
+<td>4291</td>
+<td>256,84</td>
+<td>650,11</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Core 2 Duo T9400</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>2 910,33</td>
+<td>5195</td>
+<td>1 565,27</td>
+<td>1 992,41</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AMD A6-3650</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>3 718,16</td>
+<td>12113</td>
+<td>1 607,52</td>
+<td>1 823,62</td>
+<td>2 127,90</td>
+<td>2098,08</td>
 </tr>
 <tr>
 <td>E8C-SWTX</td>
-<td>1075.27</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>1 517,62</td>
+<td>12980</td>
+<td>522,99</td>
+<td></td>
+<td>1036,59</td>
+<td>35,3</td>
+</tr>
+<tr>
+<td>Core i7-2600</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>5 729,52</td>
+<td>31319</td>
+<td>2 751,55</td>
+<td>3 262,26</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>E8C-E8C4</td>
-<td>1089.02</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>1 647,51</td>
+<td>53563</td>
+<td>521,70</td>
+<td></td>
+<td>1022,26</td>
+<td>35,1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="linpack-100x100-dp-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9">LINPACK 100x100 DP (однопоточный)</h3>
+<p>Существуют LINPACK 1000x1000, High Performance LINPACK, LINPACK 100x100.
+Но был выбран LINPACK 100x100 DP, почему? Причина проста: данный тест легко собирается на разных архитектурах и время тестирования очень небольшое.</p>
+<p>И тут сразу переходим к результатам тестирования:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>FIELD2</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Per MHz</th>
+<th>Relative</th>
+<th>Relative (MHz)</th>
+<th>Architecture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xeon 6128</td>
+<td>6 105,95</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>1,80</td>
+<td>1,24</td>
+<td>0,88</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>E8C2-1550</td>
-<td>1257.2375</td>
+<td>Core i7-4700MQ</td>
+<td>4 915,84</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>2,05</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>E8C2-1200</td>
-<td>1005.79</td>
+<td>Core i7-2600</td>
+<td>4 302,89</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>1,27</td>
+<td>0,88</td>
+<td>0,62</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>E2S-EL2S4</td>
-<td>632.51</td>
+<td>Core 2 Duo T9400</td>
+<td>1 816,02</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>0,72</td>
+<td>0,37</td>
+<td>0,35</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>E2S-PC401</td>
-<td>674.67</td>
+<td>Core i3-m330</td>
+<td>2 155,62</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>1,01</td>
+<td>0,44</td>
+<td>0,49</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>MBE1C-PC</td>
-<td>814.76</td>
+<td>Atom Z8350</td>
+<td>1 021,44</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>0,71</td>
+<td>0,21</td>
+<td>0,35</td>
+<td>amd64</td>
+</tr>
+<tr>
+<td>AMD A6-3650</td>
+<td>1 750,03</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>0,67</td>
+<td>0,36</td>
+<td>0,33</td>
+<td>amd64</td>
+</tr>
+<tr>
+<td>Pentium M725</td>
+<td>338,82</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>0,21</td>
+<td>0,07</td>
+<td>0,10</td>
+<td>i386</td>
 </tr>
 <tr>
 <td>Pentium 4</td>
-<td>840.27</td>
+<td>840,27</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>0,27</td>
+<td>0,17</td>
+<td>0,13</td>
+<td>i386</td>
 </tr>
 <tr>
 <td>Pentium III</td>
-<td>316.67</td>
+<td>316,67</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>0,32</td>
+<td>0,06</td>
+<td>0,15</td>
+<td>i386</td>
+</tr>
+<tr>
+<td>AWS Graviton</td>
+<td>1 548,65</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>0,67</td>
+<td>0,32</td>
+<td>0,33</td>
+<td>aarch64</td>
+</tr>
+<tr>
+<td>Odroid N2</td>
+<td>845,09</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>0,47</td>
+<td>0,17</td>
+<td>0,23</td>
+<td>aarch64</td>
+</tr>
+<tr>
+<td>Odroid X2</td>
+<td>268,73</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>0,16</td>
+<td>0,05</td>
+<td>0,08</td>
+<td>arm</td>
+</tr>
+<tr>
+<td>Orange Pi PC2</td>
+<td>163,44</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>0,14</td>
+<td>0,03</td>
+<td>0,07</td>
+<td>aarch64</td>
+</tr>
+<tr>
+<td>Orange Pi Win</td>
+<td>174,04</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>0,13</td>
+<td>0,04</td>
+<td>0,06</td>
+<td>aarch64</td>
+</tr>
+<tr>
+<td>Raspberry PI 3</td>
+<td>180,00</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>0,15</td>
+<td>0,04</td>
+<td>0,07</td>
+<td>aarch64</td>
+</tr>
+<tr>
+<td>Raspberry PI</td>
+<td>42,00</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>0,06</td>
+<td>0,01</td>
+<td>0,03</td>
+<td>arm</td>
+</tr>
+<tr>
+<td>E16C-APPROX</td>
+<td>1 675,42</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>0,84</td>
+<td>0,34</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>1 269,79</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>0,82</td>
+<td>0,26</td>
+<td>0,40</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>1 257,24</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>0,84</td>
+<td>0,26</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>1 005,79</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>0,84</td>
+<td>0,20</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>1 075,27</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>0,83</td>
+<td>0,22</td>
+<td>0,40</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>1 089,02</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>0,84</td>
+<td>0,22</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E2S-EL2S4</td>
+<td>632,51</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>0,84</td>
+<td>0,13</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E2S-PC401</td>
+<td>674,68</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>0,84</td>
+<td>0,14</td>
+<td>0,41</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>MBE1C-PC</td>
+<td>814,76</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>0,83</td>
+<td>0,17</td>
+<td>0,40</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>Baikal T1 BFK</td>
+<td></td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>0,00</td>
+<td>0,00</td>
+<td>0,00</td>
+<td>mips</td>
 </tr>
 </tbody>
 </table>
 <p>LINPACK 100x100 Double Precision, все процессоры
-<img src="charts/linpack_100_dp_all_cpu.svg" alt="Linpack  100x100 Double Precision" title="Linpack  100x100 Double Precision"></p>
+<img src="charts/linpack.svg" alt="Linpack 100x100 Double Precision" title="Linpack 100x100 Double Precision"></p>
+<p>LINPACK 100x100 Double Precision, на 1 МГц
+<img src="charts/linpack_per_mhz.svg" alt="Linpack 100x100 Double Precision, Per 1 MHz" title="Linpack 100x100 Double Precision, Per 1 MHz"></p>
+<p>LINPACK 100x100 Double Precision, относительно Core i7-2600
+<img src="charts/linpack_relative.svg" alt="Linpack 100x100 Double Precision, Relative to Core i7-2600" title="Linpack 100x100 Double Precision, Relative to Core i7-2600"></p>
+<p>Cнова сравним  Mflops'ы на 1 МГц на 1 ядро.</p>
+<p>Ядра ARM v7 Cortex A9 (Odroid X2), ARM v8 Cortex A53 (Raspberry PI 3, Orange Pi Win, Orange Pi PC2 ) показывают слабый результат, даже слабее Pentium III, что даже кажется немного странным. Ядра ARM v8 Cortex A72 (Odroid N2, AWS Graviton [Alpine AL73400]) держатся почти на уровне Core 2 Duo T9400 и Atom Z8350 и это отлично.</p>
+<p>Эльбрусы E2K (Все модели: E1C+, E4C, E8C1, E8C2 ) показывают одинаковый результат и сильно обгоняют ARM процессоры, даже ядра Cortex A72, но проигрывают в 1,5 - 2 раза современным процессорам Intel, хотя они обгоняют AMD A6-3650 и Core 2 Duo T9400. Эльбрусам не хватает высокой тактовой частоты, чтобы приблизиться к процессорам Intel.</p>
 <h3 id="coremark">Coremark</h3>
 <table>
 <thead>
 <tr>
 <th>Platform</th>
-<th>Coremark (single thread)</th>
-<th>Coremark (multi thread)</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Architecture</th>
+<th>Coremark</th>
+<th>Coremark (multithread)</th>
+<th>Coremark/MHz/Core</th>
+<th>Coremark/MHz</th>
+<th>Relative to Core i7-2600</th>
+<th>Relative to Core i7-2600 (mp)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Xeon 6128</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>amd64</td>
+<td>28 210,73</td>
+<td>670 625,22</td>
+<td>0,04</td>
+<td>1,00</td>
+<td>1,16</td>
+<td>5,44</td>
+</tr>
+<tr>
+<td>Core i7-4700MQ</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>amd64</td>
+<td>24 295,43</td>
+<td>123 260,23</td>
+<td>0,20</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>1,00</td>
+</tr>
+<tr>
 <td>Core i7-2600</td>
-<td>22692.889561</td>
-<td>119670.905011</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>22 692,89</td>
+<td>119 670,91</td>
+<td>0,19</td>
+<td>1,00</td>
+<td>0,93</td>
+<td>0,97</td>
 </tr>
 <tr>
 <td>Core 2 Duo T9400</td>
-<td>12481.278083</td>
-<td>23950.661637</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>12 481,28</td>
+<td>23 950,66</td>
+<td>0,52</td>
+<td>1,00</td>
+<td>0,51</td>
+<td>0,19</td>
 </tr>
 <tr>
-<td>AMD A6-3650</td>
-<td>11810.558639</td>
-<td>41666.666667</td>
+<td>Core i3-m330</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>amd64</td>
+<td>9 980,95</td>
+<td>24 252,71</td>
+<td>0,41</td>
+<td>1,00</td>
+<td>0,41</td>
+<td>0,20</td>
 </tr>
 <tr>
 <td>Atom Z8350</td>
-<td>6893.094373</td>
-<td>23814.678502</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>amd64</td>
+<td>6 893,09</td>
+<td>23 814,68</td>
+<td>0,29</td>
+<td>1,00</td>
+<td>0,28</td>
+<td>0,19</td>
 </tr>
 <tr>
-<td>Raspberry PI</td>
-<td>1303.78</td>
-<td>1303.78</td>
+<td>AMD A6-3650</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>11 810,56</td>
+<td>41 666,67</td>
+<td>0,28</td>
+<td>1,00</td>
+<td>0,49</td>
+<td>0,34</td>
 </tr>
 <tr>
-<td>Odroid X2</td>
-<td>6109.074753</td>
-<td>24162.548051</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>3869.719445</td>
-<td>14901.279026</td>
-</tr>
-<tr>
-<td>Raspberry PI 3</td>
-<td>3841</td>
-<td>15363.93</td>
-</tr>
-<tr>
-<td>Orange Pi Win</td>
-<td>3840.983292</td>
-<td>15370.821058</td>
-</tr>
-<tr>
-<td>E8C-SWTX</td>
-<td>3711</td>
-<td>28846.153846</td>
-</tr>
-<tr>
-<td>E8C-E8C4</td>
-<td>3813.640119</td>
-<td>117885.430096</td>
-</tr>
-<tr>
-<td>E8C2-1550</td>
-<td>4266.7</td>
-<td>33165.69</td>
-</tr>
-<tr>
-<td>E8C2-1200</td>
-<td>3413.357606</td>
-<td>26396.83238</td>
-</tr>
-<tr>
-<td>E2S-EL2S4</td>
-<td>2216.475803</td>
-<td>34457.87231474</td>
-</tr>
-<tr>
-<td>E2S-PC401</td>
-<td>2364.24</td>
-<td>36755.06</td>
-</tr>
-<tr>
-<td>MBE1C-PC</td>
-<td>2901.49427</td>
-<td>2848.318157</td>
+<td>Pentium M725</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>i386</td>
+<td>2 018,44</td>
+<td>2 018,44</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>0,08</td>
+<td>0,02</td>
 </tr>
 <tr>
 <td>Pentium 4</td>
-<td>5941.45</td>
-<td>5941.45</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>i386</td>
+<td>5 941,45</td>
+<td>5 941,45</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>0,24</td>
+<td>0,05</td>
 </tr>
 <tr>
 <td>Pentium III</td>
-<td>2246.570438799</td>
-<td>2246.570438799</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>i386</td>
+<td>2 246,57</td>
+<td>2 246,57</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>0,09</td>
+<td>0,02</td>
+</tr>
+<tr>
+<td>AWS Graviton</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>aarch64</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0,00</td>
+<td>0,00</td>
+</tr>
+<tr>
+<td>Odroid N2</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>aarch64</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0,00</td>
+<td>0,00</td>
+</tr>
+<tr>
+<td>Odroid X2</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>6 109,07</td>
+<td>24 162,55</td>
+<td>0,25</td>
+<td>1,00</td>
+<td>0,25</td>
+<td>0,20</td>
+</tr>
+<tr>
+<td>Orange Pi PC2</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>aarch64</td>
+<td>3 869,72</td>
+<td>14 901,28</td>
+<td>0,26</td>
+<td>1,00</td>
+<td>0,16</td>
+<td>0,12</td>
+</tr>
+<tr>
+<td>Orange Pi Win</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>aarch64</td>
+<td>3 840,98</td>
+<td>15 370,82</td>
+<td>0,25</td>
+<td>1,00</td>
+<td>0,16</td>
+<td>0,12</td>
+</tr>
+<tr>
+<td>Raspberry PI 3</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>aarch64</td>
+<td>3 841,00</td>
+<td>15 363,93</td>
+<td>0,25</td>
+<td>1,00</td>
+<td>0,16</td>
+<td>0,12</td>
+</tr>
+<tr>
+<td>Raspberry PI</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>arm</td>
+<td>1 303,78</td>
+<td>1 303,78</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>0,05</td>
+<td>0,01</td>
+</tr>
+<tr>
+<td>E16C-APPROX*</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>e2k</td>
+<td>5 625,18</td>
+<td>88 994,16</td>
+<td>0,06</td>
+<td>1,00</td>
+<td>0,23</td>
+<td>0,72</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>e2k</td>
+<td>4 359,51</td>
+<td>34 485,24</td>
+<td>0,13</td>
+<td>1,00</td>
+<td>0,18</td>
+<td>0,28</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>e2k</td>
+<td>4 266,70</td>
+<td>33 165,69</td>
+<td>0,13</td>
+<td>1,00</td>
+<td>0,18</td>
+<td>0,27</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>e2k</td>
+<td>3 413,36</td>
+<td>26 396,83</td>
+<td>0,13</td>
+<td>1,00</td>
+<td>0,14</td>
+<td>0,21</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>3 711,00</td>
+<td>28 846,15</td>
+<td>0,13</td>
+<td>1,00</td>
+<td>0,15</td>
+<td>0,23</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>3 813,64</td>
+<td>117 885,43</td>
+<td>0,03</td>
+<td>1,00</td>
+<td>0,16</td>
+<td>0,96</td>
+</tr>
+<tr>
+<td>E2S-EL2S4</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>e2k</td>
+<td>2 216,48</td>
+<td>34 457,87</td>
+<td>0,06</td>
+<td>1,00</td>
+<td>0,09</td>
+<td>0,28</td>
+</tr>
+<tr>
+<td>E2S-PC401</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>e2k</td>
+<td>2 364,24</td>
+<td>36 755,06</td>
+<td>0,06</td>
+<td>1,00</td>
+<td>0,10</td>
+<td>0,30</td>
+</tr>
+<tr>
+<td>MBE1C-PC</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>2 901,49</td>
+<td>2 848,32</td>
+<td>1,02</td>
+<td>1,00</td>
+<td>0,12</td>
+<td>0,02</td>
 </tr>
 <tr>
 <td>Baikal T1</td>
-<td>6182</td>
-<td>12364</td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>mips</td>
+<td>6 182,00</td>
+<td>12 364,00</td>
+<td>0,50</td>
+<td>1,00</td>
+<td>0,25</td>
+<td>0,10</td>
 </tr>
 </tbody>
 </table>
@@ -1061,7 +2210,10 @@ code {
 <img src="charts/coremark_all_cpu_singlecore.svg" alt="Coremark Single Thread" title="Coremark Single Thread"></p>
 <p>Coremark, многопоточные результаты, все процессоры
 <img src="charts/coremark_all_cpu_multicore.svg" alt="Coremark Multi Thread" title="Coremark Multi Thread"></p>
-<h3 id="memspeed">Memspeed</h3>
+<p>В этом тесте ядра Эльбрус на 1 МГц оказываются немного слабее ядер ARM (Cortex A9, Cortex A53) и в 3 раза слабее современных ядер Intel (Core i7-2600 ),
+ядра ARM (Cortex A9, Cortex A53) почти что на уровне Atom Z8350, Core 2 Duo T9400 и AMD A6-3650. Процессор Baikal T1 немного обгоняет  Atom Z8350, Core 2 Duo T9400 и AMD A6-3650,
+а в реальных частотах он на уровне Atom Z8350.</p>
+<h3 id="memspeed-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9">Memspeed (однопоточный)</h3>
 <pre class="hljs"><code><div>(x[i] = x[i] + a * y[i])
 </div></code></pre>
 <pre class="hljs"><code><div>(x[i] = x[i] + y[i])
@@ -1072,57 +2224,87 @@ code {
 <thead>
 <tr>
 <th>Platform</th>
-<th>16 KB <code>(x[i] = x[i] + a * y[i])</code></th>
-<th>512 KB <code>(x[i] = x[i] + a * y[i])</code></th>
-<th>8192 KB <code>(x[i] = x[i] + a * y[i])</code></th>
-<th>16 KB <code>(x[i] = x[i] + y[i])</code></th>
-<th>512 KB <code>(x[i] = x[i] + y[i])</code></th>
-<th>8192 KB <code>(x[i] = x[i] + y[i])</code></th>
-<th>16 KB <code>(x[i] = y[i])</code></th>
-<th>512 KB <code>(x[i] = y[i])</code></th>
-<th>8192 KB <code>(x[i] = y[i])</code></th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>16 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>512 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>8192 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>16 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>512 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>8192 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>16 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>512 KB x[m]=x[m]+s*y[m] Sngl</th>
+<th>8192 KB x[m]=x[m]+s*y[m] Sngl</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Core i7-2600</td>
-<td>73499</td>
-<td>53366</td>
-<td>32794</td>
-<td>75334</td>
-<td>54605</td>
-<td>32432</td>
-<td>26348</td>
-<td>16541</td>
-<td>8317</td>
+<td>Pentium 4</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>i386</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td>Core 2 Duo T9400</td>
-<td>9737</td>
-<td>14189</td>
-<td>8249</td>
-<td>18113</td>
-<td>9344</td>
-<td>8153</td>
-<td>3232</td>
-<td>5196</td>
-<td>2131</td>
+<td>Pentium III</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>i386</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
-<td>AMD A6-3650</td>
-<td>40930</td>
-<td>37749</td>
-<td>8578</td>
-<td>40988</td>
-<td>36529</td>
-<td>8523</td>
-<td>13655</td>
-<td>9154</td>
-<td>2154</td>
+<td>E16C-APPROX</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>e2k</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Baikal T1 BFK</td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>mips</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 <tr>
 <td>Raspberry PI</td>
-<td>602</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>arm</td>
 <td>127</td>
 <td>127</td>
 <td>731</td>
@@ -1133,68 +2315,26 @@ code {
 <td>111</td>
 </tr>
 <tr>
-<td>AWS Graviton</td>
-<td>21353</td>
-<td>17418</td>
-<td>7336</td>
-<td>7344</td>
-<td>18328</td>
-<td>21796</td>
-<td>12118</td>
-<td>12120</td>
-<td>4422</td>
-</tr>
-<tr>
-<td>Odroid N2</td>
-<td>8452</td>
-<td>8214</td>
-<td>3888</td>
-<td>9876</td>
-<td>8463</td>
-<td>3966</td>
-<td>8261</td>
-<td>7260</td>
-<td>3582</td>
-</tr>
-<tr>
-<td>Odroid X2</td>
-<td>2403</td>
-<td>1464</td>
-<td>1261</td>
-<td>2543</td>
-<td>1472</td>
-<td>1271</td>
-<td>3856</td>
-<td>1324</td>
-<td>627</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>3490</td>
-<td>1224</td>
-<td>1039</td>
-<td>2872</td>
-<td>1179</td>
-<td>1009</td>
-<td>4902</td>
-<td>2284</td>
-<td>1261</td>
-</tr>
-<tr>
-<td>Raspberry PI 3</td>
-<td>1814</td>
-<td>1598</td>
-<td>1019</td>
-<td>2240</td>
-<td>1906</td>
-<td>954</td>
-<td>3136</td>
-<td>2783</td>
-<td>871</td>
+<td>Pentium M725</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>i386</td>
+<td>1530</td>
+<td>844</td>
+<td>2348</td>
+<td>1670</td>
+<td>850</td>
+<td>1866</td>
+<td>1145</td>
+<td>420</td>
 </tr>
 <tr>
 <td>Orange Pi Win</td>
-<td>2672</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>aarch64</td>
 <td>1752</td>
 <td>1019</td>
 <td>2771</td>
@@ -1205,56 +2345,131 @@ code {
 <td>1374</td>
 </tr>
 <tr>
-<td>E8C-SWTX</td>
-<td>37160</td>
-<td>29195</td>
-<td>24130</td>
-<td>37806</td>
-<td>29193</td>
-<td>24114</td>
-<td>19096</td>
-<td>17431</td>
-<td>14045</td>
+<td>Raspberry PI 3</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>aarch64</td>
+<td>1598</td>
+<td>1019</td>
+<td>2240</td>
+<td>1906</td>
+<td>954</td>
+<td>3136</td>
+<td>2783</td>
+<td>871</td>
 </tr>
 <tr>
-<td>E8C-E8C4</td>
-<td>35377</td>
-<td>27882</td>
-<td>23315</td>
-<td>35758</td>
-<td>27681</td>
-<td>23172</td>
-<td>18273</td>
-<td>16898</td>
-<td>13798</td>
+<td>Orange Pi PC2</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>aarch64</td>
+<td>1224</td>
+<td>1039</td>
+<td>2872</td>
+<td>1179</td>
+<td>1009</td>
+<td>4902</td>
+<td>2284</td>
+<td>1261</td>
 </tr>
 <tr>
-<td>E8C2-1550</td>
-<td>41032</td>
-<td>41708</td>
-<td>33881</td>
-<td>19815</td>
-<td>12399</td>
-<td>9617</td>
-<td>6124</td>
-<td>4376</td>
-<td>3318</td>
+<td>Odroid X2</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>1464</td>
+<td>1261</td>
+<td>2543</td>
+<td>1472</td>
+<td>1271</td>
+<td>3856</td>
+<td>1324</td>
+<td>627</td>
 </tr>
 <tr>
-<td>E8C2-1200</td>
-<td>29062</td>
-<td>34168</td>
-<td>28890</td>
-<td>30016</td>
-<td>34232</td>
-<td>28920</td>
-<td>16709</td>
-<td>18654</td>
-<td>17513</td>
+<td>Odroid N2</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>aarch64</td>
+<td>8214</td>
+<td>3888</td>
+<td>9876</td>
+<td>8463</td>
+<td>3966</td>
+<td>8261</td>
+<td>7260</td>
+<td>3582</td>
+</tr>
+<tr>
+<td>Core i3-m330</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>amd64</td>
+<td>12837</td>
+<td>4636</td>
+<td>22396</td>
+<td>13193</td>
+<td>4996</td>
+<td>10774</td>
+<td>8340</td>
+<td>2387</td>
+</tr>
+<tr>
+<td>Atom Z8350</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>amd64</td>
+<td>14596</td>
+<td>5208</td>
+<td>17415</td>
+<td>14356</td>
+<td>5219</td>
+<td>10075</td>
+<td>5598</td>
+<td>1365</td>
+</tr>
+<tr>
+<td>MBE1C-PC</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>31305</td>
+<td>5856</td>
+<td>10999</td>
+<td>11421</td>
+<td>9663</td>
+<td>5073</td>
+<td>10442</td>
+<td>1163</td>
+</tr>
+<tr>
+<td>AWS Graviton</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>aarch64</td>
+<td>17418</td>
+<td>7336</td>
+<td>7344</td>
+<td>18328</td>
+<td>21796</td>
+<td>12118</td>
+<td>12120</td>
+<td>4422</td>
 </tr>
 <tr>
 <td>E2S-EL2S4</td>
-<td>20404</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>e2k</td>
 <td>22714</td>
 <td>7975</td>
 <td>20662</td>
@@ -1265,8 +2480,26 @@ code {
 <td>4263</td>
 </tr>
 <tr>
+<td>Core 2 Duo T9400</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>14189</td>
+<td>8249</td>
+<td>18113</td>
+<td>9344</td>
+<td>8153</td>
+<td>3232</td>
+<td>5196</td>
+<td>2131</td>
+</tr>
+<tr>
 <td>E2S-PC401</td>
-<td>20721</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>e2k</td>
 <td>22106</td>
 <td>8491</td>
 <td>10053</td>
@@ -1277,26 +2510,154 @@ code {
 <td>1468</td>
 </tr>
 <tr>
-<td>MBE1C-PC</td>
-<td>28070</td>
-<td>31305</td>
-<td>5856</td>
-<td>10999</td>
-<td>11421</td>
-<td>9663</td>
-<td>5073</td>
-<td>10442</td>
-<td>1163</td>
+<td>AMD A6-3650</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>37749</td>
+<td>8578</td>
+<td>40988</td>
+<td>36529</td>
+<td>8523</td>
+<td>13655</td>
+<td>9154</td>
+<td>2154</td>
+</tr>
+<tr>
+<td>Core i7-4700MQ</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>amd64</td>
+<td>29816</td>
+<td>17618</td>
+<td>59299</td>
+<td>30982</td>
+<td>18371</td>
+<td>40254</td>
+<td>16127</td>
+<td>9605</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>27882</td>
+<td>23315</td>
+<td>35758</td>
+<td>27681</td>
+<td>23172</td>
+<td>18273</td>
+<td>16898</td>
+<td>13798</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>29195</td>
+<td>24130</td>
+<td>37806</td>
+<td>29193</td>
+<td>24114</td>
+<td>19096</td>
+<td>17431</td>
+<td>14045</td>
+</tr>
+<tr>
+<td>Xeon 6128</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>amd64</td>
+<td>51351</td>
+<td>26334</td>
+<td>57982</td>
+<td>52292</td>
+<td>26638</td>
+<td>45452</td>
+<td>37370</td>
+<td>13360</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>e2k</td>
+<td>34168</td>
+<td>28890</td>
+<td>30016</td>
+<td>34232</td>
+<td>28920</td>
+<td>16709</td>
+<td>18654</td>
+<td>17513</td>
+</tr>
+<tr>
+<td>Core i7-2600</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>53366</td>
+<td>32794</td>
+<td>75334</td>
+<td>54605</td>
+<td>32432</td>
+<td>26348</td>
+<td>16541</td>
+<td>8317</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>e2k</td>
+<td>41708</td>
+<td>33881</td>
+<td>19815</td>
+<td>12399</td>
+<td>9617</td>
+<td>6124</td>
+<td>4376</td>
+<td>3318</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>e2k</td>
+<td>41990</td>
+<td>36299</td>
+<td>39990</td>
+<td>42034</td>
+<td>36355</td>
+<td>21901</td>
+<td>23589</td>
+<td>21518</td>
 </tr>
 </tbody>
 </table>
 <p>Memspeed, Умножение-сложение с присвоением, все процессоры
-<img src="charts/memspeed_mul_add_assign.svg" alt="Memspeed Multiply Add Assign" title="Memspeed Multiply Add Assign"></p>
+<img src="charts/memspeed_mul_add_ass.svg" alt="Memspeed Multiply Add Assign" title="Memspeed Multiply Add Assign"></p>
 <p>Memspeed, Сложение с присвоением, все процессоры
-<img src="charts/memspeed_add_assign.svg" alt="Memspeed Add Assign" title="Memspeed Add Assign"></p>
+<img src="charts/memspeed_add_ass.svg" alt="Memspeed Add Assign" title="Memspeed Add Assign"></p>
 <p>Memspeed, Присвоение, все процессоры
-<img src="charts/memspeed_assign.svg" alt="Memspeed Assign" title="Memspeed  Assign"></p>
+![Memspeed Assign](charts/memspeed_ass.svg&quot;Memspeed  Assign&quot;)</p>
+<p>Как мы знаем, на скорость работы с памятью играют частотат работы с памятью, размеры кеша и латентность.</p>
+<p>Процессоры ARM (Cortex A9, Cortex A53) имеют медленную подсистему памяти, AWS Graviton обгоняет их в несколько раз (что и логично, так как это серверный процессор).
+Процессоры Эльбрус немного отстают от современных процессоров Intel так как имеют намного меньшую тактовую частоту (в 3 раза). Также можно заметить что процессор Эльбрус 8СВ немного быстрее
+процессора Эльбрус 8С за счёт того, что используется память DDR4-2400.</p>
 <h3 id="mp-mflops">MP MFLOPS</h3>
+<p>Примеры операций, которые выполняет данный тест:</p>
 <p>2 операции</p>
 <pre class="hljs"><code><div>x[i] = (x[i]+a)*b;
 </div></code></pre>
@@ -1319,246 +2680,515 @@ code {
 <th>32 ops/w – 102400 4B words</th>
 <th>32 ops/w – 1024000 4B words</th>
 <th>32 ops/w – 10240000 4B words</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Architecture</th>
+<th>Geom Mean</th>
+<th>Relative geom mean</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Core i7-2600</td>
-<td>43,309.00</td>
-<td>35,180.00</td>
-<td>4,454.00</td>
-<td>83,624.00</td>
-<td>84,536.00</td>
-<td>17,643.00</td>
-<td>81,936.00</td>
-<td>82,606.00</td>
-<td>68,539.00</td>
+<td>Atom Z8350</td>
+<td>5 725,00</td>
+<td>1 303,00</td>
+<td>1 052,00</td>
+<td>11 934,00</td>
+<td>5 077,00</td>
+<td>4 204,00</td>
+<td>10 665,00</td>
+<td>10 456,00</td>
+<td>10 419,00</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>amd64</td>
+<td>5 097,15</td>
+<td>0,58</td>
 </tr>
 <tr>
 <td>Core 2 Duo T9400</td>
-<td>6,614.00</td>
-<td>6,501.00</td>
-<td>949.00</td>
-<td>16,025.00</td>
-<td>16,043.00</td>
-<td>3,813.00</td>
-<td>24,236.00</td>
-<td>24,129.00</td>
-<td>13,724.00</td>
+<td>6 614,00</td>
+<td>6 501,00</td>
+<td>949,00</td>
+<td>16 025,00</td>
+<td>16 043,00</td>
+<td>3 813,00</td>
+<td>24 236,00</td>
+<td>24 129,00</td>
+<td>13 724,00</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>amd64</td>
+<td>8 813,97</td>
+<td>1,00</td>
+</tr>
+<tr>
+<td>Core i3-m330</td>
+<td>7 256,00</td>
+<td>3 089,00</td>
+<td>2 177,00</td>
+<td>22 321,00</td>
+<td>12 217,00</td>
+<td>8 613,00</td>
+<td>25 115,00</td>
+<td>23 494,00</td>
+<td>17 535,00</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>amd64</td>
+<td>10 191,13</td>
+<td>1,16</td>
 </tr>
 <tr>
 <td>AMD A6-3650</td>
-<td>16,325.00</td>
-<td>4,294.00</td>
-<td>2,226.00</td>
-<td>31,623.00</td>
-<td>17,883.00</td>
-<td>8,640.00</td>
-<td>42,202.00</td>
-<td>34,047.00</td>
-<td>26,819.00</td>
+<td>16 325,00</td>
+<td>4 294,00</td>
+<td>2 226,00</td>
+<td>31 623,00</td>
+<td>17 883,00</td>
+<td>8 640,00</td>
+<td>42 202,00</td>
+<td>34 047,00</td>
+<td>26 819,00</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>amd64</td>
+<td>14 558,51</td>
+<td>1,65</td>
 </tr>
 <tr>
-<td>Atom Z8350</td>
-<td>5,725.00</td>
-<td>1,303.00</td>
-<td>1,052.00</td>
-<td>11,934.00</td>
-<td>5,077.00</td>
-<td>4,204.00</td>
-<td>10,665.00</td>
-<td>10,456.00</td>
-<td>10,419.00</td>
+<td>Core i7-4700MQ</td>
+<td>44 608,00</td>
+<td>39 682,00</td>
+<td>4 836,00</td>
+<td>81 235,00</td>
+<td>80 026,00</td>
+<td>19 272,00</td>
+<td>77 071,00</td>
+<td>77 474,00</td>
+<td>72 623,00</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>amd64</td>
+<td>42 630,84</td>
+<td>4,84</td>
 </tr>
 <tr>
-<td>AWS Graviton</td>
-<td>61,397.00</td>
-<td>47,660.00</td>
-<td>5,169.00</td>
-<td>90,387.00</td>
-<td>94,494.00</td>
-<td>20,880.00</td>
-<td>113,635.00</td>
-<td>117,449.00</td>
-<td>81,767.00</td>
+<td>Core i7-2600</td>
+<td>43 309,00</td>
+<td>35 180,00</td>
+<td>4 454,00</td>
+<td>83 624,00</td>
+<td>84 536,00</td>
+<td>17 643,00</td>
+<td>81 936,00</td>
+<td>82 606,00</td>
+<td>68 539,00</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>amd64</td>
+<td>41 836,45</td>
+<td>4,75</td>
 </tr>
 <tr>
-<td>Odroid N2</td>
-<td>9,859.00</td>
-<td>1,360.00</td>
-<td>1,328.00</td>
-<td>23,657.00</td>
-<td>5,398.00</td>
-<td>5,318.00</td>
-<td>21,407.00</td>
-<td>18,311.00</td>
-<td>18,102.00</td>
+<td>Xeon 6128</td>
+<td>120 605,00</td>
+<td>141 059,00</td>
+<td>104 776,00</td>
+<td>274 886,00</td>
+<td>306 624,00</td>
+<td>283 395,00</td>
+<td>329 607,00</td>
+<td>343 556,00</td>
+<td>339 301,00</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>amd64</td>
+<td>227 553,87</td>
+<td>25,82</td>
 </tr>
 <tr>
-<td>Odroid X2</td>
-<td>893.00</td>
-<td>598.00</td>
-<td>620.00</td>
-<td>2,077.00</td>
-<td>1,987.00</td>
-<td>2,015.00</td>
-<td>3,276.00</td>
-<td>3,230.00</td>
-<td>3,224.00</td>
-</tr>
-<tr>
-<td>Orange Pi PC2</td>
-<td>2,737.00</td>
-<td>482.00</td>
-<td>475.00</td>
-<td>6,597.00</td>
-<td>1,909.00</td>
-<td>1,896.00</td>
-<td>6,033.00</td>
-<td>5,797.00</td>
-<td>5,826.00</td>
+<td>Raspberry PI</td>
+<td>44</td>
+<td>43</td>
+<td>31</td>
+<td>96</td>
+<td>88</td>
+<td>79,5</td>
+<td>192</td>
+<td>176</td>
+<td>159</td>
+<td>Broadcom BCM2835</td>
+<td>1</td>
+<td>700</td>
+<td>arm</td>
+<td>84,15</td>
+<td>0,01</td>
 </tr>
 <tr>
 <td>Raspberry PI 3</td>
-<td>1,375.00</td>
-<td>441.00</td>
-<td>435.00</td>
-<td>4,621.00</td>
-<td>1,699.00</td>
-<td>1,737.00</td>
-<td>2,081.00</td>
-<td>2,131.00</td>
-<td>2,141.00</td>
+<td>1 375,00</td>
+<td>441,00</td>
+<td>435,00</td>
+<td>4 621,00</td>
+<td>1 699,00</td>
+<td>1 737,00</td>
+<td>2 081,00</td>
+<td>2 131,00</td>
+<td>2 141,00</td>
+<td>Broadcom BCM2837B0 (armv8)</td>
+<td>4</td>
+<td>1200</td>
+<td>arm</td>
+<td>1 480,41</td>
+<td>0,17</td>
 </tr>
 <tr>
-<td>E8C-SWTX</td>
-<td>46,965.00</td>
-<td>65,423.00</td>
-<td>4,505.00</td>
-<td>98,423.00</td>
-<td>93,145.00</td>
-<td>17,994.00</td>
-<td>146,865.00</td>
-<td>160,334.00</td>
-<td>68,001.00</td>
+<td>Odroid X2</td>
+<td>893,00</td>
+<td>598,00</td>
+<td>620,00</td>
+<td>2 077,00</td>
+<td>1 987,00</td>
+<td>2 015,00</td>
+<td>3 276,00</td>
+<td>3 230,00</td>
+<td>3 224,00</td>
+<td>Samsung Exynos 4412 (armv7l)</td>
+<td>4</td>
+<td>1700</td>
+<td>arm</td>
+<td>1 656,53</td>
+<td>0,19</td>
 </tr>
 <tr>
-<td>E8C-E8C4</td>
-<td>134,841.00</td>
-<td>121,759.00</td>
-<td>116,454.00</td>
-<td>193,019.00</td>
-<td>279,431.00</td>
-<td>279,598.00</td>
-<td>402,357.00</td>
-<td>461,200.00</td>
-<td>378,806.00</td>
+<td>Orange Pi PC2</td>
+<td>2 737,00</td>
+<td>482,00</td>
+<td>475,00</td>
+<td>6 597,00</td>
+<td>1 909,00</td>
+<td>1 896,00</td>
+<td>6 033,00</td>
+<td>5 797,00</td>
+<td>5 826,00</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>arm</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>E8C2-1550</td>
-<td>66,331.25</td>
-<td>91,061.25</td>
-<td>11,448.75</td>
-<td>176,587.50</td>
-<td>246,778.75</td>
-<td>45,366.25</td>
-<td>340,646.25</td>
-<td>378,225.00</td>
-<td>171,045.00</td>
+<td>Odroid N2</td>
+<td>9 859,00</td>
+<td>1 360,00</td>
+<td>1 328,00</td>
+<td>23 657,00</td>
+<td>5 398,00</td>
+<td>5 318,00</td>
+<td>21 407,00</td>
+<td>18 311,00</td>
+<td>18 102,00</td>
+<td>Amlogic S922X</td>
+<td>6</td>
+<td>1800</td>
+<td>arm</td>
+<td>7 612,03</td>
+<td>0,86</td>
 </tr>
 <tr>
-<td>E8C2-APPROX</td>
-<td>69,156.25</td>
-<td>102,478.75</td>
-<td>4,632.50</td>
-<td>125,915.00</td>
-<td>151,962.50</td>
-<td>20,093.75</td>
-<td>145,292.50</td>
-<td>166,630.00</td>
-<td>73,411.25</td>
+<td>AWS Graviton</td>
+<td>61 397,00</td>
+<td>47 660,00</td>
+<td>5 169,00</td>
+<td>90 387,00</td>
+<td>94 494,00</td>
+<td>20 880,00</td>
+<td>113 635,00</td>
+<td>117 449,00</td>
+<td>81 767,00</td>
+<td>Alpine AL73400</td>
+<td>16</td>
+<td>2300</td>
+<td>arm</td>
+<td>52 331,76</td>
+<td>5,94</td>
 </tr>
 <tr>
-<td>E16C-APPROX</td>
-<td>144,507.69</td>
-<td>201,301.54</td>
-<td>13,861.54</td>
-<td>302,840.00</td>
-<td>286,600.00</td>
-<td>55,366.15</td>
-<td>451,892.31</td>
-<td>493,335.38</td>
-<td>209,233.85</td>
-</tr>
-<tr>
-<td>E8C2-LOW</td>
-<td>53,065.00</td>
-<td>72,849.00</td>
-<td>9,159.00</td>
-<td>141,270.00</td>
-<td>197,423.00</td>
-<td>36,293.00</td>
-<td>272,517.00</td>
-<td>302,580.00</td>
-<td>136,836.00</td>
-</tr>
-<tr>
-<td>E2S-EL2S4</td>
-<td>55,325.00</td>
-<td>81,983.00</td>
-<td>3,706.00</td>
-<td>100,732.00</td>
-<td>121,570.00</td>
-<td>16,075.00</td>
-<td>116,234.00</td>
-<td>133,304.00</td>
-<td>58,729.00</td>
-</tr>
-<tr>
-<td>E2S-PC401</td>
-<td>16,319.00</td>
-<td>17,495.00</td>
-<td>2,998.00</td>
-<td>22,592.00</td>
-<td>17,738.00</td>
-<td>12,125.00</td>
-<td>35,782.00</td>
-<td>35,757.00</td>
-<td>24,169.00</td>
+<td>Orange Pi Win</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>arm</td>
+<td>0,00</td>
+<td>0,00</td>
 </tr>
 <tr>
 <td>MBE1C-PC</td>
-<td>7,804.00</td>
-<td>2,103.00</td>
-<td>2,089.00</td>
-<td>10,453.00</td>
-<td>7,041.00</td>
-<td>7,003.00</td>
-<td>15,676.00</td>
-<td>15,626.00</td>
-<td>15,641.00</td>
+<td>7 804,00</td>
+<td>2 103,00</td>
+<td>2 089,00</td>
+<td>10 453,00</td>
+<td>7 041,00</td>
+<td>7 003,00</td>
+<td>15 676,00</td>
+<td>15 626,00</td>
+<td>15 641,00</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>e2k</td>
+<td>7 414,24</td>
+<td>0,84</td>
+</tr>
+<tr>
+<td>E2S-PC401</td>
+<td>16 319,00</td>
+<td>17 495,00</td>
+<td>2 998,00</td>
+<td>22 592,00</td>
+<td>17 738,00</td>
+<td>12 125,00</td>
+<td>35 782,00</td>
+<td>35 757,00</td>
+<td>24 169,00</td>
+<td>Elbrus 4C [E2S] (pc401)</td>
+<td>4</td>
+<td>800</td>
+<td>e2k</td>
+<td>17 153,89</td>
+<td>1,95</td>
+</tr>
+<tr>
+<td>E2S-EL2S4</td>
+<td>55 325,00</td>
+<td>81 983,00</td>
+<td>3 706,00</td>
+<td>100 732,00</td>
+<td>121 570,00</td>
+<td>16 075,00</td>
+<td>116 234,00</td>
+<td>133 304,00</td>
+<td>58 729,00</td>
+<td>Elbrus 4C [EL2S4] (4 CPU)</td>
+<td>16</td>
+<td>750</td>
+<td>e2k</td>
+<td>52 463,62</td>
+<td>5,95</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>46 965,00</td>
+<td>65 423,00</td>
+<td>4 505,00</td>
+<td>98 423,00</td>
+<td>93 145,00</td>
+<td>17 994,00</td>
+<td>146 865,00</td>
+<td>160 334,00</td>
+<td>68 001,00</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>e2k</td>
+<td>53 607,67</td>
+<td>6,08</td>
+</tr>
+<tr>
+<td>E8C2-1200</td>
+<td>53 065,00</td>
+<td>72 849,00</td>
+<td>9 159,00</td>
+<td>141 270,00</td>
+<td>197 423,00</td>
+<td>36 293,00</td>
+<td>272 517,00</td>
+<td>302 580,00</td>
+<td>136 836,00</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>e2k</td>
+<td>90 429,35</td>
+<td>10,26</td>
+</tr>
+<tr>
+<td>E8C2</td>
+<td>78 414,19</td>
+<td>87 892,26</td>
+<td>8 612,90</td>
+<td>236 270,32</td>
+<td>209 708,71</td>
+<td>35 186,13</td>
+<td>319 533,87</td>
+<td>325 615,16</td>
+<td>136 266,77</td>
+<td>Elbrus 8C2 (E8C2)</td>
+<td>8</td>
+<td>1500</td>
+<td>e2k</td>
+<td>104 351,91</td>
+<td>11,84</td>
+</tr>
+<tr>
+<td>E8C2-1550</td>
+<td>81 028,00</td>
+<td>90 822,00</td>
+<td>8 900,00</td>
+<td>244 146,00</td>
+<td>216 699,00</td>
+<td>36 359,00</td>
+<td>330 185,00</td>
+<td>336 469,00</td>
+<td>140 809,00</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>e2k</td>
+<td>107 830,30</td>
+<td>12,23</td>
+</tr>
+<tr>
+<td>E8C-E8C4</td>
+<td>134 841,00</td>
+<td>121 759,00</td>
+<td>116 454,00</td>
+<td>193 019,00</td>
+<td>279 431,00</td>
+<td>279 598,00</td>
+<td>402 357,00</td>
+<td>461 200,00</td>
+<td>378 806,00</td>
+<td>Elbrus 8C (4 CPU)</td>
+<td>32</td>
+<td>1300</td>
+<td>e2k</td>
+<td>233 035,80</td>
+<td>26,44</td>
+</tr>
+<tr>
+<td>E16C-APPROX</td>
+<td>209 104,52</td>
+<td>234 379,35</td>
+<td>22 967,74</td>
+<td>630 054,19</td>
+<td>559 223,23</td>
+<td>93 829,68</td>
+<td>852 090,32</td>
+<td>868 307,10</td>
+<td>363 378,06</td>
+<td>Elbrus 16</td>
+<td>16</td>
+<td>2000</td>
+<td>e2k</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Pentium M725</td>
+<td>309,00</td>
+<td>304,00</td>
+<td>243,00</td>
+<td>309,00</td>
+<td>304,00</td>
+<td>243,00</td>
+<td>408,00</td>
+<td>409,00</td>
+<td>406,00</td>
+<td>Pentium M725</td>
+<td>1</td>
+<td>1600</td>
+<td>i386</td>
+<td>320,12</td>
+<td>0,04</td>
 </tr>
 <tr>
 <td>Pentium 4</td>
-<td>355.81</td>
-<td>360.64</td>
-<td>328.44</td>
-<td>1,344.35</td>
-<td>1,315.37</td>
-<td>1,230.04</td>
-<td>1,867.60</td>
-<td>1,872.43</td>
-<td>1,875.65</td>
+<td>355,81</td>
+<td>360,64</td>
+<td>328,44</td>
+<td>1 344,35</td>
+<td>1 315,37</td>
+<td>1 230,04</td>
+<td>1 867,60</td>
+<td>1 872,43</td>
+<td>1 875,65</td>
+<td>Intel(R) Pentium(TM) 4 CPU</td>
+<td>1</td>
+<td>3066</td>
+<td>i386</td>
+<td>945,04</td>
+<td>0,11</td>
+</tr>
+<tr>
+<td>Pentium III</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0,00</td>
+<td>Intel(R) Pentium(TM) III CPU</td>
+<td>1</td>
+<td>1000</td>
+<td>i386</td>
+<td>0,00</td>
+<td>0,00</td>
+</tr>
+<tr>
+<td>Baikal T1 BFK</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0,00</td>
+<td>Baikal-T1 (MIPS P5600 V3.0)</td>
+<td>2</td>
+<td>1200</td>
+<td>mips</td>
+<td>0,00</td>
+<td>0,00</td>
 </tr>
 </tbody>
 </table>
-<p>MP MFLOPS, 2 операции, все процессоры
-<img src="charts/mpmlops_all_cpu_2ops.svg" alt="MP MFLOPS 2 ops/w" title="MP MFLOPS 2 ops/w"></p>
-<p>MP MFLOPS, 8 операций, все процессоры
-<img src="charts/mpmlops_all_cpu_8ops.svg" alt="MP MFLOPS 8 ops/w" title="MP MFLOPS 8 ops/w"></p>
-<p>MP MFLOPS, 32 операции, все процессоры
-<img src="charts/mpmlops_all_cpu_32ops.svg" alt="MP MFLOPS 32 ops/w" title="MP MFLOPS 32 ops/w"></p>
-<h3 id="scimark-2">Scimark 2</h3>
+<p>MP MFLOPS, все процессоры
+<img src="charts/mpmflops.svg" alt="MP MFLOPS" title="MP MFLOPS"></p>
+<p>MP MFLOPS, все процессоры, 2 ops/w
+![MP MFLOPS, 2 ops/w](charts/mpmflops_2ops.svg &quot;MP MFLOPS&quot;, 2 ops/w&quot;)</p>
+<p>MP MFLOPS, все процессоры, 8 ops/w
+<img src="charts/mpmflops_8ops.svg" alt="MP MFLOPS, 8 ops/w" title="MP MFLOPS, 8 ops/w"></p>
+<p>MP MFLOPS, все процессоры, 32 ops/w
+<img src="charts/mpmflops_32ops.svg" alt="MP MFLOPS, 32 ops/w" title="MP MFLOPS, 32 ops/w"></p>
+<p>Вот здесь процессоры Эльбрус показывают свою превосходство над всеми другими архитектурами: способность выполнять большое число операций за так (архитектура VLIW).
+Процессор 8СВ набирает 378 ГФлопс (Теоретически 576) на 32х операциях. Core i7-2600 - 82.6 ГФлопс.
+Процессоры на ARM выдают всего 23.7 ГФлопс (Для Cortex A72, Odroid N2), AWS Graviton - 117 ГФлопс, за счёт 16ти ядер.</p>
+<h3 id="scimark-2-%D0%BE%D0%B4%D0%BD%D0%BE%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9">Scimark 2 (однопоточный)</h3>
 <table>
 <thead>
 <tr>
@@ -1569,35 +3199,95 @@ code {
 <th>MonteCarlo</th>
 <th>Sparse matmult</th>
 <th>LU</th>
+<th>CPU</th>
+<th>Cores</th>
+<th>Frequency (MHz)</th>
+<th>Per MHz</th>
+<th>Relative</th>
+<th>Relative (MHz)</th>
+<th>Architecture</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Xeon 6128</td>
+<td>2 427,42</td>
+<td>2 011,19</td>
+<td>1 564,17</td>
+<td>753,09</td>
+<td>2 878,47</td>
+<td>4 930,18</td>
+<td>Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)</td>
+<td>24</td>
+<td>3400</td>
+<td>0,71</td>
+<td>1,17</td>
+<td>0,83</td>
+<td>amd64</td>
+</tr>
+<tr>
+<td>Core i7-4700MQ</td>
+<td>2 071,26</td>
+<td>1 693,12</td>
+<td>1 599,69</td>
+<td>568,17</td>
+<td>2 148,40</td>
+<td>4 346,91</td>
+<td>Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz</td>
+<td>8</td>
+<td>2400</td>
+<td>0,86</td>
+<td>1,00</td>
+<td>1,00</td>
+<td>amd64</td>
+</tr>
+<tr>
 <td>Core i7-2600</td>
 <td>1 800,00</td>
 <td>1 517,97</td>
-<td>1636,33</td>
+<td>1 636,33</td>
 <td>515,34</td>
-<td>1981,74</td>
-<td>3348,64</td>
+<td>1 981,74</td>
+<td>3 348,64</td>
+<td>Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz</td>
+<td>8</td>
+<td>3400</td>
+<td>0,53</td>
+<td>0,87</td>
+<td>0,61</td>
+<td>amd64</td>
 </tr>
 <tr>
 <td>Core 2 Duo T9400</td>
 <td>1 051,93</td>
 <td>720,56</td>
-<td>1201,02</td>
+<td>1 201,02</td>
 <td>307,36</td>
-<td>1119,72</td>
-<td>1911,00</td>
+<td>1 119,72</td>
+<td>1 911,00</td>
+<td>Intel(R) Core(TM) 2 Duo CPU     T9400  @ 2.53GHz</td>
+<td>2</td>
+<td>2530</td>
+<td>0,42</td>
+<td>0,51</td>
+<td>0,48</td>
+<td>amd64</td>
 </tr>
 <tr>
-<td>AMD A6-3650</td>
-<td>1 028,44</td>
-<td>775,83</td>
-<td>989,81</td>
-<td>344,97</td>
-<td>1272,17</td>
-<td>1759,44</td>
+<td>Core i3-m330</td>
+<td>1 002,61</td>
+<td>759,27</td>
+<td>967,15</td>
+<td>290,85</td>
+<td>933,71</td>
+<td>2 062,08</td>
+<td>Intel(R) Core(TM) i3 CPU       M 330  @ 2.13GHz</td>
+<td>4</td>
+<td>2133</td>
+<td>0,47</td>
+<td>0,48</td>
+<td>0,54</td>
+<td>amd64</td>
 </tr>
 <tr>
 <td>Atom Z8350</td>
@@ -1607,6 +3297,29 @@ code {
 <td>178,04</td>
 <td>497,19</td>
 <td>885,27</td>
+<td>Intel(R) Atom(TM) x5-Z8350 CPU @ 1.44GHz</td>
+<td>4</td>
+<td>1440</td>
+<td>1,25</td>
+<td>0,87</td>
+<td>1,45</td>
+<td>amd64</td>
+</tr>
+<tr>
+<td>AMD A6-3650</td>
+<td>1 028,44</td>
+<td>775,83</td>
+<td>989,81</td>
+<td>344,97</td>
+<td>1 272,17</td>
+<td>1 759,44</td>
+<td>AMD A6-3650 APU with Radeon(tm) HD Graphics</td>
+<td>4</td>
+<td>2600</td>
+<td>0,40</td>
+<td>0,50</td>
+<td>0,46</td>
+<td>amd64</td>
 </tr>
 <tr>
 <td>Orange Pi PC2</td>
@@ -1616,6 +3329,13 @@ code {
 <td>64,07</td>
 <td>185,46</td>
 <td>277,94</td>
+<td>Allwinner H5 (aarch64)</td>
+<td>4</td>
+<td>1152</td>
+<td>0,17</td>
+<td>0,09</td>
+<td>0,19</td>
+<td>aarch64</td>
 </tr>
 <tr>
 <td>Orange Pi Win</td>
@@ -1625,15 +3345,13 @@ code {
 <td>76,72</td>
 <td>166,98</td>
 <td>175,11</td>
-</tr>
-<tr>
-<td>E8C-SWTX</td>
-<td>511,43</td>
-<td>235,71</td>
-<td>481,74</td>
-<td>132,23</td>
-<td>186,18</td>
-<td>1521,26</td>
+<td>Allwinner A64 (aarch64)</td>
+<td>4</td>
+<td>1344</td>
+<td>0,13</td>
+<td>0,08</td>
+<td>0,15</td>
+<td>aarch64</td>
 </tr>
 <tr>
 <td>E8C2-1550</td>
@@ -1643,6 +3361,13 @@ code {
 <td>84,95</td>
 <td>304,82</td>
 <td>1202,94</td>
+<td>Elbrus 8C2 (E8C2 1550 MHz)</td>
+<td>8</td>
+<td>1550</td>
+<td>0,30</td>
+<td>0,23</td>
+<td>0,35</td>
+<td>e2k</td>
 </tr>
 <tr>
 <td>E8C2-1200</td>
@@ -1651,7 +3376,30 @@ code {
 <td>446,05</td>
 <td>118,25</td>
 <td>166,34</td>
-<td>1403,94</td>
+<td>1 403,94</td>
+<td>Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)</td>
+<td>8</td>
+<td>1200</td>
+<td>0,39</td>
+<td>0,23</td>
+<td>0,45</td>
+<td>e2k</td>
+</tr>
+<tr>
+<td>E8C-SWTX</td>
+<td>511,43</td>
+<td>235,71</td>
+<td>481,74</td>
+<td>132,23</td>
+<td>186,18</td>
+<td>1521,26</td>
+<td>Elbrus 8C (E8C-SWTX)</td>
+<td>8</td>
+<td>1300</td>
+<td>0,39</td>
+<td>0,25</td>
+<td>0,46</td>
+<td>e2k</td>
 </tr>
 <tr>
 <td>MBE1C-PC</td>
@@ -1661,11 +3409,29 @@ code {
 <td>97,02</td>
 <td>132,92</td>
 <td>1126,98</td>
+<td>Elbrus 1C+ (MBE1C-PC)</td>
+<td>1</td>
+<td>985</td>
+<td>0,39</td>
+<td>0,18</td>
+<td>0,45</td>
+<td>e2k</td>
 </tr>
 </tbody>
 </table>
-<p>Scimark 2, однопоточные результаты, x86-64 и e2k процессоры
+<p>Scimark 2, однопоточные результаты, все процессоры
 <img src="charts/scimark2.svg" alt="Scimark 2" title="Scimark 2"></p>
+<h2 id="%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4%D1%8B">Выводы</h2>
+<p>ARM процессоры уровня Cortex A9, Cortex A53 на уровне слабого Intel Atom, Pentium 4.
+ARM процессоры уровня Cortex A72 уже приближаются к процессорам Intel Core.
+Процессоры Эльбрус в основном быстрее процессоров ARM, но медленнее Intel Core из-за
+маленькой тактовой частоты и могут работать намного быстрее, если программа под них хорошо оптимизированна,
+но в будущем надеемся, что компилятор lcc будет ещё лучше доработан.</p>
+<h2 id="ps">P.S.</h2>
+<p>Спасибо команде из Телеграм чата: e2k_chat и людям с форума ixbt, которые помогли мне протестировать недостающие Эльбрусы.
+Спасибо своим коллегам, которые предоставили мне некоторые одноплатные компьютеры на процессорах ARM.</p>
+<p>Исходники тут и результаты : https://github.com/EntityFX/anybench
+Не стесняйтесь, присылайте мне свои результаты.</p>
 
 </body>
 </html>
