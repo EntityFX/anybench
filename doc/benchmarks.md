@@ -401,10 +401,10 @@ Coremark, многопоточные результаты, все процесс
 ![Coremark Multi Thread](charts/coremark_mp.svg "Coremark Multi Thread")
 
 Coremark, однопоточные результаты, на 1 МГц
-![Coremark, Per 1 MHz](charts/coremark.svg "Coremark, Per 1 MHz")
+![Coremark, Per 1 MHz](charts/coremark_per_mhz.svg "Coremark, Per 1 MHz")
 
 Coremark, многопоточные результаты, на 1 МГц
-![Coremark Multi Thread, Per 1 MHz](charts/coremark_mp.svg "Coremark Multi Thread, Per 1 MHz")
+![Coremark Multi Thread, Per 1 MHz](charts/coremark_mp_per_mhz.svg "Coremark Multi Thread, Per 1 MHz")
 
 Coremark, однопоточные результаты, относительно Core i7-2600
 ![Coremark, Relative to Core i7-2600](charts/coremark_relative.svg "Coremark, Relative to Core i7-2600")
