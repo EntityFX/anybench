@@ -1,4 +1,4 @@
-
+﻿
 
 
 ## Предисловие
@@ -269,20 +269,20 @@ Dhrystone, относительно Core i7-2600:
 Whetstone Single Precision, все процессоры
 ![Whetstone Single Precision](charts/whetstones.svg "Whetstone Single Precision")
 
+Whetstone Single Precision, многопоточные результаты
+![MP Whetstone Precision Multi Core](charts/whetstones_mp.svg "MP Whetstone Precision Multi Thread")
+
 Whetstone Single Precision, на 1 МГц
 ![Whetstone Single Precision](charts/whetstones_per_mhz.svg "Whetstone Single Precision, Per 1 MHz")
+
+Whetstone Single Precision, многопоточные результаты, на 1 МГц
+![MP Whetstone Precision Multi Core, Per 1 MHz](charts/whetstones_mp_per_mhz.svg "MP Whetstone Precision Multi Thread, Per 1 MHz")
 
 Whetstone Single Precision, относительно Core i7-2600
 ![Whetstone Single Precision](charts/whetstones_relative.svg "Whetstone Single Precision Single Thread Relative")
 
-Whetstone Single Precision, многопоточные результаты
-![MP Whetstone Precision Multi Core](charts/whetstones_mp.svg "MP Whetstone Precision Multi Thread")
-
-Whetstone Single Precision, многопоточные результаты, на 1 МГц
-![MP Whetstone Precision Multi Core, Per 1 MHz](charts/whetstones_per_mhz.svg "MP Whetstone Precision Multi Thread, Per 1 MHz")
-
 Whetstone Single Precision, многопоточные результаты, относительно Core i7-2600
-![MP Whetstone Precision Multi Core Relative](charts/whetstones_relative.svg "MP Whetstone Precision Multi Thread Relative")
+![MP Whetstone Precision Multi Core Relative](charts/whetstones_mp_relative.svg "MP Whetstone Precision Multi Thread Relative")
 
 
 Мы видим, что процессоры ARM v7 на архитектуре ядра Cortex A9 сопоставимы с процессорами Pentium III, если сравнивать частоту на 1 Мгц.
