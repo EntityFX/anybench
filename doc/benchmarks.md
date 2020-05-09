@@ -531,7 +531,7 @@ MP MFLOPS, все процессоры
 ![MP MFLOPS](charts/mpmflops.svg "MP MFLOPS")
 
 MP MFLOPS, все процессоры, 2 ops/w
-![MP MFLOPS, 2 ops/w](charts/mpmflops_2ops.svg "MP MFLOPS", 2 ops/w")
+![MP MFLOPS, 2 ops/w](charts/mpmflops_2ops.svg "MP MFLOPS, 2 ops/w")
 
 MP MFLOPS, все процессоры, 8 ops/w
 ![MP MFLOPS, 8 ops/w](charts/mpmflops_8ops.svg "MP MFLOPS, 8 ops/w")
