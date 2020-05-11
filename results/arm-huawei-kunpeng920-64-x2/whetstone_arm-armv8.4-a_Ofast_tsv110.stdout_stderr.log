@@ -1,0 +1,78 @@
+
+##########################################
+Single Precision C Whetstone Benchmark arm armv8.4-a optimized, Mon May 11 19:07:16 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.29 Seconds        125   Passes (x 100)
+       1.44 Seconds        625   Passes (x 100)
+       7.20 Seconds       3125   Passes (x 100)
+
+Use 4341  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 4
+BoLinux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12367534637451172       884.758              0.094
+N2 floating point     -1.12167274951934814      1273.909              0.458
+N3 if then else        1.00000000000000000                   0.000    0.000
+N4 fixed point        12.00000000000000000                7797.082    0.175
+N5 sin,cos etc.        0.49911010265350342                 102.914    3.509
+N6 floating point      0.99999982118606567       649.708              3.604
+N7 assignments         3.00000000000000000                2598.870    0.309
+N8 exp,sqrt etc.       0.75110864639282227                  87.247    1.851
+
+MWIPS                                           4340.749             10.001
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

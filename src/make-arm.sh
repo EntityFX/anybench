@@ -48,6 +48,13 @@ cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm-armv8.1-a_O2 -O2
 chmod +x ../bin/linux/arm/dhrystone_arm-armv8.1-a_O2
 cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/dhrystone_arm-armv8.1-a_O3
+# Huawei Taishan
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/dhrystone_arm-armv8.4-a_O2_tsv110
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/dhrystone_arm-armv8.4-a_O3_tsv110
+cc dhry_1.c dhry_2.c cpuidc.c -o ../bin/linux/arm/dhrystone_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/dhrystone_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile Whetstone\n"
 
@@ -95,6 +102,13 @@ cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/arm/whetstone_arm-armv8.1-a_O2 -O2 
 chmod +x ../bin/linux/arm/whetstone_arm-armv8.1-a_O2
 cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/arm/whetstone_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/whetstone_arm-armv8.1-a_O3
+# Huawei Taishan
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/arm/whetstone_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_arm-armv8.4-a_O2_tsv110
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/arm/whetstone_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_arm-armv8.4-a_O3_tsv110
+cc whets.c cpuidc.c -lm -lrt -o ../bin/linux/arm/whetstone_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile Memspeed\n"
 
@@ -142,6 +156,13 @@ cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/memspeed_arm-armv8.1-a_O2 -O
 chmod +x ../bin/linux/arm/memspeed_arm-armv8.1-a_O2
 cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/memspeed_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/memspeed_arm-armv8.1-a_O3
+# Huawei Taishan
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/memspeed_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/memspeed_arm-armv8.4-a_O2_tsv110
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/memspeed_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/memspeed_arm-armv8.4-a_O3_tsv110
+cc memspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/memspeed_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/memspeed_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile Linpack\n"
 
@@ -189,6 +210,13 @@ cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/arm/linpack_arm-armv8.1-a_O2 -O2 
 chmod +x ../bin/linux/arm/linpack_arm-armv8.1-a_O2
 cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/arm/linpack_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/linpack_arm-armv8.1-a_O3
+# Huawei Taishan
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/arm/linpack_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/linpack_arm-armv8.4-a_O2_tsv110
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/arm/linpack_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/linpack_arm-armv8.4-a_O3_tsv110
+cc linpack.c cpuidc.c -lm -lrt -o ../bin/linux/arm/linpack_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/linpack_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile Lloops\n"
 
@@ -236,6 +264,13 @@ cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/arm/lloops_arm-armv8.1-a_O2 -O2 -m
 chmod +x ../bin/linux/arm/lloops_arm-armv8.1-a_O2
 cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/arm/lloops_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/lloops_arm-armv8.1-a_O3
+# Huawei Taishan
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/arm/lloops_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/lloops_arm-armv8.4-a_O2_tsv110
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/arm/lloops_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/lloops_arm-armv8.4-a_O3_tsv110
+cc lloops.c cpuidc.c -lm -lrt -o ../bin/linux/arm/lloops_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/lloops_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile WhetstoneMP\n"
 
@@ -283,6 +318,13 @@ cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/arm/whetsto
 chmod +x ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O2
 cc mp/whetsmp.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O3
+# Huawei Taishan
+cc mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O2_tsv110
+cc mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O3_tsv110
+cc mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/whetstone_mp_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile MPMFlops\n"
 
@@ -330,6 +372,13 @@ cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/arm/mpmflo
 chmod +x ../bin/linux/arm/mpmflops_arm-armv8.1-a_O2
 cc mp/mpmflops.c mp/cpuidc64.c -m64 -pthread -lm -lrt -o ../bin/linux/arm/mpmflops_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/mpmflops_arm-armv8.1-a_O3
+# Huawei Taishan
+cc mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/mpmflops_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/mpmflops_arm-armv8.4-a_O2_tsv110
+cc mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/mpmflops_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/mpmflops_arm-armv8.4-a_O3_tsv110
+cc mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt -o ../bin/linux/arm/mpmflops_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/mpmflops_arm-armv8.4-a_Ofast_tsv110
 
 echo -e "Compile busspeedIL\n"
 
@@ -377,5 +426,10 @@ cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O2 
 chmod +x ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O2
 cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O3
-
-
+# Huawei Taishan
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/busspeedIL_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/busspeedIL_arm-armv8.4-a_O2_tsv110
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/busspeedIL_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/busspeedIL_arm-armv8.4-a_O3_tsv110
+cc busspeed.c cpuidc.c -lm -lrt -o ../bin/linux/arm/busspeedIL_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/busspeedIL_arm-armv8.4-a_Ofast_tsv110

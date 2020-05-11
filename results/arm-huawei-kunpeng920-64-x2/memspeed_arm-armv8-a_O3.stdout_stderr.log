@@ -1,0 +1,69 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 4
+BoLinux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+   Memory Reading Speed Test arm armv8-a optimized Mon May 11 19:07:54 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   48385  63746  71389  50101  61972  71611  37107  20223  21108
+      16   47520  64519  72474  49801  62317  72717  37954  20503  21266
+      32   47942  64577  72889  50031  62421  72963  36286  20536  21227
+      64   47843  64854  73331  49996  62836  73371  36724  20669  21375
+     128   31173  50180  53941  33000  49375  53443  30729  20572  23060
+     256   31073  49259  52518  32623  48557  52669  23357  20393  21922
+     512   27343  44732  47801  27795  45237  48213  22066  19500  20874
+    1024   17685  32760  34575  16443  34668  36880  13187  13198  13549
+    2048   16284  30953  32667  16007  31745  32323  12110  12576  12852
+    4096   16020  30590  31430  13968  25239  25676   8943   8863   8945
+    8192   13840  25884  26283  13784  25844  26319   9269   9504   9516
+
+                End of test Mon May 11 19:08:10 2020
+
