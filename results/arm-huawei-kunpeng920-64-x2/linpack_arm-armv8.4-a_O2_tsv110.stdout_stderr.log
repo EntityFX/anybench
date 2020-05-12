@@ -1,0 +1,106 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation arm armv8.4-a optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00026    0.00001    0.00027    2555.54     0.0008     0.0048
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.07 seconds
+     10000 times   0.75 seconds
+     20000 times   1.49 seconds
+Overhead for 1 matgen      0.00007 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.33 seconds
+      2000 times   0.66 seconds
+      4000 times   1.32 seconds
+Passes used       3027 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00026    0.00001    0.00026    2595.81     0.0008     0.0047
+    0.00026    0.00001    0.00026    2595.07     0.0008     0.0047
+    0.00026    0.00001    0.00026    2595.44     0.0008     0.0047
+    0.00026    0.00001    0.00026    2595.47     0.0008     0.0047
+    0.00026    0.00001    0.00026    2596.60     0.0008     0.0047
+Average                              2595.68
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00007 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00026    0.00001    0.00027    2511.87     0.0008     0.0049
+    0.00026    0.00001    0.00027    2515.61     0.0008     0.0049
+    0.00026    0.00001    0.00027    2513.49     0.0008     0.0049
+    0.00026    0.00001    0.00027    2513.75     0.0008     0.0049
+    0.00026    0.00001    0.00027    2513.67     0.0008     0.0049
+Average                              2513.68
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 200.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU implementer	: 0x48
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd01
+CPU revision	: 0
+
+processor	: 4
+BoLinux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-26-generic (buildd@bos02-arm64-038) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #30-Ubuntu SMP Mon Apr 20 16:59:40 UTC 2020
+
+
+Unrolled Double  Precision     2513.68 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
