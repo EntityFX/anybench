@@ -1,0 +1,52 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 2399.330
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mdLinux version 5.3.0-46-generic (buildd@lcy01-amd64-013) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #38~18.04.1-Ubuntu SMP Tue Mar 31 04:17:56 UTC 2020
+
+
+From File /proc/version
+Linux version 5.3.0-46-generic (buildd@lcy01-amd64-013) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #38~18.04.1-Ubuntu SMP Tue Mar 31 04:17:56 UTC 2020
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Thu Apr 23 10:15:09 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   36925  18774  19058  46429  23435  23382  26833  13361  13408
+      16   37708  18725  19177  47368  23776  23310  26838  13410  13457
+      32   37468  18814  19018  46995  23582  23516  25594  13155  13216
+      64   29498  17983  18376  29673  18696  18650  20969  11079  11064
+     128   29223  18125  18286  29616  18670  18677  20724  10888  11105
+     256   28352  17782  17929  28608  18160  18254  18980  10856  10805
+     512   25818  17169  17162  26225  17550  17475  15601  10155  10117
+    1024   25857  17087  17173  26287  17478  17550  15597  10088  10222
+    2048   25861  17164  17275  26202  17626  17664  15519  10137  10213
+    4096   24824  17084  17021  25474  17433  17292  14947  10020   9982
+    8192   17779  13956  13911  18460  14359  14312   9684   8170   8362
+
+                End of test Thu Apr 23 10:15:27 2020
+

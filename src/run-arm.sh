@@ -26,6 +26,10 @@ echo -e "Run Dhrystone v 2.1\n"
 ../bin/linux/arm/dhrystone_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/dhrystone_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/dhrystone_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/dhrystone_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/dhrystone_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/dhrystone_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/dhrystone_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/dhrystone_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/dhrystone_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/dhrystone_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/dhrystone_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/dhrystone_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run Whetstone\n"
 
@@ -51,6 +55,10 @@ echo -e "Run Whetstone\n"
 ../bin/linux/arm/whetstone_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/whetstone_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/whetstone_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/whetstone_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/whetstone_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/whetstone_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/whetstone_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/whetstone_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/whetstone_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/whetstone_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/whetstone_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run Memspeed\n"
 
@@ -76,6 +84,10 @@ echo -e "Run Memspeed\n"
 ../bin/linux/arm/memspeed_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/memspeed_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/memspeed_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/memspeed_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/memspeed_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/memspeed_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/memspeed_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/memspeed_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/memspeed_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/memspeed_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/memspeed_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/memspeed_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run Linpack\n"
 
@@ -101,6 +113,10 @@ echo -e "Run Linpack\n"
 ../bin/linux/arm/linpack_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/linpack_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/linpack_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/linpack_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/linpack_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/linpack_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/linpack_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/linpack_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/linpack_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/linpack_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/linpack_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/linpack_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run Lloops\n"
 
@@ -126,6 +142,10 @@ echo -e "Run Lloops\n"
 ../bin/linux/arm/lloops_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/lloops_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/lloops_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/lloops_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/lloops_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/lloops_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/lloops_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/lloops_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/lloops_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/lloops_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/lloops_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/lloops_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run WhetstoneMP\n"
 
@@ -151,6 +171,10 @@ echo -e "Run WhetstoneMP\n"
 ../bin/linux/arm/whetstone_mp_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/whetstone_mp_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/whetstone_mp_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/whetstone_mp_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/whetstone_mp_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run MPMFlops\n"
 
@@ -176,6 +200,10 @@ echo -e "Run MPMFlops\n"
 ../bin/linux/arm/mpmflops_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/mpmflops_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/mpmflops_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/mpmflops_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/mpmflops_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/mpmflops_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/mpmflops_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/mpmflops_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/mpmflops_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/mpmflops_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/mpmflops_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/mpmflops_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log
 
 echo -e "Run busspeedIL\n"
 
@@ -201,3 +229,7 @@ echo -e "Run busspeedIL\n"
 ../bin/linux/arm/busspeedIL_arm-armv8-a_ffast_O3_cortex-a57 n 2>&1 > ../results/arm/busspeedIL_arm-armv8-a_ffast_O3_cortex-a57.stdout_stderr.log
 ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O2 n 2>&1 > ../results/arm/busspeedIL_arm-armv8.1-a_O2.stdout_stderr.log
 ../bin/linux/arm/busspeedIL_arm-armv8.1-a_O3 n 2>&1 > ../results/arm/busspeedIL_arm-armv8.1-a_O3.stdout_stderr.log
+# Huawei Taishan
+../bin/linux/arm/busspeedIL_arm-armv8.4-a_O2_tsv110 n 2>&1 > ../results/arm/busspeedIL_arm-armv8.4-a_O2_tsv110.stdout_stderr.log
+../bin/linux/arm/busspeedIL_arm-armv8.4-a_O3_tsv110 n 2>&1 > ../results/arm/busspeedIL_arm-armv8.4-a_O3_tsv110.stdout_stderr.log
+../bin/linux/arm/busspeedIL_arm-armv8.4-a_Ofast_tsv110 n 2>&1 > ../results/arm/busspeedIL_arm-armv8.4-a_Ofast_tsv110.stdout_stderr.log

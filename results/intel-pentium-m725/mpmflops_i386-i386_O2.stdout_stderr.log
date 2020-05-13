@@ -1,0 +1,30 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+ Cannot open /proc/cpuinfo
+
+
+From File /proc/version
+
+
+ MP-MFLOPS Compiled NEON v1.0 Wed Apr 29 22:07:57 2020
+
+    FPU Add & Multiply using 1, 2, 4 and 8 Threads
+
+        2 Ops/Word              32 Ops/Word
+ KB     12.8     128   12800    12.8     128   12800
+ MFLOPS
+ 1T      295     304     227     409     407     407
+ 2T      307     303     232     409     406     406
+ 4T      312     310     252     409     407     406
+ 8T      306     309     275     408     409     406
+ Results x 100000, 0 indicates ERRORS
+ 1T    76384   97072   99969   66065   95370   99951
+ 2T    76384   97072   99969   66065   95370   99951
+ 4T    76384   97072   99969   66065   95370   99951
+ 8T    76384   97072   99969   66065   95370   99951
+
+         End of test Wed Apr 29 22:08:31 2020
+
+Type additional information to include in MP-MFLOPS.txt - Press Enter

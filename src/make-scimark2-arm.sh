@@ -48,5 +48,10 @@ cc -Iscimark2 scimark2/*.c -lm -o ../bin/linux/arm/scimark2_arm-armv8.1-a_O2 -O2
 chmod +x ../bin/linux/arm/scimark2_arm-armv8.1-a_O2
 cc -Iscimark2 scimark2/*.c -lm -o ../bin/linux/arm/scimark2_arm-armv8.1-a_O3 -O3 -march=armv8.1-a -D options="\"arm armv8.1-a optimized\""
 chmod +x ../bin/linux/arm/scimark2_arm-armv8.1-a_O3
-
-
+# Huawei Taishan
+cc -Iscimark2 scimark2/*.c -lm -o ../bin/linux/arm/scimark2_arm-armv8.4-a_O2_tsv110 -O2 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/scimark2_arm-armv8.4-a_O2_tsv110
+cc -Iscimark2 scimark2/*.c -lm -o ../bin/linux/arm/scimark2_arm-armv8.4-a_O3_tsv110 -O3 -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/scimark2_arm-armv8.4-a_O3_tsv110
+cc -Iscimark2 scimark2/*.c -lm -o ../bin/linux/arm/scimark2_arm-armv8.4-a_Ofast_tsv110 -Ofast -march=armv8.4-a -mtune=tsv110 -D options="\"arm armv8.4-a optimized\""
+chmod +x ../bin/linux/arm/scimark2_arm-armv8.4-a_Ofast_tsv110

@@ -1,0 +1,51 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz
+stepping	: 4
+microcode	: 0x2000064
+cpu MHz		: 1200.215
+cache size	: 19712 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 6
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd mba ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflLinux version 4.15.18 (root@s001-n185) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #1 SMP Fri Oct 18 11:54:23 PDT 2019
+
+
+From File /proc/version
+Linux version 4.15.18 (root@s001-n185) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #1 SMP Fri Oct 18 11:54:23 PDT 2019
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Wed Apr 29 00:17:54 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   42097  21134  16637  44093  22624  23147  28221  14745  14744
+      16   42254  21173  16754  44021  22611  23377  28851  14752  14751
+      32   42108  21126  16827  43512  22419  23490  28727  14720  14722
+      64   32421  19463  16870  32683  18772  20875  21712  12161  13081
+     128   32649  19361  16919  32664  18087  18950  21734  12170  13085
+     256   32634  19342  16989  32657  18073  18305  21757  12168  13086
+     512   32653  19320  17164  32434  18156  18841  21721  12172  13105
+    1024   30339  18559  17324  30360  18045  19881  19677  11681  12249
+    2048   24077  17538  17368  23876  17068  18683  13297  10451  10544
+    4096   24223  17653  18156  23982  16846  18270  13267  10490  10578
+    8192   23996  17428  18109  23743  16733  17942  13132  10318  10361
+
+                End of test Wed Apr 29 00:18:12 2020
+
