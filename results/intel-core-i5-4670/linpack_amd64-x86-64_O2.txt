@@ -1,0 +1,90 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00018    0.00001    0.00019    3706.68     0.0005     0.0033
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.00 seconds
+      1000 times   0.03 seconds
+     10000 times   0.29 seconds
+     20000 times   0.57 seconds
+     40000 times   1.15 seconds
+Overhead for 1 matgen      0.00003 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.19 seconds
+      2000 times   0.38 seconds
+      4000 times   0.76 seconds
+      8000 times   1.52 seconds
+Passes used       5259 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00016    0.00001    0.00017    4122.39     0.0005     0.0030
+    0.00016    0.00001    0.00017    4123.39     0.0005     0.0030
+    0.00016    0.00001    0.00017    4123.16     0.0005     0.0030
+    0.00016    0.00001    0.00017    4122.26     0.0005     0.0030
+    0.00016    0.00001    0.00017    4123.19     0.0005     0.0030
+Average                              4122.88
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00003 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00016    0.00001    0.00017    4122.03     0.0005     0.0030
+    0.00016    0.00001    0.00017    4121.81     0.0005     0.0030
+    0.00016    0.00001    0.00017    4123.15     0.0005     0.0030
+    0.00016    0.00001    0.00017    4125.22     0.0005     0.0030
+    0.00016    0.00001    0.00017    4126.11     0.0005     0.0030
+Average                              4123.66
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3444.666
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+Unrolled Double  Precision     4122.88 Mflops 
+
+
+Type additional information to include in linpack.txt - Press Enter

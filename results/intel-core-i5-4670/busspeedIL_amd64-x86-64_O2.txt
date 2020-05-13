@@ -1,0 +1,49 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3670.402
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+    BusSpeed amd64 x86-64 optimized Wed May 13 07:55:48 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  23377  22504  24555  24031  24163  24159
+      32  22033  18328  18762  24150  24129  23593
+      64   6900   6566  12225  18055  21700  23458
+     128   6961   6678  12215  17842  21673  23428
+     256   3580   3906   7321  13216  20154  22851
+     512   2798   3228   6069  11452  19228  22269
+    1024   2740   3233   6094  11543  19152  22445
+    4096   2430   2977   5674  11041  17989  21721
+   16384    847   1132   2242   4499   8193  14891
+   65536    730   1065   2151   4192   7655  14158
+
+ Type additional information to include in busSpeed.txt - Press Enter

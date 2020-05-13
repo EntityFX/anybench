@@ -1,0 +1,52 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i5-4670 CPU @ 3.40GHz
+stepping	: 3
+microcode	: 0x27
+cpu MHz		: 3780.227
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Wed May 13 08:02:38 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   63845  58634  58374  77240  65358  65308  30246  42021  42319
+      16   66492  59651  59518  79099  67305  66846  30316  43801  43913
+      32   67777  60198  59881  80006  68335  68217  29031  44165  43899
+      64   54171  48379  49110  55558  52153  52035  23780  29780  30469
+     128   54170  48370  49176  55362  52104  51896  23744  29799  29955
+     256   50966  45886  46571  52236  48915  49159  22888  28132  28090
+     512   35576  34311  34992  35932  35079  35061  17703  18858  18827
+    1024   35667  34363  35291  36034  35069  35146  17584  18897  18920
+    2048   35587  34292  35312  35917  34906  35074  17693  18928  18894
+    4096   34658  33463  34226  35109  34144  34067  17225  18190  18238
+    8192   19997  19221  19106  19941  19452  19340  10080  10244  10236
+
+                End of test Wed May 13 08:02:53 2020
+
