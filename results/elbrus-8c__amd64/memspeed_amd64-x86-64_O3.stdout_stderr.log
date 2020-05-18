@@ -1,0 +1,58 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.912740
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 2600.68
+
+processor	: 1
+vendor_id	: E8C-SWTX
+cpu family	: 4
+model		: 7
+model name	: E8C
+revision	: 2
+cpu MHz		: 1299.912740
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips	: 2599.85
+
+processor	: Linux version 4.19.0-1.4-e8c (root@antares-4) (lcc:1.24.09:Feb-11-2020:e2k-v4-linux.cross:x86_64-linux) #1 SMP Tue Apr 28 21:01:00 GMT 2020
+
+
+From File /proc/version
+Linux version 4.19.0-1.4-e8c (root@antares-4) (lcc:1.24.09:Feb-11-2020:e2k-v4-linux.cross:x86_64-linux) #1 SMP Tue Apr 28 21:01:00 GMT 2020
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Mon May 18 11:00:01 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   11439  12837   9873  10159  11632  12759  11119   8260   8214
+      16   11658  13321  10120  10266  12007  13308  11878   8545   8530
+      32   11763  13585  10254  10327  12243  13584  11875   8730   8717
+      64   11816  13701  10299  10347  12331  13682  11868   8807   8806
+     128   11644  12700   5176   5940   7693   5886  11860   8853   8848
+     256   11749  13212   5183   5944   7740   5905   6999   5602   5576
+     512   10329  10577   5172   5932   7411   5581   6102   5287   5273
+    1024    8112   8254   5152   5934   6833   5135   5506   4940   4935
+    2048    8022   8193   5138   5930   6805   5091   5499   4940   4939
+    4096    7980   8162   5087   5930   6797   5029   5524   4975   4972
+    8192    7879   8032   5021   5884   6760   5022   5701   4960   4951
+
+                End of test Mon May 18 11:00:19 2020
+
