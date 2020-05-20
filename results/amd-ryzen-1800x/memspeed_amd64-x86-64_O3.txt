@@ -1,0 +1,51 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 7 1800X Eight-Core Processor
+stepping	: 1
+microcode	: 0x8001136
+cpu MHz		: 3465.903
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flusLinux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Fri May 15 16:44:19 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   75208  54652  59168  79624  74745  77080  30250  50656  51060
+      16   77413  57983  60322  80756  79164  76978  30515  55824  55533
+      32   76900  59195  60702  80712  80682  78851  30725  58366  58608
+      64   63771  59733  59670  72989  68605  67684  26826  38612  39441
+     128   63898  59804  59248  73528  70705  68653  28138  40147  39786
+     256   63553  60551  59516  74239  71974  69091  28786  39696  40376
+     512   63199  60898  61571  74432  71337  68108  29556  38453  38794
+    1024   64834  60130  61191  72941  70083  67751  29597  38552  37895
+    2048   63293  58847  60640  71950  68336  67510  28987  37647  37211
+    4096   63629  59477  60632  71873  69091  68122  28718  37287  36742
+    8192   24181  23816  23400  24818  24278  23974  11411  12698  12428
+
+                End of test Fri May 15 16:44:34 2020
+

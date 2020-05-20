@@ -1,0 +1,159 @@
+ #####################################################
+
+     Memory Reading Speed Test amd64 x86-64 optimized by Roy Longbottom
+
+               Start of test Fri May 15 16:44:03 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   39176  20409  30842  40877  20260  30723  30272  15313  15530
+      16   40460  20651  30921  39912  20718  31094  30740  15441  15321
+      32   39289  20442  30954  41205  20671  30710  30781  15532  15476
+      64   39411  20744  28766  41014  20536  28777  28076  15142  15185
+     128   38777  20536  29008  41587  20224  28241  27299  14160  14073
+     256   38976  20501  29151  40345  20340  28686  27818  15049  15454
+     512   38153  20308  28496  41075  20667  29195  29226  15417  15384
+    1024   38544  20663  29352  40964  20514  27990  29348  15341  15174
+    2048   38195  19925  27613  39194  20024  28760  29393  15002  14990
+    4096   38787  20707  28545  41471  20725  28713  28882  15225  15145
+    8192   23959  18147  21479  23952  18464  21255  12169  11197  11116
+
+                End of test Fri May 15 16:44:19 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 7 1800X Eight-Core Processor
+stepping	: 1
+microcode	: 0x8001136
+cpu MHz		: 3319.984
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flusLinux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test amd64 x86-64 optimized by Roy Longbottom
+
+               Start of test Fri May 15 16:44:19 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   75208  54652  59168  79624  74745  77080  30250  50656  51060
+      16   77413  57983  60322  80756  79164  76978  30515  55824  55533
+      32   76900  59195  60702  80712  80682  78851  30725  58366  58608
+      64   63771  59733  59670  72989  68605  67684  26826  38612  39441
+     128   63898  59804  59248  73528  70705  68653  28138  40147  39786
+     256   63553  60551  59516  74239  71974  69091  28786  39696  40376
+     512   63199  60898  61571  74432  71337  68108  29556  38453  38794
+    1024   64834  60130  61191  72941  70083  67751  29597  38552  37895
+    2048   63293  58847  60640  71950  68336  67510  28987  37647  37211
+    4096   63629  59477  60632  71873  69091  68122  28718  37287  36742
+    8192   24181  23816  23400  24818  24278  23974  11411  12698  12428
+
+                End of test Fri May 15 16:44:34 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 7 1800X Eight-Core Processor
+stepping	: 1
+microcode	: 0x8001136
+cpu MHz		: 3465.903
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flusLinux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test amd64 x86-64 optimized by Roy Longbottom
+
+               Start of test Fri May 15 16:44:34 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   59031  56387  56422  78485  75947  76775  30107  50860  50285
+      16   60605  58485  59253  81169  78848  79602  29768  55101  53510
+      32   59225  58283  59938  79552  79900  77762  29369  55976  58060
+      64   56630  59697  58746  72330  69194  67438  26915  39116  38591
+     128   56250  60576  60152  74723  72251  68928  28060  40370  39610
+     256   56774  59846  61359  74414  72189  66045  28001  38701  38566
+     512   55161  57811  59116  70821  67608  66081  28183  38690  39191
+    1024   56841  60579  61156  73876  71154  68894  29424  38827  38255
+    2048   56069  58755  59392  70384  68122  65792  28464  37066  37201
+    4096   57052  59874  58529  69741  66906  65865  28176  35818  35974
+    8192   25937  26194  25527  28546  26591  25885  12488  14537  14530
+
+                End of test Fri May 15 16:44:48 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 7 1800X Eight-Core Processor
+stepping	: 1
+microcode	: 0x8001136
+cpu MHz		: 3823.853
+cache size	: 512 KB
+physical id	: 0
+siblings	: 16
+core id		: 0
+cpu cores	: 8
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flusLinux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
+From File /proc/version
+Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+ 
+
