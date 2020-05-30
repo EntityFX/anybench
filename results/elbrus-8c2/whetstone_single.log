@@ -1,0 +1,337 @@
+8C (base):
+
+$ ./a.out 
+
+##########################################
+Single Precision C Whetstone Benchmark Optimized, Mon May 25 21:12:11 2020
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.14 Seconds         25   Passes (x 100)
+       0.72 Seconds        125   Passes (x 100)
+       3.59 Seconds        625   Passes (x 100)
+
+Use 1741  passes (x 100)
+
+From File /proc/cpuinfo
+processor       : 0
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2600.90
+
+processor       : 1
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2599.86
+
+processor       : 2
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2599.86
+
+processor       : 3
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.9Linux version 4.9.0-4.1-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:x86_64-linux) #1 SMP Sat Aug 3 01:48:12 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-4.1-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:x86_64-linux) #1 SMP Sat Aug 3 01:48:12 UTC 2019
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070       577.192              0.058
+N2 floating point     -1.12191438674926758       636.041              0.368
+N3 if then else        1.00000000000000000               10368.436    0.017
+N4 fixed point        12.00000000000000000                 590.291    0.929
+N5 sin,cos etc.        0.49909421801567078                  48.362    2.995
+N6 floating point      0.99999982118606567       324.676              2.892
+N7 assignments         3.00000000000000000                 973.847    0.330
+N8 exp,sqrt etc.       0.75095528364181519                  27.354    2.368
+
+MWIPS                                           1748.369              9.958
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter
+
+-bash-4.2$ ./a.out 
+
+##########################################
+Single Precision C Whetstone Benchmark Optimized, Mon May 25 21:13:10 2020
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.14 Seconds         25   Passes (x 100)
+       0.72 Seconds        125   Passes (x 100)
+       3.59 Seconds        625   Passes (x 100)
+
+Use 1743  passes (x 100)
+
+From File /proc/cpuinfo
+processor       : 0
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2600.90
+
+processor       : 1
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2599.86
+
+processor       : 2
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.918800
+L1 cache size   : 64 KB
+L1 cache line length    : 32 bytes
+L2 cache size   : 512 KB
+L2 cache line length    : 64 bytes
+L3 cache size   : 16384 KB
+L3 cache line length    : 64 bytes
+bogomips        : 2599.86
+
+processor       : 3
+vendor_id       : MBE8C-PC v.2
+cpu family      : 4
+model           : 7
+model name      : E8C
+revision        : 2
+cpu MHz         : 1299.9Linux version 4.9.0-4.1-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:x86_64-linux) #1 SMP Sat Aug 3 01:48:12 UTC 2019
+
+
+From File /proc/version
+Linux version 4.9.0-4.1-e8c (root@antares-4) (lcc:1.23.14:Sep--9-2018:e2k-v4-linux.cross:x86_64-linux) #1 SMP Sat Aug 3 01:48:12 UTC 2019
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070       577.358              0.058
+N2 floating point     -1.12191438674926758       636.289              0.368
+N3 if then else        1.00000000000000000               10388.042    0.017
+N4 fixed point        12.00000000000000000                 590.333    0.930
+N5 sin,cos etc.        0.49909421801567078                  48.359    2.999
+N6 floating point      0.99999982118606567       324.723              2.895
+N7 assignments         3.00000000000000000                 973.778    0.331
+N8 exp,sqrt etc.       0.75095528364181519                  27.355    2.370
+
+MWIPS                                           1748.470              9.969
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter
+
+
+
+
+8C2 (base):
+
+$ ./a.out 
+
+##########################################
+Single Precision C Whetstone Benchmark Optimized, Mon May 25 20:14:02 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.12 Seconds         25   Passes (x 100)
+       0.62 Seconds        125   Passes (x 100)
+       3.08 Seconds        625   Passes (x 100)
+
+Use 2030  passes (x 100)
+
+From File /proc/cpuinfo
+processor       : 0
+vendor_id       : unknown
+cpu family      : 4
+model           : 9
+model name      : E8C2
+revision        : 2
+cpu MHz         : 1499.902130
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips        : 3000.57
+
+processor       : 1
+vendor_id       : unknown
+cpu family      : 4
+model           : 9
+model name      : E8C2
+revision        : 2
+cpu MHz         : 1499.902130
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips        : 2999.82
+
+processor       : Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+From File /proc/version
+Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070       665.744              0.059
+N2 floating point     -1.12191438674926758       733.617              0.372
+N3 if then else        1.00000000000000000               11973.914    0.018
+N4 fixed point        12.00000000000000000                 680.847    0.939
+N5 sin,cos etc.        0.49909421801567078                  55.895    3.022
+N6 floating point      0.99999982118606567       374.485              2.924
+N7 assignments         3.00000000000000000                1123.350    0.334
+N8 exp,sqrt etc.       0.75095528364181519                  32.889    2.296
+
+MWIPS                                           2037.561              9.963
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter
+
+-bash-4.2$ 
+-bash-4.2$ 
+-bash-4.2$ 
+-bash-4.2$ 
+-bash-4.2$ 
+-bash-4.2$ ./a.out 
+
+##########################################
+Single Precision C Whetstone Benchmark Optimized, Mon May 25 20:14:31 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.12 Seconds         25   Passes (x 100)
+       0.62 Seconds        125   Passes (x 100)
+       3.08 Seconds        625   Passes (x 100)
+
+Use 2030  passes (x 100)
+
+From File /proc/cpuinfo
+processor       : 0
+vendor_id       : unknown
+cpu family      : 4
+model           : 9
+model name      : E8C2
+revision        : 2
+cpu MHz         : 1499.902130
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips        : 3000.57
+
+processor       : 1
+vendor_id       : unknown
+cpu family      : 4
+model           : 9
+model name      : E8C2
+revision        : 2
+cpu MHz         : 1499.902130
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=512K line_size=64 associativity=4
+cache3          : level=3 type=Unified scope=Private size=16384K line_size=64 associativity=16
+bogomips        : 2999.82
+
+processor       : Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+From File /proc/version
+Linux version 4.19.0-0.3-e8c2 (root@fitting3) (lcc:1.24.07:Dec--4-2019:e2k-v5-linux.cross:x86_64-linux) #1 SMP Sat Jan 18 09:49:15 GMT 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070       665.827              0.059
+N2 floating point     -1.12191438674926758       733.697              0.372
+N3 if then else        1.00000000000000000               11970.175    0.018
+N4 fixed point        12.00000000000000000                 680.855    0.939
+N5 sin,cos etc.        0.49909421801567078                  55.898    3.022
+N6 floating point      0.99999982118606567       374.505              2.924
+N7 assignments         3.00000000000000000                1123.339    0.334
+N8 exp,sqrt etc.       0.75095528364181519                  32.888    2.296
+
+MWIPS                                           2037.617              9.963
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter
