@@ -207,15 +207,15 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 |Xeon 6128       |Intel(R) Xeon(R) Gold 6128 CPU @ 3.40GHz (2 CPU)|24   |3400           |amd64       |25195.31        |7.41               |1.14                     |
 |Raspberry PI    |Broadcom BCM2835                                |1    |700            |arm         |847             |1.21               |0.04                     |
 |Odroid X2       |Samsung Exynos 4412 (armv7l)                    |4    |1700           |arm         |4495.03         |2.64               |0.2                      |
-|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |2471.97         |1.65               |0.11                     |
+|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |8974.78         |5.98               |0.41                     |
 |E2S-EL2S4       |Elbrus 4C [EL2S4] (4 CPU)                       |16   |750            |e2k         |3329.51         |4.44               |0.15                     |
 |E2S-PC401       |Elbrus 4C [E2S] (pc401)                         |4    |800            |e2k         |3548.8          |4.44               |0.16                     |
 |E8C2-1200       |Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)           |8    |1200           |e2k         |3554.46         |2.96               |0.16                     |
 |MBE1C-PC        |Elbrus 1C+ (MBE1C-PC)                           |1    |985            |e2k         |4302.53         |4.37               |0.19                     |
 |E8C2-1550       |Elbrus 8C2 (E8C2 1550 MHz)                      |8    |1550           |e2k         |5357.45         |3.46               |0.24                     |
 |E8C-E8C4        |Elbrus 8C (4 CPU)                               |32   |1300           |e2k         |5844.82         |4.5                |0.26                     |
-|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |5865.19         |4.51               |0.27                     |
-|E16C-APPROX!    |Elbrus 16                                       |16   |2000           |e2k         |9023.37         |4.51               |0.41                     |
+|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |7779.44         |5.98               |0.35                     |
+|E16C-APPROX!    |Elbrus 16                                       |16   |2000           |e2k         |11965           |5.98               |0.54                     |
 |Pentium M725    |Pentium M725                                    |1    |1600           |i386        |1085.68         |0.68               |0.05                     |
 |Pentium III     |Intel(R) Pentium(TM) III CPU                    |1    |1000           |i386        |1595            |1.6                |0.07                     |
 |Pentium 4       |Intel(R) Pentium(TM) 4 CPU                      |1    |3066           |i386        |4012            |1.31               |0.18                     |
@@ -223,13 +223,13 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 
 
 Dhrystone, все процессоры:
-![Dhrystone Benchmark, Version 2.1](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones.svg "Dhrystone Benchmark, Version 2.1")
+![Dhrystone Benchmark, Version 2.1](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones.png "Dhrystone Benchmark, Version 2.1")
 
 Dhrystone, на 1 МГц:
-![Dhrystone Benchmark, Version 2.1, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_per_mhz.svg "Dhrystone Benchmark, Version 2.1, Per 1 MHz")
+![Dhrystone Benchmark, Version 2.1, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_per_mhz.png "Dhrystone Benchmark, Version 2.1, Per 1 MHz")
 
 Dhrystone, относительно Core i7-2600:
-![Dhrystone Benchmark, Version 2.1, Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_relative.svg "Dhrystone Benchmark, Version 2.1, Relative")
+![Dhrystone Benchmark, Version 2.1, Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_relative.png "Dhrystone Benchmark, Version 2.1, Relative")
 
 Здесь видно, что в тесте Dhrystone процессоры x86 заметно быстрее arm и Эльбрус процессоров. Производительность 1 ядра Эльбрус 8С (E8C) сравнима с ядром Cortex A72, если сравнивать относительно Dhrystones на 1 МГц, Эльбрус 8С чуть быстрее Atom Z8350 относительно Dhrystones на 1 МГц. Производительность Baikal T1 сравнима с ядром Arm Cortex A9. Странно себя показал Эльбрус 8СВ, который с большой частотой оказался медленнее Эльбрус 8С. В МЦСТ мне ответили, что этот экземпляр тестовый и компилятор немного не доработан под данную версию, возможно с другим экземпляром тесты окажутся гораздо лучше.
 
@@ -255,12 +255,12 @@ Dhrystone, относительно Core i7-2600:
 |E2S-PC401       |Elbrus 4C [E2S] (pc401)                         |4    |800            |e2k         |938.12  |2455    |1.17                         |3.07                          |0.16                     |0.08                          |
 |E2S-EL2S4       |Elbrus 4C [EL2S4] (4 CPU)                       |16   |750            |e2k         |970.8   |15790   |1.29                         |21.05                         |0.17                     |0.5                           |
 |MBE1C-PC        |Elbrus 1C+ (MBE1C-PC)                           |1    |985            |e2k         |1277.55 |1312    |1.3                          |1.33                          |0.22                     |0.04                          |
-|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |1517.62 |12980   |1.17                         |9.98                          |0.26                     |0.41                          |
+|E8C-SWTX        |Elbrus 8C (E8C-SWTX)                            |8    |1300           |e2k         |1748.37 |13818   |1.34                         |10.63                         |0.31                     |0.44                          |
 |E8C2-1200       |Elbrus 8C2 (Broken 8MB Cache 1.2 GHz)           |8    |1200           |e2k         |1545.92 |12420   |1.29                         |10.35                         |0.27                     |0.4                           |
 |E8C-E8C4        |Elbrus 8C (4 CPU)                               |32   |1300           |e2k         |1647.51 |53563   |1.27                         |41.2                          |0.29                     |1.71                          |
 |E8C2-1550       |Elbrus 8C2 (E8C2 1550 MHz)                      |8    |1550           |e2k         |1703.75 |14571.94|1.1                          |9.4                           |0.3                      |0.47                          |
-|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |1703.75 |14571.94|1.14                         |9.71                          |0.3                      |0.47                          |
-|E16C-APPROX!    |Elbrus 16                                       |16   |2000           |e2k         |2198.39 |37605.01|1.1                          |18.8                          |0.38                     |1.2                           |
+|E8C2            |Elbrus 8C2 (E8C2)                               |8    |1500           |e2k         |2037.62 |16194   |1.36                         |10.8                          |0.36                     |0.52                          |
+|E16C-APPROX!    |Elbrus 16                                       |16   |2000           |e2k         |2717    |43184   |1.36                         |21.59                         |0.47                     |1.38                          |
 |Pentium M725    |Pentium M725                                    |1    |1600           |i386        |506.94  |506.94  |0.32                         |0.32                          |0.09                     |0.02                          |
 |Pentium III     |Intel(R) Pentium(TM) III CPU                    |1    |1000           |i386        |816     |816     |0.82                         |0.82                          |0.14                     |0.03                          |
 |Pentium 4       |Intel(R) Pentium(TM) 4 CPU                      |1    |3066           |i386        |1119    |1119    |0.36                         |0.36                          |0.2                      |0.04                          |
@@ -268,22 +268,22 @@ Dhrystone, относительно Core i7-2600:
 
 
 Whetstone Single Precision, все процессоры
-![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones.svg "Whetstone Single Precision")
+![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones.png "Whetstone Single Precision")
 
 Whetstone Single Precision, многопоточные результаты
-![MP Whetstone Precision Multi Core](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp.svg "MP Whetstone Precision Multi Thread")
+![MP Whetstone Precision Multi Core](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp.png "MP Whetstone Precision Multi Thread")
 
 Whetstone Single Precision, на 1 МГц
-![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_per_mhz.svg "Whetstone Single Precision, Per 1 MHz")
+![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_per_mhz.png "Whetstone Single Precision, Per 1 MHz")
 
 Whetstone Single Precision, многопоточные результаты, на 1 МГц
-![MP Whetstone Precision Multi Core, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_per_mhz.svg "MP Whetstone Precision Multi Thread, Per 1 MHz")
+![MP Whetstone Precision Multi Core, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_per_mhz.png "MP Whetstone Precision Multi Thread, Per 1 MHz")
 
 Whetstone Single Precision, относительно Core i7-2600
-![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_relative.svg "Whetstone Single Precision Single Thread Relative")
+![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_relative.png "Whetstone Single Precision Single Thread Relative")
 
 Whetstone Single Precision, многопоточные результаты, относительно Core i7-2600
-![MP Whetstone Precision Multi Core Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_relative.svg "MP Whetstone Precision Multi Thread Relative")
+![MP Whetstone Precision Multi Core Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_relative.png "MP Whetstone Precision Multi Thread Relative")
 
 
 Мы видим, что процессоры ARM v7 на архитектуре ядра Cortex A9 сопоставимы с процессорами Pentium III, если сравнивать частоту на 1 Мгц.
@@ -349,13 +349,13 @@ Whetstone Single Precision, многопоточные результаты, о�
 
 
 LINPACK 100x100 Double Precision, все процессоры
-![Linpack 100x100 Double Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack.svg "Linpack 100x100 Double Precision")
+![Linpack 100x100 Double Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack.png "Linpack 100x100 Double Precision")
 
 LINPACK 100x100 Double Precision, на 1 МГц
-![Linpack 100x100 Double Precision, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack_per_mhz.svg "Linpack 100x100 Double Precision, Per 1 MHz")
+![Linpack 100x100 Double Precision, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack_per_mhz.png "Linpack 100x100 Double Precision, Per 1 MHz")
 
 LINPACK 100x100 Double Precision, относительно Core i7-2600
-![Linpack 100x100 Double Precision, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack_relative.svg "Linpack 100x100 Double Precision, Relative to Core i7-2600")
+![Linpack 100x100 Double Precision, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/linpack_relative.png "Linpack 100x100 Double Precision, Relative to Core i7-2600")
 
 Cнова сравним  Mflops'ы на 1 МГц на 1 ядро.
 
@@ -398,22 +398,22 @@ Cнова сравним  Mflops'ы на 1 МГц на 1 ядро.
 
 
 Coremark, однопоточные результаты, все процессоры
-![Coremark](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark.svg "Coremark")
+![Coremark](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark.png "Coremark")
 
 Coremark, многопоточные результаты, все процессоры
-![Coremark Multi Thread](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp.svg "Coremark Multi Thread")
+![Coremark Multi Thread](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp.png "Coremark Multi Thread")
 
 Coremark, однопоточные результаты, на 1 МГц
-![Coremark, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_per_mhz.svg "Coremark, Per 1 MHz")
+![Coremark, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_per_mhz.png "Coremark, Per 1 MHz")
 
 Coremark, многопоточные результаты, на 1 МГц
-![Coremark Multi Thread, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp_per_mhz.svg "Coremark Multi Thread, Per 1 MHz")
+![Coremark Multi Thread, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp_per_mhz.png "Coremark Multi Thread, Per 1 MHz")
 
 Coremark, однопоточные результаты, относительно Core i7-2600
-![Coremark, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_relative.svg "Coremark, Relative to Core i7-2600")
+![Coremark, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_relative.png "Coremark, Relative to Core i7-2600")
 
 Coremark, многопоточные результаты, относительно Core i7-2600
-![Coremark Multi Thread, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp_relative.svg "Coremark Multi Thread, Relative to Core i7-2600")
+![Coremark Multi Thread, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/coremark_mp_relative.png "Coremark Multi Thread, Relative to Core i7-2600")
 
 В этом тесте ядра Эльбрус на 1 МГц оказываются немного слабее ядер ARM (Cortex A9, Cortex A53) и в 3 раза слабее современных ядер Intel (Core i7-2600 ),
 ядра ARM (Cortex A9, Cortex A53) почти что на уровне Atom Z8350, Core 2 Duo T9400 и AMD A6-3650. Процессор Baikal T1 немного обгоняет  Atom Z8350, Core 2 Duo T9400 и AMD A6-3650,
@@ -466,13 +466,13 @@ Coremark, многопоточные результаты, относитель�
 
 
 Memspeed, Умножение-сложение с присвоением, все процессоры
-![Memspeed Multiply Add Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_mul_add_ass.svg "Memspeed Multiply Add Assign")
+![Memspeed Multiply Add Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_mul_add_ass.png "Memspeed Multiply Add Assign")
 
 Memspeed, Сложение с присвоением, все процессоры
-![Memspeed Add Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_add_ass.svg "Memspeed Add Assign")
+![Memspeed Add Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_add_ass.png "Memspeed Add Assign")
 
 Memspeed, Присвоение, все процессоры
-![Memspeed Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_ass.svg "Memspeed  Assign")
+![Memspeed Assign](https://github.com/EntityFX/anybench/raw/master/doc/charts/memspeed_ass.png "Memspeed  Assign")
 
 Как мы знаем, на скорость работы с памятью играют частота работы с памятью, размеры кеша и латентность.
 
@@ -531,19 +531,19 @@ x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f-(x[i]+g)*h+(x[i]+j)*k-(x[i]+l)*m+(x[i]+o
 
 
 MP MFLOPS, все процессоры
-![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops.svg "MP MFLOPS")
+![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops.png "MP MFLOPS")
 
 MP MFLOPS, все процессоры, 2 ops/w
-![MP MFLOPS, 2 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_2ops.svg "MP MFLOPS, 2 ops/w")
+![MP MFLOPS, 2 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_2ops.png "MP MFLOPS, 2 ops/w")
 
 MP MFLOPS, все процессоры, 8 ops/w
-![MP MFLOPS, 8 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_8ops.svg "MP MFLOPS, 8 ops/w")
+![MP MFLOPS, 8 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_8ops.png "MP MFLOPS, 8 ops/w")
 
 MP MFLOPS, все процессоры, 32 ops/w
-![MP MFLOPS, 32 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_32ops.svg "MP MFLOPS, 32 ops/w")
+![MP MFLOPS, 32 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_32ops.png "MP MFLOPS, 32 ops/w")
 
 MP MFLOPS, все процессоры, относительно Core i7-2600
-![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_relative.svg "MP MFLOPS")
+![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_relative.png "MP MFLOPS")
 
 
 Вот здесь процессоры Эльбрус показывают свою превосходство над всеми другими архитектурами: способность выполнять большое число операций за такт (архитектура VLIW).
@@ -572,11 +572,11 @@ MP MFLOPS, все процессоры, относительно Core i7-2600
 
 
 Scimark 2, однопоточные результаты, все процессоры
-![Scimark 2](https://github.com/EntityFX/anybench/raw/master/doc/charts/scimark2.svg "Scimark 2")
+![Scimark 2](https://github.com/EntityFX/anybench/raw/master/doc/charts/scimark2.png "Scimark 2")
 
 ## Выводы
 
-![Performance, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/performance_relative.svg "Общая производительность, относительно Core i7-2600")
+![Performance, Relative to Core i7-2600](https://github.com/EntityFX/anybench/raw/master/doc/charts/performance_relative.png "Общая производительность, относительно Core i7-2600")
 
 ARM процессоры уровня Cortex A9, Cortex A53 на уровне слабого Intel Atom, Pentium 4.
 ARM процессоры уровня Cortex A72 уже приближаются к процессорам Intel Core.
