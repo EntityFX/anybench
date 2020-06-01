@@ -5,7 +5,9 @@
 Все тесты написаны на языке C (взяты из исходных кодов, которые я не модифицировал и не оптимизировал) и компилируются под конкретную архитектуру с использованием конкретного компилятора для данной архитектуры и тесты производятся на различных дистрибутивах операционных систем на ядре Linux. На результаты может влиять как тип так и версия компилятора, а также режим оптимизаций. Хотя даже таким способом можно примерно сравнить производительность процессоров на разных архитектурах.
 
 P.S.: Знаю, что большинство тестов для очень старых компьютеров, но они работают везде. Что даже очень неплохо.
+
 <cut />
+
 ## Типы архитектур сравниваемых процессоров
 
 ### CISC
@@ -41,7 +43,6 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 
 ## Список тестов
 
-<cut />
 * [Dhrystone](https://ru.wikipedia.org/wiki/Dhrystone)
 * [Whetstone](https://ru.wikipedia.org/wiki/Whetstone) 
 * [LINPACK](https://ru.wikipedia.org/wiki/Linpack)
@@ -107,7 +108,6 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 
 Стенды на процессорах x86 (i386) х86-64 (amd64):
 
-<cut />
 * [Core i7-2600](https://ark.intel.com/content/www/us/en/ark/products/52213/intel-core-i7-2600-processor-8m-cache-up-to-3-80-ghz.html)
 * [AMD A6-3650](http://www.cpu-world.com/CPUs/K10/AMD-A-Series%20A6-3650%20AD3650WNZ43GX%20(AD3650WNGXBOX).html)
 * [Atom Z8350](https://ark.intel.com/content/www/us/en/ark/products/93361/intel-atom-x5-z8350-processor-2m-cache-up-to-1-92-ghz.html)
@@ -223,12 +223,15 @@ MIPS - [RISC](https://ru.wikipedia.org/wiki/RISC) система команд и
 
 
 Dhrystone, все процессоры:
+
 ![Dhrystone Benchmark, Version 2.1](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones.png "Dhrystone Benchmark, Version 2.1")
 
 Dhrystone, на 1 МГц:
+
 ![Dhrystone Benchmark, Version 2.1, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_per_mhz.png "Dhrystone Benchmark, Version 2.1, Per 1 MHz")
 
 Dhrystone, относительно Core i7-2600:
+
 ![Dhrystone Benchmark, Version 2.1, Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/dhrystones_relative.png "Dhrystone Benchmark, Version 2.1, Relative")
 
 Здесь видно, что в тесте Dhrystone процессоры x86 заметно быстрее arm и Эльбрус процессоров. Производительность 1 ядра Эльбрус 8С (E8C) сравнима с ядром Cortex A72, если сравнивать относительно Dhrystones на 1 МГц, Эльбрус 8С чуть быстрее Atom Z8350 относительно Dhrystones на 1 МГц. Производительность Baikal T1 сравнима с ядром Arm Cortex A9. Странно себя показал Эльбрус 8СВ, который с большой частотой оказался медленнее Эльбрус 8С. В МЦСТ мне ответили, что этот экземпляр тестовый и компилятор немного не доработан под данную версию, возможно с другим экземпляром тесты окажутся гораздо лучше.
@@ -268,21 +271,27 @@ Dhrystone, относительно Core i7-2600:
 
 
 Whetstone Single Precision, все процессоры
+
 ![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones.png "Whetstone Single Precision")
 
 Whetstone Single Precision, многопоточные результаты
+
 ![MP Whetstone Precision Multi Core](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp.png "MP Whetstone Precision Multi Thread")
 
 Whetstone Single Precision, на 1 МГц
+
 ![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_per_mhz.png "Whetstone Single Precision, Per 1 MHz")
 
 Whetstone Single Precision, многопоточные результаты, на 1 МГц
+
 ![MP Whetstone Precision Multi Core, Per 1 MHz](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_per_mhz.png "MP Whetstone Precision Multi Thread, Per 1 MHz")
 
 Whetstone Single Precision, относительно Core i7-2600
+
 ![Whetstone Single Precision](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_relative.png "Whetstone Single Precision Single Thread Relative")
 
 Whetstone Single Precision, многопоточные результаты, относительно Core i7-2600
+
 ![MP Whetstone Precision Multi Core Relative](https://github.com/EntityFX/anybench/raw/master/doc/charts/whetstones_mp_relative.png "MP Whetstone Precision Multi Thread Relative")
 
 
@@ -544,6 +553,9 @@ MP MFLOPS, все процессоры, 32 ops/w
 
 MP MFLOPS, все процессоры, относительно Core i7-2600
 ![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_relative.png "MP MFLOPS")
+
+MP MFLOPS, все процессоры, максимальные MFLOPS
+![MP MFLOPS MAX](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_max.png "MP MFLOPS MAX")
 
 
 Вот здесь процессоры Эльбрус показывают свою превосходство над всеми другими архитектурами: способность выполнять большое число операций за такт (архитектура VLIW).
