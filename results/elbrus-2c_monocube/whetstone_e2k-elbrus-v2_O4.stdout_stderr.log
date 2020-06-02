@@ -1,0 +1,65 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v2 optimized, Mon Feb 11 15:32:15 2019
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.40 Seconds         25   Passes (x 100)
+       1.99 Seconds        125   Passes (x 100)
+       9.97 Seconds        625   Passes (x 100)
+
+Use 626  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 1
+cpu MHz		: 499.853420
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1001.11
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 1
+cpu MHz		: 499.853420
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1012.22
+
+
+
+From File /proc/version
+Linux version 3.14.79-3.16-e2k (gavrilova_tg@e2k13) (gcc version 4.4.0 compatible.) #1 SMP Sat Dec 17 23:45:16 MSK 2016
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       153.461              0.078
+N2 floating point     -1.12274742126464844       149.684              0.562
+N3 if then else        1.00000000000000000                 499.094    0.130
+N4 fixed point        12.00000000000000000                 287.901    0.685
+N5 sin,cos etc.        0.49911010265350342                  15.728    3.311
+N6 floating point      0.99999982118606567       124.738              2.707
+N7 assignments         3.00000000000000000                1496.854    0.077
+N8 exp,sqrt etc.       0.75110864639282227                   9.549    2.439
+
+MWIPS                                            626.655              9.990
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

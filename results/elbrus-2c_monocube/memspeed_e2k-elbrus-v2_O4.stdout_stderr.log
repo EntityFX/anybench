@@ -1,0 +1,57 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 1
+cpu MHz		: 499.853420
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1001.11
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 1
+cpu MHz		: 499.853420
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1012.22
+
+
+
+From File /proc/version
+Linux version 3.14.79-3.16-e2k (gavrilova_tg@e2k13) (gcc version 4.4.0 compatible.) #1 SMP Sat Dec 17 23:45:16 MSK 2016
+
+
+   Memory Reading Speed Test e2k elbrus-v2 optimized Mon Feb 11 15:33:16 2019
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2590  11788   7283   2600  13202  11122   1703   6655   6589
+      16    2605  12277   7620   2620  14423  12027   1727   7245   7220
+      32    2618  14069   7798   2628  15200  12441   1733   7598   7584
+      64    2514  15377   7889   2616  15552  12624   1727   7792   7778
+     128    1354  15657   7937   1321  15740  12709   1642   7887   7881
+     256    1340  15806   7960   1318  15794  12754   1059   7936   7933
+     512    1083  10590   7609   1070  10577  10460    947   6548   6548
+    1024     789   6866   6078    789   6859   6839    600   4205   4204
+    2048     588   4679   4701    593   4682   4678    398   2784   2782
+    4096     587   4523   4550    595   4113   4534    388   2733   2731
+    8192     594   4500   4536    604   3718   4513    391   2806   2806
+
+                End of test Mon Feb 11 15:33:33 2019
+

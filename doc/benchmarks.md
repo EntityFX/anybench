@@ -539,9 +539,6 @@ x[i] = (x[i]+a)*b-(x[i]+c)*d+(x[i]+e)*f-(x[i]+g)*h+(x[i]+j)*k-(x[i]+l)*m+(x[i]+o
 |Baikal T1 BFK   |Baikal-T1 (MIPS P5600 V3.0)                     |2    |1200           |mips        |0                        |0                         |0                          |0                        |0                         |0                          |0                         |0                          |0                           |0        |0                 |
 
 
-MP MFLOPS, все процессоры
-![MP MFLOPS](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops.png "MP MFLOPS")
-
 MP MFLOPS, все процессоры, 2 ops/w
 ![MP MFLOPS, 2 ops/w](https://github.com/EntityFX/anybench/raw/master/doc/charts/mpmflops_2ops.png "MP MFLOPS, 2 ops/w")
 
