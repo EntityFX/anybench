@@ -1,0 +1,390 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:19:53 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.464               0.077
+N2 floating point      -1.12274742126464844       531.890               0.578
+N3 if then else         1.00000000000000000                 920.326     0.257
+N4 fixed point         12.00000000000000000                 882.563     0.817
+N5 sin,cos etc.         0.49911010265350342                  63.747     2.986
+N6 floating point       0.99999982118606567       386.278               3.195
+N7 assignments          3.00000000000000000                1997.301     0.212
+N8 exp,sqrt etc.        0.75110864639282227                  45.381     1.876
+
+MWIPS                                            2288.576               9.997
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:20:07 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.543               0.077
+N2 floating point      -1.12274742126464844       532.509               0.578
+N3 if then else         1.00000000000000000                 918.839     0.258
+N4 fixed point         12.00000000000000000                 881.007     0.818
+N5 sin,cos etc.         0.49911010265350342                  63.763     2.987
+N6 floating point       0.99999982118606567       386.348               3.196
+N7 assignments          3.00000000000000000                1997.378     0.212
+N8 exp,sqrt etc.        0.75110864639282227                  45.395     1.876
+
+MWIPS                                            2288.740              10.001
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:20:22 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.253               0.076
+N2 floating point      -1.12274742126464844       532.608               0.568
+N3 if then else         1.00000000000000000                 920.648     0.253
+N4 fixed point         12.00000000000000000                 863.569     0.821
+N5 sin,cos etc.         0.49911010265350342                  60.815     3.080
+N6 floating point       0.99999982118606567       386.267               3.143
+N7 assignments          3.00000000000000000                1996.088     0.208
+N8 exp,sqrt etc.        0.75110864639282227                  45.362     1.846
+
+MWIPS                                            2252.065               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:20:36 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.527               0.076
+N2 floating point      -1.12274742126464844       532.226               0.568
+N3 if then else         1.00000000000000000                 919.970     0.253
+N4 fixed point         12.00000000000000000                 847.698     0.835
+N5 sin,cos etc.         0.49911010265350342                  60.809     3.076
+N6 floating point       0.99999982118606567       386.342               3.139
+N7 assignments          3.00000000000000000                1996.919     0.208
+N8 exp,sqrt etc.        0.75110864639282227                  45.391     1.842
+
+MWIPS                                            2248.824               9.996
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:20:50 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.616               0.076
+N2 floating point      -1.12274742126464844       532.601               0.568
+N3 if then else         1.00000000000000000                 917.162     0.254
+N4 fixed point         12.00000000000000000                 864.049     0.821
+N5 sin,cos etc.         0.49911010265350342                  60.817     3.079
+N6 floating point       0.99999982118606567       386.412               3.142
+N7 assignments          3.00000000000000000                1996.602     0.208
+N8 exp,sqrt etc.        0.75110864639282227                  45.389     1.845
+
+MWIPS                                            2252.500               9.993
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r2000 optimized, Fri Jun  5 02:21:05 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       570.738               0.076
+N2 floating point      -1.12274742126464844       532.546               0.568
+N3 if then else         1.00000000000000000                 920.386     0.253
+N4 fixed point         12.00000000000000000                 847.944     0.835
+N5 sin,cos etc.         0.49911010265350342                  60.810     3.077
+N6 floating point       0.99999982118606567       386.313               3.140
+N7 assignments          3.00000000000000000                1997.269     0.208
+N8 exp,sqrt etc.        0.75110864639282227                  45.372     1.844
+
+MWIPS                                            2248.790              10.001
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+

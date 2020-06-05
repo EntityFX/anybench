@@ -1,0 +1,65 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+    BusSpeed sparc64 r2000 optimized Fri Jun  5 02:32:20 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   3504   2826   3096   3338   3563   3570
+      32   2520   1961   2350   3164   3364   3465
+      64   1248   1150   1679   2359   2936   3228
+     128   1337   1195   1698   2334   2853   3173
+     256   1339   1280   1873   2507   2944   3238
+     512   1588   1442   1892   2435   2963   3151
+    1024   1593   1459   1894   2510   2965   3240
+    4096    323    301    504    830   1403   1998
+   16384    301    268    476    836   1345   1925
+   65536    252    249    456    798   1301   1881
+
+ Type additional information to include in busSpeed.txt - Press Enter

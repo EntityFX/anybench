@@ -1,0 +1,420 @@
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:21:19 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4727   4242   4543   5486   4561   4899   3737   3422   3420
+      16    4733   4262   4557   5480   4558   4906   3747   3423   3423
+      32    4669   4215   4516   5400   4469   4828   3698   3337   3339
+      64    4194   3756   4071   4660   3935   4159   3015   2748   2790
+     128    4198   3764   4086   4667   3955   4186   3022   2789   2754
+     256    4210   3767   4077   4682   3950   4190   3024   2759   2759
+     512    4203   3772   4020   4679   3947   4173   3024   2758   2764
+    1024    4200   3767   4079   4678   3840   4181   3036   2768   2760
+    2048    3613   3347   3606   3927   3522   3491   2134   2310   2295
+    4096    2385   2264   2361   2519   2308   2382   1400   1366   1373
+    8192    2252   2133   2241   2390   2195   2260   1362   1295   1308
+
+                End of test Fri Jun  5 02:21:34 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:21:34 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4727   4300   4549   5485   4560   4899   3735   3421   3403
+      16    4722   4302   4556   5488   4560   4907   3748   3422   3422
+      32    4670   4201   4512   5404   4473   4843   3705   3342   3340
+      64    4198   3760   4072   4674   3963   4172   3021   2738   2740
+     128    4202   3796   4088   4731   3976   4189   3083   2755   2757
+     256    4211   3764   4087   4671   3948   4186   3024   2782   2757
+     512    4201   3766   4073   4673   3944   4196   3058   2769   2799
+    1024    4077   3667   4092   4605   3903   4143   2840   2716   2652
+    2048    3448   3150   3205   3729   3166   3998   2717   2618   2608
+    4096    2359   2237   2337   2408   2279   2355   1406   1350   1360
+    8192    2249   2126   2236   2362   2187   2250   1359   1306   1304
+
+                End of test Fri Jun  5 02:21:49 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:21:49 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4728   9691   7837   5490   9617   9577   3521   6236   6233
+      16    4730   9758   7912   5494   9721   9726   3536   6303   6309
+      32    4673   9307   7874   5387   9502   9532   3423   6074   6100
+      64    4198   7258   6949   4677   7425   7486   2928   4767   4767
+     128    4200   7465   6959   4663   7442   7560   2955   4782   4792
+     256    4210   7310   6964   4662   7700   7806   2936   4799   4797
+     512    4206   7333   6971   4685   7434   7538   2938   4992   4789
+    1024    4191   7341   6974   4673   7478   7567   2976   4809   4801
+    2048    3096   4966   4924   3709   5079   5116   2176   2947   2997
+    4096    2361   3046   2940   2488   3092   3086   1391   1710   1710
+    8192    2237   2877   2865   2352   2937   2947   1330   1616   1617
+
+                End of test Fri Jun  5 02:22:04 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:04 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4728   9690   7830   5489   9586   9588   3526   6237   6226
+      16    4732   9765   7876   5490   9718   9722   3526   6309   6311
+      32    4664   9334   7866   5414   9526   9510   3421   6077   6087
+      64    4196   7275   6940   4661   7405   7465   2929   4765   4754
+     128    4205   7552   6960   4666   7420   7548   2934   4786   4785
+     256    4200   7314   6967   4707   7470   7505   2937   4800   4800
+     512    4201   7313   6968   4670   7473   7510   2946   4804   4801
+    1024    4213   7313   6995   4670   7510   7497   2946   4838   4721
+    2048    3421   6049   5771   4186   6233   6192   2563   3783   3786
+    4096    2374   3055   3003   2506   3119   3115   1401   1721   1724
+    8192    2248   2925   2861   2362   2930   2966   1340   1629   1628
+
+                End of test Fri Jun  5 02:22:18 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:18 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4729   9693   7837   5488   9602   9611   3524   6235   6229
+      16    4729   9742   7910   5485   9722   9726   3523   6310   6311
+      32    4667   9333   7882   5416   9511   9549   3420   6061   6076
+      64    4189   7519   6933   4682   7382   7464   2929   4765   4768
+     128    4226   7324   6965   4666   7434   7493   2936   4781   4787
+     256    4201   7316   6955   4746   7494   7702   2939   4792   4790
+     512    4204   7317   6988   4683   7438   7445   3003   4788   4799
+    1024    4205   7130   6970   4679   7517   7575   2980   4800   4530
+    2048    3476   5172   5067   3793   5270   5311   2183   3072   3110
+    4096    2378   2964   3050   2518   3132   3126   1404   1734   1730
+    8192    2246   2917   2836   2378   2956   2960   1335   1613   1625
+
+                End of test Fri Jun  5 02:22:33 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r2000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:33 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4726   9688   7828   5470   9598   9610   3527   6237   6233
+      16    4730   9763   7904   5494   9725   9690   3534   6312   6286
+      32    4662   9330   7866   5415   9550   9498   3428   6115   6063
+      64    4198   7272   6934   4664   7508   7437   2930   4764   4797
+     128    4236   7299   6955   4665   7441   7541   2932   4780   4784
+     256    4198   7296   7094   4672   7492   7523   2934   4802   4799
+     512    4201   7319   6969   4670   7433   7630   2938   4793   4811
+    1024    4206   7333   6983   4674   7363   7559   2943   4686   4819
+    2048    3760   5926   5733   4146   6062   6152   2516   3651   3271
+    4096    2296   2840   3046   2516   3137   3119   1396   1724   1739
+    8192    2237   2862   2863   2362   2941   2940   1331   1616   1614
+
+                End of test Fri Jun  5 02:22:47 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+

@@ -1,0 +1,102 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation sparc64 r2000 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00073    0.00003    0.00076     905.40     0.0022     0.0135
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.10 seconds
+     10000 times   0.97 seconds
+     20000 times   1.95 seconds
+Overhead for 1 matgen      0.00010 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.08 seconds
+      1000 times   0.81 seconds
+      2000 times   1.63 seconds
+Passes used       1228 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00072    0.00003    0.00074     924.75     0.0022     0.0133
+    0.00072    0.00003    0.00074     924.24     0.0022     0.0133
+    0.00072    0.00003    0.00074     925.28     0.0022     0.0133
+    0.00072    0.00003    0.00074     923.72     0.0022     0.0133
+    0.00072    0.00003    0.00074     924.78     0.0022     0.0133
+Average                               924.55
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00010 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00072    0.00003    0.00075     919.00     0.0022     0.0133
+    0.00072    0.00003    0.00075     918.03     0.0022     0.0134
+    0.00072    0.00003    0.00075     918.68     0.0022     0.0133
+    0.00072    0.00003    0.00075     920.26     0.0022     0.0133
+    0.00072    0.00003    0.00075     918.32     0.0022     0.0134
+Average                               918.86
+
+##########################################
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+
+Unrolled Double  Precision      918.86 Mflops 
+
+

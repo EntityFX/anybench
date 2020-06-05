@@ -1,0 +1,348 @@
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:12 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     994    637   1443   1326    937   1444   1136    994    992
+      16     991    637   1446   1325    937   1448   1137    994    995
+      32     993    636   1441   1318    933   1412   1129    989    987
+      64     839    566   1114   1062    785   1127    657    606    607
+     128     838    567   1119   1063    782   1125    656    607    607
+     256     839    567   1119   1064    766   1089    656    604    607
+     512     839    565   1116   1037    728   1129    655    607    605
+    1024     827    563   1107    890    686   1128    652    600    607
+    2048     669    476    873    747    416    843    490    452    470
+    4096     441    350    509    494    403    504    216    207    209
+    8192     425    344    465    477    413    492    188    181    175
+
+                End of test Fri Jun  5 02:22:31 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:31 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     992    636   1447   1328    938   1447   1136    993    993
+      16     997    636   1444   1328    937   1448   1135    995    992
+      32     990    636   1437   1321    936   1444   1132    988    989
+      64     839    567   1086   1058    791   1128    657    606    607
+     128     839    566   1106   1058    791   1128    657    607    606
+     256     839    566   1086   1062    792   1129    657    606    607
+     512     839    552    994    983    765   1126    656    605    607
+    1024     832    561   1114    947    640   1129    658    605    600
+    2048     677    498    910    867    485    737    487    460    488
+    4096     444    354    515    466    411    500    219    206    208
+    8192     427    345    471    474    416    496    189    181    180
+
+                End of test Fri Jun  5 02:22:49 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:22:49 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     985   1247   1682   1311   1828   1836   1109   1942   1956
+      16     994   1267   1710   1324   1862   1859   1115   1964   1941
+      32     983   1258   1691   1321   1854   1858   1103   1935   1933
+      64     840    916   1116   1050   1144   1146    649    869    869
+     128     814    853   1117   1042   1147   1146    650    872    871
+     256     838    917   1116   1024   1146   1149    650    872    871
+     512     837    914   1118    981   1148   1140    650    872    872
+    1024     702    915   1109    990    869    981    647    872    872
+    2048     640    730    875    825    850    877    422    281    575
+    4096     441    373    403    496    403    358    216    230    230
+    8192     405    329    342    466    353    352    189    199    198
+
+                End of test Fri Jun  5 02:23:08 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:23:08 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     992   1269   1708   1327   1858   1857   1111   1959   1960
+      16     996   1270   1716   1328   1868   1861   1115   1976   1967
+      32     988   1260   1691   1324   1850   1845   1103   1909   1911
+      64     839    917   1109   1055   1146   1147    650    870    870
+     128     839    916   1106   1059   1144   1147    637    868    872
+     256     839    915   1098   1051   1149   1149    650    872    869
+     512     837    918   1071    984   1148   1145    649    872    868
+    1024     833    915   1110    970    837   1133    651    866    712
+    2048     653    695    798    821    885    504    392    593    554
+    4096     445    374    404    493    364    404    218    234    233
+    8192     427    321    345    480    337    352    189    195    192
+
+                End of test Fri Jun  5 02:23:27 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:23:27 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     995   1270   1707   1327   1859   1859   1111   1955   1956
+      16     995   1269   1717   1326   1863   1867   1115   1969   1972
+      32     985   1261   1700   1313   1857   1855   1101   1935   1936
+      64     839    907   1118   1062   1148   1147    649    871    870
+     128     839    902   1117   1063   1149   1148    650    872    872
+     256     839    886   1117   1061   1005   1149    650    873    872
+     512     837    913   1049   1062   1147   1149    650    873    873
+    1024     826    918    825    858   1131   1146    641    874    866
+    2048     661    701    818    548    707    848    336    583    566
+    4096     440    369    376    476    401    402    217    232    231
+    8192     414    323    352    475    350    350    183    190    191
+
+                End of test Fri Jun  5 02:23:46 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+ #####################################################
+
+     Memory Reading Speed Test sparc64 r1000 optimized by Roy Longbottom
+
+               Start of test Fri Jun  5 02:23:46 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     995   1269   1707   1328   1859   1857   1109   1956   1958
+      16     996   1273   1717   1328   1867   1868   1114   1972   1975
+      32     994   1265   1697   1323   1850   1851   1103   1904   1905
+      64     831    887   1116   1062   1147   1147    650    870    861
+     128     838    917   1104   1064   1148   1143    650    871    858
+     256     838    917   1114   1062   1149   1149    649    873    843
+     512     732    897   1119   1057   1149   1146    651    855    804
+    1024     827    916   1100   1061   1147   1146    647    783    705
+    2048     662    714    861    827    869    883    497    626    631
+    4096     426    340    397    497    404    404    216    203    229
+    8192     424    330    351    476    346    343    189    199    199
+
+                End of test Fri Jun  5 02:24:05 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+

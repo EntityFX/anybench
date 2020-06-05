@@ -1,0 +1,80 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    sparc64 r2000 optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.02 seconds 
+     1000000 runs   0.16 seconds 
+     2000000 runs   0.33 seconds 
+     4000000 runs   0.65 seconds 
+     8000000 runs   1.30 seconds 
+    16000000 runs   2.61 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    16000010
+Ptr_Glob->              Ptr_Comp:       *    2130496
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    2130496 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+
+Nanoseconds one Dhrystone run:       163.09
+Dhrystones per Second:              6131444
+VAX  MIPS rating =                  3489.72
+

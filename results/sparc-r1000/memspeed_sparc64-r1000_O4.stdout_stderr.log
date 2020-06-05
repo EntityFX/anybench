@@ -1,0 +1,56 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+
+   Memory Reading Speed Test sparc64 r1000 optimized Fri Jun  5 02:23:27 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8     995   1270   1707   1327   1859   1859   1111   1955   1956
+      16     995   1269   1717   1326   1863   1867   1115   1969   1972
+      32     985   1261   1700   1313   1857   1855   1101   1935   1936
+      64     839    907   1118   1062   1148   1147    649    871    870
+     128     839    902   1117   1063   1149   1148    650    872    872
+     256     839    886   1117   1061   1005   1149    650    873    872
+     512     837    913   1049   1062   1147   1149    650    873    873
+    1024     826    918    825    858   1131   1146    641    874    866
+    2048     661    701    818    548    707    848    336    583    566
+    4096     440    369    376    476    401    402    217    232    231
+    8192     414    323    352    475    350    350    183    190    191
+
+                End of test Fri Jun  5 02:23:46 2020
+

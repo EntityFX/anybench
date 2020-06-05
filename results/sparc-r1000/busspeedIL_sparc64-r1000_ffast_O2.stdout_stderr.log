@@ -1,0 +1,53 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+    BusSpeed sparc64 r1000 optimized Fri Jun  5 02:33:23 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   1241    904    991   1041   1057   1057
+      32    710    546    644    944    999   1027
+      64    251    214    302    464    633    778
+     128    257    225    307    458    622    785
+     256    259    224    309    440    615    782
+     512    260    225    307    456    623    778
+    1024    255    190    244    454    618    766
+    4096     53     43     71    126    208    313
+   16384     45     39     60    108    186    315
+   65536     43     38     59    107    186    312
+
+ Type additional information to include in busSpeed.txt - Press Enter

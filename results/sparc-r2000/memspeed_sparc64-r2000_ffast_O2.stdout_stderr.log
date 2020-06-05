@@ -1,0 +1,68 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+
+   Memory Reading Speed Test sparc64 r2000 optimized Fri Jun  5 02:21:34 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    4727   4300   4549   5485   4560   4899   3735   3421   3403
+      16    4722   4302   4556   5488   4560   4907   3748   3422   3422
+      32    4670   4201   4512   5404   4473   4843   3705   3342   3340
+      64    4198   3760   4072   4674   3963   4172   3021   2738   2740
+     128    4202   3796   4088   4731   3976   4189   3083   2755   2757
+     256    4211   3764   4087   4671   3948   4186   3024   2782   2757
+     512    4201   3766   4073   4673   3944   4196   3058   2769   2799
+    1024    4077   3667   4092   4605   3903   4143   2840   2716   2652
+    2048    3448   3150   3205   3729   3166   3998   2717   2618   2608
+    4096    2359   2237   2337   2408   2279   2355   1406   1350   1360
+    8192    2249   2126   2236   2362   2187   2250   1359   1306   1304
+
+                End of test Fri Jun  5 02:21:49 2020
+

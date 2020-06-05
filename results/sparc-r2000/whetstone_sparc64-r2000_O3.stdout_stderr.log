@@ -1,0 +1,76 @@
+
+##########################################
+Single Precision C Whetstone Benchmark sparc64 r2000 optimized, Fri Jun  5 02:20:22 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.11 Seconds         25   Passes (x 100)
+       0.56 Seconds        125   Passes (x 100)
+       2.78 Seconds        625   Passes (x 100)
+
+Use 2251  passes (x 100)
+
+From File /proc/cpuinfo
+vendor_id	: MP1C2/V
+model name	: R2000
+cpu		: R2000
+revision	: 17
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 8
+ncpus active	: 8
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus,pf
+Cpu0ClkTck	: 0000000005f5e394
+Cpu0 MHz	: 2000.1320000
+Cpu1ClkTck	: 0000000005f5e808
+Cpu1 MHz	: 2000.3600000
+Cpu2ClkTck	: 0000000005f5e86c
+Cpu2 MHz	: 2000.3800000
+Cpu3ClkTck	: 0000000005f5e8d0
+Cpu3 MHz	: 2000.4000000
+Cpu4ClkTck	: 0000000005f5ea60
+Cpu4 MHz	: 2000.4800000
+Cpu5ClkTck	: 0000000005f5e998
+Cpu5 MHz	: 2000.4400000
+Cpu6ClkTck	: 0000000005f5eac4
+Cpu6 MHz	: 2000.5000000
+Cpu7ClkTck	: 0000000005f5eb8c
+Cpu7 MHz	: 2000.5400000
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+CPU4:		online
+CPU5:		online
+CPU6:		online
+CPU7:		online
+
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       570.253              0.076
+N2 floating point     -1.12274742126464844       532.608              0.568
+N3 if then else        1.00000000000000000                 920.648    0.253
+N4 fixed point        12.00000000000000000                 863.569    0.821
+N5 sin,cos etc.        0.49911010265350342                  60.815    3.080
+N6 floating point      0.99999982118606567       386.267              3.143
+N7 assignments         3.00000000000000000                1996.088    0.208
+N8 exp,sqrt etc.       0.75110864639282227                  45.362    1.846
+
+MWIPS                                           2252.065              9.995
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

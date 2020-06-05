@@ -1,0 +1,318 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:20:15 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       285.123               0.061
+N2 floating point      -1.12274742126464844       249.313               0.491
+N3 if then else         1.00000000000000000                 373.482     0.252
+N4 fixed point         12.00000000000000000                 291.180     0.984
+N5 sin,cos etc.         0.49911010265350342                  23.865     3.172
+N6 floating point       0.99999982118606567       170.867               2.873
+N7 assignments          3.00000000000000000                 498.843     0.337
+N8 exp,sqrt etc.        0.75110864639282227                  18.540     1.826
+
+MWIPS                                             910.302               9.997
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:20:34 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       284.691               0.061
+N2 floating point      -1.12274742126464844       249.221               0.491
+N3 if then else         1.00000000000000000                 373.759     0.252
+N4 fixed point         12.00000000000000000                 293.057     0.978
+N5 sin,cos etc.         0.49911010265350342                  23.824     3.178
+N6 floating point       0.99999982118606567       170.797               2.874
+N7 assignments          3.00000000000000000                 498.413     0.337
+N8 exp,sqrt etc.        0.75110864639282227                  18.562     1.824
+
+MWIPS                                             910.438               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:20:54 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       284.636               0.062
+N2 floating point      -1.12274742126464844       249.271               0.499
+N3 if then else         1.00000000000000000                 374.001     0.256
+N4 fixed point         12.00000000000000000                 393.405     0.741
+N5 sin,cos etc.         0.49911010265350342                  23.210     3.319
+N6 floating point       0.99999982118606567       170.819               2.924
+N7 assignments          3.00000000000000000                 498.449     0.343
+N8 exp,sqrt etc.        0.75110864639282227                  18.558     1.856
+
+MWIPS                                             925.782              10.002
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:21:13 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       285.158               0.062
+N2 floating point      -1.12274742126464844       249.238               0.499
+N3 if then else         1.00000000000000000                 373.321     0.256
+N4 fixed point         12.00000000000000000                 393.485     0.740
+N5 sin,cos etc.         0.49911010265350342                  23.216     3.315
+N6 floating point       0.99999982118606567       170.730               2.922
+N7 assignments          3.00000000000000000                 497.571     0.344
+N8 exp,sqrt etc.        0.75110864639282227                  18.560     1.854
+
+MWIPS                                             925.660               9.993
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:21:33 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       284.292               0.062
+N2 floating point      -1.12274742126464844       249.499               0.498
+N3 if then else         1.00000000000000000                 374.275     0.256
+N4 fixed point         12.00000000000000000                 393.395     0.740
+N5 sin,cos etc.         0.49911010265350342                  23.172     3.318
+N6 floating point       0.99999982118606567       170.806               2.918
+N7 assignments          3.00000000000000000                 497.956     0.343
+N8 exp,sqrt etc.        0.75110864639282227                  18.526     1.855
+
+MWIPS                                             924.965               9.990
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  sparc64 r1000 optimized, Fri Jun  5 02:21:52 2020
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       285.000               0.062
+N2 floating point      -1.12274742126464844       249.018               0.500
+N3 if then else         1.00000000000000000                 374.177     0.256
+N4 fixed point         12.00000000000000000                 393.779     0.741
+N5 sin,cos etc.         0.49911010265350342                  23.219     3.318
+N6 floating point       0.99999982118606567       170.885               2.923
+N7 assignments          3.00000000000000000                 498.822     0.343
+N8 exp,sqrt etc.        0.75110864639282227                  18.550     1.857
+
+MWIPS                                             925.988              10.000
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+vendor_id	: MBC4-PC1
+model name	: R1000
+cpu		: R1000
+revision	: 3
+dcr		: 0x39
+type		: e90s
+ncpus probed	: 4
+ncpus active	: 4
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+cpucaps		: flush,stbar,swap,muldiv,v9,ultra3,mul32,div32,v8plus
+Cpu0ClkTck	: 000000003b9a353b
+Cpu0 MHz	: 999.961915
+Cpu1ClkTck	: 000000003b9a6150
+Cpu1 MHz	: 999.973200
+Cpu2ClkTck	: 000000003b9a546c
+Cpu2 MHz	: 999.969900
+Cpu3ClkTck	: 000000003b9a546c
+Cpu3 MHz	: 999.969900
+MMU PGSZs	: 8K,64K,512K,4MB
+State:
+CPU0:		online
+CPU1:		online
+CPU2:		online
+CPU3:		online
+ 
+
+From File /proc/version
+Linux version 4.9.0-4.12-e90s (root@fitting4) (lcc:1.23.22:Feb-26-2020:e90-r1000-linux.cross:x86_64-linux) #1 SMP Wed May 20 05:03:13 UTC 2020
+ 
+
