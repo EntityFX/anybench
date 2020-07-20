@@ -1,0 +1,48 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+system type		: Qualcomm Atheros QCA5502 rev 0
+machine			: Qualcomm Atheros APJET01 reference board
+processor		: 0
+cpu model		: MIPS 74Kc V5.0
+BogoMIPS		: 385.84
+wait instruction	: yes
+microsecond timers	: yes
+tlb_entries		: 32
+extra interrupt vector	: yes
+hardware watchpoint	: yes, count: 4, address/irw mask: [0x0000, 0x0d80, 0x0718, 0x0190]
+ASEs implemented	: mips16 dsp
+shadow register sets	: 1
+kscratch registers	: 0
+core			: 0
+VCED exceptions		: not available
+VCEI exceptions		: not available
+
+
+
+From File /proc/version
+Linux version 3.3.8 (root@asus) (gcc version 4.6.3 20120201 (prerelease) (Linaro GCC 4.6-2012.02) ) #1 Sat Feb 8 04:00:28 CST 2020
+
+
+   Memory Reading Speed Test mips32 74kc optimized Thu Jul 16 11:37:48 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8      72     55   1610    218    158   1801   1346   1202   1199
+      16      56     43   1590    218    158   1852   1324   1203   1208
+      32      70     53   1559    204    149   1788   1365   1168   1178
+      64      45     44    220    121     98    229    117    117    117
+     128      54     35    228    121    100    229    116    111    112
+     256      54     41    190    120    100    227    116    113    116
+     512      53     44    227    101     85    226    115    112    116
+    1024      54     44    226     97     84    144    116    111    108
+    2048      54     44    221    120    100    220    116    114     70
+    4096      45     44    214    119     98    226    116     97    116
+    8192      47     44    226    118     98    227    115    116    108
+
+                End of test Thu Jul 16 11:39:15 2020
+

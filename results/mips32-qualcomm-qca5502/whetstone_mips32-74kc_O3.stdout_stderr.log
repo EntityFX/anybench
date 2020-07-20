@@ -1,0 +1,53 @@
+
+##########################################
+Single Precision C Whetstone Benchmark mips32 74kc optimized, Thu Jul 16 11:34:39 2020
+
+Calibrate
+       0.41 Seconds          1   Passes (x 100)
+       2.10 Seconds          5   Passes (x 100)
+
+Use 23  passes (x 100)
+
+From File /proc/cpuinfo
+system type		: Qualcomm Atheros QCA5502 rev 0
+machine			: Qualcomm Atheros APJET01 reference board
+processor		: 0
+cpu model		: MIPS 74Kc V5.0
+BogoMIPS		: 385.84
+wait instruction	: yes
+microsecond timers	: yes
+tlb_entries		: 32
+extra interrupt vector	: yes
+hardware watchpoint	: yes, count: 4, address/irw mask: [0x0000, 0x0d80, 0x0718, 0x0190]
+ASEs implemented	: mips16 dsp
+shadow register sets	: 1
+kscratch registers	: 0
+core			: 0
+VCED exceptions		: not available
+VCEI exceptions		: not available
+
+
+
+From File /proc/version
+Linux version 3.3.8 (root@asus) (gcc version 4.6.3 20120201 (prerelease) (Linaro GCC 4.6-2012.02) ) #1 Sat Feb 8 04:00:28 CST 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156        11.254              0.039
+N2 floating point     -1.12274742126464844         9.190              0.336
+N3 if then else        1.00000000000000000                 927.156    0.003
+N4 fixed point        12.00000000000000000                  72.909    0.099
+N5 sin,cos etc.        0.49911010265350342                   0.408    4.692
+N6 floating point      0.99999982118606567        12.262              1.012
+N7 assignments         3.00000000000000000                 574.672    0.007
+N8 exp,sqrt etc.       0.75110864639282227                   0.226    3.783
+
+MWIPS                                             23.065              9.972
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

@@ -1,0 +1,78 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation mips32 native optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.09980    0.00296    0.10277       6.68     0.2993     1.8351
+
+Calculating matgen overhead
+        10 times   0.05 seconds
+       100 times   0.47 seconds
+       200 times   0.95 seconds
+       400 times   1.93 seconds
+Overhead for 1 matgen      0.00483 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   1.36 seconds
+Passes used          7 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.10366    0.00301    0.10667       6.44     0.3107     1.9048
+    0.10166    0.00298    0.10465       6.56     0.3048     1.8687
+    0.09979    0.00293    0.10272       6.68     0.2992     1.8343
+    0.09965    0.00324    0.10289       6.67     0.2997     1.8373
+    0.10103    0.00292    0.10395       6.61     0.3028     1.8563
+Average                                 6.59
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00473 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.09987    0.00289    0.10276       6.68     0.2993     1.8349
+    0.09955    0.00324    0.10279       6.68     0.2994     1.8356
+    0.10180    0.00289    0.10469       6.56     0.3049     1.8695
+    0.09956    0.00306    0.10262       6.69     0.2989     1.8325
+    0.11435    0.00514    0.11950       5.75     0.3481     2.1339
+Average                                 6.47
+
+##########################################
+
+From File /proc/cpuinfo
+system type		: Qualcomm Atheros QCA5502 rev 0
+machine			: Qualcomm Atheros APJET01 reference board
+processor		: 0
+cpu model		: MIPS 74Kc V5.0
+BogoMIPS		: 385.84
+wait instruction	: yes
+microsecond timers	: yes
+tlb_entries		: 32
+extra interrupt vector	: yes
+hardware watchpoint	: yes, count: 4, address/irw mask: [0x0000, 0x0d80, 0x0718, 0x0190]
+ASEs implemented	: mips16 dsp
+shadow register sets	: 1
+kscratch registers	: 0
+core			: 0
+VCED exceptions		: not available
+VCEI exceptions		: not available
+
+
+
+From File /proc/version
+Linux version 3.3.8 (root@asus) (gcc version 4.6.3 20120201 (prerelease) (Linaro GCC 4.6-2012.02) ) #1 Sat Feb 8 04:00:28 CST 2020
+
+
+Unrolled Double  Precision        6.47 Mflops 
+
+

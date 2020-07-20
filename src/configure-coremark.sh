@@ -136,3 +136,10 @@ declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
 COMPILER='clang'
 configure "amd64_clang"
+
+M_ARCHS=('native' '74kc')
+OPTS=('O2' 'O3')
+declare -A TUNES=([0]=0)
+declare -A OPTIMIZATION_FLAGS=([0]=0)
+COMPILER='gcc'
+configure "mips32"
