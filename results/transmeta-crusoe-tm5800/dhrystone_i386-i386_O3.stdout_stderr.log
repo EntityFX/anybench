@@ -1,0 +1,62 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    i386 i386 optimized
+Register option not selected
+
+       10000 runs   0.01 seconds 
+      100000 runs   0.07 seconds 
+      200000 runs   0.14 seconds 
+      400000 runs   0.29 seconds 
+      800000 runs   0.57 seconds 
+     1600000 runs   1.14 seconds 
+     3200000 runs   2.28 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.     3200010
+Ptr_Glob->              Ptr_Comp:       *    134538528
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    134538528 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineTMx86
+cpu family	: 6
+model		: 4
+model name	: Transmeta(tm) Crusoe(tm) Processor TM5800
+stepping	: 3
+cpu MHz		: 998.706
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 1
+wp		: yes
+flags		: fpu vme de pse tsc msr cx8 sep cmov mmx longrun lrti
+bogomips	: 1985.74
+
+
+
+From File /proc/version
+Linux version 2.4.22-std-up-alt17 (builder@mash.office.altlinux.ru) (gcc version 2.96 20000731 (ALT Linux, build 2.96-alt6)) #1 Wed Feb 4 22:52:03 MSK 2004
+
+
+Nanoseconds one Dhrystone run:       712.51
+Dhrystones per Second:              1403487
+VAX  MIPS rating =                   798.80
+

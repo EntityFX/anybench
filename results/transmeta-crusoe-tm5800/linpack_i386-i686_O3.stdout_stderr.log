@@ -1,0 +1,85 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation i386 i686 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.39915160e-14   2.22044605e-16  -6.22835117e-14  -4.16333634e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.01293    0.00116    0.01408      48.76     0.0410     0.2515
+
+Calculating matgen overhead
+        10 times   0.01 seconds
+       100 times   0.08 seconds
+      1000 times   0.81 seconds
+      2000 times   1.61 seconds
+Overhead for 1 matgen      0.00081 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.05 seconds
+       100 times   0.44 seconds
+       200 times   0.88 seconds
+       400 times   1.76 seconds
+Passes used        227 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00360    0.00013    0.00373     184.16     0.0109     0.0666
+    0.00358    0.00012    0.00370     185.55     0.0108     0.0661
+    0.00359    0.00012    0.00371     185.11     0.0108     0.0662
+    0.00358    0.00012    0.00370     185.68     0.0108     0.0660
+    0.00359    0.00012    0.00371     185.13     0.0108     0.0662
+Average                               185.13
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00081 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00357    0.00012    0.00370     185.77     0.0108     0.0660
+    0.00357    0.00012    0.00369     185.93     0.0108     0.0659
+    0.00357    0.00012    0.00369     186.13     0.0107     0.0659
+    0.00358    0.00012    0.00370     185.61     0.0108     0.0661
+    0.00357    0.00013    0.00369     186.03     0.0108     0.0659
+Average                               185.89
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineTMx86
+cpu family	: 6
+model		: 4
+model name	: Transmeta(tm) Crusoe(tm) Processor TM5800
+stepping	: 3
+cpu MHz		: 998.706
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 1
+wp		: yes
+flags		: fpu vme de pse tsc msr cx8 sep cmov mmx longrun lrti
+bogomips	: 1985.74
+
+
+
+From File /proc/version
+Linux version 2.4.22-std-up-alt17 (builder@mash.office.altlinux.ru) (gcc version 2.96 20000731 (ALT Linux, build 2.96-alt6)) #1 Wed Feb 4 22:52:03 MSK 2004
+
+
+Unrolled Double  Precision      185.13 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
