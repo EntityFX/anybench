@@ -1,0 +1,69 @@
+
+##########################################
+Single Precision C Whetstone Benchmark i386 i686 optimized, Wed Aug 26 19:33:15 2020
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.04 Seconds          5   Passes (x 100)
+       0.18 Seconds         25   Passes (x 100)
+       0.93 Seconds        125   Passes (x 100)
+       4.94 Seconds        625   Passes (x 100)
+
+Use 1265  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 3
+model name	: Intel(R) Pentium(R) 4 CPU 2.80GHz
+stepping	: 4
+microcode	: 0x17
+cpu MHz		: 2804.656
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe constant_tsc pebs bts cpuid pni dtes64 monitor ds_cpl cid xtpr pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5609.31
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 5.4.0-42-generic (buildd@lgw01-amd64-019) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #46~18.04.1-Ubuntu SMP Fri Jul 10 07:09:27 UTC 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       477.501              0.051
+N2 floating point     -1.12239956855773926       507.831              0.335
+N3 if then else        1.00000000000000000                5591.286    0.023
+N4 fixed point        12.00000000000000000                2327.958    0.171
+N5 sin,cos etc.        0.49904659390449524                  26.002    4.048
+N6 floating point      0.99999988079071045       381.985              1.786
+N7 assignments         3.00000000000000000                4196.631    0.056
+N8 exp,sqrt etc.       0.75110864639282227                  12.656    3.718
+
+MWIPS                                           1241.649             10.188
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

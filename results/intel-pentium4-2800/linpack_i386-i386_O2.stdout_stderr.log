@@ -1,0 +1,98 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation i386 i386 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.39915160e-14   2.22044605e-16  -6.22835117e-14  -4.16333634e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00490    0.00004    0.00494     138.94     0.0144     0.0883
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.04 seconds
+      1000 times   0.12 seconds
+      2000 times   0.24 seconds
+      4000 times   0.48 seconds
+      8000 times   1.00 seconds
+Overhead for 1 matgen      0.00013 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.09 seconds
+      1000 times   0.93 seconds
+      2000 times   1.77 seconds
+Passes used       1127 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00075    0.00003    0.00077     888.74     0.0023     0.0138
+    0.00078    0.00003    0.00080     854.82     0.0023     0.0143
+    0.00100    0.00003    0.00103     669.90     0.0030     0.0183
+    0.00075    0.00007    0.00082     837.75     0.0024     0.0146
+    0.00084    0.00003    0.00087     789.59     0.0025     0.0155
+Average                               808.16
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00016 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00085    0.00003    0.00088     781.91     0.0026     0.0157
+    0.00078    0.00003    0.00081     851.42     0.0023     0.0144
+    0.00080    0.00003    0.00083     826.66     0.0024     0.0148
+    0.00075    0.00003    0.00078     883.85     0.0023     0.0139
+    0.00074    0.00003    0.00076     900.98     0.0022     0.0136
+Average                               848.96
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 3
+model name	: Intel(R) Pentium(R) 4 CPU 2.80GHz
+stepping	: 4
+microcode	: 0x17
+cpu MHz		: 2804.656
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe constant_tsc pebs bts cpuid pni dtes64 monitor ds_cpl cid xtpr pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5609.31
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 5.4.0-42-generic (buildd@lgw01-amd64-019) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #46~18.04.1-Ubuntu SMP Fri Jul 10 07:09:27 UTC 2020
+
+
+Unrolled Double  Precision      808.16 Mflops 
+
+ Different numeric results - see linpack.txt
+
+

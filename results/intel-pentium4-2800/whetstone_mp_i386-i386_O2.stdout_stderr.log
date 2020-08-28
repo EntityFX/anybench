@@ -1,0 +1,59 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 1, Configured CPUs 1
+  get_phys_pages() and size - RAM Size  1.47 GB, Page Size 4096 Bytes
+  uname() - Linux, entityfx-desktop, 5.4.0-42-generic
+  #46~18.04.1-Ubuntu SMP Fri Jul 10 07:09:27 UTC 2020, i686
+
+##############################################
+
+ Multithreading Single Precision Whetstones i386 i386 optimized
+
+             Using 1 threads - Wed Aug 26 19:52:24 2020
+
+ Calibrate
+    0.03737 Seconds          1   Passes (x 100)
+    0.12982 Seconds          5   Passes (x 100)
+    0.39800 Seconds         25   Passes (x 100)
+
+ Use 628  passes (x 100)
+
+ MFLOPS 1     517
+ MFLOPS 2     520
+ IFMOPS      4188
+ FIXPMOPS    1185
+ COSMOPS       23
+ MFLOPS 3     341
+ EQUMOPS      248
+ EXPMOPS       14
+ millisec    5798
+ MWIPS       1083
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total    1083    517    520    341     23     14   1185   4188    248
+
+ MWIPS    1083 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333344459533691      MFLOPS 2   -1.13333332538604736
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000000000000000      MFLOPS 3    0.99999421834945679
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+
+               End of test Wed Aug 26 19:52:35 2020
+
+               Results also in log file MPwhetres.txt
+

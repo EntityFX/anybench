@@ -1,0 +1,32 @@
+
+  ####################################################
+  getDetails and MHz
+
+ ##########################################
+
+From File /proc/cpuinfo
+
+
+From File /proc/version
+  Assembler CPUID and RDTSC      
+
+ MP-MFLOPS Compiled NEON v1.0 Wed Aug 26 19:53:37 2020
+
+    FPU Add & Multiply using 1, 2, 4 and 8 Threads
+
+        2 Ops/Word              32 Ops/Word
+ KB     12.8     128   12800    12.8     128   12800
+ MFLOPS
+ 1T     1887    1180     421    7222    7153    6535
+ 2T     3681    2763     336    7184    7240    5493
+ 4T     2476    2688     334    7110    7225    6493
+ 8T     3313    3396     400    6601    7186    6465
+ Results x 100000, 0 indicates ERRORS
+ 1T    76406   97075   99969   66014   95363   99951
+ 2T    76406   97075   99969   66014   95363   99951
+ 4T    76406   97075   99969   66014   95363   99951
+ 8T    76406   97075   99969   66014   95363   99951
+
+         End of test Wed Aug 26 19:53:40 2020
+
+Type additional information to include in MP-MFLOPS.txt - Press Enter
