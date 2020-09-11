@@ -1,0 +1,21 @@
+$ java whetstc.java
+
+     Whetstone Benchmark Java Version, Sep 11 2020, 12:33:47
+
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+
+  N1 floating point  -1.124750137    851.06             0.0226
+  N2 floating point  -1.131330490    625.12             0.2150
+  N3 if then else     1.000000000             383.90    0.2696
+  N4 fixed point     12.000000000            1247.03    0.2526
+  N5 sin,cos etc.     0.499110132              67.86    1.2260
+  N6 floating point   0.999999821    340.53             1.5840
+  N7 assignments      3.000000000             481.00    0.3842
+  N8 exp,sqrt etc.    0.935364604              50.46    0.7372
+
+  MWIPS                             2131.67             4.6912
+
+  Operating System    Linux, Arch. amd64, Version 5.4.0-47-generic
+  Java Vendor         Private Build, Version  14.0.1
+  CPU null
