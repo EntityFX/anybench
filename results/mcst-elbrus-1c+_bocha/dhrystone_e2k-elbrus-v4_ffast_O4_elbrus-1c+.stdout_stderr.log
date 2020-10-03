@@ -1,0 +1,56 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    e2k elbrus-v4 optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.01 seconds 
+     1000000 runs   0.13 seconds 
+     2000000 runs   0.26 seconds 
+     4000000 runs   0.52 seconds 
+     8000000 runs   1.05 seconds 
+    16000000 runs   2.10 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    16000010
+Ptr_Glob->              Ptr_Comp:       *    32383552
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    32383552 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 984.612610
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1970.41
+
+
+
+From File /proc/version
+Linux version 4.9.170-elbrus-def-alt4.9.2 (builder@localhost.localdomain) (lcc:1.23.20:Sep--4-2019:e2k-v4-linux) #1 SMP Tue Feb 18 16:19:10 UTC 2020
+
+
+Nanoseconds one Dhrystone run:       131.24
+Dhrystones per Second:              7619775
+VAX  MIPS rating =                  4336.81
+

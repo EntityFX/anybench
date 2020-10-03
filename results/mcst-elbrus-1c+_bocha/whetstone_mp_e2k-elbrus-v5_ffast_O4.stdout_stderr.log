@@ -1,0 +1,59 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 1, Configured CPUs 1
+  get_phys_pages() and size - RAM Size 15.55 GB, Page Size 4096 Bytes
+  uname() - Linux, elbrus-1s.localdomain, 4.9.170-elbrus-def-alt4.9.2
+  #1 SMP Tue Feb 18 16:19:10 UTC 2020, e2k
+
+##############################################
+
+ Multithreading Single Precision Whetstones e2k elbrus-v5 optimized
+
+             Using 1 threads - Sun Aug 16 04:51:47 2020
+
+ Calibrate
+    0.02426 Seconds          1   Passes (x 100)
+    0.10207 Seconds          5   Passes (x 100)
+    0.49144 Seconds         25   Passes (x 100)
+
+ Use 508  passes (x 100)
+
+ MFLOPS 1     231
+ MFLOPS 2     231
+ IFMOPS       982
+ FIXPMOPS     613
+ COSMOPS       34
+ MFLOPS 3     246
+ EQUMOPS      165
+ EXPMOPS       21
+ millisec    4477
+ MWIPS       1135
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total    1135    231    231    246     34     21    613    982    165
+
+ MWIPS    1135 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+
+               End of test Sun Aug 16 04:51:58 2020
+
+               Results also in log file MPwhetres.txt
+

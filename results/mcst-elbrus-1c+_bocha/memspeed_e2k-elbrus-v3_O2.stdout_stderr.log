@@ -1,0 +1,44 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 984.612610
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1970.41
+
+
+
+From File /proc/version
+Linux version 4.9.170-elbrus-def-alt4.9.2 (builder@localhost.localdomain) (lcc:1.23.20:Sep--4-2019:e2k-v4-linux) #1 SMP Tue Feb 18 16:19:10 UTC 2020
+
+
+   Memory Reading Speed Test e2k elbrus-v3 optimized Sun Aug 16 04:21:24 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1159    783   2602   1566   1304   2602   1300   1941   1942
+      16    1161    785   2609   1569   1309   2613   1306   1954   1955
+      32    1161    786   2618   1571   1306   2613   1307   1961   1960
+      64    1161    785   2611   1562   1309   2612   1309   1956   1961
+     128    1012    712   1571   1209   1121   1653   1302   1959   1961
+     256    1012    714   1569   1194   1123   1655    982   1310   1308
+     512     916    669   1380   1070   1002   1440    826   1034   1037
+    1024     773    596   1082    861    829   1122    699    846    831
+    2048     478    439    592    503    492    600    377    414    414
+    4096     385    369    457    406    405    463    254    274    273
+    8192     379    360    443    405    405    447    252    271    271
+
+                End of test Sun Aug 16 04:21:42 2020
+
