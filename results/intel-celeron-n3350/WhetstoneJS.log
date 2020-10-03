@@ -1,0 +1,13 @@
+$ node whetstone.js
+     Whetstone Benchmark JavaScript Version, Fri, 11 Sep 2020 12:38:16 GMT
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+  N1 floating point  -1.123980363    740.17             0.0259
+  N2 floating point  -1.131195156    449.50             0.2990
+  N3 if then else     1.000000000             268.41    0.3856
+  N4 fixed point     12.000000000             745.74    0.4224
+  N5 sin,cos etc.     0.499029351              66.24    1.2560
+  N6 floating point   0.999999879     25.04            21.5400
+  N7 assignments      3.000000000             518.52    0.3564
+  N8 exp,sqrt etc.    0.835383055              27.72    1.3420
+  MWIPS                              390.21            25.6273

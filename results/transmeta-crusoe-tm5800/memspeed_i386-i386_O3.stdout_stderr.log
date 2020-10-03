@@ -1,0 +1,50 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineTMx86
+cpu family	: 6
+model		: 4
+model name	: Transmeta(tm) Crusoe(tm) Processor TM5800
+stepping	: 3
+cpu MHz		: 998.706
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 1
+wp		: yes
+flags		: fpu vme de pse tsc msr cx8 sep cmov mmx longrun lrti
+bogomips	: 1985.74
+
+
+
+From File /proc/version
+Linux version 2.4.22-std-up-alt17 (builder@mash.office.altlinux.ru) (gcc version 2.96 20000731 (ALT Linux, build 2.96-alt6)) #1 Wed Feb 4 22:52:03 MSK 2004
+
+
+   Memory Reading Speed Test i386 i386 optimized Wed Nov 28 09:43:30 2018
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    2379   1180   1924   2946   1461   2202   1471   1275   1289
+      16    2402   1176   1955   2960   1476   2214   1488   1278   1281
+      32    2405   1193   1955   2930   1488   2219   1464   1294   1294
+      64    2339   1179   1937   2882   1471   2217   1451   1291   1289
+     128    1455    904   1297   1638   1053   1361    902    717    716
+     256    1294    850   1167   1463    984   1265    812    627    648
+     512     801    616    756    819    692    750    438    397    389
+    1024     406    373    401    409    389    403    207    203    199
+    2048     337    322    333    341    329    336    171    169    168
+    4096     332    316    330    332    321    331    169    167    166
+    8192     333    316    328    337    322    332    170    166    166
+
+                End of test Wed Nov 28 09:43:52 2018
+

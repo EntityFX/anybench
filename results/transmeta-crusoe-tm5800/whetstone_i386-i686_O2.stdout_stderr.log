@@ -1,0 +1,57 @@
+
+##########################################
+Single Precision C Whetstone Benchmark i386 i686 optimized, Wed Nov 28 09:42:37 2018
+
+Calibrate
+       0.04 Seconds          1   Passes (x 100)
+       0.16 Seconds          5   Passes (x 100)
+       0.81 Seconds         25   Passes (x 100)
+       4.01 Seconds        125   Passes (x 100)
+
+Use 311  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineTMx86
+cpu family	: 6
+model		: 4
+model name	: Transmeta(tm) Crusoe(tm) Processor TM5800
+stepping	: 3
+cpu MHz		: 998.706
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 1
+wp		: yes
+flags		: fpu vme de pse tsc msr cx8 sep cmov mmx longrun lrti
+bogomips	: 1985.74
+
+
+
+From File /proc/version
+Linux version 2.4.22-std-up-alt17 (builder@mash.office.altlinux.ru) (gcc version 2.96 20000731 (ALT Linux, build 2.96-alt6)) #1 Wed Feb 4 22:52:03 MSK 2004
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       234.401              0.025
+N2 floating point     -1.12241148948669434       141.722              0.295
+N3 if then else        1.00000000000000000                 324.651    0.099
+N4 fixed point        12.00000000000000000                 178.790    0.548
+N5 sin,cos etc.        0.49904659390449524                   9.545    2.711
+N6 floating point      0.99999988079071045        65.478              2.562
+N7 assignments         3.00000000000000000                  96.803    0.594
+N8 exp,sqrt etc.       0.75110864639282227                   3.749    3.086
+
+MWIPS                                            313.521              9.920
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

@@ -1,0 +1,61 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 3
+model name	: Intel(R) Pentium(R) 4 CPU 2.80GHz
+stepping	: 4
+microcode	: 0x17
+cpu MHz		: 2804.656
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe constant_tsc pebs bts cpuid pni dtes64 monitor ds_cpl cid xtpr pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5609.31
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 5.4.0-42-generic (buildd@lgw01-amd64-019) (gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)) #46~18.04.1-Ubuntu SMP Fri Jul 10 07:09:27 UTC 2020
+
+
+   Memory Reading Speed Test i386 i686 optimized Wed Aug 26 19:34:07 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   11743   2096   2219   6223   2709   3243   3842   2343   2472
+      16    3368   1684   1668   8985   3569   5500   3316   1945   2254
+      32    4060   1324   2642   3839   2265   2646   3196   3325   3440
+      64    7113   4222   3823   7815   4723   5372   5925   3554   3775
+     128    7121   4206   5559   5640   4730   5416   5944   3561   3778
+     256    6984   4124   5491   7798   3593   5394   5861   3588   3778
+     512    5439   3697   4476   5752   4008   3355   3870   2848   2910
+    1024    2725   2374   2407   1053   1459   2148   1074   1081   1388
+    2048    1324   1291   1309   1016   1302   1310    678    671    672
+    4096    1281    932   1205   1132   1261   1269    617    647    484
+    8192    1276   1252   1070   1269   1241   1233    428    625    633
+
+                End of test Wed Aug 26 19:34:26 2020
+

@@ -143,3 +143,11 @@ declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
 COMPILER='gcc'
 configure "mips32"
+
+M_ARCHS=('i386' 'i686')
+OPTS=('O2' 'O3')
+declare -A TUNES=([0]=0)
+declare -A OPTIMIZATION_FLAGS=([0]=0)
+COMPILER='gcc'
+configure "i386"
+
