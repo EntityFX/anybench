@@ -158,5 +158,14 @@ declare -A OPTIMIZATION_FLAGS=([0]=0)
 COMPILER='gcc'
 configure "i386"
 
+BIN_PATH="../bin/mac/"
+M_ARCHS=('powerpc')
+OPTS=('O2' 'O3')
+ARCH_PARAM='-mcpu'
+declare -A TUNES=([0]=0)
+declare -A OPTIMIZATION_FLAGS=([0]=0)
+COMPILER='gcc'
+configure "powerpc_mac"
+
 
 
