@@ -152,14 +152,14 @@ COMPILER='gcc'
 configure "mips32"
 
 M_ARCHS=('i686' 'i386')
-OPTS=('O2' 'O3)
+OPTS=('O2' 'O3')
 declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
 COMPILER='gcc'
 configure "i386"
 
 M_ARCHS=('powerpc64' 'native')
-OPTS=('O2' 'O3)
+OPTS=('O2' 'O3')
 declare -A TUNES=([0]=0)
 declare -A OPTIMIZATION_FLAGS=([0]=0)
 COMPILER='gcc'
