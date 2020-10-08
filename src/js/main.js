@@ -77,13 +77,13 @@ function Bench(benchMarks, output) {
 var output = new Writer();
 
 var benchMarks = [
-	new MathBenchmark(),
 	new MemoryBenchmark(),
 	new RandomMemoryBenchmark(),
 	new Scimark2Benchmark(),
 	new DhrystoneBenchmark(),
 	new WhetstoneBenchmark(),
-	new ArithemticsBenchmark()
+	new ArithemticsBenchmark(),
+	new MathBenchmark()
 ];
 
 
