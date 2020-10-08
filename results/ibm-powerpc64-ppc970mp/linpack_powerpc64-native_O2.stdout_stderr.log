@@ -1,0 +1,87 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation powerpc64 native optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00060    0.00002    0.00062    1104.33     0.0018     0.0111
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.18 seconds
+      2000 times   0.37 seconds
+      4000 times   0.74 seconds
+      8000 times   1.48 seconds
+Overhead for 1 matgen      0.00018 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.07 seconds
+      1000 times   0.72 seconds
+      2000 times   1.44 seconds
+Passes used       1390 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00053    0.00002    0.00055    1239.81     0.0016     0.0099
+    0.00054    0.00002    0.00055    1237.89     0.0016     0.0099
+    0.00054    0.00002    0.00055    1238.52     0.0016     0.0099
+    0.00053    0.00002    0.00055    1239.42     0.0016     0.0099
+    0.00053    0.00002    0.00055    1238.73     0.0016     0.0099
+Average                              1238.87
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00018 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00053    0.00002    0.00055    1243.48     0.0016     0.0099
+    0.00053    0.00002    0.00055    1247.19     0.0016     0.0098
+    0.00053    0.00002    0.00055    1245.43     0.0016     0.0098
+    0.00053    0.00002    0.00055    1243.28     0.0016     0.0099
+    0.00053    0.00002    0.00055    1246.87     0.0016     0.0098
+Average                              1245.25
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+processor	: 1
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+timebase	: 33333333
+platform	: PowerMac
+model		: PowerMac11,2
+machine		: PowerMac11,2
+motherboard	: PowerMac11,2 MacRISC4 Power Macintosh 
+detected as	: 337 (PowerMac G5 Dual Core)
+pmac flags	: 00000000
+L2 cache	: 1024K unified
+pmac-generation	: NewWorld
+
+
+From File /proc/version
+Linux version 5.8.0-2-powerpc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.0-8) 10.2.0, GNU ld (GNU Binutils for Debian) 2.35) #1 SMP Debian 5.8.10-1 (2020-09-19)
+
+
+Unrolled Double  Precision     1238.87 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
