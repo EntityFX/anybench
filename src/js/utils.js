@@ -2,6 +2,16 @@ function getTime() {
     return Date.now() / 1000.0;
 }
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //Максимум не включается, минимум включается
+}
+
+function sleep(ms) {
+  return new Promise(function(resolve) { setTimeout(resolve, ms); });
+}
+
 var useDocument = true;
 var buffer = "";
 
@@ -50,29 +60,47 @@ String.form = function(str, arr) {
     return str.replace(regex, callback);
 }
 
+Array.prototype.sum = Array.prototype.sum || function (){
+  return this.reduce(function(p,c){return p+c},0);
+};
+
 String.prototype.$ = function() {
     return String.form(this, Array.prototype.slice.call(arguments));
 }
 
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
 
 var Writer = /** @class */ (function () {
 	
-    function Writer() {
+    function Writer(useConsole = true) {
 		this.output = "";
-		this.useConsole = true;
+		this.useConsole = useConsole;
 		this.lineBuffer = "";
     }
 	
     Writer.prototype.write = function (str) {
 		this.lineBuffer += str;
-		this.writeColor("gray", str);
+		this.writeColor("#5a6374", str);
     };
 	
 	Writer.prototype.writeLine = function() {
 		console.log(this.lineBuffer);
 		this.lineBuffer = "";
 		if (this.useConsole) {
-			writeDocument("<br />");
+			writeDocument(document.createElement("br"));
 		}
 	};
 	
@@ -85,30 +113,33 @@ var Writer = /** @class */ (function () {
 	Writer.prototype.writeColorWrap = function (color, str, tag) {
 		if (this.useConsole) {
 			str = str.replace(/ /g,  "&nbsp;");
-			writeDocument("<" + tag + " style=\"font-family: monospace; color: " + color + "\">" + str + "</" + tag + ">");
+			var element = document.createElement(tag);
+			element.innerHTML = str;
+			element.style = "font-family: monospace; color: " + color + ";";
+			//"<" + tag + " style=\"font-family: monospace; color: " + color + "\">" + str + "</" + tag + ">"
+			writeDocument(element);
 		}
     };
 	
 	Writer.prototype.writeHeader = function (str) {
 		this.lineBuffer += str;
-		this.writeColorWrap("cyan", str, "h2");
-		this.writeLine();
+		this.writeColorWrap("#61afef", str, "h2");
     };
 	
 	Writer.prototype.writeValue = function (str) {
 		this.lineBuffer += str;
-		this.writeColor("green", str);
-		this.writeLine();
+		this.writeColor("#98c379", str);
     };
 
 	Writer.prototype.writeTitle = function (str) {
 		this.lineBuffer += str;
-		this.writeColor("blue", str);
-		this.writeLine();
+		this.writeColor("#dcdfe4", str, "strong");
     };
 	
-	function writeDocument(str) {
-		document.writeln(str);
+	function writeDocument(element) {
+		//document.writeln(str);
+		//document.body.appendChild(element);
+		document.body.appendChild(element);
 	}
 	
     return Writer;
