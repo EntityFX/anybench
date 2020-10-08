@@ -1,0 +1,47 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+processor	: 1
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+timebase	: 33333333
+platform	: PowerMac
+model		: PowerMac11,2
+machine		: PowerMac11,2
+motherboard	: PowerMac11,2 MacRISC4 Power Macintosh 
+detected as	: 337 (PowerMac G5 Dual Core)
+pmac flags	: 00000000
+L2 cache	: 1024K unified
+pmac-generation	: NewWorld
+
+
+From File /proc/version
+Linux version 5.8.0-2-powerpc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.0-8) 10.2.0, GNU ld (GNU Binutils for Debian) 2.35) #1 SMP Debian 5.8.10-1 (2020-09-19)
+
+    BusSpeed powerpc64 native optimized Wed Oct  7 22:28:30 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   3606   3437   3769   3919   3921   3931
+      32   3490   3617   3696   3927   3931   3933
+      64   1135   2252   3368   3861   3930   3933
+     128   1163   2306   3358   3862   3932   3934
+     256   1163   2309   3382   3865   3933   3934
+     512   1170   2322   3380   3864   3931   3933
+    1024    176    356    664   1131   2065   3224
+    4096    106    215    409    728   1505   2821
+   16384    102    202    368    652   1344   2543
+   65536    102    202    368    652   1344   2542
+
+ Type additional information to include in busSpeed.txt - Press Enter

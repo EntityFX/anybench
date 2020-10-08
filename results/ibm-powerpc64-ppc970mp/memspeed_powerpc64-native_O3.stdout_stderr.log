@@ -1,0 +1,50 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+processor	: 1
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+timebase	: 33333333
+platform	: PowerMac
+model		: PowerMac11,2
+machine		: PowerMac11,2
+motherboard	: PowerMac11,2 MacRISC4 Power Macintosh 
+detected as	: 337 (PowerMac G5 Dual Core)
+pmac flags	: 00000000
+L2 cache	: 1024K unified
+pmac-generation	: NewWorld
+
+
+From File /proc/version
+Linux version 5.8.0-2-powerpc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.0-8) 10.2.0, GNU ld (GNU Binutils for Debian) 2.35) #1 SMP Debian 5.8.10-1 (2020-09-19)
+
+
+   Memory Reading Speed Test powerpc64 native optimized Wed Oct  7 22:25:44 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   15199   8106   4398  15200   8129   9406   7610  10365  10365
+      16   15172   8137   4403  15200   8143   9443   7597  10509  10509
+      32   15186   8148   4405  15165   8129   9455   7599  10580  10581
+      64   10099   7323   4408  10158   7310   8541   7601  10615  10604
+     128   10066   7309   4415  10382   7299   8530   7268   9560   9557
+     256   10104   7308   4415  10234   7296   8530   7316   9541   9544
+     512   10112   7304   4417  10441   7293   8527   7231   9543   9548
+    1024    9831   7267   4355   9946   7264   8447   7013   8933   8926
+    2048    2114   3964   3568   2118   3951   3996   1200   1185   1184
+    4096    2168   4053   3614   2166   4026   4111   1193   1192   1191
+    8192    2031   3738   3365   2032   3738   3861   1120   1113   1115
+
+                End of test Wed Oct  7 22:26:00 2020
+
