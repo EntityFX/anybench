@@ -576,10 +576,11 @@ var FFT = /** @class */ (function () {
 }());
 
 var Scimark2 = /** @class */ (function () {
-        var output = new Writer();
+        var output = null;
 
-        function Scimark2(prvarToConsole = true) {
-            output.UseConsole = prvarToConsole;
+        function Scimark2(writer, prvarToConsole) {
+			output = writer || new Writer();
+            output.UseConsole = (prvarToConsole === undefined) ? true : prvarToConsole;;
         }
 		
 		function measureFFT(N, mintime)
@@ -882,9 +883,10 @@ var Scimark2 = /** @class */ (function () {
             }
         }
 
-        Scimark2.prototype.bench = function(min_time = Constants.RESOLUTION_DEFAULT, isLarge = false) {
+        Scimark2.prototype.bench = function(min_time, isLarge) {
             // default to the (small) cache-contained version
-
+			min_time = min_time || Constants.RESOLUTION_DEFAULT;
+			isLarge = isLarge || false;
             var FFT_size = Constants.FFT_SIZE;
             var SOR_size = Constants.SOR_SIZE;
             var Sparse_size_M = Constants.SPARSE_SIZE_M;

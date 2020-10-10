@@ -1,8 +1,8 @@
 var MathBase = /** @class */ (function (_super) {
 	__extends(MathBase, _super);
 	
-	function MathBase() {
-		var _this = _super.call(this) || this;
+	function MathBase(writer) {
+		var _this = _super.call(this, writer) || this;
 		this.R = 0.0;
         _this.Iterrations = 200000000;
 		_this.Ratio = 0.5;

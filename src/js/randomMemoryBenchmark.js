@@ -1,8 +1,9 @@
 var RandomMemoryBenchmark = /** @class */ (function (_super) {
 	__extends(RandomMemoryBenchmark, _super);
 	
-	function RandomMemoryBenchmark(printToConsole = true) {
-		var _this = _super.call(this, printToConsole) || this;
+	function RandomMemoryBenchmark(writer, printToConsole) {
+		printToConsole = printToConsole || true;
+		var _this = _super.call(this, writer, printToConsole) || this;
         return _this;
 	}
 	

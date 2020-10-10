@@ -1,8 +1,9 @@
 var MemoryBenchmark = /** @class */ (function (_super) {
 	__extends(MemoryBenchmark, _super);
 	
-	function MemoryBenchmark(printToConsole = true) {
-		var _this = _super.call(this, printToConsole) || this;
+	function MemoryBenchmark(writer, printToConsole) {
+		printToConsole = printToConsole || true;
+		var _this = _super.call(this, writer, printToConsole) || this;
         return _this;
 	}
 	

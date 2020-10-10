@@ -20,7 +20,8 @@ var Dhrystone = /** @class */ (function () {
 	var PtrGlb = null;
 	var Check = null;
 	
-	function Dhrystone(name) {
+	function Dhrystone(writer, name) {
+		output = writer || Writer;
         this.name = name;
     }
 	

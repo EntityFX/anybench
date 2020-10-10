@@ -86,9 +86,10 @@ var benchMarks = [
 	new MathBenchmark()
 ];
 
+//worker = new Worker("worker.js");
 
 
-document.addEventListener('DOMContentLoaded', function(event) {
+/*document.addEventListener('DOMContentLoaded', function(event) {
 	Warmup(benchMarks, output)
 		.then(function() {
 			return sleep(1000);
@@ -98,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 			output.writeHeader("Bench");
 			Bench(benchMarks, output);
 		});
-})
+})*/
 
 
 

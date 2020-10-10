@@ -1,8 +1,8 @@
 var MathBenchmark = /** @class */ (function (_super) {
 	__extends(MathBenchmark, _super);
 	
-	function MathBenchmark() {
-		var _this = _super.call(this) || this;
+	function MathBenchmark(writer) {
+		var _this = _super.call(this, writer) || this;
         return _this;
 	}
 	

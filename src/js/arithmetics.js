@@ -1,8 +1,8 @@
 var ArithemticsBenchmark = /** @class */ (function (_super) {
 	__extends(ArithemticsBenchmark, _super);
 	
-	function ArithemticsBenchmark() {
-		var _this = _super.call(this) || this;
+	function ArithemticsBenchmark(writer) {
+		var _this = _super.call(this, writer) || this;
         return _this;
 	}
 	

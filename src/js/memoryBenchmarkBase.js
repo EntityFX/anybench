@@ -1,20 +1,23 @@
 var MemoryBenchmarkBase = /** @class */ (function (_super) {
 	__extends(MemoryBenchmarkBase, _super);
 	
-	function MemoryBenchmarkBase(printToConsole = true) {
-		var _this = _super.call(this, printToConsole) || this;
+	function MemoryBenchmarkBase(writer, printToConsole) {
+		printToConsole = (printToConsole === undefined) ? true : printToConsole;;
+		var _this = _super.call(this, writer, printToConsole) || this;
         _this.Iterrations = 500000;
 		_this.Ratio = 1;
         return _this;
 	}
 	
-	MemoryBenchmarkBase.prototype.Warmup = function(aspect = 0.05) {
+	MemoryBenchmarkBase.prototype.Warmup = function(aspect) {
+		aspect = aspect || 0.05;
 		this.UseConsole(false);
 		_super.prototype.Warmup.call(this);
 		this.UseConsole(true);
 	};
 	
-	MemoryBenchmarkBase.prototype.BenchRandomMemory = function(aspect = 0.05) {
+	MemoryBenchmarkBase.prototype.BenchRandomMemory = function(aspect) {
+		aspect = aspect || 0.05;
 		var int4k = this.MeasureArraySpeed(1024);
 		this.output.write("int 4k: %.2f MB/s".$(int4k.MbPerSec));
 		this.output.writeLine();

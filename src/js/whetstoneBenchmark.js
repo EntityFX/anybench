@@ -1,9 +1,9 @@
 var WhetstoneBenchmark = /** @class */ (function (_super) {
 	__extends(WhetstoneBenchmark, _super);
 	
-	function WhetstoneBenchmark() {
-		var _this = _super.call(this) || this;
-        _this.whetstone = new Whetstone();
+	function WhetstoneBenchmark(writer) {
+		var _this = _super.call(this, writer) || this;
+        _this.whetstone = new Whetstone(writer);
 		_this.Ratio = 1;
         return _this;
 	}

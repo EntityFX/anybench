@@ -1,10 +1,9 @@
 var DhrystoneBenchmark = /** @class */ (function (_super) {
 	__extends(DhrystoneBenchmark, _super);
 	
-	function DhrystoneBenchmark() {
-		var _this = _super.call(this) || this;
-		this.R = 0.0;
-        _this.dhrystone = new Dhrystone();
+	function DhrystoneBenchmark(writer) {
+		var _this = _super.call(this, writer) || this;
+        _this.dhrystone = new Dhrystone(writer);
 		_this.Ratio = 4;
         return _this;
 	}

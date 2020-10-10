@@ -1,9 +1,9 @@
 var Scimark2Benchmark = /** @class */ (function (_super) {
 	__extends(Scimark2Benchmark, _super);
 	
-	function Scimark2Benchmark() {
-		var _this = _super.call(this) || this;
-        _this.scimark2 = new Scimark2();
+	function Scimark2Benchmark(writer) {
+		var _this = _super.call(this, writer) || this;
+        _this.scimark2 = new Scimark2(writer);
 		_this.Ratio = 10;
         return _this;
 	}

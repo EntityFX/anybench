@@ -85,11 +85,16 @@ var __extends = (this && this.__extends) || (function () {
 
 var Writer = /** @class */ (function () {
 	
-    function Writer(useConsole = true) {
+    function Writer(useConsole) {
 		this.output = "";
-		this.useConsole = useConsole;
+		this.useConsole = useConsole || true;
 		this.lineBuffer = "";
     }
+	
+	Writer.prototype.writeLineLog = function() {
+		console.log(this.lineBuffer);
+		this.lineBuffer = "";
+	}
 	
     Writer.prototype.write = function (str) {
 		this.lineBuffer += str;
@@ -97,8 +102,7 @@ var Writer = /** @class */ (function () {
     };
 	
 	Writer.prototype.writeLine = function() {
-		console.log(this.lineBuffer);
-		this.lineBuffer = "";
+		this.writeLineLog();
 		if (this.useConsole) {
 			writeDocument(document.createElement("br"));
 		}
@@ -111,18 +115,22 @@ var Writer = /** @class */ (function () {
     };
 	
 	Writer.prototype.writeColorWrap = function (color, str, tag) {
-		if (this.useConsole) {
+		if (this.useConsole && typeof document !== 'undefined') {
 			str = str.replace(/ /g,  "&nbsp;");
-			var element = document.createElement(tag);
-			element.innerHTML = str;
-			element.style = "font-family: monospace; color: " + color + ";";
+			//var element = document.createElement(tag);
+			//element.innerHTML = str;
+			//element.style = "font-family: monospace; color: " + color + ";";
 			//"<" + tag + " style=\"font-family: monospace; color: " + color + "\">" + str + "</" + tag + ">"
-			writeDocument(element);
+			//writeDocument(element);
+			var style = "font-family: monospace; color: " + color + ";";
+			var element = "<" + tag + " style=\"" + style + "\">" + str + "</" + tag + ">";
+			document.body.innerHTML += element;
 		}
     };
 	
 	Writer.prototype.writeHeader = function (str) {
 		this.lineBuffer += str;
+		this.writeLineLog();
 		this.writeColorWrap("#61afef", str, "h2");
     };
 	
@@ -143,4 +151,39 @@ var Writer = /** @class */ (function () {
 	}
 	
     return Writer;
+}());
+
+var WorkerWriter = /** @class */ (function () {
+	
+    function WorkerWriter(useConsole) {
+		this.useConsole = useConsole || true;
+    }
+	
+    WorkerWriter.prototype.write = function (str) {
+		if (!this.useConsole) return;
+		postMessage({ msgType: "output", writeType : "write", message: str});
+    };
+	
+	WorkerWriter.prototype.writeLine = function() {
+		if (!this.useConsole) return;
+		postMessage({ msgType: "output", writeType : "writeLine"});
+	};
+	
+	WorkerWriter.prototype.writeHeader = function (str) {
+		if (!this.useConsole) return;
+		postMessage({ msgType: "output", writeType : "writeHeader", message: str});
+    };
+	
+	WorkerWriter.prototype.writeValue = function (str) {
+		if (!this.useConsole) return;
+		postMessage({ msgType: "output", writeType : "writeValue", message: str});
+    };
+
+	WorkerWriter.prototype.writeTitle = function (str) {
+		if (!this.useConsole) return;
+		postMessage({ msgType: "output", writeType : "writeTitle", message: str});
+    };
+	
+	
+    return WorkerWriter;
 }());

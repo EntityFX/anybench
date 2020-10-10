@@ -1,5 +1,5 @@
 var Whetstone = /** @class */ (function () {
-	var writer = new Writer();
+	var output = null;
 	
 	
 	var TimeUsed = 0.0;
@@ -27,7 +27,8 @@ var Whetstone = /** @class */ (function () {
 
 	var x100 = 100;
 	
-    function Whetstone(name) {
+    function Whetstone(writer, name) {
+		output = writer || new Writer(); 
         this.name = name;
     }
 	
@@ -455,36 +456,36 @@ var Whetstone = /** @class */ (function () {
 		if (section == -1) {
 			var c = new Date();
 			var sys = "     Whetstone Benchmark JavaScript Version, " + c.toUTCString();
-			writer.write(sys);
-			writer.writeLine();
+			output.write(sys);
+			output.writeLine();
 		} else if (section == 1) {
 			var hd = "                                                       1 Pass";
-			writer.write(hd);
-			writer.writeLine();
+			output.write(hd);
+			output.writeLine();
 			hd = "  Test                  Result       MFLOPS     MOPS  millisecs";
-			writer.write(hd);
-			writer.writeLine();
+			output.write(hd);
+			output.writeLine();
 		}
 		if (section > 0) {
-			writer.write("%19s".$(titles[section]));
-			writer.write(" %13.9f".$(results[section]));
+			output.write("%19s".$(titles[section]));
+			output.write(" %13.9f".$(results[section]));
 
 			if (loop_mflops[section] > 0.0) {
-				writer.write(" %9.2f         ".$(loop_mflops[section]));
+				output.write(" %9.2f         ".$(loop_mflops[section]));
 			}
 			if (loop_mops[section] > 0.0) {
-				writer.write("          %9.2f".$(loop_mops[section]));
+				output.write("          %9.2f".$(loop_mops[section]));
 			}
-			writer.write(" %9.4f".$(loop_time[section] * 1000.0));
-			writer.writeLine();
+			output.write(" %9.4f".$(loop_time[section] * 1000.0));
+			output.writeLine();
 		}
 
 		if (section == 8)
 		{
-			writer.write("  MWIPS          ".$());
-			writer.write("                 %9.2f".$(mwips));
-			writer.write("          %9.4f".$(TimeUsed*1000.0));
-			writer.writeLine();
+			output.write("  MWIPS          ".$());
+			output.write("                 %9.2f".$(mwips));
+			output.write("          %9.4f".$(TimeUsed*1000.0));
+			output.writeLine();
 		}
 	}
 	

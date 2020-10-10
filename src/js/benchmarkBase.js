@@ -1,10 +1,11 @@
 var BenchmarkBase = /** @class */ (function () {
 	
-	function BenchmarkBase(printToConsole = true) {
+	function BenchmarkBase(writer, printToConsole) {
+		printToConsole = (printToConsole === undefined) ? true : printToConsole;
 		this.Iterrations = 1;
 		this.Radio = 1.0;
 		this.Name = this.constructor.name;
-		this.output = new Writer();
+		this.output = writer || new Writer(printToConsole);
 	}
 	
 	BenchmarkBase.prototype.Bench = function() {
@@ -17,14 +18,16 @@ var BenchmarkBase = /** @class */ (function () {
 		return result;
 	};
 	
-	BenchmarkBase.prototype.Warmup = function(aspect = 0.05) {
+	BenchmarkBase.prototype.Warmup = function(aspect) {
+		aspect = aspect || 0.05;
 		var tmp = this.Iterrations;
 		this.Iterrations = this.Iterrations * aspect;
 		this.Bench();
 		this.Iterrations = tmp;
 	};
 	
-	BenchmarkBase.prototype.UseConsole = function(printToConsole = true) {
+	BenchmarkBase.prototype.UseConsole = function(printToConsole) {
+		printToConsole = (printToConsole === undefined) ? true : printToConsole;
 		this.output.useConsole = printToConsole;
 	};
 	
