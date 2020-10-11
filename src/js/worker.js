@@ -30,6 +30,11 @@ importScripts("callBenchmark.js");
 importScripts("ifElseBenchmark.js");
 importScripts("stringManipulationBase.js");
 importScripts("stringManipulation.js");
+importScripts("hashBase.js");
+importScripts("hashBenchmark.js");
+importScripts("crypto-js/core.js");
+importScripts("crypto-js/sha1.js");
+importScripts("crypto-js/sha256.js");
 
 function writeResult(benchResult, output) {
 	output.writeTitle("%-30s".$(benchResult.BenchmarkName));
@@ -90,7 +95,8 @@ var benchMarks = [
 	new MathBenchmark(output),
 	new CallBenchmark(output),
 	new IfElseBenchmark(output),
-	new StringManipulation(output)
+	new StringManipulation(output),
+	new HashBenchmark(output)
 ];
 
 
