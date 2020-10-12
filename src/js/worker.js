@@ -65,7 +65,7 @@ function BenchOne(benchMark, output) {
 function Bench(benchMarks, output) {
 	var total = 0;
 	var totalPoints = 0;
-	
+	var results = [];
 	var i = 0;
 	
 	for (var index = 0; index < benchMarks.length; index++) {
@@ -74,12 +74,21 @@ function Bench(benchMarks, output) {
 		
 		total += r.Elapsed;
 		totalPoints += r.Points;
+
+		results.push(r);
 	}
 	
 	output.writeLine();
 	output.writeTitle("%-30s".$("Total:"));
 	output.writeValue("%13.2f ms".$(total));
 	output.writeValue("%13.2f pts".$(totalPoints));
+	output.writeLine();
+
+	var resultsCsv = results.map(function(value) { return "%.2f".$(value.Points); }).join(';');
+
+	output.writeTitle("%s;%s;%d;%d;".$(navigator.platform, navigator.os, 0, 0));
+	output.writeValue(resultsCsv);
+	output.writeTitle(";%-30s".$(total));
 	output.writeLine();
 }
 
@@ -98,9 +107,6 @@ var benchMarks = [
 	new StringManipulation(output),
 	new HashBenchmark(output)
 ];
-
-
-
 
 Warmup(benchMarks, output);
 Bench(benchMarks, output);
