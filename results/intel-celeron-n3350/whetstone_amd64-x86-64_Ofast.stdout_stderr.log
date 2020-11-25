@@ -1,0 +1,61 @@
+
+##########################################
+Single Precision C Whetstone Benchmark amd64 x86-64 optimized, Fri Sep 11 12:08:31 2020
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.32 Seconds        125   Passes (x 100)
+       1.60 Seconds        625   Passes (x 100)
+       8.07 Seconds       3125   Passes (x 100)
+
+Use 3872  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 92
+model name	: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+stepping	: 9
+microcode	: 0x38
+cpu MHz		: 916.043
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm 3dnowprefetch cpuid_fault cat_l2 ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust smep erms mpx rdt_a rdseed smap clflushopt intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts md_clear arch_capabilities
+bugs		: spectLinux version 5.4.0-47-generic (buildd@lcy01-amd64-014) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #51-Ubuntu SMP Fri Sep 4 19:50:52 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-47-generic (buildd@lcy01-amd64-014) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #51-Ubuntu SMP Fri Sep 4 19:50:52 UTC 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       955.812              0.078
+N2 floating point     -1.12274742126464844       950.945              0.547
+N3 if then else        1.00000000000000000                7167.914    0.056
+N4 fixed point        12.00000000000000000               47784.012    0.026
+N5 sin,cos etc.        0.49911010265350342                  76.343    4.220
+N6 floating point      0.99999982118606567       652.185              3.202
+N7 assignments         3.00000000000000000                3991.557    0.179
+N8 exp,sqrt etc.       0.75110864639282227                  86.625    1.663
+
+MWIPS                                           3883.388              9.971
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

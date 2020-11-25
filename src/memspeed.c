@@ -14,8 +14,12 @@
  #include <string.h>
  #include "cpuidh.h"
  #include <math.h>
+ 
+#if defined(__MACH__)
+ #include <stdlib.h>
+#else
  #include <malloc.h>
-
+#endif
 //  #define Integer64Bits
   #define Integer32Bits
 

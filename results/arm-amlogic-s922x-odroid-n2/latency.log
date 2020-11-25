@@ -1,0 +1,92 @@
+root@odroid:~/test-tlb# make run
+for i in 4k 8k 16k 32k 64k 128k 256k 512k 1M 2M 4M 6M 8M 16M 32M 64M 128M 256M ; do echo "$i:"; ./test-tlb -H $i 64; ./test-tlb $i 64 ; ./test-tlb -Hr $i 64; ./test-tlb -r $i 64; done
+4k:
+  2.22ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+  2.22ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+8k:
+  2.22ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+  2.22ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+16k:
+  2.23ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+  2.23ns (~4.0 cycles)
+32k:
+  2.28ns (~4.1 cycles)
+  2.27ns (~4.1 cycles)
+  2.27ns (~4.1 cycles)
+  2.28ns (~4.1 cycles)
+64k:
+  4.71ns (~8.5 cycles)
+  4.72ns (~8.5 cycles)
+ 11.85ns (~21.3 cycles)
+ 11.86ns (~21.4 cycles)
+128k:
+  4.74ns (~8.5 cycles)
+  4.74ns (~8.5 cycles)
+ 13.75ns (~24.7 cycles)
+ 13.76ns (~24.8 cycles)
+256k:
+  4.72ns (~8.5 cycles)
+  4.72ns (~8.5 cycles)
+ 14.65ns (~26.4 cycles)
+ 14.63ns (~26.3 cycles)
+512k:
+  4.71ns (~8.5 cycles)
+  4.71ns (~8.5 cycles)
+ 15.68ns (~28.2 cycles)
+ 15.67ns (~28.2 cycles)
+1M:
+  5.12ns (~9.2 cycles)
+  5.19ns (~9.3 cycles)
+ 37.97ns (~68.3 cycles)
+ 38.96ns (~70.1 cycles)
+2M:
+  6.95ns (~12.5 cycles)
+  6.94ns (~12.5 cycles)
+ 96.34ns (~173.4 cycles)
+ 97.09ns (~174.8 cycles)
+4M:
+  7.20ns (~13.0 cycles)
+  7.20ns (~13.0 cycles)
+119.97ns (~215.9 cycles)
+115.86ns (~208.5 cycles)
+6M:
+  7.22ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+128.45ns (~231.2 cycles)
+126.89ns (~228.4 cycles)
+8M:
+  7.21ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+132.22ns (~238.0 cycles)
+132.63ns (~238.7 cycles)
+16M:
+  7.21ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+139.64ns (~251.3 cycles)
+139.99ns (~252.0 cycles)
+32M:
+  7.20ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+144.08ns (~259.3 cycles)
+144.31ns (~259.8 cycles)
+64M:
+  7.20ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+146.62ns (~263.9 cycles)
+146.24ns (~263.2 cycles)
+128M:
+  7.20ns (~13.0 cycles)
+  7.21ns (~13.0 cycles)
+148.86ns (~267.9 cycles)
+148.76ns (~267.8 cycles)
+256M:
+  7.21ns (~13.0 cycles)
+  7.22ns (~13.0 cycles)
+171.84ns (~309.3 cycles)
+171.59ns (~308.9 cycles)

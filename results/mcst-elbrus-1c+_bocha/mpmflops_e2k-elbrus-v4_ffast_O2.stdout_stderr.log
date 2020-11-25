@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 1, Configured CPUs 1
+  get_phys_pages() and size - RAM Size 15.55 GB, Page Size 4096 Bytes
+  uname() - Linux, elbrus-1s.localdomain, 4.9.170-elbrus-def-alt4.9.2
+  #1 SMP Tue Feb 18 16:19:10 UTC 2020, e2k
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 1 Threads, Sun Aug 16 04:53:03 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2     2500   0.524153      977    0.929538   Yes
+ Data in & out    1024000     2      250   3.567687      144    0.992550   Yes
+ Data in & out   10240000     2       25   3.610094      142    0.999250   Yes
+
+ Data in & out     102400     8     2500   0.784216     2612    0.957117   Yes
+ Data in & out    1024000     8      250   3.789787      540    0.995517   Yes
+ Data in & out   10240000     8       25   3.851673      532    0.999549   Yes
+
+ Data in & out     102400    32     2500   1.437239     5700    0.890211   Yes
+ Data in & out    1024000    32      250   4.348547     1884    0.988082   Yes
+ Data in & out   10240000    32       25   4.407753     1859    0.998796   Yes
+
+               End of test Sun Aug 16 04:53:29 2020
+
+ Press Enter

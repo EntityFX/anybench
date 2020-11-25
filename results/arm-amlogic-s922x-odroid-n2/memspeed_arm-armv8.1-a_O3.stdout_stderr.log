@@ -1,0 +1,81 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 4
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd09
+CPU revision	: 2
+
+processor	: 5
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32
+CPU implementer	: 0x41
+CPU architeLinux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+
+
+From File /proc/version
+Linux version 4.9.210-66 (root@builder_n2) (gcc version 7.4.0 (Ubuntu/Linaro 7.4.0-1ubuntu1~18.04.1) ) #1 SMP PREEMPT Thu Jan 16 09:14:42 -03 2020
+
+
+   Memory Reading Speed Test arm armv8.1-a optimized Wed Sep 23 12:43:07 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   13039  14174  12616  16157  14184  14183  12440   9413   9413
+      16   13098  14280  12698  16280  14279  14281  11745   9500   9497
+      32   12717  14317  12733  16343  14319  14318  10615   9543   9541
+      64    9421   9340   9331   9462   9271   9343   9510   9401   9401
+     128    8581   8537   8567   8612   8531   8505   9448   9447   9445
+     256    8523   8477   8508   8548   8501   8457   9468   9511   9510
+     512    8530   8486   8496   8557   8501   8491   9495   9548   9548
+    1024    7847   7389   7526   7905   7476   7469   8291   8291   8285
+    2048    5386   4422   4547   5380   4646   4539   4340   4376   4376
+    4096    5291   4717   4679   5287   4719   4729   4105   4094   4100
+    8192    5295   4706   4792   5310   4756   4684   3957   3940   3946
+
+                End of test Wed Sep 23 12:43:23 2020
+

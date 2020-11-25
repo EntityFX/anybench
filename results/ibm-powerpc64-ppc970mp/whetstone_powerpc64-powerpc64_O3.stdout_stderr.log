@@ -1,0 +1,58 @@
+
+##########################################
+Single Precision C Whetstone Benchmark powerpc64 powerpc64 optimized, Wed Oct  7 22:24:11 2020
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.12 Seconds         25   Passes (x 100)
+       0.63 Seconds        125   Passes (x 100)
+       3.12 Seconds        625   Passes (x 100)
+
+Use 2000  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+processor	: 1
+cpu		: PPC970MP, altivec supported
+clock		: 2000.000000MHz
+revision	: 1.1 (pvr 0044 0101)
+
+timebase	: 33333333
+platform	: PowerMac
+model		: PowerMac11,2
+machine		: PowerMac11,2
+motherboard	: PowerMac11,2 MacRISC4 Power Macintosh 
+detected as	: 337 (PowerMac G5 Dual Core)
+pmac flags	: 00000000
+L2 cache	: 1024K unified
+pmac-generation	: NewWorld
+
+
+From File /proc/version
+Linux version 5.8.0-2-powerpc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.0-8) 10.2.0, GNU ld (GNU Binutils for Debian) 2.35) #1 SMP Debian 5.8.10-1 (2020-09-19)
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       409.864              0.094
+N2 floating point     -1.12274742126464844       463.228              0.580
+N3 if then else        1.00000000000000000                   0.000    0.000
+N4 fixed point        12.00000000000000000                1662.306    0.379
+N5 sin,cos etc.        0.49911010265350342                  43.762    3.802
+N6 floating point      0.99999982118606567       399.585              2.700
+N7 assignments         3.00000000000000000                1998.024    0.185
+N8 exp,sqrt etc.       0.75110864639282227                  33.019    2.253
+
+MWIPS                                           2001.315              9.993
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

@@ -1,0 +1,41 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MBE1C-PC
+cpu family	: 4
+model		: 8
+model name	: E1C+
+revision	: 1
+cpu MHz		: 984.612610
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 2048 KB
+L2 cache line length	: 64 bytes
+bogomips	: 1970.41
+
+
+
+From File /proc/version
+Linux version 4.9.170-elbrus-def-alt4.9.2 (builder@localhost.localdomain) (lcc:1.23.20:Sep--4-2019:e2k-v4-linux) #1 SMP Tue Feb 18 16:19:10 UTC 2020
+
+    BusSpeed vfpv4 32b V1 Sun Aug 16 04:55:48 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   5210   5074   6355   7630   8257   8609
+      32   6977   5776   6108   8123   8609   8797
+      64   6090   4082   4541   7872   8686   8799
+     128   5257   3120   3158   5356   5953   5452
+     256   4903   3142   3260   5233   5796   5465
+     512   2236   1684   2432   4255   4687   4526
+    1024   2215   1606   2387   3843   3979   3981
+    4096    412    272    581    710    713    869
+   16384    417    275    592    709    707    867
+   65536    419    276    591    704    707    864
+
+ Type additional information to include in busSpeed.txt - Press Enter

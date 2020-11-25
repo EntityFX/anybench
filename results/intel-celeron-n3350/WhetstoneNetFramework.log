@@ -1,0 +1,31 @@
+$mono WhetstoneNetFramework.exe
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.17 Seconds         25   Passes (x 100)
+       0.86 Seconds        125   Passes (x 100)
+       4.31 Seconds        625   Passes (x 100)
+
+Use 14497  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475000000000000      570.879               0.488
+N2 floating point     -1.12274700000000000      437.931               4.449
+N3 if then else        1.00000000000000000                 574.066    2.614
+N4 fixed point        12.00000000000000000                1054.371    4.331
+N5 sin,cos etc.        0.49911010000000000                  39.114   30.837
+N6 floating point      0.99999980000000000      230.024              33.995
+N7 assignments         3.00000000000000000                 224.298   11.944
+N8 exp,sqrt etc.       0.75110860000000000                  43.514   12.393
+MWIPS                                           1434.620            101.051

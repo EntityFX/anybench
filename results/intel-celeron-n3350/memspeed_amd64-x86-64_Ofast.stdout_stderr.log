@@ -1,0 +1,52 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 92
+model name	: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+stepping	: 9
+microcode	: 0x38
+cpu MHz		: 979.523
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm 3dnowprefetch cpuid_fault cat_l2 ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust smep erms mpx rdt_a rdseed smap clflushopt intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts md_clear arch_capabilities
+bugs		: spectLinux version 5.4.0-47-generic (buildd@lcy01-amd64-014) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #51-Ubuntu SMP Fri Sep 4 19:50:52 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-47-generic (buildd@lcy01-amd64-014) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #51-Ubuntu SMP Fri Sep 4 19:50:52 UTC 2020
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Fri Sep 11 12:09:25 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   24533  23890  23834  31890  27387  26248  14855  17288  17331
+      16   24820  24673  24605  32989  27608  27389  13259  11251  16034
+      32   16217  17284  18366  21144  20419  20945  12335  18297  18307
+      64   15061  16238  16748  19130  16453  16516   8935  12823  12824
+     128   14979  16127  16634  18998  16872  17172   8584  11089  12270
+     256   14897  15862  16553  18742  16727  17003   8517  12180  12198
+     512   14910  15985  16574  18733  16758  17008   8487  12250  12266
+    1024    7537   7892   7854   8075   8039   7956   3998   3470   4134
+    2048    5562   5606   5602   5599   5609   5641   2740   2845   2854
+    4096    5276   5309   5277   5268   5283   5285   2580   2718   2721
+    8192    5280   5303   5260   5332   5310   5243   2578   2716   2732
+
+                End of test Fri Sep 11 12:09:42 2020
+

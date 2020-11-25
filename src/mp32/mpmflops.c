@@ -28,7 +28,9 @@
 
 // #define version "Linux/ARM v1.0"
 // #define version "Linux/ARM V7A v1.0"
- #define version "Compiled NEON v1.0"
+#ifndef version
+ #define version "Generic v1.0"
+#endif
 
  float  x_cpu[4000000];
  double runSecs = 0.1;

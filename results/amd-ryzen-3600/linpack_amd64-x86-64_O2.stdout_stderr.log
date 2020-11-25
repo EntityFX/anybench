@@ -1,0 +1,89 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00021    0.00001    0.00022    3083.61     0.0006     0.0040
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.00 seconds
+      1000 times   0.03 seconds
+     10000 times   0.25 seconds
+     20000 times   0.50 seconds
+     40000 times   1.00 seconds
+     80000 times   1.99 seconds
+Overhead for 1 matgen      0.00002 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.14 seconds
+      2000 times   0.27 seconds
+      4000 times   0.55 seconds
+      8000 times   1.09 seconds
+Passes used       7315 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00011    0.00000    0.00012    5957.77     0.0003     0.0021
+    0.00011    0.00000    0.00012    5959.17     0.0003     0.0021
+    0.00011    0.00000    0.00012    5939.53     0.0003     0.0021
+    0.00011    0.00000    0.00012    5944.84     0.0003     0.0021
+    0.00011    0.00000    0.00012    5949.16     0.0003     0.0021
+Average                              5950.09
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00002 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00011    0.00000    0.00012    5960.81     0.0003     0.0021
+    0.00011    0.00000    0.00012    5945.66     0.0003     0.0021
+    0.00011    0.00000    0.00012    5952.67     0.0003     0.0021
+    0.00011    0.00000    0.00012    5945.47     0.0003     0.0021
+    0.00011    0.00000    0.00012    5947.85     0.0003     0.0021
+Average                              5950.49
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 5 3600 6-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 2199.938
+cache size	: 512 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 6
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbmLinux version 5.4.0-48-generic (buildd@lcy01-amd64-010) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #52-Ubuntu SMP Thu Sep 10 10:58:49 UTC 2020
+
+
+From File /proc/version
+Linux version 5.4.0-48-generic (buildd@lcy01-amd64-010) (gcc version 9.3.0 (Ubuntu 9.3.0-10ubuntu2)) #52-Ubuntu SMP Thu Sep 10 10:58:49 UTC 2020
+
+
+Unrolled Double  Precision     5950.09 Mflops 
+
+

@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <script src="whetstone.js" type="text/javascript"></script>
+    <body style="background-color: #282c37">
+		<h1 style="font-family: monospace; color: #61afef;">EntityFX JavaScript Benchmark</h1>
+		<p style="font-family: monospace; color: #dcdfe4;">Wait until completed...</p>
+        <script src="utils.js" type="text/javascript"></script>
+		<script>
+			var worker = new Worker("worker.js");
+			var writer = new Writer();
+
+			worker.onmessage = function(event) {
+				if (event.data.msgType == "output" ) {
+					handleOutput(event.data, writer);
+				}
+			};
+			
+			function handleOutput(writerMessage, writer) {
+				if (writerMessage.writeType == "write") {
+					writer.write(writerMessage.message);
+				}
+				
+				if (writerMessage.writeType == "writeLine") {
+					writer.writeLine();
+				}
+				
+				if (writerMessage.writeType == "writeHeader") {
+					writer.writeHeader(writerMessage.message);
+				}
+				
+				if (writerMessage.writeType == "writeValue") {
+					writer.writeValue(writerMessage.message);
+				}
+				
+				if (writerMessage.writeType == "writeTitle") {
+					writer.writeTitle(writerMessage.message);
+				}
+				
+			}
+		</script>
     </body>
 </html>
