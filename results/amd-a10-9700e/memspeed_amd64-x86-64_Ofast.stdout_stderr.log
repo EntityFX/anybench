@@ -1,0 +1,51 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 21
+model		: 101
+model name	: AMD A10-9700E RADEON R7, 10 COMPUTE CORES 4C+6G
+stepping	: 1
+microcode	: 0x600611a
+cpu MHz		: 1139.298
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 16
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good acc_power nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core perfctr_nb bpext ptsc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 xsaveopt arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold aviLinux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+
+From File /proc/version
+Linux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Thu Dec  3 20:46:55 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   45963  60772  45856  56213  61542  61377  31846  22542  22396
+      16   46890  61804  46877  59668  62671  62509  35587  23115  23162
+      32   39279  57765  45287  43455  60122  61330  23931  23093  22658
+      64   29103  57979  46724  28941  60067  60327  14600  14585  14582
+     128   29039  58702  46873  28881  60646  60669  14548  14587  14628
+     256   29131  57671  46474  29036  59451  59654  14628  14621  14673
+     512   13095  25170  23523  13210  25414  25656   6887   6818   6738
+    1024    9703  18613  18041   9824  19119  19086   5101   5078   4990
+    2048    6334  12282  12441   6210  12396  12415   3306   3175   3081
+    4096    5747  11876  11812   5989  11948  11924   3203   3195   3127
+    8192    6287  12257  12091   6229  12180  12208   3239   3229   3200
+
+                End of test Thu Dec  3 20:47:12 2020
+

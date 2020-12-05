@@ -1,0 +1,48 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 5 1600X Six-Core Processor
+stepping	: 1
+microcode	: 0x8001138
+cpu MHz		: 2585.972
+cache size	: 512 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 6
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbLinux version 5.9.11-arch2-1 (linux@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Sat, 28 Nov 2020 02:07:22 +0000
+
+
+From File /proc/version
+Linux version 5.9.11-arch2-1 (linux@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Sat, 28 Nov 2020 02:07:22 +0000
+
+    BusSpeed amd64_clang x86-64 optimized Thu Dec  3 20:14:31 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  13299  13602  15029  15596  15592 106510
+      32  14537  14844  15122  15238  15719  99149
+      64   7371   7588  15408  15268  15778  84572
+     128   7671   7760  15364  15670  15667  85081
+     256   7758   7724  15381  15655  15694  84063
+     512   6845   6304  12515  15318  15720  79250
+    1024   5841   5558  10436  15172  15619  73900
+    4096   5294   5530  10303  15206  15205  68827
+   16384   1114   1357   3458   5799   9936  24822
+   65536   1106   1382   3461   6099   9924  25016
+
+ Type additional information to include in busSpeed.txt - Press Enter

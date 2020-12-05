@@ -1,0 +1,51 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 1
+model name	: AMD Ryzen 5 1600X Six-Core Processor
+stepping	: 1
+microcode	: 0x8001138
+cpu MHz		: 2967.013
+cache size	: 512 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 6
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate sme ssbd sev ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 xsaves clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbLinux version 5.9.11-arch2-1 (linux@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Sat, 28 Nov 2020 02:07:22 +0000
+
+
+From File /proc/version
+Linux version 5.9.11-arch2-1 (linux@archlinux) (gcc (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.1) #1 SMP PREEMPT Sat, 28 Nov 2020 02:07:22 +0000
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Thu Dec  3 20:03:05 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   78745 112983 114109  80473 112954 114271  60182  52789  52304
+      16   81092 117857 119517  81892 118474 119942  60795  56951  57545
+      32   81801 120928 122387  82634 122663 123073  62319  60431  60362
+      64   67354 105998 109394  75162 122664 123029  44409  40968  41120
+     128   67755 105872 110176  75969 123193 124179  44426  41260  41296
+     256   66993 105975 110111  76182 122446 123591  43683  40941  40870
+     512   67299 106294 110392  71879 123229 123160  42135  40205  40210
+    1024   66174 105313 109295  73324 122328 121804  39581  38784  38823
+    2048   65889 105082 107663  71836 121279 121579  39534  38155  36946
+    4096   65455 103574 107948  72997 121731 121152  39064  37568  37601
+    8192   31319  60376  60446  32117  61289  61228  16739  16408  16393
+
+                End of test Thu Dec  3 20:03:23 2020
+

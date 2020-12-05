@@ -1,0 +1,48 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 21
+model		: 101
+model name	: AMD A10-9700E RADEON R7, 10 COMPUTE CORES 4C+6G
+stepping	: 1
+microcode	: 0x600611a
+cpu MHz		: 797.772
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 16
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good acc_power nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core perfctr_nb bpext ptsc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 xsaveopt arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avicLinux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+
+From File /proc/version
+Linux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+    BusSpeed amd64 x86-64 optimized Thu Dec  3 20:48:51 2020
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  16035  14892  18184  18456  18915  18928
+      32  11990   9691  10308  17582  18072  18459
+      64   2904   2900   5927  10664  16327  17356
+     128   2967   2952   5930  10861  16417  17424
+     256   2967   2963   5958  10254  15381  17101
+     512   2985   2980   5963  10226  14939  17024
+    1024   1046   1087   2080   3700   6291  10019
+    4096    660    690   1288   2289   4287   7491
+   16384    660    649   1248   2233   3893   7592
+   65536    648    683   1252   2252   3721   7671
+
+ Type additional information to include in busSpeed.txt - Press Enter

@@ -1,0 +1,72 @@
+ #####################################################
+
+     Memory Reading Speed Test clang optimized (ffast) by Roy Longbottom
+
+               Start of test Sat Dec  5 01:57:59 2020
+
+  Memory   x[m]=x[m]+s*y[m] Int+   x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   20130  17248  18115  40102  20070  20538  44992  45352  45352
+      16   20128  17258  18109  40209  19994  20561  45341  45342  45337
+      32   20143  17266  18129  40245  19977  20492  45335  45358  45348
+      64   20090  17242  18056  40182  19979  20467  45338  45347  45338
+     128   20123  17257  18122  39728  19587  20033  45312  45281  45323
+     256   20125  17255  18106  39780  19585  20031  39010  34656  36337
+     512   18756  16501  17243  33629  19299  20039  21472  25941  20310
+    1024   19424  16507  17292  35254  19216  19528  33145  32788  33722
+    2048   20014  17188  18004  32143  19606  19992  24660  24421  24369
+    4096   20067  17241  18098  31545  19662  20053  17719  18172  19235
+    8192   19218  16912  17684  26712  18943  19247  15439  15274  15185
+
+                End of test Sat Dec  5 01:58:16 2020
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: AArch64 Processor rev 14 (aarch64)
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0xd
+CPU part	: 0x805
+CPU revision	: 14
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0xd
+CPU part	: 0x805
+CPU revision	: 14
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0xd
+CPU part	: 0x805
+CPU revision	: 14
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0xd
+CPU part	: 0x805
+CPU revision	: 14
+
+processor	: 4
+BogoMIPS	: Linux version 4.19.81-perf-gf0db4b8 (builder@c4-miui-ota-bd03.bj) (clang version 8.0.12 for Android NDK) #1 SMP PREEMPT Fri Aug 7 22:57:17 CST 2020
+ 
+
+From File /proc/version
+Linux version 4.19.81-perf-gf0db4b8 (builder@c4-miui-ota-bd03.bj) (clang version 8.0.12 for Android NDK) #1 SMP PREEMPT Fri Aug 7 22:57:17 CST 2020
+ 
+

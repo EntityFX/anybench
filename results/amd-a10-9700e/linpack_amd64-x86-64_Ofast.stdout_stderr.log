@@ -1,0 +1,89 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.8    8.10462808e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00092    0.00004    0.00095     720.56     0.0028     0.0170
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.09 seconds
+     10000 times   0.48 seconds
+     20000 times   0.98 seconds
+     40000 times   1.94 seconds
+Overhead for 1 matgen      0.00005 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.27 seconds
+      2000 times   0.54 seconds
+      4000 times   1.09 seconds
+Passes used       3677 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00022    0.00001    0.00023    2954.69     0.0007     0.0041
+    0.00022    0.00001    0.00023    2962.79     0.0007     0.0041
+    0.00022    0.00001    0.00023    2962.58     0.0007     0.0041
+    0.00022    0.00001    0.00023    2961.08     0.0007     0.0041
+    0.00022    0.00001    0.00023    2962.91     0.0007     0.0041
+Average                              2960.81
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00005 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00019    0.00001    0.00020    3485.48     0.0006     0.0035
+    0.00019    0.00001    0.00020    3486.26     0.0006     0.0035
+    0.00019    0.00001    0.00020    3488.24     0.0006     0.0035
+    0.00019    0.00001    0.00020    3445.07     0.0006     0.0036
+    0.00019    0.00001    0.00020    3484.11     0.0006     0.0035
+Average                              3477.83
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 21
+model		: 101
+model name	: AMD A10-9700E RADEON R7, 10 COMPUTE CORES 4C+6G
+stepping	: 1
+microcode	: 0x600611a
+cpu MHz		: 797.112
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 16
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good acc_power nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs xop skinit wdt lwp fma4 tce nodeid_msr tbm topoext perfctr_core perfctr_nb bpext ptsc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 xsaveopt arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avicLinux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+
+From File /proc/version
+Linux version 5.4.80-2-lts (linux-lts@archlinux) (gcc version 10.2.0 (GCC)) #1 SMP Sat, 28 Nov 2020 15:11:01 +0000
+
+
+Unrolled Double  Precision     2960.81 Mflops 
+
+ Different numeric results - see linpack.txt
+
+

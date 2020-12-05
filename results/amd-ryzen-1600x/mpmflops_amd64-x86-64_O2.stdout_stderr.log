@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 12, Configured CPUs 12
+  get_phys_pages() and size - RAM Size 15.65 GB, Page Size 4096 Bytes
+  uname() - Linux, rogozpc, 5.9.11-arch2-1
+  #1 SMP PREEMPT Sat, 28 Nov 2020 02:07:22 +0000, x86_64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 12 Threads, Thu Dec  3 20:04:49 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    30000   0.233265    26339    See log     No
+ Data in & out    1024000     2     3000   0.229416    26781    See log     No
+ Data in & out   10240000     2      300   0.984365     6242    See log     No
+
+ Data in & out     102400     8    30000   0.436616    56287    See log     No
+ Data in & out    1024000     8     3000   0.432352    56843    See log     No
+ Data in & out   10240000     8      300   0.982481    25014    See log     No
+
+ Data in & out     102400    32    30000   1.626414    60442    See log     No
+ Data in & out    1024000    32     3000   1.612370    60969    See log     No
+ Data in & out   10240000    32      300   1.634259    60152    See log     No
+
+               End of test Thu Dec  3 20:04:58 2020
+
+ Press Enter
