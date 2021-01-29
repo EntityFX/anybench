@@ -1,0 +1,61 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 8, Configured CPUs 8
+  get_phys_pages() and size - RAM Size  3.66 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 4.4.153-perf+
+  #2 SMP PREEMPT Fri Oct 23 21:43:46 CST 2020, aarch64
+
+##############################################
+
+ Multithreading Single Precision Whetstones arm armv8.1-a optimized
+
+             Using 8 threads - Sat Jan 30 02:29:04 2021
+
+ Calibrate
+    0.00799 Seconds          1   Passes (x 100)
+    0.03823 Seconds          5   Passes (x 100)
+    0.17833 Seconds         25   Passes (x 100)
+    0.83645 Seconds        125   Passes (x 100)
+
+ Use 1494  passes (x 100)
+
+ MFLOPS 1     567    533    519    507    473    464    463    463
+ MFLOPS 2     531    526    523    518    471    468    465    453
+ IFMOPS      2990   2911   2799   2763   2633   2577   2555   2546
+ FIXPMOPS   64858  62832  59867  57412  32351  31126  30566  20664
+ COSMOPS       45     45     44     44     39     39     39     39
+ MFLOPS 3     508    508    506    498    462    461    461    457
+ EQUMOPS      766    757    753    748    697    695    695    693
+ EXPMOPS       42     41     41     41     36     36     35     35
+ millisec    6706   6659   7297   7276   6765   6863   7250   7517
+ MWIPS       2228   2244   2047   2053   2208   2177   2061   1988
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   17006   3990   3956   3861    333    307 359677  21773   5804
+
+ MWIPS   15850 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Sat Jan 30 02:29:17 2021
+
+               Results also in log file MPwhetres.txt
+
