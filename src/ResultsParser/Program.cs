@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -14,48 +15,44 @@ namespace ResultsParser
 
             var files = Directory.GetFiles(resultsPath, "*.log", new EnumerationOptions() { RecurseSubdirectories = true });
 
-            var benchItems = files.Select(f =>
+            var benchmarksParser = new BenchmarksResultsParser();
+
+            var benchItems = files.Select(f => benchmarksParser.Parse(f))
+                .Where(b => !string.IsNullOrEmpty(b.ResultText))
+                .GroupBy(b => b.Benchmark).ToArray();
+
+
+            foreach (var benchItem in benchItems)
             {
-                var text = File.ReadAllText(f);
-                var benchType = DetectBenchmarkByText(text);
-                var item = new ResultItem
+                if (!Directory.Exists(benchItem.Key))
                 {
-                    Category = Path.GetFileName(Path.GetDirectoryName(f)),
-                    FileName = Path.GetFileName(f),
-                    ResultText = text,
-                    Benchmark = benchType,
-                    Value = ParseValueByBenchmarkType(benchType, text)
-                };
-                return item;
-            }).GroupBy(b => b.Benchmark).ToArray();
-
-            Console.WriteLine("Hello World!");
-        }
-
-        private static decimal ParseValueByBenchmarkType(string benchmark, string text)
-        {
-            //
-            if (benchmark == "Dhrystone") {
-                var dhrystoneRegex = @"VAX\s+MIPS\s+rating =\s*([0-9]+.?[0-9]*)";
-                var regex = new Regex(dhrystoneRegex, RegexOptions.CultureInvariant);
-                var match = regex.Match(text);
-
-                if (!match.Success) {
-                    return 0.0m;
+                    Directory.CreateDirectory(benchItem.Key);
                 }
 
-                var value = match.Groups.Count == 2 ? match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                return decimal.Parse(value, CultureInfo.InvariantCulture);
+                var maxValuesDictionary = benchItem.AsEnumerable()
+                    .GroupBy(b => b.Category)
+                    .ToDictionary(kv => kv.Key, kv => kv.Max(b => b.Value))
+                    .OrderBy(kv => kv.Value)
+                    .ToDictionary(kv => kv.Key, kv => kv.Value);
+
+                var csvData = maxValuesDictionary.Select(item => new string[] { item.Key, item.Value.ToString(CultureInfo.InvariantCulture) });
+
+                var path = Path.Combine(benchItem.Key, "All.csv");
+                WriteCsv(path, csvData);
+
             }
-            return 0.0m;
         }
 
-        private static string DetectBenchmarkByText(string text)
+        private static void WriteCsv(string fileName, IEnumerable<IEnumerable<string>> data)
         {
-            if (text.Contains("Dhrystone Benchmark")) 
-                return "Dhrystone";
-
-            return "Unknown";
+            using (var stream = File.CreateText(fileName))
+            {
+                foreach (var item in data)
+                {
+                    stream.WriteLine(String.Join(',', item.ToArray()));
+                }
+            }
         }
+
     }
 }

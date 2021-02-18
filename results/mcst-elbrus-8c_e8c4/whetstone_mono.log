@@ -3,10 +3,10 @@ Double Precision C/C++ Whetstone Benchmark
 With run time input data
 
 Calibrate
-       0,04 Seconds          1   Passes (x 100)
-       0,10 Seconds          5   Passes (x 100)
-       0,48 Seconds         25   Passes (x 100)
-       2,40 Seconds        125   Passes (x 100)
+       0.04 Seconds          1   Passes (x 100)
+       0.10 Seconds          5   Passes (x 100)
+       0.48 Seconds         25   Passes (x 100)
+       2.40 Seconds        125   Passes (x 100)
 
 Use 5214  passes (x 100)
 
@@ -18,12 +18,12 @@ Use 5214  passes (x 100)
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1,12475000000000000      135,411               0,739
-N2 floating point     -1,12274800000000000      126,665               5,532
-N3 if then else        1,00000000000000000                 388,753    1,388
-N4 fixed point        12,00000000000000000                 145,057   11,322
-N5 sin,cos etc.        0,49904660000000000                  28,777   15,074
-N6 floating point      0,99999990000000000       62,158              45,247
-N7 assignments         3,00000000000000000                  94,809   10,163
-N8 exp,sqrt etc.       0,75110860000000000                  18,514   10,476
-MWIPS                                            521,697             99,943
+N1 floating point     -1.12475000000000000      135.411               0.739
+N2 floating point     -1.12274800000000000      126.665               5.532
+N3 if then else        1.00000000000000000                 388.753    1.388
+N4 fixed point        12.00000000000000000                 145.057   11.322
+N5 sin,cos etc.        0.49904660000000000                  28.777   15.074
+N6 floating point      0.99999990000000000       62.158              45.247
+N7 assignments         3.00000000000000000                  94.809   10.163
+N8 exp,sqrt etc.       0.75110860000000000                  18.514   10.476
+MWIPS                                            521.697             99.943

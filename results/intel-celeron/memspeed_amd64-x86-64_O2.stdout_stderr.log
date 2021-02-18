@@ -1,0 +1,52 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 92
+model name	: Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+stepping	: 9
+microcode	: 0x38
+cpu MHz		: 2290.187
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 21
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave rdrand lahf_lm 3dnowprefetch cpuid_fault cat_l2 ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust smep erms mpx rdt_a rdseed smap clflushopt intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts md_clear arch_capabilities
+vmx Linux version 5.10.1-un-def-alt1 (builder@localhost.localdomain) (gcc-10 (GCC) 10.2.1 20201125 (ALT Sisyphus 10.2.1-alt2), GNU ld (GNU Binutils) 2.35.1.20201123) #1 SMP PREEMPT Fri Dec 18 17:36:26 UTC 2020
+
+
+From File /proc/version
+Linux version 5.10.1-un-def-alt1 (builder@localhost.localdomain) (gcc-10 (GCC) 10.2.1 20201125 (ALT Sisyphus 10.2.1-alt2), GNU ld (GNU Binutils) 2.35.1.20201123) #1 SMP PREEMPT Fri Dec 18 17:36:26 UTC 2020
+
+
+   Memory Reading Speed Test amd64 x86-64 optimized Sat Dec 26 23:31:18 2020
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   16978   8770   9427  18203   9384   9391  14671   7108   6862
+      16   17668   8845   9469  18712   9232   9423  13982   7316   7026
+      32   11201   6444   6781  13513   7290   6774  12217   6265   6146
+      64   10360   6738   6589  11755   6430   6563   8730   5430   5026
+     128   10103   6750   6576  12033   6454   6556   8292   5377   5364
+     256   10377   6745   6485  12036   6456   6532   8391   5344   5334
+     512   10399   6789   6598  12052   6261   6552   8364   5419   5353
+    1024    7139   5165   5240   7740   5169   5248   4736   3853   3816
+    2048    3896   3790   3840   3946   3839   3646   2002   1988   1980
+    4096    3936   3824   3880   3902   3850   3865   1998   1990   1982
+    8192    3716   3790   3852   3924   3841   3857   1989   1932   1956
+
+                End of test Sat Dec 26 23:31:34 2020
+

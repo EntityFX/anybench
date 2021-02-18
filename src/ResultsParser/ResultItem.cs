@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace ResultsParser
 {
     class ResultItem {
@@ -11,6 +13,8 @@ namespace ResultsParser
         public string Category { get; set; }
 
         public decimal Value { get; set; }
+
+        public Dictionary<string, decimal> Values { get; set; }
 
         public string UnitsOfMeasure { get; set; }
     }

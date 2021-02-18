@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.68 GB, Page Size 4096 Bytes
+  uname() - Linux, irbis-celeron-cpu, 5.10.1-un-def-alt1
+  #1 SMP PREEMPT Fri Dec 18 17:36:26 UTC 2020, x86_64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 2 Threads, Sat Dec 26 23:33:40 2020
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2     5000   0.113925     8988    0.867359   Yes
+ Data in & out    1024000     2      500   0.410059     2497    0.985193   Yes
+ Data in & out   10240000     2       50   0.441384     2320    0.998502   Yes
+
+ Data in & out     102400     8     5000   0.230928    17737    0.918220   Yes
+ Data in & out    1024000     8      500   0.457143     8960    0.991084   Yes
+ Data in & out   10240000     8       50   0.442047     9266    0.999099   Yes
+
+ Data in & out     102400    32     5000   0.735782    22267    0.798973   Yes
+ Data in & out    1024000    32      500   0.877547    18670    0.976383   Yes
+ Data in & out   10240000    32       50   0.820388    19971    0.997595   Yes
+
+               End of test Sat Dec 26 23:33:45 2020
+
+ Press Enter
