@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Text.Json;
+using System.Text;
 
 namespace ResultsParser
 {
@@ -29,6 +31,24 @@ namespace ResultsParser
                     Directory.CreateDirectory(benchItem.Key);
                 }
 
+                var maxInCategory = benchItem.AsEnumerable()
+                    .GroupBy(b => b.Category, (it, gr) => gr.OrderByDescending(o => o.Value).First());
+
+                foreach (var benchValues in maxInCategory)
+                {
+                    byte[] bytes = Encoding.Default.GetBytes(benchValues.ResultText);
+                    benchValues.ResultText = Encoding.UTF8.GetString(bytes);
+
+
+                    var benchJson = JsonSerializer.Serialize(benchValues, new JsonSerializerOptions()
+                    {
+                        WriteIndented = true, AllowTrailingCommas = true
+                    });
+
+                    var path1 = Path.Combine(benchItem.Key, benchValues.Category);
+                    File.WriteAllText($"{path1}.json", benchJson);
+                }
+
                 var maxValuesDictionary = benchItem.AsEnumerable()
                     .GroupBy(b => b.Category)
                     .ToDictionary(kv => kv.Key, kv => kv.Max(b => b.Value))
@@ -39,7 +59,6 @@ namespace ResultsParser
 
                 var path = Path.Combine(benchItem.Key, "All.csv");
                 WriteCsv(path, csvData);
-
             }
         }
 

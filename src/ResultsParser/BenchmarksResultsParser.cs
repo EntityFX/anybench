@@ -97,15 +97,36 @@ namespace ResultsParser
 
                     mpMflopsMatch = mpMflopsMatch.NextMatch();
                 } 
-                // foreach (var mpMflopsMatch in mpMflopsMatches)
-                // {
-                //     if (!mpMflopsMatch.Success) {
-                //     return 0.0m;
-                // }
 
+                if (results.Any()) {
+                    return results.Values.Max();
+                    //
+                }
 
-                // var value = coremarkMatch.Groups.Count == 3 ? coremarkMatch.Groups.OfType<Group>().Skip(2).First().Value : "0";
-                return results.Values.Max();
+                var mpMflopsOldRegexString = @"([0-9]*)T\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)";
+                var mpMflopsOldRegex = new Regex(mpMflopsOldRegexString, RegexOptions.CultureInvariant);
+                var mpMflopsOldMatch = mpMflopsOldRegex.Match(text);
+                while (mpMflopsOldMatch.Success) {
+                    var mpMflopsGroups = mpMflopsOldMatch.Groups;
+                    if (mpMflopsGroups.Count == 8) {
+                        var mpKey1st = $"{mpMflopsGroups[1]}T;12.8K;2";
+                        if (!results.ContainsKey(mpKey1st)) {
+                            results.Add($"{mpMflopsGroups[1]}T;12.8K;2", decimal.Parse(mpMflopsGroups[2].Value));
+                            results.Add($"{mpMflopsGroups[1]}T;128K;2", decimal.Parse(mpMflopsGroups[3].Value));
+                            results.Add($"{mpMflopsGroups[1]}T;12800K;2", decimal.Parse(mpMflopsGroups[4].Value));      
+
+                            results.Add($"{mpMflopsGroups[1]}T;12.8K;32", decimal.Parse(mpMflopsGroups[5].Value));
+                            results.Add($"{mpMflopsGroups[1]}T;128K;32", decimal.Parse(mpMflopsGroups[6].Value));
+                            results.Add($"{mpMflopsGroups[1]}T;12800K;32", decimal.Parse(mpMflopsGroups[7].Value)); 
+                        }                         
+                    }
+
+                    mpMflopsOldMatch = mpMflopsOldMatch.NextMatch();
+                }
+                if (results.Any()) {
+                    return results.Values.Max();
+                }
+
             }
 
 
@@ -128,7 +149,7 @@ namespace ResultsParser
             if (text.Contains("Linpack"))
                 return "Linpack";
 
-            if (text.Contains("MFLOPS Benchmark")) 
+            if (text.Contains("MFLOPS Benchmark") || text.Contains("MP-MFLOPS")) 
                 return "MP MFLOPS";
 
             if (text.Contains("CoreMark")) 

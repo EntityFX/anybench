@@ -2,7 +2,8 @@ using System.Collections.Generic;
 
 namespace ResultsParser
 {
-    class ResultItem {
+    class ResultItem 
+    {
 
         public string FileName { get; set; }
 
@@ -14,7 +15,7 @@ namespace ResultsParser
 
         public decimal Value { get; set; }
 
-        public Dictionary<string, decimal> Values { get; set; }
+        public object Values { get; set; }
 
         public string UnitsOfMeasure { get; set; }
     }
