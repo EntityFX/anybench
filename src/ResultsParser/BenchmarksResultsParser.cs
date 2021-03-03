@@ -10,17 +10,18 @@ namespace ResultsParser
         public ResultItem Parse(string benchmarkFile) {
             var contents = File.ReadAllText(benchmarkFile);
             var benchType = DetectBenchmarkByText(contents);
-            return new ResultItem
+            var item = new ResultItem
             {
                 Category = Path.GetFileName(Path.GetDirectoryName(benchmarkFile)),
                 FileName = Path.GetFileName(benchmarkFile),
                 ResultText = contents,
-                Benchmark = benchType,
-                Value = ParseValueByBenchmarkType(benchType, contents)
+                Benchmark = benchType
             };
+            ParseValueByBenchmarkType(benchType, contents, item);
+            return item;
         }
 
-        private decimal ParseValueByBenchmarkType(string benchmark, string text)
+        private void ParseValueByBenchmarkType(string benchmark, string text, ResultItem resultItem)
         {
             //
             if (benchmark == "Dhrystone") {
@@ -29,19 +30,22 @@ namespace ResultsParser
                 var match = regex.Match(text);
 
                 if (!match.Success) {
-                    return 0.0m;
+                    return;
                 }
 
                 var value = match.Groups.Count == 2 ? match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                return decimal.Parse(value, CultureInfo.InvariantCulture);
+                resultItem.Value = decimal.Parse(value, CultureInfo.InvariantCulture);
+                return;
             }
 
             if (benchmark == "Whetstone") {
-                return ParseWhetstoneValue(text);
+                resultItem.Value =  ParseWhetstoneValue(text);
+                return;
             }
 
             if (benchmark == "WhetstoneMP") {
-                return ParseWhetstoneMPValue(text);
+                resultItem.Value =  ParseWhetstoneMPValue(text);
+                return;
             }
 
             if (benchmark == "Linpack") {
@@ -49,11 +53,12 @@ namespace ResultsParser
                 var linpackRegex = new Regex(linpackRegexString, RegexOptions.CultureInvariant);
                 var linpackMatch = linpackRegex.Match(text);
                 if (!linpackMatch.Success) {
-                    return 0.0m;
+                    return;
                 }
 
                 var value = linpackMatch.Groups.Count == 2 ? linpackMatch.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                return decimal.Parse(value, CultureInfo.InvariantCulture);
+                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
+                return;
             }
 
             if (benchmark == "Scimark2") {
@@ -61,11 +66,12 @@ namespace ResultsParser
                 var scimark2Regex = new Regex(scimark2RegexString, RegexOptions.CultureInvariant);
                 var scimark2Match = scimark2Regex.Match(text);
                 if (!scimark2Match.Success) {
-                    return 0.0m;
+                    return;
                 }
 
                 var value = scimark2Match.Groups.Count == 2 ? scimark2Match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                return decimal.Parse(value, CultureInfo.InvariantCulture);
+                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
+                return;
             }
 
             if (benchmark == "CoreMark") {
@@ -73,11 +79,12 @@ namespace ResultsParser
                 var coremarkRegex = new Regex(coremarkRegexString, RegexOptions.CultureInvariant);
                 var coremarkMatch = coremarkRegex.Match(text);
                 if (!coremarkMatch.Success) {
-                    return 0.0m;
+                    return;
                 }
 
                 var value = coremarkMatch.Groups.Count == 3 ? coremarkMatch.Groups.OfType<Group>().Skip(2).First().Value : "0";
-                return decimal.Parse(value, CultureInfo.InvariantCulture);
+                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
+                return;
             }
 
             if (benchmark == "MP MFLOPS") {
@@ -99,8 +106,9 @@ namespace ResultsParser
                 } 
 
                 if (results.Any()) {
-                    return results.Values.Max();
-                    //
+                    resultItem.Value =  results.Values.Max();
+                    resultItem.Values = results;
+                    return;
                 }
 
                 var mpMflopsOldRegexString = @"([0-9]*)T\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)";
@@ -124,15 +132,12 @@ namespace ResultsParser
                     mpMflopsOldMatch = mpMflopsOldMatch.NextMatch();
                 }
                 if (results.Any()) {
-                    return results.Values.Max();
+                    resultItem.Value =  results.Values.Max();
+                    resultItem.Values = results;
+                    return;
                 }
 
             }
-
-
-// 
-
-            return 0.0m;
         }
 
         private string DetectBenchmarkByText(string text)
