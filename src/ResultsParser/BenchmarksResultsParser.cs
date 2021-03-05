@@ -1,210 +1,118 @@
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using ResultsParser.Parsers;
 
 namespace ResultsParser
 {
-    class BenchmarksResultsParser {
+    public static class StringExtensions
+    {
+        public static string UppercaseFirst(this string s)
+        {
+            // Check for empty string.
+            if (string.IsNullOrEmpty(s))
+            {
+                return string.Empty;
+            }
+            // Return char and concat substring.
+            return char.ToUpper(s[0]) + s.Substring(1);
+        }
+    }
+
+    class BenchmarksResultsParser
+    {
+
+        private static Dictionary<string, BenchmarkResultsParserBase> _parsers =
+            new Dictionary<string, BenchmarkResultsParserBase>()
+            {
+                ["Dhrystone"] = new DhrystoneResultsBenchmarkParser(),
+                ["Scimark2"] = new Scimark2ResultsBenchmarkParser(),
+                ["Whetstone"] = new WhetstoneResultsBenchmarkParser(),
+                ["WhetstoneMP"] = new WhetstoneMPResultsBenchmarkParser(),
+                ["Linpack"] = new LinpackResultsBenchmarkParser(),
+                ["MP MFLOPS"] = new MpMflopsResultsBenchmarkParser(),
+                ["CoreMark"] = new CoremarkResultsBenchmarkParser(),
+                ["BusSpeed"] = new DefaultResultsParserBaseImpl("Bus Speed"),
+                ["MemSpeed"] = new DefaultResultsParserBaseImpl("Mem Speed"),
+                ["LLoops"] = new DefaultResultsParserBaseImpl("Livermore Loops"),
+                ["Unknown"] = new DefaultResultsParserBaseImpl("Unknown"),
+            };
+
+
         public ResultItem Parse(string benchmarkFile) {
             var contents = File.ReadAllText(benchmarkFile);
             var benchType = DetectBenchmarkByText(contents);
+            var fileName = Path.GetFileName(benchmarkFile);
+            var category = Path.GetFileName(Path.GetDirectoryName(benchmarkFile));
+            var values = benchType.Parse(contents);
             var item = new ResultItem
             {
-                Category = Path.GetFileName(Path.GetDirectoryName(benchmarkFile)),
-                FileName = Path.GetFileName(benchmarkFile),
+                Category = category,
+                FileName = fileName,
                 ResultText = contents,
-                Benchmark = benchType
+                Benchmark = benchType.BenchmarkName,
+                Value = values.Item1,
+                Values =  values.Item2,
+                CpuInfo = GetCpuInfoByCategory(category)
             };
-            ParseValueByBenchmarkType(benchType, contents, item);
             return item;
         }
 
-        private void ParseValueByBenchmarkType(string benchmark, string text, ResultItem resultItem)
+        private CpuInfo GetCpuInfoByCategory(string category)
         {
-            //
-            if (benchmark == "Dhrystone") {
-                var dhrystoneRegex = @"VAX\s+MIPS\s+rating =\s*([0-9]+.?[0-9]*)";
-                var regex = new Regex(dhrystoneRegex, RegexOptions.CultureInvariant);
-                var match = regex.Match(text);
+            var categoryElements = category.Split('-');
 
-                if (!match.Success) {
-                    return;
-                }
-
-                var value = match.Groups.Count == 2 ? match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                resultItem.Value = decimal.Parse(value, CultureInfo.InvariantCulture);
-                return;
-            }
-
-            if (benchmark == "Whetstone") {
-                resultItem.Value =  ParseWhetstoneValue(text);
-                return;
-            }
-
-            if (benchmark == "WhetstoneMP") {
-                resultItem.Value =  ParseWhetstoneMPValue(text);
-                return;
-            }
-
-            if (benchmark == "Linpack") {
-                var linpackRegexString = @"([0-9]+.?[0-9]*)\sMflops";
-                var linpackRegex = new Regex(linpackRegexString, RegexOptions.CultureInvariant);
-                var linpackMatch = linpackRegex.Match(text);
-                if (!linpackMatch.Success) {
-                    return;
-                }
-
-                var value = linpackMatch.Groups.Count == 2 ? linpackMatch.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
-                return;
-            }
-
-            if (benchmark == "Scimark2") {
-                var scimark2RegexString = @"Composite Score:\s*([0-9]+.?[0-9]*)";
-                var scimark2Regex = new Regex(scimark2RegexString, RegexOptions.CultureInvariant);
-                var scimark2Match = scimark2Regex.Match(text);
-                if (!scimark2Match.Success) {
-                    return;
-                }
-
-                var value = scimark2Match.Groups.Count == 2 ? scimark2Match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
-                return;
-            }
-
-            if (benchmark == "CoreMark") {
-                var coremarkRegexString = @"CoreMark\s+([0-9]+.?[0-9]+)?\s+:?\s+([0-9]+.?[0-9]*)";
-                var coremarkRegex = new Regex(coremarkRegexString, RegexOptions.CultureInvariant);
-                var coremarkMatch = coremarkRegex.Match(text);
-                if (!coremarkMatch.Success) {
-                    return;
-                }
-
-                var value = coremarkMatch.Groups.Count == 3 ? coremarkMatch.Groups.OfType<Group>().Skip(2).First().Value : "0";
-                resultItem.Value =  decimal.Parse(value, CultureInfo.InvariantCulture);
-                return;
-            }
-
-            if (benchmark == "MP MFLOPS") {
-                var mpMflopsRegexString = @"Data in & out\s+([0-9]+)\s+([0-9]+)\s+([0-9]+.?[0-9]*)\s+([0-9]+.?[0-9]*)\s+([0-9]+)\s+";
-                var mpMflopsRegex = new Regex(mpMflopsRegexString, RegexOptions.CultureInvariant);
-                var mpMflopsMatch = mpMflopsRegex.Match(text);
-
-                var results = new Dictionary<string, decimal>();
-                while (mpMflopsMatch.Success) {
-                    var mpMflopsGroups = mpMflopsMatch.Groups;
-                    if (mpMflopsGroups.Count == 6) {
-                        var mpKey = $"{mpMflopsGroups[1]};{mpMflopsGroups[2]};{mpMflopsGroups[3]}";
-                        if (!results.ContainsKey(mpKey)) {
-                            results.Add(mpKey, decimal.Parse(mpMflopsGroups[5].Value, CultureInfo.InvariantCulture));
-                        }
-                    }
-
-                    mpMflopsMatch = mpMflopsMatch.NextMatch();
-                } 
-
-                if (results.Any()) {
-                    resultItem.Value =  results.Values.Max();
-                    resultItem.Values = results;
-                    return;
-                }
-
-                var mpMflopsOldRegexString = @"([0-9]*)T\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)\s*([0-9]+)";
-                var mpMflopsOldRegex = new Regex(mpMflopsOldRegexString, RegexOptions.CultureInvariant);
-                var mpMflopsOldMatch = mpMflopsOldRegex.Match(text);
-                while (mpMflopsOldMatch.Success) {
-                    var mpMflopsGroups = mpMflopsOldMatch.Groups;
-                    if (mpMflopsGroups.Count == 8) {
-                        var mpKey1st = $"{mpMflopsGroups[1]}T;12.8K;2";
-                        if (!results.ContainsKey(mpKey1st)) {
-                            results.Add($"{mpMflopsGroups[1]}T;12.8K;2", decimal.Parse(mpMflopsGroups[2].Value));
-                            results.Add($"{mpMflopsGroups[1]}T;128K;2", decimal.Parse(mpMflopsGroups[3].Value));
-                            results.Add($"{mpMflopsGroups[1]}T;12800K;2", decimal.Parse(mpMflopsGroups[4].Value));      
-
-                            results.Add($"{mpMflopsGroups[1]}T;12.8K;32", decimal.Parse(mpMflopsGroups[5].Value));
-                            results.Add($"{mpMflopsGroups[1]}T;128K;32", decimal.Parse(mpMflopsGroups[6].Value));
-                            results.Add($"{mpMflopsGroups[1]}T;12800K;32", decimal.Parse(mpMflopsGroups[7].Value)); 
-                        }                         
-                    }
-
-                    mpMflopsOldMatch = mpMflopsOldMatch.NextMatch();
-                }
-                if (results.Any()) {
-                    resultItem.Value =  results.Values.Max();
-                    resultItem.Values = results;
-                    return;
-                }
-
-            }
+            return new CpuInfo()
+            {
+                Vendor = categoryElements.Length > 0 ? categoryElements[0].UppercaseFirst() : "",
+                Architecture = categoryElements.Length > 1 ? categoryElements[1].ToUpperInvariant() : "",
+                Name = categoryElements.Length > 2 ? string.Join(" ", categoryElements[2].Split('_') 
+                        .Select(e => e.UppercaseFirst()))
+                    : "",
+                Cores = 1
+            };
         }
 
-        private string DetectBenchmarkByText(string text)
+        private BenchmarkResultsParserBase DetectBenchmarkByText(string text)
         {
             if (text.Contains("Dhrystone Benchmark")) 
-                return "Dhrystone";
+                return _parsers["Dhrystone"];
 
             if (text.Contains("Composite Score") && text.Contains("SOR"))
-                return "Scimark2";
+                return _parsers["Scimark2"];
 
             if (text.Contains("Whetstone Benchmark"))
-                return "Whetstone";
+                return _parsers["Whetstone"];
 
             if (text.Contains("Linpack"))
-                return "Linpack";
+                return _parsers["Linpack"];
 
-            if (text.Contains("MFLOPS Benchmark") || text.Contains("MP-MFLOPS")) 
-                return "MP MFLOPS";
+            if (text.Contains("MFLOPS Benchmark") || text.Contains("MP-MFLOPS"))
+                return _parsers["MP MFLOPS"];
 
-            if (text.Contains("CoreMark")) 
-                return "CoreMark";
+            if (text.Contains("CoreMark"))
+                return _parsers["CoreMark"];
 
             if (text.Contains("Memory Reading Speed"))
-                return "MemSpeed";
+                return _parsers["MemSpeed"];
 
             if (text.Contains("BusSpeed"))
-                return "BusSpeed";
+                return _parsers["BusSpeed"];
 
             if (text.Contains("L.L.N.L."))
-                return "LLoops";
+                return _parsers["LLoops"];
                 
             var whetstoneMpRegexString = @"Multithreading[a-zA-Z0-9_ ]*Whetstones";
             var whetstoneMpRegex = new Regex(whetstoneMpRegexString, RegexOptions.CultureInvariant);
             var whetstoneMpMath = whetstoneMpRegex.Match(text);
             if (whetstoneMpMath.Success) {
-                return "WhetstoneMP";
+                return _parsers["WhetstoneMP"];
             }
 
-            return "Unknown";
-        }
-
-        private decimal ParseWhetstoneValue(string content)
-        {
-            var whetstoneRegex = @"MWIPS\s*([0-9]+.?[0-9]*)";
-            var regex = new Regex(whetstoneRegex, RegexOptions.CultureInvariant);
-            var match = regex.Match(content);
-
-            if (!match.Success) {
-                return 0.0m;
-            }
-
-            var value = match.Groups.Count == 2 ? match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-            return decimal.Parse(value, CultureInfo.InvariantCulture);
-        }
-
-        private decimal ParseWhetstoneMPValue(string content)
-        {
-            var whetstoneRegex = @"MWIPS\s*([0-9]+.?[0-9]*)\s*Based";
-            var regex = new Regex(whetstoneRegex, RegexOptions.CultureInvariant);
-            var match = regex.Match(content);
-
-            if (!match.Success) {
-                return 0.0m;
-            }
-
-            var value = match.Groups.Count == 2 ? match.Groups.OfType<Group>().Skip(1).First().Value : "0";
-            return decimal.Parse(value, CultureInfo.InvariantCulture);
+            return _parsers["Unknown"];
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ResultsParser
     {
         static void Main(string[] args)
         {
-            var resultsPath = Path.Combine("..", "..", "results");
+            var resultsPath = Path.Combine("..", "..", "..", "..", "..", "results");
 
             var files = Directory.GetFiles(resultsPath, "*.log", new EnumerationOptions() { RecurseSubdirectories = true });
 

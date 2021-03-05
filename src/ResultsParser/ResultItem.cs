@@ -18,5 +18,7 @@ namespace ResultsParser
         public object Values { get; set; }
 
         public string UnitsOfMeasure { get; set; }
+
+        public CpuInfo CpuInfo { get; set; }
     }
 }
