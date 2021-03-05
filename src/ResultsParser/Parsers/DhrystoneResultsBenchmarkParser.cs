@@ -7,7 +7,7 @@ namespace ResultsParser.Parsers
 {
     public class DhrystoneResultsBenchmarkParser : BenchmarkResultsParserBase
     {
-        public override string BenchmarkName => "WhetstoneMP";
+        public override string BenchmarkName => "Dhrystone";
 
         private const string dhrystoneRegex = @"VAX\s+MIPS\s+rating =\s*([0-9]+.?[0-9]*)";
 
