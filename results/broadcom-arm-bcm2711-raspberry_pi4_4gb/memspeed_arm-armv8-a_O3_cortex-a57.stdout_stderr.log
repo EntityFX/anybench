@@ -1,0 +1,67 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 2
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 3
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+
+
+From File /proc/version
+Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.1) #1 SMP Debian 5.10.13-1 (2021-02-06)
+
+
+   Memory Reading Speed Test arm armv8-a optimized Tue Mar  9 00:08:15 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   13394  21896  24413  13425  23442  24427  11560   9322   9322
+      16   13546  22128  24735  13562  23704  24708  11707   9455   9454
+      32   11235  18074  19753  11245  19369  19756  11861   9522   9523
+      64   11280  19225  20034  11599  20263  20046   9342   8516   8514
+     128   11768  20709  21146  12137  21293  21144   8022   8145   8143
+     256   11611  20699  21126  11969  21406  20956   8118   8220   8212
+     512    8853  16646  15810   9219  17161  16794   7597   6441   4979
+    1024    4229   8193   8278   4292   8388   7789   3473   3715   3896
+    2048    1875   3692   3686   1711   3679   3683   2909   2928   2936
+    4096    1937   4173   4137   2105   4174   4163   2331   2451   2462
+    8192    2027   3973   3982   2051   3610   3961   2519   2544   2549
+
+                End of test Tue Mar  9 00:08:32 2021
+
