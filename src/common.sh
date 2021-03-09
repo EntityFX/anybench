@@ -11,6 +11,9 @@ binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt"
 binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm -lrt"
 
 current_arch=$(uname -m)
+if [[ ${current_arch} == "x86_64" ]]; then
+    current_arch="amd64"
+fi
 
 optFlags="-O2 -O3 -Ofast"
 
@@ -19,14 +22,19 @@ optFlags="-O2 -O3 -Ofast"
 declare -A targetToFlags
 declare -A targetToFPU
 
-output_dir="../bin/linux/${current_arch}"
-mkdir -p ${output_dir}
-
 compile_binary() {
     ARCH=${1}
     BINARY=${2}
     SUFFIX=${3}
     CC=${4:-cc}
+
+    # Special case to preserve the name of original dir name for amd64
+    output_dir="../bin/linux/${current_arch}"
+    if [[ ${CC} != "cc" ]]; then
+	output_dir="${output_dir}_${CC}"
+    fi
+    mkdir -p ${output_dir}
+
     echo -e "Compiling ${BINARY} for ${ARCH} (${current_arch})\n"
     FPUS="${targetToFPU[${ARCH}]}"
     MTUNES="${targetToFlags[${ARCH}]}"
