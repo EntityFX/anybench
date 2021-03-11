@@ -17,33 +17,33 @@
 
  Multithreading Single Precision Whetstones aarch64 armv8.1-a optimized
 
-             Using 4 threads - Tue Mar  9 18:49:33 2021
+             Using 4 threads - Thu Mar 11 23:18:49 2021
 
  Calibrate
-    0.00676 Seconds          1   Passes (x 100)
-    0.03091 Seconds          5   Passes (x 100)
-    0.15252 Seconds         25   Passes (x 100)
-    0.76006 Seconds        125   Passes (x 100)
+    0.00664 Seconds          1   Passes (x 100)
+    0.03059 Seconds          5   Passes (x 100)
+    0.15070 Seconds         25   Passes (x 100)
+    0.75090 Seconds        125   Passes (x 100)
 
- Use 1644  passes (x 100)
+ Use 1664  passes (x 100)
 
- MFLOPS 1     713    713    712    712
- MFLOPS 2     710    710    709    706
- IFMOPS      2247   2246   2246   2246
- FIXPMOPS    1729   1729   1728   1727
- COSMOPS       62     62     62     62
+ MFLOPS 1     712    712    712    712
+ MFLOPS 2     710    710    709    709
+ IFMOPS      2248   2248   2247   2246
+ FIXPMOPS    1729   1729   1729   1728
+ COSMOPS       65     65     65     65
  MFLOPS 3     398    398    398    398
  EQUMOPS      999    999    999    999
- EXPMOPS       57     57     57     57
- millisec    6553   6552   6552   6554
- MWIPS       2509   2509   2509   2508
+ EXPMOPS       58     58     58     58
+ millisec    6507   6509   6508   6509
+ MWIPS       2557   2557   2557   2556
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
- Total   10035   2850   2834   1592    247    227   6913   8985   3997
+ Total   10227   2848   2838   1592    259    233   6914   8990   3997
 
- MWIPS   10031 Based on time for last thread to finish
+ MWIPS   10223 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -55,7 +55,7 @@
 
       Numeric results of the other 3 threads were same as above
 
-               End of test Tue Mar  9 18:49:44 2021
+               End of test Thu Mar 11 23:19:00 2021
 
                Results also in log file MPwhetres.txt
 

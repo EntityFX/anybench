@@ -7,22 +7,23 @@ Register option not selected
 
        10000 runs   0.00 seconds 
       100000 runs   0.01 seconds 
-     1000000 runs   0.07 seconds 
-     2000000 runs   0.13 seconds 
+     1000000 runs   0.06 seconds 
+     2000000 runs   0.12 seconds 
      4000000 runs   0.25 seconds 
-     8000000 runs   0.51 seconds 
-    16000000 runs   1.02 seconds 
-    32000000 runs   2.04 seconds 
+     8000000 runs   0.50 seconds 
+    16000000 runs   1.00 seconds 
+    32000000 runs   2.00 seconds 
+    64000000 runs   4.00 seconds 
 
 Final values (* implementation-dependent):
 
 Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
 Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
-Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    32000010
-Ptr_Glob->              Ptr_Comp:       *    20796544
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    64000010
+Ptr_Glob->              Ptr_Comp:       *    260093328
   Discr:       O.K.  0  Enum_Comp:     O.K.  2
   Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->         Ptr_Comp:       *    20796544 same as above
+Next_Ptr_Glob->         Ptr_Comp:       *    260093328 same as above
   Discr:       O.K.  0  Enum_Comp:     O.K.  1
   Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
 Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
@@ -74,7 +75,7 @@ From File /proc/version
 Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.1) #1 SMP Debian 5.10.13-1 (2021-02-06)
 
 
-Nanoseconds one Dhrystone run:        63.66
-Dhrystones per Second:             15708967
-VAX  MIPS rating =                  8940.79
+Nanoseconds one Dhrystone run:        62.56
+Dhrystones per Second:             15983951
+VAX  MIPS rating =                  9097.30
 

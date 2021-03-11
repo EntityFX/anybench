@@ -1,15 +1,15 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark aarch64 armv8-a+crc optimized, Tue Mar  9 18:46:52 2021
+Single Precision C Whetstone Benchmark aarch64 armv8-a+crc optimized, Thu Mar 11 23:16:05 2021
 
 Calibrate
        0.00 Seconds          1   Passes (x 100)
        0.02 Seconds          5   Passes (x 100)
        0.10 Seconds         25   Passes (x 100)
-       0.49 Seconds        125   Passes (x 100)
-       2.43 Seconds        625   Passes (x 100)
+       0.48 Seconds        125   Passes (x 100)
+       2.39 Seconds        625   Passes (x 100)
 
-Use 2569  passes (x 100)
+Use 2617  passes (x 100)
 
 From File /proc/cpuinfo
 processor	: 0
@@ -58,16 +58,16 @@ Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12367534637451172       689.249              0.072
-N2 floating point     -1.12167274951934814       783.105              0.441
-N3 if then else        1.00000000000000000               1115229824.000    0.000
-N4 fixed point        12.00000000000000000                7494.105    0.108
-N5 sin,cos etc.        0.49911010265350342                  57.356    3.727
-N6 floating point      0.99999982118606567       397.424              3.487
-N7 assignments         3.00000000000000000                 999.307    0.475
-N8 exp,sqrt etc.       0.75110864639282227                  56.563    1.690
+N1 floating point     -1.12367534637451172       686.875              0.073
+N2 floating point     -1.12167274951934814       783.125              0.449
+N3 if then else        1.00000000000000000               1136067072.000    0.000
+N4 fixed point        12.00000000000000000                7494.842    0.110
+N5 sin,cos etc.        0.49911010265350342                  59.001    3.690
+N6 floating point      0.99999982118606567       398.731              3.540
+N7 assignments         3.00000000000000000                 999.262    0.484
+N8 exp,sqrt etc.       0.75110864639282227                  59.010    1.650
 
-MWIPS                                           2569.398              9.998
+MWIPS                                           2617.880              9.997
 
 
 A new results file, whets.txt,  will have been created in the same
