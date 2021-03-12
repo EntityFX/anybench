@@ -1,15 +1,15 @@
 
 ##########################################
-Single Precision C Whetstone Benchmark aarch64 armv8-a optimized, Tue Mar  9 18:48:57 2021
+Single Precision C Whetstone Benchmark aarch64 armv8-a optimized, Thu Mar 11 23:18:13 2021
 
 Calibrate
        0.00 Seconds          1   Passes (x 100)
        0.02 Seconds          5   Passes (x 100)
        0.10 Seconds         25   Passes (x 100)
        0.48 Seconds        125   Passes (x 100)
-       2.42 Seconds        625   Passes (x 100)
+       2.39 Seconds        625   Passes (x 100)
 
-Use 2579  passes (x 100)
+Use 2617  passes (x 100)
 
 From File /proc/cpuinfo
 processor	: 0
@@ -58,16 +58,16 @@ Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12367534637451172       690.024              0.072
-N2 floating point     -1.12167274951934814       783.141              0.443
-N3 if then else        1.00000000000000000                   0.000    0.000
-N4 fixed point        12.00000000000000000                7494.748    0.108
-N5 sin,cos etc.        0.49911010265350342                  57.355    3.741
-N6 floating point      0.99999982118606567       397.472              3.500
-N7 assignments         3.00000000000000000                 999.248    0.477
-N8 exp,sqrt etc.       0.75110864639282227                  57.930    1.656
+N1 floating point     -1.12367534637451172       686.980              0.073
+N2 floating point     -1.12167274951934814       783.093              0.449
+N3 if then else        1.00000000000000000               1136067072.000    0.000
+N4 fixed point        12.00000000000000000                7494.810    0.110
+N5 sin,cos etc.        0.49911010265350342                  59.001    3.690
+N6 floating point      0.99999982118606567       398.724              3.540
+N7 assignments         3.00000000000000000                 999.241    0.484
+N8 exp,sqrt etc.       0.75110864639282227                  59.014    1.650
 
-MWIPS                                           2579.798              9.997
+MWIPS                                           2617.896              9.997
 
 
 A new results file, whets.txt,  will have been created in the same

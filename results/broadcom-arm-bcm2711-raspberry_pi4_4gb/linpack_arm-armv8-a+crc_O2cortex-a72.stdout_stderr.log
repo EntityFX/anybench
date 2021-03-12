@@ -5,51 +5,53 @@ Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
 Optimisation aarch64 armv8-a+crc optimized
 
 norm resid      resid           machep         x[0]-1          x[n-1]-1
-   1.9    8.29014930e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
 
 Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00059    0.00002    0.00062    1116.31     0.0018     0.0110
+    0.00064    0.00002    0.00067    1032.29     0.0019     0.0119
 
 Calculating matgen overhead
         10 times   0.00 seconds
        100 times   0.01 seconds
-      1000 times   0.08 seconds
-     10000 times   0.83 seconds
-     20000 times   1.65 seconds
-Overhead for 1 matgen      0.00008 seconds
+      1000 times   0.11 seconds
+      2000 times   0.23 seconds
+      4000 times   0.45 seconds
+      8000 times   0.91 seconds
+     16000 times   1.81 seconds
+Overhead for 1 matgen      0.00011 seconds
 
 Calculating matgen/dgefa passes for 1 seconds
         10 times   0.01 seconds
        100 times   0.07 seconds
-      1000 times   0.67 seconds
-      2000 times   1.34 seconds
-Passes used       1494 
+      1000 times   0.75 seconds
+      2000 times   1.49 seconds
+Passes used       1340 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00059    0.00002    0.00061    1130.92     0.0018     0.0108
-    0.00059    0.00002    0.00061    1131.10     0.0018     0.0108
-    0.00059    0.00002    0.00061    1130.79     0.0018     0.0108
-    0.00059    0.00002    0.00061    1130.05     0.0018     0.0109
-    0.00059    0.00002    0.00061    1131.76     0.0018     0.0108
-Average                              1130.93
+    0.00063    0.00002    0.00066    1047.18     0.0019     0.0117
+    0.00063    0.00002    0.00066    1047.12     0.0019     0.0117
+    0.00063    0.00002    0.00066    1047.25     0.0019     0.0117
+    0.00063    0.00002    0.00066    1047.16     0.0019     0.0117
+    0.00063    0.00002    0.00066    1046.68     0.0019     0.0117
+Average                              1047.08
 
 Calculating matgen2 overhead
-Overhead for 1 matgen      0.00008 seconds
+Overhead for 1 matgen      0.00011 seconds
 
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00058    0.00002    0.00060    1141.19     0.0018     0.0107
-    0.00058    0.00002    0.00060    1141.90     0.0018     0.0107
-    0.00058    0.00002    0.00060    1140.83     0.0018     0.0107
-    0.00058    0.00002    0.00060    1142.28     0.0018     0.0107
-    0.00058    0.00002    0.00060    1140.95     0.0018     0.0107
-Average                              1141.43
+    0.00061    0.00002    0.00063    1081.99     0.0018     0.0113
+    0.00061    0.00002    0.00063    1081.87     0.0018     0.0113
+    0.00061    0.00002    0.00063    1083.19     0.0018     0.0113
+    0.00061    0.00002    0.00063    1082.79     0.0018     0.0113
+    0.00061    0.00002    0.00063    1082.79     0.0018     0.0113
+Average                              1082.52
 
 ##########################################
 
@@ -96,7 +98,7 @@ From File /proc/version
 Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.1) #1 SMP Debian 5.10.13-1 (2021-02-06)
 
 
-Unrolled Double  Precision     1130.93 Mflops 
+Unrolled Double  Precision     1047.08 Mflops 
 
  Different numeric results - see linpack.txt
 
