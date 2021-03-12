@@ -11,7 +11,7 @@ Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00060    0.00002    0.00062    1104.33     0.0018     0.0111
+    0.00060    0.00002    0.00062    1105.60     0.0018     0.0111
 
 Calculating matgen overhead
         10 times   0.00 seconds
@@ -26,17 +26,17 @@ Calculating matgen/dgefa passes for 1 seconds
        100 times   0.07 seconds
       1000 times   0.68 seconds
       2000 times   1.35 seconds
-Passes used       1479 
+Passes used       1480 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00059    0.00002    0.00061    1118.29     0.0018     0.0110
-    0.00059    0.00002    0.00061    1118.45     0.0018     0.0110
-    0.00059    0.00002    0.00061    1118.31     0.0018     0.0110
-    0.00059    0.00002    0.00061    1118.76     0.0018     0.0110
-    0.00059    0.00002    0.00061    1118.68     0.0018     0.0110
-Average                              1118.50
+    0.00059    0.00002    0.00061    1119.41     0.0018     0.0110
+    0.00059    0.00002    0.00061    1121.78     0.0018     0.0109
+    0.00059    0.00002    0.00061    1121.87     0.0018     0.0109
+    0.00059    0.00002    0.00061    1121.89     0.0018     0.0109
+    0.00059    0.00002    0.00061    1122.15     0.0018     0.0109
+Average                              1121.42
 
 Calculating matgen2 overhead
 Overhead for 1 matgen      0.00008 seconds
@@ -44,12 +44,12 @@ Overhead for 1 matgen      0.00008 seconds
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00058    0.00002    0.00060    1144.28     0.0017     0.0107
-    0.00058    0.00002    0.00060    1145.47     0.0017     0.0107
-    0.00058    0.00002    0.00060    1145.58     0.0017     0.0107
-    0.00058    0.00002    0.00060    1143.73     0.0017     0.0107
-    0.00058    0.00002    0.00060    1144.80     0.0017     0.0107
-Average                              1144.77
+    0.00057    0.00002    0.00059    1164.30     0.0017     0.0105
+    0.00057    0.00002    0.00059    1164.16     0.0017     0.0105
+    0.00057    0.00002    0.00059    1164.42     0.0017     0.0105
+    0.00057    0.00002    0.00059    1164.09     0.0017     0.0105
+    0.00057    0.00002    0.00059    1164.08     0.0017     0.0105
+Average                              1164.21
 
 ##########################################
 
@@ -96,7 +96,7 @@ From File /proc/version
 Linux version 5.10.0-3-arm64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.1) #1 SMP Debian 5.10.13-1 (2021-02-06)
 
 
-Unrolled Double  Precision     1118.50 Mflops 
+Unrolled Double  Precision     1121.42 Mflops 
 
  Different numeric results - see linpack.txt
 

@@ -40,10 +40,10 @@ compile_binary() {
     MTUNES="${targetToFlags[${ARCH}]}"
     for FPU in "" ${FPUS}; do
         for MTUNE in "" ${MTUNES}; do
-            EXTRA_CFLAGS="${OPT} ${MTUNE} ${FPU}"
+            EXTRA_CFLAGS="${MTUNE} ${FPU}"
             for OPT in ${optFlags}; do
                 BINARY_NAME="${BINARY}_${SUFFIX}-${ARCH}${OPT//-/_}${FPU//-mfpu=/_}$(sed 's/^-m[a-z]\+=//' <<< ${MTUNE})"
-                ${CC} ${binaryCompileOptions[${BINARY}]} -o ${output_dir}/${BINARY_NAME} -march=${ARCH} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+                ${CC} ${binaryCompileOptions[${BINARY}]} -o ${output_dir}/${BINARY_NAME} -march=${ARCH} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
                 chmod +x ${output_dir}/${BINARY_NAME}
             done
         done
