@@ -4,7 +4,9 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResultsParser", "ResultsParser.csproj", "{0471E019-B3BD-4A9D-8482-3ACBF7686757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFx.BenchmarkDb.Contracts", "EntityFx.BenchmarkDb.Contracts\EntityFx.BenchmarkDb.Contracts.csproj", "{4E90A586-75E1-4853-9D25-A289F02E467F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFx.BenchmarkDb.Contracts", "EntityFx.BenchmarkDb.Contracts\EntityFx.BenchmarkDb.Contracts.csproj", "{4E90A586-75E1-4853-9D25-A289F02E467F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFx.Benchmark.DataAccess", "..\EntityFx.Benchmark.DataAccess\EntityFx.Benchmark.DataAccess.csproj", "{2BDAAAB3-7F5D-48E8-9B90-6AECC9E5D19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{4E90A586-75E1-4853-9D25-A289F02E467F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E90A586-75E1-4853-9D25-A289F02E467F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E90A586-75E1-4853-9D25-A289F02E467F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDAAAB3-7F5D-48E8-9B90-6AECC9E5D19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDAAAB3-7F5D-48E8-9B90-6AECC9E5D19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDAAAB3-7F5D-48E8-9B90-6AECC9E5D19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDAAAB3-7F5D-48E8-9B90-6AECC9E5D19F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
