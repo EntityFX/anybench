@@ -15,6 +15,12 @@ namespace ResultsParser
         {
             var resultsPath = Path.Combine("..", "..", "..", "..", "..", "results");
 
+            var outputPath = "output";
+
+            if (!Directory.Exists(outputPath)) {
+                Directory.CreateDirectory(outputPath);
+            }
+
             var files = Directory.GetFiles(resultsPath, "*.log", new EnumerationOptions() { RecurseSubdirectories = true });
 
             var benchmarksParser = new BenchmarksResultsParser();
@@ -26,10 +32,9 @@ namespace ResultsParser
 
             foreach (var benchItem in benchItems)
             {
-                if (!Directory.Exists(benchItem.Key))
-                {
-                    Directory.CreateDirectory(benchItem.Key);
-                }
+                    if (!Directory.Exists(Path.Combine(outputPath, benchItem.Key))) {
+                        Directory.CreateDirectory(Path.Combine(outputPath, benchItem.Key));
+                    }
 
                 var maxInCategory = benchItem.AsEnumerable()
                     .GroupBy(b => b.Category, (it, gr) => gr.OrderByDescending(o => o.Value).First());
@@ -45,7 +50,8 @@ namespace ResultsParser
                         WriteIndented = true, AllowTrailingCommas = true
                     });
 
-                    var path1 = Path.Combine(benchItem.Key, benchValues.Category);
+                    var path1 = Path.Combine(outputPath, benchItem.Key, benchValues.Category);
+
                     File.WriteAllText($"{path1}.json", benchJson);
                 }
 
@@ -57,7 +63,7 @@ namespace ResultsParser
 
                 var csvData = maxValuesDictionary.Select(item => new string[] { item.Key, item.Value.ToString(CultureInfo.InvariantCulture) });
 
-                var path = Path.Combine(benchItem.Key, "All.csv");
+                var path = Path.Combine(outputPath, benchItem.Key, "All.csv");
                 WriteCsv(path, csvData);
             }
         }
