@@ -24,6 +24,7 @@ else
     targetToFlags["armv8-a"]="-mtune=cortex-a53 -mtune=cortex-a57"
     targetToFlags["armv8-a+crc"]="-mtune=cortex-a72" # e.x. raspberry pi4
     targetToFlags["armv8.1-a"]=""
+    targetToFlags["armv8.2-a"]=""
     
     # at this moment arm64 don't need any extra flags to use FPU
     targetToFPU["armv8-a"]=""
