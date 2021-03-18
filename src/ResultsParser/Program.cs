@@ -39,6 +39,33 @@ namespace ResultsParser
             WriteCsv(cpusCsvPath, new []{"Name", "Vendor", "Architecture", "Model", "Description", "Cores"}, 
                 cpuInfos.Select(c => new[] { c.Name, c.Vendor, c.Architecture, c.Model, c.Description, c.Cores.ToString() }));
 
+            var resultsByCategory = benchItems.SelectMany(bi => bi)
+                .GroupBy(r => r.Category)
+                .ToDictionary(r => r.Key,
+                    r => r.GroupBy(g => g.Benchmark,
+                        (it, gr) => gr.OrderByDescending(o => o.Value).First())
+                        .ToDictionary(kk => kk.Benchmark, kk => kk.Value)
+                );
+
+            var resultsByCategoryStrings = resultsByCategory.Select(kv => (new[] {kv.Key})
+                .Concat(kv.Value.Values.Select(i => i.ToString(CultureInfo.InvariantCulture)))).ToArray();
+
+            var resultsByCategoryCsvPath = Path.Combine(outputPath, "AllResults.csv");
+            WriteCsv(resultsByCategoryCsvPath, new[] { "Name" }
+                .Concat(resultsByCategory.FirstOrDefault().Value.Keys),
+                resultsByCategoryStrings);
+
+            var allResultsJson = JsonSerializer.Serialize(resultsByCategory, new JsonSerializerOptions()
+            {
+                WriteIndented = true,
+                AllowTrailingCommas = true
+            });
+
+            var allResultsJsonPath = Path.Combine(outputPath, "AllResults.json");
+
+            File.WriteAllText(allResultsJsonPath, allResultsJson);
+
+
 
             var cpusJson = JsonSerializer.Serialize(cpuInfos, new JsonSerializerOptions()
             {

@@ -35,6 +35,7 @@ namespace ResultsParser
                 ["Linpack"] = new LinpackResultsBenchmarkParser(),
                 ["MP MFLOPS"] = new MpMflopsResultsBenchmarkParser(),
                 ["CoreMark"] = new CoremarkResultsBenchmarkParser(),
+                ["CoreMarkMP"] = new CoremarkMPResultsBenchmarkParserImpl(),
                 ["BusSpeed"] = new DefaultResultsParserBaseImpl("Bus Speed"),
                 ["MemSpeed"] = new DefaultResultsParserBaseImpl("Mem Speed"),
                 ["LLoops"] = new DefaultResultsParserBaseImpl("Livermore Loops"),
@@ -97,6 +98,9 @@ namespace ResultsParser
             if (text.Contains("MFLOPS Benchmark") || text.Contains("MP-MFLOPS"))
                 return _parsers["MP MFLOPS"];
 
+            if (text.Contains("CoreMark") && text.Contains("Parallel Fork"))
+                return _parsers["CoreMarkMP"];            
+            
             if (text.Contains("CoreMark"))
                 return _parsers["CoreMark"];
 
