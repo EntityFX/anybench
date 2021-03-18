@@ -1,0 +1,109 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation aarch64 armv8-a+crc optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.40117160e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00127    0.00005    0.00132     521.57     0.0038     0.0235
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.11 seconds
+      2000 times   0.09 seconds
+     20000 times   0.85 seconds
+     40000 times   1.68 seconds
+Overhead for 1 matgen      0.00004 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.07 seconds
+      1000 times   0.45 seconds
+      2000 times   0.68 seconds
+      4000 times   1.32 seconds
+Passes used       3030 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00029    0.00001    0.00030    2284.38     0.0009     0.0054
+    0.00028    0.00001    0.00029    2342.73     0.0009     0.0052
+    0.00027    0.00002    0.00029    2380.20     0.0008     0.0052
+    0.00028    0.00001    0.00029    2328.82     0.0009     0.0053
+    0.00029    0.00001    0.00031    2225.28     0.0009     0.0055
+Average                              2312.28
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00004 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00030    0.00001    0.00031    2185.38     0.0009     0.0056
+    0.00029    0.00001    0.00030    2254.75     0.0009     0.0054
+    0.00029    0.00001    0.00031    2229.46     0.0009     0.0055
+    0.00029    0.00001    0.00031    2231.37     0.0009     0.0055
+    0.00029    0.00001    0.00030    2271.78     0.0009     0.0054
+Average                              2234.55
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 4
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU iLinux version 5.11.6 (civil@lowe) (aarch64-linux-gnu-gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP PREEMPT Tue Mar 16 22:49:30 CET 2021
+
+
+From File /proc/version
+Linux version 5.11.6 (civil@lowe) (aarch64-linux-gnu-gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP PREEMPT Tue Mar 16 22:49:30 CET 2021
+
+
+Unrolled Double  Precision     2234.55 Mflops 
+
+ Different numeric results - see linpack.txt
+
+

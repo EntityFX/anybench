@@ -1,0 +1,71 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 1
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 2
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 3
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU implementer	: 0x4e
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0x004
+CPU revision	: 0
+
+processor	: 4
+BogoMIPS	: 62.50
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm dcpop
+CPU iLinux version 5.11.6 (civil@lowe) (aarch64-linux-gnu-gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP PREEMPT Tue Mar 16 22:49:30 CET 2021
+
+
+From File /proc/version
+Linux version 5.11.6 (civil@lowe) (aarch64-linux-gnu-gcc (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP PREEMPT Tue Mar 16 22:49:30 CET 2021
+
+
+   Memory Reading Speed Test aarch64 armv8-a optimized Wed Mar 17 12:52:29 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   25432  15792  13414  43474  16095  16601  21450  23131  11045
+      16   26553  16746  13797  46343  16727  17153  22848  24987  11600
+      32   27449  15942  13632  43554  16379  16962  22400  25138  11285
+      64   26493  16763  13940  46799  17260  17254  22791  25214  11774
+     128   11728   9302   8690  18864   9440   9795  11073   8927   5607
+     256   28539  16545  14344  31887  16613  17744  16577  15988  11782
+     512   28573  16278  14012  32452  17388  17255  16158  15542  11795
+    1024   28374  16162  14100  32304  16576  17140  16181  15403  11325
+    2048   25754  16242  13640  29809  16721  17045  13275  13114   9025
+    4096   24898  15992  12931  27118  16085  16198  10124  10049   7147
+    8192   22444  15342  13035  23477  16016  16203   9361  10590   7276
+
+                End of test Wed Mar 17 12:52:47 2021
+
