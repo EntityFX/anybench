@@ -17,7 +17,8 @@ namespace ResultsParser
 
             var outputPath = "output";
 
-            if (!Directory.Exists(outputPath)) {
+            if (!Directory.Exists(outputPath))
+            {
                 Directory.CreateDirectory(outputPath);
             }
 
@@ -29,12 +30,33 @@ namespace ResultsParser
                 .Where(b => !string.IsNullOrEmpty(b.ResultText))
                 .GroupBy(b => b.Benchmark).ToArray();
 
+            var cpuInfos = benchItems.SelectMany(bi => bi.Select(b => b.CpuInfo))
+                .GroupBy(g => g.Name)
+                .Select(g => g.First())
+                .ToArray();
+
+            var cpusCsvPath = Path.Combine(outputPath, "Cpus.csv");
+            WriteCsv(cpusCsvPath, new []{"Name", "Vendor", "Architecture", "Model", "Description", "Cores"}, 
+                cpuInfos.Select(c => new[] { c.Name, c.Vendor, c.Architecture, c.Model, c.Description, c.Cores.ToString() }));
+
+
+            var cpusJson = JsonSerializer.Serialize(cpuInfos, new JsonSerializerOptions()
+            {
+                WriteIndented = true,
+                AllowTrailingCommas = true
+            });
+
+            var cpusJsonPath = Path.Combine(outputPath, "Cpus.json");
+
+            File.WriteAllText(cpusJsonPath, cpusJson);
+
 
             foreach (var benchItem in benchItems)
             {
-                    if (!Directory.Exists(Path.Combine(outputPath, benchItem.Key))) {
-                        Directory.CreateDirectory(Path.Combine(outputPath, benchItem.Key));
-                    }
+                if (!Directory.Exists(Path.Combine(outputPath, benchItem.Key)))
+                {
+                    Directory.CreateDirectory(Path.Combine(outputPath, benchItem.Key));
+                }
 
                 var maxInCategory = benchItem.AsEnumerable()
                     .GroupBy(b => b.Category, (it, gr) => gr.OrderByDescending(o => o.Value).First());
@@ -47,7 +69,8 @@ namespace ResultsParser
 
                     var benchJson = JsonSerializer.Serialize(benchValues, new JsonSerializerOptions()
                     {
-                        WriteIndented = true, AllowTrailingCommas = true
+                        WriteIndented = true,
+                        AllowTrailingCommas = true
                     });
 
                     var path1 = Path.Combine(outputPath, benchItem.Key, benchValues.Category);
@@ -63,19 +86,18 @@ namespace ResultsParser
 
                 var csvData = maxValuesDictionary.Select(item => new string[] { item.Key, item.Value.ToString(CultureInfo.InvariantCulture) });
 
-                var path = Path.Combine(outputPath, benchItem.Key, "All.csv");
-                WriteCsv(path, csvData);
+                var path = Path.Combine(outputPath, benchItem.Key, $"{benchItem.Key.ToLowerInvariant()}.csv");
+                WriteCsv(path, new[] { "Name", "Value" }, csvData);
             }
         }
 
-        private static void WriteCsv(string fileName, IEnumerable<IEnumerable<string>> data)
+        private static void WriteCsv(string fileName, IEnumerable<string> header, IEnumerable<IEnumerable<string>> data)
         {
-            using (var stream = File.CreateText(fileName))
+            using var stream = File.CreateText(fileName);
+            stream.WriteLine(String.Join(',', header.ToArray()));
+            foreach (var item in data)
             {
-                foreach (var item in data)
-                {
-                    stream.WriteLine(String.Join(',', item.ToArray()));
-                }
+                stream.WriteLine(String.Join(',', item.ToArray()));
             }
         }
 

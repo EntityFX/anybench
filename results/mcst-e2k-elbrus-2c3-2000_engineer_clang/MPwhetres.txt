@@ -1,0 +1,84 @@
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size 31.37 GB, Page Size 4096 Bytes 
+  uname() - Linux, e2c3-st3, 5.4.0-2.4-e2c3 
+  #62 SMP Wed Dec 30 16:00:52 MSK 2020, e2k 
+
+ 2 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k_clang e2k_v6 optimized
+
+             Using 2 threads - Fri Jan  1 21:33:12 2021
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   2673    615    615    500     76     40   1428   1999   1500
+      2   2672    615    615    500     76     40   1427   1999   1499
+
+ Total    5345   1229   1230   1000    152     81   2855   3998   2998
+
+ MWIPS    5344 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 1 threads were same as above
+
+               End of test Fri Jan  1 21:33:23 2021
+
+
+#####################################################################
+
+  Assembler CPUID and RDTSC       
+  CPU  , Features Code 00000000, Model Code 00000000 
+    
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size 31.37 GB, Page Size 4096 Bytes 
+  uname() - Linux, e2c3-st3, 5.4.0-2.4-e2c3 
+  #62 SMP Wed Dec 30 16:00:52 MSK 2020, e2k 
+
+ 2 CPUs Available
+#####################################################################
+
+     Multithreading Single Precision Whetstones e2k_clang e2k_v6 optimized
+
+             Using 2 threads - Fri Jan  1 21:33:23 2021
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   2844    615    615    500     76     409373354   1999   1499
+      2   2844    615    615    500     76     408451385   1999   1499
+
+ Total    5688   1230   1230   1000    152     8117824739   3999   2998
+
+ MWIPS    5687 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 1 threads were same as above
+
+               End of test Fri Jan  1 21:33:34 2021
+

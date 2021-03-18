@@ -1,0 +1,545 @@
+
+e2c3-st3 ~/anybench/src # bash ./make-e2k_v6_clang.sh ; bash ./run-e2k_v6_clang.sh
+mkdir: невозможно создать каталог «../bin/linux/»: File exists
+Compile Dhrystone v 2.1
+
+dhry_1.c:106:2: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+ void main (int argc, char *argv[])
+ ^
+dhry_1.c:106:2: note: change return type to 'int'
+ void main (int argc, char *argv[])
+ ^~~~
+ int
+dhry_1.c:172:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+dhry_1.c:203:8: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+       start_time();
+       ^
+dhry_1.c:255:8: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+       end_time();
+       ^
+dhry_1.c:431:4: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+   local_time();
+   ^
+5 warnings generated.
+dhry_1.c:106:2: warning: return type of 'main' is not 'int' [-Wmain-return-type]
+ void main (int argc, char *argv[])
+ ^
+dhry_1.c:106:2: note: change return type to 'int'
+ void main (int argc, char *argv[])
+ ^~~~
+ int
+dhry_1.c:172:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+dhry_1.c:203:8: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+       start_time();
+       ^
+dhry_1.c:255:8: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+       end_time();
+       ^
+dhry_1.c:431:4: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+   local_time();
+   ^
+5 warnings generated.
+Compile Whetstone
+
+whets.c:242:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+whets.c:244:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+whets.c:348:54: warning: data argument not used by format string [-Wformat-extra-args]
+             loop_mops[section], loop_time[section], results[section]);
+                                                     ^
+whets.c:409:8: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+       start_time();
+       ^
+whets.c:424:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+5 warnings generated.
+whets.c:242:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+whets.c:244:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+whets.c:348:54: warning: data argument not used by format string [-Wformat-extra-args]
+             loop_mops[section], loop_time[section], results[section]);
+                                                     ^
+whets.c:409:8: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+       start_time();
+       ^
+whets.c:424:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+5 warnings generated.
+Compile Memspeed
+
+memspeed.c:123:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+memspeed.c:213:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+memspeed.c:264:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:276:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:294:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:306:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:325:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:338:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:355:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:367:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:385:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:397:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:415:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:427:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:447:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:459:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:476:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:488:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:506:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:518:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+20 warnings generated.
+memspeed.c:123:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+memspeed.c:213:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+memspeed.c:264:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:276:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:294:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:306:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:325:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:338:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:355:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:367:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:385:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:397:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:415:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:427:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:447:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:459:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:476:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:488:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+memspeed.c:506:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+memspeed.c:518:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+20 warnings generated.
+Compile Linpack
+
+linpack.c:102:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main (int argc, char *argv[])
+^
+linpack.c:134:9: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+        getDetails();
+        ^
+linpack.c:209:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+linpack.c:211:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+linpack.c:468:9: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+        local_time();
+        ^
+linpack.c:512:13: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+        if (strcmp (expect[i], was[i])  != 0)
+            ^
+linpack.c:512:13: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+6 warnings generated.
+linpack.c:102:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main (int argc, char *argv[])
+^
+linpack.c:134:9: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+        getDetails();
+        ^
+linpack.c:209:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+linpack.c:211:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+linpack.c:468:9: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+        local_time();
+        ^
+linpack.c:512:13: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+        if (strcmp (expect[i], was[i])  != 0)
+            ^
+linpack.c:512:13: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+6 warnings generated.
+Compile Lloops
+
+lloops.c:349:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char *argv[])
+^
+lloops.c:409:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+lloops.c:411:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+lloops.c:435:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+lloops.c:444:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+lloops.c:515:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+lloops.c:519:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+lloops.c:1881:11: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+          end_time();
+          ^
+lloops.c:1918:27: warning: '&&' within '||' [-Wlogical-op-parentheses]
+     if (reinit || runRel && !getend)
+                ~~ ~~~~~~~^~~~~~~~~~
+lloops.c:1918:27: note: place parentheses around the '&&' expression to silence this warning
+     if (reinit || runRel && !getend)
+                          ^
+                   (                )
+lloops.c:2293:12: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+           start_time();
+           ^
+lloops.c:2661:17: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+            if (strcmp (chek1, chek2)  != 0)
+                ^
+lloops.c:2661:17: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+11 warnings generated.
+lloops.c:349:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(int argc, char *argv[])
+^
+lloops.c:409:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+lloops.c:411:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+lloops.c:435:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+lloops.c:444:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+lloops.c:515:13: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+            start_time();
+            ^
+lloops.c:519:13: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+            end_time();
+            ^
+lloops.c:1881:11: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+          end_time();
+          ^
+lloops.c:1918:27: warning: '&&' within '||' [-Wlogical-op-parentheses]
+     if (reinit || runRel && !getend)
+                ~~ ~~~~~~~^~~~~~~~~~
+lloops.c:1918:27: note: place parentheses around the '&&' expression to silence this warning
+     if (reinit || runRel && !getend)
+                          ^
+                   (                )
+lloops.c:2293:12: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+           start_time();
+           ^
+lloops.c:2661:17: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+            if (strcmp (chek1, chek2)  != 0)
+                ^
+lloops.c:2661:17: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+11 warnings generated.
+Compile WhetstoneMP
+
+mp/whetsmp.c:117:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:147:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:183:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:210:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:239:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:267:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:296:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:320:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:328:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+mp/whetsmp.c:371:19: warning: implicitly declaring library function 'toupper' with type 'int (int)' [-Wimplicit-function-declaration]
+          switch (toupper(argv[i][0]))
+                  ^
+mp/whetsmp.c:371:19: note: include the header <ctype.h> or explicitly provide a declaration for 'toupper'
+mp/whetsmp.c:395:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+mp/whetsmp.c:396:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+mp/whetsmp.c:444:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+mp/whetsmp.c:474:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+mp/whetsmp.c:590:17: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+            if (strcmp (th1, was)  != 0)
+                ^
+mp/whetsmp.c:590:17: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+15 warnings generated.
+mp/cpuidc64.c:133:17: warning: implicit declaration of function 'getpagesize' is invalid in C99 [-Wimplicit-function-declaration]
+     pagesize = getpagesize();
+                ^
+1 warning generated.
+mp/whetsmp.c:117:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:147:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:183:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:210:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:239:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:267:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:296:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:320:9: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+        end_time();
+        ^
+mp/whetsmp.c:328:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+mp/whetsmp.c:371:19: warning: implicitly declaring library function 'toupper' with type 'int (int)' [-Wimplicit-function-declaration]
+          switch (toupper(argv[i][0]))
+                  ^
+mp/whetsmp.c:371:19: note: include the header <ctype.h> or explicitly provide a declaration for 'toupper'
+mp/whetsmp.c:395:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+mp/whetsmp.c:396:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+mp/whetsmp.c:444:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+mp/whetsmp.c:474:9: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+        start_time();
+        ^
+mp/whetsmp.c:590:17: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+            if (strcmp (th1, was)  != 0)
+                ^
+mp/whetsmp.c:590:17: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+15 warnings generated.
+mp/cpuidc64.c:133:17: warning: implicit declaration of function 'getpagesize' is invalid in C99 [-Wimplicit-function-declaration]
+     pagesize = getpagesize();
+                ^
+1 warning generated.
+Compile MPMFlops
+
+mp/mpmflops.c:127:2: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+mp/mpmflops.c:160:19: warning: implicitly declaring library function 'toupper' with type 'int (int)' [-Wimplicit-function-declaration]
+          switch (toupper(argv[i][0]))
+                  ^
+mp/mpmflops.c:160:19: note: include the header <ctype.h> or explicitly provide a declaration for 'toupper'
+mp/mpmflops.c:196:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+mp/mpmflops.c:203:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+mp/mpmflops.c:272:20: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+                   start_time();
+                   ^
+mp/mpmflops.c:282:20: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+                   end_time();
+                   ^
+mp/mpmflops.c:294:16: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+               start_time();
+               ^
+mp/mpmflops.c:304:16: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+               end_time();
+               ^
+8 warnings generated.
+mp/cpuidc64.c:133:17: warning: implicit declaration of function 'getpagesize' is invalid in C99 [-Wimplicit-function-declaration]
+     pagesize = getpagesize();
+                ^
+1 warning generated.
+mp/mpmflops.c:127:2: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+mp/mpmflops.c:160:19: warning: implicitly declaring library function 'toupper' with type 'int (int)' [-Wimplicit-function-declaration]
+          switch (toupper(argv[i][0]))
+                  ^
+mp/mpmflops.c:160:19: note: include the header <ctype.h> or explicitly provide a declaration for 'toupper'
+mp/mpmflops.c:196:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+mp/mpmflops.c:203:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+mp/mpmflops.c:272:20: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+                   start_time();
+                   ^
+mp/mpmflops.c:282:20: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+                   end_time();
+                   ^
+mp/mpmflops.c:294:16: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+               start_time();
+               ^
+mp/mpmflops.c:304:16: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+               end_time();
+               ^
+8 warnings generated.
+mp/cpuidc64.c:133:17: warning: implicit declaration of function 'getpagesize' is invalid in C99 [-Wimplicit-function-declaration]
+     pagesize = getpagesize();
+                ^
+1 warning generated.
+Compile busspeedIL
+
+busspeed.c:86:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+busspeed.c:96:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+busspeed.c:111:9: warning: implicit declaration of function 'calcPass' is invalid in C99 [-Wimplicit-function-declaration]
+        calcPass();
+        ^
+busspeed.c:189:12: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+           start_time();
+           ^
+busspeed.c:191:12: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+           end_time();
+           ^
+5 warnings generated.
+busspeed.c:86:5: warning: implicit declaration of function 'getDetails' is invalid in C99 [-Wimplicit-function-declaration]
+    getDetails();
+    ^
+busspeed.c:96:5: warning: implicit declaration of function 'local_time' is invalid in C99 [-Wimplicit-function-declaration]
+    local_time();
+    ^
+busspeed.c:111:9: warning: implicit declaration of function 'calcPass' is invalid in C99 [-Wimplicit-function-declaration]
+        calcPass();
+        ^
+busspeed.c:189:12: warning: implicit declaration of function 'start_time' is invalid in C99 [-Wimplicit-function-declaration]
+           start_time();
+           ^
+busspeed.c:191:12: warning: implicit declaration of function 'end_time' is invalid in C99 [-Wimplicit-function-declaration]
+           end_time();
+           ^
+5 warnings generated.
+mkdir: невозможно создать каталог «../results/»: File exists
+Run Dhrystone v 2.1
+
+Run Whetstone
+
+Run Memspeed
+
+Run Linpack
+
+Run Lloops
+
+Run WhetstoneMP
+
+Run MPMFlops
+
+Run busspeedIL
+
+e2c3-st3 ~/anybench/src #

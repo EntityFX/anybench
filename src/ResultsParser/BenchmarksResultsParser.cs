@@ -67,9 +67,13 @@ namespace ResultsParser
 
             return new CpuInfo()
             {
+                Name = category,
                 Vendor = categoryElements.Length > 0 ? categoryElements[0].UppercaseFirst() : "",
                 Architecture = categoryElements.Length > 1 ? categoryElements[1].ToUpperInvariant() : "",
-                Name = categoryElements.Length > 2 ? string.Join(" ", categoryElements[2].Split('_') 
+                Model = categoryElements.Length > 2 ? string.Join(" ", categoryElements[2].Split('_') 
+                        .Select(e => e.UppercaseFirst()))
+                    : "",
+                Description = categoryElements.Length > 3 ? string.Join(" ", categoryElements[3].Split('_')
                         .Select(e => e.UppercaseFirst()))
                     : "",
                 Cores = 1

@@ -1,0 +1,60 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Fri Jan  1 18:23:04 2021
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.11 Seconds         25   Passes (x 100)
+       0.54 Seconds        125   Passes (x 100)
+       2.71 Seconds        625   Passes (x 100)
+
+Use 2305  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (troosh@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       615.224              0.072
+N2 floating point     -1.12274742126464844       605.572              0.512
+N3 if then else        1.00000000000000000                1998.947    0.119
+N4 fixed point        12.00000000000000000                 652.011    1.114
+N5 sin,cos etc.        0.49911010265350342                  79.644    2.408
+N6 floating point      0.99999982118606567       499.919              2.487
+N7 assignments         3.00000000000000000                 299.940    1.420
+N8 exp,sqrt etc.       0.75110864639282227                  45.969    1.865
+
+MWIPS                                           2305.730              9.997
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

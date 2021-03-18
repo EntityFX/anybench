@@ -1,0 +1,49 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (troosh@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+
+    BusSpeed e2k elbrus-v3 optimized Fri Jan  1 19:18:19 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   7934   6963   8407  10037  10630  14132
+      32  10553   8550   9079  10609  10949  14313
+      64  11508   7615   8736  10805  10993  14341
+     128  10570   5432   5073   6267   7804  11818
+     256  10283   5184   5085   6292   7824  11835
+     512   6317   3369   3931   5415   6908  10107
+    1024   2392   1313   1981   3413   4568   6125
+    4096    841    424    668   1404   1814   2259
+   16384    850    427    666   1410   1809   2247
+   65536    845    430    670   1413   1809   2267
+
+ Type additional information to include in busSpeed.txt - Press Enter

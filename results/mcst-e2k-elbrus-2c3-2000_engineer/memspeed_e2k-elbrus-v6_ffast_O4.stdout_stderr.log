@@ -1,0 +1,52 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (troosh@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+
+
+   Memory Reading Speed Test e2k elbrus-v6 optimized Fri Jan  1 18:32:16 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   51936  80127  52610  53512  86469  84591  27962  47330  47330
+      16   56123  93813  57740  57336  98137  96640  29846  54412  54410
+      32   59798 102055  60704  60394 105250 103706  30877  58814  58802
+      64   61362 106550  62292  62067 109186 107437  31422  61294  61285
+     128   62879 108669  63120  63011 111468 109510  31709  62595  62607
+     256   63435 109920  63551  63517 112583 110381  31851  63282  63293
+     512   58050  84822  57924  58113  85337  85539  29745  50547  50488
+    1024   49068  62498  48792  49145  62600  62677  26728  38031  38055
+    2048   32745  35393  32642  32750  35462  35418  17407  19539  19544
+    4096   14550  14542  14546  14546  14545  14560   7807   7775   7842
+    8192   14203  14240  14232  14208  14231  14249   7182   7169   7167
+
+                End of test Fri Jan  1 18:32:33 2021
+

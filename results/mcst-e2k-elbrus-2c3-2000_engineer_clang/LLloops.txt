@@ -1,0 +1,94 @@
+ #####################################################
+
+ Livermore Loops Benchmark e2k_clang e2k_v6 optimized via C/C++ Fri Jan  1 21:30:27 2021
+
+ MFLOPS for 24 loops
+  554.2  476.6  396.6  944.3  497.2  352.0  939.9  858.8  885.1 2905.5  493.4 3520.4
+  226.0  480.6  134.9  132.8  518.3 1994.2  370.2  187.6  351.0  339.5  888.1  180.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+  3520.4   661.2   473.1   360.7   132.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+ 
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (user@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark e2k_clang e2k_v6 optimized via C/C++ Fri Jan  1 21:31:45 2021
+
+ MFLOPS for 24 loops
+ 9064.5 1229.5  987.9  939.3  498.2  550.9  14443 2685.6 6546.9 2945.2  495.6 3823.1
+  943.9 1052.5  139.4  136.1  545.2 5412.9  485.0  190.3 1589.8  339.8  873.7  199.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+ 14442.7  1767.3   851.1   481.8   136.1
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+ 
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (user@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+ 
+

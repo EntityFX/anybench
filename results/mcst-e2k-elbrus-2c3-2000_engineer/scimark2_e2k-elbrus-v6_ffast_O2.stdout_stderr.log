@@ -1,0 +1,11 @@
+**                                                              **
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
+** for details. (Results can be submitted to pozo@nist.gov)     **
+**                                                              **
+Using       2.00 seconds min time per kenel.
+Composite Score:          303.08
+FFT             Mflops:   312.60    (N=1024)
+SOR             Mflops:   347.37    (100 x 100)
+MonteCarlo:     Mflops:   190.45
+Sparse matmult  Mflops:   290.46    (N=1000, nz=5000)
+LU              Mflops:   374.53    (M=100, N=100)

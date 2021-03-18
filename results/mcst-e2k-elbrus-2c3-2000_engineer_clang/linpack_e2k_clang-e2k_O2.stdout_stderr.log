@@ -1,0 +1,85 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation e2k_clang e2k_v6 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00225    0.00006    0.00231     297.25     0.0067     0.0413
+
+Calculating matgen overhead
+        10 times   0.01 seconds
+       100 times   0.07 seconds
+      1000 times   0.66 seconds
+      2000 times   1.31 seconds
+Overhead for 1 matgen      0.00066 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.03 seconds
+       100 times   0.29 seconds
+       200 times   0.58 seconds
+       400 times   1.16 seconds
+Passes used        344 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00225    0.00006    0.00231     297.26     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.10     0.0067     0.0413
+    0.00225    0.00007    0.00231     296.90     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.23     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.20     0.0067     0.0413
+Average                               297.14
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00066 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00225    0.00006    0.00231     297.15     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.08     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.15     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.12     0.0067     0.0413
+    0.00225    0.00006    0.00231     297.11     0.0067     0.0413
+Average                               297.12
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1599.998
+bogomips	: 3200.08
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 12
+model name	: E2C3
+revision	: 0
+cpu MHz		: 1882.957
+bogomips	: 3200.08
+
+cache0          : level=1 type=Instruction scope=Private size=128K line_size=256 associativity=4
+cache1          : level=1 type=Data scope=Private size=64K line_size=32 associativity=4
+cache2          : level=2 type=Unified scope=Private size=2048K line_size=64 associativity=4
+
+
+From File /proc/version
+Linux version 5.4.0-2.4-e2c3 (troosh@flandre) (lcc:1.25.11:Dec--7-2020:e2k-v2-linux.cross:x86_64-linux) #62 SMP Wed Dec 30 16:00:52 MSK 2020
+
+
+Unrolled Double  Precision      297.12 Mflops 
+
+
