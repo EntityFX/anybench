@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.IO;
+using Dapper.Contrib.Extensions;
 
 namespace EntityFx.Benchmark.DataAccess
 {
@@ -36,7 +37,11 @@ namespace EntityFx.Benchmark.DataAccess
 
         public SqliteRepositoryBase()
         {
-            ConnectionString = $"Data Source={FileNameInternal};Version=3;";
+            ConnectionString = $"Data Source={FileNameInternal}";
+
+            SqlMapperExtensions.TableNameMapper = (type) => {
+                return type.Name;
+            };
 
             if (!File.Exists(FileName))
             {
