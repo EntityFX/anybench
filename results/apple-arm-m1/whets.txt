@@ -1,0 +1,129 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  aarch64 armv8.4-a optimized, Mon Mar 22 00:46:32 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1185.398               0.105
+N2 floating point      -1.12274742126464844      1019.900               0.852
+N3 if then else         1.00000000000000000                4783.307     0.140
+N4 fixed point         12.00000000000000000                5312.796     0.383
+N5 sin,cos etc.         0.49911010265350342                 230.014     2.338
+N6 floating point       0.99999982118606567       906.755               3.846
+N7 assignments          3.00000000000000000                9520.232     0.125
+N8 exp,sqrt etc.        0.75110864639282227                 110.198     2.182
+
+MWIPS                                            6483.091               9.972
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Apple M1
+machdep.cpu.features: Apple M1
+machdep.cpu.extfeatures: Apple M1
+hw.busfrequency: 3552531301048283201
+hw.cpufrequency: 3552531301048283201
+hw.cpufrequency_min: 3552531301048283201
+hw.cpufrequency_max: 3552531301048283201
+hw.cachelinesize: 128
+hw.l1icachesize: 131072
+hw.l1dcachesize: 65536
+hw.l2cachesize: 4194304
+hw.l3cachesize: 4194304
+hw.memsize: 17179869184
+ 
+
+From File /proc/version
+kern.osproductversion: 11.3
+kern.version: Darwin Kernel Version 20.4.0: Tue Feb 23 23:43:31 PST 2021; root:xnu-7195.100.354.131.1~3/RELEASE_ARM64_T8101
+kern.osrelease: 20.4.0
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  aarch64 armv8.4-a optimized, Mon Mar 22 00:46:50 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1190.893               0.105
+N2 floating point      -1.12274742126464844      1026.996               0.854
+N3 if then else         1.00000000000000000                4775.020     0.141
+N4 fixed point         12.00000000000000000                5313.660     0.387
+N5 sin,cos etc.         0.49911010265350342                 233.664     2.324
+N6 floating point       0.99999982118606567       908.500               3.875
+N7 assignments          3.00000000000000000                9563.871     0.126
+N8 exp,sqrt etc.        0.75110864639282227                 110.098     2.205
+
+MWIPS                                            6514.895              10.017
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Apple M1
+machdep.cpu.features: Apple M1
+machdep.cpu.extfeatures: Apple M1
+hw.busfrequency: 3552531301048283201
+hw.cpufrequency: 3552531301048283201
+hw.cpufrequency_min: 3552531301048283201
+hw.cpufrequency_max: 3552531301048283201
+hw.cachelinesize: 128
+hw.l1icachesize: 131072
+hw.l1dcachesize: 65536
+hw.l2cachesize: 4194304
+hw.l3cachesize: 4194304
+hw.memsize: 17179869184
+ 
+
+From File /proc/version
+kern.osproductversion: 11.3
+kern.version: Darwin Kernel Version 20.4.0: Tue Feb 23 23:43:31 PST 2021; root:xnu-7195.100.354.131.1~3/RELEASE_ARM64_T8101
+kern.osrelease: 20.4.0
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  aarch64 armv8.4-a optimized, Mon Mar 22 00:47:08 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070      1796.962               0.076
+N2 floating point      -1.12191438674926758      1712.375               0.562
+N3 if then else         1.00000000000000000                4783.588     0.155
+N4 fixed point         12.00000000000000000               127414.000     0.018
+N5 sin,cos etc.         0.49911010265350342                 237.341     2.508
+N6 floating point       0.99999982118606567       906.064               4.260
+N7 assignments          3.00000000000000000                9145.799     0.145
+N8 exp,sqrt etc.        0.75110864639282227                 116.203     2.291
+
+MWIPS                                            7145.465              10.013
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Apple M1
+machdep.cpu.features: Apple M1
+machdep.cpu.extfeatures: Apple M1
+hw.busfrequency: 3552531301048283201
+hw.cpufrequency: 3552531301048283201
+hw.cpufrequency_min: 3552531301048283201
+hw.cpufrequency_max: 3552531301048283201
+hw.cachelinesize: 128
+hw.l1icachesize: 131072
+hw.l1dcachesize: 65536
+hw.l2cachesize: 4194304
+hw.l3cachesize: 4194304
+hw.memsize: 17179869184
+ 
+
+From File /proc/version
+kern.osproductversion: 11.3
+kern.version: Darwin Kernel Version 20.4.0: Tue Feb 23 23:43:31 PST 2021; root:xnu-7195.100.354.131.1~3/RELEASE_ARM64_T8101
+kern.osrelease: 20.4.0
+ 
+

@@ -1,0 +1,46 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Apple M1
+machdep.cpu.features: Apple M1
+machdep.cpu.extfeatures: Apple M1
+hw.busfrequency: 3552531301048283201
+hw.cpufrequency: 3552531301048283201
+hw.cpufrequency_min: 3552531301048283201
+hw.cpufrequency_max: 3552531301048283201
+hw.cachelinesize: 128
+hw.l1icachesize: 131072
+hw.l1dcachesize: 65536
+hw.l2cachesize: 4194304
+hw.l3cachesize: 4194304
+hw.memsize: 17179869184
+
+
+From File /proc/version
+kern.osproductversion: 11.3
+kern.version: Darwin Kernel Version 20.4.0: Tue Feb 23 23:43:31 PST 2021; root:xnu-7195.100.354.131.1~3/RELEASE_ARM64_T8101
+kern.osrelease: 20.4.0
+
+
+   Memory Reading Speed Test aarch64 armv8.4-a optimized Mon Mar 22 00:46:11 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   56747  54328  49581  98590  52920  52683  75539  75967  75932
+      16   56273  54015  49183  96457  52342  52452  75055  75528  69279
+      32   56594  54197  49290  97198  52637  52752  74329  74767  74863
+      64   56691  54437  49192  71771  50921  51412  71618  71164  70257
+     128   56731  54414  49159  78529  50087  51096  71237  71263  75940
+     256   56817  54480  49324  68544  52033  51987  77439  83835  82152
+     512   53015  54181  49058  68866  52014  52399  46578  46891  46909
+    1024   56722  54087  49081  68419  52384  50290  46676  46706  46711
+    2048   56759  54126  49255  68681  52322  52312  46936  47150  46873
+    4096   55871  53602  45058  65794  50825  51104  46523  46535  46702
+    8192   54083  51855  47430  64104  48931  48995  46575  44984  46540
+
+                End of test Mon Mar 22 00:46:26 2021
+

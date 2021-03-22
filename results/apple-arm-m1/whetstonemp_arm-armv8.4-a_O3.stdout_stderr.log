@@ -1,0 +1,61 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 8, Configured CPUs 8
+  get_phys_pages() and size - RAM Size 16.00 GB, Page Size 16384 Bytes
+  uname() - Darwin, aramaki, 20.4.0
+  Darwin Kernel Version 20.4.0: Tue Feb 23 23:43:31 PST 2021; root:xnu-7195.100.354.131.1~3/RELEASE_ARM64_T8101, arm64
+
+##############################################
+
+ Multithreading Single Precision Whetstones aarch64 armv8.4-a optimized
+
+             Using 8 threads - Mon Mar 22 00:47:39 2021
+
+ Calibrate
+    0.00516 Seconds          1   Passes (x 100)
+    0.02404 Seconds          5   Passes (x 100)
+    0.06447 Seconds         25   Passes (x 100)
+    0.22800 Seconds        125   Passes (x 100)
+
+ Use 5482  passes (x 100)
+
+ MFLOPS 1     881    876    872    868    866    865    859    853
+ MFLOPS 2     914    908    899    896    895    890    889    880
+ IFMOPS      7622   7160   6990   6882   6877   6794   6785   6697
+ FIXPMOPS   88153  76287  76062  75596  75126  74037  73819  61585
+ COSMOPS      178    176    176    176    176    174    174    174
+ MFLOPS 3     685    685    685    684    682    681    679    678
+ EQUMOPS     5610   5495   5469   5438   5415   5405   5399   5380
+ EXPMOPS       84     84     84     84     83     83     83     83
+ millisec   10581  10659  10579  10517  10639  10599  10634  10622
+ MWIPS       5181   5143   5182   5213   5153   5172   5155   5161
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   41359   6940   7170   5459   1404    669 600664  55805  43611
+
+ MWIPS   40992 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 7 threads were same as above
+
+               End of test Mon Mar 22 00:47:54 2021
+
+               Results also in log file MPwhetres.txt
+
