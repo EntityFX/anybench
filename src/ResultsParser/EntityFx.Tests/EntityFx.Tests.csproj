@@ -1,10 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\Cpus.csv" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="nunit" Version="3.12.0" />

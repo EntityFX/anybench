@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFx.Benchmark.DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResultsParser", "EntityFX.ResultsParser\ResultsParser.csproj", "{37218241-6613-45EB-AA6A-59E037DBA118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFx.BenchmarkDb.Web", "EntityFx.BenchmarkDb.Web\EntityFx.BenchmarkDb.Web.csproj", "{C927C1D4-25E1-4471-8BEB-33029F09F104}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{37218241-6613-45EB-AA6A-59E037DBA118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37218241-6613-45EB-AA6A-59E037DBA118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37218241-6613-45EB-AA6A-59E037DBA118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C927C1D4-25E1-4471-8BEB-33029F09F104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C927C1D4-25E1-4471-8BEB-33029F09F104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C927C1D4-25E1-4471-8BEB-33029F09F104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C927C1D4-25E1-4471-8BEB-33029F09F104}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

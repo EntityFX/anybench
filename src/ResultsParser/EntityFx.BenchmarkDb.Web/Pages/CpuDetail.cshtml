@@ -1,0 +1,29 @@
+﻿@page
+@model EntityFx.BenchmarkDb.Web.CpuDetailModel
+@{
+    ViewData["Title"] = "CpuDetail";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>@Html.DisplayFor(model => model.CpuDetail.Model)</h1>
+<p>
+    @Html.DisplayFor(model => model.CpuDetail.Description)
+</p>
+
+
+<dl class="row">
+    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Manufacturer)</dt>
+    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Manufacturer)</dd>
+
+    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Category)</dt>
+    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Category)</dd>
+
+    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.ClockInMhz)</dt>
+    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.ClockInMhz)</dd>
+
+    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.Multiplier)</dt>
+    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.Multiplier)</dd>
+
+    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.BusInMhz)</dt>
+    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.BusInMhz)</dd>
+</dl>

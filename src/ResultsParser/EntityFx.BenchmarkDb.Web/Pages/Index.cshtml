@@ -1,0 +1,57 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">EntityFX Benchmarks Database</h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @*<a asp-page="./Index" asp-route-sortOrder="@Model."
+               asp-route-currentFilter="@Model.CurrentFilter">
+                @Html.DisplayNameFor(model => model.Students[0].LastName)
+            </a>*@
+                @Html.DisplayNameFor(model => model.Cpus[0].Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpus[0].Manufacturer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpus[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpus[0].Specs.ClockInMhz)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpus[0].Specs.Cores)&nbsp;/&nbsp;@Html.DisplayNameFor(model => model.Cpus[0].Specs.Threads)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Cpus)
+    {
+        <tr>
+            <td>
+                <a asp-page="./CpuDetail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Model)</a>
+            </td>
+            <td>
+                <a asp-page="./Manufacturer" asp-route-id="@item.Manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</a>
+            </td>
+            <td>
+                <a asp-page="./Architecture" asp-route-id="@item.Category">@Html.DisplayFor(modelItem => item.Category)</a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specs.ClockInMhz)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Specs.Cores)&nbsp;/&nbsp;@Html.DisplayFor(modelItem => item.Specs.Threads)
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
