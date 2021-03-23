@@ -4,6 +4,10 @@
 	"Manufacturer"	TEXT NOT NULL,
 	"Description"	TEXT,
 	"Category"	TEXT,
+	"Family"	INTEGER,
+	"ModelNumber"	INTEGER,
+	"Stepping"	INTEGER,
+	"Revision"	INTEGER,
 	"Cores"	INTEGER,
 	"Threads"	INTEGER,
 	"MicroArchitecture"	TEXT,
@@ -50,6 +54,9 @@
 	"PackageHeightMm"	NUMERIC,
 	"PackageWidthMm"	NUMERIC,
 	"PackageArea"	NUMERIC,
+	"TDP"	NUMERIC,
+	"ProcessInNm"	INTEGER,
+	"TransistorsCount"	INTEGER,
 	"CreateDateTime"	TEXT,
 	PRIMARY KEY("Id" AUTOINCREMENT)
 );

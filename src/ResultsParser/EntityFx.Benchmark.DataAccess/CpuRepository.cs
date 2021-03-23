@@ -43,7 +43,7 @@ namespace EntityFx.Benchmark.DataAccess
         {
             var sqlQuery = "SELECT * FROM CpuEntity Where Id = @Id";
 
-            var result = await Connection.QuerySingleOrDefaultAsync<CpuEntity>(sqlQuery, new { Id = cpuId});
+            var result = await Connection.QuerySingleOrDefaultAsync<CpuEntity>(sqlQuery, new { Id = cpuId });
 
             return result == null ? null : MapModel(result);
         }
@@ -57,6 +57,10 @@ namespace EntityFx.Benchmark.DataAccess
                 Manufacturer = cpuEntity?.Manufacturer,
 
                 Category = cpuEntity?.Category,
+                Family = cpuEntity?.Family,
+                Stepping = cpuEntity?.Stepping,
+                Revision = cpuEntity?.Revision,
+                ModelNumber = cpuEntity?.ModelNumber,
 
                 Specs = new CommonSpecs()
                 {
@@ -67,6 +71,7 @@ namespace EntityFx.Benchmark.DataAccess
                     ClockInMhz = cpuEntity?.ClockInMhz,
                     BusInMhz = cpuEntity?.BusInMhz,
                     Multiplier = cpuEntity?.Multiplier,
+                    Features = cpuEntity?.Features
                 },
 
                 Cache = new Cache()
@@ -127,6 +132,9 @@ namespace EntityFx.Benchmark.DataAccess
                     HeightMm = cpuEntity.CrystalHeightMm,
                     WidthMm = cpuEntity.CrystalWidthMm,
                     Area = cpuEntity.CrystalArea,
+                    TDP = cpuEntity.TDP,
+                    TransistorsCount = cpuEntity.TransistorsCount,
+                    ProcessInNm = cpuEntity.ProcessInNm,
                 } : null,
                 Package = cpuEntity.PackageArea != null ? new CrystalParameters()
                 {
@@ -151,6 +159,11 @@ namespace EntityFx.Benchmark.DataAccess
                 ClockInMhz = cpu.Specs?.ClockInMhz,
                 BusInMhz = cpu.Specs?.BusInMhz,
                 Multiplier = cpu.Specs?.Multiplier,
+
+                Family = cpu.Family,
+                Stepping = cpu.Stepping,
+                Revision = cpu.Revision,
+                ModelNumber = cpu.ModelNumber,
 
                 CacheL1DCacheAssociativity = cpu?.Cache?.L1Data?.CacheAssociativity,
                 CacheL1DSizeKBytes = cpu?.Cache?.L1Data?.SizeKBytes,
@@ -194,9 +207,15 @@ namespace EntityFx.Benchmark.DataAccess
                 CrystalWidthMm = cpu?.Crystal?.WidthMm,
                 CrystalArea = cpu?.Crystal?.Area,
 
+                TDP = cpu?.Crystal?.TDP,
+                TransistorsCount = cpu?.Crystal?.TransistorsCount,
+                ProcessInNm = cpu?.Crystal?.ProcessInNm,
+
                 PackageHeightMm = cpu?.Package?.HeightMm,
                 PackageWidthMm = cpu?.Package?.WidthMm,
                 PackageArea = cpu?.Package?.Area,
+
+
 
             };
         }

@@ -112,7 +112,18 @@ namespace EntityFx.Benchmark.DataAccess
                        
         public decimal? CrystalArea { get; set; }
 
+        public decimal? ProcessInNm { get; set; }
+
+        public uint? TransistorsCount { get; set; }
+
+        public uint? TDP { get; set; }
+
+        public int? Family { get; set; }
+        public int? Stepping { get; set; }
+        public int? Revision { get; set; }
+        public int? ModelNumber { get; set; }
 
         public DateTime CreateDateTime { get; set; }
+        public string Features { get; set; }
     }
 }

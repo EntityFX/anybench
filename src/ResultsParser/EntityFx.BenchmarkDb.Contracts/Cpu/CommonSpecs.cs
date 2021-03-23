@@ -14,6 +14,8 @@ namespace EntityFx.BenchmarkDb.Contracts
 
         public decimal? ClockInMhz { get; set; }
 
+        public decimal? MaxClockInMhz { get; set; }
+
         public decimal? BusInMhz { get; set; }
 
         public decimal? Multiplier { get; set; }

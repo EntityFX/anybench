@@ -1,29 +1,119 @@
-﻿@page
+﻿@page "/{id:int}"
+
+@using System.Linq.Expressions
+@using EntityFx.BenchmarkDb.Contracts
+@using Microsoft.AspNetCore.Html
+@using Microsoft.AspNetCore.Razor.Language
 @model EntityFx.BenchmarkDb.Web.CpuDetailModel
 @{
     ViewData["Title"] = "CpuDetail";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
-<h1>@Html.DisplayFor(model => model.CpuDetail.Model)</h1>
-<p>
+@{
+    Func<CacheItem, IHtmlContent> RenderCacheDetails
+        = @<text>
+        <div class="row">
+            <div class="col-sm-3">@item.SizeKBytes KBytes</div>
+            <div class="col-sm-3">@((int) item.CacheAssociativity)-way</div>
+            <div class="col-sm-3">Line Size: @item.LineSizeInBytes Bytes</div>
+            <div class="col-sm-3">@if (item.IsShared == true) { <span>Shared</span> } else { <span>Per Core</span>}</div>
+        </div>
+        </text>;
+
+    void RenderCache(string name, CacheItem cache)
+    {
+        if (cache == null)
+        {
+            return;
+        }
+        RenderTemplateValue(name, cache, RenderCacheDetails);
+    }
+
+    void RenderFeatures(string name, string features)
+    {
+        if (features == null)
+        {
+            return;
+        }
+        var feature = features.Split(',');
+
+
+        var html = new HtmlContentBuilder();
+
+        Func<string, IHtmlContent> template = @<span class="badge badge-secondary">@item</span>;
+
+        foreach (var featureItem in feature)
+        {
+            html.AppendLine(template(featureItem));
+        }
+
+        RenderTemplateValue(name, html, @<text>@item</text>);
+    }
+
+    void RenderValue<T>(string name, T value)
+    {
+        if (value == null)
+        {
+            return;
+        }
+        RenderTemplateValue(name, value, @<text>@item</text>);
+    }
+
+    void RenderTemplateValue<T>(string name, T value, Func<T, IHtmlContent> template)
+    {
+        <dt class="col-sm-3">@name</dt>
+        <dd class="col-sm-9">@template(value)</dd>
+    }
+
+}
+
+<h1 class="display-2">@Html.DisplayFor(model => model.CpuDetail.Model)</h1>
+<p class="lead">
     @Html.DisplayFor(model => model.CpuDetail.Description)
 </p>
 
-
+<h2>Info</h2>
 <dl class="row">
-    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Manufacturer)</dt>
-    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Manufacturer)</dd>
-
-    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Category)</dt>
-    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Category)</dd>
-
-    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.ClockInMhz)</dt>
-    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.ClockInMhz)</dd>
-
-    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.Multiplier)</dt>
-    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.Multiplier)</dd>
-
-    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.CpuDetail.Specs.BusInMhz)</dt>
-    <dd class="col-sm-9">@Html.DisplayFor(model => model.CpuDetail.Specs.BusInMhz)</dd>
+    @{ RenderValue("Manufacturer", Model.CpuDetail.Manufacturer);}
+    @{ RenderValue("Category", Model.CpuDetail.Category);}
+    @{ RenderValue("InstructionSet", Model.CpuDetail.Specs.InstructionSet);}
+    @{ RenderValue("MicroArchitecture", Model.CpuDetail.Specs.MicroArchitecture);}
 </dl>
+<h2>Specs</h2>
+<dl class="row">
+    @{ RenderValue("Cores / Threads", Model.CpuDetail.Specs.Cores + " / " + Model.CpuDetail.Specs.Threads);}
+    @{ RenderValue("Frequency", Model.CpuDetail.Specs.ClockInMhz);}
+    @{ RenderValue("Max Frequency", Model.CpuDetail.Specs.MaxClockInMhz);}
+    @{ RenderValue("Bus", Model.CpuDetail.Specs.BusInMhz);}
+    @{ RenderValue("Multiplier", Model.CpuDetail.Specs.Multiplier);}
+    @{ RenderValue("Family", Model.CpuDetail?.Family);}
+    @{ RenderValue("Model", Model.CpuDetail?.ModelNumber);}
+    @{ RenderValue("Stepping", Model.CpuDetail?.Stepping);}
+    @{ RenderValue("Revision", Model.CpuDetail?.Revision);}
+    @{ RenderFeatures("Features", Model.CpuDetail.Specs.Features);}
+</dl>
+<h2>Cache</h2>
+<dl class="row">
+    @{ RenderCache("L1 Data Cache", Model.CpuDetail.Cache.L1Data); }
+    @{ RenderCache("L1 Instruction Cache", Model.CpuDetail.Cache.L1Instruction); }
+    @{ RenderCache("L2 Cache", Model.CpuDetail.Cache.L2); }
+    @{ RenderCache("L3 Cache", Model.CpuDetail.Cache.L3); }
+    @{ RenderCache("L4 Cache", Model.CpuDetail.Cache.L4); }
+</dl>
+<h2>Memory controller</h2>
+<dl class="row">
+    @{ RenderValue("Memory Type", Model.CpuDetail.MemorySpecs?.MemoryType?.ToString());}
+    @{ RenderValue("Channels", Model.CpuDetail?.MemorySpecs?.Channels);}
+    @{ RenderValue("Controllers", Model.CpuDetail?.MemorySpecs?.Controllers);}
+    @{ RenderValue("Max Memory Size", Model.CpuDetail?.MemorySpecs?.MaxMemorySizeInMb);}
+</dl>
+<h2>Crystal Parameters</h2>
+<dl class="row">
+    @{ RenderValue("TDP", Model.CpuDetail.Crystal?.TDP);}
+    @{ RenderValue("Transistors Count", Model.CpuDetail?.Crystal?.TransistorsCount);}
+    @{ RenderValue("Process", Model.CpuDetail?.Crystal?.ProcessInNm);}
+    @{ RenderValue("Area (Width x Height)", Model.CpuDetail?.Crystal?.Area + "(" + Model.CpuDetail?.Crystal?.WidthMm + " x " +  Model.CpuDetail?.Crystal?.HeightMm + ")");}
+</dl>
+
+
