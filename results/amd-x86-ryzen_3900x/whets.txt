@@ -1,0 +1,288 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 native optimized, Tue Mar 23 20:22:11 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1801.607               0.092
+N2 floating point      -1.12274742126464844      1485.085               0.783
+N3 if then else         1.00000000000000000               26190.270     0.034     1.000
+N4 fixed point         12.00000000000000000                7283.151     0.374    12.000
+N5 sin,cos etc.         0.49911010265350342                 256.314     2.810     0.499
+N6 floating point       0.99999982118606567      1380.937               3.381
+N7 assignments          3.00000000000000000               12951.720     0.124     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 134.244     2.399     0.751
+
+MWIPS                                            8658.443               9.998
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 3640.075
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 native optimized, Tue Mar 23 20:22:27 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1813.654               0.089
+N2 floating point      -1.12274742126464844      1520.970               0.743
+N3 if then else         1.00000000000000000                   0.000     0.000     1.000
+N4 fixed point         12.00000000000000000                7367.977     0.359    12.000
+N5 sin,cos etc.         0.49911010265350342                 228.969     3.054     0.499
+N6 floating point       0.99999982118606567      1395.697               3.248
+N7 assignments          3.00000000000000000                6616.849     0.235     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 139.237     2.246     0.751
+
+MWIPS                                            8427.131               9.974
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 2106.631
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 native optimized, Tue Mar 23 20:22:43 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1951.255               0.092
+N2 floating point      -1.12274742126464844      1865.829               0.676
+N3 if then else         1.00000000000000000               4071087872.000     0.000     1.000
+N4 fixed point         12.00000000000000000               174496.062     0.017    12.000
+N5 sin,cos etc.         0.49911010265350342                 228.524     3.414     0.499
+N6 floating point       0.99999982118606567      1401.279               3.610
+N7 assignments          3.00000000000000000               13734.709     0.126     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 181.096     1.926     0.751
+
+MWIPS                                            9509.706               9.862
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 2046.773
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 x86-64 optimized, Tue Mar 23 20:22:58 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1877.821               0.095
+N2 floating point      -1.12274742126464844      1549.250               0.810
+N3 if then else         1.00000000000000000               27379.984     0.035     1.000
+N4 fixed point         12.00000000000000000                7643.527     0.385    12.000
+N5 sin,cos etc.         0.49911010265350342                 276.148     2.812     0.499
+N6 floating point       0.99999982118606567      1522.966               3.306
+N7 assignments          3.00000000000000000               13674.720     0.126     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 140.598     2.469     0.751
+
+MWIPS                                            9297.743              10.038
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 1999.916
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 x86-64 optimized, Tue Mar 23 20:23:14 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1808.333               0.092
+N2 floating point      -1.12274742126464844      1796.906               0.651
+N3 if then else         1.00000000000000000                   0.000     0.000     1.000
+N4 fixed point         12.00000000000000000                7299.581     0.376    12.000
+N5 sin,cos etc.         0.49911010265350342                 228.273     3.174     0.499
+N6 floating point       0.99999982118606567      1499.894               3.132
+N7 assignments          3.00000000000000000               13804.492     0.117     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 141.430     2.291     0.751
+
+MWIPS                                            8856.749               9.833
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 2045.969
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  amd64 x86-64 optimized, Tue Mar 23 20:23:29 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1964.639               0.094
+N2 floating point      -1.12274742126464844      1962.587               0.661
+N3 if then else         1.00000000000000000                   0.000     0.000     1.000
+N4 fixed point         12.00000000000000000               88271.336     0.034    12.000
+N5 sin,cos etc.         0.49911010265350342                 230.456     3.482     0.499
+N6 floating point       0.99999982118606567      1473.519               3.531
+N7 assignments          3.00000000000000000               13246.107     0.135     3.000
+N8 exp,sqrt etc.        0.75110864639282227                 174.858     2.052     0.751
+
+MWIPS                                            9656.200               9.989
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 3986.554
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+ 
+
