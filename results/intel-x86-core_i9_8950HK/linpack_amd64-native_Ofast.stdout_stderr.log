@@ -1,0 +1,86 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 native optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00024    0.00001    0.00026    2684.15     0.0007     0.0046
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.00 seconds
+      1000 times   0.03 seconds
+     10000 times   0.22 seconds
+     20000 times   0.43 seconds
+     40000 times   0.84 seconds
+     80000 times   1.71 seconds
+Overhead for 1 matgen      0.00002 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.15 seconds
+      2000 times   0.30 seconds
+      4000 times   0.61 seconds
+      8000 times   1.23 seconds
+Passes used       6521 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00013    0.00001    0.00014    4975.67     0.0004     0.0025
+    0.00013    0.00001    0.00014    5045.07     0.0004     0.0024
+    0.00013    0.00001    0.00014    5005.40     0.0004     0.0024
+    0.00013    0.00001    0.00014    5046.15     0.0004     0.0024
+    0.00013    0.00001    0.00014    4998.54     0.0004     0.0025
+Average                              5014.16
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00002 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00013    0.00001    0.00014    4999.52     0.0004     0.0025
+    0.00013    0.00001    0.00014    4942.65     0.0004     0.0025
+    0.00013    0.00001    0.00014    4976.61     0.0004     0.0025
+    0.00013    0.00001    0.00014    4964.35     0.0004     0.0025
+    0.00013    0.00001    0.00014    5052.96     0.0004     0.0024
+Average                              4987.22
+
+##########################################
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+machdep.cpu.features: FPU VME DE PSE TSC MSR PAE MCE CX8 APIC SEP MTRR PGE MCA CMOV PAT PSE36 CLFSH DS ACPI MMX FXSR SSE SSE2 SS HTT TM PBE SSE3 PCLMULQDQ DTES64 MON DSCPL VMX EST TM2 SSSE3 FMA CX16 TPR PDCM SSE4.1 SSE4.2 x2APIC MOVBE POPCNT AES PCID XSAVE OSXSAVE SEGLIM64 TSCTMR AVX1.0 RDRAND F16C
+machdep.cpu.extfeatures: SYSCALL XD 1GBPAGE EM64T LAHF LZCNT PREFETCHW RDTSCP TSCI
+hw.busfrequency: 400000000
+hw.cpufrequency: 2900000000
+hw.cpufrequency_min: 2900000000
+hw.cpufrequency_max: 2900000000
+hw.cachelinesize: 64
+hw.l1icachesize: 32768
+hw.l1dcachesize: 32768
+hw.l2cachesize: 262144
+hw.l3cachesize: 12582912
+hw.memsize: 34359738368
+
+
+From File /proc/version
+kern.osproductversion: 11.2.3
+kern.version: Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 PST 2021; root:xnu-7195.81.3~1/RELEASE_X86_64
+kern.osrelease: 20.3.0
+
+
+Unrolled Double  Precision     4987.22 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
