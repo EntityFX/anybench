@@ -1,0 +1,43 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+machdep.cpu.features: FPU VME DE PSE TSC MSR PAE MCE CX8 APIC SEP MTRR PGE MCA CMOV PAT PSE36 CLFSH DS ACPI MMX FXSR SSE SSE2 SS HTT TM PBE SSE3 PCLMULQDQ DTES64 MON DSCPL VMX EST TM2 SSSE3 FMA CX16 TPR PDCM SSE4.1 SSE4.2 x2APIC MOVBE POPCNT AES PCID XSAVE OSXSAVE SEGLIM64 TSCTMR AVX1.0 RDRAND F16C
+machdep.cpu.extfeatures: SYSCALL XD 1GBPAGE EM64T LAHF LZCNT PREFETCHW RDTSCP TSCI
+hw.busfrequency: 400000000
+hw.cpufrequency: 2900000000
+hw.cpufrequency_min: 2900000000
+hw.cpufrequency_max: 2900000000
+hw.cachelinesize: 64
+hw.l1icachesize: 32768
+hw.l1dcachesize: 32768
+hw.l2cachesize: 262144
+hw.l3cachesize: 12582912
+hw.memsize: 34359738368
+
+
+From File /proc/version
+kern.osproductversion: 11.2.3
+kern.version: Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 PST 2021; root:xnu-7195.81.3~1/RELEASE_X86_64
+kern.osrelease: 20.3.0
+
+    BusSpeed amd64 native optimized Tue Mar 23 18:02:24 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  15509  15680  17453  17909  18092 165073
+      32  16700  15994  17009  17877  18067 159382
+      64   9399  11136  17397  17634  18032 110277
+     128   8873  11332  16483  17961  17992 111980
+     256   6741   8807  14573  16955  17932  95271
+     512   3082   5190   8909  15052  17666  70461
+    1024   3465   4816   9224  14409  17274  66339
+    4096   3313   5278   8390  13644  16494  59090
+   16384    613    654   2378   4853   8265  25216
+   65536    330    626   2024   3874   7978  19580
+
+ Type additional information to include in busSpeed.txt - Press Enter

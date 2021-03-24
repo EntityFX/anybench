@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 12, Configured CPUs 12
+  get_phys_pages() and size - RAM Size 32.00 GB, Page Size 4096 Bytes
+  uname() - Darwin, Vladimirs-MacBook-Pro.local, 20.3.0
+  Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 PST 2021; root:xnu-7195.81.3~1/RELEASE_X86_64, x86_64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 12 Threads, Tue Mar 23 18:17:29 2021
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    30000   0.043080   142618    See log     No
+ Data in & out    1024000     2     3000   0.063071    97414    See log     No
+ Data in & out   10240000     2      300   0.808827     7596    See log     No
+
+ Data in & out     102400     8    30000   0.071985   341404    See log     No
+ Data in & out    1024000     8     3000   0.068920   356587    See log     No
+ Data in & out   10240000     8      300   0.707984    34713    See log     No
+
+ Data in & out     102400    32    30000   0.219190   448488    See log     No
+ Data in & out    1024000    32     3000   0.214172   458995    See log     No
+ Data in & out   10240000    32      300   0.686512   143193    See log     No
+
+               End of test Tue Mar 23 18:17:31 2021
+
+ Press Enter

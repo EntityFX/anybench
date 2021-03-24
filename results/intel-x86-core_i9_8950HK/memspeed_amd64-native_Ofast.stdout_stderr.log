@@ -1,0 +1,46 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+machdep.cpu.brand_string: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz
+machdep.cpu.features: FPU VME DE PSE TSC MSR PAE MCE CX8 APIC SEP MTRR PGE MCA CMOV PAT PSE36 CLFSH DS ACPI MMX FXSR SSE SSE2 SS HTT TM PBE SSE3 PCLMULQDQ DTES64 MON DSCPL VMX EST TM2 SSSE3 FMA CX16 TPR PDCM SSE4.1 SSE4.2 x2APIC MOVBE POPCNT AES PCID XSAVE OSXSAVE SEGLIM64 TSCTMR AVX1.0 RDRAND F16C
+machdep.cpu.extfeatures: SYSCALL XD 1GBPAGE EM64T LAHF LZCNT PREFETCHW RDTSCP TSCI
+hw.busfrequency: 400000000
+hw.cpufrequency: 2900000000
+hw.cpufrequency_min: 2900000000
+hw.cpufrequency_max: 2900000000
+hw.cachelinesize: 64
+hw.l1icachesize: 32768
+hw.l1dcachesize: 32768
+hw.l2cachesize: 262144
+hw.l3cachesize: 12582912
+hw.memsize: 34359738368
+
+
+From File /proc/version
+kern.osproductversion: 11.2.3
+kern.version: Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 PST 2021; root:xnu-7195.81.3~1/RELEASE_X86_64
+kern.osrelease: 20.3.0
+
+
+   Memory Reading Speed Test amd64 native optimized Tue Mar 23 18:10:34 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   30255  14637  14569  45229  91073  93055  35287  72178  69980
+      16   29011  14796  14986  47332  95519  93109  35781  71878  71695
+      32   29503  14513  13723  46702  94079  95548  35255  70621  70682
+      64   30029  14782  15005  39060  67221  64439  27354  46168  44025
+     128   28509  14176  14417  39345  66208  67054  28462  46569  46899
+     256   29817  14609  14512  38587  65095  67136  27150  42832  42878
+     512   28853  14777  14567  33306  48380  50146  24460  30738  30765
+    1024   29204  14590  14857  34110  48453  48906  23076  29646  28038
+    2048   29244  14536  14562  34307  50704  50275  23823  29508  30132
+    4096   29516  14297  14085  34611  51757  52445  24517  28840  29973
+    8192   26895  13596  14009  31727  42591  37842  21014  26257  26677
+
+                End of test Tue Mar 23 18:10:50 2021
+

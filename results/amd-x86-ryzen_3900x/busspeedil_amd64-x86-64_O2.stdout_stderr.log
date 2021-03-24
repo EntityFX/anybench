@@ -1,0 +1,48 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 113
+model name	: AMD Ryzen 9 3900X 12-Core Processor
+stepping	: 0
+microcode	: 0x8701021
+cpu MHz		: 4192.411
+cache size	: 512 KB
+physical id	: 0
+siblings	: 24
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+
+
+From File /proc/version
+Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
+
+    BusSpeed amd64 x86-64 optimized Tue Mar 23 20:08:52 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  28133  28658  33225  33778  33638  33819
+      32  23741  22602  27792  33102  33815  33642
+      64   8677   8567  16767  27641  28670  33715
+     128   8858   8858  17472  27636  28712  34365
+     256   8850   8875  17697  28789  27805  33852
+     512   7997   7359  14006  24509  27401  34091
+    1024   7017   6725  12538  22456  28366  34124
+    4096   6230   6218  12480  22774  28362  34281
+   16384   4259   4252   8060  12781  18596  26477
+   65536   1138   1296   3335   6650  10911  19338
+
+ Type additional information to include in busSpeed.txt - Press Enter
