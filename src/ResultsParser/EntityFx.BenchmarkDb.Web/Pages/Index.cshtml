@@ -5,7 +5,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">EntityFX Benchmarks Database</h1>
+    <h1 class="display-2">Cpu List</h1>
 </div>
 
 <table class="table">
@@ -19,7 +19,9 @@
                 @Html.DisplayNameFor(model => model.Cpus[0].Model)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cpus[0].Manufacturer)
+                <a asp-page="./Index" asp-route-orderBy="Manufacturer">
+                    @Html.DisplayNameFor(model => model.Cpus[0].Manufacturer)
+                </a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cpus[0].Category)
@@ -40,10 +42,10 @@
                 <a asp-page="./CpuDetail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Model)</a>
             </td>
             <td>
-                <a asp-page="./Manufacturer" asp-route-id="@item.Manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</a>
+                <a asp-page="./Index" asp-route-byManufacturer="@item.Manufacturer">@Html.DisplayFor(modelItem => item.Manufacturer)</a>
             </td>
             <td>
-                <a asp-page="./Architecture" asp-route-id="@item.Category">@Html.DisplayFor(modelItem => item.Category)</a>
+                <a asp-page="./Index" asp-route-byCategory="@item.Category">@Html.DisplayFor(modelItem => item.Category)</a>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Specs.ClockInMhz)

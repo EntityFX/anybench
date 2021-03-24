@@ -10,7 +10,7 @@ namespace EntityFx.Benchmark.DataAccess
 
         void Delete(int id);
 
-        Task<IEnumerable<Cpu>> ReadAllAsync(PageFilter page);
+        Task<IEnumerable<Cpu>> ReadAsync(CpuFilter page);
         Task<Cpu> ReadByIdAsync(int cpuId);
     }
 }

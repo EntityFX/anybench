@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using Dapper;
 using Dapper.Contrib.Extensions;
 using EntityFx.BenchmarkDb.Contracts;
+using Microsoft.Data.Sqlite;
 
 namespace EntityFx.Benchmark.DataAccess
 {
@@ -30,13 +32,61 @@ namespace EntityFx.Benchmark.DataAccess
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Cpu>> ReadAllAsync(PageFilter page)
+        public async Task<IEnumerable<Cpu>> ReadAsync(CpuFilter filter)
         {
-            var sqlQuery = "SELECT * FROM CpuEntity";
+            var queryBuilder = new SqlBuilder()
+                .Select(nameof(CpuEntity.Id))
+                .Select(nameof(CpuEntity.Model))
+                .Select(nameof(CpuEntity.Manufacturer))
+                .Select(nameof(CpuEntity.Category))
+                .Select(nameof(CpuEntity.InstructionSet))
+                .Select(nameof(CpuEntity.ClockInMhz))
+                .Select(nameof(CpuEntity.Cores))
+                .Select(nameof(CpuEntity.Threads));
 
-            var result = await Connection.QueryAsync<CpuEntity>(sqlQuery);
+
+            if (filter != null)
+            {
+                var parameters = new DynamicParameters();
+
+                if (!string.IsNullOrEmpty(filter.SearchString))
+                {
+                    parameters.Add("@SearchString", filter.SearchString + "%");
+                    queryBuilder.Where($"{nameof(CpuEntity.Model)} LIKE @SearchString",
+                        parameters);
+                }
+                else
+                {
+                    AddFilter(filter.ByManufacturer, nameof(CpuEntity.Manufacturer), parameters, queryBuilder);
+                    AddFilter(filter.ByCategory, nameof(CpuEntity.Category), parameters, queryBuilder);
+                    AddFilter(filter.ByMicroArchitecture, nameof(CpuEntity.MicroArchitecture), parameters, queryBuilder);
+                    AddFilter(filter.ByInstructionSet, nameof(CpuEntity.InstructionSet), parameters, queryBuilder);
+                }
+
+
+
+                if (!string.IsNullOrEmpty(filter.OrderBy))
+                {
+                    parameters.Add($"@Order", filter.OrderBy);
+                    queryBuilder.OrderBy("@Order ASC", parameters);
+                }
+            }
+
+            var builderTemplate = queryBuilder.AddTemplate("SELECT /**select**/ FROM CpuEntity /**where**/ /**orderby**/");
+            
+            var result = await Connection.QueryAsync<CpuEntity>(builderTemplate.RawSql, builderTemplate.Parameters);
 
             return result == null ? Enumerable.Empty<Cpu>() : result.Select(MapModel);
+        }
+
+        private void AddFilter<T>(T value, string field, DynamicParameters parameters, SqlBuilder queryBuilder)
+        {
+            if (value != null)
+            {
+                parameters.Add($"@{field}", value);
+                queryBuilder.Where($"{field} = @{field}",
+                    parameters);
+            }
         }
 
         public async Task<Cpu> ReadByIdAsync(int cpuId)
@@ -55,6 +105,7 @@ namespace EntityFx.Benchmark.DataAccess
                 Id = cpuEntity.Id,
                 Model = cpuEntity?.Model,
                 Manufacturer = cpuEntity?.Manufacturer,
+                Description = cpuEntity?.Description,
 
                 Category = cpuEntity?.Category,
                 Family = cpuEntity?.Family,
@@ -151,6 +202,7 @@ namespace EntityFx.Benchmark.DataAccess
             {
                 Model = cpu.Model,
                 Manufacturer = cpu.Manufacturer,
+                Description = cpu?.Description,
                 Cores = cpu.Specs?.Cores,
                 Threads = cpu.Specs?.Threads,
                 Category = cpu.Category,

@@ -53,32 +53,46 @@
 
     void RenderValue<T>(string name, T value)
     {
-        if (value == null)
-        {
-            return;
-        }
         RenderTemplateValue(name, value, @<text>@item</text>);
     }
 
     void RenderTemplateValue<T>(string name, T value, Func<T, IHtmlContent> template)
     {
+        if (value == null)
+        {
+            return;
+        }
         <dt class="col-sm-3">@name</dt>
         <dd class="col-sm-9">@template(value)</dd>
     }
 
 }
 
-<h1 class="display-2">@Html.DisplayFor(model => model.CpuDetail.Model)</h1>
-<p class="lead">
-    @Html.DisplayFor(model => model.CpuDetail.Description)
-</p>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Cpu List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.CpuDetail.Manufacturer @Html.DisplayFor(model => model.CpuDetail.Model)</li>
+    </ol>
+</nav>
+
+<div class="row">
+    <div class="col-sm-9">
+        <h1 class="display-2">@Model.CpuDetail.Manufacturer @Html.DisplayFor(model => model.CpuDetail.Model)</h1>
+        <p class="lead">
+            @Html.DisplayFor(model => model.CpuDetail.Description)
+        </p>
+    </div>
+    <div class="col-sm-3">
+        <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" class="img-thumbnail rounded float-right" alt="...">
+    </div>
+</div>
 
 <h2>Info</h2>
 <dl class="row">
-    @{ RenderValue("Manufacturer", Model.CpuDetail.Manufacturer);}
-    @{ RenderValue("Category", Model.CpuDetail.Category);}
-    @{ RenderValue("InstructionSet", Model.CpuDetail.Specs.InstructionSet);}
-    @{ RenderValue("MicroArchitecture", Model.CpuDetail.Specs.MicroArchitecture);}
+    @{ RenderTemplateValue("Manufacturer", Model.CpuDetail.Manufacturer, @<a asp-page="./Index" asp-route-byManufacturer="@Model.CpuDetail.Manufacturer">@item</a>);}
+    @{ RenderTemplateValue("Category", Model.CpuDetail.Category, @<a asp-page="./Index" asp-route-byCategory="@Model.CpuDetail.Category">@item</a>);}
+    @{ RenderTemplateValue("InstructionSet", Model.CpuDetail?.Specs?.InstructionSet, @<a asp-page="./Index" asp-route-byInstructionSet="@Model.CpuDetail?.Specs?.InstructionSet">@item</a>);}
+    @{ RenderTemplateValue("MicroArchitecture", Model.CpuDetail?.Specs?.MicroArchitecture, @<a asp-page="./Index" asp-route-byMicroArchitecture="@Model.CpuDetail?.Specs?.MicroArchitecture">@item</a>);}
 </dl>
 <h2>Specs</h2>
 <dl class="row">

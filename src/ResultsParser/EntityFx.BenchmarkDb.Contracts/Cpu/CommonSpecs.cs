@@ -12,7 +12,7 @@ namespace EntityFx.BenchmarkDb.Contracts
 
         public string MicroArchitecture { get; set; }
 
-        public decimal? ClockInMhz { get; set; }
+        public uint? ClockInMhz { get; set; }
 
         public decimal? MaxClockInMhz { get; set; }
 

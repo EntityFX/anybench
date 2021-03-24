@@ -13,7 +13,7 @@
 	"MicroArchitecture"	TEXT,
 	"InstructionSet"	TEXT,
 	"Features"	TEXT,
-	"ClockInMhz"	NUMERIC,
+	"ClockInMhz"	INTEGER,
 	"BusInMhz"	NUMERIC,
 	"Multiplier"	NUMERIC,
 	"CacheL1DCacheAssociativity"	INTEGER,
@@ -59,4 +59,8 @@
 	"TransistorsCount"	INTEGER,
 	"CreateDateTime"	TEXT,
 	PRIMARY KEY("Id" AUTOINCREMENT)
+);
+
+CREATE INDEX "Model" ON "CpuEntity" (
+	"Model"
 );

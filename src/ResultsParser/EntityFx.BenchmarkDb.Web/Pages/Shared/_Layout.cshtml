@@ -16,7 +16,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Cpu List</a>
@@ -28,6 +28,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
                         </li>
                     </ul>
+                    <form class="d-flex" method="get" asp-page="./Index">
+                        <input class="form-control mr-2" type="search" placeholder="Search" name="searchString" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>

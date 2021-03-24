@@ -17,7 +17,7 @@ namespace EntityFx.Benchmark.DataAccess
 
         public string MicroArchitecture { get; set; }
 
-        public decimal? ClockInMhz { get; set; }
+        public uint? ClockInMhz { get; set; }
 
         public decimal? BusInMhz { get; set; }
 
@@ -125,5 +125,6 @@ namespace EntityFx.Benchmark.DataAccess
 
         public DateTime CreateDateTime { get; set; }
         public string Features { get; set; }
+        public string Description { get; set; }
     }
 }
