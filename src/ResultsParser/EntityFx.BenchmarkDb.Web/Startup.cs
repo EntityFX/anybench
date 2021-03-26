@@ -26,6 +26,7 @@ namespace EntityFx.BenchmarkDb.Web
         {
             SqliteRepositoryBase.FileNameInternal = "benchmarks.sqlite3";
             services.AddScoped<ICpuRepository, CpuRepository>();
+            services.AddScoped<IBenchmarkResultsRepository, BenchmarkResultsRepository>();
 
             services.AddRazorPages();
         }

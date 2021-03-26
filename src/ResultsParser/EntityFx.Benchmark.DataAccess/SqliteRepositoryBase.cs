@@ -2,6 +2,7 @@
 using System;
 using System.Data;
 using System.IO;
+using Dapper;
 using Dapper.Contrib.Extensions;
 
 namespace EntityFx.Benchmark.DataAccess
@@ -60,6 +61,16 @@ namespace EntityFx.Benchmark.DataAccess
         {
             get => FileNameInternal;
             set => FileNameInternal = value;
+        }
+
+        protected void AddFilter<T>(T value, string field, DynamicParameters parameters, SqlBuilder queryBuilder)
+        {
+            if (value != null)
+            {
+                parameters.Add($"@{field}", value);
+                queryBuilder.Where($"{field} = @{field}",
+                    parameters);
+            }
         }
     }
 }

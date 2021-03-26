@@ -81,10 +81,12 @@
         <p class="lead">
             @Html.DisplayFor(model => model.CpuDetail.Description)
         </p>
+        <a asp-page="./CpuBenchmarks" asp-route-id="@Model.CpuDetail.Id">Benchmarks</a>
     </div>
     <div class="col-sm-3">
         <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" class="img-thumbnail rounded float-right" alt="...">
     </div>
+
 </div>
 
 <h2>Info</h2>

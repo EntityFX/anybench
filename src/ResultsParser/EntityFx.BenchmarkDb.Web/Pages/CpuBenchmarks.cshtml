@@ -1,0 +1,12 @@
+﻿@page "/{id:int}/benchmarks"
+
+@using System.Linq.Expressions
+@using EntityFx.BenchmarkDb.Contracts
+@using Microsoft.AspNetCore.Html
+@using Microsoft.AspNetCore.Razor.Language
+@model EntityFx.BenchmarkDb.Web.CpuBenchmarksModel
+
+@{
+    ViewData["Title"] = "benchmarks";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}

@@ -17,7 +17,7 @@ namespace EntityFx.Benchmark.DataAccess
         {
             try
             {
-                var model = MapModel(cpu);
+                var model = MapEntity(cpu);
                 model.CreateDateTime = DateTime.Now;
                 var id = Connection.Insert<CpuEntity>(model);
             }
@@ -27,9 +27,15 @@ namespace EntityFx.Benchmark.DataAccess
             }
         }
 
-        public void Delete(int id)
+        public async void Delete(int id)
         {
-            throw new NotImplementedException();
+            var result = await ReadByIdAsync(id);
+            if (result == null)
+            {
+                return;
+            }
+
+            Connection.Delete(result);
         }
 
         public async Task<IEnumerable<Cpu>> ReadAsync(CpuFilter filter)
@@ -79,15 +85,6 @@ namespace EntityFx.Benchmark.DataAccess
             return result == null ? Enumerable.Empty<Cpu>() : result.Select(MapModel);
         }
 
-        private void AddFilter<T>(T value, string field, DynamicParameters parameters, SqlBuilder queryBuilder)
-        {
-            if (value != null)
-            {
-                parameters.Add($"@{field}", value);
-                queryBuilder.Where($"{field} = @{field}",
-                    parameters);
-            }
-        }
 
         public async Task<Cpu> ReadByIdAsync(int cpuId)
         {
@@ -196,7 +193,7 @@ namespace EntityFx.Benchmark.DataAccess
             };
         }
 
-        private CpuEntity MapModel(BenchmarkDb.Contracts.Cpu cpu)
+        private CpuEntity MapEntity(BenchmarkDb.Contracts.Cpu cpu)
         {
             return new CpuEntity()
             {
