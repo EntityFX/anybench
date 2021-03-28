@@ -16,8 +16,14 @@ binaryCompileOptions["coremark_mp8"]="-Icoremark/linux64 -Icoremark -DPERFORMANC
 binaryCompileOptions["scimark2"]="-Iscimark2 scimark2/*.c -lm"
 
 current_arch=$(uname -m)
+current_uname=$(uname)
+
 if [[ ${current_arch} == "x86_64" ]]; then
     current_arch="amd64"
+fi
+
+if [[ ${current_arch} == "i386" ]]; then
+    current_arch="i386"
 fi
 
 optFlags="-O2 -O3 -Ofast"
@@ -34,7 +40,7 @@ compile_binary() {
     CC=${4:-cc}
 
     # Special case to preserve the name of original dir name for amd64
-    output_dir="../bin/linux/${current_arch}"
+    output_dir="../bin/${current_uname}/${current_arch}"
     if [[ ${CC} != "cc" ]]; then
 	output_dir="${output_dir}_${CC}"
     fi
