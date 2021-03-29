@@ -10,3 +10,54 @@
     ViewData["Title"] = "benchmarks";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Cpu List</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a asp-area="" asp-page="/CpuDetail" asp-route-id="@Model.Cpu.Id">@Model.Cpu.Manufacturer @Html.DisplayFor(model => model.Cpu.Model)</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Benchmarks</li>
+    </ol>
+</nav>
+
+<div class="text-center">
+    <h1 class="display-2">@(Model.Cpu.Manufacturer) @(Model.Cpu.Model) Benchmarks List</h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BenchmarkResults[0].Benchmark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BenchmarkResults[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BenchmarkResults[0].SubCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BenchmarkResults[0].Value)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.BenchmarkResults)
+        {
+            <tr>
+                <th>
+                    @Html.DisplayFor(model => item.Benchmark)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => item.Category)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => item.SubCategory)
+                </th>
+                <th>
+                    <a asp-page="./CpuBenchmarkDetail" asp-route-cpuId="@Model.Cpu.Id" asp-route-benchmarkId="@item.Id">@Html.DisplayFor(model => item.Value)</a>
+                    @Html.DisplayFor(model => item.UnitsOfMeasure)
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>

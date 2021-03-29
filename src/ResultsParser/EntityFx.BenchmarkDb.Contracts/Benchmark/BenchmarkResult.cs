@@ -23,5 +23,4 @@
         public int CpuId { get; set; }
         public int BenchmarkResultId { get; set; }
     }
-
 }

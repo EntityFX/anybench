@@ -40,6 +40,7 @@ namespace EntityFx.Benchmark.DataAccess
         {
             var queryBuilder = new SqlBuilder()
                 .Select(nameof(BenchmarkResultEntity.Id))
+                .Select(nameof(BenchmarkResultEntity.Benchmark))
                 .Select(nameof(BenchmarkResultEntity.Value))
                 .Select(nameof(BenchmarkResultEntity.UnitsOfMeasure))
                 .Select(nameof(BenchmarkResultEntity.Category))
