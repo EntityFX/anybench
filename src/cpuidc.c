@@ -48,7 +48,7 @@
 		return 0;
 	}
 #else
-	#include <sys/sysinfo.h> 
+	#include "sys/sysinfo.h" 
 	#include <sys/utsname.h> 
 #endif
   
