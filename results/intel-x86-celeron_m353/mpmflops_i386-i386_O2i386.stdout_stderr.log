@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 1, Configured CPUs 1
+  get_phys_pages() and size - RAM Size  0.48 GB, Page Size 4096 Bytes
+  uname() - Linux, MicroBook, 4.19.0-16-686-pae
+  #1 SMP Debian 4.19.181-1 (2021-03-19), i686
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 1 Threads, Sun Apr 11 07:11:17 2021
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2     2500   4.878673      105    0.929475   Yes
+ Data in & out    1024000     2      250   4.551191      112    0.992543   Yes
+ Data in & out   10240000     2       25   4.755718      108    0.999249   Yes
+
+ Data in & out     102400     8     2500   7.997240      256    0.957164   Yes
+ Data in & out    1024000     8      250   7.753064      264    0.995525   Yes
+ Data in & out   10240000     8       25   7.987313      256    0.999550   Yes
+
+ Data in & out     102400    32     2500  24.327904      337    0.890377   Yes
+ Data in & out    1024000    32      250  24.438850      335    0.988102   Yes
+ Data in & out   10240000    32       25  24.524904      334    0.998799   Yes
+
+               End of test Sun Apr 11 07:13:10 2021
+
+ Press Enter

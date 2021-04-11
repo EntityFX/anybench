@@ -1,0 +1,60 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 13
+model name	: Intel(R) Celeron(R) M processor          800MHz
+stepping	: 8
+microcode	: 0x20
+cpu MHz		: 569.962
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 ss tm pbe nx bts cpuid pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 1139.92
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 32 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 4.19.0-16-686-pae (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Debian 4.19.181-1 (2021-03-19)
+
+
+   Memory Reading Speed Test i686 i386 optimized Sun Apr 11 07:08:17 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    3418   1812   1970   4415   2215   2150   3484   1771   1764
+      16    3497   1818   1979   4443   2231   2224   3544   1762   1776
+      32    2999   1704   1841   3787   1649    890   3006   1748   1750
+      64     465    385    396    531    399    394    308    238    237
+     128     451    377    391    513    395    390    299    231    230
+     256     263    385    396    531    400    395    311    237    238
+     512     477    383    398    544    403    399    315    240    239
+    1024     476    387    400    287    402    399    315    236    238
+    2048     475    388    397    536    393    399    314    239    240
+    4096     475    386    398    540    405    384    166    241    241
+    8192     477    387    400    541    407    397    310    133    170
+
+                End of test Sun Apr 11 07:08:39 2021
+
