@@ -1,0 +1,94 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation i686 i386 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.21007758e-14   2.22044605e-16  -8.62643290e-14  -7.20534743e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.01684    0.00036    0.01719      39.93     0.0501     0.3071
+
+Calculating matgen overhead
+        10 times   0.01 seconds
+       100 times   0.05 seconds
+      1000 times   0.57 seconds
+      2000 times   1.00 seconds
+Overhead for 1 matgen      0.00050 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.07 seconds
+       100 times   0.75 seconds
+       200 times   1.49 seconds
+Passes used        134 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00697    0.00031    0.00728      94.39     0.0212     0.1299
+    0.00820    0.00030    0.00851      80.72     0.0248     0.1519
+    0.00694    0.00030    0.00725      94.77     0.0211     0.1294
+    0.00701    0.00031    0.00731      93.91     0.0213     0.1306
+    0.00695    0.00031    0.00726      94.60     0.0211     0.1296
+Average                                91.68
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00047 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00836    0.00031    0.00867      79.16     0.0253     0.1549
+    0.00715    0.00031    0.00746      92.04     0.0217     0.1332
+    0.00712    0.00031    0.00744      92.34     0.0217     0.1328
+    0.00715    0.00032    0.00747      91.93     0.0218     0.1334
+    0.00837    0.00032    0.00869      79.06     0.0253     0.1551
+Average                                86.90
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 13
+model name	: Intel(R) Celeron(R) M processor          800MHz
+stepping	: 8
+microcode	: 0x20
+cpu MHz		: 569.962
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 ss tm pbe nx bts cpuid pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 1139.92
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 32 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 4.19.0-16-686-pae (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Debian 4.19.181-1 (2021-03-19)
+
+
+Unrolled Double  Precision       86.90 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
