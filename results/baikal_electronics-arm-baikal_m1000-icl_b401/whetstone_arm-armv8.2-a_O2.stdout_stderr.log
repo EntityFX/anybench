@@ -1,0 +1,96 @@
+
+##########################################
+Single Precision C Whetstone Benchmark aarch64 armv8.2-a optimized, Tue Apr 13 22:04:25 2021
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.04 Seconds          5   Passes (x 100)
+       0.18 Seconds         25   Passes (x 100)
+       0.90 Seconds        125   Passes (x 100)
+       4.52 Seconds        625   Passes (x 100)
+
+Use 1382  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 2
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 3
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 4
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 5
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 6
+BogoMIPS	: 100.00
+Features	: fp asimd Linux version 4.9.229-bmitx-def-alt1 (builder@localhost.localdomain) (gcc version 7.3.1 20180712 (ALT p9 7.3.1-alt9) (GCC) ) #1 SMP PREEMPT Wed Jul 22 08:55:56 UTC 2020
+
+
+From File /proc/version
+Linux version 4.9.229-bmitx-def-alt1 (builder@localhost.localdomain) (gcc version 7.3.1 20180712 (ALT p9 7.3.1-alt9) (GCC) ) #1 SMP PREEMPT Wed Jul 22 08:55:56 UTC 2020
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       343.681              0.077
+N2 floating point     -1.12274742126464844       285.839              0.650
+N3 if then else        1.00000000000000000                4057.820    0.035
+N4 fixed point        12.00000000000000000                1482.973    0.294
+N5 sin,cos etc.        0.49911010265350342                  33.935    3.388
+N6 floating point      0.99999982118606567       278.036              2.681
+N7 assignments         3.00000000000000000                1778.469    0.144
+N8 exp,sqrt etc.       0.75110864639282227                  18.883    2.723
+
+MWIPS                                           1383.180              9.991
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

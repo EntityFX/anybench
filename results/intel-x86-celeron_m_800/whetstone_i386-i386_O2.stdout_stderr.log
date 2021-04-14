@@ -1,0 +1,67 @@
+
+##########################################
+Single Precision C Whetstone Benchmark i686 i386 optimized, Sun Apr 11 07:20:04 2021
+
+Calibrate
+       0.03 Seconds          1   Passes (x 100)
+       0.11 Seconds          5   Passes (x 100)
+       0.54 Seconds         25   Passes (x 100)
+       3.06 Seconds        125   Passes (x 100)
+
+Use 408  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 13
+model name	: Intel(R) Celeron(R) M processor          800MHz
+stepping	: 8
+microcode	: 0x20
+cpu MHz		: 569.962
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 ss tm pbe nx bts cpuid pti
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 1139.92
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 32 bits physical, 32 bits virtual
+power management:
+
+
+
+From File /proc/version
+Linux version 4.19.0-16-686-pae (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-6)) #1 SMP Debian 4.19.181-1 (2021-03-19)
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       189.141              0.041
+N2 floating point     -1.12241148948669434       172.107              0.319
+N3 if then else        1.00000000000000000                 425.433    0.099
+N4 fixed point        12.00000000000000000                 936.617    0.137
+N5 sin,cos etc.        0.49904659390449524                   8.938    3.798
+N6 floating point      0.99999988079071045       140.587              1.565
+N7 assignments         3.00000000000000000                 365.397    0.206
+N8 exp,sqrt etc.       0.75110864639282227                   4.865    3.120
+
+MWIPS                                            439.392              9.286
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
