@@ -1,0 +1,124 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation aarch64 armv8-a optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00070    0.00003    0.00073     946.46     0.0021     0.0130
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.06 seconds
+     10000 times   0.56 seconds
+     20000 times   1.11 seconds
+Overhead for 1 matgen      0.00006 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.01 seconds
+       100 times   0.07 seconds
+      1000 times   0.73 seconds
+      2000 times   1.45 seconds
+Passes used       1375 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00067    0.00002    0.00070     987.69     0.0020     0.0124
+    0.00067    0.00002    0.00069     988.04     0.0020     0.0124
+    0.00067    0.00002    0.00070     987.40     0.0020     0.0124
+    0.00067    0.00002    0.00070     987.53     0.0020     0.0124
+    0.00067    0.00002    0.00070     987.97     0.0020     0.0124
+Average                               987.73
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00006 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00065    0.00002    0.00068    1016.27     0.0020     0.0121
+    0.00065    0.00002    0.00068    1015.69     0.0020     0.0121
+    0.00065    0.00002    0.00068    1016.46     0.0020     0.0121
+    0.00065    0.00002    0.00068    1015.78     0.0020     0.0121
+    0.00065    0.00002    0.00068    1016.28     0.0020     0.0121
+Average                              1016.09
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 1
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 2
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 3
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 4
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 5
+BogoMIPS	: 100.00
+Features	: fp asimd evtstrm crc32
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x1
+CPU part	: 0xd07
+CPU revision	: 3
+
+processor	: 6
+BogoMIPS	: 100.00
+Features	: fp asimd Linux version 4.9.229-bmitx-def-alt1 (builder@localhost.localdomain) (gcc version 7.3.1 20180712 (ALT p9 7.3.1-alt9) (GCC) ) #1 SMP PREEMPT Wed Jul 22 08:55:56 UTC 2020
+
+
+From File /proc/version
+Linux version 4.9.229-bmitx-def-alt1 (builder@localhost.localdomain) (gcc version 7.3.1 20180712 (ALT p9 7.3.1-alt9) (GCC) ) #1 SMP PREEMPT Wed Jul 22 08:55:56 UTC 2020
+
+
+Unrolled Double  Precision      987.73 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
