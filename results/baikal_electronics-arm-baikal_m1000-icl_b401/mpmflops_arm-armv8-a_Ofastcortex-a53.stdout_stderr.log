@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 8, Configured CPUs 8
+  get_phys_pages() and size - RAM Size  7.52 GB, Page Size 4096 Bytes
+  uname() - Linux, baikal-m1000, 4.9.229-bmitx-def-alt1
+  #1 SMP PREEMPT Wed Jul 22 08:55:56 UTC 2020, aarch64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Tue Apr 13 22:03:18 2021
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.255064    16059    0.620974   Yes
+ Data in & out    1024000     2     2000   0.275718    14856    0.942935   Yes
+ Data in & out   10240000     2      200   1.257050     3258    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.439126    37311    0.749972   Yes
+ Data in & out    1024000     8     2000   0.468744    34953    0.965367   Yes
+ Data in & out   10240000     8      200   1.275246    12848    0.996413   Yes
+
+ Data in & out     102400    32    20000   1.423374    46043    0.498063   Yes
+ Data in & out    1024000    32     2000   1.436789    45613    0.910646   Yes
+ Data in & out   10240000    32      200   1.563726    41910    0.990464   Yes
+
+               End of test Tue Apr 13 22:03:27 2021
+
+ Press Enter

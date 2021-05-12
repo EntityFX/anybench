@@ -65,7 +65,6 @@
         <dt class="col-sm-3">@name</dt>
         <dd class="col-sm-9">@template(value)</dd>
     }
-
 }
 
 <nav aria-label="breadcrumb">
@@ -78,10 +77,10 @@
 <div class="row">
     <div class="col-sm-9">
         <h1 class="display-2">@Model.CpuDetail.Manufacturer @Html.DisplayFor(model => model.CpuDetail.Model)</h1>
+        <a asp-page="./CpuBenchmarks" asp-route-id="@Model.CpuDetail.Id" class="btn btn-secondary btn-lg" role="button">Benchmarks</a>
         <p class="lead">
             @Html.DisplayFor(model => model.CpuDetail.Description)
         </p>
-        <a asp-page="./CpuBenchmarks" asp-route-id="@Model.CpuDetail.Id">Benchmarks</a>
     </div>
     <div class="col-sm-3">
         <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" class="img-thumbnail rounded float-right" alt="...">

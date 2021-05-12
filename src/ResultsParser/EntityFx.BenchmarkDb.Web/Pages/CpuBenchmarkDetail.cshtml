@@ -1,0 +1,59 @@
+﻿@page "/benchmarks/{benchmarkId:int}/{cpuId:int?}"
+
+@using System.Globalization
+@using System.Linq.Expressions
+@using EntityFx.BenchmarkDb.Contracts
+@using Microsoft.AspNetCore.Html
+@using Microsoft.AspNetCore.Razor.Language
+@model EntityFx.BenchmarkDb.Web.CpuBenchmarkDetailModel
+
+@{
+    ViewData["Title"] = "CpuDetail";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+@{
+    void RenderValue<T>(string name, T value)
+    {
+        RenderTemplateValue(name, value, @<text>@item</text>);
+    }
+
+    void RenderTemplateValue<T>(string name, T value, Func<T, IHtmlContent> template)
+    {
+        if (value == null)
+        {
+            return;
+        }
+        <dt class="col-sm-3">@name</dt>
+        <dd class="col-sm-9">@template(value)</dd>
+    }
+}
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-area="" asp-page="/Index">Cpu List</a></li>
+        @if (Model.Cpu != null)
+        {
+            <li class="breadcrumb-item" aria-current="page"><a asp-area="" asp-page="/CpuDetail" asp-route-id="@Model.Cpu.Id">@Model.Cpu.Manufacturer @Html.DisplayFor(model => model.Cpu.Model)</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a asp-area="" asp-page="/CpuBenchmarks" asp-route-id="@Model.Cpu.Id">Benchmarks</a></li>
+        }
+        else
+        {
+            <li class="breadcrumb-item active">Benchmarks</li>
+        }
+        <li class="breadcrumb-item active" aria-current="page">@Model.BenchmarkResult.Benchmark</li>
+    </ol>
+</nav>
+
+
+<div class="text-center">
+    <h1 class="display-3">@(Model.Cpu.Manufacturer) @(Model.Cpu.Model) @(Model.BenchmarkResult.Benchmark) benchmark results</h1>
+</div>
+
+<dl class="row">
+    @{ RenderTemplateValue("Category", Model.BenchmarkResult.Category, @<a asp-page="./Benchmarks" asp-route-byManufacturer="@Model.BenchmarkResult.Category">@item</a>);}
+    @{ RenderTemplateValue("Category", Model.BenchmarkResult.SubCategory, @<a asp-page="./Benchmarks" asp-route-byCategory="@Model.BenchmarkResult.SubCategory">@item</a>);}
+    @{ RenderTemplateValue("Result", Model.BenchmarkResult.Value, @<text>@item.ToString(CultureInfo.InvariantCulture) @Model.BenchmarkResult.UnitsOfMeasure</text>);}
+    @{ RenderTemplateValue("Output", Model.BenchmarkResult.Output, @<pre>@Html.DisplayFor(model => item)</pre>);}
+</dl>
