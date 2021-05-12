@@ -1,0 +1,40 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/mpmflops_arm-armv8.1-a_O2_neon: unsupported flags DT_FLAGS_1=0x8000001
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  0.91 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 3.18.19+
+  #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016, armv7l
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Wed May 12 23:25:59 2021
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   3.577957      572    0.764063   Yes
+ Data in & out    1024000     2     1000   3.555648      576    0.970753   Yes
+ Data in & out   10240000     2      100   3.520810      582    0.997008   Yes
+
+ Data in & out     102400     8    10000   6.051365     1354    0.850923   Yes
+ Data in & out    1024000     8     1000   5.997226     1366    0.982342   Yes
+ Data in & out   10240000     8      100   5.992506     1367    0.998200   Yes
+
+ Data in & out     102400    32    10000  14.552323     2252    0.660143   Yes
+ Data in & out    1024000    32     1000  14.596900     2245    0.953631   Yes
+ Data in & out   10240000    32      100  14.591514     2246    0.995203   Yes
+
+               End of test Wed May 12 23:27:12 2021
+
+ Press Enter

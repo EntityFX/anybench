@@ -1,0 +1,60 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/whetstonemp_arm-armv8-a+crc_O2cortex-a72: unsupported flags DT_FLAGS_1=0x8000001
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  0.91 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 3.18.19+
+  #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016, armv7l
+
+##############################################
+
+ Multithreading Single Precision Whetstones armv7l armv8-a+crc optimized
+
+             Using 4 threads - Thu May 13 00:18:56 2021
+
+ Calibrate
+    0.01570 Seconds          1   Passes (x 100)
+    1.81284 Seconds          5   Passes (x 100)
+
+ Use 27  passes (x 100)
+
+ MFLOPS 1     253    184    173    152
+ MFLOPS 2     256    171    169    169
+ IFMOPS       948    945    942    467
+ FIXPMOPS    9450   8540   5107   4251
+ COSMOPS        0      0      0      0
+ MFLOPS 3     238    181    180    167
+ EQUMOPS       56     55     55     55
+ EXPMOPS       13     13     13     12
+ millisec    5217   5217   5223   5234
+ MWIPS         52     52     52     52
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total     207    762    765    766      2     52  27348   3303    221
+
+ MWIPS     205 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.77993345260620117
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Thu May 13 00:19:04 2021
+
+               Results also in log file MPwhetres.txt
+

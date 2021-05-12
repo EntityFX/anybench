@@ -1,0 +1,53 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/busspeedil_arm-armv8-a+crc_O3_neon: unsupported flags DT_FLAGS_1=0x8000001
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+    BusSpeed armv7l armv8-a+crc optimized Wed May 12 18:19:39 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   2244   2718   3012   3289   3374   2755
+      32   1093   1230   1711   2555   2948   2627
+      64    473    495    748   1446   2200   2474
+     128    420    444    814   1468   2181   2567
+     256    318    351    698   1244   1906   2483
+     512    146    158    347    638   1096   2235
+    1024    158    165    318    601   1017   2182
+    4096    155    162    312    608   1025   2236
+   16384    152    160    305    513    926   2118
+   65536    147    157    302    597   1041   2173
+
+ Type additional information to include in busSpeed.txt - Press Enter

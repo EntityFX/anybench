@@ -1,0 +1,90 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/linpack_arm-armv7-a_Ofast_neoncortex-a15: unsupported flags DT_FLAGS_1=0x8000001
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation armv7l armv7-a optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00551    0.00023    0.00573     119.78     0.0167     0.1024
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.31 seconds
+      2000 times   0.59 seconds
+      4000 times   1.24 seconds
+Overhead for 1 matgen      0.00031 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.05 seconds
+       100 times   0.53 seconds
+       200 times   0.94 seconds
+       400 times   1.90 seconds
+Passes used        210 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00441    0.00014    0.00455     150.81     0.0133     0.0813
+    0.00441    0.00014    0.00455     150.82     0.0133     0.0813
+    0.00443    0.00014    0.00457     150.34     0.0133     0.0816
+    0.00442    0.00014    0.00456     150.60     0.0133     0.0814
+    0.00441    0.00014    0.00455     150.81     0.0133     0.0813
+Average                               150.68
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00029 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00442    0.00014    0.00456     150.56     0.0133     0.0814
+    0.00448    0.00015    0.00463     148.38     0.0135     0.0826
+    0.00443    0.00014    0.00458     149.97     0.0133     0.0818
+    0.00444    0.00014    0.00458     149.82     0.0133     0.0818
+    0.00443    0.00014    0.00457     150.16     0.0133     0.0817
+Average                               149.78
+
+##########################################
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+Unrolled Double  Precision      149.78 Mflops 
+
+

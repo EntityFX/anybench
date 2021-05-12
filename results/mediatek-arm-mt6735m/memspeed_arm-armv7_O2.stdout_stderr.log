@@ -1,0 +1,56 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/memspeed_arm-armv7_O2: unsupported flags DT_FLAGS_1=0x8000001
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+   Memory Reading Speed Test armv7l armv7 optimized Wed May 12 20:42:06 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1325   2074   3066   2008   2823   3226   2574   3529   3024
+      16    1327   2078   3091   2012   2831   3271   2585   3632   3095
+      32    1270   1904   2829   1875   2566   2914   2595   3639   3109
+      64    1239   1830   2588   1824   2471   2740   2478   3391   2919
+     128    1268   1860   2709   1852   2566   2652   2328   3290   2865
+     256    1250   1816   2639   1838   2507   1935   2471   3294   2910
+     512     988   1248   1428   1263   1216   1435   2292   2766   2493
+    1024     949   1165   1277   1196   1289   1289   1231   1237   1237
+    2048     951   1165   1195   1190   1292   1291   1165   1184   1178
+    4096     944   1166   1282   1182   1283   1264   1169   1159   1168
+    8192     931   1173   1282   1186   1293   1296   1171   1152   1174
+
+                End of test Wed May 12 20:42:23 2021
+

@@ -1,0 +1,56 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/memspeed_arm-armv8-a+crc_O3_neon: unsupported flags DT_FLAGS_1=0x8000001
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+   Memory Reading Speed Test armv7l armv8-a+crc optimized Wed May 12 20:44:23 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1325   2074   3061   2008   2824   3235   2577   3018   3019
+      16    1327   2079   3046   2012   2830   3239   2589   3097   3098
+      32    1266   1883   2856   1867   2551   2932   2595   3110   3109
+      64    1249   1830   2658   1824   2480   2447   2091   2870   2902
+     128    1252   1723   1890   1711   2436   2706   2311   2877   2889
+     256     775   1570   1792   1552   2112   2249   1924   2574   2431
+     512     860   1221   1185   1101   1184   1321   1539   1571   1968
+    1024     942   1063   1173   1159   1228   1221   1132   1126   1082
+    2048     910   1079   1152   1151   1211   1209   1026   1130   1103
+    4096     904   1119   1162   1114   1225   1226   1156   1145   1050
+    8192     868   1055   1180   1069   1157   1154   1072   1099   1043
+
+                End of test Wed May 12 20:44:41 2021
+

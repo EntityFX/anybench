@@ -1,0 +1,20 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/coremark_mp1_arm-armv6_Ofast: unsupported flags DT_FLAGS_1=0x8000001
+ERROR! Please define ee_ptr_int to a type that holds a pointer!
+2K performance run parameters for coremark.
+ERROR: ee_ptr_int is not a datatype that holds an int pointer!
+ERROR: Please modify the datatypes in core_portme.h!
+CoreMark Size    : 666
+Total ticks      : 15294
+Total time (secs): 15.294000
+Iterations/Sec   : 2615.404734
+Iterations       : 40000
+Compiler version : GCCClang 12.0.0
+Compiler flags   : -Ofast   -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x25b5
+Errors detected

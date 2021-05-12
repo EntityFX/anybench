@@ -1,0 +1,12 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/scimark2_arm-armv8-a_Ofast_neon: unsupported flags DT_FLAGS_1=0x8000001
+**                                                              **
+** SciMark2 Numeric Benchmark, see http://math.nist.gov/scimark **
+** for details. (Results can be submitted to pozo@nist.gov)     **
+**                                                              **
+Using       0.00 seconds min time per kenel.
+Composite Score:          119.85
+FFT             Mflops:   134.42    (N=1024)
+SOR             Mflops:   211.53    (100 x 100)
+MonteCarlo:     Mflops:     0.67
+Sparse matmult  Mflops:    97.09    (N=1000, nz=5000)
+LU              Mflops:   155.55    (M=100, N=100)

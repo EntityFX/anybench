@@ -1,0 +1,73 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/whetstone_arm-armv6_O2: unsupported flags DT_FLAGS_1=0x8000001
+
+##########################################
+Single Precision C Whetstone Benchmark armv7l armv6 optimized, Wed May 12 23:30:46 2021
+
+Calibrate
+       0.04 Seconds          1   Passes (x 100)
+       0.21 Seconds          5   Passes (x 100)
+       1.07 Seconds         25   Passes (x 100)
+       5.24 Seconds        125   Passes (x 100)
+
+Use 238  passes (x 100)
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156        24.879              0.184
+N2 floating point     -1.12274742126464844        24.767              1.292
+N3 if then else        1.00000000000000000                 970.216    0.025
+N4 fixed point        12.00000000000000000                 102.165    0.734
+N5 sin,cos etc.        0.49911010265350342                  10.136    1.954
+N6 floating point      0.99999982118606567        30.205              4.250
+N7 assignments         3.00000000000000000                 972.921    0.045
+N8 exp,sqrt etc.       0.75110864639282227                   5.876    1.507
+
+MWIPS                                            238.235              9.990
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

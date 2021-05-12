@@ -1,0 +1,3562 @@
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv6 optimized, Wed May 12 23:30:46 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156        24.879               0.184
+N2 floating point      -1.12274742126464844        24.767               1.292
+N3 if then else         1.00000000000000000                 970.216     0.025
+N4 fixed point         12.00000000000000000                 102.165     0.734
+N5 sin,cos etc.         0.49911010265350342                  10.136     1.954
+N6 floating point       0.99999982118606567        30.205               4.250
+N7 assignments          3.00000000000000000                 972.921     0.045
+N8 exp,sqrt etc.        0.75110864639282227                   5.876     1.507
+
+MWIPS                                             238.235               9.990
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv6 optimized, Wed May 12 23:31:05 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156        24.819               0.182
+N2 floating point      -1.12274742126464844        25.046               1.261
+N3 if then else         1.00000000000000000                 729.467     0.033
+N4 fixed point         12.00000000000000000                 101.947     0.726
+N5 sin,cos etc.         0.49911010265350342                  10.223     1.913
+N6 floating point       0.99999982118606567        29.469               4.301
+N7 assignments          3.00000000000000000                 728.583     0.060
+N8 exp,sqrt etc.        0.75110864639282227                   5.841     1.497
+
+MWIPS                                             235.646               9.973
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv6 optimized, Wed May 12 23:31:24 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070        25.134               0.205
+N2 floating point      -1.12191438674926758        25.963               1.392
+N3 if then else         1.00000000000000000                 729.133     0.038
+N4 fixed point         12.00000000000000000                 196.261     0.432
+N5 sin,cos etc.         0.49911010265350342                  10.141     2.207
+N6 floating point       0.99999982118606567        30.107               4.819
+N7 assignments          3.00000000000000000                 973.144     0.051
+N8 exp,sqrt etc.        0.75110864639282227                  11.751     0.852
+
+MWIPS                                             269.083               9.997
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:31:43 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.740               0.071
+N2 floating point      -1.12274742126464844       244.214               0.553
+N3 if then else         1.00000000000000000                 970.559     0.107
+N4 fixed point         12.00000000000000000                1212.015     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.119     3.955
+N6 floating point       0.99999982118606567       242.858               2.230
+N7 assignments          3.00000000000000000                 971.317     0.191
+N8 exp,sqrt etc.        0.75110864639282227                  14.290     2.614
+
+MWIPS                                            1005.906               9.981
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:32:02 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.687               0.071
+N2 floating point      -1.12274742126464844       244.119               0.557
+N3 if then else         1.00000000000000000                 972.236     0.108
+N4 fixed point         12.00000000000000000                1214.183     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.457     3.920
+N6 floating point       0.99999982118606567       242.846               2.246
+N7 assignments          3.00000000000000000                 971.195     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.216     2.646
+
+MWIPS                                            1010.861              10.001
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:32:21 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.191               0.071
+N2 floating point      -1.12274742126464844       243.707               0.556
+N3 if then else         1.00000000000000000                 970.598     0.107
+N4 fixed point         12.00000000000000000                1209.374     0.263
+N5 sin,cos etc.         0.49911010265350342                  21.334     3.931
+N6 floating point       0.99999982118606567       242.195               2.245
+N7 assignments          3.00000000000000000                 969.049     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.323     2.618
+
+MWIPS                                            1009.698               9.983
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:32:40 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.224               0.071
+N2 floating point      -1.12274742126464844       243.586               0.557
+N3 if then else         1.00000000000000000                 970.577     0.108
+N4 fixed point         12.00000000000000000                1212.639     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.383     3.926
+N6 floating point       0.99999982118606567       242.282               2.246
+N7 assignments          3.00000000000000000                 970.208     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.307     2.623
+
+MWIPS                                            1010.465               9.986
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:32:59 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.067               0.071
+N2 floating point      -1.12274742126464844       244.509               0.553
+N3 if then else         1.00000000000000000                 972.646     0.107
+N4 fixed point         12.00000000000000000                1212.219     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.425     3.907
+N6 floating point       0.99999982118606567       242.604               2.237
+N7 assignments          3.00000000000000000                 971.389     0.191
+N8 exp,sqrt etc.        0.75110864639282227                  14.335     2.611
+
+MWIPS                                            1012.323               9.938
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:33:18 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.796               0.071
+N2 floating point      -1.12274742126464844       242.415               0.560
+N3 if then else         1.00000000000000000                 971.154     0.108
+N4 fixed point         12.00000000000000000                1213.930     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.456     3.917
+N6 floating point       0.99999982118606567       239.094               2.279
+N7 assignments          3.00000000000000000                 973.128     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.297     2.628
+
+MWIPS                                            1008.421              10.016
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:33:37 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       271.823               0.071
+N2 floating point      -1.12274742126464844       243.602               0.553
+N3 if then else         1.00000000000000000                 970.061     0.107
+N4 fixed point         12.00000000000000000                1213.122     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.327     3.913
+N6 floating point       0.99999982118606567       242.665               2.229
+N7 assignments          3.00000000000000000                 961.710     0.193
+N8 exp,sqrt etc.        0.75110864639282227                  14.326     2.604
+
+MWIPS                                            1009.949               9.931
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:33:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       264.635               0.073
+N2 floating point      -1.12274742126464844       244.081               0.554
+N3 if then else         1.00000000000000000                 971.735     0.107
+N4 fixed point         12.00000000000000000                1214.168     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.373     3.916
+N6 floating point       0.99999982118606567       242.545               2.237
+N7 assignments          3.00000000000000000                 963.047     0.193
+N8 exp,sqrt etc.        0.75110864639282227                  14.196     2.636
+
+MWIPS                                            1008.255               9.978
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:34:14 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       271.602               0.071
+N2 floating point      -1.12274742126464844       244.099               0.553
+N3 if then else         1.00000000000000000                 972.649     0.107
+N4 fixed point         12.00000000000000000                1213.509     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.176     3.945
+N6 floating point       0.99999982118606567       242.892               2.230
+N7 assignments          3.00000000000000000                 726.674     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.221     2.626
+
+MWIPS                                             999.286              10.047
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:34:34 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.166               0.070
+N2 floating point      -1.12274742126464844       243.193               0.552
+N3 if then else         1.00000000000000000                 951.094     0.109
+N4 fixed point         12.00000000000000000                1211.269     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.384     3.883
+N6 floating point       0.99999982118606567       242.414               2.221
+N7 assignments          3.00000000000000000                 727.661     0.253
+N8 exp,sqrt etc.        0.75110864639282227                  14.322     2.592
+
+MWIPS                                            1004.095               9.939
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:34:52 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.351               0.071
+N2 floating point      -1.12274742126464844       244.110               0.552
+N3 if then else         1.00000000000000000                 971.848     0.107
+N4 fixed point         12.00000000000000000                1214.370     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.385     3.898
+N6 floating point       0.99999982118606567       242.871               2.225
+N7 assignments          3.00000000000000000                 728.343     0.254
+N8 exp,sqrt etc.        0.75110864639282227                  14.332     2.601
+
+MWIPS                                            1005.245               9.968
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:35:11 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       271.368               0.071
+N2 floating point      -1.12274742126464844       243.858               0.550
+N3 if then else         1.00000000000000000                 970.501     0.106
+N4 fixed point         12.00000000000000000                1213.194     0.259
+N5 sin,cos etc.         0.49911010265350342                  21.298     3.899
+N6 floating point       0.99999982118606567       242.340               2.221
+N7 assignments          3.00000000000000000                 727.660     0.253
+N8 exp,sqrt etc.        0.75110864639282227                  14.316     2.593
+
+MWIPS                                            1002.709               9.953
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:35:30 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.753               0.071
+N2 floating point      -1.12274742126464844       244.111               0.553
+N3 if then else         1.00000000000000000                 972.070     0.107
+N4 fixed point         12.00000000000000000                1214.366     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.436     3.897
+N6 floating point       0.99999982118606567       240.048               2.256
+N7 assignments          3.00000000000000000                 727.178     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.352     2.602
+
+MWIPS                                            1003.887              10.001
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:35:49 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.685               0.071
+N2 floating point      -1.12274742126464844       243.579               0.553
+N3 if then else         1.00000000000000000                 969.547     0.107
+N4 fixed point         12.00000000000000000                1213.613     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.362     3.906
+N6 floating point       0.99999982118606567       241.886               2.237
+N7 assignments          3.00000000000000000                 727.856     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.321     2.605
+
+MWIPS                                            1003.552               9.995
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:36:08 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.252               0.071
+N2 floating point      -1.12274742126464844       244.146               0.551
+N3 if then else         1.00000000000000000                 971.110     0.107
+N4 fixed point         12.00000000000000000                1214.475     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.382     3.895
+N6 floating point       0.99999982118606567       242.476               2.227
+N7 assignments          3.00000000000000000                 729.043     0.254
+N8 exp,sqrt etc.        0.75110864639282227                  14.336     2.598
+
+MWIPS                                            1004.924               9.961
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:36:27 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.179               0.070
+N2 floating point      -1.12274742126464844       243.564               0.551
+N3 if then else         1.00000000000000000                 965.401     0.107
+N4 fixed point         12.00000000000000000                1213.205     0.259
+N5 sin,cos etc.         0.49911010265350342                  21.381     3.883
+N6 floating point       0.99999982118606567       242.197               2.223
+N7 assignments          3.00000000000000000                 726.041     0.254
+N8 exp,sqrt etc.        0.75110864639282227                  14.281     2.600
+
+MWIPS                                            1003.319               9.947
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:36:46 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.265               0.049
+N2 floating point      -1.12191438674926758       355.977               0.404
+N3 if then else         1.00000000000000000                 970.754     0.114
+N4 fixed point         12.00000000000000000               14536.526     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.370     4.162
+N6 floating point       0.99999982118606567       239.857               2.404
+N7 assignments          3.00000000000000000                 727.830     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.352     2.590
+
+MWIPS                                            1067.163              10.017
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:37:04 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       419.432               0.049
+N2 floating point      -1.12191438674926758       355.877               0.403
+N3 if then else         1.00000000000000000                 970.639     0.114
+N4 fixed point         12.00000000000000000               14592.989     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.398     4.149
+N6 floating point       0.99999982118606567       242.787               2.371
+N7 assignments          3.00000000000000000                 728.576     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.317     2.591
+
+MWIPS                                            1070.229               9.970
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:37:22 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.202               0.049
+N2 floating point      -1.12191438674926758       355.895               0.402
+N3 if then else         1.00000000000000000                 970.689     0.114
+N4 fixed point         12.00000000000000000               14585.265     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.312     4.158
+N6 floating point       0.99999982118606567       242.739               2.367
+N7 assignments          3.00000000000000000                 728.330     0.270
+N8 exp,sqrt etc.        0.75110864639282227                  15.374     2.577
+
+MWIPS                                            1069.393               9.959
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:37:41 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       418.933               0.049
+N2 floating point      -1.12191438674926758       355.961               0.404
+N3 if then else         1.00000000000000000                 971.730     0.114
+N4 fixed point         12.00000000000000000               14527.556     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.377     4.161
+N6 floating point       0.99999982118606567       242.055               2.382
+N7 assignments          3.00000000000000000                 728.285     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.384     2.585
+
+MWIPS                                            1070.222               9.989
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:37:59 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.226               0.049
+N2 floating point      -1.12191438674926758       355.924               0.404
+N3 if then else         1.00000000000000000                 971.640     0.114
+N4 fixed point         12.00000000000000000               14524.263     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.421     4.156
+N6 floating point       0.99999982118606567       242.522               2.380
+N7 assignments          3.00000000000000000                 728.735     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.372     2.589
+
+MWIPS                                            1071.436               9.987
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:38:17 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.078               0.049
+N2 floating point      -1.12191438674926758       356.012               0.404
+N3 if then else         1.00000000000000000                 971.906     0.114
+N4 fixed point         12.00000000000000000               14519.191     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.406     4.159
+N6 floating point       0.99999982118606567       243.165               2.374
+N7 assignments          3.00000000000000000                 729.759     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.399     2.585
+
+MWIPS                                            1072.345               9.978
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:38:35 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       419.977               0.049
+N2 floating point      -1.12191438674926758       321.531               0.447
+N3 if then else         1.00000000000000000                 971.943     0.114
+N4 fixed point         12.00000000000000000               14553.903     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.405     4.155
+N6 floating point       0.99999982118606567       241.335               2.389
+N7 assignments          3.00000000000000000                 727.931     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.259     2.606
+
+MWIPS                                            1063.185              10.055
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7-a optimized, Wed May 12 23:38:53 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       419.127               0.049
+N2 floating point      -1.12191438674926758       355.674               0.400
+N3 if then else         1.00000000000000000                 970.330     0.113
+N4 fixed point         12.00000000000000000               14482.376     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.354     4.126
+N6 floating point       0.99999982118606567       242.349               2.357
+N7 assignments          3.00000000000000000                 728.079     0.269
+N8 exp,sqrt etc.        0.75110864639282227                  15.349     2.567
+
+MWIPS                                            1069.359               9.903
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7 optimized, Wed May 12 23:39:11 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.217               0.071
+N2 floating point      -1.12274742126464844       243.101               0.558
+N3 if then else         1.00000000000000000                 970.712     0.108
+N4 fixed point         12.00000000000000000                1209.399     0.263
+N5 sin,cos etc.         0.49911010265350342                  21.406     3.922
+N6 floating point       0.99999982118606567       242.479               2.245
+N7 assignments          3.00000000000000000                 970.686     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.302     2.624
+
+MWIPS                                            1010.806               9.982
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7 optimized, Wed May 12 23:39:30 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.508               0.069
+N2 floating point      -1.12274742126464844        61.576               2.161
+N3 if then else         1.00000000000000000                 948.624     0.108
+N4 fixed point         12.00000000000000000                1215.418     0.257
+N5 sin,cos etc.         0.49911010265350342                   6.179    13.329
+N6 floating point       0.99999982118606567       232.297               2.299
+N7 assignments          3.00000000000000000                 703.583     0.260
+N8 exp,sqrt etc.        0.75110864639282227                  14.054     2.620
+
+MWIPS                                             469.112              21.104
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv7 optimized, Wed May 12 23:40:00 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.211               0.047
+N2 floating point      -1.12191438674926758       351.481               0.399
+N3 if then else         1.00000000000000000                 976.373     0.111
+N4 fixed point         12.00000000000000000               14631.898     0.022
+N5 sin,cos etc.         0.49911010265350342                  21.569     4.023
+N6 floating point       0.99999982118606567       244.111               2.305
+N7 assignments          3.00000000000000000                 732.395     0.263
+N8 exp,sqrt etc.        0.75110864639282227                  15.435     2.514
+
+MWIPS                                            1077.018               9.684
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:40:18 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.078               0.071
+N2 floating point      -1.12274742126464844       245.286               0.553
+N3 if then else         1.00000000000000000                 970.949     0.108
+N4 fixed point         12.00000000000000000                1220.552     0.260
+N5 sin,cos etc.         0.49911010265350342                  21.171     3.965
+N6 floating point       0.99999982118606567       243.143               2.238
+N7 assignments          3.00000000000000000                 976.462     0.191
+N8 exp,sqrt etc.        0.75110864639282227                  14.392     2.608
+
+MWIPS                                            1009.589               9.994
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:40:37 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.757               0.072
+N2 floating point      -1.12274742126464844       245.356               0.557
+N3 if then else         1.00000000000000000                 976.423     0.108
+N4 fixed point         12.00000000000000000                1220.568     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.517     3.929
+N6 floating point       0.99999982118606567       243.913               2.247
+N7 assignments          3.00000000000000000                 976.408     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.424     2.620
+
+MWIPS                                            1017.434               9.986
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:40:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.813               0.071
+N2 floating point      -1.12274742126464844       245.387               0.555
+N3 if then else         1.00000000000000000                 976.284     0.107
+N4 fixed point         12.00000000000000000                1218.178     0.262
+N5 sin,cos etc.         0.49911010265350342                   3.213    26.255
+N6 floating point       0.99999982118606567        20.756              26.351
+N7 assignments          3.00000000000000000                 976.317     0.192
+N8 exp,sqrt etc.        0.75110864639282227                   1.290    29.241
+
+MWIPS                                             122.118              83.035
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:42:28 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.006               0.024
+N2 floating point      -1.12274742126464844       245.425               0.185
+N3 if then else         1.00000000000000000                 976.095     0.036
+N4 fixed point         12.00000000000000000                1220.833     0.087
+N5 sin,cos etc.         0.49911010265350342                  21.532     1.302
+N6 floating point       0.99999982118606567       244.110               0.745
+N7 assignments          3.00000000000000000                 976.224     0.064
+N8 exp,sqrt etc.        0.75110864639282227                  14.131     0.887
+
+MWIPS                                            1012.444               3.329
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:42:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.088               0.071
+N2 floating point      -1.12274742126464844       245.421               0.553
+N3 if then else         1.00000000000000000                 976.400     0.107
+N4 fixed point         12.00000000000000000                1220.478     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.562     3.897
+N6 floating point       0.99999982118606567       243.858               2.234
+N7 assignments          3.00000000000000000                 731.643     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.408     2.608
+
+MWIPS                                            1011.439               9.986
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:43:15 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.059               0.071
+N2 floating point      -1.12274742126464844       243.657               0.557
+N3 if then else         1.00000000000000000                 814.312     0.128
+N4 fixed point         12.00000000000000000                1212.291     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.541     3.897
+N6 floating point       0.99999982118606567       244.123               2.229
+N7 assignments          3.00000000000000000                 729.038     0.256
+N8 exp,sqrt etc.        0.75110864639282227                  14.421     2.603
+
+MWIPS                                            1008.728              10.003
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:43:34 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.882               0.071
+N2 floating point      -1.12274742126464844       237.073               0.572
+N3 if then else         1.00000000000000000                 976.349     0.107
+N4 fixed point         12.00000000000000000                1125.212     0.282
+N5 sin,cos etc.         0.49911010265350342                  21.565     3.893
+N6 floating point       0.99999982118606567       243.696               2.233
+N7 assignments          3.00000000000000000                 732.385     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.410     2.605
+
+MWIPS                                            1007.217              10.018
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:43:53 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.087               0.061
+N2 floating point      -1.12274742126464844       231.871               0.501
+N3 if then else         1.00000000000000000                 973.461     0.092
+N4 fixed point         12.00000000000000000                1216.488     0.224
+N5 sin,cos etc.         0.49911010265350342                  20.867     3.445
+N6 floating point       0.99999982118606567       243.906               1.911
+N7 assignments          3.00000000000000000                 730.595     0.219
+N8 exp,sqrt etc.        0.75110864639282227                  14.390     2.234
+
+MWIPS                                             994.835               8.685
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:44:19 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.236               0.049
+N2 floating point      -1.12191438674926758       357.811               0.404
+N3 if then else         1.00000000000000000                 976.364     0.114
+N4 fixed point         12.00000000000000000               14620.825     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.562     4.148
+N6 floating point       0.99999982118606567       244.116               2.375
+N7 assignments          3.00000000000000000                 732.347     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.125     2.644
+
+MWIPS                                            1071.958              10.028
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:44:38 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.240               0.049
+N2 floating point      -1.12191438674926758       357.309               0.402
+N3 if then else         1.00000000000000000                 967.749     0.114
+N4 fixed point         12.00000000000000000               14627.864     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.558     4.122
+N6 floating point       0.99999982118606567       243.326               2.368
+N7 assignments          3.00000000000000000                 732.327     0.270
+N8 exp,sqrt etc.        0.75110864639282227                  15.439     2.573
+
+MWIPS                                            1076.661               9.920
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:44:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.287               0.049
+N2 floating point      -1.12191438674926758       356.530               0.405
+N3 if then else         1.00000000000000000                 976.085     0.114
+N4 fixed point         12.00000000000000000               14624.388     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.577     4.141
+N6 floating point       0.99999982118606567       244.098               2.373
+N7 assignments          3.00000000000000000                 732.118     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.462     2.584
+
+MWIPS                                            1078.272               9.960
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a+crc optimized, Wed May 12 23:45:14 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.296               0.049
+N2 floating point      -1.12191438674926758       357.709               0.404
+N3 if then else         1.00000000000000000                 976.414     0.114
+N4 fixed point         12.00000000000000000               14632.468     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.569     4.150
+N6 floating point       0.99999982118606567       244.139               2.377
+N7 assignments          3.00000000000000000                 730.560     0.272
+N8 exp,sqrt etc.        0.75110864639282227                  15.422     2.595
+
+MWIPS                                            1077.532               9.986
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:45:32 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.905               0.071
+N2 floating point      -1.12274742126464844       244.998               0.557
+N3 if then else         1.00000000000000000                 976.369     0.108
+N4 fixed point         12.00000000000000000                1220.694     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.554     3.922
+N6 floating point       0.99999982118606567       243.987               2.246
+N7 assignments          3.00000000000000000                 976.496     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.403     2.624
+
+MWIPS                                            1017.740               9.983
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:45:51 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.053               0.071
+N2 floating point      -1.12274742126464844       245.417               0.556
+N3 if then else         1.00000000000000000                 976.322     0.108
+N4 fixed point         12.00000000000000000                1220.710     0.262
+N5 sin,cos etc.         0.49911010265350342                  21.570     3.919
+N6 floating point       0.99999982118606567       244.132               2.245
+N7 assignments          3.00000000000000000                 976.551     0.192
+N8 exp,sqrt etc.        0.75110864639282227                  14.424     2.620
+
+MWIPS                                            1018.678               9.974
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:46:09 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.495               0.006
+N2 floating point      -1.12274742126464844       245.329               0.049
+N3 if then else         1.00000000000000000                 975.480     0.010
+N4 fixed point         12.00000000000000000                1220.601     0.023
+N5 sin,cos etc.         0.49911010265350342                   8.465     0.885
+N6 floating point       0.99999982118606567       239.901               0.202
+N7 assignments          3.00000000000000000                 936.095     0.018
+N8 exp,sqrt etc.        0.75110864639282227                  13.162     0.254
+
+MWIPS                                             621.772               1.447
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:47:35 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       272.251               0.034
+N2 floating point      -1.12274742126464844       245.316               0.264
+N3 if then else         1.00000000000000000                 936.588     0.053
+N4 fixed point         12.00000000000000000                1219.714     0.124
+N5 sin,cos etc.         0.49911010265350342                   1.846    21.729
+N6 floating point       0.99999982118606567        11.519              22.570
+N7 assignments          3.00000000000000000                 971.052     0.092
+N8 exp,sqrt etc.        0.75110864639282227                   1.151    15.580
+
+MWIPS                                              79.741              60.446
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:48:39 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       259.172               0.003
+N2 floating point      -1.12274742126464844       245.428               0.020
+N3 if then else         1.00000000000000000                 965.047     0.004
+N4 fixed point         12.00000000000000000                1165.656     0.010
+N5 sin,cos etc.         0.49911010265350342                   0.251    11.936
+N6 floating point       0.99999982118606567       242.178               0.080
+N7 assignments          3.00000000000000000                 964.597     0.007
+N8 exp,sqrt etc.        0.75110864639282227                   0.096    13.897
+
+MWIPS                                              13.869              25.956
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:49:41 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.887               0.002
+N2 floating point      -1.12274742126464844         2.615               1.799
+N3 if then else         1.00000000000000000                 784.686     0.005
+N4 fixed point         12.00000000000000000                1142.827     0.010
+N5 sin,cos etc.         0.49911010265350342                  21.556     0.135
+N6 floating point       0.99999982118606567         3.211               5.880
+N7 assignments          3.00000000000000000                 878.579     0.007
+N8 exp,sqrt etc.        0.75110864639282227                  11.385     0.114
+
+MWIPS                                              44.014               7.952
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:49:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       274.474               0.001
+N2 floating point      -1.12274742126464844       244.774               0.004
+N3 if then else         1.00000000000000000                 976.901     0.001
+N4 fixed point         12.00000000000000000                1222.066     0.002
+N5 sin,cos etc.         0.49911010265350342                  21.533     0.031
+N6 floating point       0.99999982118606567       244.014               0.018
+N7 assignments          3.00000000000000000                 733.135     0.002
+N8 exp,sqrt etc.        0.75110864639282227                  13.325     0.022
+
+MWIPS                                             990.016               0.081
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:50:02 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       241.966               0.001
+N2 floating point      -1.12274742126464844       239.812               0.010
+N3 if then else         1.00000000000000000                 977.338     0.002
+N4 fixed point         12.00000000000000000                1192.487     0.004
+N5 sin,cos etc.         0.49911010265350342                  21.562     0.066
+N6 floating point       0.99999982118606567       238.393               0.038
+N7 assignments          3.00000000000000000                 730.666     0.004
+N8 exp,sqrt etc.        0.75110864639282227                  13.468     0.047
+
+MWIPS                                             985.595               0.172
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:50:05 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       266.738               0.002
+N2 floating point      -1.12274742126464844       240.810               0.012
+N3 if then else         1.00000000000000000                 966.545     0.002
+N4 fixed point         12.00000000000000000                1198.323     0.006
+N5 sin,cos etc.         0.49911010265350342                  21.001     0.087
+N6 floating point       0.99999982118606567       243.998               0.049
+N7 assignments          3.00000000000000000                 727.707     0.006
+N8 exp,sqrt etc.        0.75110864639282227                  13.392     0.061
+
+MWIPS                                             979.999               0.224
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:50:17 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       262.858               0.001
+N2 floating point      -1.12274742126464844       240.667               0.011
+N3 if then else         1.00000000000000000                 977.506     0.002
+N4 fixed point         12.00000000000000000                 999.475     0.006
+N5 sin,cos etc.         0.49911010265350342                  20.973     0.079
+N6 floating point       0.99999982118606567         0.999              10.794
+N7 assignments          3.00000000000000000                 672.107     0.005
+N8 exp,sqrt etc.        0.75110864639282227                  13.057     0.057
+
+MWIPS                                              18.254              10.956
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:50:41 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       260.316               0.008
+N2 floating point      -1.12274742126464844         0.936              14.790
+N3 if then else         1.00000000000000000                 690.192     0.015
+N4 fixed point         12.00000000000000000                 972.322     0.033
+N5 sin,cos etc.         0.49911010265350342                   7.848     1.092
+N6 floating point       0.99999982118606567         2.939              18.902
+N7 assignments          3.00000000000000000                 677.220     0.028
+N8 exp,sqrt etc.        0.75110864639282227                   0.937     4.087
+
+MWIPS                                              26.440              38.956
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:51:38 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156         0.624               2.831
+N2 floating point      -1.12274742126464844       214.495               0.058
+N3 if then else         1.00000000000000000                 967.658     0.010
+N4 fixed point         12.00000000000000000                 942.540     0.031
+N5 sin,cos etc.         0.49911010265350342                   0.592    12.935
+N6 floating point       0.99999982118606567        49.875               0.995
+N7 assignments          3.00000000000000000                 730.634     0.023
+N8 exp,sqrt etc.        0.75110864639282227                  13.182     0.260
+
+MWIPS                                              53.669              17.142
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:52:37 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.143               0.005
+N2 floating point      -1.12191438674926758        18.852               0.841
+N3 if then else         1.00000000000000000                 976.087     0.013
+N4 fixed point         12.00000000000000000               14645.587     0.003
+N5 sin,cos etc.         0.49911010265350342                   4.806     2.043
+N6 floating point       0.99999982118606567       242.074               0.263
+N7 assignments          3.00000000000000000                 731.380     0.030
+N8 exp,sqrt etc.        0.75110864639282227                   0.773     5.682
+
+MWIPS                                             132.895               8.879
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:53:41 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       422.844               0.001
+N2 floating point      -1.12191438674926758         0.424               3.806
+N3 if then else         1.00000000000000000                 784.183     0.002
+N4 fixed point         12.00000000000000000               11700.715     0.000
+N5 sin,cos etc.         0.49911010265350342                  20.922     0.048
+N6 floating point       0.99999982118606567       244.158               0.027
+N7 assignments          3.00000000000000000                 729.685     0.003
+N8 exp,sqrt etc.        0.75110864639282227                  14.303     0.031
+
+MWIPS                                              30.640               3.916
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:54:05 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       417.341               0.020
+N2 floating point      -1.12191438674926758       354.976               0.168
+N3 if then else         1.00000000000000000                 964.125     0.048
+N4 fixed point         12.00000000000000000               14165.689     0.010
+N5 sin,cos etc.         0.49911010265350342                   9.518     3.881
+N6 floating point       0.99999982118606567       244.105               0.981
+N7 assignments          3.00000000000000000                 732.416     0.112
+N8 exp,sqrt etc.        0.75110864639282227                  15.147     1.090
+
+MWIPS                                             703.572               6.311
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:54:17 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070        75.084               0.095
+N2 floating point      -1.12191438674926758       113.975               0.440
+N3 if then else         1.00000000000000000                 920.756     0.042
+N4 fixed point         12.00000000000000000               14568.532     0.008
+N5 sin,cos etc.         0.49911010265350342                   5.415     5.731
+N6 floating point       0.99999982118606567        61.171               3.289
+N7 assignments          3.00000000000000000                   9.309     7.404
+N8 exp,sqrt etc.        0.75110864639282227                   5.949     2.332
+
+MWIPS                                             192.840              19.342
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:54:56 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.304               0.041
+N2 floating point      -1.12191438674926758       356.332               0.341
+N3 if then else         1.00000000000000000                 973.214     0.096
+N4 fixed point         12.00000000000000000               14582.135     0.020
+N5 sin,cos etc.         0.49911010265350342                  21.140     3.562
+N6 floating point       0.99999982118606567       240.524               2.030
+N7 assignments          3.00000000000000000                 732.119     0.228
+N8 exp,sqrt etc.        0.75110864639282227                  15.417     2.184
+
+MWIPS                                            1064.475               8.502
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8-a optimized, Wed May 12 23:55:14 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       420.710               0.049
+N2 floating point      -1.12191438674926758       357.654               0.404
+N3 if then else         1.00000000000000000                 976.399     0.114
+N4 fixed point         12.00000000000000000               14631.626     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.561     4.144
+N6 floating point       0.99999982118606567       243.486               2.379
+N7 assignments          3.00000000000000000                 705.979     0.281
+N8 exp,sqrt etc.        0.75110864639282227                   4.800     8.323
+
+MWIPS                                             683.315              15.717
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:55:38 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156        85.973               0.088
+N2 floating point      -1.12274742126464844       102.591               0.516
+N3 if then else         1.00000000000000000                 975.446     0.042
+N4 fixed point         12.00000000000000000                1195.793     0.104
+N5 sin,cos etc.         0.49911010265350342                   6.889     4.759
+N6 floating point       0.99999982118606567       108.306               1.962
+N7 assignments          3.00000000000000000                  27.950     2.605
+N8 exp,sqrt etc.        0.75110864639282227                   3.027     4.842
+
+MWIPS                                             264.108              14.918
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:55:58 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       271.421               0.071
+N2 floating point      -1.12274742126464844       243.806               0.552
+N3 if then else         1.00000000000000000                 973.316     0.107
+N4 fixed point         12.00000000000000000                1216.340     0.259
+N5 sin,cos etc.         0.49911010265350342                  20.694     4.028
+N6 floating point       0.99999982118606567       244.106               2.214
+N7 assignments          3.00000000000000000                 976.364     0.190
+N8 exp,sqrt etc.        0.75110864639282227                  14.339     2.600
+
+MWIPS                                             999.897              10.021
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:56:17 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156        15.520               1.100
+N2 floating point      -1.12274742126464844       229.270               0.521
+N3 if then else         1.00000000000000000                 970.503     0.095
+N4 fixed point         12.00000000000000000                1216.894     0.230
+N5 sin,cos etc.         0.49911010265350342                   7.628     9.696
+N6 floating point       0.99999982118606567       243.656               1.968
+N7 assignments          3.00000000000000000                 724.914     0.227
+N8 exp,sqrt etc.        0.75110864639282227                  14.386     2.299
+
+MWIPS                                             550.958              16.136
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:56:52 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       273.911               0.071
+N2 floating point      -1.12274742126464844       245.392               0.553
+N3 if then else         1.00000000000000000                 976.509     0.107
+N4 fixed point         12.00000000000000000                1220.329     0.261
+N5 sin,cos etc.         0.49911010265350342                  21.570     3.896
+N6 floating point       0.99999982118606567       243.822               2.234
+N7 assignments          3.00000000000000000                 730.639     0.255
+N8 exp,sqrt etc.        0.75110864639282227                  14.416     2.606
+
+MWIPS                                            1011.648               9.984
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:57:11 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       421.735               0.049
+N2 floating point      -1.12191438674926758       357.645               0.403
+N3 if then else         1.00000000000000000                 975.952     0.114
+N4 fixed point         12.00000000000000000               14632.034     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.570     4.139
+N6 floating point       0.99999982118606567       244.114               2.371
+N7 assignments          3.00000000000000000                 732.388     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.452     2.583
+
+MWIPS                                            1078.114               9.953
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+
+##############################################
+
+Whetstone Single Precision C Benchmark  armv7l armv8.1-a optimized, Wed May 12 23:57:29 2021
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12391710281372070       421.813               0.049
+N2 floating point      -1.12191438674926758       357.779               0.404
+N3 if then else         1.00000000000000000                 976.562     0.114
+N4 fixed point         12.00000000000000000               14630.162     0.023
+N5 sin,cos etc.         0.49911010265350342                  21.577     4.145
+N6 floating point       0.99999982118606567       244.144               2.375
+N7 assignments          3.00000000000000000                 732.314     0.271
+N8 exp,sqrt etc.        0.75110864639282227                  15.459     2.587
+
+MWIPS                                            1078.428               9.968
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+

@@ -1,0 +1,4084 @@
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv6 optimized via C/C++ Wed May 12 19:09:00 2021
+
+ MFLOPS for 24 loops
+   19.7   18.9   20.2   20.8   19.8   18.3   20.5   16.2   20.3   36.0   17.6   14.1
+   13.9   14.0   20.9   15.7   21.8   13.3   19.7   13.4   20.4   17.5   19.3   17.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+    36.0    18.6    18.2    17.8    12.9
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv6 optimized via C/C++ Wed May 12 19:10:27 2021
+
+ MFLOPS for 24 loops
+   19.6   19.0   20.2   20.8   20.1   18.5   20.5   18.1   20.3   33.8   17.9   14.2
+   13.8   14.2   21.1   15.5   21.4   13.3   19.6   13.4   20.1   17.5   19.1   17.6
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+    34.9    18.6    18.2    17.8    13.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv6 optimized via C/C++ Wed May 12 19:11:55 2021
+
+ MFLOPS for 24 loops
+   20.2   18.7   20.2   19.8   20.4   18.4   19.5   17.3   19.9   34.7   16.7   13.7
+   13.4   14.3   21.1   15.6   21.2   13.6   19.1   13.6   20.3   17.4   19.3   15.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+    35.0    18.4    18.0    17.7    13.2
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:13:21 2021
+
+ MFLOPS for 24 loops
+  229.7  181.0  160.4  377.6  175.1  228.9  346.1  209.5  325.4  151.6  138.2  121.0
+   62.3   82.7  159.9  155.0  243.2  258.8  160.0  190.4  148.9   90.5  221.0   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   377.6   184.3   168.8   153.2    60.1
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:14:37 2021
+
+ MFLOPS for 24 loops
+  226.8  180.4  160.2  372.9  174.6  319.6  344.3  207.6  320.4  151.4  137.4  119.3
+   62.2   82.3  159.8  155.1  243.2  259.3  154.9  192.1  139.8   88.6  217.0   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   372.9   184.5   168.7   152.8    60.2
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:15:54 2021
+
+ MFLOPS for 24 loops
+  228.5  181.2  160.3  378.0  170.9  187.0  350.6  202.8  316.0  139.4  138.1  120.8
+   62.3   80.4  159.9  154.1  241.5  242.5  160.4  183.2  128.7   90.6  214.7   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.0   182.3   166.9   151.6    60.4
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:17:10 2021
+
+ MFLOPS for 24 loops
+  229.8  180.7  160.6  377.5  175.2  253.9  331.9  209.2  325.1  149.3  138.0  121.1
+   61.6   81.8  158.2  155.0  243.2  260.6  159.8  190.0  146.0   90.6  224.0   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   377.5   184.3   168.6   152.9    59.6
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:18:26 2021
+
+ MFLOPS for 24 loops
+  219.0  181.1  160.2  377.6  160.7  220.7  346.6  211.4  319.5  143.3  137.7  120.6
+   62.3   82.0  159.7  154.8  243.1  260.8  160.4  190.1  117.5   90.5  217.3   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   377.6   183.3   167.7   152.3    60.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:19:43 2021
+
+ MFLOPS for 24 loops
+  223.3  180.6  160.0  364.0  165.3  235.1  343.9  209.7  327.6  132.9  135.2  120.2
+   61.8   81.7  159.2  151.7  242.5  260.0  160.4  192.2  153.3   90.8  216.8   96.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   364.0   183.9   168.3   152.7    59.9
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:20:59 2021
+
+ MFLOPS for 24 loops
+  229.5  180.8  160.7  370.8  172.3  302.5  330.1  209.2  327.2  150.5  138.0  121.1
+   61.2   80.9  159.5  155.3  243.3  260.6  160.3  191.7  151.6   89.3  215.7   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   370.8   184.0   168.3   152.5    59.4
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:22:15 2021
+
+ MFLOPS for 24 loops
+  221.1  180.9  160.0  366.1  164.3  252.4  345.4  199.1  316.0  151.7  136.5  120.0
+   62.6   82.7  160.0  153.6  243.6  260.5  160.5  192.9  152.9   90.6  217.9   96.6
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   366.1   183.5   168.1   152.7    60.4
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:23:31 2021
+
+ MFLOPS for 24 loops
+  229.4  181.2  158.6  380.3  174.4  313.1  344.9  190.9  327.2  151.4  138.1  120.6
+   74.1   70.6  172.0  154.1  272.6  245.8  159.7  188.5  149.6   90.7  222.3   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.3   186.1   169.6   153.5    70.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:24:47 2021
+
+ MFLOPS for 24 loops
+  229.2  180.7  160.9  380.6  174.0  240.5  346.2  205.2  289.6  140.9  138.2  118.4
+   74.7   70.1  173.2  153.4  271.8  249.2  160.2  191.0  136.9   90.2  229.4   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.6   184.3   168.5   152.8    70.1
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:26:04 2021
+
+ MFLOPS for 24 loops
+  221.6  176.8  160.1  369.3  171.6  293.2  337.4  214.5  327.7  146.3  135.8  120.6
+   73.1   70.7  173.6  153.4  269.7  241.9  158.5  187.5  146.3   89.6  228.2   96.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   369.3   187.0   170.7   154.7    70.5
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:27:21 2021
+
+ MFLOPS for 24 loops
+  228.7  181.0  160.6  379.9  174.3  254.6  345.6  217.7  327.6  150.0  137.5  120.9
+   74.5   70.4  173.6  153.6  272.0  248.8  160.1  191.1  148.6   90.1  228.6   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   379.9   187.2   171.0   154.9    70.4
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:28:37 2021
+
+ MFLOPS for 24 loops
+  227.3  181.1  160.2  372.4  173.1  330.4  341.0  209.4  319.5  146.4  137.7  120.8
+   74.9   71.2  173.3  153.9  272.8  248.3  160.3  192.2  142.2   89.9  231.2   96.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   372.4   187.6   171.2   155.0    71.2
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:29:53 2021
+
+ MFLOPS for 24 loops
+  230.1  181.5  160.9  379.7  174.4  257.6  343.4  210.6  321.9  140.4  138.0  121.1
+   74.9   70.1  173.9  154.0  271.3  248.2  160.3  190.1  129.2   90.8  227.5   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   379.7   186.3   170.1   154.1    69.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:31:09 2021
+
+ MFLOPS for 24 loops
+  230.0  180.9  161.0  378.4  161.9  309.6  338.8  205.1  324.6  149.5  137.5  118.2
+   71.2   70.8  172.6  153.8  271.8  246.7  159.6  190.2  147.6   88.8  229.2   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.4   187.1   170.7   154.6    69.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:32:25 2021
+
+ MFLOPS for 24 loops
+  229.5  177.9  160.6  379.7  174.9  325.6  345.2  217.3  327.6  143.6  138.0  120.9
+   72.6   70.8  171.7  153.4  272.6  248.4  160.4  191.9  127.8   90.8  225.6   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   379.7   187.3   170.6   154.4    69.4
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:33:42 2021
+
+ MFLOPS for 24 loops
+  213.4  166.1  160.0  210.9  161.5  188.4  383.5  213.7  355.8  148.4  137.6  120.5
+   74.4   82.7  176.7  153.4  253.6  271.6  159.9  193.1  149.0   90.7  232.8   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   396.0   181.7   166.8   153.1    66.8
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:34:58 2021
+
+ MFLOPS for 24 loops
+  217.0  166.2  160.8  211.2  172.6  137.2  389.8  216.6  356.4  150.0  137.5  120.7
+   74.8   81.7  174.5  154.2  263.8  278.9  160.5  190.2  148.1   90.6  226.2   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   392.4   181.7   166.9   153.3    71.5
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:36:15 2021
+
+ MFLOPS for 24 loops
+  218.4  166.1  160.5  213.0  173.4  145.9  387.6  217.7  355.6  149.9  137.8  120.9
+   74.3   81.1  176.8  154.0  263.4  284.5  159.9  192.0  152.8   90.6  241.9   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   395.0   182.2   167.0   153.2    71.0
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:37:31 2021
+
+ MFLOPS for 24 loops
+  216.9  166.1  160.8  212.9  171.8  190.3  382.7  198.1  355.8  147.9  137.8  120.8
+   73.3   82.3  175.8  153.7  264.0  276.3  160.0  192.8  133.7   90.7  226.6   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   388.9   180.8   166.1   152.7    70.2
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:38:46 2021
+
+ MFLOPS for 24 loops
+  218.9  166.1  159.7  212.0  173.5  188.5  384.8  218.3  355.6  147.6  138.0  120.7
+   70.8   82.7  173.5  154.1  264.6  283.3  160.7  192.9  135.1   90.8  238.9   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   395.2   182.4   167.3   153.4    70.7
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:40:03 2021
+
+ MFLOPS for 24 loops
+  218.2  166.2  160.2  212.5  174.0  196.0  389.9  216.0  301.1  124.4  138.0  121.0
+   73.9   83.0  177.1  152.7  264.2  282.7  160.0  193.3  106.9   90.8  243.6   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   396.1   179.6   164.8   151.2    69.0
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:41:19 2021
+
+ MFLOPS for 24 loops
+  215.9  164.5  158.7  210.5  172.7  164.8  377.4  212.1  349.4  142.7  135.0  120.3
+   73.9   81.7  174.0  151.1  263.0  274.7  159.6  190.9  137.5   90.8  231.3   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   394.8   180.9   166.1   152.6    71.4
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7-a optimized via C/C++ Wed May 12 19:42:35 2021
+
+ MFLOPS for 24 loops
+  218.5  165.6  160.6  212.1  174.3  187.9  384.0  210.9  342.5  143.7  137.8  120.8
+   74.1   82.3  176.2  153.7  264.0  282.0  160.1  192.2  128.0   90.4  238.9   94.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   394.3   181.5   166.7   153.0    69.9
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7 optimized via C/C++ Wed May 12 19:43:51 2021
+
+ MFLOPS for 24 loops
+  229.6  181.2  160.7  378.7  175.5  249.4  346.0  195.0  322.2  143.8  137.6  120.6
+   61.9   83.0  159.6  155.0  243.2  259.8  160.4  189.4  145.5   90.8  221.6   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.7   183.8   168.2   152.6    59.9
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7 optimized via C/C++ Wed May 12 19:45:07 2021
+
+ MFLOPS for 24 loops
+  229.3  181.2  160.8  380.3  174.8  312.3  345.9  216.0  326.8  139.4  138.1  120.9
+   72.9   71.1  173.9  154.1  272.6  245.1  160.5  191.5  129.8   90.8  222.7   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.3   187.2   170.7   154.5    69.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv7 optimized via C/C++ Wed May 12 19:46:23 2021
+
+ MFLOPS for 24 loops
+  219.4  166.2  161.0  211.8  160.3  170.4  394.1  205.1  356.2  139.9  137.6  120.7
+   74.6   81.8  176.9  149.5  256.2  276.3  158.3  188.7  133.0   90.6  235.5   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   396.2   181.0   166.0   152.5    71.3
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:47:39 2021
+
+ MFLOPS for 24 loops
+  230.2  180.5  160.6  377.0  175.0  305.4  345.2  208.7  326.9  149.5  137.9  120.5
+   61.7   81.2  159.0  154.7  242.7  259.8  159.9  183.3  148.0   90.2  223.8   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   377.0   185.1   169.0   152.9    59.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:48:55 2021
+
+ MFLOPS for 24 loops
+  229.7  181.1  160.5  368.7  175.3  283.9  349.6  206.6  326.6  149.4  137.5  120.8
+   62.1   82.4  159.6  154.7  242.6  258.7  160.0  189.2  147.8   90.6  215.8   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   368.7   184.5   168.8   153.1    60.1
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:50:12 2021
+
+ MFLOPS for 24 loops
+  229.9  181.0  160.8  378.7  171.8  238.3  343.4  196.8  325.3  145.8  138.0  121.0
+   61.8   82.7  159.0  155.0  241.3  259.9  159.9  191.4  148.4   90.9  219.9   96.8
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.7   183.4   167.9   152.4    59.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:51:28 2021
+
+ MFLOPS for 24 loops
+  223.8  180.3  159.8  377.7  162.3  257.8  345.6  205.7  326.7  151.3  132.1  121.1
+   62.3   82.1  160.0  155.2  243.0  255.9  160.4  191.6  152.0   90.3  212.0   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   377.7   183.0   167.6   152.2    59.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:52:42 2021
+
+ MFLOPS for 24 loops
+  229.0  180.9  158.8  373.9  174.4  225.6  350.3  214.0  325.5  149.3  137.5  120.4
+   74.3   70.7  171.0  153.6  268.8  249.0  159.8  190.3  147.6   90.4  225.5   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   373.9   186.1   170.2   154.6    69.5
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:53:58 2021
+
+ MFLOPS for 24 loops
+  227.3  181.0  160.3  379.6  172.5  210.8  350.2  216.1  324.2  147.3  137.9  120.7
+   73.9   70.7  173.4  153.2  272.2  244.5  160.2  190.0  150.2   90.6  230.4   96.7
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   379.6   186.6   170.6   154.8    70.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:55:15 2021
+
+ MFLOPS for 24 loops
+  229.7  181.2  160.4  380.6  174.3  304.8  346.3  214.3  327.5  146.0  138.1  121.0
+   73.3   69.0  174.0  153.8  272.5  246.6  160.4  189.0  142.3   90.8  220.7   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.6   187.1   170.6   154.3    69.0
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:56:31 2021
+
+ MFLOPS for 24 loops
+  229.5  178.9  161.4  382.1  176.2  246.2  344.7  217.9  329.6  150.5  138.4  121.7
+   74.4   71.2  174.8  154.7  274.2  247.5  161.3  193.4  149.5   91.3  227.7   97.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   382.1   188.2   172.0   155.8    71.2
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 26.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implemenLinux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:57:47 2021
+
+ MFLOPS for 24 loops
+  221.1  167.2  161.9  214.6  176.3  155.5  392.3  209.3  357.6  152.4  139.0  121.6
+   75.2   82.7  178.1  154.8  265.7  284.7  160.6  193.7  154.1   91.3  233.1   97.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.1   183.3   168.4   154.7    72.2
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 19:59:03 2021
+
+ MFLOPS for 24 loops
+  214.7  166.4  161.8  213.1  167.8  166.9  388.0  220.4  350.4  150.7  138.0  120.9
+   72.0   83.0  178.0  154.7  265.3  285.9  161.3  194.4  150.3   91.1  236.5   95.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.2   183.1   167.9   153.8    69.2
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 20:00:20 2021
+
+ MFLOPS for 24 loops
+  220.9  165.8  161.8  214.6  175.8  196.9  397.0  219.4  358.5  148.3  138.9  121.2
+   74.3   83.5  177.7  154.8  265.7  285.2  161.3  193.3  142.6   91.1  241.2   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   397.0   184.0   168.7   154.7    71.0
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a+crc optimized via C/C++ Wed May 12 20:01:36 2021
+
+ MFLOPS for 24 loops
+  220.4  167.4  161.9  210.0  175.9  166.9  387.8  216.9  358.3  151.8  138.5  121.7
+   75.0   81.9  178.3  154.5  265.8  286.5  161.3  195.7  154.1   91.1  239.4   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.0   183.0   167.8   153.7    72.1
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:02:52 2021
+
+ MFLOPS for 24 loops
+  230.0  182.2  161.8  380.6  176.3  239.3  348.5  205.8  327.6  142.3  138.8  121.8
+   62.6   83.5  160.7  155.7  244.5  262.2  161.0  192.9  126.0   91.3  225.3   97.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.6   185.2   169.4   153.7    61.0
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:04:09 2021
+
+ MFLOPS for 24 loops
+  230.9  181.9  161.1  379.6  176.0  314.2  344.3  212.4  323.3  140.4  138.7  121.7
+   60.7   83.4  160.7  156.0  244.4  261.3  161.2  190.2  116.0   91.2  222.5   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   379.6   185.3   169.3   153.4    60.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:05:25 2021
+
+ MFLOPS for 24 loops
+  230.8  182.3  161.6  380.7  175.4  321.7  342.3  199.9  322.9  147.0  138.6  121.8
+   62.6   83.5  160.3  155.9  243.6  261.5  161.2  192.1  146.9   91.3  218.8   97.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.7   185.5   169.7   153.9    60.5
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:06:41 2021
+
+ MFLOPS for 24 loops
+  223.4  182.3  161.1  380.1  166.5  306.0  340.4  209.2  328.9  152.0  133.5  120.5
+   62.5   83.5  161.1  155.3  243.9  262.3  161.2  193.4  153.8   91.3  222.6   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.1   185.6   169.7   153.8    60.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:07:57 2021
+
+ MFLOPS for 24 loops
+  227.6  182.3  161.7  378.5  175.2  309.8  349.9  209.7  329.5  152.1  138.6  121.7
+   62.9   82.5  160.6  155.8  244.5  259.9  161.1  191.8  153.4   90.2  217.1   92.6
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.5   185.8   169.8   153.9    60.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:09:14 2021
+
+ MFLOPS for 24 loops
+  223.8  182.0  161.7  372.6  166.8  307.6  345.2  212.4  329.6  150.8  137.6  116.5
+   61.5   83.0  159.2  155.8  242.4  261.7  161.2  191.5  149.2   91.2  224.0   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   372.6   186.0   169.9   153.8    59.9
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:10:30 2021
+
+ MFLOPS for 24 loops
+  226.1  181.8  161.8  382.3  176.4  283.8  352.4  218.9  317.6  151.8  138.2  121.6
+   75.4   71.1  174.0  154.2  273.9  241.8  155.5  192.3  154.0   91.2  226.7   97.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   382.3   186.9   170.6   154.7    70.2
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:11:47 2021
+
+ MFLOPS for 24 loops
+  223.1  182.1  161.5  370.3  164.9  325.4  348.0  218.3  329.1  151.5  138.4  121.6
+   74.6   70.8  174.4  154.7  274.1  250.6  161.2  190.4  154.7   91.3  230.5   97.1
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   370.3   188.8   172.3   156.1    70.8
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:13:04 2021
+
+ MFLOPS for 24 loops
+  230.7  180.8  161.4  371.5  174.9  316.3  353.2  218.0  329.1  151.9  138.3  121.4
+   75.1   71.5  175.2  154.8  274.1  249.9  161.0  192.1  154.0   91.2  234.5   97.2
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   371.5   188.4   172.0   155.9    71.5
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:14:20 2021
+
+ MFLOPS for 24 loops
+  230.7  182.1  161.1  381.8  176.5  283.4  348.9  200.3  327.7  151.9  138.5  121.7
+   73.2   70.9  175.3  154.8  274.1  252.2  161.1  191.8  154.7   91.1  233.1   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   381.8   187.8   171.4   155.2    68.7
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:15:37 2021
+
+ MFLOPS for 24 loops
+  230.5  182.0  161.7  378.3  175.0  284.9  347.9  218.5  329.6  147.7  138.6  121.6
+   73.5   70.1  166.8  154.7  274.2  241.0  156.0  190.6  148.4   85.4  233.1   96.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   378.3   187.4   170.8   154.4    69.9
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:16:54 2021
+
+ MFLOPS for 24 loops
+  231.6  181.9  161.7  382.2  174.4  307.7  343.0  207.8  329.8  141.5  139.0  121.8
+   74.3   71.0  175.2  154.6  274.0  249.9  161.2  192.8  135.4   91.3  225.4   97.2
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   382.2   188.1   171.5   155.3    71.0
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:18:11 2021
+
+ MFLOPS for 24 loops
+  220.4  167.1  161.9  214.7  176.5  190.8  389.2  221.6  314.3  144.8  138.4  121.7
+   74.9   82.8  178.0  154.9  265.8  287.4  161.4  194.0  145.1   91.3  241.9   97.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.1   182.7   168.2   154.5    71.8
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:19:27 2021
+
+ MFLOPS for 24 loops
+  218.4  167.4  161.8  214.8  175.8  190.7  391.9  219.9  353.9  146.5  139.0  121.5
+   75.0   81.9  178.0  154.9  266.0  286.5  161.4  194.2  144.8   89.6  236.3   94.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.0   183.6   168.4   154.2    71.6
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:20:44 2021
+
+ MFLOPS for 24 loops
+  220.9  167.3  161.2  214.6  171.1  190.7  396.0  212.8  358.5  152.4  139.0  121.7
+   73.5   82.8  178.0  154.8  265.9  284.9  161.2  193.6  154.8   91.2  238.8   97.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   396.8   182.8   167.7   153.8    71.5
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:22:00 2021
+
+ MFLOPS for 24 loops
+  220.7  164.8  159.7  212.1  174.0  181.1  388.2  219.4  356.7  146.9  138.6  121.7
+   75.1   83.6  175.2  153.9  265.7  284.0  161.2  193.5  128.3   91.3  246.0   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   397.6   183.5   168.1   154.1    71.9
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:23:17 2021
+
+ MFLOPS for 24 loops
+  221.2  166.8  157.5  214.0  176.3  191.0  392.5  218.6  355.6  135.5  138.6  121.7
+   73.7   82.4  175.8  154.8  265.7  286.1  161.3  194.1  118.8   91.3  246.3   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   397.4   182.7   167.5   153.6    71.2
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8-a optimized via C/C++ Wed May 12 20:24:33 2021
+
+ MFLOPS for 24 loops
+  218.7  164.7  155.0  214.2  172.7  190.2  390.1  209.4  357.5  135.5  138.7  121.7
+   75.0   82.1  176.9  154.8  265.6  286.4  160.5  193.7  135.1   91.3  231.9   97.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.0   182.6   167.4   153.6    71.6
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:25:49 2021
+
+ MFLOPS for 24 loops
+  231.1  181.7  161.7  380.4  176.5  301.9  347.5  211.7  329.5  152.6  135.9  120.8
+   61.2   82.1  160.3  155.0  243.6  259.3  146.7  191.9  149.0   91.1  219.3   97.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   380.4   185.7   169.7   153.7    60.5
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:27:06 2021
+
+ MFLOPS for 24 loops
+  228.1  174.5  158.3  371.6  173.4  233.5  349.7  196.0  319.0  140.1  137.5  120.9
+   62.2   82.2  159.1  155.9  244.3  262.6  161.2  188.8  134.6   91.2  218.5   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   371.6   184.0   168.5   153.0    60.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:28:23 2021
+
+ MFLOPS for 24 loops
+  230.6  182.2  161.3  383.4  175.3  319.6  346.6  216.2  323.8  149.9  132.9  116.6
+   74.6   70.3  174.3  154.4  271.3  225.8  160.5  191.6  151.2   91.1  223.5   97.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   383.4   187.1   170.5   154.1    67.6
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:29:40 2021
+
+ MFLOPS for 24 loops
+  219.6  182.1  161.6  376.9  173.8  292.4  344.6  209.3  321.3  151.3  136.7  121.2
+   74.6   71.3  172.4  154.6  268.2  249.5  155.9  193.0  139.1   91.2  227.9   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   376.9   187.5   171.1   155.0    71.3
+
+ Numeric results were as expected
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:30:58 2021
+
+ MFLOPS for 24 loops
+  221.1  167.9  161.5  214.0  176.5  155.5  397.8  217.1  355.8  136.2  139.0  121.7
+   71.9   83.0  174.8  155.1  255.6  276.1  156.8  182.8  116.2   91.2  232.9   96.9
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   398.1   181.5   166.3   152.3    69.6
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
+ #####################################################
+
+ Livermore Loops Benchmark armv7l armv8.1-a optimized via C/C++ Wed May 12 20:32:14 2021
+
+ MFLOPS for 24 loops
+  220.7  167.3  161.7  214.5  175.9  189.1  389.0  219.9  351.9  148.7  139.0  121.7
+   73.6   82.5  177.7  154.9  262.4  273.1  161.2  193.8  151.7   91.3  237.1   97.4
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+   397.7   183.2   168.0   153.9    70.7
+
+ Section 1 Test  3 Non-standard result was  1.000742883066364e+01 expected  1.000742883066363e+01
+ Section 1 Test  6 Non-standard result was  4.375116344729990e+03 expected  4.375116344729986e+03
+ Section 1 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 1 Test 11 Non-standard result was  3.342910972650111e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141294429538e-05 expected  2.907141294167248e-05
+ Section 1 Test 14 Non-standard result was  3.165553044000336e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 1 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339351237e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710200e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 2 Test  5 Non-standard result was  4.589031939600984e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645333212e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784058e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005625799e+05 expected  1.501268005625795e+05
+ Section 2 Test 12 Non-standard result was  7.127569131071265e-06 expected  7.127569130821465e-06
+ Section 2 Test 15 Non-standard result was  3.943816690352043e+04 expected  3.943816690352044e+04
+ Section 2 Test 19 Non-standard result was  5.421816960147208e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178815432e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877232096e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376566698e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501563624e+04 expected  3.549900501563623e+04
+ Section 3 Test  3 Non-standard result was  2.699309089320673e-01 expected  2.699309089320672e-01
+ Section 3 Test  8 Non-standard result was  2.960543667875003e+03 expected  2.960543667875005e+03
+ Section 3 Test 11 Non-standard result was  6.551161335845773e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435981158204e-06 expected  1.943435981130448e-06
+ Section 3 Test 14 Non-standard result was  2.923540598671934e+06 expected  2.923540598672009e+06
+ Section 3 Test 18 Non-standard result was  9.700646212337042e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051004e+01 expected  1.268230698051003e+01
+ Section 3 Test 21 Non-standard result was  5.009945671204668e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728263971e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602749971e+02 expected  4.850340602749970e+02
+
+ Compiler #define or values in LLloops.c might to be changed
+
+ ########################################################
+
+
+SYSTEM INFORMATION
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+ 
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+ 
+
