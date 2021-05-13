@@ -1,0 +1,40 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/mpmflops_arm-armv7-a_Ofast_neoncortex-a15: unsupported flags DT_FLAGS_1=0x8000001
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  0.91 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 3.18.19+
+  #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016, armv7l
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 4 Threads, Wed May 12 22:27:58 2021
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    10000   1.028808     1991    0.764063   Yes
+ Data in & out    1024000     2     1000   2.356719      869    0.970753   Yes
+ Data in & out   10240000     2      100   2.355982      869    0.997008   Yes
+
+ Data in & out     102400     8    10000   1.530847     5351    0.850936   Yes
+ Data in & out    1024000     8     1000   2.453919     3338    0.982338   Yes
+ Data in & out   10240000     8      100   2.441652     3355    0.998200   Yes
+
+ Data in & out     102400    32    10000   6.471585     5063    0.660352   Yes
+ Data in & out    1024000    32     1000   6.565774     4991    0.953683   Yes
+ Data in & out   10240000    32      100   6.413139     5110    0.995203   Yes
+
+               End of test Wed May 12 22:28:31 2021
+
+ Press Enter

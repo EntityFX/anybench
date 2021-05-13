@@ -1,0 +1,60 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/whetstonemp_arm-armv6_O2: unsupported flags DT_FLAGS_1=0x8000001
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  0.91 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 3.18.19+
+  #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016, armv7l
+
+##############################################
+
+ Multithreading Single Precision Whetstones armv7l armv6 optimized
+
+             Using 2 threads - Wed May 12 23:57:47 2021
+
+ Calibrate
+    0.05154 Seconds          1   Passes (x 100)
+    0.24720 Seconds          5   Passes (x 100)
+
+ Use 202  passes (x 100)
+
+ MFLOPS 1       1      1
+ MFLOPS 2      25     25
+ IFMOPS       171    169
+ FIXPMOPS     240    235
+ COSMOPS        1      1
+ MFLOPS 3       2      2
+ EQUMOPS      283    283
+ EXPMOPS        6      6
+ millisec   95486  97093
+ MWIPS         21     21
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total      42      2     49      3      1     12    475    340    566
+
+ MWIPS      42 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.88113510608673096
+
+      Numeric results of the other 1 threads were same as above
+
+               End of test Thu May 13 00:00:06 2021
+
+               Results also in log file MPwhetres.txt
+

@@ -1,0 +1,56 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/memspeed_arm-armv7-a_O3: unsupported flags DT_FLAGS_1=0x8000001
+
+ ##########################################
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+   Memory Reading Speed Test armv7l armv7-a optimized Wed May 12 20:37:31 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1326   2075   3074   2008   2825   3236   2579   3029   3030
+      16    1327   2058   3016   2012   2828   3225   2590   3097   3098
+      32    1273   1928   2857   1877   2588   2889   2547   3094   3110
+      64    1246   1826   2632   1821   2469   2739   2586   3084   3083
+     128    1252   1832   2676   1832   2506   2778   2480   2905   2907
+     256    1189   1707   2372   1698   2250   2434   2469   2891   2912
+     512    1002   1270   1492   1273   1462   1495   2068   2238   2244
+    1024     949   1164   1291   1199   1293   1301   1245   1243   1249
+    2048     948   1162   1291   1200   1299   1302   1171   1184   1186
+    4096     941   1132   1157   1183   1284   1292   1144   1169   1166
+    8192     950   1170   1286   1185   1280   1294   1168   1176   1176
+
+                End of test Wed May 12 20:37:49 2021
+

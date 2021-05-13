@@ -1,0 +1,61 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/whetstonemp_arm-armv8.1-a_O3: unsupported flags DT_FLAGS_1=0x8000001
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 4, Configured CPUs 4
+  get_phys_pages() and size - RAM Size  0.91 GB, Page Size 4096 Bytes
+  uname() - Linux, localhost, 3.18.19+
+  #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016, armv7l
+
+##############################################
+
+ Multithreading Single Precision Whetstones armv7l armv8.1-a optimized
+
+             Using 4 threads - Thu May 13 00:27:31 2021
+
+ Calibrate
+    0.01450 Seconds          1   Passes (x 100)
+    0.06429 Seconds          5   Passes (x 100)
+    0.32269 Seconds         25   Passes (x 100)
+
+ Use 774  passes (x 100)
+
+ MFLOPS 1     271    254    244    229
+ MFLOPS 2     273    273    273    273
+ IFMOPS       972    972    971    970
+ FIXPMOPS   14357  14225  14136  14116
+ COSMOPS       21     21     21     21
+ MFLOPS 3     243    243    242    242
+ EQUMOPS      973    972    970    970
+ EXPMOPS       14     14     14     14
+ millisec    7471   7480   7420   7495
+ MWIPS       1036   1035   1043   1033
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total    4147    998   1091    969     86     56  56834   3885   3885
+
+ MWIPS    4128 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Thu May 13 00:27:41 2021
+
+               Results also in log file MPwhetres.txt
+

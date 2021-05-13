@@ -1,0 +1,64 @@
+WARNING: linker: /data/data/com.termux/files/home/anybench/bin/Linux/armv7l/whetstone_arm-armv8-a+crc_Ofast_neon: unsupported flags DT_FLAGS_1=0x8000001
+
+##########################################
+Single Precision C Whetstone Benchmark armv7l armv8-a+crc optimized, Wed May 12 23:44:38 2021
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.05 Seconds          5   Passes (x 100)
+       0.24 Seconds         25   Passes (x 100)
+       1.18 Seconds        125   Passes (x 100)
+       5.85 Seconds        625   Passes (x 100)
+
+Use 1068  passes (x 100)
+
+From File /proc/cpuinfo
+Processor	: ARMv7 Processor rev 4 (v7l)
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 32.39
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm sha2 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: MT6735M
+Revision	: 0000
+Serial		: 0000000000000000
+
+
+From File /proc/version
+Linux version 3.18.19+ (queen@scmbuild) (gcc version 4.8 (GCC) ) #2 SMP PREEMPT Thu Jun 30 18:21:33 CST 2016
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070       422.240              0.049
+N2 floating point     -1.12191438674926758       357.309              0.402
+N3 if then else        1.00000000000000000                 967.749    0.114
+N4 fixed point        12.00000000000000000               14627.864    0.023
+N5 sin,cos etc.        0.49911010265350342                  21.558    4.122
+N6 floating point      0.99999982118606567       243.326              2.368
+N7 assignments         3.00000000000000000                 732.327    0.270
+N8 exp,sqrt etc.       0.75110864639282227                  15.439    2.573
+
+MWIPS                                           1076.661              9.920
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
