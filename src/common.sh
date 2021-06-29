@@ -1,4 +1,9 @@
 #!/bin/bash
+
+current_arch=$(uname -m)
+current_uname=$(uname)
+cpus_count=$(getconf _NPROCESSORS_ONLN)
+
 # List of files to compile, with binary specific flags
 declare -A binaryCompileOptions
 binaryCompileOptions["drystone"]="dhry_1.c dhry_2.c cpuidc.c"
@@ -13,6 +18,11 @@ binaryCompileOptions["coremark_mp1"]="-Icoremark/linux64 -Icoremark -DPERFORMANC
 binaryCompileOptions["coremark_mp2"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=2 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
 binaryCompileOptions["coremark_mp4"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=4 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
 binaryCompileOptions["coremark_mp8"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=8 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
+
+if (( cpus_count > 8 )); then
+	binaryCompileOptions["coremark_mp${cpus_count}"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=${cpus_count} -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
+fi
+
 binaryCompileOptions["scimark2"]="-Iscimark2 scimark2/*.c -lm"
 
 current_arch=$(uname -m)
@@ -25,6 +35,10 @@ fi
 if [[ ${current_arch} == "i386" ]]; then
     current_arch="i386"
 fi
+
+echo -e "Arch: ${current_arch}\n"
+echo -e "Uname: ${current_uname}\n"
+echo -e "Cpu cores: ${cpus_count}\n"
 
 optFlags="-O2 -O3 -Ofast"
 
