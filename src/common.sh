@@ -60,7 +60,7 @@ compile_binary() {
     fi
     mkdir -p ${output_dir}
 
-    echo -e "Compiling ${BINARY} for ${ARCH} (${current_arch})\n"
+    echo -e "\033[0;32mCompiling ${BINARY} for ${ARCH} (${current_arch})\033[0m\n"
     FPUS="${targetToFPU[${ARCH}]}"
     MTUNES="${targetToFlags[${ARCH}]}"
     for FPU in "" ${FPUS}; do
@@ -68,6 +68,7 @@ compile_binary() {
             EXTRA_CFLAGS="${MTUNE} ${FPU}"
             for OPT in ${optFlags}; do
                 BINARY_NAME="${BINARY}_${SUFFIX}-${ARCH}${OPT//-/_}${FPU//-mfpu=/_}$(sed 's/^-m[a-z]\+=//' <<< ${MTUNE})"
+				echo -e "\033[0;36mCompiling ${BINARY_NAME}\033[0m"
                 declare -a BINARY_EXTRA_FLAGS
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
