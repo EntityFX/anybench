@@ -1,0 +1,109 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v5 optimized, Thu Jun 17 13:49:55 2021
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.10 Seconds         25   Passes (x 100)
+       0.50 Seconds        125   Passes (x 100)
+       2.48 Seconds        625   Passes (x 100)
+
+Use 2524  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 2
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 3
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 4
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 5
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 6
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 7
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: Linux version 5.4.91-0-rt50-e16c (user@elbrus16c_x2) (lcc:1.25.17:May-16-2021:e2k-v2-linux.cross:i386-linux) #161 SMP Fri Jun 11 12:31:40 MSK 2021
+
+
+From File /proc/version
+Linux version 5.4.91-0-rt50-e16c (user@elbrus16c_x2) (lcc:1.25.17:May-16-2021:e2k-v2-linux.cross:i386-linux) #161 SMP Fri Jun 11 12:31:40 MSK 2021
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       614.929              0.079
+N2 floating point     -1.12274742126464844       515.895              0.658
+N3 if then else        1.00000000000000000                1998.324    0.131
+N4 fixed point        12.00000000000000000                 881.911    0.902
+N5 sin,cos etc.        0.49911010265350342                  69.137    3.037
+N6 floating point      0.99999982118606567       499.781              2.724
+N7 assignments         3.00000000000000000                2997.967    0.156
+N8 exp,sqrt etc.       0.75110864639282227                  40.591    2.313
+
+MWIPS                                           2524.299              9.999
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

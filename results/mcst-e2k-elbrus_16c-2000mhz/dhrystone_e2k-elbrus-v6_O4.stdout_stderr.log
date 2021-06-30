@@ -1,0 +1,113 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    e2k elbrus-v6 optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.02 seconds 
+     1000000 runs   0.18 seconds 
+     2000000 runs   0.36 seconds 
+     4000000 runs   0.72 seconds 
+     8000000 runs   1.43 seconds 
+    16000000 runs   2.87 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    16000010
+Ptr_Glob->              Ptr_Comp:       *    20436112
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    20436112 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 2
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 3
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 4
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 2000
+bogomips	: 4000.00
+
+processor	: 5
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 6
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 7
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		:Linux version 5.4.0-2.11-e16c (root@elbrus16c) (lcc:1.25.15-bug131905:Apr--7-2021:e2k-v6-linux.cross:x86_64-linux) #1 SMP Mon Apr 19 20:00:26 GMT 2021
+
+
+From File /proc/version
+Linux version 5.4.0-2.11-e16c (root@elbrus16c) (lcc:1.25.15-bug131905:Apr--7-2021:e2k-v6-linux.cross:x86_64-linux) #1 SMP Mon Apr 19 20:00:26 GMT 2021
+
+
+Nanoseconds one Dhrystone run:       179.08
+Dhrystones per Second:              5584126
+VAX  MIPS rating =                  3178.22
+

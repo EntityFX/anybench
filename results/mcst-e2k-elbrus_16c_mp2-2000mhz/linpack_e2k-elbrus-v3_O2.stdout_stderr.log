@@ -1,0 +1,136 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation e2k elbrus-v3 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00250    0.00008    0.00258     265.99     0.0075     0.0461
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.14 seconds
+      2000 times   0.27 seconds
+      4000 times   0.54 seconds
+      8000 times   1.09 seconds
+Overhead for 1 matgen      0.00014 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.03 seconds
+       100 times   0.26 seconds
+       200 times   0.52 seconds
+       400 times   1.03 seconds
+Passes used        387 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00244    0.00008    0.00253     271.67     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.81     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.81     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.82     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.80     0.0074     0.0451
+Average                               271.78
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00014 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00244    0.00008    0.00253     271.88     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.87     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.87     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.88     0.0074     0.0451
+    0.00244    0.00008    0.00253     271.88     0.0074     0.0451
+Average                               271.87
+
+##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 1
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 2
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 3
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 4
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 5
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 6
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: 500
+bogomips	: 1000.00
+
+processor	: 7
+vendor_id	: Elbrus-MCST
+cpu family	: 6
+model		: 11
+model name	: E16C
+revision	: 0
+cpu MHz		: Linux version 5.4.91-0-rt50-e16c (user@elbrus16c_x2) (lcc:1.25.17:May-16-2021:e2k-v2-linux.cross:i386-linux) #161 SMP Fri Jun 11 12:31:40 MSK 2021
+
+
+From File /proc/version
+Linux version 5.4.91-0-rt50-e16c (user@elbrus16c_x2) (lcc:1.25.17:May-16-2021:e2k-v2-linux.cross:i386-linux) #161 SMP Fri Jun 11 12:31:40 MSK 2021
+
+
+Unrolled Double  Precision      271.78 Mflops 
+
+
