@@ -1,0 +1,44 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+cpu		: TI UltraSparc IIe (Hummingbird)
+fpu		: UltraSparc IIe integrated FPU
+pmu		: ultra12
+prom		: OBP 4.0.4 2001/03/22 15:42
+type		: sun4u
+ncpus probed	: 1
+ncpus active	: 1
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+Cpu0ClkTck	: 000000001dcd6500
+cpucaps		: flush,stbar,swap,muldiv,v9,mul32,div32,v8plus,vis
+MMU Type	: Spitfire
+MMU PGSZs	: 8K,64K,512K,4MB
+
+
+From File /proc/version
+Linux version 5.10.0-8-sparc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 Debian 5.10.46-1 (2021-06-24)
+
+
+   Memory Reading Speed Test sparc64 sparc64 optimized Wed Jul 14 15:55:40 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8    1131    835   1127   1863   1057   1219   1216    881    879
+      16    1135    836   1134   1866   1059   1220   1220    881    882
+      32     642    501    575    767    535    537   1210    883    883
+      64     632    496    568    758    530    530    474    447    502
+     128     630    496    567    755    528    530    467    441    495
+     256     403    337    366    444    352    352    246    233    244
+     512     248    216    225    258    222    220    131    127    128
+    1024     215    187    194    220    190    191    108    105    106
+    2048     213    186    193    218    190    190    106    103    104
+    4096     214    187    193    219    191    190    106    104    104
+    8192     219    184    190    222    187    187    108    106    107
+
+                End of test Wed Jul 14 15:56:13 2021
+

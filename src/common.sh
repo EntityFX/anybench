@@ -25,9 +25,6 @@ fi
 
 binaryCompileOptions["scimark2"]="-Iscimark2 scimark2/*.c -lm"
 
-current_arch=$(uname -m)
-current_uname=$(uname)
-
 if [[ ${current_arch} == "x86_64" ]]; then
     current_arch="amd64"
 fi
@@ -73,7 +70,7 @@ compile_binary() {
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
                 fi
-                ${CC} ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} -march=${ARCH} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+                ${CC} ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
                 chmod +x ${output_dir}/${BINARY_NAME}
             done
         done

@@ -1,0 +1,76 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation sparc64 sparc64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00806    0.00026    0.00833      82.45     0.0243     0.1487
+
+Calculating matgen overhead
+        10 times   0.01 seconds
+       100 times   0.09 seconds
+      1000 times   0.94 seconds
+      2000 times   1.89 seconds
+Overhead for 1 matgen      0.00095 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.09 seconds
+       100 times   0.89 seconds
+       200 times   1.78 seconds
+Passes used        112 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00799    0.00025    0.00824      83.31     0.0240     0.1472
+    0.00798    0.00025    0.00823      83.43     0.0240     0.1470
+    0.00797    0.00025    0.00822      83.57     0.0239     0.1467
+    0.00797    0.00025    0.00822      83.58     0.0239     0.1467
+    0.00796    0.00025    0.00821      83.61     0.0239     0.1467
+Average                                83.50
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00095 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00813    0.00025    0.00837      81.99     0.0244     0.1495
+    0.00812    0.00025    0.00837      82.08     0.0244     0.1494
+    0.00813    0.00025    0.00838      81.97     0.0244     0.1496
+    0.00811    0.00025    0.00836      82.12     0.0244     0.1493
+    0.00813    0.00025    0.00838      81.91     0.0244     0.1497
+Average                                82.01
+
+##########################################
+
+From File /proc/cpuinfo
+cpu		: TI UltraSparc IIe (Hummingbird)
+fpu		: UltraSparc IIe integrated FPU
+pmu		: ultra12
+prom		: OBP 4.0.4 2001/03/22 15:42
+type		: sun4u
+ncpus probed	: 1
+ncpus active	: 1
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+Cpu0ClkTck	: 000000001dcd6500
+cpucaps		: flush,stbar,swap,muldiv,v9,mul32,div32,v8plus,vis
+MMU Type	: Spitfire
+MMU PGSZs	: 8K,64K,512K,4MB
+
+
+From File /proc/version
+Linux version 5.10.0-8-sparc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 Debian 5.10.46-1 (2021-06-24)
+
+
+Unrolled Double  Precision       82.01 Mflops 
+
+
