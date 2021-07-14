@@ -1,0 +1,41 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+cpu		: TI UltraSparc IIe (Hummingbird)
+fpu		: UltraSparc IIe integrated FPU
+pmu		: ultra12
+prom		: OBP 4.0.4 2001/03/22 15:42
+type		: sun4u
+ncpus probed	: 1
+ncpus active	: 1
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+Cpu0ClkTck	: 000000001dcd6500
+cpucaps		: flush,stbar,swap,muldiv,v9,mul32,div32,v8plus,vis
+MMU Type	: Spitfire
+MMU PGSZs	: 8K,64K,512K,4MB
+
+
+From File /proc/version
+Linux version 5.10.0-8-sparc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 Debian 5.10.46-1 (2021-06-24)
+
+    BusSpeed sparc64 sparc64 optimized Wed Jul 14 15:25:21 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16    592    413    523    547    567    574
+      32    351    285    285    283    376    400
+      64    354    286    291    284    377    400
+     128    362    290    291    282    364    392
+     256     55     52     87    134    216    289
+     512     31     29     52     87    153    229
+    1024     26     25     45     78    139    214
+    4096     26     25     45     77    137    211
+   16384     26     25     44     77    137    211
+   65536     26     25     45     77    137    212
+
+ Type additional information to include in busSpeed.txt - Press Enter

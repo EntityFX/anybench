@@ -1,0 +1,51 @@
+
+##########################################
+Single Precision C Whetstone Benchmark sparc64 sparc64 optimized, Wed Jul 14 15:58:00 2021
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.12 Seconds          5   Passes (x 100)
+       0.58 Seconds         25   Passes (x 100)
+       2.91 Seconds        125   Passes (x 100)
+
+Use 428  passes (x 100)
+
+From File /proc/cpuinfo
+cpu		: TI UltraSparc IIe (Hummingbird)
+fpu		: UltraSparc IIe integrated FPU
+pmu		: ultra12
+prom		: OBP 4.0.4 2001/03/22 15:42
+type		: sun4u
+ncpus probed	: 1
+ncpus active	: 1
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+Cpu0ClkTck	: 000000001dcd6500
+cpucaps		: flush,stbar,swap,muldiv,v9,mul32,div32,v8plus,vis
+MMU Type	: Spitfire
+MMU PGSZs	: 8K,64K,512K,4MB
+
+
+From File /proc/version
+Linux version 5.10.0-8-sparc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 Debian 5.10.46-1 (2021-06-24)
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       189.556              0.043
+N2 floating point     -1.12274742126464844       153.238              0.375
+N3 if then else        1.00000000000000000                 995.549    0.044
+N4 fixed point        12.00000000000000000                 829.940    0.162
+N5 sin,cos etc.        0.49911010265350342                   5.960    5.975
+N6 floating point      0.99999982118606567       165.895              1.392
+N7 assignments         3.00000000000000000                 498.084    0.159
+N8 exp,sqrt etc.       0.75110864639282227                   8.215    1.938
+
+MWIPS                                            424.221             10.089
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

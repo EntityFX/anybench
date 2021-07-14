@@ -1,0 +1,56 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    sparc64 sparc64 optimized
+Register option not selected
+
+       10000 runs   0.01 seconds 
+      100000 runs   0.08 seconds 
+      200000 runs   0.16 seconds 
+      400000 runs   0.31 seconds 
+      800000 runs   0.62 seconds 
+     1600000 runs   1.30 seconds 
+     3200000 runs   2.50 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.     3200010
+Ptr_Glob->              Ptr_Comp:       *    1082496
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1082496 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+
+From File /proc/cpuinfo
+cpu		: TI UltraSparc IIe (Hummingbird)
+fpu		: UltraSparc IIe integrated FPU
+pmu		: ultra12
+prom		: OBP 4.0.4 2001/03/22 15:42
+type		: sun4u
+ncpus probed	: 1
+ncpus active	: 1
+D$ parity tl1	: 0
+I$ parity tl1	: 0
+Cpu0ClkTck	: 000000001dcd6500
+cpucaps		: flush,stbar,swap,muldiv,v9,mul32,div32,v8plus,vis
+MMU Type	: Spitfire
+MMU PGSZs	: 8K,64K,512K,4MB
+
+
+From File /proc/version
+Linux version 5.10.0-8-sparc64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 Debian 5.10.46-1 (2021-06-24)
+
+
+Nanoseconds one Dhrystone run:       781.14
+Dhrystones per Second:              1280184
+VAX  MIPS rating =                   728.62
+
