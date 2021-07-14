@@ -1,7 +1,7 @@
 # Include common functions and operations
 source common.sh
 
-targetToFlags["sparc64"]=""
+targetToFlags["sparc64"]="-mcpu=v9"
 dotToFPU["sparc64"]=""
 
 for BINARY in "${!binaryCompileOptions[@]}"; do
