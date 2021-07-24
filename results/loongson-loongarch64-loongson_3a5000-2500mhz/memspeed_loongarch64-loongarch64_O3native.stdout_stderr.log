@@ -1,0 +1,75 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+system type		: generic-loongson-machine
+machine			: Unknown
+processor		: 0
+package			: 0
+core			: 0
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+CPU MHz			: 2500.00
+BogoMIPS		: 4992.00
+tlb_entries		: 2112
+isa			: loongarch32 loongarch64
+ASEs implemented	: cpucfg lamo lsx lasx lvz lbt
+kscratch registers	: 3
+idle instruction	: yes
+microsecond timers	: yes
+hardware watchpoint	: yes, iwatch count: 8, dwatch count: 8
+
+processor		: 1
+package			: 0
+core			: 1
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+CPU MHz			: 2500.00
+BogoMIPS		: 4992.00
+tlb_entries		: 2112
+isa			: loongarch32 loongarch64
+ASEs implemented	: cpucfg lamo lsx lasx lvz lbt
+kscratch registers	: 3
+idle instruction	: yes
+microsecond timers	: yes
+hardware watchpoint	: yes, iwatch count: 8, dwatch count: 8
+
+processor		: 2
+package			: 0
+core			: 2
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+Linux version 4.19.167-rc5.lnd.1-loongson-3 (root@loongson-pc) (gcc version 8.3.0 (Debian 8.3.0-6.lnd.10)) #1 SMP Sat Apr 17 07:32:32 UTC 2021
+
+
+From File /proc/version
+Linux version 4.19.167-rc5.lnd.1-loongson-3 (root@loongson-pc) (gcc version 8.3.0 (Debian 8.3.0-6.lnd.10)) #1 SMP Sat Apr 17 07:32:32 UTC 2021
+
+
+   Memory Reading Speed Test loongarch64 loongarch64 optimized Sat Jul 24 21:27:06 2021
+                 Copyright (C) 2013, Roy Longbottom
+
+  Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
+  KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
+    Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
+
+       8   27040  26391  26478  26891  26374  26462  14904  15701  15251
+      16   25903  26523  26567  25383  26521  26558  14183  15293  15081
+      32   25174  26589  26611  24754  26589  26607  14116  15021  14764
+      64   24833  26614  26630  24466  26616  26628  14041  14890  14747
+     128   17701  14871  19378  19084  14872  19377   8566   8402   8782
+     256   17572  14875  19381  19029  14875  19379   8573   8394   8446
+     512   16774  16165  20699  18155  16164  20696   8939   8903   9090
+    1024   16758  16166  20702  18133  16167  20700   8945   8884   9101
+    2048   16693  16178  20891  18159  16174  20890   8930   8892   9095
+    4096   16677  16178  20889  18165  16183  20888   8979   8919   9072
+    8192   16395  15490  19784  17580  15499  19794   8920   8885   9088
+
+                End of test Sat Jul 24 21:27:24 2021
+

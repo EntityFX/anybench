@@ -1,0 +1,72 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+system type		: generic-loongson-machine
+machine			: Unknown
+processor		: 0
+package			: 0
+core			: 0
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+CPU MHz			: 2500.00
+BogoMIPS		: 4992.00
+tlb_entries		: 2112
+isa			: loongarch32 loongarch64
+ASEs implemented	: cpucfg lamo lsx lasx lvz lbt
+kscratch registers	: 3
+idle instruction	: yes
+microsecond timers	: yes
+hardware watchpoint	: yes, iwatch count: 8, dwatch count: 8
+
+processor		: 1
+package			: 0
+core			: 1
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+CPU MHz			: 2500.00
+BogoMIPS		: 4992.00
+tlb_entries		: 2112
+isa			: loongarch32 loongarch64
+ASEs implemented	: cpucfg lamo lsx lasx lvz lbt
+kscratch registers	: 3
+idle instruction	: yes
+microsecond timers	: yes
+hardware watchpoint	: yes, iwatch count: 8, dwatch count: 8
+
+processor		: 2
+package			: 0
+core			: 2
+cpu model		: Loongson-64bit
+model name		: Loongson-3A5000
+CPU Revision		: 0x10
+FPU Revision		: 0x00
+Linux version 4.19.167-rc5.lnd.1-loongson-3 (root@loongson-pc) (gcc version 8.3.0 (Debian 8.3.0-6.lnd.10)) #1 SMP Sat Apr 17 07:32:32 UTC 2021
+
+
+From File /proc/version
+Linux version 4.19.167-rc5.lnd.1-loongson-3 (root@loongson-pc) (gcc version 8.3.0 (Debian 8.3.0-6.lnd.10)) #1 SMP Sat Apr 17 07:32:32 UTC 2021
+
+    BusSpeed loongarch64 loongarch64 optimized Sat Jul 24 21:04:28 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  12464  11527  13315  13639  13720  13762
+      32  13898  12809  13428  13719  13754  13744
+      64   9300   9167  13147  13312  13401  13152
+     128   3922   3942   6533   9877   9979  10651
+     256   3910   3943   6584   9897   9986  10656
+     512   2142   2146   4996   8499   9793  10751
+    1024   2144   2147   5006   8462   9797  10753
+    4096   2148   2150   5015   8323   9806  10775
+   16384    793    997   1875   4177   6695   8876
+   65536    514    689   1308   3618   6438   9258
+
+ Type additional information to include in busSpeed.txt - Press Enter

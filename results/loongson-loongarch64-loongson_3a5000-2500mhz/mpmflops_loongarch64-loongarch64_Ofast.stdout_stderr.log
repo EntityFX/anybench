@@ -1,0 +1,32 @@
+
+  ####################################################
+  getDetails and MHz
+
+ ##########################################
+
+From File /proc/cpuinfo
+
+
+From File /proc/version
+  Assembler CPUID and RDTSC      
+
+ MP-MFLOPS Compiled for loongarch64 Sat Jul 24 21:34:28 2021
+
+    FPU Add & Multiply using 1, 2, 4 and 8 Threads
+
+        2 Ops/Word              32 Ops/Word
+ KB     12.8     128   12800    12.8     128   12800
+ MFLOPS
+ 1T     2884    2200    1879    5112    5011    4926
+ 2T     5581    5757    3649   10183   10222    9826
+ 4T    10381   11393    7186   20145   20416   19589
+ 8T     9851   11220    7671   20061   20377   19637
+ Results x 100000, 0 indicates ERRORS
+ 1T    76406   97075   99969   66020   95364   99952
+ 2T    76406   97075   99969   66020   95364   99952
+ 4T    76406   97075   99969   66020   95364   99952
+ 8T    76406   97075   99969   66020   95364   99952
+
+         End of test Sat Jul 24 21:34:30 2021
+
+Type additional information to include in MP-MFLOPS.txt - Press Enter

@@ -2,8 +2,9 @@
 
 # Include common functions and operations
 source common.sh
+binaryCompileOptions["mpmflops"]="-I./include/ mp/mpmflops_s.c mp/cpuidc64.c -pthread -lm -lrt"
 
-targetToFlags["loongarch64"]="-march=loongarch64"
+targetToFlags["loongarch64"]="-march=native"
 targetToFPU["loongarch64"]=""
 
 
