@@ -8,6 +8,7 @@
 
 using namespace std;
 
+#define BENCMARK_RENDER_TIME 400.0f
 #define PLAY_FREQ 48000
 #define INV_PLAY_FREQ (1.0f / PLAY_FREQ)
 #define MAX_SAMPLES 8
@@ -350,7 +351,7 @@ void render_to_memory(float seconds)
 
 int main()
 {
-  render_to_memory(200.0f);
-//  render_to_file("result.wav", 200.0f);
+  render_to_memory(BENCMARK_RENDER_TIME);
+//  render_to_file("result.wav", BENCMARK_RENDER_TIME);
   return 0;
 }
