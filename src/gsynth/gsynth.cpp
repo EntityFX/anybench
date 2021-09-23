@@ -316,7 +316,7 @@ void render_to_memory(float seconds)
   int freq = PLAY_FREQ;
 
   double hz = freq;
-  int N = hz * seconds;
+  int N = (int(hz * seconds) | 255) + 1;
 
   {
     float * samples = new float[N];
