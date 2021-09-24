@@ -207,7 +207,7 @@ void warmup()
 {
   float seconds = 1.0f;
   double hz = 48000.0;
-  int N = hz * seconds;
+  int N = (int(hz * seconds) | 255) + 1;
 
   float * samples = new float[N];
   memset(samples, 0, sizeof(samples[0]) * N);
@@ -260,7 +260,7 @@ void render_to_file(const char *file_name, float seconds)
   f << "data----";
 
   double hz = freq;
-  int N = hz * seconds;
+  int N = (int(hz * seconds) | 255) + 1;
 
   {
     float * samples = new float[N];
