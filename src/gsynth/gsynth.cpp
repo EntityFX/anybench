@@ -6,6 +6,10 @@
 #include <fstream>
 #include <iostream>
 
+
+#define likely(x)       __builtin_expect((x), 1)
+#define unlikely(x)     __builtin_expect((x), 0)
+
 using namespace std;
 
 #define BENCMARK_RENDER_TIME 400.0f
@@ -15,9 +19,9 @@ using namespace std;
 
 inline float clampf(float v, float minv, float maxv)
 {
-  if (v < minv)
+  if (unlikely(v < minv))
     return minv;
-  else if (v > maxv)
+  else if (unlikely(v > maxv))
     return maxv;
   return v;
 }
@@ -154,6 +158,7 @@ template<int MAX_GRANULAS> struct GSynth
     float envAdvance = INV_PLAY_FREQ * envAdvanceMul;
     float phaseStep = 0.5f;
 
+    #pragma loop count (256)
     for (int smp = 0; smp < count; smp++)
     {
       float sum = 0.0f;
@@ -172,12 +177,12 @@ template<int MAX_GRANULAS> struct GSynth
         sum += g.amp * env * v;
 
         g.envTime += envAdvance;
-        if (g.envTime >= 1.0f)
+        if (unlikely(g.envTime >= 1.0f))
           nextEnv(g, i, granulas[i == 0 ? MAX_GRANULAS - 1 : i - 1].t);
 
         g.t += g.speed * timeAdvance;
 
-        if (g.t >= 1.0f)
+        if (unlikely(g.t >= 1.0f))
           g.t -= int(g.t);
       }
 
@@ -187,7 +192,7 @@ template<int MAX_GRANULAS> struct GSynth
       sum -= bias;
 
       shutterPos += shutterAdvance;
-      if (shutterPos >= 2.0f)
+      if (unlikely(shutterPos >= 2.0f))
         shutterPos -= int(shutterPos);
       float sh = sqr(sqr(1.0f - fabsf(1.0f - shutterPos) * shutterDepth));
       sum = lerpf(prevVal, sum, sh);
