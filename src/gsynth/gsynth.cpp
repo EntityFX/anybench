@@ -41,7 +41,7 @@ inline float sqr(float x)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-static short samples[MAX_SAMPLES] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
+static float samples[MAX_SAMPLES] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
 
 inline float get_sample(float pos)
 {
