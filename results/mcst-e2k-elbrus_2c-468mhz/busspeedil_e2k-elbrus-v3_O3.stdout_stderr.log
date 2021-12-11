@@ -1,0 +1,54 @@
+
+ ##########################################
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 6
+cpu MHz		: 467.840160
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 937.17
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 6
+cpu MHz		: 467.840160
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 935.66
+
+
+
+From File /proc/version
+Linux version 3.14.79-13.84-e3s (root@maa) (lcc:1.21.26:Sep--7-2018:e2k-v2-linux.cross:i386-linux) #1 SMP Wed Sep 26 15:21:05 GMT 2018
+
+    BusSpeed e2k elbrus-v3 optimized Sat Dec 11 15:15:14 2021
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16   2596   2403   3209   3607   3830   6083
+      32   3491   3095   3617   3835   3971   6186
+      64   3354   3265   3802   3477   3643   5626
+     128   3162   2988   3139   2496   2458   3982
+     256   2753   3113   3395   2488   2438   3983
+     512   1619   2058   2576   2036   2053   3410
+    1024    527    693   1084    891   1134   1975
+    4096    336    423    690    599    814   1451
+   16384    344    421    680    598    809   1446
+   65536    348    419    682    599    808   1447
+
+ Type additional information to include in busSpeed.txt - Press Enter

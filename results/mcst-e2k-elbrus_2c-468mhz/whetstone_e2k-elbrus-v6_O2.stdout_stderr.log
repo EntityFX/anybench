@@ -1,0 +1,64 @@
+
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v6 optimized, Sat Dec 11 18:55:15 2021
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.44 Seconds         25   Passes (x 100)
+       2.21 Seconds        125   Passes (x 100)
+
+Use 566  passes (x 100)
+
+From File /proc/cpuinfo
+processor	: 0
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 6
+cpu MHz		: 467.840160
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 937.17
+
+processor	: 1
+vendor_id	: MONOCUB
+cpu family	: 4
+model		: 4
+model name	: E2C+DSP
+revision	: 6
+cpu MHz		: 467.840160
+L1 cache size	: 64 KB
+L1 cache line length	: 32 bytes
+L2 cache size	: 1024 KB
+L2 cache line length	: 64 bytes
+bogomips	: 935.66
+
+
+
+From File /proc/version
+Linux version 3.14.79-13.84-e3s (root@maa) (lcc:1.21.26:Sep--7-2018:e2k-v2-linux.cross:i386-linux) #1 SMP Wed Sep 26 15:21:05 GMT 2018
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       133.500              0.081
+N2 floating point     -1.12274742126464844       111.582              0.682
+N3 if then else        1.00000000000000000                 465.626    0.126
+N4 fixed point        12.00000000000000000                 218.952    0.814
+N5 sin,cos etc.        0.49911010265350342                  15.169    3.105
+N6 floating point      0.99999982118606567       116.820              2.613
+N7 assignments         3.00000000000000000                 700.852    0.149
+N8 exp,sqrt etc.       0.75110864639282227                   8.689    2.423
+
+MWIPS                                            566.357              9.994
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
