@@ -20,7 +20,7 @@ case ${current_uname} in
 	*)
 		extraLinkerOptions="-lrt"
 esac
-binaryCompileOptions["drystone"]="dhry_1.c dhry_2.c cpuidc.c ${extraLinkerOptions}"
+binaryCompileOptions["dhrystone"]="dhry_1.c dhry_2.c cpuidc.c ${extraLinkerOptions}"
 binaryCompileOptions["whetstone"]="whets.c cpuidc.c -lm ${extraLinkerOptions}"
 binaryCompileOptions["memspeed"]="memspeed.c cpuidc.c -lm ${extraLinkerOptions}"
 binaryCompileOptions["linpack"]="linpack.c cpuidc.c -lm ${extraLinkerOptions}"

@@ -1,0 +1,40 @@
+
+##########################################
+Single Precision C Whetstone Benchmark arm64 armv8.4-a optimized, Tue Dec 14 21:41:15 2021
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.04 Seconds         25   Passes (x 100)
+       0.21 Seconds        125   Passes (x 100)
+       1.04 Seconds        625   Passes (x 100)
+       5.19 Seconds       3125   Passes (x 100)
+
+Use 6020  passes (x 100)
+
+From File /proc/cpuinfo
+ Cannot open /proc/cpuinfo
+
+
+From File /proc/version
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391710281372070      1526.581              0.076
+N2 floating point     -1.12191438674926758      1434.884              0.564
+N3 if then else        1.00000000000000000                4005.618    0.156
+N4 fixed point        12.00000000000000000               201992.562    0.009
+N5 sin,cos etc.        0.49911010265350342                 199.546    2.510
+N6 floating point      0.99999982118606567       762.817              4.257
+N7 assignments         3.00000000000000000                7989.950    0.139
+N8 exp,sqrt etc.       0.75110864639282227                  97.652    2.293
+
+MWIPS                                           6017.655             10.004
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+

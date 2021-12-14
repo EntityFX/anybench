@@ -1,0 +1,61 @@
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum 0 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 10, Configured CPUs 10
+  get_phys_pages() and size - RAM Size 64.00 GB, Page Size 16384 Bytes
+  uname() - Darwin, Vladimirs-MacBook-Pro-M1.local, 21.2.0
+  Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:41 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T6000, arm64
+
+##############################################
+
+ Multithreading Single Precision Whetstones arm64 armv8.4-a optimized
+
+             Using 10 threads - Tue Dec 14 21:42:57 2021
+
+ Calibrate
+    0.00273 Seconds          1   Passes (x 100)
+    0.01149 Seconds          5   Passes (x 100)
+    0.05645 Seconds         25   Passes (x 100)
+    0.28157 Seconds        125   Passes (x 100)
+
+ Use 4439  passes (x 100)
+
+ MFLOPS 1     951    949    947    946    945    943    940    937    936    930
+ MFLOPS 2     944    938    937    936    935    934    931    930    928    927
+ IFMOPS      3804   3802   3801   3792   3784   3772   3743   3726   3725   3703
+ FIXPMOPS  157534 157146 157057 156793 156529 156441 154594 152603 125971 111408
+ COSMOPS      185    185    185    185    185    185    184    184    183    183
+ MFLOPS 3     723    722    720    720    720    719    719    718    717    717
+ EQUMOPS     6181   6133   6123   6122   6112   6067   6054   6047   6015   6004
+ EXPMOPS       88     88     88     88     88     88     88     88     88     88
+ millisec    8213   8197   8187   8193   8187   8169   8213   8194   8224   8213
+ MWIPS       5405   5415   5422   5418   5422   5434   5405   5417   5398   5405
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+ Total   54140   9424   9340   7198   1844    8811486076  37652  60858
+
+ MWIPS   53813 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 9 threads were same as above
+
+               End of test Tue Dec 14 21:43:08 2021
+
+               Results also in log file MPwhetres.txt
+
