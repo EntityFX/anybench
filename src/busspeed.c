@@ -68,71 +68,6 @@ char resultchars[1000];
       }
   }
 
-
-int main(int argc, char *argv[])
-{
-    FILE    *outfile;
-    int g;
-    
-    outfile = fopen("busSpeed.txt","a+");
-    if (outfile == NULL)
-    {
-        printf ("Cannot open results file \n\n");
-        printf(" Press Enter\n");
-        g  = getchar();
-        exit (0);
-    }
-    printf("\n");
-    getDetails();
- 
-    printf(" ##########################################\n"); 
-    fprintf (outfile, " #####################################################\n\n");                     
-
-    printf ("\nFrom File /proc/cpuinfo\n");
-    printf("%s\n", configdata[0]);
-    printf ("\nFrom File /proc/version\n");
-    printf("%s\n", configdata[1]);
-
-    local_time();
-
-    printf("    BusSpeed %s %s ", options, timeday);
-    printf("      Copyright (C) 2013, Roy Longbottom\n\n");
-    printf("    Reading Speed 4 Byte Words in MBytes/Second\n");
-    printf("  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
-    printf("  KBytes  Words  Words  Words  Words  Words    All\n\n");
-
-    fprintf(outfile, "   BusSpeed %s %s ", options, timeday);
-    fprintf(outfile, "\n    Reading Speed 4 Byte Words in MBytes/Second\n");
-    fprintf(outfile, "  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
-    fprintf(outfile, "  KBytes  Words  Words  Words  Words  Words    All\n\n");
-
-    for (ipass=0; ipass<10; ipass++)
-    {
-        calcPass();
-        printf("%s", resultchars); 
-        fprintf(outfile, "%s", resultchars); 
-    }
-    local_time();
-    fprintf(outfile, "\n        End of test %s", timeday);
-
-     fprintf (outfile, "\nSYSTEM INFORMATION\n\nFrom File /proc/cpuinfo\n");
-    fprintf (outfile, "%s \n", configdata[0]);
-    fprintf (outfile, "\nFrom File /proc/version\n");
-    fprintf (outfile, "%s \n", configdata[1]);
-    fprintf (outfile, "\n");
-    fflush(outfile);
-
-    char moredata[1024];
-    printf("\n Type additional information to include in busSpeed.txt - Press Enter\n");
-    /*if (fgets (moredata, sizeof(moredata), stdin) != NULL)
-             fprintf (outfile, "Additional information - %s\n", moredata);*/
-
-    fflush(outfile);
-    fclose(outfile);
-           
-    return 1;
-}
-
 int calcPass()
 {
    int i, g, p;
@@ -216,6 +151,70 @@ int calcPass()
 } // runAllTests
 
 
+
+int main(int argc, char *argv[])
+{
+    FILE    *outfile;
+    int g;
+    
+    outfile = fopen("busSpeed.txt","a+");
+    if (outfile == NULL)
+    {
+        printf ("Cannot open results file \n\n");
+        printf(" Press Enter\n");
+        g  = getchar();
+        exit (0);
+    }
+    printf("\n");
+    getDetails();
+ 
+    printf(" ##########################################\n"); 
+    fprintf (outfile, " #####################################################\n\n");                     
+
+    printf ("\nFrom File /proc/cpuinfo\n");
+    printf("%s\n", configdata[0]);
+    printf ("\nFrom File /proc/version\n");
+    printf("%s\n", configdata[1]);
+
+    local_time();
+
+    printf("    BusSpeed %s %s ", options, timeday);
+    printf("      Copyright (C) 2013, Roy Longbottom\n\n");
+    printf("    Reading Speed 4 Byte Words in MBytes/Second\n");
+    printf("  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
+    printf("  KBytes  Words  Words  Words  Words  Words    All\n\n");
+
+    fprintf(outfile, "   BusSpeed %s %s ", options, timeday);
+    fprintf(outfile, "\n    Reading Speed 4 Byte Words in MBytes/Second\n");
+    fprintf(outfile, "  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read\n");
+    fprintf(outfile, "  KBytes  Words  Words  Words  Words  Words    All\n\n");
+
+    for (ipass=0; ipass<10; ipass++)
+    {
+        calcPass();
+        printf("%s", resultchars); 
+        fprintf(outfile, "%s", resultchars); 
+    }
+    local_time();
+    fprintf(outfile, "\n        End of test %s", timeday);
+
+     fprintf (outfile, "\nSYSTEM INFORMATION\n\nFrom File /proc/cpuinfo\n");
+    fprintf (outfile, "%s \n", configdata[0]);
+    fprintf (outfile, "\nFrom File /proc/version\n");
+    fprintf (outfile, "%s \n", configdata[1]);
+    fprintf (outfile, "\n");
+    fflush(outfile);
+
+    char moredata[1024];
+    printf("\n Type additional information to include in busSpeed.txt - Press Enter\n");
+    /*if (fgets (moredata, sizeof(moredata), stdin) != NULL)
+             fprintf (outfile, "Additional information - %s\n", moredata);*/
+
+    fflush(outfile);
+    fclose(outfile);
+           
+    return 1;
+}
 
 void runAll()
 {

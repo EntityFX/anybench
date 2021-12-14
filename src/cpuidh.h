@@ -13,6 +13,10 @@ extern  int    megaHz;
 extern int     CPUconf;
 extern int     CPUavail;
 
+int getDetails();
+void start_time();
+void end_time();
+void local_time();
 
 #ifdef __cplusplus
 };

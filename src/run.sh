@@ -1,10 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source common.sh
 
 RESULT_DIR="../results/${current_arch}"
 mkdir -p "${RESULT_DIR}"
 
-for BINARY in $(ls ../bin/${current_uname}/${current_arch}/); do
+BIN_DIR="../bin/${os_name}/${current_arch}"
+for BINARY in $(ls ${BIN_DIR}/); do
+    [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
     echo "Running ${BINARY}"
-    ../bin/${current_uname}/${current_arch}/${BINARY} n &> "${RESULT_DIR}/${BINARY}.stdout_stderr.log" 
+    "${BIN_DIR}/${BINARY}" n &> "${RESULT_DIR}/${BINARY}.stdout_stderr.log" 
 done

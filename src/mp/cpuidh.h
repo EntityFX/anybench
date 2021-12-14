@@ -20,6 +20,11 @@ extern  int     hasSSE2;
 extern  int     hasSSE3;
 extern  int     has3DNow;
 
+int getDetails();
+void start_time();
+void end_time();
+void local_time();
+
 #ifdef __cplusplus
 };
 #endif
