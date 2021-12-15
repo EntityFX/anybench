@@ -244,6 +244,37 @@ ostream& write_word(ostream& outs, Word value, unsigned size = sizeof(Word))
 
 volatile float global_freq[3] = {40, 60, 90};
 
+void fill_samples(float * samples, int N, float seconds)
+{
+
+  memset(samples, 0, sizeof(samples[0]) * N);
+
+  const int TONES = 3;
+  GSynth<16> synth[TONES];
+  synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
+  synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
+  synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
+
+
+  clock_t start, stop;
+  start = clock();
+
+  int step = 256;
+  float baseFreq = 0.5;
+  int sampleIndex = 0;
+  for (int i = 0; i < N; i += step)
+    for (int t = 0; t < TONES; t++)
+      synth[t].fillBuffer(samples + i, step);
+
+
+  stop = clock();
+  double time = double(stop - start) / CLOCKS_PER_SEC;
+  double score = seconds / time;
+  printf("g_synth_length_seconds=%g\n", seconds);
+  printf("g_synth_time=%g\n", time);
+  printf("g_synth_score=%g\n", score);
+}
+
 void render_to_file(const char *file_name, float seconds)
 {
   warmup();
@@ -267,45 +298,18 @@ void render_to_file(const char *file_name, float seconds)
   double hz = freq;
   int N = (int(hz * seconds) | 255) + 1;
 
+  float *samples = new float[N];
+  fill_samples(samples, N, seconds);
+
+  for (int n = 0; n < N; n++)
   {
-    float * samples = new float[N];
-    memset(samples, 0, sizeof(samples[0]) * N);
-
-    const int TONES = 3;
-    GSynth<16> synth[TONES];
-    synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
-    synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
-    synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
-
-
-    clock_t start, stop;
-    start = clock();
-
-    int step = 256;
-    float baseFreq = 0.5;
-    int sampleIndex = 0;
-    for (int i = 0; i < N; i += step)
-      for (int t = 0; t < TONES; t++)
-        synth[t].fillBuffer(samples + i, step);
-
-
-    stop = clock();
-    double time = double(stop - start) / CLOCKS_PER_SEC;
-    double score = seconds / time;
-    printf("g_synth_length_seconds=%g\n", seconds);
-    printf("g_synth_time=%g\n", time);
-    printf("g_synth_score=%g\n", score);
-
-    for (int n = 0; n < N; n++)
-    {
-      float value = clampf(samples[n], -1.0f, 1.0f) * 32760;
+    float value = clampf(samples[n], -1.0f, 1.0f) * 32760;
+    write_word(f, (int)(value), 2);
+    if (channels > 1)
       write_word(f, (int)(value), 2);
-      if (channels > 1)
-        write_word(f, (int)(value), 2);
-    }
-
-    delete[] samples;
   }
+
+  delete[] samples;
 
   size_t file_length = f.tellp();
 
@@ -320,53 +324,27 @@ void render_to_memory(float seconds)
 {
   warmup();
 
-  int channels = 1;
   int freq = PLAY_FREQ;
 
   double hz = freq;
   int N = (int(hz * seconds) | 255) + 1;
 
-  {
-    float * samples = new float[N];
-    memset(samples, 0, sizeof(samples[0]) * N);
+  float *samples = new float[N];
+  fill_samples(samples, N, seconds);
 
-    const int TONES = 3;
-    GSynth<16> synth[TONES];
-    synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
-    synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
-    synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
-
-
-    clock_t start, stop;
-    start = clock();
-
-    int step = 256;
-    float baseFreq = 0.5;
-    int sampleIndex = 0;
-    for (int i = 0; i < N; i += step)
-      for (int t = 0; t < TONES; t++)
-        synth[t].fillBuffer(samples + i, step);
-
-    _tmp += samples[1234];
-
-    stop = clock();
-    double time = double(stop - start) / CLOCKS_PER_SEC;
-    double score = seconds / time;
-    printf("g_synth_length_seconds=%g\n", seconds);
-    printf("g_synth_time=%g\n", time);
-    printf("g_synth_score=%g\n", score);
-
-    delete[] samples;
-  }
+  delete[] samples;
 }
 
 int main(int argc, char * argv[])
 {
   float seconds = BENCHMARK_RENDER_TIME;
-  if (argc == 2) {
+  if (argc >= 2) {
     seconds = std::stof(argv[1]);
   }
+  if (argc == 3) {
+      render_to_file(argv[2], seconds);
+      return 0;
+  }
   render_to_memory(seconds);
-//  render_to_file("result.wav", BENCHMARK_RENDER_TIME);
   return 0;
 }
