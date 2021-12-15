@@ -15,9 +15,10 @@ taskset 0x00000001 ./MPmflops64
  #include <stdio.h>
  #include <stdlib.h>
  #include "cpuidh.h"
- #include <malloc.h>
  #include <mm_malloc.h>
- #include <pthread.h> 
+ #include <pthread.h>
+ #include <ctype.h>
+ #include <string.h>
 
  char   heading[40]  = "64 Bit MP SSE MFLOPS Benchmark 1";
 // char   heading[40]  = "32 Bit MP i87 MFLOPS Benchmark 1";
@@ -124,6 +125,7 @@ taskset 0x00000001 ./MPmflops64
        }   
  
     }
+    return 0;
  }
 
  // main program that executes in the CPU

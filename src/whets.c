@@ -344,7 +344,7 @@ int main(int argc, char *argv[])
        }
        else
        {       
-        fprintf (outfile, "            %9.3f %9.3f\n",
+        fprintf (outfile, "            %9.3f %9.3f %24.17f\n",
              loop_mops[section], loop_time[section], results[section]);
        }
     }

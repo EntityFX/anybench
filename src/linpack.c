@@ -79,6 +79,7 @@
 #define NTIMES 10
 
 #include <stdio.h>
+#include <string.h>
 #include <math.h>
 #include <stdlib.h>
 #include "cpuidh.h"
@@ -99,7 +100,7 @@ static REAL atime[9][15];
 double runSecs = 1;
 
 
-main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
         static REAL aa[200*200],a[200*201],b[200],x[200];       
         REAL cray,ops,total,norma,normx;

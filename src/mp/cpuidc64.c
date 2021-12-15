@@ -49,9 +49,52 @@
   int     hasSSE3 = 0;
   int     has3DNow = 0;
 
-  #include <sys/sysinfo.h> 
-  #include <sys/utsname.h> 
+#if defined(__MACH__) && !defined(CLOCK_REALTIME)
+        #include <sys/time.h>
+        #define CLOCK_REALTIME 0
+        // clock_gettime is not implemented on older versions of OS X (< 10.12).
+        // If implemented, CLOCK_REALTIME will have already been defined.
+        int clock_gettime(int clk_id, struct timespec* t) {
+                struct timeval now;
+                int rv = gettimeofday(&now, NULL);
+                if (rv) return rv;
+                t->tv_sec  = now.tv_sec;
+                t->tv_nsec = now.tv_usec * 1000;
+                return 0;
+        }
+#endif
 
+#include <sys/utsname.h>
+#ifndef __MACH__
+        #include <sys/sysinfo.h>
+#else
+#include <unistd.h>
+#include <sys/sysctl.h>
+int get_nprocs_conf() {
+	return sysconf(_SC_NPROCESSORS_CONF);
+}
+
+int get_nprocs() {
+	return sysconf(_SC_NPROCESSORS_CONF);
+}
+
+long get_phys_pages() {
+#ifdef _SC_PAGE_SIZE
+	return sysconf(_SC_PHYS_PAGES);
+#else
+	uint64_t mem;
+	size_t len = sizeof(mem);
+	sysctlbyname("hw.memsize", &mem, &len, NULL, 0);
+	return mem/sysconf(_SC_PAGE_SIZE);
+#endif
+}
+
+int getpagesize() {
+	return sysconf(_SC_PAGE_SIZE);
+}
+
+
+#endif
 
   void local_time()
   {
@@ -100,8 +143,10 @@
 
      printf("  ####################################################\n  getDetails and MHz\n\n");
 
+     #ifndef __MACH__
      struct sysinfo sysdata;
-     struct utsname udetails; 
+     #endif 
+     struct utsname udetails;
  
       //_cpuida();
      sprintf(configdata[1], "  Assembler CPUID and RDTSC      ");  
@@ -131,7 +176,7 @@
 
      pages = get_phys_pages();
      pagesize = getpagesize();
-     ramGB = ((double)pages * (double)pagesize / 1024 / 1024 / 1024);
+     ramGB = ((long long unsigned)pages * (long long unsigned)pagesize / 1024 / 1024 / 1024);
      sprintf(configdata[7], "  get_phys_pages() and size - RAM Size %5.2f GB, Page Size %d Bytes", ramGB, pagesize);
 
      if (uname(&udetails) > -1)

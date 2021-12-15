@@ -31,7 +31,8 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <time.h> 
+#include <time.h>
+#include <string.h>
 #include "cpuidh.h"
 
 // COMPILER for numeric results see function checkOut()
@@ -346,7 +347,7 @@ FILE        *outfile;
    void checkOut(int which);
 
               
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     double pass_time, least, lmult, now = 1.0, wt;
     long   i, k, loop_passes;
