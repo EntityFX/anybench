@@ -1,3 +1,4 @@
+#include <chrono>
 #include <cmath>
 #include <cstring>
 #include <ctime>
@@ -250,9 +251,7 @@ void fill_samples(float * samples, int N, float seconds)
   synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
   synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
 
-
-  clock_t start, stop;
-  start = clock();
+  auto start = std::chrono::high_resolution_clock::now();
 
   int step = 256;
   float baseFreq = 0.5;
@@ -262,11 +261,13 @@ void fill_samples(float * samples, int N, float seconds)
       synth[t].fillBuffer(samples + i, step);
 
 
-  stop = clock();
-  double time = double(stop - start) / CLOCKS_PER_SEC;
-  double score = seconds / time;
+  auto stop = std::chrono::high_resolution_clock::now();
+
+  std::chrono::duration<double> time = stop - start;
+  double score = seconds / time.count();
+
   std::cout<<"g_synth_length_seconds="<<seconds<<std::endl;
-  std::cout<<"g_synth_time="<<time<<std::endl;
+  std::cout<<"g_synth_time="<<time.count()<<std::endl;
   std::cout<<"g_synth_score="<<score<<std::endl;
 }
 

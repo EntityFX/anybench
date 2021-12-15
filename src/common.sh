@@ -28,7 +28,7 @@ binaryCompileOptions["lloops"]="lloops.c cpuidc.c -lm ${extraLinkerOptions}"
 binaryCompileOptions["whetstonemp"]="mp/whetsmp.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
 binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
 binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["gsynth"]="gsynth/gsynth.cpp -lm -lstdc++"
+binaryCompileOptions["gsynth"]="gsynth/gsynth.cpp -std=c++11 -lm -lstdc++"
 
 coremarkCompileOptions="-Icoremark/${coremarkPlatform} -Icoremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/${coremarkPlatform}/core_portme.c"
 
@@ -99,8 +99,12 @@ compile_binary() {
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
                 fi
-                "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
-                chmod +x ${output_dir}/${BINARY_NAME}
+		if [[ ${BINARY_NAME} =~ ^gsynth ]]; then
+                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
+		else
+                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+		fi
+		chmod +x ${output_dir}/${BINARY_NAME}
             done
         done
     done
