@@ -12,7 +12,7 @@
 
 using namespace std;
 
-#define BENCMARK_RENDER_TIME 400.0f
+#define BENCHMARK_RENDER_TIME 400.0f
 #define PLAY_FREQ 48000
 #define INV_PLAY_FREQ (1.0f / PLAY_FREQ)
 #define MAX_SAMPLES 8
@@ -290,8 +290,11 @@ void render_to_file(const char *file_name, float seconds)
 
 
     stop = clock();
-    printf("time=%g\n", double(stop - start) / CLOCKS_PER_SEC);
-    printf("score=%d\n", int(20000.0f / (double(stop - start) / CLOCKS_PER_SEC)));
+    double time = double(stop - start) / CLOCKS_PER_SEC;
+    double score = seconds / time;
+    printf("g_synth_length_seconds=%g\n", seconds);
+    printf("g_synth_time=%g\n", time);
+    printf("g_synth_score=%g\n", score);
 
     for (int n = 0; n < N; n++)
     {
@@ -347,16 +350,23 @@ void render_to_memory(float seconds)
     _tmp += samples[1234];
 
     stop = clock();
-    printf("g_synth_time=%g\n", double(stop - start) / CLOCKS_PER_SEC);
-    printf("g_synth_score=%d\n", int(20000.0f / (double(stop - start) / CLOCKS_PER_SEC)));
+    double time = double(stop - start) / CLOCKS_PER_SEC;
+    double score = seconds / time;
+    printf("g_synth_length_seconds=%g\n", seconds);
+    printf("g_synth_time=%g\n", time);
+    printf("g_synth_score=%g\n", score);
 
     delete[] samples;
   }
 }
 
-int main()
+int main(int argc, char * argv[])
 {
-  render_to_memory(BENCMARK_RENDER_TIME);
-//  render_to_file("result.wav", BENCMARK_RENDER_TIME);
+  float seconds = BENCHMARK_RENDER_TIME;
+  if (argc == 2) {
+    seconds = std::stof(argv[1]);
+  }
+  render_to_memory(seconds);
+//  render_to_file("result.wav", BENCHMARK_RENDER_TIME);
   return 0;
 }
