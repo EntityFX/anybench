@@ -18,6 +18,15 @@ targetToFPU["elbrus-v4"]="-ffast -fwhole"
 targetToFPU["elbrus-v5"]="-ffast -fwhole"
 targetToFPU["elbrus-v6"]="-ffast -fwhole"
 
+if [[ ${#} -eq 1 ]]; then
+	echo "Compiling only ${1}"
+	BINARY="${1}"
+    	for ARCH in "${!targetToFlags[@]}"; do
+        	compile_binary ${ARCH} ${BINARY} e2k
+    	done
+	exit 0
+fi
+
 for BINARY in "${!binaryCompileOptions[@]}"; do
     for ARCH in "${!targetToFlags[@]}"; do
         compile_binary ${ARCH} ${BINARY} e2k

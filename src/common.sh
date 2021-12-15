@@ -28,6 +28,7 @@ binaryCompileOptions["lloops"]="lloops.c cpuidc.c -lm ${extraLinkerOptions}"
 binaryCompileOptions["whetstonemp"]="mp/whetsmp.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
 binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
 binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["gsynth"]="gsynth/gsynth.cpp -lm -lstdc++"
 
 coremarkCompileOptions="-Icoremark/${coremarkPlatform} -Icoremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/${coremarkPlatform}/core_portme.c"
 
@@ -54,8 +55,8 @@ if [[ ${current_uname} == "Darwin" ]]; then
 	os_name="mac"
 fi
 
-echo -e "Arch: ${current_arch}\n"
-echo -e "Uname: ${current_uname}\n"
+echo "Arch: ${current_arch}"
+echo "Uname: ${current_uname}"
 echo -e "Cpu cores: ${cpus_count}\n"
 
 optFlags="-O2 -O3 -Ofast"
@@ -64,6 +65,13 @@ optFlags="-O2 -O3 -Ofast"
 # compile_binary function will iterate over all variants of flags specified by targetToFlags
 declare -A targetToFlags
 declare -A targetToFPU
+
+if [[ ${#} -eq 1 ]]; then
+	if [[ ${1} == "list" ]] || [[ ${1} == "ls" ]]; then
+		echo "Available benchmarks: ${!binaryCompileOptions[@]}"
+		exit 0;
+	fi
+fi
 
 compile_binary() {
     ARCH=${1}
@@ -91,7 +99,7 @@ compile_binary() {
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
                 fi
-                ${CC} ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+                "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
                 chmod +x ${output_dir}/${BINARY_NAME}
             done
         done

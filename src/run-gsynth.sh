@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 source common-gsynth.sh
 
 RESULT_DIR="../results/${current_arch}"
