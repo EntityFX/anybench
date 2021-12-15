@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <string.h>
-#include <time.h>
+#include <cmath>
+#include <cstring>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 
@@ -10,12 +8,10 @@
 #define likely(x)       __builtin_expect((x), 1)
 #define unlikely(x)     __builtin_expect((x), 0)
 
-using namespace std;
-
-#define BENCHMARK_RENDER_TIME 400.0f
-#define PLAY_FREQ 48000
-#define INV_PLAY_FREQ (1.0f / PLAY_FREQ)
-#define MAX_SAMPLES 8
+const float default_benchmark_render_time = 400.0f;
+const int play_frequency_hz = 48000;
+const float inverted_play_frequency = (1.0f / play_frequency_hz);
+const int max_samples = 8;
 
 inline float clampf(float v, float minv, float maxv)
 {
@@ -45,13 +41,13 @@ inline float sqr(float x)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-static float samples[MAX_SAMPLES] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
+static float samples[max_samples] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
 
 inline float get_sample(float pos)
 {
-  float p = (pos * MAX_SAMPLES);
-  unsigned i0 = unsigned(p) & (MAX_SAMPLES - 1);
-  unsigned i1 = (i0 + 1) & (MAX_SAMPLES - 1);
+  float p = (pos * max_samples);
+  unsigned i0 = unsigned(p) & (max_samples - 1);
+  unsigned i1 = (i0 + 1) & (max_samples - 1);
   return lerpf(samples[i0], samples[i1], p - i0) * (1.0f / 32768.0f);
 }
 
@@ -140,22 +136,22 @@ template<int MAX_GRANULAS> struct GSynth
   {
     float freqMult = float(pow(2.0f, tone_offset / 12.0f));
     toneFreq = base_freq * freqMult;
-    timeAdvance = INV_PLAY_FREQ * toneFreq;
+    timeAdvance = inverted_play_frequency * toneFreq;
     amp = volume;
     phaseRandom = 0.3f;
-    speedRandom = 0.01f;//lerpf(0.09f, 0.01f, 1.0f - (1.0f - phys_speed) * (1.0f - phys_speed));
+    speedRandom = 0.01f; //lerpf(0.09f, 0.01f, 1.0f - (1.0f - phys_speed) * (1.0f - phys_speed));
     envAdvanceMul = 1.0f / (gr_size + 0.001f);
     if (speed_rnd < 0.1f)
       speedRandom *= speed_rnd * 10.0f;
     else
       speedRandom = lerpf(speedRandom, speed_rnd, speed_rnd - 0.1f);
     shutterDepth = shutter_depth;
-    shutterAdvance = INV_PLAY_FREQ * shutter_freq * 2.0f;
+    shutterAdvance = inverted_play_frequency * shutter_freq * 2.0f;
   }
 
   void fillBuffer(float * buf, int count)
   {
-    float envAdvance = INV_PLAY_FREQ * envAdvanceMul;
+    float envAdvance = inverted_play_frequency * envAdvanceMul;
     float phaseStep = 0.5f;
 
     #pragma loop count (256)
@@ -203,7 +199,6 @@ template<int MAX_GRANULAS> struct GSynth
   }
 };
 
-
 //////////////////////////////////////////////////////////////////////////////////////////
 
 volatile float _tmp = 0.0f;
@@ -235,7 +230,7 @@ void warmup()
 
 
 template <typename Word>
-ostream& write_word(ostream& outs, Word value, unsigned size = sizeof(Word))
+std::ostream& write_word(std::ostream& outs, Word value, unsigned size = sizeof(Word))
 {
   for (; size; --size, value >>= 8)
     outs.put(static_cast<char>(value & 0xFF));
@@ -270,18 +265,18 @@ void fill_samples(float * samples, int N, float seconds)
   stop = clock();
   double time = double(stop - start) / CLOCKS_PER_SEC;
   double score = seconds / time;
-  printf("g_synth_length_seconds=%g\n", seconds);
-  printf("g_synth_time=%g\n", time);
-  printf("g_synth_score=%g\n", score);
+  std::cout<<"g_synth_length_seconds="<<seconds<<std::endl;
+  std::cout<<"g_synth_time="<<time<<std::endl;
+  std::cout<<"g_synth_score="<<score<<std::endl;
 }
 
 void render_to_file(const char *file_name, float seconds)
 {
   warmup();
-  ofstream f(file_name, ios::binary);
+  std::ofstream f(file_name, std::ios::binary);
 
   int channels = 1;
-  int freq = PLAY_FREQ;
+  int freq = play_frequency_hz;
 
   f << "RIFF----WAVEfmt ";
   write_word(f, 16, 4 );
@@ -324,7 +319,7 @@ void render_to_memory(float seconds)
 {
   warmup();
 
-  int freq = PLAY_FREQ;
+  int freq = play_frequency_hz;
 
   double hz = freq;
   int N = (int(hz * seconds) | 255) + 1;
@@ -337,7 +332,7 @@ void render_to_memory(float seconds)
 
 int main(int argc, char * argv[])
 {
-  float seconds = BENCHMARK_RENDER_TIME;
+  float seconds = default_benchmark_render_time;
   if (argc >= 2) {
     seconds = std::stof(argv[1]);
   }
