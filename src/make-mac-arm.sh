@@ -9,7 +9,16 @@ set -e
 # aarch64
 targetToFlags["native"]=""
 targetToFlags["armv8.4-a"]="-mcpu=apple-m1"
-    
+
+if [[ ${#} -eq 1 ]]; then
+	echo "Compiling only ${1}"
+	BINARY="${1}"
+    	for ARCH in "${!targetToFlags[@]}"; do
+        	compile_binary ${ARCH} ${BINARY} arm
+    	done
+	exit 0
+fi
+
 for BINARY in "${!binaryCompileOptions[@]}"; do
     for ARCH in "${!targetToFlags[@]}"; do
         compile_binary ${ARCH} ${BINARY} arm
