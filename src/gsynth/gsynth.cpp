@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <string.h>
-#include <time.h>
+#include <chrono>
+#include <cmath>
+#include <cstring>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 
@@ -10,12 +9,10 @@
 #define likely(x)       __builtin_expect((x), 1)
 #define unlikely(x)     __builtin_expect((x), 0)
 
-using namespace std;
-
-#define BENCMARK_RENDER_TIME 400.0f
-#define PLAY_FREQ 48000
-#define INV_PLAY_FREQ (1.0f / PLAY_FREQ)
-#define MAX_SAMPLES 8
+const float default_benchmark_render_time = 400.0f;
+const int play_frequency_hz = 48000;
+const float inverted_play_frequency = (1.0f / play_frequency_hz);
+const int max_samples = 8;
 
 inline float clampf(float v, float minv, float maxv)
 {
@@ -45,13 +42,13 @@ inline float sqr(float x)
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-static float samples[MAX_SAMPLES] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
+static float samples[max_samples] = {0, 1000, 10000, 23000, 32000, -2000, -32000, -16000};
 
 inline float get_sample(float pos)
 {
-  float p = (pos * MAX_SAMPLES);
-  unsigned i0 = unsigned(p) & (MAX_SAMPLES - 1);
-  unsigned i1 = (i0 + 1) & (MAX_SAMPLES - 1);
+  float p = (pos * max_samples);
+  unsigned i0 = unsigned(p) & (max_samples - 1);
+  unsigned i1 = (i0 + 1) & (max_samples - 1);
   return lerpf(samples[i0], samples[i1], p - i0) * (1.0f / 32768.0f);
 }
 
@@ -140,22 +137,22 @@ template<int MAX_GRANULAS> struct GSynth
   {
     float freqMult = float(pow(2.0f, tone_offset / 12.0f));
     toneFreq = base_freq * freqMult;
-    timeAdvance = INV_PLAY_FREQ * toneFreq;
+    timeAdvance = inverted_play_frequency * toneFreq;
     amp = volume;
     phaseRandom = 0.3f;
-    speedRandom = 0.01f;//lerpf(0.09f, 0.01f, 1.0f - (1.0f - phys_speed) * (1.0f - phys_speed));
+    speedRandom = 0.01f; //lerpf(0.09f, 0.01f, 1.0f - (1.0f - phys_speed) * (1.0f - phys_speed));
     envAdvanceMul = 1.0f / (gr_size + 0.001f);
     if (speed_rnd < 0.1f)
       speedRandom *= speed_rnd * 10.0f;
     else
       speedRandom = lerpf(speedRandom, speed_rnd, speed_rnd - 0.1f);
     shutterDepth = shutter_depth;
-    shutterAdvance = INV_PLAY_FREQ * shutter_freq * 2.0f;
+    shutterAdvance = inverted_play_frequency * shutter_freq * 2.0f;
   }
 
   void fillBuffer(float * buf, int count)
   {
-    float envAdvance = INV_PLAY_FREQ * envAdvanceMul;
+    float envAdvance = inverted_play_frequency * envAdvanceMul;
     float phaseStep = 0.5f;
 
     #pragma loop count (256)
@@ -203,7 +200,6 @@ template<int MAX_GRANULAS> struct GSynth
   }
 };
 
-
 //////////////////////////////////////////////////////////////////////////////////////////
 
 volatile float _tmp = 0.0f;
@@ -235,7 +231,7 @@ void warmup()
 
 
 template <typename Word>
-ostream& write_word(ostream& outs, Word value, unsigned size = sizeof(Word))
+std::ostream& write_word(std::ostream& outs, Word value, unsigned size = sizeof(Word))
 {
   for (; size; --size, value >>= 8)
     outs.put(static_cast<char>(value & 0xFF));
@@ -244,13 +240,44 @@ ostream& write_word(ostream& outs, Word value, unsigned size = sizeof(Word))
 
 volatile float global_freq[3] = {40, 60, 90};
 
+void fill_samples(float * samples, int N, float seconds)
+{
+
+  memset(samples, 0, sizeof(samples[0]) * N);
+
+  const int TONES = 3;
+  GSynth<16> synth[TONES];
+  synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
+  synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
+  synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
+
+  auto start = std::chrono::high_resolution_clock::now();
+
+  int step = 256;
+  float baseFreq = 0.5;
+  int sampleIndex = 0;
+  for (int i = 0; i < N; i += step)
+    for (int t = 0; t < TONES; t++)
+      synth[t].fillBuffer(samples + i, step);
+
+
+  auto stop = std::chrono::high_resolution_clock::now();
+
+  std::chrono::duration<double> time = stop - start;
+  double score = seconds / time.count();
+
+  std::cout<<"g_synth_length_seconds="<<seconds<<std::endl;
+  std::cout<<"g_synth_time="<<time.count()<<std::endl;
+  std::cout<<"g_synth_score="<<score<<std::endl;
+}
+
 void render_to_file(const char *file_name, float seconds)
 {
   warmup();
-  ofstream f(file_name, ios::binary);
+  std::ofstream f(file_name, std::ios::binary);
 
   int channels = 1;
-  int freq = PLAY_FREQ;
+  int freq = play_frequency_hz;
 
   f << "RIFF----WAVEfmt ";
   write_word(f, 16, 4 );
@@ -267,42 +294,18 @@ void render_to_file(const char *file_name, float seconds)
   double hz = freq;
   int N = (int(hz * seconds) | 255) + 1;
 
+  float *samples = new float[N];
+  fill_samples(samples, N, seconds);
+
+  for (int n = 0; n < N; n++)
   {
-    float * samples = new float[N];
-    memset(samples, 0, sizeof(samples[0]) * N);
-
-    const int TONES = 3;
-    GSynth<16> synth[TONES];
-    synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
-    synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
-    synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
-
-
-    clock_t start, stop;
-    start = clock();
-
-    int step = 256;
-    float baseFreq = 0.5;
-    int sampleIndex = 0;
-    for (int i = 0; i < N; i += step)
-      for (int t = 0; t < TONES; t++)
-        synth[t].fillBuffer(samples + i, step);
-
-
-    stop = clock();
-    printf("time=%g\n", double(stop - start) / CLOCKS_PER_SEC);
-    printf("score=%d\n", int(20000.0f / (double(stop - start) / CLOCKS_PER_SEC)));
-
-    for (int n = 0; n < N; n++)
-    {
-      float value = clampf(samples[n], -1.0f, 1.0f) * 32760;
+    float value = clampf(samples[n], -1.0f, 1.0f) * 32760;
+    write_word(f, (int)(value), 2);
+    if (channels > 1)
       write_word(f, (int)(value), 2);
-      if (channels > 1)
-        write_word(f, (int)(value), 2);
-    }
-
-    delete[] samples;
   }
+
+  delete[] samples;
 
   size_t file_length = f.tellp();
 
@@ -317,46 +320,27 @@ void render_to_memory(float seconds)
 {
   warmup();
 
-  int channels = 1;
-  int freq = PLAY_FREQ;
+  int freq = play_frequency_hz;
 
   double hz = freq;
   int N = (int(hz * seconds) | 255) + 1;
 
-  {
-    float * samples = new float[N];
-    memset(samples, 0, sizeof(samples[0]) * N);
+  float *samples = new float[N];
+  fill_samples(samples, N, seconds);
 
-    const int TONES = 3;
-    GSynth<16> synth[TONES];
-    synth[0].setParams(global_freq[0], 0, 0.8, 0.1f, 0.0f, 2.0f, 0.1f);
-    synth[1].setParams(global_freq[1], 0, 0.5, 0.1f, 0.0f, 4.2f, 0.1f);
-    synth[2].setParams(global_freq[2], 3, 0.15, 0.05f, 0.0f, 10.0f, 0.9f);
-
-
-    clock_t start, stop;
-    start = clock();
-
-    int step = 256;
-    float baseFreq = 0.5;
-    int sampleIndex = 0;
-    for (int i = 0; i < N; i += step)
-      for (int t = 0; t < TONES; t++)
-        synth[t].fillBuffer(samples + i, step);
-
-    _tmp += samples[1234];
-
-    stop = clock();
-    printf("g_synth_time=%g\n", double(stop - start) / CLOCKS_PER_SEC);
-    printf("g_synth_score=%d\n", int(20000.0f / (double(stop - start) / CLOCKS_PER_SEC)));
-
-    delete[] samples;
-  }
+  delete[] samples;
 }
 
-int main()
+int main(int argc, char * argv[])
 {
-  render_to_memory(BENCMARK_RENDER_TIME);
-//  render_to_file("result.wav", BENCMARK_RENDER_TIME);
+  float seconds = default_benchmark_render_time;
+  if (argc >= 2) {
+    seconds = std::stof(argv[1]);
+  }
+  if (argc == 3) {
+      render_to_file(argv[2], seconds);
+      return 0;
+  }
+  render_to_memory(seconds);
   return 0;
 }

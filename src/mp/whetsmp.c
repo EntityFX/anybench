@@ -12,7 +12,8 @@
   #include <math.h>
   #include <inttypes.h>
   #include <stdint.h>
-  #include <malloc.h>
+  #include <ctype.h>
+  #include <string.h>
   #include <mm_malloc.h>
   #include <pthread.h> 
 
@@ -325,6 +326,7 @@ void *whetstones(void *arg)
         if (thread > 0) printf ("%7.0f", score[thread][test]);
         pthread_mutex_unlock( &mutext);
     }
+    return 0;
 }
 
 

@@ -4,23 +4,40 @@ current_arch=$(uname -m)
 current_uname=$(uname)
 cpus_count=$(getconf _NPROCESSORS_ONLN)
 
+if [[ ${BASH_VERSINFO[0]} -lt 5 ]]; then
+	echo "WARNING! Using Bash older than 5.0 is not supported!!!!"
+	echo "This script might fail to run"
+	sleep 30
+fi
+
 # List of files to compile, with binary specific flags
 declare -A binaryCompileOptions
-binaryCompileOptions["drystone"]="dhry_1.c dhry_2.c cpuidc.c"
-binaryCompileOptions["whetstone"]="whets.c cpuidc.c -lm -lrt"
-binaryCompileOptions["memspeed"]="memspeed.c cpuidc.c -lm -lrt"
-binaryCompileOptions["linpack"]="linpack.c cpuidc.c -lm -lrt"
-binaryCompileOptions["lloops"]="lloops.c cpuidc.c -lm -lrt"
-binaryCompileOptions["whetstonemp"]="mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt "
-binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt"
-binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm -lrt"
-binaryCompileOptions["coremark_mp1"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=1 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
-binaryCompileOptions["coremark_mp2"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=2 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
-binaryCompileOptions["coremark_mp4"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=4 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
-binaryCompileOptions["coremark_mp8"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=8 -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
+extraLinkerOptions=""
+coremarkPlatform="posix"
+case ${current_uname} in
+	Darwin)
+		;;
+	*)
+		extraLinkerOptions="-lrt"
+esac
+binaryCompileOptions["dhrystone"]="dhry_1.c dhry_2.c cpuidc.c ${extraLinkerOptions}"
+binaryCompileOptions["whetstone"]="whets.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["memspeed"]="memspeed.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["linpack"]="linpack.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["lloops"]="lloops.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["whetstonemp"]="mp/whetsmp.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
+binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
+binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm ${extraLinkerOptions}"
+binaryCompileOptions["gsynth"]="gsynth/gsynth.cpp -std=c++11 -lm -lstdc++"
+
+coremarkCompileOptions="-Icoremark/${coremarkPlatform} -Icoremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/${coremarkPlatform}/core_portme.c"
+
+for cores in 1 2 4 8; do
+	binaryCompileOptions["coremark_mp${cores}"]="-DMULTITHREAD=${cores} ${coremarkCompileOptions}"
+done
 
 if (( cpus_count > 8 )); then
-	binaryCompileOptions["coremark_mp${cpus_count}"]="-Icoremark/linux64 -Icoremark -DPERFORMANCE_RUN=1 -DMULTITHREAD=${cpus_count} -DUSE_FORK=1  -lrt coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/linux64/core_portme.c"
+	binaryCompileOptions["coremark_mp${cpus_count}"]="-DMULTITHREAD=${cpus_count} ${coremarkCompileOptions}"
 fi
 
 binaryCompileOptions["scimark2"]="-Iscimark2 scimark2/*.c -lm"
@@ -33,8 +50,13 @@ if [[ ${current_arch} == "i386" ]]; then
     current_arch="i386"
 fi
 
-echo -e "Arch: ${current_arch}\n"
-echo -e "Uname: ${current_uname}\n"
+os_name="${current_uname}"
+if [[ ${current_uname} == "Darwin" ]]; then
+	os_name="mac"
+fi
+
+echo "Arch: ${current_arch}"
+echo "Uname: ${current_uname}"
 echo -e "Cpu cores: ${cpus_count}\n"
 
 optFlags="-O2 -O3 -Ofast"
@@ -44,6 +66,13 @@ optFlags="-O2 -O3 -Ofast"
 declare -A targetToFlags
 declare -A targetToFPU
 
+if [[ ${#} -eq 1 ]]; then
+	if [[ ${1} == "list" ]] || [[ ${1} == "ls" ]]; then
+		echo "Available benchmarks: ${!binaryCompileOptions[@]}"
+		exit 0;
+	fi
+fi
+
 compile_binary() {
     ARCH=${1}
     BINARY=${2}
@@ -51,7 +80,7 @@ compile_binary() {
     CC=${4:-cc}
 
     # Special case to preserve the name of original dir name for amd64
-    output_dir="../bin/${current_uname}/${current_arch}"
+    output_dir="../bin/${os_name}/${current_arch}"
     if [[ ${CC} != "cc" ]]; then
 	output_dir="${output_dir}_${CC}"
     fi
@@ -70,8 +99,12 @@ compile_binary() {
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
                 fi
-                ${CC} ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
-                chmod +x ${output_dir}/${BINARY_NAME}
+		if [[ ${BINARY_NAME} =~ ^gsynth ]]; then
+                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
+		else
+                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+		fi
+		chmod +x ${output_dir}/${BINARY_NAME}
             done
         done
     done
