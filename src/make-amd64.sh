@@ -3,7 +3,6 @@
 source common.sh
 
 targetToFlags["x86-64"]="-march=znver2"
-targetToFPU["x86-64"]=""
 
 if [[ ${#} -eq 1 ]]; then
 	echo "Compiling only ${1}"
