@@ -20,17 +20,20 @@ case ${current_uname} in
 	*)
 		extraLinkerOptions="-lrt"
 esac
-binaryCompileOptions["dhrystone"]="dhry_1.c dhry_2.c cpuidc.c ${extraLinkerOptions}"
-binaryCompileOptions["whetstone"]="whets.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["memspeed"]="memspeed.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["linpack"]="linpack.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["lloops"]="lloops.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["whetstonemp"]="mp/whetsmp.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
-binaryCompileOptions["mpmflops"]="mp/mpmflops.c mp/cpuidc64.c -pthread -lm ${extraLinkerOptions}"
-binaryCompileOptions["busspeedil"]="busspeed.c cpuidc.c -lm ${extraLinkerOptions}"
-binaryCompileOptions["gsynth"]="gsynth/gsynth.cpp -std=c++11 -lm -lstdc++"
+CPUID_FLAGS="benchmarks/common/cpuidc64.c -Ibenchmarks/common/"
+binaryCompileOptions["dhrystone"]="benchmarks/generic/dhrystone/dhry_1.c benchmarks/generic/dhrystone/dhry_2.c ${CPUID_FLAGS} ${extraLinkerOptions}"
+binaryCompileOptions["whetstone"]="benchmarks/generic/whetstone/whets.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
+binaryCompileOptions["memspeed"]="benchmarks/generic/memspeed/memspeed.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
+binaryCompileOptions["linpack"]="benchmarks/generic/linpack/linpack.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
+binaryCompileOptions["lloops"]="benchmarks/generic/lloops/lloops.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
+binaryCompileOptions["whetstonemp"]="benchmarks/generic/whetstonemp/whetsmp.c ${CPUID_FLAGS} -pthread -lm ${extraLinkerOptions}"
+binaryCompileOptions["mpmflops"]="benchmarks/generic/mpmflops/mpmflops.c ${CPUID_FLAGS} -pthread -lm ${extraLinkerOptions}"
+binaryCompileOptions["busspeedil"]="benchmarks/generic/busspeedil/busspeed.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
+binaryCompileOptions["gsynth"]="benchmarks/generic/gsynth/gsynth.cpp -std=c++11 -lm -lstdc++"
+binaryCompileOptions["STREAM"]="benchmarks/generic/STREAM/stream.c -fopenmp -DSTREAM_ARRAY_SIZE=20000000 -DNTIMES=20 ${extraLinkerOptions}"
+binaryCompileOptions["SuperPI"]="benchmarks/generic/SuperPI/pi_fftcs.c benchmarks/generic/SuperPI/fftsg_h.c -lm ${extraLinkerOptions}"
 
-coremarkCompileOptions="-Icoremark/${coremarkPlatform} -Icoremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} coremark/core_list_join.c coremark/core_main.c coremark/core_matrix.c coremark/core_state.c coremark/core_util.c coremark/${coremarkPlatform}/core_portme.c"
+coremarkCompileOptions="-Ibenchmarks/generic/coremark/${coremarkPlatform} -Ibenchmarks/generic/coremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} benchmarks/generic/coremark/core_list_join.c benchmarks/generic/coremark/core_main.c benchmarks/generic/coremark/core_matrix.c benchmarks/generic/coremark/core_state.c benchmarks/generic/coremark/core_util.c benchmarks/generic/coremark/${coremarkPlatform}/core_portme.c"
 
 for cores in 1 2 4 8; do
 	binaryCompileOptions["coremark_mp${cores}"]="-DMULTITHREAD=${cores} ${coremarkCompileOptions}"
@@ -40,7 +43,7 @@ if (( cpus_count > 8 )); then
 	binaryCompileOptions["coremark_mp${cpus_count}"]="-DMULTITHREAD=${cpus_count} ${coremarkCompileOptions}"
 fi
 
-binaryCompileOptions["scimark2"]="-Iscimark2 scimark2/*.c -lm"
+binaryCompileOptions["scimark2"]="-Ibenchmarks/generic/scimark2 benchmarks/generic/scimark2/*.c -lm"
 
 if [[ ${current_arch} == "x86_64" ]]; then
     current_arch="amd64"
@@ -94,17 +97,38 @@ compile_binary() {
             EXTRA_CFLAGS="${MTUNE} ${FPU}"
             for OPT in ${optFlags}; do
                 BINARY_NAME="${BINARY}_${SUFFIX}-${ARCH}${OPT//-/_}${FPU//-mfpu=/_}$(sed 's/^-m[a-z]\+=//' <<< ${MTUNE})"
-				echo -e "\033[0;36mCompiling ${BINARY_NAME}\033[0m"
+				        echo -e "\033[0;36mCompiling ${BINARY_NAME}\033[0m"
                 declare -a BINARY_EXTRA_FLAGS
                 if [[ ${BINARY_NAME} =~ ^coremark ]]; then
                     BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
                 fi
-		if [[ ${BINARY_NAME} =~ ^gsynth ]]; then
-                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
-		else
-                	"${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
-		fi
-		chmod +x ${output_dir}/${BINARY_NAME}
+                case "${BINARY_NAME}" in
+                    STREAM*)
+                        if [[ -z ${OPENMP_CC} ]]; then
+                            echo "WARNING!!!! building STREAM benchmark might fail unless OPENMP_CC environment variable"
+                            echo "points to openmp compatible compiler. In most Linux distros that should be ok to use default"
+                            echo "compiler, howerever on MacOS clang must be installed from somewhere else, e.x. brew nix or "
+                            echo "other package manager. Please note you must also provide OPENMP_LINK variable that would "
+                            echo "point to library dir where openmp libs are on OSX it should point to where libomp is "
+                            echo "installed, e.x. /opt/homebrew/Cellar/libomp/13.0.0"
+                            echo
+                            echo "Example:"
+                            echo 'export OPENMP_CC="/opt/homebrew/Cellar/llvm/13.0.0_2/bin/clang"'
+                            echo 'export OPENMP_LINK="-L/opt/homebrew/Cellar/libomp/13.0.0/lib"'
+                            sleep 10
+                            echo "Will try to compile using ${CC} anyway..."
+                            OPENMP_CC="${CC}"
+                        fi
+                        ${OPENMP_CC} ${OPENMP_LINK} ${platformSpecificCompileOptions[${BINARY}]} -Ibenchmarks/common ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\"" || continue
+                        ;;
+                    gsynth*)
+                        "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
+                        ;;
+                    *)
+                        "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+                        ;;
+                esac
+                chmod +x ${output_dir}/${BINARY_NAME}
             done
         done
     done

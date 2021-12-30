@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 # Include common functions and operations
 source common.sh
-binaryCompileOptions["whetstonemp"]="-I./include/ mp/whetsmp.c mp/cpuidc64.c -pthread -lm"
-binaryCompileOptions["mpmflops"]="-I./include/ mp/mpmflops.c mp/cpuidc64.c -pthread -lm"
-
-set -e
 
 # aarch64
-targetToFlags["native"]=""
-targetToFlags["armv8.4-a"]="-mcpu=apple-m1"
+targetToFlags["armv8.4-a"]="-march=armv8.4-a -mtune=native"
+
+targetToFPU["armv8.4-a"]="-mcpu=apple-m1"
 
 if [[ ${#} -eq 1 ]]; then
 	echo "Compiling only ${1}"

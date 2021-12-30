@@ -1,9 +1,6 @@
 #!/bin/bash
 # Include common functions and operations
 source common.sh
-binaryCompileOptions["whetstonemp"]="-I./include/ mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt"
-binaryCompileOptions["mpmflops"]="-I./include/ mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt"
-
 optFlags="-O2 -O3 -O4 -Ofast"
 
 targetToFlags["elbrus-v2"]=""

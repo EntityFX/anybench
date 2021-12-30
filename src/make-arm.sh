@@ -1,9 +1,6 @@
 #!/bin/bash
 # Include common functions and operations
 source common.sh
-binaryCompileOptions["whetstonemp"]="-I./include/ mp/whetsmp.c mp/cpuidc64.c -pthread -lm -lrt"
-binaryCompileOptions["mpmflops"]="-I./include/ mp/mpmflops.c mp/cpuidc64.c -pthread -lm -lrt"
-
 # arm 32bit case
 if [[ ${current_arch} != "aarch64" ]]; then
     targetToFlags["armv6"]=""
@@ -23,8 +20,9 @@ else
     # aarch64
     targetToFlags["armv8-a"]="-mtune=cortex-a53 -mtune=cortex-a57"
     targetToFlags["armv8-a+crc"]="-mtune=cortex-a72" # e.x. raspberry pi4
-    targetToFlags["armv8.1-a"]=""
-    targetToFlags["armv8.2-a"]=""
+    targetToFlags["armv8.1-a"]="-march=armv8.1-a"
+    targetToFlags["armv8.2-a"]="-march=armv8.2-a"
+    targetToFlags["native"]="-march=native"
     
     # at this moment arm64 don't need any extra flags to use FPU
     targetToFPU["armv8-a"]=""
