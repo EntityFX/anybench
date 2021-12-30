@@ -8,5 +8,5 @@ BIN_DIR="../bin/${os_name}/${current_arch}"
 for BINARY in $(ls ${BIN_DIR}/); do
     [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
     echo "Running ${BINARY}"
-    "${BIN_DIR}/${BINARY}" n &> "${RESULT_DIR}/${BINARY}.stdout_stderr.log" 
+    "${BIN_DIR}/${BINARY}" &> "${RESULT_DIR}/${BINARY}.stdout_stderr.log" 
 done

@@ -24,7 +24,7 @@
  #include <math.h>
  #include <time.h>
  #include "cpuidh.h"
- #include <pthread.h> 
+ #include <pthread.h>
 
 // #define version "Linux/ARM v1.0"
 // #define version "Linux/ARM V7A v1.0"
@@ -120,9 +120,10 @@
        }   
  
     }
- }
+    return NULL;
+}
 
-void main()
+int main()
 {
     int  i, g, p;
     int  pStart = 0;
@@ -142,45 +143,20 @@ void main()
     repeats[0] = 10000;         // 5000
     repeats[1] = repeats[0] / 10;
     repeats[2] = repeats[1] / 100;
-     
-    FILE    *outfile;
-    
-    outfile = fopen("MP-MFLOPS.txt","a+");
-    if (outfile == NULL)
-    {
-        printf ("Cannot open results file \n\n");
-        printf(" Press Enter\n");
-        g  = getchar();
-        exit (0);
-    }
     printf("\n");
-    getDetails();
     local_time();     
 
-    printf(" ##########################################\n"); 
-    fprintf (outfile, " #####################################################\n");                     
-
-    printf ("\nFrom File /proc/cpuinfo\n");
-    printf("%s\n", configdata[0]);
-    printf ("\nFrom File /proc/version\n");
-    printf("%s\n", configdata[1]);
+    printf(" ##########################################\n");
         
     printf("\n MP-MFLOPS %s %s\n", version, timeday);
     printf("    FPU Add & Multiply using 1, 2, 4 and 8 Threads\n\n");
     printf("        2 Ops/Word              32 Ops/Word\n");
     printf(" KB     12.8     128   12800    12.8     128   12800\n");
     printf(" MFLOPS\n");
-
-    fprintf(outfile, "\n MP-MFLOPS %s %s\n", version, timeday);
-    fprintf(outfile, "    FPU Add & Multiply using 1, 2, 4 and 8 Threads\n\n");
-    fprintf(outfile, "        2 Ops/Word              32 Ops/Word\n");
-    fprintf(outfile, " KB     12.8     128   12800    12.8     128   12800\n");
-    fprintf(outfile, " MFLOPS\n");
     
     for (threads=1; threads<9; threads=threads*2)
     {
-        printf("%2dT ", threads);    
-        fprintf(outfile, "%2dT ", threads);
+        printf("%2dT ", threads);
             
         for (part=pStart; part<2; part++)
         {
@@ -222,29 +198,12 @@ void main()
                   }
                }
                printf("%8d", (int)mflops[op]);
-               fprintf(outfile, "%8d", (int)mflops[op]);
-               fflush(stdout);                
-               fflush(outfile);                
                op = op + 1; 
             }
         }
         printf("\n");
-        fprintf(outfile, "\n");
     }
     printf(              " Results x 100000, 0 indicates ERRORS\n"
-                         " 1T %8d%8d%8d%8d%8d%8d\n"
-                         " 2T %8d%8d%8d%8d%8d%8d\n"
-                         " 4T %8d%8d%8d%8d%8d%8d\n"
-                         " 8T %8d%8d%8d%8d%8d%8d\n",
-                          results[0], results[1], results[2],
-                          results[3], results[4], results[5],
-                          results[6], results[7], results[8],
-                          results[9], results[10], results[11],
-                          results[12], results[13], results[14],
-                          results[15], results[16], results[17],
-                          results[18], results[19], results[20],
-                          results[21], results[22], results[23]);
-    fprintf(outfile,     " Results x 100000, 0 indicates ERRORS\n"
                          " 1T %8d%8d%8d%8d%8d%8d\n"
                          " 2T %8d%8d%8d%8d%8d%8d\n"
                          " 4T %8d%8d%8d%8d%8d%8d\n"
@@ -260,21 +219,8 @@ void main()
 
     local_time();
     printf("\n         End of test %s\n", timeday);
-    fprintf(outfile, "\n         End of test %s", timeday);        
-
-    fprintf (outfile, "\nSYSTEM INFORMATION\n\nFrom File /proc/cpuinfo\n");
-    fprintf (outfile, "%s \n", configdata[0]);
-    fprintf (outfile, "\nFrom File /proc/version\n");
-    fprintf (outfile, "%s \n", configdata[1]);
-    fprintf (outfile, "\n");
-    fflush(outfile);                
     char moredata[1024];
-    printf("Type additional information to include in MP-MFLOPS.txt - Press Enter\n");
-    if (fgets (moredata, sizeof(moredata), stdin) != NULL)
-             fprintf (outfile, "Additional information - %s\n", moredata);     fflush(stdout);                
-    fflush(outfile);                
-    fclose(outfile);
-    return;
+    return 0;
 }
 
 

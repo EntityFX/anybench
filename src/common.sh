@@ -68,6 +68,9 @@ optFlags="-O2 -O3 -Ofast"
 # compile_binary function will iterate over all variants of flags specified by targetToFlags
 declare -A targetToFlags
 declare -A targetToFPU
+declare -A binaryExtraArgs
+
+binaryExtraArgs["SuperPI"]="$((1<<22))"
 
 if [[ ${#} -eq 1 ]]; then
 	if [[ ${1} == "list" ]] || [[ ${1} == "ls" ]]; then
@@ -75,6 +78,8 @@ if [[ ${#} -eq 1 ]]; then
 		exit 0;
 	fi
 fi
+
+
 
 compile_binary() {
     ARCH=${1}
