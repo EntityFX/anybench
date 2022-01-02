@@ -4,6 +4,8 @@ source common.sh
 RESULT_DIR="../results/${current_arch}"
 mkdir -p "${RESULT_DIR}"
 
+./cpu_info_mac.sh
+
 BIN_DIR="../bin/${os_name}/${current_arch}"
 for BINARY in $(ls ${BIN_DIR}/); do
     [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
