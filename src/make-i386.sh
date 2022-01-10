@@ -3,7 +3,6 @@
 source common.sh
 
 targetToFlags["i386"]="-march=i386"
-targetToFPU["i386"]=""
 
 if [[ ${#} -eq 1 ]]; then
 	echo "Compiling only ${1}"

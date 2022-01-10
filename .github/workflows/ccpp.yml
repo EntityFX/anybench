@@ -9,7 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: cd src && ./configure.sh
+      with:
+        submodules: 'recursive'
     - name: make
       run: cd src && ./make-amd64.sh
