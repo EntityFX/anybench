@@ -18,8 +18,11 @@
 #define ADD_ASM "inc %[i]\n"
 #elif defined(__aarch64__) || (defined(__arm64__) && defined(__APPLE__))
 #define ADD_ASM "add  %[i], %[i], #1\n"
+#elif defined(__e2k__)
+#define ADD_ASM "{ addd,0 0x1, %[i], %[i] }\n"
 #else
-#error "Unsupported platform! Please modify source code and define ADD_ASM macro that do 1-cycle increment on input"
+#warning "Unsupported platform! Will try to use generic C code, but it might produce wrong result! Please contribute 1-cycle increment instruction for your platform."
+#define GENERIC_LOOP 1
 #endif
 #define ADD_16 ADD_ASM ADD_ASM ADD_ASM ADD_ASM \
         ADD_ASM ADD_ASM ADD_ASM ADD_ASM        \
@@ -46,6 +49,10 @@ void *estimate_freq(void *data) {
 
     // Do warmup. That helps on OS where you can't disable frequency scaling
     register_t i;
+#ifdef GENERIC_LOOP
+    for (i = 0; i < INSTRUCTIONS / 4; i++)
+	    asm("");
+#else
     for (i = 0; i < INSTRUCTIONS / 4;) {
         asm volatile (
         ADD_4096
@@ -54,9 +61,15 @@ void *estimate_freq(void *data) {
         : "cc"
         );
     }
+#endif
 
     gettimeofday(&tv, NULL);
     double start = tv.tv_sec + tv.tv_usec / USEC_IN_SEC;
+
+#ifdef GENERIC_LOOP
+    for (i = 0; i < INSTRUCTIONS; i++)
+	    asm("");
+#else
     for (i = 0; i < INSTRUCTIONS;) {
         asm volatile (
         ADD_4096
@@ -65,6 +78,7 @@ void *estimate_freq(void *data) {
         : "cc"
         );
     }
+#endif
 
     gettimeofday(&tv, NULL);
     double end = tv.tv_sec + tv.tv_usec / USEC_IN_SEC;

@@ -30,6 +30,9 @@ cc --version >> "${RESULT_DIR}/osx_compiler.log"
 echo "Compiling code to detect CPU frequency..."
 cc -ocpu_freq -std=gnu99 -Wall -Wextra -O2 utilities/cpu_freq.c -lpthread
 echo "Running tool to attempt to detect real sustained frequency... This might take a while..."
+echo "   It usually takes about 30s on 3 GHz CPU, if your CPU runs on lower frequency it might take more time to finish..."
+echo "   It also might take longer time on Architectures which don't have ASM code to check. Currently only ARMv8, AMD64 use their own codepath."
+echo
 echo "To make results more accurate please don't touch your computer while tools are running"
 if [[ ${current_arch} == "arm64" ]]; then
   EFFECTIVE_CORES=$(sysctl hw.perflevel1.physicalcpu | awk '{print $2}')
