@@ -1,0 +1,65 @@
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation i386 i386 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.39915160e-14   2.22044605e-16  -6.22835117e-14  -4.16333634e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.03216    0.00106    0.03322      20.67     0.0967     0.5932
+
+Calculating matgen overhead
+        10 times   0.03 seconds
+       100 times   0.30 seconds
+       200 times   0.60 seconds
+       400 times   1.20 seconds
+Overhead for 1 matgen      0.00301 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.35 seconds
+        20 times   0.70 seconds
+        40 times   1.41 seconds
+Passes used         28 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.03222    0.00089    0.03311      20.74     0.0964     0.5912
+    0.03217    0.00089    0.03306      20.77     0.0963     0.5904
+    0.03213    0.00089    0.03302      20.80     0.0962     0.5896
+    0.03219    0.00089    0.03308      20.76     0.0964     0.5908
+    0.03217    0.00090    0.03307      20.77     0.0963     0.5905
+Average                                20.77
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00363 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.04208    0.00126    0.04334      15.84     0.1262     0.7739
+    0.04215    0.00125    0.04340      15.82     0.1264     0.7750
+    0.04198    0.00125    0.04323      15.88     0.1259     0.7720
+    0.04199    0.00127    0.04326      15.87     0.1260     0.7726
+    0.04208    0.00135    0.04343      15.81     0.1265     0.7756
+Average                                15.85
+
+##########################################
+
+From File /proc/cpuinfo
+ Cannot open /proc/cpuinfo
+
+
+From File /proc/version
+
+
+Unrolled Double  Precision       15.85 Mflops 
+
+ Different numeric results - see linpack.txt
+
+

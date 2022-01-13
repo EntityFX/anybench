@@ -1,0 +1,38 @@
+
+##########################################
+Single Precision C Whetstone Benchmark i386 i386 optimized, Sun Dec  9 04:05:13 2018
+
+Calibrate
+       0.08 Seconds          1   Passes (x 100)
+       0.39 Seconds          5   Passes (x 100)
+       1.94 Seconds         25   Passes (x 100)
+       9.66 Seconds        125   Passes (x 100)
+
+Use 129  passes (x 100)
+
+From File /proc/cpuinfo
+ Cannot open /proc/cpuinfo
+
+
+From File /proc/version
+
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746        75.481              0.033
+N2 floating point     -1.12241148948669434        35.458              0.489
+N3 if then else        1.00000000000000000                 231.467    0.058
+N4 fixed point        12.00000000000000000                 315.464    0.129
+N5 sin,cos etc.        0.49904659390449524                   4.994    2.149
+N6 floating point      0.99999988079071045        16.290              4.271
+N7 assignments         3.00000000000000000                  27.695    0.861
+N8 exp,sqrt etc.       0.75110864639282227                   2.424    1.980
+
+MWIPS                                            129.391              9.970
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
