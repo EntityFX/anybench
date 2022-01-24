@@ -1,0 +1,27 @@
+##########################################
+Single Precision C Whetstone Benchmark e2k elbrus-v6 optimized, Thu Jan 20 23:32:45 2022
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.09 Seconds         25   Passes (x 100)
+       0.47 Seconds        125   Passes (x 100)
+       2.37 Seconds        625   Passes (x 100)
+
+Use 2638  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       614.487              0.082
+N2 floating point     -1.12274742126464844       604.840              0.586
+N3 if then else        1.00000000000000000                1996.878    0.137
+N4 fixed point        12.00000000000000000                1152.136    0.721
+N5 sin,cos etc.        0.49911010265350342                  71.352    3.076
+N6 floating point      0.99999982118606567       499.329              2.850
+N7 assignments         3.00000000000000000                2995.397    0.163
+N8 exp,sqrt etc.       0.75110864639282227                  41.181    2.383
+
+MWIPS                                           2638.509              9.998
+

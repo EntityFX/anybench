@@ -1,0 +1,30 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 15252
+Total time (secs): 15.252000
+Iterations/Sec   : 15735.641227
+Iterations       : 240000
+Compiler version : GCC7.3
+Compiler flags   : -O2  -fwhole -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
+Parallel Fork : 4
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[1]crclist       : 0xe714
+[2]crclist       : 0xe714
+[3]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[1]crcmatrix     : 0x1fd7
+[2]crcmatrix     : 0x1fd7
+[3]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[1]crcstate      : 0x8e3a
+[2]crcstate      : 0x8e3a
+[3]crcstate      : 0x8e3a
+[0]crcfinal      : 0xbd59
+[1]crcfinal      : 0xbd59
+[2]crcfinal      : 0xbd59
+[3]crcfinal      : 0xbd59
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 15735.641227 / GCC7.3 -O2  -fwhole -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt / Heap / 4:Fork
