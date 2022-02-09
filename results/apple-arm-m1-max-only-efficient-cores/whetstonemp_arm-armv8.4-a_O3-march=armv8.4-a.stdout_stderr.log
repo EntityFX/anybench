@@ -1,0 +1,54 @@
+10 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones arm64 armv8.4-a optimized
+
+             Using 10 threads - Wed Feb  9 21:35:22 2022
+
+ Calibrate
+    0.00767 Seconds          1   Passes (x 100)
+    0.03970 Seconds          5   Passes (x 100)
+    0.17558 Seconds         25   Passes (x 100)
+    0.81813 Seconds        125   Passes (x 100)
+
+ Use 1527  passes (x 100)
+
+ MFLOPS 1     119    118    118    117    117    117    117    117    117    117
+ MFLOPS 2     114    113    113    113    113    113    113    113    113    113
+ IFMOPS       981    978    977    976    973    972    969    969    968    967
+ FIXPMOPS   39349  35691  33910  31127  29321  27644  26176  24865  23670  22576
+ COSMOPS       22     22     22     22     22     22     22     22     22     22
+ MFLOPS 3      90     90     90     90     90     90     90     90     90     90
+ EQUMOPS      329    329    327    327    327    327    326    326    326    326
+ EXPMOPS       11     11     11     11     11     11     11     11     11     11
+ millisec   23345  23382  23344  23408  23385  23380  23334  23362  23368  23352
+ MWIPS        654    653    654    652    653    653    654    654    653    654
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    654    117    113     90     22     11  39349    981    327
+      2    653    117    113     90     22     11  35691    968    327
+      3    654    118    114     90     22     11  33910    967    326
+      4    652    117    113     90     22     11  31127    969    327
+      5    653    119    113     90     22     11  29321    978    326
+      6    653    118    113     90     22     11  27644    969    327
+      7    654    117    113     90     22     11  26176    972    326
+      8    654    117    113     90     22     11  24865    977    326
+      9    653    117    113     90     22     11  23670    973    329
+     10    654    117    113     90     22     11  22576    976    329
+ Total    6535   1174   1132    901    220    106 294329   9729   3271
+
+ MWIPS    6513 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 9 threads were same as above
+
+               End of test Wed Feb  9 21:35:57 2022

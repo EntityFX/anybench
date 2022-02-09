@@ -1,39 +1,22 @@
-  ####################################################
-  getDetails and MHz
-
-
-
-
-  Assembler CPUID and RDTSC      
-  CPU  , Features Code 00000000, Model Code 00000000
-   
-  Measured - Minimum 0 MHz, Maximum 0 MHz
-  Linux Functions
-  get_nprocs() - CPUs 10, Configured CPUs 10
-  get_phys_pages() and size - RAM Size 64.00 GB, Page Size 16384 Bytes
-  uname() - Darwin, Vladimirs-MacBook-Pro-M1.local, 21.2.0
-  Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:41 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T6000, arm64
-
+10 CPUs Available
 
 ##############################################
 
-  64 Bit MP SSE MFLOPS Benchmark 1, 10 Threads, Tue Dec 14 20:59:55 2021
+  64 Bit MP SSE MFLOPS Benchmark 1, 10 Threads, Thu Feb 10 10:56:24 2022
 
   Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
                     Words  Word   Passes                         Results  Same
 
- Data in & out     102400     2    25000   0.024187   211683    0.572188   Yes
- Data in & out    1024000     2     2500   0.029484   173653    0.929538   Yes
- Data in & out   10240000     2      250   0.071678    71430    0.992550   Yes
+ Data in & out     102400     2    25000   0.030260   169200    0.572188   Yes
+ Data in & out    1024000     2     2500   0.028340   180663    0.929538   Yes
+ Data in & out   10240000     2      250   0.070672    72447    0.992550   Yes
 
- Data in & out     102400     8    25000   0.059154   346215    0.712468   Yes
- Data in & out    1024000     8     2500   0.056981   359419    0.957117   Yes
- Data in & out   10240000     8      250   0.085542   239415    0.995517   Yes
+ Data in & out     102400     8    25000   0.058571   349660    0.712468   Yes
+ Data in & out    1024000     8     2500   0.066076   309946    0.957117   Yes
+ Data in & out   10240000     8      250   0.090208   227031    0.995517   Yes
 
- Data in & out     102400    32    25000   0.200057   409483    0.452821   Yes
- Data in & out    1024000    32     2500   0.204935   399737    0.890211   Yes
- Data in & out   10240000    32      250   0.265079   309040    0.988082   Yes
+ Data in & out     102400    32    25000   0.216925   377642    0.452821   Yes
+ Data in & out    1024000    32     2500   0.207769   394284    0.890211   Yes
+ Data in & out   10240000    32      250   0.263231   311210    0.988082   Yes
 
-               End of test Tue Dec 14 20:59:56 2021
-
- Press Enter
+               End of test Thu Feb 10 10:56:25 2022

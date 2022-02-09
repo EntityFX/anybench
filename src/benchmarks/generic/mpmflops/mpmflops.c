@@ -15,7 +15,18 @@ taskset 0x00000001 ./MPmflops64
 #include <stdio.h>
 #include <stdlib.h>
 #include "cpuidh.h"
+#ifdef __ia64__
+// IA64 doesn't have mm_malloc, stub it with plain non-alligned malloc
+static inline void * _mm_malloc (size_t size, size_t alignment) {
+	return malloc(size);
+}
+
+static inline void _mm_free (void * ptr) {
+  free(ptr);
+}
+#else
 #include <mm_malloc.h>
+#endif
 #include <pthread.h>
 #include <ctype.h>
 #include <string.h>

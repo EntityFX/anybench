@@ -1,6 +1,5 @@
-
 ##########################################
-Single Precision C Whetstone Benchmark arm64 armv8.4-a optimized, Tue Dec 14 21:00:03 2021
+Single Precision C Whetstone Benchmark arm64 armv8.4-a optimized, Thu Feb 10 11:04:21 2022
 
 Calibrate
        0.00 Seconds          1   Passes (x 100)
@@ -10,31 +9,20 @@ Calibrate
        0.95 Seconds        625   Passes (x 100)
        4.73 Seconds       3125   Passes (x 100)
 
-Use 6604  passes (x 100)
-
-From File /proc/cpuinfo
- Cannot open /proc/cpuinfo
-
-
-From File /proc/version
-
+Use 6608  passes (x 100)
 
           Single Precision C/C++ Whetstone Benchmark
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156      1198.491              0.106
-N2 floating point     -1.12274742126464844      1043.869              0.850
-N3 if then else        1.00000000000000000                4835.784    0.141
-N4 fixed point        12.00000000000000000                5363.581    0.388
-N5 sin,cos etc.        0.49911010265350342                 236.286    2.325
-N6 floating point      0.99999982118606567       917.619              3.882
-N7 assignments         3.00000000000000000                9589.377    0.127
-N8 exp,sqrt etc.       0.75110864639282227                 111.719    2.199
+N1 floating point     -1.12475013732910156      1198.191              0.106
+N2 floating point     -1.12274742126464844      1044.516              0.850
+N3 if then else        1.00000000000000000                4832.290    0.142
+N4 fixed point        12.00000000000000000                5369.725    0.388
+N5 sin,cos etc.        0.49911010265350342                 236.414    2.326
+N6 floating point      0.99999982118606567       919.820              3.875
+N7 assignments         3.00000000000000000                9627.396    0.127
+N8 exp,sqrt etc.       0.75110864639282227                 112.389    2.187
 
-MWIPS                                           6591.539             10.019
-
-
-A new results file, whets.txt,  will have been created in the same
-directory as the .EXE files, if one did not already exist.
+MWIPS                                           6608.031             10.000
 
