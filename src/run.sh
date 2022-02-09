@@ -31,6 +31,18 @@ done
 RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
 
+if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
+    if [[ ${os_name} == "mac" ]]; then
+        echo "Will gather system information"
+        ./cpu_info_mac.sh
+    fi
+
+    if [[ ${os_name} == "Linux" ]]; then
+        echo "Will gather system information"
+        ./cpu_info_linux.sh
+    fi
+fi
+
 BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
 BINARY_LIST="$(ls ${BIN_DIR}/)"
 if [[ "${BINARY}" != "" ]]; then
