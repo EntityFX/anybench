@@ -6,17 +6,17 @@ SUFFIX=""
 # pass "--suffix SUFFIX" to set SUFFIX, must be at the end.
 if [ $# -eq 2 ]; then
 	if [ $1 == "--suffix" ]; then
-		SUFFIX=$2
+		SUFFIX="_${2}"
 	fi
 fi
 
 if [ $# -eq 3 ]; then
 	if [ $2 == "--suffix" ]; then
-		SUFFIX=$3
+		SUFFIX="_${3}"
 	fi
 fi
 
-RESULT_DIR="../results/${current_arch}"
+RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
 
 if [[ ${os_name} == "mac" ]]; then
