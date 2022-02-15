@@ -31,7 +31,7 @@ binaryCompileOptions["whetstonemp"]="benchmarks/generic/whetstonemp/whetsmp.c ${
 binaryCompileOptions["mpmflops"]="benchmarks/generic/mpmflops/mpmflops.c ${CPUID_FLAGS} -pthread -lm ${extraLinkerOptions}"
 binaryCompileOptions["busspeedil"]="benchmarks/generic/busspeedil/busspeed.c ${CPUID_FLAGS} -lm ${extraLinkerOptions}"
 binaryCompileOptions["gsynth"]="benchmarks/generic/gsynth/gsynth.cpp -std=c++11 -lm -lstdc++"
-binaryCompileOptions["STREAM"]="benchmarks/generic/STREAM/stream.c -fopenmp -DSTREAM_ARRAY_SIZE=20000000 -DNTIMES=20 ${extraLinkerOptions}"
+binaryCompileOptions["STREAM"]="benchmarks/generic/STREAM/stream.c -fopenmp -mcmodel=large -DSTREAM_ARRAY_SIZE=80000000 -DNTIMES=20 ${extraLinkerOptions}"
 binaryCompileOptions["SuperPI"]="benchmarks/generic/SuperPI/pi_fftcs.c benchmarks/generic/SuperPI/fftsg_h.c -lm ${extraLinkerOptions}"
 
 coremarkCompileOptions="-Ibenchmarks/generic/coremark/${coremarkPlatform} -Ibenchmarks/generic/coremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} benchmarks/generic/coremark/core_list_join.c benchmarks/generic/coremark/core_main.c benchmarks/generic/coremark/core_matrix.c benchmarks/generic/coremark/core_state.c benchmarks/generic/coremark/core_util.c benchmarks/generic/coremark/${coremarkPlatform}/core_portme.c"

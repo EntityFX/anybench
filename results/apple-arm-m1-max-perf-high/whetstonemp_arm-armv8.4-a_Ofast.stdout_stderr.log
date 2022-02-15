@@ -1,49 +1,45 @@
-
-
-  ####################################################
-  getDetails and MHz
-
-  Assembler CPUID and RDTSC      
-  CPU  , Features Code 00000000, Model Code 00000000
-   
-  Measured - Minimum 0 MHz, Maximum 0 MHz
-  Linux Functions
-  get_nprocs() - CPUs 10, Configured CPUs 10
-  get_phys_pages() and size - RAM Size 64.00 GB, Page Size 16384 Bytes
-  uname() - Darwin, Vladimirs-MacBook-Pro-M1.local, 21.2.0
-  Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:41 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T6000, arm64
-
+10 CPUs Available
 ##############################################
 
  Multithreading Single Precision Whetstones arm64 armv8.4-a optimized
 
-             Using 10 threads - Tue Dec 14 21:03:25 2021
+             Using 10 threads - Thu Feb 10 11:11:59 2022
 
  Calibrate
-    0.00199 Seconds          1   Passes (x 100)
-    0.00881 Seconds          5   Passes (x 100)
-    0.04343 Seconds         25   Passes (x 100)
-    0.21627 Seconds        125   Passes (x 100)
+    0.00191 Seconds          1   Passes (x 100)
+    0.01222 Seconds          5   Passes (x 100)
+    0.05093 Seconds         25   Passes (x 100)
+    0.21622 Seconds        125   Passes (x 100)
 
- Use 5779  passes (x 100)
+ Use 5781  passes (x 100)
 
- MFLOPS 1    1219   1218   1217   1213   1209   1206   1203   1202   1196   1191
- MFLOPS 2    1204   1202   1201   1200   1198   1193   1191   1185   1184   1173
- IFMOPS      8639   8627   8611   8354   8234   7955   7878   7849   7489   7364
- FIXPMOPS  177999 177949 177911 177688 175798 168776 160485 155898 105850 100558
- COSMOPS      210    210    208    208    207    207    207    206    205    205
- MFLOPS 3     804    800    800    798    797    797    796    795    795    794
- EQUMOPS     7847   7791   7732   7728   7721   7720   7701   7690   7687   7585
- EXPMOPS      103    103    103    102    102    102    102    102    102    101
- millisec    9298   9320   9274   9299   9244   9236   9294   9333   9361   9330
- MWIPS       6215   6200   6232   6215   6252   6257   6218   6192   6174   6194
+ MFLOPS 1    1232   1215   1210   1209   1204   1196   1196   1185   1175   1162
+ MFLOPS 2    1237   1232   1215   1207   1199   1196   1187   1186   1185   1177
+ IFMOPS      8289   8203   8123   8117   7983   7826   7742   7732   7710   7428
+ FIXPMOPS  178970 178882 178756 177452 177176 176934 176574 176505 135251 134501
+ COSMOPS      210    210    209    209    208    207    207    207    207    205
+ MFLOPS 3     800    800    799    797    797    795    795    794    791    790
+ EQUMOPS     7976   7949   7945   7896   7824   7819   7770   7709   7676   7590
+ EXPMOPS      103    103    103    103    103    103    102    102    102    101
+ millisec    9263   9298   9300   9328   9245   9313   9279   9312   9324   9282
+ MWIPS       6241   6217   6216   6198   6253   6207   6230   6208   6200   6228
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
- Total   62149  12073  11932   7974   2072   10231578911  81001  77202
+      1   6241   1196   1215    797    210    103 178756   7428   7824
+      2   6217   1196   1207    790    210    103 178970   7742   7676
+      3   6216   1162   1196    795    207    103 178882   8203   7819
+      4   6198   1209   1177    791    207    103 176574   7732   7770
+      5   6253   1185   1237    800    209    102 177452   7983   7945
+      6   6207   1215   1186    800    207    102 176505   7826   7590
+      7   6230   1232   1232    797    209    101 135251   8289   7976
+      8   6208   1204   1187    795    207    103 176934   8123   7949
+      9   6200   1210   1185    794    205    103 134501   8117   7709
+     10   6228   1175   1199    799    208    102 177176   7710   7896
+ Total   62200  11983  12021   7957   2078   10251691000  79152  78154
 
- MWIPS   61528 Based on time for last thread to finish
+ MWIPS   61483 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -55,7 +51,4 @@
 
       Numeric results of the other 9 threads were same as above
 
-               End of test Tue Dec 14 21:03:37 2021
-
-               Results also in log file MPwhetres.txt
-
+               End of test Thu Feb 10 11:12:11 2022

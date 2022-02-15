@@ -1,11 +1,11 @@
 2K performance run parameters for coremark.
 CoreMark Size    : 666
-Total ticks      : 13573
-Total time (secs): 13.573000
-Iterations/Sec   : 117881.087453
+Total ticks      : 13599
+Total time (secs): 13.599000
+Iterations/Sec   : 117655.709979
 Iterations       : 1600000
 Compiler version : GCCApple LLVM 13.0.0 (clang-1300.0.29.30)
-Compiler flags   : -Ofast -mcpu=apple-m1  -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
+Compiler flags   : -Ofast  -mcpu=apple-m1 -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
 Parallel Fork : 4
 Memory location  : Please put data memory location here
 			(e.g. code in flash, data on heap etc)
@@ -27,4 +27,4 @@ seedcrc          : 0xe9f5
 [2]crcfinal      : 0x65c5
 [3]crcfinal      : 0x65c5
 Correct operation validated. See README.md for run and reporting rules.
-CoreMark 1.0 : 117881.087453 / GCCApple LLVM 13.0.0 (clang-1300.0.29.30) -Ofast -mcpu=apple-m1  -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt / Heap / 4:Fork
+CoreMark 1.0 : 117655.709979 / GCCApple LLVM 13.0.0 (clang-1300.0.29.30) -Ofast  -mcpu=apple-m1 -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt / Heap / 4:Fork

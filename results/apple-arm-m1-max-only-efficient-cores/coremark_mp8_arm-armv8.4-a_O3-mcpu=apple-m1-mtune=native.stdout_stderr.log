@@ -1,0 +1,46 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 44748
+Total time (secs): 44.748000
+Iterations/Sec   : 19665.683382
+Iterations       : 880000
+Compiler version : GCCApple LLVM 13.0.0 (clang-1300.0.29.30)
+Compiler flags   : -O3 -mtune=native -mcpu=apple-m1 -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
+Parallel Fork : 8
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[1]crclist       : 0xe714
+[2]crclist       : 0xe714
+[3]crclist       : 0xe714
+[4]crclist       : 0xe714
+[5]crclist       : 0xe714
+[6]crclist       : 0xe714
+[7]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[1]crcmatrix     : 0x1fd7
+[2]crcmatrix     : 0x1fd7
+[3]crcmatrix     : 0x1fd7
+[4]crcmatrix     : 0x1fd7
+[5]crcmatrix     : 0x1fd7
+[6]crcmatrix     : 0x1fd7
+[7]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[1]crcstate      : 0x8e3a
+[2]crcstate      : 0x8e3a
+[3]crcstate      : 0x8e3a
+[4]crcstate      : 0x8e3a
+[5]crcstate      : 0x8e3a
+[6]crcstate      : 0x8e3a
+[7]crcstate      : 0x8e3a
+[0]crcfinal      : 0x33ff
+[1]crcfinal      : 0x33ff
+[2]crcfinal      : 0x33ff
+[3]crcfinal      : 0x33ff
+[4]crcfinal      : 0x33ff
+[5]crcfinal      : 0x33ff
+[6]crcfinal      : 0x33ff
+[7]crcfinal      : 0x33ff
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 19665.683382 / GCCApple LLVM 13.0.0 (clang-1300.0.29.30) -O3 -mtune=native -mcpu=apple-m1 -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt / Heap / 8:Fork
