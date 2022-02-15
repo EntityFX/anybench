@@ -1,6 +1,21 @@
 #!/usr/bin/env bash
 source common.sh
 
+SUFFIX=""
+
+# pass "--suffix SUFFIX" to set SUFFIX, must be at the end.
+if [ $# -eq 2 ]; then
+	if [ $1 == "--suffix" ]; then
+		SUFFIX=$2
+	fi
+fi
+
+if [ $# -eq 3 ]; then
+	if [ $2 == "--suffix" ]; then
+		SUFFIX=$3
+	fi
+fi
+
 RESULT_DIR="../results/${current_arch}"
 mkdir -p "${RESULT_DIR}"
 
@@ -11,10 +26,10 @@ fi
 
 if [[ ${os_name} == "Linux" ]]; then
     echo "Will gather system information"
-    ./cpu_info_linux.sh
+    ./cpu_info_linux.sh $SUFFIX
 fi
 
-BIN_DIR="../bin/${os_name}/${current_arch}"
+BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
 BINARY_LIST="$(ls ${BIN_DIR}/)"
 if [[ "${#@}" -eq 1 ]]; then
 	BINARY=${1}

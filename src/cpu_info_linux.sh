@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 source common.sh
-RESULT_DIR="../results/${current_arch}"
+
+SUFFIX=""
+if [ $# -ne 0 ]; then
+    SUFFIX="_${1}"
+fi
+
+RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
 
 echo "Recording output of uname"
