@@ -14,7 +14,6 @@
 #include <stdint.h>
 #include <ctype.h>
 #include <string.h>
-#include <mm_malloc.h>
 #include <pthread.h>
 
 #ifndef __MACH__

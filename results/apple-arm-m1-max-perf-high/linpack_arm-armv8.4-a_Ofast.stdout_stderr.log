@@ -1,4 +1,3 @@
-
 ##########################################
 Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
 
@@ -11,37 +10,37 @@ Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00008    0.00001    0.00009    7721.42     0.0003     0.0016
+    0.00015    0.00001    0.00016    4344.03     0.0005     0.0028
 
 Calculating matgen overhead
         10 times   0.00 seconds
        100 times   0.00 seconds
       1000 times   0.03 seconds
      10000 times   0.25 seconds
-     20000 times   0.50 seconds
-     40000 times   0.99 seconds
-     80000 times   1.97 seconds
+     20000 times   0.49 seconds
+     40000 times   0.97 seconds
+     80000 times   1.95 seconds
 Overhead for 1 matgen      0.00002 seconds
 
 Calculating matgen/dgefa passes for 1 seconds
         10 times   0.00 seconds
        100 times   0.01 seconds
-      1000 times   0.11 seconds
-      2000 times   0.21 seconds
-      4000 times   0.42 seconds
-      8000 times   0.83 seconds
+      1000 times   0.10 seconds
+      2000 times   0.20 seconds
+      4000 times   0.41 seconds
+      8000 times   0.82 seconds
      16000 times   1.64 seconds
-Passes used       9740 
+Passes used       9769 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00008    0.00000    0.00008    8441.18     0.0002     0.0015
-    0.00008    0.00000    0.00008    8395.86     0.0002     0.0015
-    0.00008    0.00000    0.00008    8445.37     0.0002     0.0015
-    0.00008    0.00000    0.00008    8480.15     0.0002     0.0014
-    0.00008    0.00000    0.00008    8484.97     0.0002     0.0014
-Average                              8449.51
+    0.00008    0.00000    0.00008    8459.97     0.0002     0.0014
+    0.00008    0.00000    0.00008    8451.78     0.0002     0.0015
+    0.00008    0.00000    0.00008    8449.55     0.0002     0.0015
+    0.00008    0.00000    0.00008    8461.05     0.0002     0.0014
+    0.00008    0.00000    0.00008    8445.64     0.0002     0.0015
+Average                              8453.60
 
 Calculating matgen2 overhead
 Overhead for 1 matgen      0.00002 seconds
@@ -49,24 +48,14 @@ Overhead for 1 matgen      0.00002 seconds
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00008    0.00000    0.00008    8497.77     0.0002     0.0014
-    0.00008    0.00000    0.00008    8492.54     0.0002     0.0014
-    0.00008    0.00000    0.00008    8508.58     0.0002     0.0014
-    0.00008    0.00000    0.00008    8501.02     0.0002     0.0014
-    0.00008    0.00000    0.00008    8500.98     0.0002     0.0014
-Average                              8500.18
-
-##########################################
-
-From File /proc/cpuinfo
- Cannot open /proc/cpuinfo
+    0.00008    0.00000    0.00008    8471.92     0.0002     0.0014
+    0.00008    0.00000    0.00008    8497.67     0.0002     0.0014
+    0.00008    0.00000    0.00008    8484.80     0.0002     0.0014
+    0.00008    0.00000    0.00008    8503.60     0.0002     0.0014
+    0.00008    0.00000    0.00008    8479.09     0.0002     0.0014
+Average                              8487.42
 
 
-From File /proc/version
-
-
-Unrolled Double  Precision     8449.51 Mflops 
-
- Different numeric results - see linpack.txt
+Unrolled Double  Precision     8453.60 Mflops 
 
 
