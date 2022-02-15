@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
 source common.sh
-RESULT_DIR="../results/${current_arch}"
+
+SUFFIX=""
+cc=cc
+if [ $# -ne 0 ]; then
+    SUFFIX=$1
+	cc="${SUFFIX:1}"
+fi
+
+RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
 
 echo "Recording output of uname"
@@ -39,11 +47,11 @@ echo "Saving numactl information..."
 numactl -H &>> "${RESULT_DIR}/linux_numactl.log"
 
 echo "Getting information from current compiler"
-cc --version >> "${RESULT_DIR}/linux_compiler.log"
+$cc --version >> "${RESULT_DIR}/linux_compiler.log"
 
 # compile test code and do heruistics to detect cpu frequency
 echo "Compiling code to detect CPU frequency..."
-cc -ocpu_freq -std=gnu99 -Wall -Wextra -O2 utilities/cpu_freq.c -lpthread
+$cc -ocpu_freq -std=gnu99 -Wall -Wextra -O2 utilities/cpu_freq.c -lpthread
 echo "Running tool to attempt to detect real sustained frequency... This might take a while..."
 echo "   It usually takes about 30s on 3 GHz CPU, if your CPU runs on lower frequency it might take more time to finish..."
 echo "   It also might take longer time on Architectures which don't have ASM code to check. Currently only ARMv8, AMD64 and E2K use their own codepath."
