@@ -1,0 +1,43 @@
+1 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones riscv64 rv64g optimized
+
+             Using 1 threads - Fri Feb 25 05:34:16 2022
+
+ Calibrate
+    0.01696 Seconds          1   Passes (x 100)
+    0.07916 Seconds          5   Passes (x 100)
+    0.36746 Seconds         25   Passes (x 100)
+
+ Use 680  passes (x 100)
+
+ MFLOPS 1     298
+ MFLOPS 2     304
+ IFMOPS       973
+ FIXPMOPS     544
+ COSMOPS       17
+ MFLOPS 3     345
+ EQUMOPS      490
+ EXPMOPS       15
+ millisec    7135
+ MWIPS        953
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    953    298    304    345     17     15    544    973    490
+ Total     953    298    304    345     17     15    544    973    490
+
+ MWIPS     953 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+
+               End of test Fri Feb 25 05:34:27 2022
