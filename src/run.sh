@@ -31,6 +31,23 @@ done
 RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
 
+BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
+BINARY_LIST="$(ls ${BIN_DIR}/)"
+if [[ "${BINARY}" != "" ]]; then
+	NEW_LIST=""
+	for b in ${BINARY}; do
+		NEW_LIST="${NEW_LIST} $(grep "${b}" <<< "${BINARY_LIST}")"
+	done
+	BINARY_LIST="${NEW_LIST}"
+fi
+
+echo
+echo "Binaries to run: '${BINARY_LIST}'"
+echo "Suffix: '${SUFFIX}'"
+echo "Result directory: ${RESULT_DIR}"
+echo "Will skip CPU Info: ${SKIP_CPU_INFO}"
+echo
+
 if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
     if [[ ${os_name} == "mac" ]]; then
         echo "Will gather system information"
@@ -39,7 +56,7 @@ if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
 
     if [[ ${os_name} == "Linux" ]]; then
         echo "Will gather system information"
-        ./cpu_info_linux.sh
+        ./cpu_info_linux.sh $SUFFIX
     fi
 fi
 
@@ -71,7 +88,6 @@ if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
         ./cpu_info_linux.sh $SUFFIX
     fi
 fi
-
 
 for BINARY in ${BINARY_LIST}; do
     [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
