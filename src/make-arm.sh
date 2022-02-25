@@ -1,6 +1,8 @@
 #!/bin/bash
 # Include common functions and operations
 source common.sh
+source common-make.sh
+
 # arm 32bit case
 if [[ ${current_arch} != "aarch64" ]]; then
     targetToFlags["armv6"]=""
@@ -31,16 +33,16 @@ else
 fi
 
 if [[ ${#} -eq 1 ]]; then
-	echo "Compiling only ${1}"
-	BINARY="${1}"
-    	for ARCH in "${!targetToFlags[@]}"; do
-        	compile_binary ${ARCH} ${BINARY} arm
-    	done
-	exit 0
+    echo "Compiling only ${1}"
+    BINARY="${1}"
+    for ARCH in "${!targetToFlags[@]}"; do
+        compile_binary ${ARCH} ${BINARY} arm ${COMPILER}
+    done
+    exit 0
 fi
 
 for BINARY in "${!binaryCompileOptions[@]}"; do
     for ARCH in "${!targetToFlags[@]}"; do
-        compile_binary ${ARCH} ${BINARY} arm
+            compile_binary ${ARCH} ${BINARY} arm ${COMPILER}
     done
 done

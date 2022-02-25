@@ -2,22 +2,51 @@
 source common.sh
 
 SUFFIX=""
-
-# pass "--suffix SUFFIX" to set SUFFIX, must be at the end.
-if [ $# -eq 2 ]; then
-	if [ $1 == "--suffix" ]; then
-		SUFFIX="_${2}"
-	fi
-fi
-
-if [ $# -eq 3 ]; then
-	if [ $2 == "--suffix" ]; then
-		SUFFIX="_${3}"
-	fi
-fi
+COMPILER=""
+BINARY=""
+SKIP_CPU_INFO="${SKIP_CPU_INFO}"
+is_suffix=0
+while (( "${#}" )); do
+	ARG="${1}"
+	case ${ARG} in
+		"--cc")
+			is_suffix=1
+			;;
+		"--suffix")
+			is_suffix=1
+			;;
+		*)
+			if [[ ${is_suffix} -eq 1 ]]; then
+				SUFFIX="_${ARG}"
+				is_suffix=0
+			else
+				BINARY="${BINARY} ${ARG}"
+				SKIP_CPU_INFO="true"
+			fi
+			;;
+	esac
+	shift
+done
 
 RESULT_DIR="../results/${current_arch}${SUFFIX}"
 mkdir -p "${RESULT_DIR}"
+
+BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
+BINARY_LIST="$(ls ${BIN_DIR}/)"
+if [[ "${BINARY}" != "" ]]; then
+	NEW_LIST=""
+	for b in ${BINARY}; do
+		NEW_LIST="${NEW_LIST} $(grep "${b}" <<< "${BINARY_LIST}")"
+	done
+	BINARY_LIST="${NEW_LIST}"
+fi
+
+echo
+echo "Binaries to run: '${BINARY_LIST}'"
+echo "Suffix: '${SUFFIX}'"
+echo "Result directory: ${RESULT_DIR}"
+echo "Will skip CPU Info: ${SKIP_CPU_INFO}"
+echo
 
 if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
     if [[ ${os_name} == "mac" ]]; then
@@ -25,17 +54,13 @@ if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
         ./cpu_info_mac.sh
     fi
 
-if [[ ${os_name} == "Linux" ]]; then
-    echo "Will gather system information"
-    ./cpu_info_linux.sh $SUFFIX
+    if [[ ${os_name} == "Linux" ]]; then
+        echo "Will gather system information"
+        ./cpu_info_linux.sh $SUFFIX
+    fi
 fi
 
-BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
-BINARY_LIST="$(ls ${BIN_DIR}/)"
-if [[ "${#@}" -eq 1 ]]; then
-	BINARY=${1}
-	BINARY_LIST="$(ls ${BIN_DIR}/ | grep ${BINARY})"
-fi
+
 for BINARY in ${BINARY_LIST}; do
     [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
     echo "Running ${BINARY}"

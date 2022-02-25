@@ -36,13 +36,21 @@ binaryCompileOptions["SuperPI"]="benchmarks/generic/SuperPI/pi_fftcs.c benchmark
 
 coremarkCompileOptions="-Ibenchmarks/generic/coremark/${coremarkPlatform} -Ibenchmarks/generic/coremark -DPERFORMANCE_RUN=1 -DUSE_FORK=1  ${extraLinkerOptions} benchmarks/generic/coremark/core_list_join.c benchmarks/generic/coremark/core_main.c benchmarks/generic/coremark/core_matrix.c benchmarks/generic/coremark/core_state.c benchmarks/generic/coremark/core_util.c benchmarks/generic/coremark/${coremarkPlatform}/core_portme.c"
 
-for cores in 1 2 4 8; do
-  binaryCompileOptions["coremark_mp${cores}"]="-DMULTITHREAD=${cores} ${coremarkCompileOptions}"
+cores=1
+while :; do
+    binaryCompileOptions["coremark_mp${cores}"]="-DMULTITHREAD=${cores} ${coremarkCompileOptions}"
+    if [[ ${cores} -eq ${cpus_count} ]]; then
+        break
+    fi
+    if [[ ${cores} -lt 4 ]]; then
+        cores=$((cores+1))
+    else
+        cores=$((cores*2))
+    fi
+    if [[ ${cores} -gt ${cpus_count} ]]; then
+        cores=${cpus_count}
+    fi
 done
-
-if ((cpus_count > 8)); then
-  binaryCompileOptions["coremark_mp${cpus_count}"]="-DMULTITHREAD=${cpus_count} ${coremarkCompileOptions}"
-fi
 
 binaryCompileOptions["scimark2"]="-Ibenchmarks/generic/scimark2 benchmarks/generic/scimark2/*.c -lm"
 
@@ -69,6 +77,7 @@ optFlags="-O2 -O3 -Ofast"
 # compile_binary function will iterate over all variants of flags specified by targetToFlags
 declare -A targetToFlags
 declare -A targetToFPU
+declare -A targetToExtraFlags
 declare -A binaryExtraArgs
 declare -A platformSpecificCompileOptions
 
@@ -96,6 +105,7 @@ compile_binary() {
 
   echo -e "\033[0;32mCompiling ${BINARY} for ${ARCH} (${current_arch})\033[0m\n"
   FPUS="${targetToFPU[${ARCH}]}"
+  EXTRA_FLAGS="${targetToExtraFlags[${ARCH}]}"
   MTUNES="${targetToFlags[${ARCH}]}"
   for FPU in "" ${FPUS}; do
     for MTUNE in "" ${MTUNES}; do
@@ -107,6 +117,10 @@ compile_binary() {
         if [[ ${BINARY_NAME} =~ ^coremark ]]; then
           BINARY_EXTRA_FLAGS[0]="-DFLAGS_STR=\"${OPT} ${EXTRA_CFLAGS} -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt\""
         fi
+	if [[ ${DO_NOT_REBUILD} != "false" ]] && [[ -f "${output_dir}/${BINARY_NAME}" ]]; then
+		echo "--no-rebuild was specified and binary exists, skipping..."
+		continue
+	fi
         case "${BINARY_NAME}" in
         STREAM*)
           if [[ -z ${OPENMP_CC} ]]; then
@@ -124,13 +138,13 @@ compile_binary() {
             echo "Will try to compile using ${CC} anyway..."
             OPENMP_CC="${CC}"
           fi
-          ${OPENMP_CC} ${OPENMP_LINK} ${platformSpecificCompileOptions[${BINARY}]} -Ibenchmarks/common ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\"" || continue
+          ${OPENMP_CC} ${OPENMP_LINK} ${platformSpecificCompileOptions[${BINARY}]} -Ibenchmarks/common ${binaryCompileOptions[${BINARY}]} ${EXTRA_FLAGS} "${BINARY_EXTRA_FLAGS[@]}" -o ${output_dir}/${BINARY_NAME} ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\"" || continue
           ;;
         gsynth*)
-          "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
+          "${CC}" ${binaryCompileOptions[${BINARY}]} ${EXTRA_FLAGS} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS}
           ;;
         *)
-          "${CC}" ${binaryCompileOptions[${BINARY}]} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
+          "${CC}" ${binaryCompileOptions[${BINARY}]} ${EXTRA_FLAGS} "${BINARY_EXTRA_FLAGS[@]}" -o "${output_dir}/${BINARY_NAME}" ${OPT} ${EXTRA_CFLAGS} -D options="\"${current_arch} ${ARCH} optimized\""
           ;;
         esac
         chmod +x "${output_dir}/${BINARY_NAME}"

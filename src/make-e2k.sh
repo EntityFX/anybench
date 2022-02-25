@@ -1,6 +1,7 @@
 #!/bin/bash
 # Include common functions and operations
 source common.sh
+source common-make.sh
 optFlags="-O2 -O3 -O4 -Ofast"
 
 targetToFlags["elbrus-v2"]=""
@@ -16,16 +17,16 @@ targetToFPU["elbrus-v5"]="-ffast -fwhole"
 targetToFPU["elbrus-v6"]="-ffast -fwhole"
 
 if [[ ${#} -eq 1 ]]; then
-	echo "Compiling only ${1}"
-	BINARY="${1}"
-    	for ARCH in "${!targetToFlags[@]}"; do
-        	compile_binary ${ARCH} ${BINARY} e2k
-    	done
-	exit 0
+    echo "Compiling only ${1}"
+    BINARY="${1}"
+    for ARCH in "${!targetToFlags[@]}"; do
+        compile_binary ${ARCH} ${BINARY} e2k ${COMPILER}
+    done
+    exit 0
 fi
 
 for BINARY in "${!binaryCompileOptions[@]}"; do
     for ARCH in "${!targetToFlags[@]}"; do
-        compile_binary ${ARCH} ${BINARY} e2k
+            compile_binary ${ARCH} ${BINARY} e2k ${COMPILER}
     done
 done
