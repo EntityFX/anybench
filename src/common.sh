@@ -42,7 +42,7 @@ while :; do
     if [[ ${cores} -eq ${cpus_count} ]]; then
         break
     fi
-    if [[ ${cores} < 4 ]]; then
+    if [[ ${cores} -lt 4 ]]; then
         cores=$((cores+1))
     else
         cores=$((cores*2))
