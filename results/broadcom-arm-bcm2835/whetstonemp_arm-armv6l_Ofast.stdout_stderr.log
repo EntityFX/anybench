@@ -1,0 +1,43 @@
+1 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones armv6l armv6l optimized
+
+             Using 1 threads - Sun Apr 10 21:34:00 2022
+
+ Calibrate
+    0.03175 Seconds          1   Passes (x 100)
+    0.13522 Seconds          5   Passes (x 100)
+    0.66070 Seconds         25   Passes (x 100)
+
+ Use 378  passes (x 100)
+
+ MFLOPS 1     207
+ MFLOPS 2     206
+ IFMOPS      1073
+ FIXPMOPS  301398
+ COSMOPS        9
+ MFLOPS 3     120
+ EQUMOPS      425
+ EXPMOPS        6
+ millisec    8086
+ MWIPS        467
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    467    207    206    120      9      6 301398   1073    425
+ Total     467    207    206    120      9      6 301398   1073    425
+
+ MWIPS     467 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333511352539062      MFLOPS 2   -1.13333344459533691
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+
+               End of test Sun Apr 10 21:34:11 2022
