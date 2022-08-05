@@ -3,33 +3,33 @@
 
  Multithreading Single Precision Whetstones riscv64 rv64g-opt optimized
 
-             Using 1 threads - Fri Feb 25 05:36:52 2022
+             Using 1 threads - Fri Aug  5 20:04:54 2022
 
  Calibrate
-    0.01238 Seconds          1   Passes (x 100)
-    0.05145 Seconds          5   Passes (x 100)
-    0.25015 Seconds         25   Passes (x 100)
+    0.01304 Seconds          1   Passes (x 100)
+    0.05132 Seconds          5   Passes (x 100)
+    0.36141 Seconds         25   Passes (x 100)
 
- Use 999  passes (x 100)
+ Use 691  passes (x 100)
 
- MFLOPS 1     389
+ MFLOPS 1     398
  MFLOPS 2     397
- IFMOPS     11802
- FIXPMOPS 1615526
+ IFMOPS     11780
+ FIXPMOPS  821740
  COSMOPS       17
- MFLOPS 3     347
- EQUMOPS     7710
- EXPMOPS       15
- millisec    9226
- MWIPS       1083
+ MFLOPS 3     317
+ EQUMOPS     7975
+ EXPMOPS       14
+ millisec    6739
+ MWIPS       1025
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1083    389    397    347     17     151615526  11802   7710
- Total    1083    389    397    347     17     151615526  11802   7710
+      1   1025    398    397    317     17     14 821740  11780   7975
+ Total    1025    398    397    317     17     14 821740  11780   7975
 
- MWIPS    1083 Based on time for last thread to finish
+ MWIPS    1025 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
@@ -40,4 +40,4 @@
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
 
-               End of test Fri Feb 25 05:37:02 2022
+               End of test Fri Aug  5 20:05:02 2022
