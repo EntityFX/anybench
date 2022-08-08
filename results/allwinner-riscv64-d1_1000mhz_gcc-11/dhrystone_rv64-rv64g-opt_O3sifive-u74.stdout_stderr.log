@@ -4,21 +4,23 @@ Optimisation    riscv64 rv64g-opt optimized
 Register option not selected
 
        10000 runs   0.00 seconds 
-      100000 runs   0.03 seconds 
-     1000000 runs   0.44 seconds 
-     2000000 runs   0.66 seconds 
-     4000000 runs   1.43 seconds 
-     8000000 runs   2.75 seconds 
+      100000 runs   0.05 seconds 
+      200000 runs   0.07 seconds 
+      400000 runs   0.13 seconds 
+      800000 runs   0.26 seconds 
+     1600000 runs   0.53 seconds 
+     3200000 runs   1.06 seconds 
+     6400000 runs   2.22 seconds 
 
 Final values (* implementation-dependent):
 
 Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
 Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
-Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.     8000010
-Ptr_Glob->              Ptr_Comp:       *    0x2aebacf2a0
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.     6400010
+Ptr_Glob->              Ptr_Comp:       *    0x2aea5fb2a0
   Discr:       O.K.  0  Enum_Comp:     O.K.  2
   Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->         Ptr_Comp:       *    0x2aebacf2a0 same as above
+Next_Ptr_Glob->         Ptr_Comp:       *    0x2aea5fb2a0 same as above
   Discr:       O.K.  0  Enum_Comp:     O.K.  1
   Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
 Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
@@ -26,7 +28,7 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run:       343.40
-Dhrystones per Second:              2912021
-VAX  MIPS rating =                  1657.38
+Nanoseconds one Dhrystone run:       347.18
+Dhrystones per Second:              2880375
+VAX  MIPS rating =                  1639.37
 

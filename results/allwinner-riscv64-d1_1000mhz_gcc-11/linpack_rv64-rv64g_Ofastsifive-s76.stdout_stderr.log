@@ -10,45 +10,45 @@ Times are reported for matrices of order          100
 1 pass times for array with leading dimension of  201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00608    0.00026    0.00633     108.41     0.0184     0.1131
+    0.00650    0.00027    0.00677     101.45     0.0197     0.1209
 
 Calculating matgen overhead
         10 times   0.01 seconds
        100 times   0.06 seconds
       1000 times   0.64 seconds
-      2000 times   1.38 seconds
-Overhead for 1 matgen      0.00069 seconds
+      2000 times   1.39 seconds
+Overhead for 1 matgen      0.00070 seconds
 
 Calculating matgen/dgefa passes for 1 seconds
         10 times   0.07 seconds
-       100 times   0.68 seconds
-       200 times   1.45 seconds
-Passes used        137 
+       100 times   0.71 seconds
+       200 times   1.53 seconds
+Passes used        130 
 
 Times for array with leading dimension of 201
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00606    0.00025    0.00631     108.83     0.0184     0.1127
-    0.00604    0.00026    0.00629     109.12     0.0183     0.1124
-    0.00684    0.00025    0.00709      96.87     0.0206     0.1266
-    0.00603    0.00026    0.00629     109.21     0.0183     0.1123
-    0.00684    0.00025    0.00709      96.88     0.0206     0.1266
-Average                               104.18
+    0.00643    0.00026    0.00669     102.65     0.0195     0.1195
+    0.00641    0.00026    0.00667     102.98     0.0194     0.1191
+    0.00724    0.00026    0.00749      91.67     0.0218     0.1338
+    0.00641    0.00026    0.00666     103.06     0.0194     0.1190
+    0.00725    0.00026    0.00750      91.50     0.0219     0.1340
+Average                                98.37
 
 Calculating matgen2 overhead
-Overhead for 1 matgen      0.00063 seconds
+Overhead for 1 matgen      0.00064 seconds
 
 Times for array with leading dimension of 200
 
       dgefa      dgesl      total     Mflops       unit      ratio
-    0.00703    0.00025    0.00728      94.29     0.0212     0.1300
-    0.00623    0.00025    0.00648     106.01     0.0189     0.1157
-    0.00702    0.00029    0.00731      93.96     0.0213     0.1305
-    0.00617    0.00025    0.00643     106.87     0.0187     0.1147
-    0.00706    0.00025    0.00731      93.92     0.0213     0.1306
-Average                                99.01
+    0.00735    0.00026    0.00761      90.29     0.0222     0.1358
+    0.00653    0.00025    0.00679     101.16     0.0198     0.1212
+    0.00735    0.00026    0.00761      90.29     0.0222     0.1358
+    0.00654    0.00025    0.00680     101.05     0.0198     0.1213
+    0.00734    0.00026    0.00759      90.44     0.0221     0.1356
+Average                                94.64
 
 
-Unrolled Double  Precision       99.01 Mflops 
+Unrolled Double  Precision       94.64 Mflops 
 
 

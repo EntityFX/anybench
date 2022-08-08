@@ -3,41 +3,41 @@
 
  Multithreading Single Precision Whetstones riscv64 rv64g optimized
 
-             Using 1 threads - Fri Aug  5 20:11:28 2022
+             Using 1 threads - Sat Aug  6 17:46:20 2022
 
  Calibrate
-    0.04554 Seconds          1   Passes (x 100)
-    0.11787 Seconds          5   Passes (x 100)
-    0.36644 Seconds         25   Passes (x 100)
+    0.01781 Seconds          1   Passes (x 100)
+    0.07560 Seconds          5   Passes (x 100)
+    0.37340 Seconds         25   Passes (x 100)
 
- Use 682  passes (x 100)
+ Use 669  passes (x 100)
 
- MFLOPS 1     302
- MFLOPS 2     306
- IFMOPS       978
- FIXPMOPS     555
+ MFLOPS 1     246
+ MFLOPS 2     300
+ IFMOPS       998
+ FIXPMOPS     553
  COSMOPS       16
- MFLOPS 3     350
- EQUMOPS      456
- EXPMOPS       15
- millisec    7271
- MWIPS        938
+ MFLOPS 3     349
+ EQUMOPS      476
+ EXPMOPS       14
+ millisec    7257
+ MWIPS        922
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1    938    302    306    350     16     15    555    978    456
- Total     938    302    306    350     16     15    555    978    456
+      1    922    246    300    349     16     14    553    998    476
+ Total     922    246    300    349     16     14    553    998    476
 
- MWIPS     938 Based on time for last thread to finish
+ MWIPS     922 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
+ MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
 
-               End of test Fri Aug  5 20:11:39 2022
+               End of test Sat Aug  6 17:46:31 2022

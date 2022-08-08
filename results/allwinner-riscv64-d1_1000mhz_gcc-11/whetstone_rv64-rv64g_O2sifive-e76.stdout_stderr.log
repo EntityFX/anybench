@@ -1,27 +1,27 @@
 ##########################################
-Single Precision C Whetstone Benchmark riscv64 rv64g optimized, Fri Aug  5 19:57:11 2022
+Single Precision C Whetstone Benchmark riscv64 rv64g optimized, Sat Aug  6 17:32:05 2022
 
 Calibrate
        0.01 Seconds          1   Passes (x 100)
        0.05 Seconds          5   Passes (x 100)
-       0.36 Seconds         25   Passes (x 100)
-       1.26 Seconds        125   Passes (x 100)
-       6.63 Seconds        625   Passes (x 100)
+       0.25 Seconds         25   Passes (x 100)
+       1.37 Seconds        125   Passes (x 100)
+       6.59 Seconds        625   Passes (x 100)
 
-Use 942  passes (x 100)
+Use 947  passes (x 100)
 
           Single Precision C/C++ Whetstone Benchmark
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       256.788              0.070
-N2 floating point     -1.12274742126464844       257.478              0.492
-N3 if then else        1.00000000000000000                2004.824    0.049
-N4 fixed point        12.00000000000000000                1211.695    0.245
-N5 sin,cos etc.        0.49911010265350342                  16.502    4.749
-N6 floating point      0.99999982118606567       324.711              1.565
-N7 assignments         3.00000000000000000                 494.828    0.352
-N8 exp,sqrt etc.       0.75110864639282227                  14.528    2.412
+N1 floating point     -1.12475013732910156       306.808              0.059
+N2 floating point     -1.12274742126464844       211.453              0.602
+N3 if then else        1.00000000000000000                2004.528    0.049
+N4 fixed point        12.00000000000000000                1232.684    0.242
+N5 sin,cos etc.        0.49911010265350342                  16.530    4.766
+N6 floating point      0.99999982118606567       327.257              1.561
+N7 assignments         3.00000000000000000                 489.452    0.358
+N8 exp,sqrt etc.       0.75110864639282227                  14.618    2.410
 
-MWIPS                                            948.282              9.934
+MWIPS                                            942.592             10.047
 

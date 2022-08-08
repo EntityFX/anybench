@@ -1,27 +1,27 @@
 ##########################################
-Single Precision C Whetstone Benchmark riscv64 rv64g-opt optimized, Fri Aug  5 19:53:15 2022
+Single Precision C Whetstone Benchmark riscv64 rv64g-opt optimized, Sat Aug  6 17:28:10 2022
 
 Calibrate
        0.01 Seconds          1   Passes (x 100)
-       0.04 Seconds          5   Passes (x 100)
-       0.21 Seconds         25   Passes (x 100)
-       1.07 Seconds        125   Passes (x 100)
-       5.67 Seconds        625   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.28 Seconds         25   Passes (x 100)
+       1.51 Seconds        125   Passes (x 100)
+       7.36 Seconds        625   Passes (x 100)
 
-Use 1102  passes (x 100)
+Use 849  passes (x 100)
 
           Single Precision C/C++ Whetstone Benchmark
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12367534637451172       565.726              0.037
-N2 floating point     -1.12167274951934814       684.868              0.216
-N3 if then else        1.00000000000000000               478389728.000    0.000
-N4 fixed point        12.00000000000000000                4907.804    0.071
-N5 sin,cos etc.        0.49911010265350342                  16.377    5.598
-N6 floating point      0.99999982118606567       329.650              1.803
-N7 assignments         3.00000000000000000                4476.773    0.045
-N8 exp,sqrt etc.       0.75110864639282227                  20.014    2.048
+N1 floating point     -1.12367534637451172       561.384              0.029
+N2 floating point     -1.12167274951934814       681.738              0.167
+N3 if then else        1.00000000000000000               184279888.000    0.000
+N4 fixed point        12.00000000000000000                5005.773    0.053
+N5 sin,cos etc.        0.49911010265350342                  16.433    4.299
+N6 floating point      0.99999982118606567       322.607              1.420
+N7 assignments         3.00000000000000000                4449.700    0.035
+N8 exp,sqrt etc.       0.75110864639282227                  19.963    1.582
 
-MWIPS                                           1122.243              9.820
+MWIPS                                           1119.277              7.585
 

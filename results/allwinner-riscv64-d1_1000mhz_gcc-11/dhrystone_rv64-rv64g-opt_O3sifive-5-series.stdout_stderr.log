@@ -8,17 +8,17 @@ Register option not selected
      1000000 runs   0.32 seconds 
      2000000 runs   0.76 seconds 
      4000000 runs   1.30 seconds 
-     8000000 runs   2.72 seconds 
+     8000000 runs   2.82 seconds 
 
 Final values (* implementation-dependent):
 
 Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
 Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
 Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.     8000010
-Ptr_Glob->              Ptr_Comp:       *    0x2b178a32a0
+Ptr_Glob->              Ptr_Comp:       *    0x2adc7312a0
   Discr:       O.K.  0  Enum_Comp:     O.K.  2
   Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->         Ptr_Comp:       *    0x2b178a32a0 same as above
+Next_Ptr_Glob->         Ptr_Comp:       *    0x2adc7312a0 same as above
   Discr:       O.K.  0  Enum_Comp:     O.K.  1
   Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
 Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
@@ -26,7 +26,7 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run:       340.23
-Dhrystones per Second:              2939206
-VAX  MIPS rating =                  1672.85
+Nanoseconds one Dhrystone run:       352.39
+Dhrystones per Second:              2837730
+VAX  MIPS rating =                  1615.10
 

@@ -1,9 +1,9 @@
 ##########################################
-Single Precision C Whetstone Benchmark riscv64 rv64g optimized, Fri Aug  5 20:01:20 2022
+Single Precision C Whetstone Benchmark riscv64 rv64g optimized, Sat Aug  6 17:36:14 2022
 
 Calibrate
        0.01 Seconds          1   Passes (x 100)
-       0.06 Seconds          5   Passes (x 100)
+       0.05 Seconds          5   Passes (x 100)
        0.24 Seconds         25   Passes (x 100)
        1.33 Seconds        125   Passes (x 100)
        6.45 Seconds        625   Passes (x 100)
@@ -14,14 +14,14 @@ Use 969  passes (x 100)
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 
-N1 floating point     -1.12475013732910156       303.134              0.061
-N2 floating point     -1.12274742126464844       358.920              0.363
-N3 if then else        1.00000000000000000               420653056.000    0.000
-N4 fixed point        12.00000000000000000                 863.852    0.353
-N5 sin,cos etc.        0.49911010265350342                  16.550    4.871
-N6 floating point      0.99999982118606567       349.055              1.497
-N7 assignments         3.00000000000000000                 439.335    0.408
-N8 exp,sqrt etc.       0.75110864639282227                  14.579    2.473
+N1 floating point     -1.12475013732910156       302.893              0.061
+N2 floating point     -1.12274742126464844       357.683              0.364
+N3 if then else        1.00000000000000000               140217680.000    0.000
+N4 fixed point        12.00000000000000000                1249.701    0.244
+N5 sin,cos etc.        0.49911010265350342                  16.562    4.868
+N6 floating point      0.99999982118606567       325.844              1.604
+N7 assignments         3.00000000000000000                 595.172    0.301
+N8 exp,sqrt etc.       0.75110864639282227                  14.570    2.474
 
-MWIPS                                            966.439             10.026
+MWIPS                                            977.151              9.917
 
