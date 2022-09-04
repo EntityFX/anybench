@@ -1,0 +1,30 @@
+
+  ####################################################
+  getDetails and MHz
+
+ ##########################################
+
+From File /proc/cpuinfo
+
+
+From File /proc/version
+  Assembler CPUID and RDTSC      
+    BusSpeed amd64 x86-64 optimized Sun Sep  4 20:56:32 2022
+       Copyright (C) 2013, Roy Longbottom
+
+    Reading Speed 4 Byte Words in MBytes/Second
+  Memory  Inc32  Inc16   Inc8   Inc4   Inc2   Read
+  KBytes  Words  Words  Words  Words  Words    All
+
+      16  27145  27875  32153  33605  33743  33844
+      32  24674  24133  27961  33574  33671  33587
+      64   8464   8451  16930  31434  32859  33640
+     128   8642   8635  17071  31513  33111  33720
+     256   8623   8617  17159  31455  33029  33711
+     512   8011   7921  15385  27585  32201  33569
+    1024   6645   6519  12229  21940  31053  33653
+    4096   6093   6481  12074  20523  30807  33530
+   16384   2359   2781   5419   9134  15056  23242
+   65536   1063   1364   3056   6264  10046  17942
+
+ Type additional information to include in busSpeed.txt - Press Enter

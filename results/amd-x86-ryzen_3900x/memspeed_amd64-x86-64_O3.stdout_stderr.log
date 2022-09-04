@@ -1,51 +1,23 @@
-
  ##########################################
 
-From File /proc/cpuinfo
-processor	: 0
-vendor_id	: AuthenticAMD
-cpu family	: 23
-model		: 113
-model name	: AMD Ryzen 9 3900X 12-Core Processor
-stepping	: 0
-microcode	: 0x8701021
-cpu MHz		: 2065.365
-cache size	: 512 KB
-physical id	: 0
-siblings	: 24
-core id		: 0
-cpu cores	: 12
-apicid		: 0
-initial apicid	: 0
-fpu		: yes
-fpu_exception	: yes
-cpuid level	: 16
-wp		: yes
-flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate sme ssbd mba sev ibpb stibp vmmcall sev_es fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_totLinux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
-
-
-From File /proc/version
-Linux version 5.10.0-5-amd64 (debian-kernel@lists.debian.org) (gcc-10 (Debian 10.2.1-6) 10.2.1 20210110, GNU ld (GNU Binutils for Debian) 2.35.2) #1 SMP Debian 5.10.24-1 (2021-03-19)
-
-
-   Memory Reading Speed Test amd64 x86-64 optimized Tue Mar 23 20:21:18 2021
+   Memory Reading Speed Test amd64 x86-64 optimized Sun Sep  4 23:00:44 2022
                  Copyright (C) 2013, Roy Longbottom
 
   Memory   x[m]=x[m]+s*y[m] Int  x[m]=x[m]+y[m]         x[m]=y[m]
   KBytes    Dble   Sngl  Int32   Dble   Sngl  Int32   Dble   Sngl  Int32
     Used    MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S   MB/S
 
-       8   85453 130142 131337  87034 162772 156286  61021  32989  64197
-      16   87733 132555 133594  88915 166268 113710  66255  33977  66926
-      32   86843 133884 134876  90040 167938 166824  65835  34017  67846
-      64   87035 131197 133898  88926 153067 162115  57329  34214  58720
-     128   87280 131936 134629  89242 159939 162561  57451  34295  58863
-     256   87386 132097 135111  89366 160137 162987  57619  34385  59257
-     512   85787 131021 132582  87573 158793 161825  55031  34420  55459
-    1024   83817 129963 131958  87530 156294 158926  50623  34024  50482
-    2048   83016 128426 130525  86129 154812 157165  48681  33653  48106
-    4096   82913 129199 131890  86827 153899 156100  48473  33990  47441
-    8192   83240 129655 132326  86634 153967 156323  48169  34058  46626
+       8   85009  88447 129530  85448 129309 129102  62312  63119  63262
+      16   86857  89245 131865  87219 131604 131605  64610  65694  65701
+      32   87758  89754 133033  88409 132658 132858  65776  66883  66803
+      64   85705  89531 132588  88029 133202 133437  56475  57822  57799
+     128   86061  89490 132940  88369 133571 133830  56576  58062  58068
+     256   86252  89581 133063  88513 133757 133790  56559  58001  58015
+     512   84918  89408 132368  87538 133388 132809  53675  53526  53757
+    1024   83232  89018 130406  86766 132071 132840  49713  49514  49381
+    2048   82729  89031 130897  85711 131126 131663  48219  48450  48408
+    4096   82858  88846 131164  85736 131692 131859  48564  48590  48599
+    8192   83147  88910 131119  85824 131678 132303  49094  49478  49411
 
-                End of test Tue Mar 23 20:21:36 2021
+                End of test Sun Sep  4 23:01:01 2022
 

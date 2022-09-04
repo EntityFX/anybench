@@ -1,0 +1,43 @@
+  ####################################################
+  getDetails and MHz
+
+
+##########################################
+Single Precision C Whetstone Benchmark amd64 x86-64 optimized, Sun Sep  4 23:15:39 2022
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.03 Seconds         25   Passes (x 100)
+       0.14 Seconds        125   Passes (x 100)
+       0.69 Seconds        625   Passes (x 100)
+       3.44 Seconds       3125   Passes (x 100)
+
+Use 9086  passes (x 100)
+
+From File /proc/cpuinfo
+
+
+From File /proc/version
+  Assembler CPUID and RDTSC      
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156      1841.765              0.095
+N2 floating point     -1.12274742126464844      1517.174              0.805
+N3 if then else        1.00000000000000000               26780.240    0.035
+N4 fixed point        12.00000000000000000                7455.288    0.384
+N5 sin,cos etc.        0.49911010265350342                 284.626    2.656
+N6 floating point      0.99999982118606567      1417.930              3.456
+N7 assignments         3.00000000000000000               11087.152    0.151
+N8 exp,sqrt etc.       0.75110864639282227                 140.050    2.413
+
+MWIPS                                           9089.745              9.996
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+Type additional information to include in whets.txt - Press Enter

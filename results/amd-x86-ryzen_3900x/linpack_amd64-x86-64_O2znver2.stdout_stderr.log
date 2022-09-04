@@ -1,0 +1,73 @@
+
+  ####################################################
+  getDetails and MHz
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation amd64 x86-64 optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00013    0.00001    0.00013    5133.85     0.0004     0.0024
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.00 seconds
+      1000 times   0.03 seconds
+     10000 times   0.27 seconds
+     20000 times   0.54 seconds
+     40000 times   1.07 seconds
+Overhead for 1 matgen      0.00003 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.13 seconds
+      2000 times   0.27 seconds
+      4000 times   0.54 seconds
+      8000 times   1.08 seconds
+Passes used       7413 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00011    0.00000    0.00011    6128.96     0.0003     0.0020
+    0.00011    0.00000    0.00011    6108.83     0.0003     0.0020
+    0.00011    0.00000    0.00011    6104.26     0.0003     0.0020
+    0.00011    0.00000    0.00011    6099.82     0.0003     0.0020
+    0.00011    0.00000    0.00011    6094.10     0.0003     0.0020
+Average                              6107.19
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00003 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00011    0.00000    0.00011    6153.19     0.0003     0.0020
+    0.00011    0.00000    0.00011    6145.06     0.0003     0.0020
+    0.00011    0.00000    0.00011    6142.64     0.0003     0.0020
+    0.00011    0.00000    0.00011    6144.67     0.0003     0.0020
+    0.00011    0.00000    0.00011    6143.42     0.0003     0.0020
+Average                              6145.79
+
+##########################################
+
+From File /proc/cpuinfo
+
+
+From File /proc/version
+  Assembler CPUID and RDTSC      
+
+Unrolled Double  Precision     6107.19 Mflops 
+
+ Different numeric results - see linpack.txt
+
+
+Type additional information to include in linpack.txt - Press Enter
