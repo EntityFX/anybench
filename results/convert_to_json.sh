@@ -36,5 +36,8 @@ echo -e "\t\"SuperPI 4M\": ${res["superpi"]:--1}"
 # Higher is better
 echo -e "\t\"gsynth\": ${res["gsynth"]:--1}"
 
+for LLOOPS_TEST in "maximum" "average" "geometric" "harmonic" "minimum"; do
+	echo -e "\t\"LLoops ${LLOOPS_TEST}\": ${res["lloops_${LLOOPS_TEST}"]:--1}"
+done
 
 echo -e "}"

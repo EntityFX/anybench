@@ -58,4 +58,11 @@ function parse_results() {
 	# Higher is better
 	GSYNTH_FILES="$(ls "${NAME}"/gsynth_*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	results["gsynth"]=$(awk -F= 'BEGIN{v=-1}($1 == "g_synth_score"){if ($2 > v) {v = $2}}END{print v}' ${GSYNTH_FILES:-"None"} 2>/dev/null)
+	
+	LLOOP_FILES="$(ls "${NAME}"/lloops_*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	results["lloops_maximum"]=$(awk '($1 == "Maximum"){if ($3 > v) { v=$3; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
+	results["lloops_average"]=$(awk '($1 == "Average"){if ($3 > v) { v=$3; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
+	results["lloops_geometric"]=$(awk '($1 == "Geometric"){if ($3 > v) { v=$3; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
+	results["lloops_harmonic"]=$(awk '($1 == "Harmonic"){if ($3 > v) { v=$3; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
+	results["lloops_minimum"]=$(awk '($1 == "Minimum"){if ($3 > v) { v=$3; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
 }
