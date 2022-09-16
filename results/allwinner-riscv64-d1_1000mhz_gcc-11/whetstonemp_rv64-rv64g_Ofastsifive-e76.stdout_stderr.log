@@ -3,41 +3,41 @@
 
  Multithreading Single Precision Whetstones riscv64 rv64g optimized
 
-             Using 1 threads - Fri Feb 25 05:35:29 2022
+             Using 1 threads - Sat Aug  6 17:47:45 2022
 
  Calibrate
-    0.01662 Seconds          1   Passes (x 100)
-    0.07012 Seconds          5   Passes (x 100)
-    0.35114 Seconds         25   Passes (x 100)
+    0.01681 Seconds          1   Passes (x 100)
+    0.07219 Seconds          5   Passes (x 100)
+    0.34399 Seconds         25   Passes (x 100)
 
- Use 711  passes (x 100)
+ Use 726  passes (x 100)
 
- MFLOPS 1     465
- MFLOPS 2     469
- IFMOPS       969
- FIXPMOPS     519
- COSMOPS       16
- MFLOPS 3     344
- EQUMOPS      491
- EXPMOPS       21
- millisec    6981
- MWIPS       1018
+ MFLOPS 1     472
+ MFLOPS 2     483
+ IFMOPS       780
+ FIXPMOPS     545
+ COSMOPS       17
+ MFLOPS 3     318
+ EQUMOPS      477
+ EXPMOPS       18
+ millisec    7358
+ MWIPS        987
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1018    465    469    344     16     21    519    969    491
- Total    1018    465    469    344     16     21    519    969    491
+      1    987    472    483    318     17     18    545    780    477
+ Total     987    472    483    318     17     18    545    780    477
 
- MWIPS    1018 Based on time for last thread to finish
+ MWIPS     987 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.12356138229370117      MFLOPS 2   -1.13133072853088379
+ MFLOPS 1   -1.13333511352539062      MFLOPS 2   -1.13333344459533691
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
 
-               End of test Fri Feb 25 05:35:40 2022
+               End of test Sat Aug  6 17:47:56 2022

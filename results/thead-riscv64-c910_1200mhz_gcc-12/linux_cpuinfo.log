@@ -1,0 +1,28 @@
+processor	: 0
+hart		: 0
+isa		: rv64imafdcsu
+mmu		: sv39
+model name	: T-HEAD C910
+freq		: 1.2GHz
+icache		: 64kB
+dcache		: 64kB
+l2cache		: 2MB
+tlb		: 1024 4-ways
+cache line	: 64Bytes
+address sizes	: 40 bits physical, 39 bits virtual
+vector version	: 0.7.1
+
+processor	: 1
+hart		: 1
+isa		: rv64imafdcsu
+mmu		: sv39
+model name	: T-HEAD C910
+freq		: 1.2GHz
+icache		: 64kB
+dcache		: 64kB
+l2cache		: 2MB
+tlb		: 1024 4-ways
+cache line	: 64Bytes
+address sizes	: 40 bits physical, 39 bits virtual
+vector version	: 0.7.1
+

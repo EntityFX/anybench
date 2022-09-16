@@ -3,16 +3,16 @@ STREAM version $Revision: 5.10 $
 -------------------------------------------------------------
 This system uses 8 bytes per array element.
 -------------------------------------------------------------
-Array size = 4000000 (elements), Offset = 0 (elements)
-Memory per array = 30.5 MiB (= 0.0 GiB).
-Total memory required = 91.6 MiB (= 0.1 GiB).
+Array size = 8000000 (elements), Offset = 0 (elements)
+Memory per array = 61.0 MiB (= 0.1 GiB).
+Total memory required = 183.1 MiB (= 0.2 GiB).
 Each kernel will be executed 20 times.
  The *best* time for each kernel (excluding the first iteration)
  will be used to compute the reported bandwidth.
 -------------------------------------------------------------
-Your clock granularity/precision appears to be 2 microseconds.
-Each test below will take on the order of 63450 microseconds.
-   (= 31725 clock ticks)
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 75753 microseconds.
+   (= 75753 clock ticks)
 Increase the size of the arrays if this shows that
 you are not getting at least 20 clock ticks per test.
 -------------------------------------------------------------
@@ -21,10 +21,10 @@ For best results, please be sure you know the
 precision of your system timer.
 -------------------------------------------------------------
 Function    Best Rate MB/s  Avg time     Min time     Max time
-Copy:            2168.9     0.029710     0.029508     0.030047
-Scale:           1753.7     0.036844     0.036495     0.039169
-Add:             1910.6     0.052302     0.050247     0.058028
-Triad:           1883.5     0.052177     0.050968     0.056732
+Copy:            2171.6     0.063461     0.058942     0.118236
+Scale:           1745.2     0.076719     0.073345     0.112299
+Add:             1896.8     0.103295     0.101225     0.110390
+Triad:           1850.2     0.117809     0.103773     0.221120
 -------------------------------------------------------------
 Solution Validates: avg error less than 1.000000e-13 on all three arrays
 -------------------------------------------------------------

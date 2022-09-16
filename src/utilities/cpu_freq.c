@@ -18,6 +18,8 @@
 #define ADD_ASM "inc %[i]\n"
 #elif defined(__aarch64__) || (defined(__arm64__) && defined(__APPLE__))
 #define ADD_ASM "add  %[i], %[i], #1\n"
+#elif defined(__riscv)
+#define ADD_ASM "addi %[i], %[i], 1\n"
 #elif defined(__e2k__)
 #define ADD_ASM "{ addd,0 0x1, %[i], %[i] }\n"
 #else

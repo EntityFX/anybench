@@ -3,41 +3,41 @@
 
  Multithreading Single Precision Whetstones riscv64 rv64g-opt optimized
 
-             Using 1 threads - Fri Feb 25 05:37:23 2022
+             Using 1 threads - Sat Aug  6 17:40:16 2022
 
  Calibrate
-    0.01219 Seconds          1   Passes (x 100)
-    0.05171 Seconds          5   Passes (x 100)
-    0.25222 Seconds         25   Passes (x 100)
+    0.01334 Seconds          1   Passes (x 100)
+    0.05853 Seconds          5   Passes (x 100)
+    0.35897 Seconds         25   Passes (x 100)
 
- Use 991  passes (x 100)
+ Use 696  passes (x 100)
 
- MFLOPS 1     393
- MFLOPS 2     396
- IFMOPS     11935
- FIXPMOPS 1618436
+ MFLOPS 1     397
+ MFLOPS 2     399
+ IFMOPS      9564
+ FIXPMOPS  852233
  COSMOPS       17
- MFLOPS 3     346
- EQUMOPS     5928
- EXPMOPS       15
- millisec    9157
- MWIPS       1082
+ MFLOPS 3     318
+ EQUMOPS     5986
+ EXPMOPS       14
+ millisec    6701
+ MWIPS       1039
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1082    393    396    346     17     151618436  11935   5928
- Total    1082    393    396    346     17     151618436  11935   5928
+      1   1039    397    399    318     17     14 852233   9564   5986
+ Total    1039    397    399    318     17     14 852233   9564   5986
 
- MWIPS    1082 Based on time for last thread to finish
+ MWIPS    1039 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.12475013732910156      MFLOPS 2   -1.13133049011230469
+ MFLOPS 1   -1.13333332538604736      MFLOPS 2   -1.13333320617675781
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
 
-               End of test Fri Feb 25 05:37:33 2022
+               End of test Sat Aug  6 17:40:24 2022

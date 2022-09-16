@@ -3,16 +3,16 @@ STREAM version $Revision: 5.10 $
 -------------------------------------------------------------
 This system uses 8 bytes per array element.
 -------------------------------------------------------------
-Array size = 4000000 (elements), Offset = 0 (elements)
-Memory per array = 30.5 MiB (= 0.0 GiB).
-Total memory required = 91.6 MiB (= 0.1 GiB).
+Array size = 8000000 (elements), Offset = 0 (elements)
+Memory per array = 61.0 MiB (= 0.1 GiB).
+Total memory required = 183.1 MiB (= 0.2 GiB).
 Each kernel will be executed 20 times.
  The *best* time for each kernel (excluding the first iteration)
  will be used to compute the reported bandwidth.
 -------------------------------------------------------------
 Your clock granularity/precision appears to be 1 microseconds.
-Each test below will take on the order of 37188 microseconds.
-   (= 37188 clock ticks)
+Each test below will take on the order of 74376 microseconds.
+   (= 74376 clock ticks)
 Increase the size of the arrays if this shows that
 you are not getting at least 20 clock ticks per test.
 -------------------------------------------------------------
@@ -21,10 +21,10 @@ For best results, please be sure you know the
 precision of your system timer.
 -------------------------------------------------------------
 Function    Best Rate MB/s  Avg time     Min time     Max time
-Copy:             585.2     0.112412     0.109358     0.120583
-Scale:           1758.7     0.037271     0.036390     0.041661
-Add:             1988.9     0.048640     0.048267     0.049134
-Triad:           1819.8     0.053689     0.052752     0.059798
+Copy:             530.4     0.243677     0.241305     0.249176
+Scale:           1798.0     0.073703     0.071192     0.095866
+Add:             1973.3     0.112024     0.097297     0.211064
+Triad:           1756.1     0.124054     0.109335     0.217674
 -------------------------------------------------------------
 Solution Validates: avg error less than 1.000000e-13 on all three arrays
 -------------------------------------------------------------

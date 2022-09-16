@@ -3,41 +3,41 @@
 
  Multithreading Single Precision Whetstones riscv64 rv64g-opt optimized
 
-             Using 1 threads - Fri Feb 25 05:39:58 2022
+             Using 1 threads - Sat Aug  6 17:42:48 2022
 
  Calibrate
-    0.01167 Seconds          1   Passes (x 100)
-    0.04628 Seconds          5   Passes (x 100)
-    0.22703 Seconds         25   Passes (x 100)
+    0.01235 Seconds          1   Passes (x 100)
+    0.04745 Seconds          5   Passes (x 100)
+    0.23475 Seconds         25   Passes (x 100)
 
- Use 1101  passes (x 100)
+ Use 1064  passes (x 100)
 
- MFLOPS 1     566
- MFLOPS 2     546
- IFMOPS     11285
- FIXPMOPS 1763209
- COSMOPS       17
- MFLOPS 3     347
- EQUMOPS     7696
- EXPMOPS       21
- millisec    9389
- MWIPS       1173
+ MFLOPS 1     575
+ MFLOPS 2     572
+ IFMOPS     11957
+ FIXPMOPS 1350397
+ COSMOPS       16
+ MFLOPS 3     329
+ EQUMOPS     7731
+ EXPMOPS       19
+ millisec    9583
+ MWIPS       1110
 
          MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
  Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
 
-      1   1173    566    546    347     17     211763209  11285   7696
- Total    1173    566    546    347     17     211763209  11285   7696
+      1   1110    575    572    329     16     191350397  11957   7731
+ Total    1110    575    572    329     16     191350397  11957   7731
 
- MWIPS    1173 Based on time for last thread to finish
+ MWIPS    1110 Based on time for last thread to finish
 
 
  Results Of Calculations Thread 1
 
- MFLOPS 1   -1.12356138229370117      MFLOPS 2   -1.13133072853088379
+ MFLOPS 1   -1.13333511352539062      MFLOPS 2   -1.13333344459533691
  IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
- COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
  EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
 
 
-               End of test Fri Feb 25 05:40:08 2022
+               End of test Sat Aug  6 17:42:58 2022
