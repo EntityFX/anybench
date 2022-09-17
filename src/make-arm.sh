@@ -32,6 +32,8 @@ else
     targetToFPU["armv8.1-a"]=""
 fi
 
+binaryCompileOptions["STREAM"]="benchmarks/generic/STREAM/stream.c -fopenmp -DSTREAM_ARRAY_SIZE=80000000 -DNTIMES=20 ${extraLinkerOptions}"
+
 if [[ ${#} -eq 1 ]]; then
     echo "Compiling only ${1}"
     BINARY="${1}"

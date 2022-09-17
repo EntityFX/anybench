@@ -1,0 +1,28 @@
+##########################################
+Single Precision C Whetstone Benchmark aarch64 armv8.2-a optimized, Sat Sep 17 14:49:35 2022
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.30 Seconds        125   Passes (x 100)
+       1.49 Seconds        625   Passes (x 100)
+       7.42 Seconds       3125   Passes (x 100)
+
+Use 4212  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       761.508              0.106
+N2 floating point     -1.12274742126464844       885.074              0.640
+N3 if then else        1.00000000000000000               26854.166    0.016
+N4 fixed point        12.00000000000000000                3673.796    0.361
+N5 sin,cos etc.        0.49911010265350342                 105.975    3.307
+N6 floating point      0.99999982118606567       641.232              3.543
+N7 assignments         3.00000000000000000               15422.909    0.050
+N8 exp,sqrt etc.       0.75110864639282227                  80.080    1.957
+
+MWIPS                                           4220.357              9.980
+
