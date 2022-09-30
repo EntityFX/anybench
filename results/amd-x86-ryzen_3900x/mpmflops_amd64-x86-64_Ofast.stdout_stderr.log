@@ -1,39 +1,22 @@
-  ####################################################
-  getDetails and MHz
-
-
-
-
-  Assembler CPUID and RDTSC      
-  CPU  , Features Code 00000000, Model Code 00000000
-   
-  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
-  Linux Functions
-  get_nprocs() - CPUs 24, Configured CPUs 24
-  get_phys_pages() and size - RAM Size 31.34 GB, Page Size 4096 Bytes
-  uname() - Linux, lowe, 5.10.0-5-amd64
-  #1 SMP Debian 5.10.24-1 (2021-03-19), x86_64
-
+24 CPUs Available
 
 ##############################################
 
-  64 Bit MP SSE MFLOPS Benchmark 1, 24 Threads, Tue Mar 23 20:22:10 2021
+  64 Bit MP SSE MFLOPS Benchmark 1, 24 Threads, Sun Sep  4 23:02:55 2022
 
   Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
                     Words  Word   Passes                         Results  Same
 
- Data in & out     102400     2    60000   0.063561   193325    See log     No
- Data in & out    1024000     2     6000   0.050095   245295    See log     No
- Data in & out   10240000     2      600   0.051893   236795    See log     No
+ Data in & out     102400     2    60000   0.102295   120124    See log     No
+ Data in & out    1024000     2     6000   0.066962   183507    See log     No
+ Data in & out   10240000     2      600   0.067083   183177    See log     No
 
- Data in & out     102400     8    60000   0.116023   423642    See log     No
- Data in & out    1024000     8     6000   0.100830   487476    See log     No
- Data in & out   10240000     8      600   0.099883   492098    See log     No
+ Data in & out     102400     8    60000   0.122594   400934    See log     No
+ Data in & out    1024000     8     6000   0.101775   482947    See log     No
+ Data in & out   10240000     8      600   0.101407   484700    See log     No
 
- Data in & out     102400    32    60000   0.396503   495855    See log     No
- Data in & out    1024000    32     6000   0.382011   514666    See log     No
- Data in & out   10240000    32      600   0.382657   513797    See log     No
+ Data in & out     102400    32    60000   0.387928   506815    See log     No
+ Data in & out    1024000    32     6000   0.377737   520489    See log     No
+ Data in & out   10240000    32      600   0.379157   518540    See log     No
 
-               End of test Tue Mar 23 20:22:11 2021
-
- Press Enter
+               End of test Sun Sep  4 23:02:57 2022

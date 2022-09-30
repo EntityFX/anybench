@@ -1,0 +1,39 @@
+  ####################################################
+  getDetails and MHz
+
+
+
+
+  Assembler CPUID and RDTSC      
+  CPU  , Features Code 00000000, Model Code 00000000
+   
+  Measured - Minimum -2147483648 MHz, Maximum 0 MHz
+  Linux Functions
+  get_nprocs() - CPUs 32, Configured CPUs 24
+  get_phys_pages() and size - RAM Size 31.00 GB, Page Size 4096 Bytes
+  uname() - Linux, gatto, 5.19.0-15-generic
+  #15-Ubuntu SMP PREEMPT_DYNAMIC Tue Aug 2 07:35:59 UTC 2022, x86_64
+
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 24 Threads, Sun Sep  4 23:02:58 2022
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    60000   0.051788   237276    See log     No
+ Data in & out    1024000     2     6000   0.036220   339262    See log     No
+ Data in & out   10240000     2      600   0.035687   344325    See log     No
+
+ Data in & out     102400     8    60000   0.065694   748195    See log     No
+ Data in & out    1024000     8     6000   0.054804   896875    See log     No
+ Data in & out   10240000     8      600   0.052963   928040    See log     No
+
+ Data in & out     102400    32    60000   0.173226  1134977    See log     No
+ Data in & out    1024000    32     6000   0.158137  1243280    See log     No
+ Data in & out   10240000    32      600   0.159381  1233571    See log     No
+
+               End of test Sun Sep  4 23:02:59 2022
+
+ Press Enter
