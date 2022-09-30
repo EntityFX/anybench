@@ -5,6 +5,9 @@ source common-make.sh
 arch=amd64
 
 targetToFlags["x86-64"]="-march=native"
+#targetToFlags["zen4"]=""
+# gcc doesn't know that zen4 supports avx512, so force-enabling it in addition to march=native
+#targetToExtraFlags["zen4"]="-march=native -mavx512f -mavx512bw -mavx512cd -mavx512dq -mavx512ifma -mavx512vbmi"
 
 if [[ ${#} -eq 1 ]]; then
     echo "Compiling only ${1}"

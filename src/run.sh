@@ -15,6 +15,10 @@ while (( "${#}" )); do
 		"--suffix")
 			is_suffix=1
 			;;
+		"--continue")
+			cont=1
+			SKIP_CPU_INFO="true"
+			;;
 		*)
 			if [[ ${is_suffix} -eq 1 ]]; then
 				SUFFIX="_${ARG}"
@@ -99,6 +103,10 @@ for BINARY in ${BINARY_LIST}; do
         while [[ ${threads} -le ${cpus_count} ]]; do
             echo "Running for ${threads}/${cpus_count} threads..."
             export OMP_NUM_THREADS="${threads}"
+	    if [[ ${cont} -eq 1 ]] && [[ -f "${RESULT_DIR}/${BINARY}_mp${threads}.stdout_stderr.log" ]]; then
+		    echo "Found results for ${threads}/${cpus_count}, skipping..."
+		    continue
+	    fi
             "${BIN_DIR}/${BINARY}" ${binaryExtraArgs[${BASE_BINARY_NAME}]} &> "${RESULT_DIR}/${BINARY}_mp${threads}.stdout_stderr.log" 
             if [[ ${threads} -eq ${cpus_count} ]]; then
                 break
@@ -114,6 +122,10 @@ for BINARY in ${BINARY_LIST}; do
         done
         unset OMP_NUM_THREADS
     else
+	if [[ ${cont} -eq 1 ]] && [[ -f "${RESULT_DIR}/${BINARY}.stdout_stderr.log" ]]; then
+		echo "Found results for ${BINARY}, skipping..."
+		continue
+	 fi
         "${BIN_DIR}/${BINARY}" ${binaryExtraArgs[${BASE_BINARY_NAME}]} &> "${RESULT_DIR}/${BINARY}.stdout_stderr.log" 
     fi
 done
