@@ -111,10 +111,10 @@ for BINARY in ${BINARY_LIST}; do
             if [[ ${threads} -eq ${cpus_count} ]]; then
                 break
             fi
-            if [[ ${threads} < 4 ]]; then
+            if [[ ${threads} -lt 4 ]]; then
                 threads=$((threads+1))
             else
-                threads=$((threads*2))
+                threads=$((threads+4))
             fi
             if [[ ${threads} -gt ${cpus_count} ]]; then
                 threads=${cpus_count}
