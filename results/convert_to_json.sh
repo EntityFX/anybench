@@ -18,7 +18,6 @@ for k in "${!res[@]}"; do
 	fi
 done
 
-
 for STREAM_TEST in "Copy:" "Scale:" "Add:" "Triad:"; do
 	TEST="${STREAM_TEST/:/}"
 	echo -e "\t\"Stream ST ${TEST}\": ${res[stream_mp1_${TEST,,}]:--1}"

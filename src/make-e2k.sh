@@ -10,11 +10,10 @@ targetToFlags["elbrus-v4"]="-mtune=elbrus-8c -mtune=elbrus-1c+"
 targetToFlags["elbrus-v5"]="-mtune=elbrus-8c2"
 targetToFlags["elbrus-v6"]="-mtune=elbrus-2c3 -mtune=elbrus-12c -mtune=elbrus-16c"
 
-targetToFPU["elbrus-v2"]=""
-targetToFPU["elbrus-v3"]="-ffast -fwhole"
-targetToFPU["elbrus-v4"]="-ffast -fwhole"
-targetToFPU["elbrus-v5"]="-ffast -fwhole"
-targetToFPU["elbrus-v6"]="-ffast -fwhole"
+targetToExtraFlags["elbrus-v3"]="-ffast -fwhole"
+targetToExtraFlags["elbrus-v4"]="-ffast -fwhole"
+targetToExtraFlags["elbrus-v5"]="-ffast -fwhole"
+targetToExtraFlags["elbrus-v6"]="-ffast -fwhole"
 
 if [[ ${#} -eq 1 ]]; then
     echo "Compiling only ${1}"
