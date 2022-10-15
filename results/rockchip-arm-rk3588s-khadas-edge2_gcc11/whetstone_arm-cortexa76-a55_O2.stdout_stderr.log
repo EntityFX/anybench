@@ -1,0 +1,28 @@
+##########################################
+Single Precision C Whetstone Benchmark aarch64 cortexa76-a55 optimized, Thu Oct 13 06:06:37 2022
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.05 Seconds         25   Passes (x 100)
+       0.23 Seconds        125   Passes (x 100)
+       1.13 Seconds        625   Passes (x 100)
+       5.65 Seconds       3125   Passes (x 100)
+
+Use 5531  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156      1182.703              0.090
+N2 floating point     -1.12274742126464844       975.580              0.762
+N3 if then else        1.00000000000000000                6646.547    0.086
+N4 fixed point        12.00000000000000000                5543.334    0.314
+N5 sin,cos etc.        0.49911010265350342                 162.895    2.825
+N6 floating point      0.99999982118606567       950.410              3.139
+N7 assignments         3.00000000000000000                2138.988    0.478
+N8 exp,sqrt etc.       0.75110864639282227                  89.449    2.300
+
+MWIPS                                           5534.106              9.994
+

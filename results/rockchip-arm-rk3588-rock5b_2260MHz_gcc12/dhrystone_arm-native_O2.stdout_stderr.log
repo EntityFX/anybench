@@ -1,0 +1,36 @@
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    aarch64 native optimized
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.01 seconds 
+     1000000 runs   0.06 seconds 
+     2000000 runs   0.06 seconds 
+     4000000 runs   0.12 seconds 
+     8000000 runs   0.24 seconds 
+    16000000 runs   0.49 seconds 
+    32000000 runs   0.98 seconds 
+    64000000 runs   1.96 seconds 
+   128000000 runs   3.92 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.   128000010
+Ptr_Glob->              Ptr_Comp:       *    0x5592e682a0
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    0x5592e682a0 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run:        30.62
+Dhrystones per Second:             32657118
+VAX  MIPS rating =                 18586.86
+
