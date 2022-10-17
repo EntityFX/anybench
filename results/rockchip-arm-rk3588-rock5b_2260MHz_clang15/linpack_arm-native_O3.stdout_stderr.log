@@ -1,0 +1,58 @@
+##########################################
+Unrolled Double Precision Linpack Benchmark - Linux Version in 'C/C++'
+
+Optimisation aarch64 native optimized
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.9    8.46778499e-14   2.22044605e-16  -1.11799459e-13  -9.60342916e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00202    0.00005    0.00207     332.31     0.0060     0.0369
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.01 seconds
+      1000 times   0.06 seconds
+     10000 times   0.31 seconds
+     20000 times   0.62 seconds
+     40000 times   1.25 seconds
+Overhead for 1 matgen      0.00003 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.03 seconds
+      1000 times   0.30 seconds
+      2000 times   0.60 seconds
+      4000 times   1.19 seconds
+Passes used       3353 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00027    0.00001    0.00028    2468.53     0.0008     0.0050
+    0.00027    0.00001    0.00028    2468.57     0.0008     0.0050
+    0.00027    0.00001    0.00028    2468.71     0.0008     0.0050
+    0.00027    0.00001    0.00028    2468.64     0.0008     0.0050
+    0.00027    0.00001    0.00028    2468.98     0.0008     0.0050
+Average                              2468.69
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00003 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00026    0.00001    0.00027    2539.18     0.0008     0.0048
+    0.00026    0.00001    0.00027    2540.20     0.0008     0.0048
+    0.00026    0.00001    0.00027    2538.47     0.0008     0.0048
+    0.00026    0.00001    0.00027    2540.17     0.0008     0.0048
+    0.00026    0.00001    0.00027    2539.83     0.0008     0.0048
+Average                              2539.57
+
+
+Unrolled Double  Precision     2468.69 Mflops 
+
+

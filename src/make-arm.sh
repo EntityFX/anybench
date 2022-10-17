@@ -20,11 +20,18 @@ if [[ ${current_arch} != "aarch64" ]]; then
     targetToFPU["armv8.1-a"]="-mfpu=neon"
 else
     # aarch64
-    targetToFlags["armv8-a"]="-mtune=cortex-a53 -mtune=cortex-a57"
-    targetToFlags["armv8-a+crc"]="-mtune=cortex-a72" # e.x. raspberry pi4
-    targetToFlags["armv8.1-a"]="-march=armv8.1-a"
-    targetToFlags["armv8.2-a"]="-march=armv8.2-a"
-    targetToFlags["native"]="-march=native"
+    #targetToFlags["armv8-a"]="-mtune=cortex-a53 -mtune=cortex-a57"
+    #targetToFlags["armv8-a+crc"]="-mtune=cortex-a72" # e.x. raspberry pi4
+    #targetToFlags["armv8.1-a"]="-march=armv8.1-a"
+
+    # this is GCC-only options
+    #targetToFlags["cortexa76-a55"]=""
+    #targetToExtraFlags["cortexa76-a55"]="-mtune=cortex-a76.cortex-a55"
+
+    targetToFlags["native"]=""
+    targetToExtraFlags["native"]="-mtune=native"
+    targetToFlags["cortexa76"]=""
+    targetToExtraFlags["cortexa76"]="-mtune=cortex-a76"
     
     # at this moment arm64 don't need any extra flags to use FPU
     targetToFPU["armv8-a"]=""

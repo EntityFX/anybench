@@ -1,0 +1,22 @@
+8 CPUs Available
+
+##############################################
+
+  64 Bit MP SSE MFLOPS Benchmark 1, 8 Threads, Fri Oct 14 22:56:55 2022
+
+  Test             4 Byte  Ops/   Repeat    Seconds   MFLOPS       First   All
+                    Words  Word   Passes                         Results  Same
+
+ Data in & out     102400     2    20000   0.417120     9820    0.620974   Yes
+ Data in & out    1024000     2     2000   0.414934     9871    0.942935   Yes
+ Data in & out   10240000     2      200   1.021434     4010    0.994032   Yes
+
+ Data in & out     102400     8    20000   0.915324    17900    0.749973   Yes
+ Data in & out    1024000     8     2000   0.916915    17869    0.965362   Yes
+ Data in & out   10240000     8      200   1.059315    15467    0.996411   Yes
+
+ Data in & out     102400    32    20000   2.998827    21854    0.498048   Yes
+ Data in & out    1024000    32     2000   2.980607    21987    0.910581   Yes
+ Data in & out   10240000    32      200   2.993793    21891    0.990451   Yes
+
+               End of test Fri Oct 14 22:57:09 2022

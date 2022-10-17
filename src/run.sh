@@ -64,35 +64,6 @@ if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
     fi
 fi
 
-BIN_DIR="../bin/${os_name}/${current_arch}${SUFFIX}"
-BINARY_LIST="$(ls ${BIN_DIR}/)"
-if [[ "${BINARY}" != "" ]]; then
-	NEW_LIST=""
-	for b in ${BINARY}; do
-		NEW_LIST="${NEW_LIST} $(grep "${b}" <<< "${BINARY_LIST}")"
-	done
-	BINARY_LIST="${NEW_LIST}"
-fi
-
-echo
-echo "Binaries to run: '${BINARY_LIST}'"
-echo "Suffix: '${SUFFIX}'"
-echo "Result directory: ${RESULT_DIR}"
-echo "Will skip CPU Info: ${SKIP_CPU_INFO}"
-echo
-
-if [[ ${SKIP_CPU_INFO,,} != "true" ]]; then
-    if [[ ${os_name} == "mac" ]]; then
-        echo "Will gather system information"
-        ./cpu_info_mac.sh
-    fi
-
-    if [[ ${os_name} == "Linux" ]]; then
-        echo "Will gather system information"
-        ./cpu_info_linux.sh $SUFFIX
-    fi
-fi
-
 for BINARY in ${BINARY_LIST}; do
     [[ ! -x "${BIN_DIR}/${BINARY}" ]] && continue ||:
     echo "Running ${BINARY}"
@@ -104,11 +75,11 @@ for BINARY in ${BINARY_LIST}; do
             echo "Running for ${threads}/${cpus_count} threads..."
             export OMP_NUM_THREADS="${threads}"
 	    if [[ ${cont} -eq 1 ]] && [[ -f "${RESULT_DIR}/${BINARY}_mp${threads}.stdout_stderr.log" ]]; then
-		    echo "Found results for ${threads}/${cpus_count}, skipping..."
-		    continue
+		echo "Found results for ${threads}/${cpus_count}, skipping..."
+	    else
+		"${BIN_DIR}/${BINARY}" ${binaryExtraArgs[${BASE_BINARY_NAME}]} &> "${RESULT_DIR}/${BINARY}_mp${threads}.stdout_stderr.log" 
 	    fi
-            "${BIN_DIR}/${BINARY}" ${binaryExtraArgs[${BASE_BINARY_NAME}]} &> "${RESULT_DIR}/${BINARY}_mp${threads}.stdout_stderr.log" 
-            if [[ ${threads} -eq ${cpus_count} ]]; then
+	    if [[ ${threads} -eq ${cpus_count} ]]; then
                 break
             fi
             if [[ ${threads} -lt 4 ]]; then
