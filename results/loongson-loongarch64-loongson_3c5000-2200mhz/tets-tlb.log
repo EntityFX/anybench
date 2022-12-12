@@ -1,0 +1,92 @@
+make freq=2.2 run
+for i in 4k 8k 16k 32k 64k 128k 256k 512k 1M 2M 4M 6M 8M 16M 32M 64M 128M 256M ; do echo "$i:"; ./test-tlb -H $i 64; ./test-tlb $i 64 ; ./test-tlb -Hr $i 64; ./test-tlb -r $i 64; done
+4k:
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+8k:
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+16k:
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+32k:
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+  3.18ns (~7.0 cycles)
+64k:
+  3.20ns (~7.0 cycles)
+  3.20ns (~7.0 cycles)
+  3.20ns (~7.0 cycles)
+  3.20ns (~7.0 cycles)
+128k:
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+256k:
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+512k:
+  7.93ns (~17.4 cycles)
+  7.90ns (~17.4 cycles)
+ 24.32ns (~53.5 cycles)
+ 24.17ns (~53.2 cycles)
+1M:
+  7.91ns (~17.4 cycles)
+  7.88ns (~17.3 cycles)
+ 24.43ns (~53.7 cycles)
+ 23.77ns (~52.3 cycles)
+2M:
+  7.74ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+ 25.65ns (~56.4 cycles)
+ 25.61ns (~56.3 cycles)
+4M:
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+ 26.18ns (~57.6 cycles)
+ 26.12ns (~57.5 cycles)
+6M:
+  7.72ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+ 26.25ns (~57.7 cycles)
+ 26.37ns (~58.0 cycles)
+8M:
+  7.73ns (~17.0 cycles)
+  7.73ns (~17.0 cycles)
+ 26.37ns (~58.0 cycles)
+ 26.38ns (~58.0 cycles)
+16M:
+  8.86ns (~19.5 cycles)
+  8.94ns (~19.7 cycles)
+ 28.53ns (~62.8 cycles)
+ 26.60ns (~58.5 cycles)
+32M:
+ 12.52ns (~27.6 cycles)
+ 12.68ns (~27.9 cycles)
+ 91.39ns (~201.1 cycles)
+ 91.77ns (~201.9 cycles)
+64M:
+ 13.93ns (~30.7 cycles)
+ 14.41ns (~31.7 cycles)
+143.15ns (~314.9 cycles)
+144.50ns (~317.9 cycles)
+128M:
+ 13.35ns (~29.4 cycles)
+ 13.79ns (~30.3 cycles)
+142.86ns (~314.3 cycles)
+175.67ns (~386.5 cycles)
+256M:
+ 13.08ns (~28.8 cycles)
+ 13.52ns (~29.7 cycles)
+142.70ns (~313.9 cycles)
+193.96ns (~426.7 cycles)

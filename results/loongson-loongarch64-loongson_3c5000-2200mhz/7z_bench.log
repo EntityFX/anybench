@@ -1,0 +1,72 @@
+[root@localhost results]# 7z b
+
+7-Zip 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs LE)
+
+LE
+CPU Freq: 64000000 - - - - - - - -
+
+RAM size:  129704 MB,  # CPU hardware threads:  32
+RAM usage:   7060 MB,  # Benchmark threads:     32
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:      62370  2796   2170  60674  |     878738  3138   2388  74938
+23:      60911  2793   2222  62062  |     861051  3149   2366  74508
+24:      59913  2867   2247  64419  |     832658  3112   2349  73085
+25:      61317  2941   2380  70010  |     815385  3087   2351  72564
+----------------------------------  | ------------------------------
+Avr:            2849   2255  64291  |             3122   2363  73774
+Tot:            2985   2309  69032
+
+
+
+[root@localhost results]# 7z b -mmt16                                            
+                                                                                 
+7-Zip 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21                   
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs LE)
+                                                                                 
+LE                                                                               
+CPU Freq: - - - - - - - - -                                                      
+                                                                                 
+RAM size:  129704 MB,  # CPU hardware threads:  32                               
+RAM usage:   3530 MB,  # Benchmark threads:     16                               
+                                                                                 
+                       Compressing  |                  Decompressing             
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating             
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS             
+                                                                                 
+22:      36575  1439   2473  35580  |     450711  1594   2412  38441             
+23:      36638  1469   2540  37330  |     443639  1589   2416  38384             
+24:      35836  1519   2537  38532  |     434708  1591   2399  38157             
+25:      35206  1523   2640  40198  |     421884  1573   2387  37546             
+----------------------------------  | ------------------------------             
+Avr:            1487   2548  37910  |             1587   2403  38132             
+Tot:            1537   2476  38021    
+
+
+                                           
+[root@localhost results]# 7z b -mmt1                                             
+                                                                                 
+7-Zip 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21                   
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,32 CPUs LE)
+                                                                                 
+LE                                                                               
+CPU Freq: - - - 64000000 - - - - -                                               
+                                                                                 
+RAM size:  129704 MB,  # CPU hardware threads:  32                               
+RAM usage:    435 MB,  # Benchmark threads:      1                               
+                                                                                 
+                       Compressing  |                  Decompressing             
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating             
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS             
+                                                                                 
+22:       3408   100   3318   3316  |      28487   100   2432   2432             
+23:       3050   100   3108   3108  |      28341   100   2453   2453             
+24:       2766   100   2975   2975  |      28172   100   2473   2473             
+25:       2600   100   2969   2969  |      27938   100   2487   2487             
+----------------------------------  | ------------------------------             
+Avr:             100   3093   3092  |              100   2461   2461             
+Tot:             100   2777   2777 
