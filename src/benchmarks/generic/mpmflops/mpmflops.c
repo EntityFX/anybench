@@ -15,7 +15,7 @@ taskset 0x00000001 ./MPmflops64
 #include <stdio.h>
 #include <stdlib.h>
 #include "cpuidh.h"
-#if defined(__ia64__) || defined(__riscv) || (defined(__GLIBC__) && __GLIBC__ > 2 || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 34))
+#if defined(__ia64__) || defined(__loongarch__) || defined(__riscv) || (defined(__GLIBC__) && __GLIBC__ > 2 || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 34))
 // IA64 doesn't have mm_malloc, stub it with plain non-alligned malloc
 static inline void * _mm_malloc (size_t size, size_t alignment) {
 	return malloc(size);

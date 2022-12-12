@@ -3,10 +3,10 @@
 source common.sh
 source common-make.sh
 
-binaryCompileOptions["mpmflops"]="-I./include/ -Ibenchmarks/common/ benchmarks/generic/mpmflops/mpmflops_s.c benchmarks/common//cpuidc64.c -pthread -lm -lrt"
-
-targetToFlags["loongarch64"]="-march=native"
-targetToFPU["loongarch64"]=""
+targetToFlags["loongarch64"]=""
+# At this moment, at least some toolchains do not use vector extentions with -march=native
+# However -march=la464 should be ok
+targetToExtraFlags["loongarch64"]="-march=la464 -mtune=la464"
 
 if [[ ${#} -eq 1 ]]; then
     echo "Compiling only ${1}"

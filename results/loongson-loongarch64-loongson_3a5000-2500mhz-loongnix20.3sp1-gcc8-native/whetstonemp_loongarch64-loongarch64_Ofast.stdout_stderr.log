@@ -1,0 +1,48 @@
+4 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones loongarch64 loongarch64 optimized
+
+             Using 4 threads - Sun Dec 11 00:54:22 2022
+
+ Calibrate
+    0.00351 Seconds          1   Passes (x 100)
+    0.01669 Seconds          5   Passes (x 100)
+    0.08299 Seconds         25   Passes (x 100)
+    0.41293 Seconds        125   Passes (x 100)
+
+ Use 3027  passes (x 100)
+
+ MFLOPS 1     678    677    677    666
+ MFLOPS 2     677    676    674    674
+ IFMOPS      7494   7493   7493   7493
+ FIXPMOPS    2083   2082   2077   2053
+ COSMOPS      112    112    112    112
+ MFLOPS 3     600    599    599    594
+ EQUMOPS     4997   4996   4993   4963
+ EXPMOPS       63     63     63     63
+ millisec    8058   8057   8057   8100
+ MWIPS       3757   3757   3757   3737
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1   3757    678    674    600    112     63   2053   7493   4997
+      2   3757    666    677    599    112     63   2077   7493   4996
+      3   3757    677    676    599    112     63   2083   7494   4993
+      4   3737    677    674    594    112     63   2082   7493   4963
+ Total   15008   2698   2701   2392    448    252   8295  29972  19948
+
+ MWIPS   14934 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.12253940105438232      MFLOPS 2   -1.13133072853088379
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.49911013245582581      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+      Numeric results of the other 3 threads were same as above
+
+               End of test Sun Dec 11 00:54:33 2022
