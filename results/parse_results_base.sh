@@ -19,7 +19,7 @@ function parse_results() {
 	
 	COREMARK_FILES="$(ls "${NAME}"/coremark*.log 2>&1 | grep -v '_mp[0-9]\+_' | grep "${EXTRA_FILTER}") $(ls "${NAME}"/coremark* 2>&1 | grep '_mp1_' | grep "${EXTRA_FILTER}")"
 	COREMARK_MP_FILES="$(ls "${NAME}"/coremark*.log 2>&1 | grep '_mp[0-9]\+_' | grep "${EXTRA_FILTER}")"
-	DHRYSTONE_FILES="$(ls "${NAME}"/dhrystone*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	DHRYSTONE_FILES="$(ls "${NAME}"/d*rystone*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	LINPACK_FILES="$(ls "${NAME}"/linpack*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	SCIMARK2_FILES="$(ls "${NAME}"/scimark*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	WHETSTONE_FILES="$(ls "${NAME}"/whetstone*.log 2>&1 | grep -v '_mp_' | grep "${EXTRA_FILTER}")"
