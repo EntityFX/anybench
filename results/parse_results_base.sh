@@ -56,10 +56,10 @@ function parse_results() {
 	results["superpi"]=$(awk 'BEGIN{v=-1}($2 == "sec."){if ($1+0.0 < v || v < 0) {v = $1+0.0}}END{print v}' ${SUPERPI_FILES:-"None"} 2>/dev/null)
 	
 	# Higher is better
-	GSYNTH_FILES="$(ls "${NAME}"/gsynth_*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	GSYNTH_FILES="$(ls "${NAME}"/gsynth*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	results["gsynth"]=$(awk -F= 'BEGIN{v=-1}($1 == "g_synth_score"){if ($2+0.0 > v) {v = $2+0.0}}END{print v}' ${GSYNTH_FILES:-"None"} 2>/dev/null)
 	
-	LLOOP_FILES="$(ls "${NAME}"/lloops_*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	LLOOP_FILES="$(ls "${NAME}"/lloops*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	results["lloops_maximum"]=$(awk '($1 == "Maximum"){if (!$3) { gsub(/[a-zA-Z]+/, "", $2); $3 = $2; };if ($3+0.0 > v) { v=$3+0.0; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
 	results["lloops_average"]=$(awk '($1 == "Average"){if (!$3) { gsub(/[a-zA-Z]+/, "", $2); $3 = $2; };if ($3+0.0 > v) { v=$3+0.0; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
 	results["lloops_geometric"]=$(awk '($1 == "Geometric"){if (!$3) { gsub(/[a-zA-Z]+/, "", $2); $3 = $2; };if ($3+0.0 > v) { v=$3+0.0; }}END{print v}' ${LLOOP_FILES:-"None"} 2>/dev/null)
