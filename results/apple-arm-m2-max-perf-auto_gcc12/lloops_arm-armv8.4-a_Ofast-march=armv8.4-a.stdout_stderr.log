@@ -1,0 +1,233 @@
+L.L.N.L. 'C' KERNELS: MFLOPS   P.C.  VERSION 4.0
+
+Optimisation  arm64 armv8.4-a optimized
+
+Calculating outer loop overhead
+      1000 times   0.00 seconds
+     10000 times   0.00 seconds
+    100000 times   0.00 seconds
+   1000000 times   0.00 seconds
+  10000000 times   0.04 seconds
+  20000000 times   0.05 seconds
+  40000000 times   0.08 seconds
+  80000000 times   0.16 seconds
+ 160000000 times   0.32 seconds
+Overhead for each loop   2.0049e-09 seconds
+
+Calibrating part 1 of 3
+
+Loop count          4  0.00 seconds
+Loop count         16  0.00 seconds
+Loop count         64  0.00 seconds
+Loop count        256  0.01 seconds
+
+Loops  200 x  1 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1   7 x3322  5  2.327725e+10  1.0322709.37 1001  5.114652693224709e+04 14
+ 2  67 x1199  4  6.233841e+09  1.01 6166.62  101  1.539721811668516e+03 13
+ 3   9 x1161  2  4.183780e+09  0.98 4247.84 1001  1.000742883066638e+01 13
+ 4  14 x1779  2  5.977440e+09  1.03 5801.51 1001  5.999250595474085e-01 13
+ 5  10 x 270  2  1.080000e+09  0.99 1087.24 1001  4.548871642388625e+03 13
+ 6   3 x 716  2  1.704653e+09  1.02 1675.81   64  4.375116344743195e+03 12
+ 7   4 x2915 16  3.712544e+10  1.0236336.52  995  6.104251075174966e+04 13
+ 8  10 x1414 36  2.015798e+10  0.9820670.80  100  1.501268005627157e+05 12
+ 9  36 x1467 17  1.813564e+10  1.0018143.59  101  1.189443609975093e+05 13
+10  34 x1092  9  6.749870e+09  1.01 6708.92  101  7.310369784326026e+04 13
+11  11 x 557  1  1.225400e+09  0.97 1264.31 1001  3.342910972650564e+07 13
+12  12 x2586  1  6.206400e+09  0.98 6363.73 1000  2.907141430413818e-05  7
+13  36 x 698  7  2.251469e+09  1.00 2252.23   64  1.202533961843101e+11 13
+14   2 x1020 11  4.492488e+09  0.99 4521.23 1001  3.165553044001664e+09 12
+15   1 x4155 33  1.371150e+10  1.0113633.80  101  3.943816690352320e+04 13
+16  25 x1434 10  3.800100e+09  1.00 3782.98   75  5.650760000000000e+05 16
+17  35 x 586  9  3.728718e+09  0.99 3767.40  101  1.114641772903101e+03 12
+18   2 x2432 44  2.118758e+10  1.0021105.39  100  1.015727037502806e+05 12
+19  39 x 323  6  1.526756e+09  0.99 1548.45  101  5.421816960150428e+02 12
+20   1 x 327 26  1.700400e+09  0.99 1719.12 1000  3.040644339316553e+07 11
+21   1 x 569  2  1.436725e+10  1.0114194.80  101  1.597308280710890e+08 12
+22  11 x1717 17  6.485796e+09  1.01 6415.37  101  2.938604376567126e+02 13
+23   8 x 615 11  5.357880e+09  1.00 5345.02  100  3.549900501566212e+04 12
+24   5 x 937  1  9.370000e+08  0.98  953.76 1001  5.000000000000000e+02 16
+
+                     Maximum   Rate36336.52 
+                     Average   Rate 8767.33 
+                     Geometric Mean 5297.58 
+                     Harmonic  Mean 3259.23 
+                     Minimum   Rate  953.76 
+
+                     Do Span    471
+
+Calibrating part 2 of 3
+
+Loop count          8  0.00 seconds
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+Loop count        512  0.00 seconds
+
+Loops  200 x  2 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  40 x3144  5  2.540352e+10  1.0524245.81  101  5.253344778938002e+02 14
+ 2  40 x1011  4  6.276288e+09  1.00 6257.88  101  1.539721811668516e+03 13
+ 3  53 x1960  2  8.393504e+09  0.98 8568.85  101  1.009741436579204e+00 13
+ 4  70 x2628  2  8.830080e+09  0.99 8954.60  101  5.999250595474085e-01 13
+ 5  55 x 425  2  1.870000e+09  1.00 1875.42  101  4.589031939602205e+01 13
+ 6   7 x 601  2  1.615488e+09  1.03 1570.29   32  8.631675645346178e+01 12
+ 7  22 x2672 16  3.799798e+10  1.0237107.10  101  6.345586315784158e+02 14
+ 8   6 x1187 36  2.030625e+10  0.9920432.04  100  1.501268005627157e+05 12
+ 9  21 x1273 17  1.836022e+10  1.0018281.23  101  1.189443609975093e+05 13
+10  19 x 985  9  6.804774e+09  1.02 6676.37  101  7.310369784326026e+04 13
+11  64 x 736  1  1.884160e+09  0.97 1937.72  101  3.433560407476189e+04 13
+12  68 x2434  1  6.620480e+09  1.00 6587.81  100  7.127569149598112e-06  9
+13  41 x 622  7  2.284979e+09  1.02 2250.58   32  9.816387817138161e+10  9
+14  10 x1017 11  4.519548e+09  1.01 4464.69  101  3.039983465147589e+07 12
+15   1 x2078 33  1.371480e+10  1.0013673.89  101  3.943816690352320e+04 13
+16  27 x1266 10  3.828384e+09  1.01 3782.38   40  6.480410000000000e+05 16
+17  20 x 514  9  3.737808e+09  1.00 3730.75  101  1.114641772903101e+03 12
+18   1 x2428 44  2.115274e+10  1.0120875.92  100  1.015727037502806e+05 12
+19  23 x 276  6  1.538755e+09  1.00 1534.37  101  5.421816960150428e+02 12
+20   8 x 223 26  1.855360e+09  1.00 1850.72  100  3.126205178810912e+04 12
+21   1 x 577  2  1.442500e+10  1.0114247.88   50  7.824524877235296e+07 12
+22   7 x1335 17  6.418146e+09  0.99 6467.57  101  2.938604376567126e+02 13
+23   5 x 490 11  5.336100e+09  0.99 5374.40  100  3.549900501566212e+04 12
+24  31 x1117  1  1.385080e+09  1.00 1383.73  101  5.000000000000000e+01 16
+
+                     Maximum   Rate37107.10 
+                     Average   Rate 9255.50 
+                     Geometric Mean 5901.89 
+                     Harmonic  Mean 3874.04 
+                     Minimum   Rate 1383.73 
+
+                     Do Span     90
+
+Calibrating part 3 of 3
+
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+Loop count        512  0.00 seconds
+Loop count       2048  0.00 seconds
+
+Loops  200 x  8 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  28 x3948  5  2.387750e+10  0.9724683.60   27  3.855104502494986e+01 14
+ 2  46 x1533  4  4.964467e+09  0.99 5016.83   15  3.953296986903406e+01 13
+ 3  37 x4196  2  1.341377e+10  0.9813666.25   27  2.699309089321338e-01 13
+ 4  38 x3493  2  6.371232e+09  0.99 6454.44   27  5.999250595474085e-01 13
+ 5  40 x1057  2  3.517696e+09  1.00 3500.99   27  3.182615248448323e+00 13
+ 6  21 x1001  2  1.614413e+09  0.93 1727.17    8  1.120309393467610e+00 12
+ 7  20 x3148 16  3.384730e+10  0.9734895.33   21  2.845720217644064e+01 14
+ 8   9 x1463 36  1.971890e+10  0.9919843.73   14  2.960543667877652e+03 12
+ 9  26 x1782 17  1.890346e+10  0.9919153.76   15  2.623968460874436e+03 13
+10  25 x1164  9  6.285600e+09  1.02 6142.14   15  1.651291227698388e+03 13
+11  46 x1549  1  2.964166e+09  1.01 2925.18   27  6.551161335846584e+02 13
+12  48 x3306  1  6.601421e+09  1.01 6518.80   26  1.943435982643127e-06  9
+13  31 x 842  7  2.338739e+09  1.01 2306.99    8  3.847124173932926e+10  8
+14   8 x1237 11  4.702579e+09  1.00 4685.20   27  2.923540598700725e+06 11
+15   1 x3878 33  1.433309e+10  0.9814577.83   15  1.108997288135077e+03 13
+16  14 x1579 10  3.890656e+09  0.99 3923.67   15  5.152160000000000e+05 16
+17  26 x1317  9  7.396272e+09  0.99 7446.09   15  2.947368618590736e+01 12
+18   2 x1797 44  1.644614e+10  0.9916552.25   14  9.700646212341634e+02 12
+19  28 x 374  6  1.507968e+09  0.99 1518.66   15  1.268230698051755e+01 12
+20   7 x 341 26  2.581779e+09  1.01 2556.85   26  5.987713249471708e+02 12
+21   1 x 367  2  1.468000e+10  1.0114494.47   20  5.009945671206670e+07 12
+22   8 x2099 17  6.851136e+09  0.99 6910.68   15  6.109968728264852e+00 13
+23   7 x 991 11  7.935928e+09  0.99 7998.08   14  4.850340602751729e+02 12
+24  23 x2625  1  2.511600e+09  0.97 2583.88   27  1.300000000000000e+01 16
+
+                     Maximum   Rate34895.33 
+                     Average   Rate 9586.79 
+                     Geometric Mean 6682.31 
+                     Harmonic  Mean 4740.93 
+                     Minimum   Rate 1518.66 
+
+                     Do Span     19
+
+                Overall
+
+                Part 1 weight 1
+                Part 2 weight 2
+                Part 3 weight 1
+
+                     Maximum   Rate37107.10 
+                     Average   Rate 9216.28 
+                     Geometric Mean 5925.79 
+                     Harmonic  Mean 3868.45 
+                     Minimum   Rate  953.76 
+
+                     Do Span    167
+
+ Section 1 Test  1 Non-standard result was  5.114652693224709e+04 expected  5.114652693224671e+04
+ Section 1 Test  2 Non-standard result was  1.539721811668516e+03 expected  1.539721811668385e+03
+ Section 1 Test  3 Non-standard result was  1.000742883066638e+01 expected  1.000742883066363e+01
+ Section 1 Test  4 Non-standard result was  5.999250595474085e-01 expected  5.999250595473891e-01
+ Section 1 Test  5 Non-standard result was  4.548871642388625e+03 expected  4.548871642387267e+03
+ Section 1 Test  6 Non-standard result was  4.375116344743195e+03 expected  4.375116344729986e+03
+ Section 1 Test  7 Non-standard result was  6.104251075174966e+04 expected  6.104251075174761e+04
+ Section 1 Test  8 Non-standard result was  1.501268005627157e+05 expected  1.501268005625795e+05
+ Section 1 Test  9 Non-standard result was  1.189443609975093e+05 expected  1.189443609974981e+05
+ Section 1 Test 10 Non-standard result was  7.310369784326026e+04 expected  7.310369784325296e+04
+ Section 1 Test 11 Non-standard result was  3.342910972650564e+07 expected  3.342910972650109e+07
+ Section 1 Test 12 Non-standard result was  2.907141430413818e-05 expected  2.907141294167248e-05
+ Section 1 Test 13 Non-standard result was  1.202533961843101e+11 expected  1.202533961842805e+11
+ Section 1 Test 14 Non-standard result was  3.165553044001664e+09 expected  3.165553044000335e+09
+ Section 1 Test 15 Non-standard result was  3.943816690352320e+04 expected  3.943816690352044e+04
+ Section 1 Test 17 Non-standard result was  1.114641772903101e+03 expected  1.114641772902486e+03
+ Section 1 Test 18 Non-standard result was  1.015727037502806e+05 expected  1.015727037502299e+05
+ Section 1 Test 19 Non-standard result was  5.421816960150428e+02 expected  5.421816960147207e+02
+ Section 1 Test 20 Non-standard result was  3.040644339316553e+07 expected  3.040644339351239e+07
+ Section 1 Test 21 Non-standard result was  1.597308280710890e+08 expected  1.597308280710199e+08
+ Section 1 Test 22 Non-standard result was  2.938604376567126e+02 expected  2.938604376566697e+02
+ Section 1 Test 23 Non-standard result was  3.549900501566212e+04 expected  3.549900501563623e+04
+ Section 2 Test  1 Non-standard result was  5.253344778938002e+02 expected  5.253344778937972e+02
+ Section 2 Test  2 Non-standard result was  1.539721811668516e+03 expected  1.539721811668385e+03
+ Section 2 Test  3 Non-standard result was  1.009741436579204e+00 expected  1.009741436578952e+00
+ Section 2 Test  4 Non-standard result was  5.999250595474085e-01 expected  5.999250595473891e-01
+ Section 2 Test  5 Non-standard result was  4.589031939602205e+01 expected  4.589031939600982e+01
+ Section 2 Test  6 Non-standard result was  8.631675645346178e+01 expected  8.631675645333210e+01
+ Section 2 Test  7 Non-standard result was  6.345586315784158e+02 expected  6.345586315784055e+02
+ Section 2 Test  8 Non-standard result was  1.501268005627157e+05 expected  1.501268005625795e+05
+ Section 2 Test  9 Non-standard result was  1.189443609975093e+05 expected  1.189443609974981e+05
+ Section 2 Test 10 Non-standard result was  7.310369784326026e+04 expected  7.310369784325296e+04
+ Section 2 Test 11 Non-standard result was  3.433560407476189e+04 expected  3.433560407475758e+04
+ Section 2 Test 12 Non-standard result was  7.127569149598112e-06 expected  7.127569130821465e-06
+ Section 2 Test 13 Non-standard result was  9.816387817138161e+10 expected  9.816387810944356e+10
+ Section 2 Test 14 Non-standard result was  3.039983465147589e+07 expected  3.039983465145392e+07
+ Section 2 Test 15 Non-standard result was  3.943816690352320e+04 expected  3.943816690352044e+04
+ Section 2 Test 17 Non-standard result was  1.114641772903101e+03 expected  1.114641772902486e+03
+ Section 2 Test 18 Non-standard result was  1.015727037502806e+05 expected  1.015727037502299e+05
+ Section 2 Test 19 Non-standard result was  5.421816960150428e+02 expected  5.421816960147207e+02
+ Section 2 Test 20 Non-standard result was  3.126205178810912e+04 expected  3.126205178815431e+04
+ Section 2 Test 21 Non-standard result was  7.824524877235296e+07 expected  7.824524877232093e+07
+ Section 2 Test 22 Non-standard result was  2.938604376567126e+02 expected  2.938604376566697e+02
+ Section 2 Test 23 Non-standard result was  3.549900501566212e+04 expected  3.549900501563623e+04
+ Section 3 Test  1 Non-standard result was  3.855104502494986e+01 expected  3.855104502494961e+01
+ Section 3 Test  2 Non-standard result was  3.953296986903406e+01 expected  3.953296986903059e+01
+ Section 3 Test  3 Non-standard result was  2.699309089321338e-01 expected  2.699309089320672e-01
+ Section 3 Test  4 Non-standard result was  5.999250595474085e-01 expected  5.999250595473891e-01
+ Section 3 Test  5 Non-standard result was  3.182615248448323e+00 expected  3.182615248447483e+00
+ Section 3 Test  6 Non-standard result was  1.120309393467610e+00 expected  1.120309393467088e+00
+ Section 3 Test  7 Non-standard result was  2.845720217644064e+01 expected  2.845720217644024e+01
+ Section 3 Test  8 Non-standard result was  2.960543667877652e+03 expected  2.960543667875005e+03
+ Section 3 Test  9 Non-standard result was  2.623968460874436e+03 expected  2.623968460874250e+03
+ Section 3 Test 10 Non-standard result was  1.651291227698388e+03 expected  1.651291227698265e+03
+ Section 3 Test 11 Non-standard result was  6.551161335846584e+02 expected  6.551161335845770e+02
+ Section 3 Test 12 Non-standard result was  1.943435982643127e-06 expected  1.943435981130448e-06
+ Section 3 Test 13 Non-standard result was  3.847124173932926e+10 expected  3.847124199949431e+10
+ Section 3 Test 14 Non-standard result was  2.923540598700725e+06 expected  2.923540598672009e+06
+ Section 3 Test 15 Non-standard result was  1.108997288135077e+03 expected  1.108997288134785e+03
+ Section 3 Test 17 Non-standard result was  2.947368618590736e+01 expected  2.947368618589361e+01
+ Section 3 Test 18 Non-standard result was  9.700646212341634e+02 expected  9.700646212337041e+02
+ Section 3 Test 19 Non-standard result was  1.268230698051755e+01 expected  1.268230698051003e+01
+ Section 3 Test 20 Non-standard result was  5.987713249471708e+02 expected  5.987713249475302e+02
+ Section 3 Test 21 Non-standard result was  5.009945671206670e+07 expected  5.009945671204667e+07
+ Section 3 Test 22 Non-standard result was  6.109968728264852e+00 expected  6.109968728263972e+00
+ Section 3 Test 23 Non-standard result was  4.850340602751729e+02 expected  4.850340602749970e+02
+Compiler #define or values in LLloops.c might to be changed
+
