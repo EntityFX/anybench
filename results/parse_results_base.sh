@@ -22,9 +22,9 @@ function parse_results() {
 	DHRYSTONE_FILES="$(ls "${NAME}"/dhrystone*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	LINPACK_FILES="$(ls "${NAME}"/linpack*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	SCIMARK2_FILES="$(ls "${NAME}"/scimark*.log 2>&1 | grep "${EXTRA_FILTER}")"
-	WHETSTONE_FILES="$(ls "${NAME}"/whetstone_*.log 2>&1 | grep -v '_mp_' | grep "${EXTRA_FILTER}")"
-	WHETSTONE_MP_FILES="$(ls "${NAME}"/whetstone*mp_*.log 2>&1 | grep "${EXTRA_FILTER}")"
-	MPMFLOPS_FILES="$(ls "${NAME}"/mpmflops_*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	WHETSTONE_FILES="$(ls "${NAME}"/whetstone*.log 2>&1 | grep -v '_mp_' | grep "${EXTRA_FILTER}")"
+	WHETSTONE_MP_FILES="$(ls "${NAME}"/whetstone*mp*.log 2>&1 | grep "${EXTRA_FILTER}")"
+	MPMFLOPS_FILES="$(ls "${NAME}"/mpmflops*.log 2>&1 | grep "${EXTRA_FILTER}")"
 	
 	results["coremark"]=$(awk '($1 == "CoreMark" && $2 == "1.0"){if ($4+0.0 > v) { v=$4+0.0; }}END{print int(v)}' ${COREMARK_FILES:-"None"} 2>/dev/null)
 	results["coremark_mp"]=$(awk '($1 == "CoreMark" && $2 == "1.0"){if ($4+0.0 > v) { v=$4+0.0; }}END{print int(v)}' ${COREMARK_MP_FILES:-"None"} 2>/dev/null)
