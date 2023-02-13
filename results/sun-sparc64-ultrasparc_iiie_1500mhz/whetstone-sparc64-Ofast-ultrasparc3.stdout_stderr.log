@@ -1,0 +1,27 @@
+##########################################
+Single Precision C Whetstone Benchmark sparc64 optimized, Mon Feb 13 20:03:11 2023
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.04 Seconds          5   Passes (x 100)
+       0.20 Seconds         25   Passes (x 100)
+       0.98 Seconds        125   Passes (x 100)
+       4.88 Seconds        625   Passes (x 100)
+
+Use 1279  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12367534637451172       629.495              0.039
+N2 floating point     -1.12167263031005859       722.875              0.238
+N3 if then else        1.00000000000000000                1484.751    0.089
+N4 fixed point        12.00000000000000000                5614.139    0.072
+N5 sin,cos etc.        0.49911010265350342                  23.186    4.589
+N6 floating point      0.99999982118606567       371.401              1.858
+N7 assignments         3.00000000000000000                 993.525    0.238
+N8 exp,sqrt etc.       0.75110864639282227                  16.559    2.873
+
+MWIPS                                           1279.525              9.996
+
