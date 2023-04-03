@@ -1,0 +1,27 @@
+##########################################
+Single Precision C Whetstone Benchmark i686 i386 optimized, Tue Mar 21 02:50:36 2023
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.04 Seconds          5   Passes (x 100)
+       0.18 Seconds         25   Passes (x 100)
+       0.86 Seconds        125   Passes (x 100)
+       5.12 Seconds        625   Passes (x 100)
+
+Use 1220  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12441420555114746       567.378              0.041
+N2 floating point     -1.12239956855773926       566.251              0.290
+N3 if then else        1.00000000000000000                5167.732    0.024
+N4 fixed point        12.00000000000000000                2572.250    0.149
+N5 sin,cos etc.        0.49904659390449524                  26.016    3.902
+N6 floating point      0.99999988079071045       411.116              1.601
+N7 assignments         3.00000000000000000                5150.936    0.044
+N8 exp,sqrt etc.       0.75110864639282227                  13.235    3.429
+
+MWIPS                                           1286.933              9.480
+
