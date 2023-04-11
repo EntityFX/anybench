@@ -1,0 +1,43 @@
+1 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones i686 i686 optimized
+
+             Using 1 threads - Tue Mar 21 21:53:55 2023
+
+ Calibrate
+    0.02487 Seconds          1   Passes (x 100)
+    0.11518 Seconds          5   Passes (x 100)
+    0.56803 Seconds         25   Passes (x 100)
+
+ Use 440  passes (x 100)
+
+ MFLOPS 1     394
+ MFLOPS 2     395
+ IFMOPS      2687
+ FIXPMOPS     509
+ COSMOPS       18
+ MFLOPS 3     277
+ EQUMOPS      166
+ EXPMOPS        9
+ millisec    5764
+ MWIPS        763
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    763    394    395    277     18      9    509   2687    166
+ Total     763    394    395    277     18      9    509   2687    166
+
+ MWIPS     763 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333344459533691      MFLOPS 2   -1.13333332538604736
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000000000000000      MFLOPS 3    0.99999588727951050
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.93536460399627686
+
+
+               End of test Tue Mar 21 21:54:06 2023
