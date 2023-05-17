@@ -22,7 +22,13 @@ namespace ResultsParser
                 Directory.CreateDirectory(outputPath);
             }
 
-            var files = Directory.GetFiles(resultsPath, "*.log", new EnumerationOptions() { RecurseSubdirectories = true });
+            var extension = "*.log";
+            if (args.Length > 0)
+            {
+                extension = args[0];
+            }
+
+            var files = Directory.GetFiles(resultsPath, extension, new EnumerationOptions() { RecurseSubdirectories = true });
 
             var benchmarksParser = new BenchmarksResultsParser();
 

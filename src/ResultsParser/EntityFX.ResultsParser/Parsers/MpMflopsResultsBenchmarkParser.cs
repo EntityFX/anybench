@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace ResultsParser.Parsers
 {
+
     public class MpMflopsResultsBenchmarkParser : BenchmarkResultsParserBase
     {
         public override string BenchmarkName => "MP MFLOPS";
