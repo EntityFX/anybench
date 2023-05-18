@@ -26,12 +26,22 @@ var benchItems = files.Select(f => benchmarksParser.Parse(f))
 
 var cpusCsvPath = Path.Combine(outputPath, "Cpus.csv");
 WriteCsv(cpusCsvPath, new[] { 
-    "CpuName", "Vendor", "NameString", "Platform", "Cores", "Family", "Generation", "Model", "Stepping", "ALU" },
+    "CpuName", "Vendor", "NameString", "Platform", "Cores",
+    "Family", "Generation", "Model", "Stepping", "Clock", "System Clock", "ALU" },
     benchItems.Select(c => new[] { 
-        c.Name, c.Result.Cpu.Vendor, c.Result.Cpu.NameString, " ", 
+        c.Result.Cpu.CpuName, c.Result.Cpu.Vendor, c.Result.Cpu.NameString, c.Result.Cpu.Platform, 
         c.Result.Cpu.Cores.ToString(),
         c.Result.Cpu.Family.ToString(), c.Result.Cpu.Generation.ToString(),
-        c.Result.Cpu.Model.ToString(), c.Result.Cpu.Stepping.ToString(), c.Result.Alu.Total.ToString()  }));
+        c.Result.Cpu.Model.ToString(), c.Result.Cpu.Stepping.ToString(),  
+        c.Result.Cpu.Clock.ToString(), c.Result.Cpu.SystemClock.ToString(),
+
+        c.Result.Alu.Total.ToString()  }));
+
+
+foreach (var benchmark in benchItems)
+{
+    File.WriteAllText($"output/{benchmark.FileName}", benchmark.ResultText);
+}
 
 void WriteCsv(string fileName, IEnumerable<string> header, IEnumerable<IEnumerable<string>> data)
 {

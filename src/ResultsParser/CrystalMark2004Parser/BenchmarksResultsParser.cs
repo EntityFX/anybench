@@ -46,7 +46,7 @@ namespace ResultsParser
 
             var item = new ResultItem
             {
-                FileName = fileName,
+                FileName = $"CrystalMark2004__{value.Cpu.NameString}.html",
                 ResultText = contents,
                 Benchmark = benchType.BenchmarkName,
                 Name = value.Cpu.NameString ?? value.Cpu.CpuName,

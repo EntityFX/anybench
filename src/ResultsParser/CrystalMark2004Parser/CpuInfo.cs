@@ -27,5 +27,6 @@ namespace ResultsParser
         public decimal Fsb { get; set; }
 
         public decimal Multiplier { get; set; }
+        public decimal SystemClock { get; internal set; }
     }
 }

@@ -7,15 +7,17 @@ namespace ResultsParser.Parsers
     {
         public override string BenchmarkName => "Crystal Mark 2004";
 
-        private const string NameRegexString = @"<tr><td\s+align=""right"">\s+(Name String)<\/td><td>(.+)<\/td><\/tr>";
-
-        private Regex nameRegex = new Regex(NameRegexString, RegexOptions.CultureInvariant);
-
         private Dictionary<string, Regex> regexMap = new Dictionary<string, Regex>()
         {
             ["Vendor String"] = new Regex(@"<tr><td\s+.+>\s*(Vendor String)<\/td><td>\s*(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
+            ["Name"] = new Regex(@"<tr><td\s+align=""right"">\s+(Name String)<\/td><td>(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
+            ["Cpu name"] = new Regex(@"<tr><td\s+.+>\s*(CPU Name)<\/td><td>\s*(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
             ["Platform"] = new Regex(@"<tr><td\s+.+>\s*(Platform)<\/td><td>\s*(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
             ["Family"] = new Regex(@"<tr><td\s+.+>\s*(Family)<\/td><td>\s*(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
+            ["Cores"] = new Regex(@"<tr><td\s+.+>\s*(Number\(Logical\))<\/td><td>\s*(.+)<\/td><\/tr>", RegexOptions.CultureInvariant),
+            ["Clock"] = new Regex(@"<tr><td\s+.+>\s*(Clock)<\/td><td>\s*([\d.]+)\s*MHz<\/td>.*<\/tr>", RegexOptions.CultureInvariant),
+            ["System Clock"] = new Regex(@"<tr><td\s+.+>\s*(System Clock)<\/td><td>\s*([\d.]+)\s*MHz<\/td>.*<\/tr>", RegexOptions.CultureInvariant),
+            //Number(Logical)
 
             ["ALU"] = new Regex(@"<tr><td\s+.+>(ALU)<\/td><td>\s*(\d+)<\/td><\/tr>", RegexOptions.CultureInvariant),
             ["Fibonacci"] = new Regex(@"<tr><td>(Fibonacci)<\/td><td>\s*(\d+)<\/td><\/tr>", RegexOptions.CultureInvariant),
@@ -24,14 +26,23 @@ namespace ResultsParser.Parsers
             ["QuickSort"] = new Regex(@"<tr><td>(QuickSort)<\/td><td>\s*(\d+)<\/td><\/tr>", RegexOptions.CultureInvariant),
         };
 
+        private decimal ParseDecimal(string value)
+        {
+            if (string.IsNullOrEmpty(value)) return 0;
+            try
+            {
+                if (decimal.TryParse(value, out decimal result)) return result;
+
+                return 0;
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
+
         protected override CrystalMark2004ResultItem ParseValues(string resultContent)
         {
-            var match = nameRegex.Match(resultContent);
-
-            if (!match.Success || match.Groups.Count != 3)
-            {
-                return null;
-            }
 
             var matchMap = regexMap.ToDictionary(k => k.Key, v => v.Value.Match(resultContent));
 
@@ -45,17 +56,30 @@ namespace ResultsParser.Parsers
 
             };
 
+
+            var clock = string.IsNullOrEmpty(matchMap["Clock"].Groups[2].Value) ? 0 : ParseDecimal(matchMap["Clock"].Groups[2].Value);
+            var cpuName = matchMap["Cpu name"].Groups[2].Value;
+            var name = string.IsNullOrEmpty(matchMap["Name"].Groups[2].Value) ? cpuName + $" @ {clock} MHz"
+                        : matchMap["Name"].Groups[2].Value;
+
             return new CrystalMark2004ResultItem()
             {
                 Cpu = new CpuInfo()
                 {
-                    CpuName = match.Groups[2].Value,
+                    CpuName = cpuName,
                     Vendor = matchMap["Vendor String"].Groups[2].Value,
-                    Platform = matchMap["Platform"].Groups[2].Value,
+                    NameString = name,
+                    Platform = string.IsNullOrEmpty(matchMap["Platform"].Groups[2].Value)
+                        ? "?"
+                        : matchMap["Platform"].Groups[2].Value,
                     Family = matchMap["Family"].Groups[2].Value,
+                    Cores = uint.Parse(matchMap["Cores"].Groups[2].Value),
                     Generation = String.Empty,
                     Model = String.Empty,
-                    Stepping = String.Empty
+                    Stepping = String.Empty,
+                    Clock = clock,
+                    SystemClock = string.IsNullOrEmpty(matchMap["System Clock"].Groups[2].Value) ?
+                        0 : ParseDecimal(matchMap["System Clock"].Groups[2].Value),
                 },
                 Alu = alu
             };
