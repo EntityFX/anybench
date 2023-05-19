@@ -20,7 +20,7 @@ namespace ResultsParser
 
         public string Description { get; set; }
 
-        public uint Cores { get; set; }
+        public int Cores { get; set; }
 
         public decimal Clock { get; set; }
 

@@ -22,6 +22,8 @@ namespace ResultsParser
     {
         public CrystalMark2004Alu Alu { get; set; }
 
+        public CrystalMark2004Fpu Fpu { get; set; }
+
         public CpuInfo Cpu { get; set; }
     }
 
@@ -36,5 +38,18 @@ namespace ResultsParser
         public int Eratosthenes { get; set; }
 
         public int QuickSort { get; set; }
+    }
+
+    public class CrystalMark2004Fpu
+    {
+        public int Total { get; set; }
+
+        public int MikoFPU { get; set; }
+
+        public int RandMeanSS { get; set; }
+
+        public int FFT { get; set; }
+
+        public int Mandelbrot { get; set; }
     }
 }
