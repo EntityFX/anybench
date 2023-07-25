@@ -1,0 +1,120 @@
+https://rpmfind.net/linux/opensuse/ports/zsystems/tumbleweed/repo/oss/s390x/cpuminer-2.5.1-1.10.s390x.rpm
+
+./usr/bin/minerd --benchmark -a sha256d
+
+
+[2023-07-24 00:44:48] thread 14: 7892049 hashes, 1657 khash/s
+[2023-07-24 00:44:49] thread 8: 8184865 hashes, 1636 khash/s
+[2023-07-24 00:44:49] thread 15: 5735394 hashes, 1336 khash/s
+[2023-07-24 00:44:49] Total: 23361 khash/s
+[2023-07-24 00:44:49] thread 3: 6309380 hashes, 1581 khash/s
+[2023-07-24 00:44:49] thread 5: 1688857 hashes, 1702 khash/s
+[2023-07-24 00:44:49] thread 4: 8457772 hashes, 1602 khash/s
+[2023-07-24 00:44:49] thread 13: 7689313 hashes, 1690 khash/s
+[2023-07-24 00:44:49] thread 2: 8018930 hashes, 1596 khash/s
+[2023-07-24 00:44:49] thread 14: 1656565 hashes, 1705 khash/s
+[2023-07-24 00:44:49] thread 0: 4735413 hashes, 949.36 khash/s
+[2023-07-24 00:44:49] thread 1: 4724773 hashes, 945.67 khash/s
+[2023-07-24 00:44:49] thread 12: 4729285 hashes, 945.61 khash/s
+[2023-07-24 00:44:50] thread 10: 4395120 hashes, 947.83 khash/s
+[2023-07-24 00:44:50] thread 7: 8347235 hashes, 1528 khash/s
+[2023-07-24 00:44:50] thread 11: 3378470 hashes, 1258 khash/s
+[2023-07-24 00:44:51] thread 9: 8217930 hashes, 1143 khash/s
+[2023-07-24 00:44:53] thread 9: 3428393 hashes, 1704 khash/s
+[2023-07-24 00:44:53] thread 10: 3791339 hashes, 1183 khash/s
+[2023-07-24 00:44:53] thread 1: 4728353 hashes, 1385 khash/s
+[2023-07-24 00:44:53] thread 6: 8465445 hashes, 979.01 khash/s
+[2023-07-24 00:44:53] thread 15: 6681292 hashes, 1440 khash/s
+[2023-07-24 00:44:53] Total: 22884 khash/s
+[2023-07-24 00:44:53] thread 0: 4746799 hashes, 1209 khash/s
+[2023-07-24 00:44:53] thread 3: 7903796 hashes, 1666 khash/s
+[2023-07-24 00:44:54] thread 12: 4728065 hashes, 1156 khash/s
+[2023-07-24 00:44:54] thread 1: 1384754 hashes, 1641 khash/s
+[2023-07-24 00:44:54] thread 9: 1703602 hashes, 1659 khash/s
+[2023-07-24 00:44:54] thread 8: 8181534 hashes, 1538 khash/s
+[2023-07-24 00:44:54] thread 4: 8009451 hashes, 1588 khash/s
+[2023-07-24 00:44:54] thread 10: 1183117 hashes, 923.05 khash/s
+[2023-07-24 00:44:54] thread 2: 7981901 hashes, 1653 khash/s
+[2023-07-24 00:44:54] thread 15: 1440097 hashes, 1689 khash/s
+[2023-07-24 00:44:54] Total: 23584 khash/s
+[2023-07-24 00:44:54] thread 0: 1208960 hashes, 1619 khash/s
+[2023-07-24 00:44:54] thread 6: 979014 hashes, 919.58 khash/s
+[2023-07-24 00:44:54] thread 7: 6110597 hashes, 1432 khash/s
+[2023-07-24 00:44:54] thread 5: 8512419 hashes, 1547 khash/s
+[2023-07-24 00:44:54] thread 3: 1665598 hashes, 1651 khash/s
+[2023-07-24 00:44:55] thread 11: 5033830 hashes, 1098 khash/s
+[2023-07-24 00:44:55] thread 13: 8449119 hashes, 1408 khash/s
+
+
+root@artem:~/entityfx# ./usr/bin/minerd --benchmark -a scrypt
+./usr/bin/minerd: /lib/s390x-linux-gnu/libjansson.so.4: no version information available (required by ./usr/bin/minerd)
+[2023-07-24 00:46:21] Binding thread 1 to cpu 1
+[2023-07-24 00:46:21] Binding thread 4 to cpu 4
+[2023-07-24 00:46:21] Binding thread 2 to cpu 2
+[2023-07-24 00:46:21] Binding thread 6 to cpu 6
+[2023-07-24 00:46:21] Binding thread 7 to cpu 7
+[2023-07-24 00:46:21] Binding thread 0 to cpu 0
+[2023-07-24 00:46:21] Binding thread 15 to cpu 15
+[2023-07-24 00:46:21] Binding thread 11 to cpu 11
+[2023-07-24 00:46:21] Binding thread 3 to cpu 3
+[2023-07-24 00:46:21] Binding thread 9 to cpu 9
+[2023-07-24 00:46:21] Binding thread 5 to cpu 5
+[2023-07-24 00:46:21] Binding thread 13 to cpu 13
+[2023-07-24 00:46:21] Binding thread 14 to cpu 14
+[2023-07-24 00:46:21] 16 miner threads started, using 'scrypt' algorithm.
+[2023-07-24 00:46:21] Binding thread 8 to cpu 8
+[2023-07-24 00:46:21] Binding thread 12 to cpu 12
+[2023-07-24 00:46:21] Binding thread 10 to cpu 10
+[2023-07-24 00:46:22] thread 5: 4096 hashes, 3.07 khash/s
+[2023-07-24 00:46:22] thread 8: 4096 hashes, 3.04 khash/s
+[2023-07-24 00:46:22] thread 6: 4096 hashes, 3.00 khash/s
+[2023-07-24 00:46:22] thread 15: 4096 hashes, 2.97 khash/s
+[2023-07-24 00:46:22] thread 3: 4096 hashes, 2.96 khash/s
+[2023-07-24 00:46:22] thread 11: 4096 hashes, 2.69 khash/s
+[2023-07-24 00:46:22] thread 13: 4096 hashes, 2.69 khash/s
+[2023-07-24 00:46:22] thread 9: 4096 hashes, 2.53 khash/s
+[2023-07-24 00:46:22] thread 12: 4096 hashes, 2.44 khash/s
+[2023-07-24 00:46:22] thread 1: 4096 hashes, 2.16 khash/s
+[2023-07-24 00:46:23] thread 4: 4096 hashes, 2.01 khash/s
+[2023-07-24 00:46:23] thread 7: 4096 hashes, 1.79 khash/s
+[2023-07-24 00:46:23] thread 14: 4096 hashes, 1.79 khash/s
+[2023-07-24 00:46:23] thread 2: 4096 hashes, 1.77 khash/s
+[2023-07-24 00:46:23] thread 0: 4096 hashes, 1.77 khash/s
+[2023-07-24 00:46:23] thread 10: 4096 hashes, 1.78 khash/s
+[2023-07-24 00:46:25] thread 10: 5333 hashes, 2.33 khash/s
+[2023-07-24 00:46:25] thread 12: 9763 hashes, 3.02 khash/s
+[2023-07-24 00:46:26] thread 14: 5363 hashes, 1.96 khash/s
+[2023-07-24 00:46:26] thread 9: 10139 hashes, 2.97 khash/s
+[2023-07-24 00:46:26] thread 7: 5360 hashes, 1.91 khash/s
+[2023-07-24 00:46:26] thread 4: 6033 hashes, 1.95 khash/s
+[2023-07-24 00:46:26] thread 2: 5320 hashes, 1.74 khash/s
+[2023-07-24 00:46:26] thread 3: 11832 hashes, 2.98 khash/s
+[2023-07-24 00:46:26] thread 0: 5318 hashes, 1.74 khash/s
+[2023-07-24 00:46:26] thread 15: 11872 hashes, 2.96 khash/s
+[2023-07-24 00:46:26] Total: 40.22 khash/s
+[2023-07-24 00:46:26] thread 1: 8660 hashes, 2.45 khash/s
+[2023-07-24 00:46:26] thread 10: 2332 hashes, 2.88 khash/s
+[2023-07-24 00:46:26] thread 6: 11997 hashes, 2.95 khash/s
+[2023-07-24 00:46:26] thread 11: 10778 hashes, 2.55 khash/s
+[2023-07-24 00:46:27] thread 12: 3019 hashes, 2.92 khash/s
+[2023-07-24 00:46:27] thread 8: 12141 hashes, 2.61 khash/s
+[2023-07-24 00:46:27] thread 13: 10771 hashes, 2.35 khash/s
+[2023-07-24 00:46:27] thread 5: 12264 hashes, 2.43 khash/s
+[2023-07-24 00:46:30] thread 7: 9545 hashes, 2.45 khash/s
+[2023-07-24 00:46:30] thread 8: 10453 hashes, 2.98 khash/s
+[2023-07-24 00:46:30] thread 1: 12264 hashes, 2.96 khash/s
+[2023-07-24 00:46:30] thread 5: 9710 hashes, 2.80 khash/s
+[2023-07-24 00:46:31] thread 7: 2447 hashes, 2.50 khash/s
+[2023-07-24 00:46:31] thread 13: 9414 hashes, 2.29 khash/s
+[2023-07-24 00:46:31] thread 12: 11699 hashes, 2.68 khash/s
+[2023-07-24 00:46:31] thread 2: 8716 hashes, 1.74 khash/s
+[2023-07-24 00:46:31] thread 0: 8686 hashes, 1.73 khash/s
+[2023-07-24 00:46:31] thread 8: 2983 hashes, 3.01 khash/s
+[2023-07-24 00:46:31] thread 3: 14890 hashes, 2.89 khash/s
+[2023-07-24 00:46:31] thread 1: 2963 hashes, 2.95 khash/s
+[2023-07-24 00:46:31] thread 14: 9806 hashes, 1.75 khash/s
+[2023-07-24 00:46:31] thread 4: 9768 hashes, 1.75 khash/s
+[2023-07-24 00:46:31] thread 5: 2801 hashes, 2.90 khash/s
+[2023-07-24 00:46:32] thread 15: 14825 hashes, 2.63 khash/s
+[2023-07-24 00:46:32] Total: 40.19 khash/s
+

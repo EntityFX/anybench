@@ -1,0 +1,87 @@
+root@artem:~/entityfx/php-simple-benchmark-script# php bench.php 
+<<< WARNING >>> Extension 'mbstring' not loaded or not compiled! Multi-byte string tests will produce empty result!
+-------------------------------------------------------------------------------------------
+|                                  PHP BENCHMARK SCRIPT                                   |
+-------------------------------------------------------------------------------------------
+Start               : 2023-07-24 03:30:46
+Server name         : artem
+Server system       : Linux/5.15.0-73-generic s390x
+Platform            : Linux
+System              : Ubuntu 22.04.2 LTS
+CPU                 :
+              model : 
+              cores : 1
+          available : 16
+                MHz : 0 MHz
+Benchmark version   : 1.0.52.1
+PHP version         : 8.1.2-1ubuntu2.13
+PHP time limit      : 0 sec
+Setup time limit    : 600 sec
+PHP memory limit    : -1
+Setup memory limit  : 130 Mb
+Crypt hash algo     : MD5
+     Loaded modules
+          -useful->
+               json : yes
+           mbstring : no
+               pcre : yes; version: 10.39 2021-10-29
+          simplexml : no; libxml version: 2.9.13
+                dom : no
+               intl : no
+       -affecting->
+            opcache : yes; enabled: 0
+             xcache : no; enabled: 0
+                apc : no; enabled: 0
+       eaccelerator : no; enabled: 0
+             xdebug : no, enabled: 0, mode: ''
+     PHP parameters
+       open_basedir : is empty? yes
+   mb.func_overload : 0
+-------------------------------------------------------------------------------------------
+TEST NAME                      :      SECONDS |       OP/SEC |      OP/SEC/MHz |    MEMORY
+-------------------------------------------------------------------------------------------
+01_math                        :    4.235 sec | 472.22 kOp/s |   -.-- uOps/MHz |      4 Mb
+02_string_concat               :    2.522 sec |   9.91 MOp/s |   -.-- uOps/MHz |  89.83 Mb
+03_1_string_number_concat      :    2.106 sec |   2.37 MOp/s |   -.-- uOps/MHz |      4 Mb
+03_2_string_number_format      :    1.892 sec |   2.64 MOp/s |   -.-- uOps/MHz |      4 Mb
+04_string_simple_functions     :    3.325 sec | 390.99 kOp/s |   -.-- uOps/MHz |      4 Mb
+05_string_multibyte            :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+06_string_manipulation         :    6.148 sec | 211.45 kOp/s |   -.-- uOps/MHz |      4 Mb
+07_regex                       :    5.696 sec | 228.22 kOp/s |   -.-- uOps/MHz |      4 Mb
+08_1_hashing                   :    3.526 sec | 368.74 kOp/s |   -.-- uOps/MHz |      4 Mb
+08_2_crypt                     :   10.022 sec | 997.80  Op/s |   -.-- uOps/MHz |      4 Mb
+09_json_encode                 :    4.466 sec | 291.06 kOp/s |   -.-- uOps/MHz |      4 Mb
+10_json_decode                 :    6.253 sec | 207.91 kOp/s |   -.-- uOps/MHz |      4 Mb
+11_serialize                   :    2.315 sec | 561.45 kOp/s |   -.-- uOps/MHz |      4 Mb
+12_unserialize                 :    2.885 sec | 450.58 kOp/s |   -.-- uOps/MHz |      4 Mb
+13_array_fill                  :    4.758 sec |  18.91 MOp/s |   -.-- uOps/MHz |     24 Mb
+14_array_range                 :    1.885 sec |  79.56 kOp/s |   -.-- uOps/MHz |     24 Mb
+14_array_unset                 :    3.671 sec |  24.52 MOp/s |   -.-- uOps/MHz |     24 Mb
+15_clean_loops                 :    2.618 sec | 152.78 MOp/s |   -.-- uOps/MHz |      4 Mb
+16_loop_ifelse                 :    4.702 sec |  21.27 MOp/s |   -.-- uOps/MHz |      4 Mb
+17_loop_ternary                :    5.353 sec |  18.68 MOp/s |   -.-- uOps/MHz |      4 Mb
+18_1_loop_defined_access       :    1.414 sec |  35.35 MOp/s |   -.-- uOps/MHz |      4 Mb
+18_2_loop_undefined_access     :    6.022 sec |   8.30 MOp/s |   -.-- uOps/MHz |      4 Mb
+19_type_functions              :    2.390 sec |   1.67 MOp/s |   -.-- uOps/MHz |      4 Mb
+20_type_casting                :    2.409 sec |   1.66 MOp/s |   -.-- uOps/MHz |      4 Mb
+21_0_loop_exception_none       :    0.244 sec |  40.92 MOp/s |   -.-- uOps/MHz |      4 Mb
+21_1_loop_exception_try        :    0.296 sec |  33.73 MOp/s |   -.-- uOps/MHz |      4 Mb
+21_2_loop_exception_catch      :    4.531 sec |   2.21 MOp/s |   -.-- uOps/MHz |      4 Mb
+22_loop_null_op                :    1.982 sec |  30.27 MOp/s |   -.-- uOps/MHz |      4 Mb
+23_loop_spaceship_op           :    1.909 sec |  31.43 MOp/s |   -.-- uOps/MHz |      4 Mb
+26_1_class_public_properties   :    0.250 sec |  40.00 MOp/s |   -.-- uOps/MHz |      4 Mb
+26_2_class_getter_setter       :    0.774 sec |  12.92 MOp/s |   -.-- uOps/MHz |      4 Mb
+26_3_class_magic_methods       :    1.872 sec |   5.34 MOp/s |   -.-- uOps/MHz |      4 Mb
+27_simplexml                   :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+28_domxml                      :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+29_datetime                    :    0.892 sec | 560.24 kOp/s |   -.-- uOps/MHz |      4 Mb
+30_intl_number_format          :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+31_intl_message_format         :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+32_intl_calendar               :    -.--- sec |    -.-- Op/s |    -.-- Ops/MHz |         0
+33_phpinfo_generate            :    1.633 sec |   6.12 kOp/s |   -.-- uOps/MHz |      4 Mb
+-------------------------------------------------------------------------------------------
+Total:                         :  105.000 sec |  10.63 MOp/s |   -.-- uOps/MHz |
+Current PHP memory usage:      :        4 Mb
+Peak PHP memory usage:         :    86.65 Mb
+-------------------------------------------------------------------------------------------
+End                            : 2023-07-24 03:32:31

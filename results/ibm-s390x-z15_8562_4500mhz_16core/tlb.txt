@@ -1,0 +1,96 @@
+for i in 4k 8k 16k 32k 64k 128k 256k 512k 1M 2M 4M 6M 8M 16M 32M 64M 128M 256M ; do echo "$i:"; ./test-tlb -H $i 64; ./test-tlb $i 64 ; ./test-tlb -Hr $i 64; ./test-tlb -r $i 64; done
+Putting child 0x2aa3d0171a0 (run) PID 15190 on the chain.
+Live child 0x2aa3d0171a0 (run) PID 15190 
+4k:
+  0.90ns (~4.0 cycles)
+  0.90ns (~4.0 cycles)
+  1.14ns (~5.1 cycles)
+  1.07ns (~4.8 cycles)
+8k:
+  0.92ns (~4.2 cycles)
+  0.90ns (~4.1 cycles)
+  0.89ns (~4.0 cycles)
+  0.90ns (~4.0 cycles)
+16k:
+  1.07ns (~4.8 cycles)
+  0.90ns (~4.1 cycles)
+  1.07ns (~4.8 cycles)
+  1.14ns (~5.2 cycles)
+32k:
+  0.92ns (~4.1 cycles)
+  0.90ns (~4.1 cycles)
+  0.89ns (~4.0 cycles)
+  0.89ns (~4.0 cycles)
+64k:
+  0.93ns (~4.2 cycles)
+  0.93ns (~4.2 cycles)
+  0.90ns (~4.1 cycles)
+  0.93ns (~4.2 cycles)
+128k:
+  1.02ns (~4.6 cycles)
+  1.03ns (~4.7 cycles)
+  0.97ns (~4.4 cycles)
+  0.97ns (~4.4 cycles)
+256k:
+  1.88ns (~8.4 cycles)
+  1.86ns (~8.4 cycles)
+  4.01ns (~18.0 cycles)
+  4.25ns (~19.1 cycles)
+512k:
+  2.11ns (~9.5 cycles)
+  2.13ns (~9.6 cycles)
+  5.94ns (~26.7 cycles)
+  5.81ns (~26.1 cycles)
+1M:
+  2.23ns (~10.0 cycles)
+  2.21ns (~10.0 cycles)
+  7.16ns (~32.2 cycles)
+  7.04ns (~31.7 cycles)
+2M:
+  2.28ns (~10.3 cycles)
+  2.30ns (~10.3 cycles)
+  7.59ns (~34.2 cycles)
+  7.67ns (~34.5 cycles)
+4M:
+  2.31ns (~10.4 cycles)
+  2.46ns (~11.1 cycles)
+  8.02ns (~36.1 cycles)
+  7.88ns (~35.5 cycles)
+6M:
+  4.09ns (~18.4 cycles)
+  4.05ns (~18.2 cycles)
+  9.34ns (~42.0 cycles)
+  9.05ns (~40.7 cycles)
+8M:
+  4.13ns (~18.6 cycles)
+  4.11ns (~18.5 cycles)
+  9.83ns (~44.3 cycles)
+  9.77ns (~44.0 cycles)
+16M:
+  4.10ns (~18.4 cycles)
+  4.14ns (~18.6 cycles)
+ 10.48ns (~47.1 cycles)
+ 11.09ns (~49.9 cycles)
+32M:
+  4.25ns (~19.1 cycles)
+  4.42ns (~19.9 cycles)
+ 13.05ns (~58.7 cycles)
+ 15.45ns (~69.5 cycles)
+64M:
+  4.23ns (~19.0 cycles)
+  4.45ns (~20.0 cycles)
+ 16.94ns (~76.2 cycles)
+ 23.15ns (~104.2 cycles)
+128M:
+  4.30ns (~19.4 cycles)
+  4.63ns (~20.8 cycles)
+ 20.75ns (~93.4 cycles)
+ 30.57ns (~137.6 cycles)
+256M:
+ 21.90ns (~98.5 cycles)
+ 21.38ns (~96.2 cycles)
+ 67.83ns (~305.2 cycles)
+ 73.42ns (~330.4 cycles)
+Reaping winning child 0x2aa3d0171a0 PID 15190 
+Removing child 0x2aa3d0171a0 PID 15190 from chain.
+Successfully remade target file 'run'.

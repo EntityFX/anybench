@@ -1,0 +1,386 @@
+dmesg
+[    0.112441] Linux version 5.15.0-73-generic (buildd@bos02-s390x-017) (gcc (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #80-Ubuntu SMP Mon May 15 15:23:03 UTC 2023 (Ubuntu 5.15.0-73.80-generic 5.15.98)
+[    0.112445] setup: Linux is running under KVM in 64-bit mode
+[    0.114521] setup: Relocating AMODE31 section of size 0x00003000
+[    0.114525] setup: The maximum memory size is 131072MB
+[    0.114584] cpu: 16 configured CPUs, 0 standby CPUs
+[    0.114678] Write protected kernel read-only data: 18048k
+[    0.115715] Zone ranges:
+[    0.115716]   DMA      [mem 0x0000000000000000-0x000000007fffffff]
+[    0.115719]   Normal   [mem 0x0000000080000000-0x0000001fffffffff]
+[    0.115722] Movable zone start for each node
+[    0.115723] Early memory node ranges
+[    0.115724]   node   0: [mem 0x0000000000000000-0x0000001fffffffff]
+[    0.115740] Initmem setup node 0 [mem 0x0000000000000000-0x0000001fffffffff]
+[    1.570323] percpu: Embedded 31 pages/cpu s89600 r8192 d29184 u126976
+[    1.570333] pcpu-alloc: s89600 r8192 d29184 u126976 alloc=31*4096
+[    1.570336] pcpu-alloc: [0] 00 [0] 01 [0] 02 [0] 03 [0] 04 [0] 05 [0] 06 [0] 07 
+[    1.570343] pcpu-alloc: [0] 08 [0] 09 [0] 10 [0] 11 [0] 12 [0] 13 [0] 14 [0] 15 
+[    1.570360] Built 1 zonelists, mobility grouping on.  Total pages: 33030144
+[    1.570363] Policy zone: Normal
+[    1.570364] Kernel command line: root=UUID=c0d9466e-b90d-4dcf-b6e9-4b21fde73bb0
+[    1.597491] Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+[    1.612451] Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+[    1.612492] mem auto-init: stack:off, heap alloc:on, heap free:off
+[    7.858961] Memory: 131967452K/134217728K available (11432K kernel code, 2692K rwdata, 6616K rodata, 4184K init, 1256K bss, 2250276K reserved, 0K cma-reserved)
+[    7.922407] SLUB: HWalign=256, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    7.924061] ftrace: allocating 33988 entries in 133 pages
+[    7.941871] ftrace: allocated 133 pages with 3 groups
+[    7.947776] rcu: Hierarchical RCU implementation.
+[    7.947777] rcu: 	RCU restricting CPUs from NR_CPUS=512 to nr_cpu_ids=16.
+[    7.947778] 	Rude variant of Tasks RCU enabled.
+[    7.947779] 	Tracing variant of Tasks RCU enabled.
+[    7.947780] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    7.947781] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    8.000444] NR_IRQS: 3, nr_irqs: 3, preallocated irqs: 3
+[    8.000526] clocksource: tod: mask: 0xffffffffffffffff max_cycles: 0x3b0a9be803b0a9, max_idle_ns: 1805497147909793 ns
+[    8.002319] random: crng init done
+[    8.002366] Console: colour dummy device 80x25
+[    8.002478] printk: console [ttysclp0] enabled
+[    8.002533] Calibrating delay loop (skipped)... 1167.00 BogoMIPS preset
+[    8.002534] pid_max: default: 32768 minimum: 301
+[    8.002571] LSM: Security Framework initializing
+[    8.002585] landlock: Up and running.
+[    8.002585] Yama: becoming mindful.
+[    8.002625] AppArmor: AppArmor initialized
+[    8.003112] Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    8.003573] Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    8.004251] rcu: Hierarchical SRCU implementation.
+[    8.004700] smp: Bringing up secondary CPUs ...
+[    8.009162] smp: Brought up 1 node, 16 CPUs
+[    8.038888] devtmpfs: initialized
+[    8.041111] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    8.041571] futex hash table entries: 4096 (order: 8, 1048576 bytes, linear)
+[    8.041811] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    8.041835] audit: initializing netlink subsys (disabled)
+[    8.041896] audit: type=2000 audit(1690145622.050:1): state=initialized audit_enabled=0 res=1
+[    8.041940] Spectre V2 mitigation: etokens
+[    8.043975] HugeTLB registered 1.00 MiB page size, pre-allocated 0 pages
+[    8.046114] iommu: Default domain type: Translated 
+[    8.046117] iommu: DMA domain TLB invalidation policy: strict mode 
+[    8.046192] SCSI subsystem initialized
+[    8.046339] NetLabel: Initializing
+[    8.046340] NetLabel:  domain hash size = 128
+[    8.046364] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    8.046372] NetLabel:  unlabeled traffic allowed by default
+[    8.061388] VFS: Disk quotas dquot_6.6.0
+[    8.061401] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    8.061493] AppArmor: AppArmor Filesystem Enabled
+[    8.067864] NET: Registered PF_INET protocol family
+[    8.068801] IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    8.071161] tcp_listen_portaddr_hash hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    8.071377] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    8.073220] TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    8.074151] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+[    8.074227] TCP: Hash tables configured (established 524288 bind 65536)
+[    8.075260] MPTCP token hash table entries: 65536 (order: 8, 1572864 bytes, linear)
+[    8.076258] UDP hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    8.077329] UDP-Lite hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    8.077522] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    8.077527] NET: Registered PF_XDP protocol family
+[    8.077755] Trying to unpack rootfs image as initramfs...
+[    8.081356] hypfs: The hardware system does not support hypfs
+[    8.081594] Initialise system trusted keyrings
+[    8.081602] Key type blacklist registered
+[    8.081645] workingset: timestamp_bits=45 max_order=25 bucket_order=0
+[    8.083006] zbud: loaded
+[    8.083399] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    8.083568] fuse: init (API version 7.34)
+[    8.084475] integrity: Platform Keyring initialized
+[    8.096116] Key type asymmetric registered
+[    8.096118] Asymmetric key parser 'x509' registered
+[    8.096145] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    8.096203] io scheduler mq-deadline registered
+[    8.096814] hvc_iucv: The z/VM IUCV HVC device driver cannot be used without z/VM
+[    8.101009] loop: module loaded
+[    8.101115] tun: Universal TUN/TAP device driver, 1.6
+[    8.101154] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    8.101184] device-mapper: uevent: version 1.0.3
+[    8.101231] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+[    8.101240] drop_monitor: Initializing network drop monitor service
+[    8.101404] NET: Registered PF_INET6 protocol family
+[    8.289048] Freeing initrd memory: 25832K
+[    8.293481] Segment Routing with IPv6
+[    8.293497] In-situ OAM (IOAM) with IPv6
+[    8.293530] NET: Registered PF_PACKET protocol family
+[    8.293586] Key type dns_resolver registered
+[    8.293729] cio: Channel measurement facility initialized using format extended (mode autodetected)
+[    8.293868] sclp_sd: Store Data request failed (eq=2, di=3, response=0x40f0, flags=0x00, status=0, rc=-5)
+[    8.294351] registered taskstats version 1
+[    8.295300] Loading compiled-in X.509 certificates
+[    8.296808] Loaded X.509 cert 'Build time autogenerated kernel key: 7bf26e83b8e056c626fdfc3e30ddba2f2ca58900'
+[    8.297633] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    8.298484] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    8.298486] blacklist: Loading compiled-in revocation X.509 certificates
+[    8.298501] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    8.298513] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    8.298526] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    8.298565] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    8.298577] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    8.298588] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    8.298602] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    8.298614] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    8.300652] zswap: loaded using pool lzo/zbud
+[    8.301749] Key type .fscrypt registered
+[    8.301751] Key type fscrypt-provisioning registered
+[    8.303567] Key type encrypted registered
+[    8.303570] AppArmor: AppArmor sha1 policy hashing enabled
+[    8.303577] ima: No TPM chip found, activating TPM-bypass!
+[    8.303579] Loading compiled-in module X.509 certificates
+[    8.304388] Loaded X.509 cert 'Build time autogenerated kernel key: 7bf26e83b8e056c626fdfc3e30ddba2f2ca58900'
+[    8.304390] ima: Allocated hash algorithm: sha1
+[    8.304399] ima: No architecture policies found
+[    8.304427] evm: Initialising EVM extended attributes:
+[    8.304428] evm: security.selinux
+[    8.304429] evm: security.SMACK64
+[    8.304430] evm: security.SMACK64EXEC
+[    8.304430] evm: security.SMACK64TRANSMUTE
+[    8.304431] evm: security.SMACK64MMAP
+[    8.304432] evm: security.apparmor
+[    8.304432] evm: security.ima
+[    8.304433] evm: security.capability
+[    8.304434] evm: HMAC attrs: 0x1
+[    8.305449] Freeing unused kernel image (initmem) memory: 4184K
+[    8.360648] Write protected read-only-after-init data: 136k
+[    8.360824] Checked W+X mappings: passed, no unexpected W+X pages found
+[    8.360828] Run /init as init process
+[    8.360830]   with arguments:
+[    8.360831]     /init
+[    8.360832]   with environment:
+[    8.360833]     HOME=/
+[    8.360833]     TERM=linux
+[    8.421099] virtio_blk virtio0: [vda] 209715200 512-byte logical blocks (107 GB/100 GiB)
+[    8.432398]  vda: vda1
+[    8.438342] virtio_blk virtio1: [vdb] 740 512-byte logical blocks (379 kB/370 KiB)
+[    8.442468] virtio_blk virtio2: [vdc] 88 512-byte logical blocks (45.1 kB/44.0 KiB)
+[    8.475952] virtio_net virtio3 enc0: renamed from eth0
+[    8.481877] [drm] features: -virgl +edid -resource_blob -host_visible
+[    8.482111] [drm] number of scanouts: 1
+[    8.482126] [drm] number of cap sets: 0
+[    8.482479] [drm] Initialized virtio_gpu 0.1.0 0 for virtio7 on minor 0
+[    8.485635] fbcon: Deferring console take-over
+[    8.485637] virtio_gpu virtio7: [drm] fb0: virtio_gpudrmfb frame buffer device
+[    8.920586] raid6: vx128x8  gen() 19075 MB/s
+[    9.090576] raid6: vx128x8  xor() 12651 MB/s
+[    9.090581] raid6: using algorithm vx128x8 gen() 19075 MB/s
+[    9.090583] raid6: .... xor() 12651 MB/s, rmw enabled
+[    9.090584] raid6: using s390xc recovery algorithm
+[    9.091652] xor: automatically using best checksumming function   xc        
+[    9.138735] Btrfs loaded, crc32c=crc32c-vx, zoned=yes, fsverity=yes
+[    9.235230] EXT4-fs (vda1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+[    9.656046] systemd[1]: systemd 249.11-0ubuntu3.9 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    9.656362] systemd[1]: Detected virtualization kvm.
+[    9.656365] systemd[1]: Detected architecture s390x.
+[    9.662770] systemd[1]: Hostname set to <ubuntu-server>.
+[    9.779869] systemd[484]: /usr/lib/systemd/system-generators/s390-cpi-vars failed with exit status 1.
+[   10.051792] systemd[1]: Queued start job for default target Graphical Interface.
+[   10.095440] systemd[1]: Created slice Slice /system/modprobe.
+[   10.095788] systemd[1]: Created slice Slice /system/serial-getty.
+[   10.095989] systemd[1]: Created slice User and Session Slice.
+[   10.096054] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   10.096224] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   10.096310] systemd[1]: Reached target Slice Units.
+[   10.096345] systemd[1]: Reached target Mounting snaps.
+[   10.096379] systemd[1]: Reached target Swaps.
+[   10.096415] systemd[1]: Reached target Local Verity Protected Volumes.
+[   10.096481] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[   10.096566] systemd[1]: Listening on LVM2 poll daemon socket.
+[   10.096641] systemd[1]: Listening on multipathd control socket.
+[   10.096720] systemd[1]: Listening on Syslog Socket.
+[   10.096791] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.096840] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.096973] systemd[1]: Listening on Journal Audit Socket.
+[   10.097044] systemd[1]: Listening on Journal Socket (/dev/log).
+[   10.097121] systemd[1]: Listening on Journal Socket.
+[   10.097218] systemd[1]: Listening on Network Service Netlink Socket.
+[   10.097306] systemd[1]: Listening on udev Control Socket.
+[   10.097380] systemd[1]: Listening on udev Kernel Socket.
+[   10.097969] systemd[1]: Mounting Huge Pages File System...
+[   10.098577] systemd[1]: Mounting POSIX Message Queue File System...
+[   10.099254] systemd[1]: Mounting Kernel Debug File System...
+[   10.099942] systemd[1]: Mounting Kernel Trace File System...
+[   10.101387] systemd[1]: Starting Journal Service...
+[   10.103066] systemd[1]: Starting Set the console keyboard layout...
+[   10.103803] systemd[1]: Starting Create List of Static Device Nodes...
+[   10.104487] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[   10.104601] systemd[1]: Condition check resulted in LXD - agent being skipped.
+[   10.105395] systemd[1]: Starting Load Kernel Module chromeos_pstore...
+[   10.106238] systemd[1]: Starting Load Kernel Module configfs...
+[   10.107098] systemd[1]: Starting Load Kernel Module drm...
+[   10.107896] systemd[1]: Starting Load Kernel Module efi_pstore...
+[   10.108859] systemd[1]: Starting Load Kernel Module fuse...
+[   10.109840] systemd[1]: Starting Load Kernel Module pstore_blk...
+[   10.110738] systemd[1]: Starting Load Kernel Module pstore_zone...
+[   10.111567] systemd[1]: Starting Load Kernel Module ramoops...
+[   10.111695] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[   10.111884] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[   10.114122] systemd[1]: Starting Load Kernel Modules...
+[   10.114922] systemd[1]: Starting Remount Root and Kernel File Systems...
+[   10.115651] systemd[1]: Starting Coldplug All udev Devices...
+[   10.116941] systemd[1]: Mounted Huge Pages File System.
+[   10.117024] systemd[1]: Mounted POSIX Message Queue File System.
+[   10.117108] systemd[1]: Mounted Kernel Debug File System.
+[   10.117166] systemd[1]: Mounted Kernel Trace File System.
+[   10.117362] systemd[1]: Finished Create List of Static Device Nodes.
+[   10.117558] systemd[1]: modprobe@chromeos_pstore.service: Deactivated successfully.
+[   10.117682] systemd[1]: Finished Load Kernel Module chromeos_pstore.
+[   10.117842] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[   10.117965] systemd[1]: Finished Load Kernel Module configfs.
+[   10.118160] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[   10.118279] systemd[1]: Finished Load Kernel Module drm.
+[   10.118446] systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+[   10.118574] systemd[1]: Finished Load Kernel Module efi_pstore.
+[   10.118728] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[   10.118852] systemd[1]: Finished Load Kernel Module fuse.
+[   10.119014] systemd[1]: modprobe@pstore_blk.service: Deactivated successfully.
+[   10.119148] systemd[1]: Finished Load Kernel Module pstore_blk.
+[   10.119298] systemd[1]: modprobe@pstore_zone.service: Deactivated successfully.
+[   10.119447] systemd[1]: Finished Load Kernel Module pstore_zone.
+[   10.119631] systemd[1]: modprobe@ramoops.service: Deactivated successfully.
+[   10.119750] systemd[1]: Finished Load Kernel Module ramoops.
+[   10.120446] systemd[1]: Mounting FUSE Control File System...
+[   10.120973] EXT4-fs (vda1): re-mounted. Opts: (null). Quota mode: none.
+[   10.121110] systemd[1]: Mounting Kernel Configuration File System...
+[   10.122441] systemd[1]: Finished Load Kernel Modules.
+[   10.122650] systemd[1]: Finished Remount Root and Kernel File Systems.
+[   10.122726] systemd[1]: Mounted FUSE Control File System.
+[   10.122791] systemd[1]: Mounted Kernel Configuration File System.
+[   10.123415] systemd[1]: Starting Initial cloud-init job (pre-networking)...
+[   10.124044] systemd[1]: Starting Device-Mapper Multipath Device Controller...
+[   10.124162] systemd[1]: Condition check resulted in Platform Persistent Storage Archival being skipped.
+[   10.124897] systemd[1]: Starting Load/Save Random Seed...
+[   10.125633] systemd[1]: Starting Apply Kernel Variables...
+[   10.126338] systemd[1]: Starting Create System Users...
+[   10.133889] alua: device handler registered
+[   10.136670] emc: device handler registered
+[   10.139035] rdac: device handler registered
+[   10.143313] systemd[1]: Started Journal Service.
+[   10.149932] systemd-journald[526]: Received client request to flush runtime journal.
+[   10.277025] loop0: detected capacity change from 0 to 111728
+[   10.277097] loop1: detected capacity change from 0 to 94944
+[   10.277212] loop2: detected capacity change from 0 to 198392
+[   10.375825] VFIO - User Level meta-driver version: 0.3
+[   10.413480] input: QEMU Virtio Keyboard as /devices/css0/0.0.0004/0.0.0005/virtio4/input/input0
+[   10.418073] input: QEMU Virtio Mouse as /devices/css0/0.0.0005/0.0.0006/virtio5/input/input1
+[   10.420027] audit: type=1400 audit(1690145624.420:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=644 comm="apparmor_parser"
+[   10.420030] audit: type=1400 audit(1690145624.420:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=644 comm="apparmor_parser"
+[   10.420264] audit: type=1400 audit(1690145624.420:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=643 comm="apparmor_parser"
+[   10.420486] audit: type=1400 audit(1690145624.420:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=646 comm="apparmor_parser"
+[   10.420489] audit: type=1400 audit(1690145624.420:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_filter" pid=646 comm="apparmor_parser"
+[   10.420491] audit: type=1400 audit(1690145624.420:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="man_groff" pid=646 comm="apparmor_parser"
+[   10.422145] audit: type=1400 audit(1690145624.430:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=648 comm="apparmor_parser"
+[   10.422150] audit: type=1400 audit(1690145624.430:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=648 comm="apparmor_parser"
+[   10.436569] audit: type=1400 audit(1690145624.440:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="tcpdump" pid=647 comm="apparmor_parser"
+[   11.243932] ISO 9660 Extensions: Microsoft Joliet Level 3
+[   11.244064] ISO 9660 Extensions: RRIP_1991A
+[   20.375559] fbcon: Taking over console
+[   20.375684] virtio_gpu virtio7: [drm] drm_plane_enable_fb_damage_clips() not called
+[   20.375752] Console: switching to colour frame buffer device 128x48
+[   21.689257] loop3: detected capacity change from 0 to 8
+[   21.777583] kauditd_printk_skb: 20 callbacks suppressed
+[   21.777585] audit: type=1400 audit(1690145635.780:31): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/18360/usr/lib/snapd/snap-confine" pid=1036 comm="apparmor_parser"
+[   21.830628] audit: type=1400 audit(1690145635.840:32): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/18360/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1036 comm="apparmor_parser"
+[   21.839518] audit: type=1400 audit(1690145635.840:33): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.lxd" pid=1038 comm="apparmor_parser"
+[   21.839864] audit: type=1400 audit(1690145635.840:34): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.hook.install" pid=1045 comm="apparmor_parser"
+[   21.841215] audit: type=1400 audit(1690145635.850:35): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.activate" pid=1039 comm="apparmor_parser"
+[   21.841221] audit: type=1400 audit(1690145635.850:36): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.benchmark" pid=1040 comm="apparmor_parser"
+[   21.845499] audit: type=1400 audit(1690145635.850:37): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.lxc" pid=1047 comm="apparmor_parser"
+[   21.845502] audit: type=1400 audit(1690145635.850:38): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.hook.remove" pid=1046 comm="apparmor_parser"
+[   21.845505] audit: type=1400 audit(1690145635.850:39): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.check-kernel" pid=1042 comm="apparmor_parser"
+[   21.845507] audit: type=1400 audit(1690145635.850:40): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.lxd" pid=1049 comm="apparmor_parser"
+[   59.504537] loop3: detected capacity change from 0 to 101624
+[   60.129534] kauditd_printk_skb: 7 callbacks suppressed
+[   60.129537] audit: type=1400 audit(1690145674.132:48): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/19460/usr/lib/snapd/snap-confine" pid=1488 comm="apparmor_parser"
+[   60.130753] audit: type=1400 audit(1690145674.132:49): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/19460/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1488 comm="apparmor_parser"
+[   60.147749] audit: type=1400 audit(1690145674.142:50): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.lxd" pid=1490 comm="apparmor_parser"
+[   60.147755] audit: type=1400 audit(1690145674.142:51): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.hook.install" pid=1497 comm="apparmor_parser"
+[   60.148600] audit: type=1400 audit(1690145674.152:52): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.benchmark" pid=1492 comm="apparmor_parser"
+[   60.148845] audit: type=1400 audit(1690145674.152:53): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.activate" pid=1491 comm="apparmor_parser"
+[   60.148878] audit: type=1400 audit(1690145674.152:54): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.hook.remove" pid=1498 comm="apparmor_parser"
+[   60.149016] audit: type=1400 audit(1690145674.152:55): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.lxc" pid=1499 comm="apparmor_parser"
+[   60.149130] audit: type=1400 audit(1690145674.152:56): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.check-kernel" pid=1494 comm="apparmor_parser"
+[   60.150032] audit: type=1400 audit(1690145674.152:57): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.lxd.buginfo" pid=1493 comm="apparmor_parser"
+[   61.718741] loop4: detected capacity change from 0 to 8
+[   64.054757] loop4: detected capacity change from 0 to 112048
+[  490.766280] qeth: loading core functions
+[  490.800212] ctcm: CTCM driver initialized
+[  490.820421] lcs: Loading LCS driver
+[  530.371880] systemd[1]: systemd 249.11-0ubuntu3.9 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[  530.372188] systemd[1]: Detected virtualization kvm.
+[  530.372192] systemd[1]: Detected architecture s390x.
+[  530.546809] systemd[1]: Stopping Journal Service...
+[  530.546949] systemd-journald[526]: Received SIGTERM from PID 1 (systemd).
+[  530.546981] systemd[1]: rsyslog.service: Deactivated successfully.
+[  530.547132] systemd[1]: Stopped System Logging Service.
+[  530.548063] systemd[1]: Starting System Logging Service...
+[  530.548224] systemd[1]: ssh.service: Deactivated successfully.
+[  530.548243] systemd[1]: ssh.service: Unit process 1879 (sshd) remains running after unit stopped.
+[  530.548252] systemd[1]: ssh.service: Unit process 1881 (bash) remains running after unit stopped.
+[  530.548259] systemd[1]: ssh.service: Unit process 1928 (sshd) remains running after unit stopped.
+[  530.548266] systemd[1]: ssh.service: Unit process 1930 (bash) remains running after unit stopped.
+[  530.548274] systemd[1]: ssh.service: Unit process 9662 (apt) remains running after unit stopped.
+[  530.548283] systemd[1]: ssh.service: Unit process 9833 (apt) remains running after unit stopped.
+[  530.548290] systemd[1]: ssh.service: Unit process 9841 (sh) remains running after unit stopped.
+[  530.548298] systemd[1]: ssh.service: Unit process 9842 (frontend) remains running after unit stopped.
+[  530.548305] systemd[1]: ssh.service: Unit process 9855 (needrestart) remains running after unit stopped.
+[  530.548314] systemd[1]: ssh.service: Unit process 10004 (systemctl) remains running after unit stopped.
+[  530.548447] systemd[1]: Stopped OpenBSD Secure Shell server.
+[  530.548480] systemd[1]: ssh.service: Consumed 11.955s CPU time.
+[  530.548821] systemd[1]: ssh.service: Found left-over process 1879 (sshd) in control group while starting unit. Ignoring.
+[  530.548823] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548829] systemd[1]: ssh.service: Found left-over process 1881 (bash) in control group while starting unit. Ignoring.
+[  530.548831] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548836] systemd[1]: ssh.service: Found left-over process 1928 (sshd) in control group while starting unit. Ignoring.
+[  530.548837] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548843] systemd[1]: ssh.service: Found left-over process 1930 (bash) in control group while starting unit. Ignoring.
+[  530.548844] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548849] systemd[1]: ssh.service: Found left-over process 9662 (apt) in control group while starting unit. Ignoring.
+[  530.548851] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548857] systemd[1]: ssh.service: Found left-over process 9833 (apt) in control group while starting unit. Ignoring.
+[  530.548858] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548864] systemd[1]: ssh.service: Found left-over process 9841 (sh) in control group while starting unit. Ignoring.
+[  530.548865] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548870] systemd[1]: ssh.service: Found left-over process 9842 (frontend) in control group while starting unit. Ignoring.
+[  530.548872] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548877] systemd[1]: ssh.service: Found left-over process 9855 (needrestart) in control group while starting unit. Ignoring.
+[  530.548878] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.548884] systemd[1]: ssh.service: Found left-over process 10004 (systemctl) in control group while starting unit. Ignoring.
+[  530.548885] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.549405] systemd[1]: Starting OpenBSD Secure Shell server...
+[  530.550006] systemd[1]: Condition check resulted in OpenVSwitch configuration for cleanup being skipped.
+[  530.550116] systemd[1]: systemd-networkd-wait-online.service: Deactivated successfully.
+[  530.550242] systemd[1]: Stopped Wait for Network to be Configured.
+[  530.550266] systemd[1]: Stopping Wait for Network to be Configured...
+[  530.550395] systemd[1]: Stopping Network Configuration...
+[  530.551103] systemd[1]: Started System Logging Service.
+[  530.551524] systemd[1]: Stopping Network Name Resolution...
+[  530.552143] systemd[1]: Stopping Network Time Synchronization...
+[  530.552935] systemd[1]: ModemManager.service: Deactivated successfully.
+[  530.553092] systemd[1]: Stopped Modem Manager.
+[  530.553819] systemd[1]: Stopping Authorization Manager...
+[  530.553934] systemd[1]: Stopping Disk Manager...
+[  530.562157] systemd[1]: systemd-journald.service: Deactivated successfully.
+[  530.562315] systemd[1]: Stopped Journal Service.
+[  530.563925] systemd[1]: Starting Journal Service...
+[  530.570362] systemd[1]: ssh.service: Found left-over process 1879 (sshd) in control group while starting unit. Ignoring.
+[  530.570365] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570372] systemd[1]: ssh.service: Found left-over process 1881 (bash) in control group while starting unit. Ignoring.
+[  530.570373] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570379] systemd[1]: ssh.service: Found left-over process 1928 (sshd) in control group while starting unit. Ignoring.
+[  530.570380] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570386] systemd[1]: ssh.service: Found left-over process 1930 (bash) in control group while starting unit. Ignoring.
+[  530.570387] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570392] systemd[1]: ssh.service: Found left-over process 9662 (apt) in control group while starting unit. Ignoring.
+[  530.570393] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570400] systemd[1]: ssh.service: Found left-over process 9833 (apt) in control group while starting unit. Ignoring.
+[  530.570401] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570406] systemd[1]: ssh.service: Found left-over process 9841 (sh) in control group while starting unit. Ignoring.
+[  530.570407] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570413] systemd[1]: ssh.service: Found left-over process 9842 (frontend) in control group while starting unit. Ignoring.
+[  530.570414] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570420] systemd[1]: ssh.service: Found left-over process 9855 (needrestart) in control group while starting unit. Ignoring.
+[  530.570421] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.570426] systemd[1]: ssh.service: Found left-over process 10004 (systemctl) in control group while starting unit. Ignoring.
+[  530.570427] systemd[1]: This usually indicates unclean termination of a previous run, or service implementation deficiencies.
+[  530.586409] systemd[1]: Started OpenBSD Secure Shell server.
+[  530.590199] systemd[1]: Started Journal Service.

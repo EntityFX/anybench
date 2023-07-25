@@ -1,0 +1,28 @@
+##########################################
+Single Precision C Whetstone Benchmark s390x s390x-z15 optimized, Sun Jul 23 23:03:07 2023
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.04 Seconds         25   Passes (x 100)
+       0.22 Seconds        125   Passes (x 100)
+       1.12 Seconds        625   Passes (x 100)
+       5.60 Seconds       3125   Passes (x 100)
+
+Use 5583  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12367534637451172      1121.190              0.096
+N2 floating point     -1.12167274951934814      1522.107              0.493
+N3 if then else        1.00000000000000000                   0.000    0.000
+N4 fixed point        12.00000000000000000               38494.574    0.046
+N5 sin,cos etc.        0.49911010265350342                 140.343    3.310
+N6 floating point      0.99999982118606567       769.519              3.913
+N7 assignments         3.00000000000000000                2428.841    0.425
+N8 exp,sqrt etc.       0.75110864639282227                 117.197    1.772
+
+MWIPS                                           5552.793             10.054
+

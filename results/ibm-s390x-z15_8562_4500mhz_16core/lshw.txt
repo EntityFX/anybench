@@ -1,0 +1,219 @@
+lshw
+artem                       
+    description: Computer
+    width: 64 bits
+    capabilities: smp
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 128GiB
+     *-cpu:0
+          vendor: IBM/S390
+          physical id: 1
+          bus info: cpu@0
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:1
+          vendor: IBM/S390
+          physical id: 2
+          bus info: cpu@1
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:2
+          vendor: IBM/S390
+          physical id: 3
+          bus info: cpu@2
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:3
+          vendor: IBM/S390
+          physical id: 4
+          bus info: cpu@3
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:4
+          vendor: IBM/S390
+          physical id: 5
+          bus info: cpu@4
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:5
+          vendor: IBM/S390
+          physical id: 6
+          bus info: cpu@5
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:6
+          vendor: IBM/S390
+          physical id: 7
+          bus info: cpu@6
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:7
+          vendor: IBM/S390
+          physical id: 8
+          bus info: cpu@7
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:8
+          vendor: IBM/S390
+          physical id: 9
+          bus info: cpu@8
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:9
+          vendor: IBM/S390
+          physical id: a
+          bus info: cpu@9
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:10
+          vendor: IBM/S390
+          physical id: b
+          bus info: cpu@10
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:11
+          vendor: IBM/S390
+          physical id: c
+          bus info: cpu@11
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:12
+          vendor: IBM/S390
+          physical id: d
+          bus info: cpu@12
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:13
+          vendor: IBM/S390
+          physical id: e
+          bus info: cpu@13
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:14
+          vendor: IBM/S390
+          physical id: f
+          bus info: cpu@14
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-cpu:15
+          vendor: IBM/S390
+          physical id: 10
+          bus info: cpu@15
+          capabilities: esan3 zarch stfle msa ldisp eimm dfp edat etf3eh highgprs te vx vxd vxe gs vxe2 vxp sort dflt sie
+     *-virtio0
+          description: Virtual I/O device
+          physical id: 11
+          bus info: virtio@0
+          logical name: /dev/vda
+          size: 100GiB (107GB)
+          capabilities: gpt-1.00 partitioned partitioned:gpt
+          configuration: driver=virtio_blk guid=abe186bd-96be-4074-8eb6-95dd69470042 logicalsectorsize=512 sectorsize=512
+        *-volume
+             description: EXT4 volume
+             vendor: Linux
+             physical id: 1
+             bus info: virtio@0,1
+             logical name: /dev/vda1
+             logical name: /
+             version: 1.0
+             serial: c0d9466e-b90d-4dcf-b6e9-4b21fde73bb0
+             size: 99GiB
+             capabilities: journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+             configuration: created=2023-06-12 13:43:06 filesystem=ext4 lastmountpoint=/ modified=2023-07-23 20:53:43 mount.fstype=ext4 mount.options=rw,relatime mounted=2023-07-23 20:53:44 state=mounted
+     *-virtio1
+          description: Virtual I/O device
+          physical id: 12
+          bus info: virtio@1
+          logical name: /dev/vdb
+          size: 370KiB (378KB)
+          configuration: driver=virtio_blk logicalsectorsize=512 sectorsize=512
+     *-virtio2
+          description: Linux swap volume
+          physical id: 13
+          bus info: virtio@2
+          logical name: /dev/vdc
+          version: 1
+          serial: ca2c97ca-a77d-4094-a4f7-83943ca0c8e9
+          size: 44KiB
+          capacity: 44KiB
+          capabilities: swap initialized
+          configuration: driver=virtio_blk filesystem=swap label=SWAP-xvdb1 logicalsectorsize=512 pagesize=4096 sectorsize=512
+     *-virtio3
+          description: Ethernet interface
+          physical id: 14
+          bus info: virtio@3
+          logical name: enc0
+          serial: 02:00:08:55:98:ce
+          capabilities: ethernet physical
+          configuration: autonegotiation=off broadcast=yes driver=virtio_net driverversion=1.0.0 ip=10.242.64.7 link=yes multicast=yes
+     *-virtio4
+          description: Virtual I/O device
+          product: QEMU Virtio Keyboard
+          physical id: 15
+          bus info: virtio@4
+          logical name: input0
+          logical name: /dev/input/event0
+          capabilities: virtual
+          configuration: driver=virtio_input
+     *-virtio5
+          description: Virtual I/O device
+          product: QEMU Virtio Mouse
+          physical id: 16
+          bus info: virtio@5
+          logical name: input1
+          logical name: /dev/input/event1
+          capabilities: virtual
+          configuration: driver=virtio_input
+     *-virtio6 UNCLAIMED
+          description: Virtual I/O device
+          physical id: 17
+          bus info: virtio@6
+          configuration: driver=virtio_balloon
+     *-virtio7
+          description: Virtual I/O device
+          product: virtio_gpudrmfb
+          physical id: 18
+          bus info: virtio@7
+          logical name: /dev/fb0
+          capabilities: fb
+          configuration: depth=32 driver=virtio_gpu resolution=1024,768
+     *-virtio8 UNCLAIMED
+          description: Virtual I/O device
+          physical id: 19
+          bus info: virtio@8
+          configuration: driver=virtio_rng
+  *-device:0
+       description: Virtual network device
+       physical id: 1
+       bus info: ccw@0.0.0000
+       configuration: driver=virtio_ccw
+  *-device:1
+       description: Virtual network device
+       physical id: 2
+       bus info: ccw@0.0.0001
+       configuration: driver=virtio_ccw
+  *-device:2
+       description: Virtual network device
+       physical id: 3
+       bus info: ccw@0.0.0002
+       configuration: driver=virtio_ccw
+  *-device:3
+       description: Virtual network device
+       physical id: 4
+       bus info: ccw@0.0.0003
+       configuration: driver=virtio_ccw
+  *-device:4
+       description: Virtual network device
+       physical id: 5
+       bus info: ccw@0.0.0004
+       configuration: driver=virtio_ccw
+  *-device:5
+       description: Virtual network device
+       physical id: 6
+       bus info: ccw@0.0.0005
+       configuration: driver=virtio_ccw
+  *-device:6
+       description: Virtual network device
+       physical id: 7
+       bus info: ccw@0.0.0006
+       configuration: driver=virtio_ccw
+  *-device:7
+       description: Virtual network device
+       physical id: 8
+       bus info: ccw@0.0.0007
+       configuration: driver=virtio_ccw
+  *-device:8
+       description: Virtual network device
+       physical id: 9
+       bus info: ccw@0.0.0008
+       configuration: driver=virtio_ccw
