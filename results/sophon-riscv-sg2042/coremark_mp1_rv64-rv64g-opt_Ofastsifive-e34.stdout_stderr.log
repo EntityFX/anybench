@@ -1,0 +1,17 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 11935
+Total time (secs): 11.935000
+Iterations/Sec   : 9216.589862
+Iterations       : 110000
+Compiler version : GCC12.3.0
+Compiler flags   : -Ofast -mcpu=sifive-e34  -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[0]crcfinal      : 0x33ff
+Correct operation validated. See README.md for run and reporting rules.
+CoreMark 1.0 : 9216.589862 / GCC12.3.0 -Ofast -mcpu=sifive-e34  -DPERFORMANCE_RUN=1 -DUSE_FORK=1 -lrt / Heap

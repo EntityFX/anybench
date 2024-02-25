@@ -1,0 +1,27 @@
+##########################################
+Single Precision C Whetstone Benchmark riscv64 rv64g optimized, Sun Oct 22 07:29:41 2023
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.10 Seconds         25   Passes (x 100)
+       0.50 Seconds        125   Passes (x 100)
+       2.51 Seconds        625   Passes (x 100)
+
+Use 2488  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       741.714              0.064
+N2 floating point     -1.12274742126464844       782.893              0.427
+N3 if then else        1.00000000000000000                4917.150    0.052
+N4 fixed point        12.00000000000000000                3308.237    0.237
+N5 sin,cos etc.        0.49911010265350342                  51.412    4.026
+N6 floating point      0.99999982118606567       569.790              2.355
+N7 assignments         3.00000000000000000                1330.087    0.346
+N8 exp,sqrt etc.       0.75110864639282227                  36.927    2.506
+
+MWIPS                                           2484.406             10.014
+
