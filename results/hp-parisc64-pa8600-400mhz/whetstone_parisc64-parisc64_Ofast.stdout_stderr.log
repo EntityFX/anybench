@@ -1,0 +1,26 @@
+##########################################
+Single Precision C Whetstone Benchmark parisc64 parisc64 optimized, Wed Jul  3 23:47:25 2024
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.11 Seconds          5   Passes (x 100)
+       0.55 Seconds         25   Passes (x 100)
+       2.76 Seconds        125   Passes (x 100)
+
+Use 453  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12391686439514160       209.919              0.041
+N2 floating point     -1.12191414833068848       251.213              0.242
+N3 if then else        1.00000000000000000                 591.198    0.079
+N4 fixed point        12.00000000000000000                1969.211    0.072
+N5 sin,cos etc.        0.49911010265350342                   7.350    5.128
+N6 floating point      0.99999982118606567       125.435              1.948
+N7 assignments         3.00000000000000000                 262.806    0.319
+N8 exp,sqrt etc.       0.75110864639282227                   7.892    2.135
+
+MWIPS                                            454.590              9.965
+

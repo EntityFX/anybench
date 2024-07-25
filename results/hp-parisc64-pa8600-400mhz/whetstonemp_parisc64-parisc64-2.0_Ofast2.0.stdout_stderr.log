@@ -1,0 +1,42 @@
+1 CPUs Available
+##############################################
+
+ Multithreading Single Precision Whetstones parisc64 parisc64-2.0 optimized
+
+             Using 1 threads - Wed Jul  3 23:44:51 2024
+
+ Calibrate
+    0.05365 Seconds          1   Passes (x 100)
+    0.21113 Seconds          5   Passes (x 100)
+
+ Use 236  passes (x 100)
+
+ MFLOPS 1     205
+ MFLOPS 2     209
+ IFMOPS       588
+ FIXPMOPS      29
+ COSMOPS        7
+ MFLOPS 3     157
+ EQUMOPS      262
+ EXPMOPS        8
+ millisec    7490
+ MWIPS        315
+
+         MWIPS MFLOPS MFLOPS MFLOPS    Cos    Exp  Fixpt     If  Equal
+ Thread             1      2      3   MOPS   MOPS   MOPS   MOPS   MOPS
+
+      1    315    205    209    157      7      8     29    588    262
+ Total     315    205    209    157      7      8     29    588    262
+
+ MWIPS     315 Based on time for last thread to finish
+
+
+ Results Of Calculations Thread 1
+
+ MFLOPS 1   -1.13333320617675781      MFLOPS 2   -1.13333344459533691
+ IFMOPS      1.00000000000000000      FIXPMOPS   12.00000000000000000
+ COSMOPS     0.50000011920928955      MFLOPS 3    0.99999982118606567
+ EQUMOPS     3.00000000000000000      EXPMOPS     0.89998209476470947
+
+
+               End of test Wed Jul  3 23:45:00 2024

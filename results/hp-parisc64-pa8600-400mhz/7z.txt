@@ -1,0 +1,22 @@
+7-Zip 24.07 (BE) : Copyright (c) 1999-2024 Igor Pavlov : 2024-06-19
+ 32-bit locale=en_US.UTF-8 Threads:8 OPEN_MAX:1024
+
+Compiler:  ver:13.2.0 GCC 13.2.0 : BE
+Linux : 6.9.7-parisc64 : #1 SMP Debian 6.9.7-1 (2024-06-27) : parisc64
+PageSize:4KB hwcap:0
+BE
+
+1T CPU Freq (MHz):   391   393   394   394   312   393   393
+
+RAM size:     223 MB,  # CPU hardware threads:   1 / 8 : 01
+RAM usage:    111 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:        312   100    304    304  |       2806    99    242    240
+23:        290    98    302    296  |       2808   100    243    243
+----------------------------------  | ------------------------------
+Avr:       301    99    303    300  |       2807    99    243    241
+Tot:              99    273    271
