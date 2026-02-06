@@ -72,12 +72,12 @@ int n1mult = 10;
 int n3mult = 5;
 int n7mult = 10;
 
-double score[66][10];
-double timec[66][10];
+double score[166][10];
+double timec[166][10];
 SPDP Check;
-SPDP results[65][9];
+SPDP results[165][9];
 
-pthread_t tid[100];
+pthread_t tid[200];
 pthread_attr_t *attrt = NULL;
 pthread_mutex_t mutext = PTHREAD_MUTEX_INITIALIZER;
 
