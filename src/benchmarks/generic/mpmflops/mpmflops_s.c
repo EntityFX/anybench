@@ -43,7 +43,7 @@
 
  MYCALCS xcalcs;
 
- pthread_t tid[100]; 
+ pthread_t tid[200]; 
  pthread_attr_t * attrt = NULL; 
  pthread_mutex_t mutext = PTHREAD_MUTEX_INITIALIZER;
 
